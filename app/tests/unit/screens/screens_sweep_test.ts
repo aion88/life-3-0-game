@@ -97,5 +97,5 @@ describe('parité des deux langues', () => {
     const en = await keysOf('en');
     expect([...fr.keys()].sort()).toEqual([...SCREEN_IDS].sort());
     for (const id of SCREEN_IDS) expect(en.get(id), id).toEqual(fr.get(id));
-  });
+  }, 30_000);   // monte chaque écran en fr puis en en : ~5,5 s sur le runner GitHub, au-dessus des 5 s par défaut
 });
