@@ -10,6 +10,7 @@ export function createChoices<T extends string>(opts: {
   reducedMotion: boolean;
 }): HTMLElement {
   const el = document.createElement('div'); el.dataset['ui'] = 'single-choice';
+  el.dataset['fresh'] = ''; el.addEventListener('pointermove', () => { delete el.dataset['fresh']; }, { once: true });   // pas de survol tant que la souris n'a pas bougé
   const { theme, timing } = loadUi();
   const params = designateParams(theme, 'questionnaire');
   const buttons = new Map<T, HTMLButtonElement>();

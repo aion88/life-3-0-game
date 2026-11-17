@@ -95,6 +95,7 @@ export const mayorScreen: ScreenFactory<'questionnaire'> = ctx => {
         }
         paper.append(el('h2', scene.question ?? 'Ta réponse ?', 'mayor-question'));
         const choices = el('div', '', 'mayor-choices');
+        choices.dataset['fresh'] = ''; choices.addEventListener('pointermove', () => { delete choices.dataset['fresh']; }, { once: true });   // pas de survol tant que la souris n'a pas bougé : sinon l'option sous le curseur paraît déjà choisie
         let signed = false;
         for (const answer of question.answers) {
           const choice = scene.choix.find(c => c.key === answer.key)!;
