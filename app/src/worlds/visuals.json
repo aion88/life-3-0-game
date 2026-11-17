@@ -1,0 +1,245 @@
+{
+  "w01": {
+    "sky": "#617b97",
+    "ground": "#473e52",
+    "wall": "#b9c5ca",
+    "accent": "#ff783e",
+    "leaf": "#69816c",
+    "sun": "#ffbf8a",
+    "layout": "terraces",
+    "landmark": "Bourse des concessions",
+    "body": "npc.bruno",
+    "lighting": {
+      "sunPosition": [
+        -16,
+        9,
+        4
+      ],
+      "ambient": 0.62,
+      "sunPower": 3.1,
+      "fill": 0.38,
+      "exposure": 1.0
+    },
+    "camera": [
+      12,
+      4.2,
+      14
+    ]
+  },
+  "w02": {
+    "sky": "#b6d3da",
+    "ground": "#557d89",
+    "wall": "#f1eee0",
+    "accent": "#d9ae55",
+    "leaf": "#7e9b77",
+    "sun": "#fff3d9",
+    "layout": "oracle",
+    "landmark": "Les marches de l’Oracle",
+    "body": "npc.berenice",
+    "lighting": {
+      "sunPosition": [
+        -8,
+        19,
+        -7
+      ],
+      "ambient": 0.8,
+      "sunPower": 3.0,
+      "fill": 0.42,
+      "exposure": 1.05
+    },
+    "camera": [
+      9,
+      3.3,
+      16
+    ]
+  },
+  "w03": {
+    "sky": "#76a2a9",
+    "ground": "#675c46",
+    "wall": "#c98259",
+    "accent": "#327c78",
+    "leaf": "#54785c",
+    "sun": "#ffd69e",
+    "layout": "commons",
+    "landmark": "La maison des Communs",
+    "body": "npc.bruno",
+    "lighting": {
+      "sunPosition": [
+        -14,
+        11,
+        3
+      ],
+      "ambient": 0.7,
+      "sunPower": 3.2,
+      "fill": 0.42,
+      "exposure": 1.04
+    },
+    "camera": [
+      12,
+      4.6,
+      14
+    ]
+  },
+  "w04": {
+    "sky": "#122a47",
+    "ground": "#273c50",
+    "wall": "#62798a",
+    "accent": "#e6a050",
+    "leaf": "#446e66",
+    "sun": "#b8d3ff",
+    "layout": "wall",
+    "landmark": "La limite du Gardien",
+    "body": "npc.berenice",
+    "lighting": {
+      "sunPosition": [
+        -9,
+        7,
+        -6
+      ],
+      "ambient": 0.46,
+      "sunPower": 2.1,
+      "fill": 0.43,
+      "exposure": 1.04
+    },
+    "camera": [
+      10,
+      3.5,
+      14
+    ]
+  },
+  "w05": {
+    "sky": "#eba890",
+    "ground": "#637d81",
+    "wall": "#f3d2a4",
+    "accent": "#b94738",
+    "leaf": "#598865",
+    "sun": "#ffd7a3",
+    "layout": "garden",
+    "landmark": "La fontaine des possibles",
+    "body": "npc.marlene",
+    "lighting": {
+      "sunPosition": [
+        -16,
+        7,
+        5
+      ],
+      "ambient": 0.65,
+      "sunPower": 3.3,
+      "fill": 0.35,
+      "exposure": 1.0
+    },
+    "camera": [
+      12,
+      3.8,
+      15
+    ]
+  },
+  "w06": {
+    "sky": "#36545c",
+    "ground": "#344246",
+    "wall": "#607b78",
+    "accent": "#f5ad44",
+    "leaf": "#5a7164",
+    "sun": "#ffd4a1",
+    "layout": "vault",
+    "landmark": "Le Coffre",
+    "body": "npc.nadia",
+    "lighting": {
+      "sunPosition": [
+        7,
+        10,
+        -9
+      ],
+      "ambient": 0.52,
+      "sunPower": 2.6,
+      "fill": 0.43,
+      "exposure": 1.02
+    },
+    "camera": [
+      9,
+      4.2,
+      15
+    ]
+  },
+  "w08": {
+    "sky": "#c7b3c5",
+    "ground": "#827774",
+    "wall": "#e2b6a0",
+    "accent": "#6985a4",
+    "leaf": "#8b956c",
+    "sun": "#ffdeb1",
+    "layout": "school",
+    "landmark": "La dernière école",
+    "body": "npc.bruno",
+    "lighting": {
+      "sunPosition": [
+        -13,
+        8,
+        2
+      ],
+      "ambient": 0.6,
+      "sunPower": 3.0,
+      "fill": 0.4,
+      "exposure": 1.0
+    },
+    "camera": [
+      13,
+      4.5,
+      14
+    ]
+  },
+  "w09": {
+    "sky": "#567e70",
+    "ground": "#365d50",
+    "wall": "#cae0ba",
+    "accent": "#e2c173",
+    "leaf": "#3f7956",
+    "sun": "#edffd5",
+    "layout": "conservatory",
+    "landmark": "L’horizon de verre",
+    "body": "npc.nadia",
+    "lighting": {
+      "sunPosition": [
+        -6,
+        15,
+        -6
+      ],
+      "ambient": 0.55,
+      "sunPower": 3.1,
+      "fill": 0.45,
+      "exposure": 1.0
+    },
+    "camera": [
+      11,
+      4.0,
+      16
+    ]
+  },
+  "w11": {
+    "sky": "#798ba2",
+    "ground": "#625d52",
+    "wall": "#998c79",
+    "accent": "#c46537",
+    "leaf": "#677261",
+    "sun": "#ffd0a0",
+    "layout": "hamlet",
+    "landmark": "Les pylônes morts",
+    "body": "npc.yusuf",
+    "lighting": {
+      "sunPosition": [
+        -16,
+        5,
+        5
+      ],
+      "ambient": 0.48,
+      "sunPower": 2.4,
+      "fill": 0.36,
+      "exposure": 1.02
+    },
+    "camera": [
+      12,
+      3.8,
+      14
+    ]
+  }
+}

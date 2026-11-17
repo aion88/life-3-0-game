@@ -1,0 +1,18 @@
+:root{--moral-rule:2px;--moral-accent:3px}
+.moral-world-rule{font:400 11px/1.4 'Inter C',Arial,sans-serif!important;max-width:460px;color:#cee0c5!important;margin:4px 0 0!important}
+.moral-card{color:#edf3e9}.moral-card>strong{font:600 15px/1.3 'Montserrat C',Arial,sans-serif!important;letter-spacing:.02em}.moral-card p{margin:8px 0 0}.moral-card dl{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0 0}.moral-card dl>div{padding-top:7px;border-top:var(--moral-rule) solid #547264}.moral-card dt{font-size:10px}.moral-card dd{margin:3px 0 0;font-weight:600;font-size:12px;line-height:1.4}
+.journey .journey-mission:has(.moral-card),.episode .episode-goals:has(.moral-card){background:#152b25;color:#edf3e9;max-height:160px}
+.moral-power{display:block;width:fit-content;background:#091b12;color:#d7ffb8;border-left:var(--moral-accent) solid #b9eb8d;padding:7px 10px;margin-top:6px;font:600 13px/1.3 'Inter C',Arial,sans-serif}
+.journey[data-scene-light=infrared] .iv-background{filter:grayscale(1) brightness(.48) contrast(1.7) sepia(1) hue-rotate(55deg) saturate(3)}
+.journey[data-scene-light=infrared] .iv-motion>canvas{filter:grayscale(1) brightness(1.8) contrast(1.25) sepia(1) hue-rotate(55deg) saturate(2) drop-shadow(0 0 3px #a0ed7580)}
+@media(max-width:760px){.moral-world-rule{font-size:10px!important;max-width:300px}.moral-card>strong{font-size:12px!important}.moral-card dl{margin-top:6px;gap:8px}.moral-card dd{font-size:10px}.moral-card dt{font-size:9px}.moral-power{font-size:10px;padding:4px 7px}}
+
+.moral-world-rule{letter-spacing:normal}.journey-mission .moral-power{margin:0 0 8px;font-size:10px}
+@media(max-width:760px){.episode-brand .moral-world-rule{display:none}.journey-mission .moral-power{font-size:9px;padding:3px 5px;margin-bottom:5px}}
+
+.episode .episode-goals .moral-card>strong,.journey .journey-mission .moral-card>strong { color:#edf3e9; }
+
+.moral-card dt { color:#b9dca5; font-weight:600; }
+.journey .journey-mission:has(.moral-card[role=status]),
+.episode .episode-goals:has(.moral-card[role=status]) { background:#152c40; border-inline-start:3px solid #8ac5f0; }
+.moral-card[role=status] dt { color:#a9d5f5; }

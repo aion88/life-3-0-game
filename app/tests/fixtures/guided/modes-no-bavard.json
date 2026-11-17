@@ -1,0 +1,189 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "first": "j1.home",
+      "goalKey": "w10.scene.j1.goal"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "j1.home",
+      "day": 1,
+      "stage": "home",
+      "place": "home.spot",
+      "anchorMinute": 420,
+      "costMin": 0,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.home.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "j1.chat"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.chat",
+      "day": 1,
+      "stage": "landing",
+      "place": "landing.spot",
+      "anchorMinute": 430,
+      "costMin": 2,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.chat.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.chat.ask",
+        "options": [
+          {
+            "id": "o0",
+            "labelKey": "w10.scene.j1.chat.o0",
+            "words": 0,
+            "next": "j1.alley",
+            "replyKey": null
+          },
+          {
+            "id": "o8",
+            "labelKey": "w10.scene.j1.chat.o8",
+            "words": 8,
+            "next": "j1.alley",
+            "replyKey": null
+          },
+          {
+            "id": "o14",
+            "labelKey": "w10.scene.j1.chat.o14",
+            "words": 14,
+            "next": "j1.alley",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.alley",
+      "day": 1,
+      "stage": "street",
+      "place": "street.spot",
+      "anchorMinute": 440,
+      "costMin": 0,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.alley.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.alley.ask",
+        "options": [
+          {
+            "id": "p0",
+            "labelKey": "w10.scene.j1.alley.p0",
+            "words": 0,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "p6",
+            "labelKey": "w10.scene.j1.alley.p6",
+            "words": 6,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "p20",
+            "labelKey": "w10.scene.j1.alley.p20",
+            "words": 20,
+            "next": "night",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    }
+  ],
+  "chains": [
+    {
+      "id": "M",
+      "titleKey": "w10.chain.M.title",
+      "crosses": [],
+      "question": {
+        "key": "Q11",
+        "linkKeys": {
+          "A": "w10.chain.M.q.a",
+          "B": "w10.chain.M.q.b"
+        }
+      },
+      "fact": {
+        "key": "w10.fact.M",
+        "source": "research/2026-10-28-questionnaire-2026.md",
+        "sourceKey": "w10.fact.M.source"
+      },
+      "links": [
+        {
+          "id": "M1",
+          "day": 1,
+          "at": {
+            "kind": "scene",
+            "id": "j1.chat"
+          },
+          "absent": {
+            "recapKey": "w10.recap.M1.absent",
+            "personKey": "w10.recap.M1.absent.person",
+            "saidKey": null
+          },
+          "variants": {
+            "o0": {
+              "recapKey": "w10.recap.M1.o0",
+              "personKey": "w10.recap.M1.o0.person",
+              "saidKey": null
+            },
+            "o8": {
+              "recapKey": "w10.recap.M1.o8",
+              "personKey": "w10.recap.M1.o8.person",
+              "saidKey": null
+            },
+            "o14": {
+              "recapKey": "w10.recap.M1.o14",
+              "personKey": "w10.recap.M1.o14.person",
+              "saidKey": null
+            }
+          }
+        }
+      ],
+      "lastDay": 1
+    }
+  ],
+  "endOfDemo": null,
+  "speechModes": {
+    "1": {
+      "muet": 0,
+      "couloir": [
+        10,
+        20
+      ],
+      "bavard": 40
+    }
+  }
+}

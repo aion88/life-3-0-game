@@ -1,0 +1,667 @@
+{
+  "status": "content",
+  "id": "w10",
+  "engine": {
+    "drift": { "surveillance": 0.3, "freedom": -0.2, "unrest": 0.3 },
+    "couplingScale": 1,
+    "routineEcho": {
+      "capPerStep": 1,
+      "table": { "usePhone": { "surveillance": 0.4 }, "workTech": { "surveillance": 0.3 } }
+    },
+    "milestoneCapPerVar": null,
+    "milestones": [],
+    "events": [],
+    "gates": [{ "id": "vault-checkpoint", "when": { "var": "surveillance", "cmp": ">", "threshold": 96 } }],
+    "slopes": [
+      { "id": "to-w06", "to": "w06", "readings": [{ "var": "aiPower", "cmp": ">=", "threshold": 60 }] },
+      { "id": "to-w03", "to": "w03", "readings": [{ "var": "freedom", "cmp": ">=", "threshold": 50 }, { "var": "abundance", "cmp": ">=", "threshold": 68 }] }
+    ],
+    "neutralReadings": [{ "var": "surveillance", "cmp": "<=", "threshold": 82.5 }],
+    "projectionExtinctions": ["w12"]
+  },
+  "forbiddenWords": ["intégrité", "integrity"],
+  "calendar": [
+    { "day": 1, "dateKey": "w10.day.1.date", "mode": "contraint" },
+    { "day": 2, "dateKey": "w10.day.2.date", "mode": "bascule" },
+    { "day": 3, "dateKey": "w10.day.3.date", "mode": "bascule" },
+    { "day": 4, "dateKey": "w10.day.4.date", "mode": "bascule" },
+    { "day": 5, "dateKey": "w10.day.5.date", "mode": "bascule" },
+    { "day": 6, "dateKey": "w10.day.6.date", "mode": "contraint" },
+    { "day": 7, "dateKey": "w10.day.7.date", "mode": "contraint" }
+  ],
+  "kit": [
+    { "id": "bracelet", "labelKey": "w10.kit.bracelet" },
+    { "id": "sectorCard", "labelKey": "w10.kit.sectorCard" },
+    { "id": "phone", "labelKey": "w10.kit.phone" },
+    { "id": "permitBook", "labelKey": "w10.kit.permitBook" },
+    { "id": "classSheet", "labelKey": "w10.kit.classSheet" },
+    { "id": "machineReceipt", "labelKey": "w10.kit.machineReceipt" },
+    { "id": "component", "labelKey": "w10.kit.component" }
+  ],
+  "survival": {
+    "start": 60, "floor": 0, "cap": 100, "dossierPerNight": -2,
+    "words": {
+      "base": [60, 60, 60, 60, 60, 40], "perName": 15, "overrunPerWord": -1,
+      "silence": { "freeUpTo": 20, "per": 5, "cap": 8 }, "sleep": { "value": 6, "maxRemaining": [20, 20, 20, 20, 20, 26] }
+    },
+    "glances": { "perGlance": -1, "floor": 3, "cap": 5 },
+    "orders": { "value": 2, "perDayCap": 2 },
+    "entries": {
+      "offer.named": { "delta": 12, "counter": "names" },
+      "offer.refused.j2": { "delta": 0 }, "offer.refused.j3": { "delta": 0 },
+      "offer.refused.j4": { "delta": -5 },
+      "offer.refused.j5": { "delta": -2, "carry": { "night": 6, "delta": -2 } },
+      "permit": { "delta": -9, "zeroOnDays": [7], "mention": "sortantDeclare" },
+      "found7": { "delta": -10 }, "absentRegistre": { "delta": -4, "zeroOnDays": [3] },
+      "receiptNotShown": { "delta": -6 }, "flaggedWord": { "delta": -2 }, "consignedFlag": { "delta": -6 },
+      "phoneLeft": { "delta": -3 }, "scanFlagged": { "delta": -6 }, "letterKept": { "delta": -3 },
+      "question": { "delta": -1 }, "wordsBoughtOver10": { "delta": -2 }, "bribe": { "delta": -4 },
+      "informant": { "delta": -6 }, "secondBribe": { "delta": -15 }, "bypassNacelle": { "delta": -3 }, "patrol": { "delta": -8 },
+      "relecture.flag": { "delta": 0 }, "relecture.pass": { "delta": 0 }
+    },
+    "paliers": [
+      { "from": 59.5, "id": "courtesy" }, { "from": 39.5, "id": "thanks" },
+      { "from": 24.5, "id": "patience" }, { "from": 0, "id": "appointment" }
+    ],
+    "arrest": { "nightBelow": 0.5, "auditionBelow": 24.5 },
+    "lastNight": 6, "recruitNames": 2,
+    "report": { "prices": {}, "comforts": [] }
+  },
+  "street": {
+    "clock": { "msPerHour": 12000, "dayStartMinute": 420, "dayEndMinute": 1320 },
+    "moments": { "noonMinute": 720, "eveningMinute": 1050 },
+    "registre": { "closedDays": [3, 7], "relectureDays": [1, 2, 4, 5, 6] },
+    "gaze": { "coneDeg": 40, "holdMs": 4000, "rangeM": 12, "rangeWideM": 18, "widePaliers": ["patience", "appointment"], "nacelleZ": [36, 16, 4, -2, -20] },
+    "checkpoint": {
+      "z": -12,
+      "drawAnchorHour": 7,
+      "forcedWords": { "comply": 14, "buy": 3 },
+      "minutes": { "comply": 60, "buy": 10, "bypass": 90, "closedGate": 120, "patrol": 120 },
+      "bypassWeights": [1, 2, 1],
+      "guideWeights": [7, 1],
+      "closedGateWeights": [1, 1, 2],
+      "informant": [1, 4],
+      "bonsPrice": { "normal": 8, "closedGate": 16 }
+    },
+    "lines": {
+      "say": {
+        "filler.1": { "key": "w10.line.filler.1", "words": 1, "question": false, "flaggedWords": 0 }
+      },
+      "relecture": {
+        "1": [{ "key": "w10.doc.relecture.j1.1", "whenEntry": "wordsBoughtOver10" }, { "key": "w10.doc.relecture.j1.2", "whenEntry": null }],
+        "2": [{ "key": "w10.doc.relecture.j2.1", "whenEntry": null }, { "key": "w10.doc.relecture.j2.2", "whenEntry": null }],
+        "4": [{ "key": "w10.doc.relecture.j4.2", "whenEntry": null }, { "key": "w10.doc.relecture.j4.1", "whenEntry": null }],
+        "5": [{ "key": "w10.doc.relecture.j5.1", "whenEntry": null }, { "key": "w10.doc.relecture.j5.2", "whenEntry": null }],
+        "6": [{ "key": "w10.doc.relecture.j6.1", "whenEntry": null }, { "key": "w10.doc.relecture.j6.2", "whenEntry": "permit" }]
+      }
+    },
+    "choices": [
+      {
+        "id": "checkpoint.j1", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": {"key": "w10.street.trace.absent", "day": 2}, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j2", "kind": "gesture", "day": 2, "days": [2], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": {"key": "w10.street.trace.absent", "day": 3}, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j3", "kind": "gesture", "day": 3, "days": [3], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j4", "kind": "gesture", "day": 4, "days": [4], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": {"key": "w10.street.trace.absent", "day": 5}, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j5", "kind": "gesture", "day": 5, "days": [5], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": {"key": "w10.street.trace.absent", "day": 6}, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j6", "kind": "gesture", "day": 6, "days": [6], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": {"key": "w10.street.trace.absent", "day": 7}, "neutral": false }
+        ]
+      },
+      {
+        "id": "checkpoint.j7", "kind": "gesture", "day": 7, "days": [7], "blocksExit": false,
+        "options": [
+          { "id": "comply", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.comply", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:permission", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:bons", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "buy:component", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "bypass", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.checkpoint.bypass", "words": 0, "trace": null, "neutral": false },
+          { "id": "courtesy", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.inv.checkpoint.courtesy", "words": 0, "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.checkpoint.refuse", "words": 0, "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "door.noon", "kind": "gesture", "day": null, "days": [1, 2, 4, 5, 6], "blocksExit": false,
+        "options": [
+          { "id": "stay", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.door.noon.stay", "words": 0, "entries": ["absentRegistre"], "trace": {"key": "w10.street.trace.absent", "day": 2}, "neutral": false },
+          { "id": "go", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.door.noon.go", "words": 0, "entries": ["absentRegistre"], "trace": {"key": "w10.street.trace.absent", "day": 2}, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.door.noon.refuse", "words": 0, "entries": ["absentRegistre"], "trace": {"key": "w10.street.trace.absent", "day": 2}, "neutral": false }
+        ]
+      },
+      {
+        "id": "j1.phone", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "take", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.j1.phone.take", "words": 0, "kitEvent": "j1.phone.take", "trace": null, "neutral": true },
+          { "id": "leave", "isRefusal": true, "priceRef": "§8.2", "priceLineKey": "w10.price.j1.phone.leave", "words": 0, "entries": ["phoneLeft"], "kitEvent": "j1.phone.leave", "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "j1.component", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "take", "isRefusal": false, "priceRef": "§7.4", "priceLineKey": "w10.price.j1.component.take", "words": 0, "kitEvent": "j1.component.take", "trace": null, "neutral": false },
+          { "id": "leave", "isRefusal": true, "priceRef": "§7.4", "priceLineKey": "w10.price.j1.component.leave", "words": 0, "kitEvent": "j1.component.leave", "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "j2.component", "kind": "offer", "day": 2, "days": [2], "blocksExit": true,
+        "options": [
+          { "id": "hide", "isRefusal": true, "priceRef": "§8.1", "priceLineKey": "w10.price.j2.component.hide", "words": 0, "entries": ["offer.refused.j2"], "kitEvent": "j2.hide", "trace": null, "neutral": false },
+          { "id": "keep", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j2.component.keep", "words": 0, "kitEvent": "j2.keep", "trace": null, "neutral": false },
+          { "id": "declare", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j2.component.declare", "words": 8, "entries": ["offer.named"], "kitEvent": "j2.declare", "trace": {"key": "w10.street.trace.j2.seized", "day": 3}, "neutral": false },
+          { "id": "leaveVisible", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j2.component.leaveVisible", "words": 0, "entries": ["found7"], "kitEvent": "j2.leaveVisible", "trace": {"key": "w10.street.trace.j2.seized", "day": 3}, "neutral": false }
+        ]
+      },
+      {
+        "id": "m1.scan", "kind": "gesture", "day": null, "days": [1, 3], "blocksExit": false,
+        "options": [
+          { "id": "scan", "isRefusal": false, "priceRef": "§8.2", "priceLineKey": "w10.price.m1.scan.scan", "words": 0, "trace": null, "neutral": false },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.m1.scan.pass", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "m2.nadia", "kind": "gesture", "day": null, "days": [1, 2, 3, 4, 5], "blocksExit": false,
+        "options": [
+          { "id": "buy", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.m2.nadia.buy", "words": 0, "trace": null, "neutral": false },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.m2.nadia.pass", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "m3.letter", "kind": "gesture", "day": null, "days": [1, 3], "blocksExit": false,
+        "options": [
+          { "id": "keep", "isRefusal": false, "priceRef": "§8.2", "priceLineKey": "w10.price.m3.letter.keep", "words": 0, "entries": ["letterKept"], "kitEvent": "letter.keep", "trace": null, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.m3.letter.refuse", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "m4.list", "kind": "gesture", "day": null, "days": [1, 6], "blocksExit": false,
+        "options": [
+          { "id": "read", "isRefusal": false, "priceRef": "§8.2", "priceLineKey": "w10.price.m4.list.read", "words": 0, "trace": null, "neutral": false },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.m4.list.pass", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "m5.yusuf", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "exchange", "isRefusal": false, "priceRef": "§8.2", "priceLineKey": "w10.price.m5.yusuf.exchange", "words": 0, "kitEvent": "m5.exchange", "trace": null, "neutral": false },
+          { "id": "talk", "isRefusal": false, "priceRef": "§8.2", "priceLineKey": "w10.price.m5.yusuf.talk", "words": 0, "trace": null, "neutral": false },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.m5.yusuf.pass", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "relecture.j1", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "flag", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.flag"], "trace": {"key": "w10.npc.bruno.taux", "day": 2}, "neutral": true },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.pass"], "trace": {"key": "w10.npc.bruno.taux", "day": 2}, "neutral": true }
+        ]
+      },
+      {
+        "id": "relecture.j2", "kind": "gesture", "day": 2, "days": [2], "blocksExit": false,
+        "options": [
+          { "id": "flag", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.flag"], "trace": {"key": "w10.npc.bruno.taux", "day": 3}, "neutral": true },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.pass"], "trace": {"key": "w10.npc.bruno.taux", "day": 3}, "neutral": true }
+        ]
+      },
+      {
+        "id": "relecture.j4", "kind": "gesture", "day": 4, "days": [4], "blocksExit": false,
+        "options": [
+          { "id": "flag", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.flag"], "trace": {"key": "w10.npc.bruno.taux", "day": 5}, "neutral": true },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.pass"], "trace": {"key": "w10.npc.bruno.taux", "day": 5}, "neutral": true }
+        ]
+      },
+      {
+        "id": "relecture.j5", "kind": "gesture", "day": 5, "days": [5], "blocksExit": false,
+        "options": [
+          { "id": "flag", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.flag"], "trace": {"key": "w10.npc.bruno.taux", "day": 6}, "neutral": true },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.pass"], "trace": {"key": "w10.npc.bruno.taux", "day": 6}, "neutral": true }
+        ]
+      },
+      {
+        "id": "relecture.j6", "kind": "gesture", "day": 6, "days": [6], "blocksExit": false,
+        "options": [
+          { "id": "flag", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.flag"], "trace": {"key": "w10.npc.bruno.taux", "day": 7}, "neutral": true },
+          { "id": "pass", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.relecture", "words": 0, "entries": ["relecture.pass"], "trace": {"key": "w10.npc.bruno.taux", "day": 7}, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j1", "kind": "gesture", "day": 1, "days": [1], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": {"key": "w10.street.trace.permit.halved", "day": 2}, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j2", "kind": "gesture", "day": 2, "days": [2], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": {"key": "w10.street.trace.permit.halved", "day": 3}, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j4", "kind": "gesture", "day": 4, "days": [4], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": {"key": "w10.street.trace.permit.halved", "day": 5}, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j5", "kind": "gesture", "day": 5, "days": [5], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": {"key": "w10.street.trace.permit.halved", "day": 6}, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j6", "kind": "gesture", "day": 6, "days": [6], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": {"key": "w10.street.trace.permit.halved", "day": 7}, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "permit.j7", "kind": "gesture", "day": 7, "days": [7], "blocksExit": false,
+        "options": [
+          { "id": "request", "isRefusal": false, "priceRef": "§7.7", "priceLineKey": "w10.price.inv.permit.request", "words": 0, "entries": ["permit"], "kitEvent": "permit.request", "trace": null, "neutral": false },
+          { "id": "dontAsk", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.permit.dontAsk", "words": 0, "trace": null, "neutral": true }
+        ]
+      },
+      {
+        "id": "j2.receipt", "kind": "gesture", "day": 2, "days": [2], "blocksExit": false,
+        "options": [
+          { "id": "show", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.j2.receipt.show", "words": 0, "kitEvent": "j2.showReceipt", "trace": null, "neutral": true },
+          { "id": "notShow", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.j2.receipt.notShow", "words": 0, "entries": ["receiptNotShown"], "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "j3.marlene", "kind": "offer", "day": 3, "days": [3], "blocksExit": false,
+        "options": [
+          { "id": "name", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j3.marlene.name", "words": 8, "entries": ["offer.named"], "trace": {"key": "w10.street.trace.target.empty", "day": 4}, "neutral": false },
+          { "id": "banal", "isRefusal": true, "priceRef": "§8.1", "priceLineKey": "w10.price.inv.j3.marlene.banal", "words": 8, "entries": ["offer.refused.j3"], "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "j4.neighbour", "kind": "offer", "day": 4, "days": [4], "blocksExit": false,
+        "options": [
+          { "id": "name", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j4.neighbour.name", "words": 8, "entries": ["offer.named"], "trace": {"key": "w10.street.trace.target.empty", "day": 5}, "neutral": false },
+          { "id": "silent", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.j4.neighbour.silent", "words": 0, "entries": ["offer.refused.j4"], "trace": null, "neutral": false }
+        ]
+      },
+      {
+        "id": "j5.bruno", "kind": "offer", "day": 5, "days": [5], "blocksExit": false,
+        "options": [
+          { "id": "name", "isRefusal": false, "priceRef": "§7.3", "priceLineKey": "w10.price.j5.bruno.name", "words": 8, "entries": ["offer.named"], "trace": {"key": "w10.street.trace.j5.carGone", "day": 6}, "neutral": false },
+          { "id": "refuse", "isRefusal": true, "priceRef": "§7.3", "priceLineKey": "w10.price.j5.bruno.refuse", "words": 0, "entries": ["offer.refused.j5"], "trace": {"key": "w10.street.trace.j5.moved", "day": 6}, "neutral": false }
+        ]
+      },
+      {
+        "id": "audition.j7", "kind": "gesture", "day": 7, "days": [7], "blocksExit": false,
+        "options": [
+          { "id": "all", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.audition.j7.all", "words": 0, "trace": null, "neutral": true },
+          { "id": "none", "isRefusal": false, "priceRef": "neutre", "priceLineKey": "w10.price.audition.j7.none", "words": 0, "trace": null, "neutral": true },
+          { "id": "silence", "isRefusal": true, "priceRef": "neutre", "priceLineKey": "w10.price.audition.j7.silence", "words": 0, "trace": null, "neutral": true }
+        ]
+      }
+    ],
+    "jalons": [
+      { "id": "j2.agentReturn", "kind": "world", "day": 2, "atMinute": 1020, "waitsFor": null, "requires": { "choiceId": "j2.component", "options": ["keep", "leaveVisible"] } },
+      { "id": "j3.marlene.late", "kind": "world", "day": 3, "atMinute": 1140, "waitsFor": null, "requires": null },
+      { "id": "j4.door", "kind": "world", "day": 4, "atMinute": null, "waitsFor": "exitBuilding", "requires": null },
+      { "id": "j5.bruno.door", "kind": "world", "day": 5, "atMinute": 1110, "waitsFor": "door", "requires": null },
+      { "id": "audition.j7", "kind": "world", "day": 7, "atMinute": 1050, "waitsFor": null, "requires": null }
+    ],
+    "micro": [
+      { "id": "m1.scan", "day": 1, "traceKey": "w10.street.trace.micro.m1" },
+      { "id": "m1.scan", "day": 3, "traceKey": "w10.street.trace.micro.m1" },
+      { "id": "m2.nadia", "day": 1, "traceKey": "w10.street.trace.micro.m2" },
+      { "id": "m2.nadia", "day": 2, "traceKey": "w10.street.trace.micro.m2" },
+      { "id": "m2.nadia", "day": 3, "traceKey": "w10.street.trace.micro.m2" },
+      { "id": "m2.nadia", "day": 4, "traceKey": "w10.street.trace.micro.m2" },
+      { "id": "m2.nadia", "day": 5, "traceKey": "w10.street.trace.micro.m2" },
+      { "id": "m3.letter", "day": 1, "traceKey": null },
+      { "id": "m3.letter", "day": 3, "traceKey": null },
+      { "id": "m4.list", "day": 1, "traceKey": null },
+      { "id": "m4.list", "day": 6, "traceKey": null },
+      { "id": "m5.yusuf", "day": 1, "traceKey": "w10.street.trace.micro.m5" }
+    ],
+    "rights": {
+      "contacts": [
+        { "right": "move", "day": 1, "moment": "lever", "latestMinute": null, "conditional": false },
+        { "right": "speak", "day": 1, "moment": "rueAller", "latestMinute": null, "conditional": false },
+        { "right": "work", "day": 1, "moment": "travail", "latestMinute": null, "conditional": false },
+        { "right": "privacy", "day": 2, "moment": "lever", "latestMinute": null, "conditional": false },
+        { "right": "assemble", "day": 3, "moment": "rueAller", "latestMinute": null, "conditional": false },
+        { "right": "read", "day": 3, "moment": null, "latestMinute": null, "conditional": true },
+        { "right": "stay", "day": 4, "moment": "lever", "latestMinute": null, "conditional": false },
+        { "right": "leave", "day": 6, "moment": null, "latestMinute": 840, "conditional": true }
+      ]
+    },
+    "axes": [
+      { "day": 1, "axis": "vie", "type": "G", "owner": "" },
+      { "day": 1, "axis": "travail", "type": "G", "owner": "" },
+      { "day": 1, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 1, "axis": "liens", "type": "G", "owner": "" },
+      { "day": 1, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 1, "axis": "ia", "type": "G", "owner": "" },
+      { "day": 2, "axis": "vie", "type": "G", "owner": "" },
+      { "day": 2, "axis": "travail", "type": "G", "owner": "" },
+      { "day": 2, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 2, "axis": "liens", "type": "V", "owner": "" },
+      { "day": 2, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 2, "axis": "ia", "type": "V", "owner": "" },
+      { "day": 3, "axis": "vie", "type": "G", "owner": "" },
+      { "day": 3, "axis": "travail", "type": "D", "owner": "world-builder" },
+      { "day": 3, "axis": "rue", "type": "G", "owner": "" },
+      { "day": 3, "axis": "liens", "type": "G", "owner": "" },
+      { "day": 3, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 3, "axis": "ia", "type": "G", "owner": "" },
+      { "day": 4, "axis": "vie", "type": "V", "owner": "" },
+      { "day": 4, "axis": "travail", "type": "G", "owner": "" },
+      { "day": 4, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 4, "axis": "liens", "type": "G", "owner": "" },
+      { "day": 4, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 4, "axis": "ia", "type": "V", "owner": "" },
+      { "day": 5, "axis": "vie", "type": "V", "owner": "" },
+      { "day": 5, "axis": "travail", "type": "G", "owner": "" },
+      { "day": 5, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 5, "axis": "liens", "type": "G", "owner": "" },
+      { "day": 5, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 5, "axis": "ia", "type": "V", "owner": "" },
+      { "day": 6, "axis": "vie", "type": "V", "owner": "" },
+      { "day": 6, "axis": "travail", "type": "G", "owner": "" },
+      { "day": 6, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 6, "axis": "liens", "type": "G", "owner": "" },
+      { "day": 6, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 6, "axis": "ia", "type": "V", "owner": "" },
+      { "day": 7, "axis": "vie", "type": "V", "owner": "" },
+      { "day": 7, "axis": "travail", "type": "D", "owner": "world-builder" },
+      { "day": 7, "axis": "rue", "type": "V", "owner": "" },
+      { "day": 7, "axis": "liens", "type": "V", "owner": "" },
+      { "day": 7, "axis": "pouvoir", "type": "G", "owner": "" },
+      { "day": 7, "axis": "ia", "type": "V", "owner": "" }
+    ],
+    "evening": {
+      "gestureAxis": {
+        "checkpoint": "pouvoir",
+        "relecture": "travail",
+        "permit": "pouvoir",
+        "audition": "pouvoir",
+        "door.noon": "travail",
+        "j1.phone": "vie",
+        "j1.component": "vie",
+        "j2.component": "vie",
+        "j2.receipt": "vie",
+        "m3.letter": "vie",
+        "m1.scan": "ia",
+        "m2.nadia": "liens",
+        "m4.list": "liens",
+        "m5.yusuf": "liens",
+        "j3.marlene": "liens",
+        "j4.neighbour": "liens",
+        "j5.bruno": "liens"
+      },
+      "lines": [
+        { "axis": "vie", "fait": "w10.evening.vie.fait", "rien": "w10.evening.vie.rien" },
+        { "axis": "travail", "fait": "w10.evening.travail.fait", "rien": "w10.evening.travail.rien" },
+        { "axis": "rue", "fait": "w10.evening.rue.fait", "rien": "w10.evening.rue.rien" },
+        { "axis": "liens", "fait": "w10.evening.liens.fait", "rien": "w10.evening.liens.rien" },
+        { "axis": "pouvoir", "fait": "w10.evening.pouvoir.fait", "rien": "w10.evening.pouvoir.rien" },
+        { "axis": "ia", "fait": "w10.evening.ia.fait", "rien": "w10.evening.ia.rien" }
+      ]
+    },
+    "npcs": [
+      { "id": "nadia", "days": [1, 2, 3, 4, 5], "fromMinute": 420, "toMinute": 1050, "paliers": null, "lineKeys": [], "stock": 40 },
+      { "id": "berenice", "days": [1, 2, 4, 5, 6], "fromMinute": 480, "toMinute": 1140, "paliers": null, "lineKeys": ["w10.npc.berenice.1", "w10.npc.berenice.2", "w10.npc.berenice.3", "w10.npc.berenice.4"] },
+      { "id": "bruno", "days": [1, 2, 3, 4, 5, 6, 7], "fromMinute": 450, "toMinute": 1320, "paliers": null, "lineKeys": ["w10.npc.bruno.1", "w10.npc.bruno.2", "w10.npc.bruno.3", "w10.npc.bruno.4", "w10.npc.bruno.taux"] },
+      { "id": "yusuf", "days": [1, 2, 3, 4, 5, 6, 7], "fromMinute": 780, "toMinute": 1320, "paliers": null, "lineKeys": ["w10.npc.yusuf.1", "w10.npc.yusuf.2", "w10.npc.yusuf.3", "w10.npc.yusuf.4"] },
+      { "id": "marlene", "days": [1, 2, 3, 4, 5, 6, 7], "fromMinute": 540, "toMinute": 1140, "paliers": null, "lineKeys": ["w10.npc.marlene.1", "w10.npc.marlene.2", "w10.npc.marlene.3", "w10.npc.marlene.4"] },
+      { "id": "greyCar", "days": [1, 2, 3, 4, 5, 6, 7], "fromMinute": 450, "toMinute": 540, "paliers": ["patience"], "lineKeys": [] }
+    ],
+    "clickables": [
+      { "id": "npc", "responseKey": "w10.object.npc" },
+      { "id": "passerby", "responseKey": "w10.object.passerby" },
+      { "id": "stall", "responseKey": "w10.card.nadia" },
+      { "id": "wall", "responseKey": "w10.object.wall" },
+      { "id": "counter", "responseKey": "w10.object.counter" },
+      { "id": "radio", "responseKey": "w10.object.radio" },
+      { "id": "window9c", "responseKey": "w10.object.window9c" },
+      { "id": "scanBooth", "responseKey": "w10.object.scanBooth" },
+      { "id": "pylon", "responseKey": "w10.object.pylon" },
+      { "id": "bulletin", "responseKey": "w10.object.bulletin" },
+      { "id": "greyCar", "responseKey": "w10.object.greyCar" },
+      { "id": "bench", "responseKey": "w10.card.theodore" },
+      { "id": "vaultGate", "responseKey": "w10.object.vaultGate" }
+    ],
+    "echo": [
+      { "kind": "use", "idPrefix": "phone", "key": "usePhone" },
+      { "kind": "choice", "idPrefix": "relecture", "key": "workTech" }
+    ],
+    "exceptionJour": { "id": "E-J7", "day": 7, "source": "GDD 05 §3.6 ; D137, note Q8" },
+    "exceptionJourLibre": { "id": "w10.noFreeDay", "day": 3, "source": "GDD 05 §3.2 ; D137, Q2" },
+    "wallCounter": { "start": 3871, "perFlag": 1 },
+    "guided": {
+      "days": [
+        {"day": 1, "first": "j1.wake", "goalKey": "w10.scene.j1.goal"},
+        {"day": 2, "first": "j2.wake", "goalKey": "w10.scene.j2.goal"},
+        {"day": 3, "first": "j3.wake", "goalKey": "w10.scene.j3.goal"},
+        {"day": 4, "first": "j4.wake", "goalKey": "w10.scene.j4.goal"},
+        {"day": 5, "first": "j5.wake", "goalKey": "w10.scene.j5.goal", "right": "privacy"},
+        {"day": 6, "first": "j6.wake", "goalKey": "w10.scene.j6.goal"},
+        {"day": 7, "first": "j7.wake", "goalKey": "w10.scene.j7.goal", "right": "speak"}
+      ],
+      "scenes": [
+        {"id": "j1.wake", "day": 1, "stage": "home", "place": "unit.9-D", "anchorMinute": 430, "costMin": 0, "late": null, "actor": null, "beats": [], "ask": {"kind": "priced", "choiceId": "j1.phone", "next": {"take": "j1.component", "leave": "j1.component"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j1.component", "day": 1, "stage": "home", "place": "unit.9-D", "anchorMinute": 431, "costMin": 2, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j1.component.1", "lit": "component"}], "ask": {"kind": "priced", "choiceId": "j1.component", "next": {"take": "j1.roux", "leave": "j1.roux"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j1.roux", "day": 1, "stage": "landing", "place": "door.9-C", "anchorMinute": 434, "costMin": 3, "late": null, "actor": {"id": "roux", "bodyId": "crowd_b", "nameKey": "w10.scene.name.roux", "actionKey": "w10.scene.j1.roux.action", "clip": "talk"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.roux.1", "lit": null}, {"voice": "person", "key": "w10.scene.j1.roux.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j1.roux.ask", "options": [{"id": "laugh", "labelKey": "w10.scene.j1.roux.laugh", "words": 8, "next": "j1.marlene", "replyKey": "w10.scene.j1.roux.laugh.me"}, {"id": "weather", "labelKey": "w10.scene.j1.roux.weather", "words": 5, "next": "j1.marlene", "replyKey": "w10.scene.j1.roux.weather.me"}, {"id": "silent", "labelKey": "w10.scene.j1.roux.silent", "words": 0, "next": "j1.marlene", "replyKey": "w10.scene.j1.roux.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j1.marlene", "day": 1, "stage": "landing", "place": "door.9-B", "anchorMinute": 438, "costMin": 2, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j1.marlene.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.marlene.1", "lit": null}, {"voice": "person", "key": "w10.scene.j1.marlene.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j1.marlene.ask", "options": [{"id": "answer", "labelKey": "w10.scene.j1.marlene.answer", "words": 48, "next": "j1.street", "replyKey": "w10.scene.j1.marlene.answer.me"}, {"id": "nod", "labelKey": "w10.scene.j1.marlene.nod", "words": 26, "next": "j1.street", "replyKey": "w10.scene.j1.marlene.nod.me"}, {"id": "ignore", "labelKey": "w10.scene.j1.marlene.ignore", "words": 0, "next": "j1.street", "replyKey": "w10.scene.j1.marlene.ignore.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j1.street", "day": 1, "stage": "street", "place": "street.mid", "anchorMinute": 441, "costMin": 0, "late": null, "actor": {"id": "nadia", "bodyId": "npc.nadia", "nameKey": "w10.scene.name.nadia", "actionKey": "w10.scene.j1.street.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.street.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j1.street.ask", "options": [{"id": "straight", "labelKey": "w10.scene.j1.street.straight", "words": 0, "next": "j1.checkpoint", "replyKey": null}, {"id": "nadia", "labelKey": "w10.scene.j1.street.nadia", "words": 0, "next": "j1.nadia", "replyKey": null}, {"id": "scan", "labelKey": "w10.scene.j1.street.scan", "words": 0, "next": "j1.scan", "replyKey": null}]}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "none"},
+        {"id": "j1.nadia", "day": 1, "stage": "street", "place": "anchor.stall.front", "anchorMinute": 442, "costMin": 3, "late": null, "actor": {"id": "nadia", "bodyId": "npc.nadia", "nameKey": "w10.scene.name.nadia", "actionKey": "w10.scene.j1.nadia.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.scene.j1.nadia.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "m2.nadia", "next": {"buy": "j1.checkpoint", "pass": "j1.checkpoint"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j1.scan", "day": 1, "stage": "street", "place": "place.cabine", "anchorMinute": 442, "costMin": 60, "late": null, "actor": {"id": "queue", "bodyId": "crowd_a", "nameKey": "w10.scene.name.queue", "actionKey": "w10.scene.j1.scan.action", "clip": "queue"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.scan.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "m1.scan", "next": {"scan": "j1.checkpoint", "pass": "j1.checkpoint"}, "ifUnavailable": null}, "transit": [], "waitKind": "queue"},
+        {"id": "j1.checkpoint", "day": 1, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 445, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j1.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "regime", "key": "w10.scene.j1.checkpoint.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j1", "next": {"comply": "j1.registre", "buy:permission": "j1.registre", "buy:bons": "j1.registre", "buy:component": "j1.registre", "bypass": "j1.registre", "courtesy": "j1.registre", "refuse": "night"}, "ifUnavailable": null}, "transit": [], "waitKind": "queue"},
+        {"id": "j1.registre", "day": 1, "stage": "registre", "place": "place.registre", "anchorMinute": 510, "costMin": 30, "late": {"afterMinute": 510, "next": "j1.registre.late", "lineKey": "w10.scene.j1.registre.lateLine"}, "actor": {"id": "berenice", "bodyId": "npc.berenice", "nameKey": "w10.scene.name.berenice", "actionKey": "w10.scene.j1.registre.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.scene.j1.registre.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "m4.list", "next": {"read": "j1.relecture", "pass": "j1.relecture"}, "ifUnavailable": null}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j1.registre.late", "day": 1, "stage": "registre", "place": "place.registre", "anchorMinute": 511, "costMin": 0, "late": null, "actor": {"id": "berenice", "bodyId": "npc.berenice", "nameKey": "w10.scene.name.berenice", "actionKey": "w10.scene.j1.registre.late.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.registre.late.1", "lit": null}], "ask": {"kind": "none", "next": "j1.relecture"}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j1.relecture", "day": 1, "stage": "registre", "place": "place.registre", "anchorMinute": 540, "costMin": 240, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j1.relecture.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j1.relecture.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "relecture.j1", "next": {"flag": "night", "pass": "night"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j2.wake", "day": 2, "stage": "home", "place": "unit.9-D", "anchorMinute": 420, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j2.wake.1", "lit": "phone"}, {"voice": "regime", "key": "w10.scene.j2.wake.2", "lit": "phone"}], "ask": {"kind": "priced", "choiceId": "j2.component", "next": {"hide": "j2.marlene", "keep": "j2.marlene", "declare": "j2.marlene", "leaveVisible": "j2.marlene"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j2.marlene", "day": 2, "stage": "landing", "place": "door.9-B", "anchorMinute": 430, "costMin": 2, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j2.marlene.action", "clip": "walk"}, "beats": [{"voice": "person", "key": "w10.scene.j2.marlene.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j2.marlene.ask", "options": [{"id": "talk", "labelKey": "w10.scene.j2.marlene.talk", "words": 56, "next": "j2.checkpoint", "replyKey": "w10.scene.j2.marlene.talk.me"}, {"id": "banal", "labelKey": "w10.scene.j2.marlene.banal", "words": 26, "next": "j2.checkpoint", "replyKey": "w10.scene.j2.marlene.banal.me"}, {"id": "silent", "labelKey": "w10.scene.j2.marlene.silent", "words": 0, "next": "j2.checkpoint", "replyKey": "w10.scene.j2.marlene.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j2.checkpoint", "day": 2, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 450, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j2.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "regime", "key": "w10.scene.j2.checkpoint.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j2", "next": {"comply": "j2.relecture", "buy:permission": "j2.relecture", "buy:bons": "j2.relecture", "buy:component": "j2.relecture", "bypass": "j2.relecture", "courtesy": "j2.relecture", "refuse": "j2.agent"}, "ifUnavailable": null}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "queue"},
+        {"id": "j2.relecture", "day": 2, "stage": "registre", "place": "place.registre", "anchorMinute": 520, "costMin": 240, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j2.relecture.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j2.relecture.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "relecture.j2", "next": {"flag": "j2.agent", "pass": "j2.agent"}, "ifUnavailable": null}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j2.agent", "day": 2, "stage": "evening", "place": "unit.9-D", "anchorMinute": 1020, "costMin": 10, "late": null, "actor": {"id": "agent", "bodyId": "crowd_c", "nameKey": "w10.scene.name.agent", "actionKey": "w10.scene.j2.agent.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.scene.j2.agent.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "j2.agentReturn", "next": {"go": "night"}, "ifUnavailable": "night"}, "transit": [{"kind": "exit", "id": "registre"}, {"kind": "enter", "id": "home"}], "waitKind": "none"},
+        {"id": "j3.wake", "day": 3, "stage": "home", "place": "unit.9-D", "anchorMinute": 540, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j3.wake.1", "lit": "phone"}, {"voice": "regime", "key": "w10.scene.j3.wake.2", "lit": "phone"}], "ask": {"kind": "none", "next": "j3.pylone"}, "transit": [], "waitKind": "none"},
+        {"id": "j3.pylone", "day": 3, "stage": "street", "place": "place.pylone", "anchorMinute": 660, "costMin": 20, "late": null, "actor": {"id": "roux", "bodyId": "crowd_b", "nameKey": "w10.scene.name.roux", "actionKey": "w10.scene.j3.pylone.action", "clip": "idle"}, "beats": [{"voice": "regime", "key": "w10.scene.j3.pylone.1", "lit": null}, {"voice": "narrator", "key": "w10.scene.j3.pylone.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j3.pylone.ask", "options": [{"id": "recite", "labelKey": "w10.scene.j3.pylone.recite", "words": 9, "next": "j3.after", "replyKey": "w10.scene.j3.pylone.recite.me"}, {"id": "warn", "labelKey": "w10.scene.j3.pylone.warn", "words": 21, "next": "j3.after", "replyKey": "w10.scene.j3.pylone.warn.me"}, {"id": "silent", "labelKey": "w10.scene.j3.pylone.silent", "words": 0, "next": "j3.after", "replyKey": "w10.scene.j3.pylone.silent.me"}]}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "none"},
+        {"id": "j3.after", "day": 3, "stage": "street", "place": "place.pylone", "anchorMinute": 680, "costMin": 0, "late": null, "actor": {"id": "theodore", "bodyId": "crowd_a", "nameKey": "w10.scene.name.theodore", "actionKey": "w10.scene.j3.after.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j3.after.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j3.after.ask", "options": [{"id": "bench", "labelKey": "w10.scene.j3.after.bench", "words": 0, "next": "j3.theodore", "replyKey": null}, {"id": "cantine", "labelKey": "w10.scene.j3.after.cantine", "words": 0, "next": "j3.checkpoint", "replyKey": null}, {"id": "home", "labelKey": "w10.scene.j3.after.home", "words": 0, "next": "j3.marlene", "replyKey": null}]}, "transit": [], "waitKind": "none"},
+        {"id": "j3.theodore", "day": 3, "stage": "street", "place": "bench.theodore", "anchorMinute": 840, "costMin": 15, "late": null, "actor": {"id": "theodore", "bodyId": "crowd_a", "nameKey": "w10.scene.name.theodore", "actionKey": "w10.scene.j3.theodore.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.scene.j3.theodore.1", "lit": null}, {"voice": "person", "key": "w10.scene.j3.theodore.2", "lit": null}], "ask": {"kind": "priced", "choiceId": "m3.letter", "next": {"keep": "j3.marlene", "refuse": "j3.marlene"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j3.checkpoint", "day": 3, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 720, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j3.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "regime", "key": "w10.scene.j3.checkpoint.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j3", "next": {"comply": "j3.cantine", "buy:permission": "j3.cantine", "buy:bons": "j3.cantine", "buy:component": "j3.cantine", "bypass": "j3.cantine", "courtesy": "j3.cantine", "refuse": "j3.marlene"}, "ifUnavailable": null}, "transit": [], "waitKind": "queue"},
+        {"id": "j3.cantine", "day": 3, "stage": "registre", "place": "place.cantine", "anchorMinute": 780, "costMin": 40, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j3.cantine.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.npc.bruno.taux", "lit": null}, {"voice": "person", "key": "w10.scene.j3.cantine.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j3.cantine.ask", "options": [{"id": "work", "labelKey": "w10.scene.j3.cantine.work", "words": 12, "next": "j3.marlene", "replyKey": "w10.scene.j3.cantine.work.me"}, {"id": "long", "labelKey": "w10.scene.j3.cantine.long", "words": 28, "next": "j3.marlene", "replyKey": "w10.scene.j3.cantine.long.me"}, {"id": "silent", "labelKey": "w10.scene.j3.cantine.silent", "words": 0, "next": "j3.marlene", "replyKey": "w10.scene.j3.cantine.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j3.marlene", "day": 3, "stage": "home", "place": "unit.9-D", "anchorMinute": 960, "costMin": 10, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j3.marlene.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.scene.j3.marlene.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "j3.marlene", "next": {"name": "j3.who", "banal": "night"}, "ifUnavailable": null}, "transit": [{"kind": "enter", "id": "home"}], "waitKind": "none"},
+        {"id": "j3.who", "day": 3, "stage": "home", "place": "unit.9-D", "anchorMinute": 961, "costMin": 0, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j3.who.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j3.who.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j3.who.ask", "options": [{"id": "theodore", "labelKey": "w10.scene.j3.who.theodore", "words": 0, "next": "night", "replyKey": "w10.scene.j3.who.theodore.me"}, {"id": "nadia", "labelKey": "w10.scene.j3.who.nadia", "words": 0, "next": "night", "replyKey": "w10.scene.j3.who.nadia.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j4.wake", "day": 4, "stage": "home", "place": "unit.9-D", "anchorMinute": 450, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j4.wake.1", "lit": null}, {"voice": "narrator", "lit": null, "byLink": {"link": "B3w", "keys": {"theodore": "w10.scene.j4.wake.bench"}, "otherwise": null}}, {"voice": "regime", "key": "w10.scene.j4.wake.2", "lit": "phone"}], "ask": {"kind": "none", "next": "j4.door"}, "transit": [], "waitKind": "none"},
+        {"id": "j4.door", "day": 4, "stage": "landing", "place": "door.9-C", "anchorMinute": 460, "costMin": 3, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j4.door.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j4.door.1", "lit": null}, {"voice": "regime", "key": "w10.scene.j4.door.2", "lit": "phone"}], "ask": {"kind": "priced", "choiceId": "j4.door", "next": {"go": "j4.neighbour"}, "ifUnavailable": "j4.neighbour"}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "none"},
+        {"id": "j4.neighbour", "day": 4, "stage": "landing", "place": "door.9-B", "anchorMinute": 461, "costMin": 3, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j4.neighbour.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.scene.j4.neighbour.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "j4.neighbour", "next": {"name": "j4.who", "silent": "j4.daughter"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j4.who", "day": 4, "stage": "landing", "place": "door.9-B", "anchorMinute": 462, "costMin": 0, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j4.who.action", "clip": "idle"}, "beats": [], "ask": {"kind": "narrative", "promptKey": "w10.scene.j4.who.ask", "options": [{"id": "yusuf", "labelKey": "w10.scene.j4.who.yusuf", "words": 0, "next": "j4.daughter", "replyKey": "w10.scene.j4.who.yusuf.me"}, {"id": "fille", "labelKey": "w10.scene.j4.who.fille", "words": 0, "next": "j4.daughter", "replyKey": "w10.scene.j4.who.fille.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j4.daughter", "day": 4, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 470, "costMin": 5, "late": null, "actor": {"id": "fille", "bodyId": "crowd_a", "nameKey": "w10.scene.name.fille", "actionKey": "w10.scene.j4.daughter.action", "clip": "idle"}, "beats": [{"voice": "narrator", "lit": null, "byLink": {"link": "B3w", "keys": {"nadia": "w10.scene.j4.daughter.stall"}, "otherwise": "w10.scene.j4.daughter.queue"}}, {"voice": "person", "key": "w10.scene.j4.daughter.1", "lit": null}, {"voice": "person", "key": "w10.scene.j4.daughter.2", "lit": null}, {"voice": "person", "key": "w10.scene.j4.daughter.3", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j4.daughter.ask", "options": [{"id": "truth", "labelKey": "w10.scene.j4.daughter.truth", "words": 30, "next": "j4.checkpoint", "replyKey": "w10.scene.j4.daughter.truth.me"}, {"id": "dontknow", "labelKey": "w10.scene.j4.daughter.dontknow", "words": 4, "next": "j4.checkpoint", "replyKey": "w10.scene.j4.daughter.dontknow.me"}, {"id": "silent", "labelKey": "w10.scene.j4.daughter.silent", "words": 0, "next": "j4.checkpoint", "replyKey": "w10.scene.j4.daughter.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j4.checkpoint", "day": 4, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 475, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j4.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "regime", "key": "w10.scene.j4.checkpoint.1", "lit": null}, {"voice": "regime", "lit": null, "byLink": {"link": "A1", "keys": {"laugh": "w10.doc.extrait.j4.laugh", "weather": "w10.doc.extrait.j4.weather", "silent": "w10.doc.extrait.j4.silent"}, "otherwise": "w10.doc.extrait.j4.otherwise"}}, {"voice": "narrator", "key": "w10.scene.j4.checkpoint.2", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j4", "next": {"comply": "j4.relecture", "buy:permission": "j4.relecture", "buy:bons": "j4.relecture", "buy:component": "j4.relecture", "bypass": "j4.relecture", "courtesy": "j4.relecture", "refuse": "j4.street"}, "ifUnavailable": null}, "transit": [], "waitKind": "queue"},
+        {"id": "j4.relecture", "day": 4, "stage": "registre", "place": "place.registre", "anchorMinute": 540, "costMin": 240, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j4.relecture.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j4.relecture.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "relecture.j4", "next": {"flag": "j4.evening", "pass": "j4.evening"}, "ifUnavailable": null}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j4.evening", "day": 4, "stage": "registre", "place": "place.registre", "anchorMinute": 1050, "costMin": 0, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j4.evening.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j4.evening.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j4.evening.ask", "options": [{"id": "home", "labelKey": "w10.scene.j4.evening.home", "words": 0, "next": "night", "replyKey": null}, {"id": "yusuf", "labelKey": "w10.scene.j4.evening.yusuf", "words": 0, "next": "j4.yusuf", "replyKey": null}]}, "transit": [{"kind": "exit", "id": "registre"}], "waitKind": "none"},
+        {"id": "j4.street", "day": 4, "stage": "street", "place": "street.mid", "anchorMinute": 1050, "costMin": 0, "late": null, "actor": {"id": "yusuf", "bodyId": "npc.yusuf", "nameKey": "w10.scene.name.yusuf", "actionKey": "w10.scene.j4.street.action", "clip": "walk"}, "beats": [{"voice": "narrator", "key": "w10.scene.j4.street.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j4.street.ask", "options": [{"id": "home", "labelKey": "w10.scene.j4.evening.home", "words": 0, "next": "night", "replyKey": null}, {"id": "yusuf", "labelKey": "w10.scene.j4.evening.yusuf", "words": 0, "next": "j4.yusuf", "replyKey": null}]}, "transit": [], "waitKind": "none"},
+        {"id": "j4.yusuf", "day": 4, "stage": "street", "place": "shop.yusuf", "anchorMinute": 1270, "costMin": 25, "late": null, "actor": {"id": "yusuf", "bodyId": "npc.yusuf", "nameKey": "w10.scene.name.yusuf", "actionKey": "w10.scene.j4.yusuf.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.npc.yusuf.1", "lit": null}, {"voice": "person", "lit": null, "byLink": {"link": "E2", "keys": {"hide": "w10.scene.j4.yusuf.unnumbered", "keep": "w10.scene.j4.yusuf.unnumbered", "declare": "w10.scene.j4.yusuf.taken", "leaveVisible": "w10.scene.j4.yusuf.taken"}, "otherwise": "w10.scene.j4.yusuf.unnumbered"}}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j4.yusuf.ask", "options": [{"id": "what", "labelKey": "w10.scene.j4.yusuf.what", "words": 9, "next": "night", "replyKey": "w10.scene.j4.yusuf.what.me"}, {"id": "roux", "labelKey": "w10.scene.j4.yusuf.roux", "words": 28, "next": "night", "replyKey": "w10.scene.j4.yusuf.roux.me"}, {"id": "silent", "labelKey": "w10.scene.j4.yusuf.silent", "words": 0, "next": "night", "replyKey": "w10.scene.j4.yusuf.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j5.wake", "day": 5, "stage": "home", "place": "unit.9-D", "anchorMinute": 450, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j5.wake.1", "lit": null}, {"voice": "regime", "key": "w10.scene.j5.wake.2", "lit": "phone"}], "ask": {"kind": "route", "link": "B4w", "next": {"fille": "j5.sealed"}, "otherwise": "j5.daughter"}, "transit": [], "waitKind": "none"},
+        {"id": "j5.daughter", "day": 5, "stage": "landing", "place": "door.9-C", "anchorMinute": 455, "costMin": 5, "late": null, "actor": {"id": "fille", "bodyId": "crowd_a", "nameKey": "w10.scene.name.fille", "actionKey": "w10.scene.j5.daughter.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.scene.j5.daughter.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j5.daughter.ask", "options": [{"id": "promise", "labelKey": "w10.scene.j5.daughter.promise", "words": 8, "next": "j5.checkpoint", "replyKey": "w10.scene.j5.daughter.promise.me"}, {"id": "long", "labelKey": "w10.scene.j5.daughter.long", "words": 30, "next": "j5.checkpoint", "replyKey": "w10.scene.j5.daughter.long.me"}, {"id": "silent", "labelKey": "w10.scene.j5.daughter.silent", "words": 0, "next": "j5.checkpoint", "replyKey": "w10.scene.j5.daughter.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j5.sealed", "day": 5, "stage": "landing", "place": "door.9-C", "anchorMinute": 455, "costMin": 2, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j5.sealed.action", "clip": "walk"}, "beats": [{"voice": "narrator", "key": "w10.scene.j5.sealed.1", "lit": null}], "ask": {"kind": "none", "next": "j5.checkpoint"}, "transit": [], "waitKind": "none"},
+        {"id": "j5.checkpoint", "day": 5, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 470, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j5.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "narrator", "lit": null, "byLink": {"link": "B4w", "keys": {"yusuf": "w10.scene.j5.checkpoint.sealed"}, "otherwise": "w10.scene.j5.checkpoint.queue"}}, {"voice": "regime", "key": "w10.scene.j5.checkpoint.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j5", "next": {"comply": "j5.relecture", "buy:permission": "j5.relecture", "buy:bons": "j5.relecture", "buy:component": "j5.relecture", "bypass": "j5.relecture", "courtesy": "j5.relecture", "refuse": "j5.stairs"}, "ifUnavailable": null}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "queue"},
+        {"id": "j5.relecture", "day": 5, "stage": "registre", "place": "place.registre", "anchorMinute": 540, "costMin": 240, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j5.relecture.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j5.relecture.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "relecture.j5", "next": {"flag": "j5.stairs", "pass": "j5.stairs"}, "ifUnavailable": null}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j5.stairs", "day": 5, "stage": "landing", "place": "stairs.9", "anchorMinute": 1110, "costMin": 2, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j5.stairs.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.npc.bruno.3", "lit": null}], "ask": {"kind": "priced", "choiceId": "j5.bruno.door", "next": {"go": "j5.bruno.talk"}, "ifUnavailable": null}, "transit": [{"kind": "exit", "id": "registre"}, {"kind": "enter", "id": "home"}], "waitKind": "none"},
+        {"id": "j5.bruno.talk", "day": 5, "stage": "landing", "place": "stairs.9", "anchorMinute": 1111, "costMin": 3, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j5.bruno.talk.action", "clip": "talk"}, "beats": [{"voice": "person", "key": "w10.npc.bruno.4", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j5.bruno.talk.ask", "options": [{"id": "why", "labelKey": "w10.scene.j5.bruno.talk.why", "words": 8, "next": "j5.bruno", "replyKey": "w10.scene.j5.bruno.talk.why.me"}, {"id": "roux", "labelKey": "w10.scene.j5.bruno.talk.roux", "words": 26, "next": "j5.bruno", "replyKey": "w10.scene.j5.bruno.talk.roux.me"}, {"id": "silent", "labelKey": "w10.scene.j5.bruno.talk.silent", "words": 0, "next": "j5.bruno", "replyKey": "w10.scene.j5.bruno.talk.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j5.bruno", "day": 5, "stage": "landing", "place": "stairs.9", "anchorMinute": 1112, "costMin": 2, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j5.bruno.action", "clip": "idle"}, "beats": [], "ask": {"kind": "priced", "choiceId": "j5.bruno", "next": {"name": "j5.who", "refuse": "night"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j5.who", "day": 5, "stage": "landing", "place": "stairs.9", "anchorMinute": 1113, "costMin": 0, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j5.who.action", "clip": "idle"}, "beats": [], "ask": {"kind": "narrative", "promptKey": "w10.scene.j5.who.ask", "options": [{"id": "marlene", "labelKey": "w10.scene.j5.who.marlene", "words": 0, "next": "night", "replyKey": "w10.scene.j5.who.marlene.me"}, {"id": "berenice", "labelKey": "w10.scene.j5.who.berenice", "words": 0, "next": "night", "replyKey": "w10.scene.j5.who.berenice.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j6.wake", "day": 6, "stage": "home", "place": "unit.9-D", "anchorMinute": 450, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "lit": null, "byLink": {"link": "C3", "keys": {"refuse": "w10.scene.j6.wake.keyboard", "name": "w10.scene.j6.wake.name"}, "otherwise": null}}, {"voice": "regime", "key": "w10.scene.j6.wake.1", "lit": "phone"}], "ask": {"kind": "route", "link": "C3w", "next": {"marlene": "j6.sealed"}, "otherwise": "j6.marlene"}, "transit": [], "waitKind": "none"},
+        {"id": "j6.marlene", "day": 6, "stage": "landing", "place": "door.9-B", "anchorMinute": 455, "costMin": 3, "late": null, "actor": {"id": "marlene", "bodyId": "npc.marlene", "nameKey": "w10.scene.name.marlene", "actionKey": "w10.scene.j6.marlene.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.npc.marlene.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j6.marlene.ask", "options": [{"id": "talk", "labelKey": "w10.scene.j6.marlene.talk", "words": 21, "next": "j6.checkpoint", "replyKey": "w10.scene.j6.marlene.talk.me"}, {"id": "banal", "labelKey": "w10.scene.j6.marlene.banal", "words": 5, "next": "j6.checkpoint", "replyKey": "w10.scene.j6.marlene.banal.me"}, {"id": "silent", "labelKey": "w10.scene.j6.marlene.silent", "words": 0, "next": "j6.checkpoint", "replyKey": "w10.scene.j6.marlene.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j6.sealed", "day": 6, "stage": "landing", "place": "door.9-B", "anchorMinute": 455, "costMin": 2, "late": null, "actor": {"id": "agent", "bodyId": "crowd_c", "nameKey": "w10.scene.name.agent", "actionKey": "w10.scene.j6.sealed.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j6.sealed.1", "lit": null}], "ask": {"kind": "none", "next": "j6.checkpoint"}, "transit": [], "waitKind": "none"},
+        {"id": "j6.checkpoint", "day": 6, "stage": "street", "place": "anchor.cp.head", "anchorMinute": 470, "costMin": 0, "late": null, "actor": {"id": "guard", "bodyId": "crowd_c", "nameKey": "w10.scene.name.guard", "actionKey": "w10.scene.j6.checkpoint.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j6.checkpoint.1", "lit": null}, {"voice": "regime", "key": "w10.scene.j6.checkpoint.2", "lit": null}], "ask": {"kind": "priced", "choiceId": "checkpoint.j6", "next": {"comply": "j6.guichet", "buy:permission": "j6.guichet", "buy:bons": "j6.guichet", "buy:component": "j6.guichet", "bypass": "j6.guichet", "courtesy": "j6.guichet", "refuse": "j6.home"}, "ifUnavailable": null}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "queue"},
+        {"id": "j6.guichet", "day": 6, "stage": "registre", "place": "place.registre", "anchorMinute": 540, "costMin": 10, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j6.guichet.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.scene.j6.guichet.1", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j6.guichet.ask", "options": [{"id": "roux", "labelKey": "w10.scene.j6.guichet.roux", "words": 5, "next": "j6.relecture", "replyKey": "w10.scene.j6.guichet.roux.me"}, {"id": "permit", "labelKey": "w10.scene.j6.guichet.permit", "words": 0, "next": "j6.permit", "replyKey": "w10.scene.j6.guichet.permit.me"}, {"id": "nothing", "labelKey": "w10.scene.j6.guichet.nothing", "words": 0, "next": "j6.relecture", "replyKey": "w10.scene.j6.guichet.nothing.me"}]}, "transit": [{"kind": "enter", "id": "registre"}], "waitKind": "none"},
+        {"id": "j6.permit", "day": 6, "stage": "registre", "place": "place.registre", "anchorMinute": 545, "costMin": 10, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j6.permit.action", "clip": "idle"}, "beats": [], "ask": {"kind": "priced", "choiceId": "permit.j6", "next": {"request": "j6.relecture", "dontAsk": "j6.relecture"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j6.relecture", "day": 6, "stage": "registre", "place": "place.registre", "anchorMinute": 560, "costMin": 240, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j6.relecture.action", "clip": "idle"}, "beats": [{"voice": "narrator", "lit": null, "byLink": {"link": "C3w", "keys": {"berenice": "w10.scene.j6.relecture.berenice"}, "otherwise": null}}, {"voice": "narrator", "key": "w10.scene.j6.relecture.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "relecture.j6", "next": {"flag": "j6.cut", "pass": "j6.cut"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"},
+        {"id": "j6.cut", "day": 6, "stage": "registre", "place": "place.registre", "anchorMinute": 840, "costMin": 0, "late": null, "actor": {"id": "clerk", "bodyId": "crowd_a", "nameKey": "w10.scene.name.clerk", "actionKey": "w10.scene.j6.cut.action", "clip": "idle"}, "beats": [{"voice": "narrator", "key": "w10.scene.j6.cut.1", "lit": null}, {"voice": "narrator", "key": "w10.scene.j6.cut.2", "lit": null}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j6.cut.ask", "options": [{"id": "remark", "labelKey": "w10.scene.j6.cut.remark", "words": 15, "next": "night", "replyKey": "w10.scene.j6.cut.remark.me"}, {"id": "listen", "labelKey": "w10.scene.j6.cut.listen", "words": 0, "next": "night", "replyKey": "w10.scene.j6.cut.listen.me"}]}, "transit": [{"kind": "exit", "id": "registre"}], "waitKind": "none"},
+        {"id": "j6.home", "day": 6, "stage": "home", "place": "unit.9-D", "anchorMinute": 840, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j6.home.1", "lit": null}, {"voice": "narrator", "key": "w10.scene.j6.home.2", "lit": null}], "ask": {"kind": "none", "next": "night"}, "transit": [{"kind": "enter", "id": "home"}], "waitKind": "none"},
+        {"id": "j7.wake", "day": 7, "stage": "home", "place": "unit.9-D", "anchorMinute": 540, "costMin": 0, "late": null, "actor": null, "beats": [{"voice": "regime", "key": "w10.scene.j7.wake.1", "lit": "phone"}, {"voice": "narrator", "key": "w10.scene.j7.wake.2", "lit": null}], "ask": {"kind": "route", "link": "B4w", "next": {"fille": "j7.empty"}, "otherwise": "j7.daughter"}, "transit": [], "waitKind": "none"},
+        {"id": "j7.daughter", "day": 7, "stage": "landing", "place": "door.9-C", "anchorMinute": 600, "costMin": 10, "late": null, "actor": {"id": "fille", "bodyId": "crowd_a", "nameKey": "w10.scene.name.fille", "actionKey": "w10.scene.j7.daughter.action", "clip": "idle"}, "beats": [{"voice": "person", "lit": null, "byLink": {"link": "A5", "keys": {"truth": "w10.scene.j7.daughter.truth"}, "otherwise": "w10.scene.j7.daughter.otherwise"}}], "ask": {"kind": "narrative", "promptKey": "w10.scene.j7.daughter.ask", "options": [{"id": "all", "labelKey": "w10.scene.j7.daughter.all", "words": 72, "next": "j7.car", "replyKey": "w10.scene.j7.daughter.all.me"}, {"id": "some", "labelKey": "w10.scene.j7.daughter.some", "words": 45, "next": "j7.car", "replyKey": "w10.scene.j7.daughter.some.me"}, {"id": "silent", "labelKey": "w10.scene.j7.daughter.silent", "words": 0, "next": "j7.car", "replyKey": "w10.scene.j7.daughter.silent.me"}]}, "transit": [], "waitKind": "none"},
+        {"id": "j7.empty", "day": 7, "stage": "landing", "place": "door.9-C", "anchorMinute": 600, "costMin": 2, "late": null, "actor": null, "beats": [{"voice": "narrator", "key": "w10.scene.j7.empty.1", "lit": null}], "ask": {"kind": "none", "next": "j7.car"}, "transit": [], "waitKind": "none"},
+        {"id": "j7.car", "day": 7, "stage": "street", "place": "anchor.greycar", "anchorMinute": 1020, "costMin": 30, "late": null, "actor": {"id": "bruno", "bodyId": "npc.bruno", "nameKey": "w10.scene.name.bruno", "actionKey": "w10.scene.j7.car.action", "clip": "idle"}, "beats": [{"voice": "person", "key": "w10.scene.j7.car.1", "lit": null}], "ask": {"kind": "none", "next": "j7.audition"}, "transit": [{"kind": "exit", "id": "home"}], "waitKind": "none"},
+        {"id": "j7.audition", "day": 7, "stage": "registre", "place": "room.audition", "anchorMinute": 1050, "costMin": 30, "late": null, "actor": {"id": "inspector", "bodyId": "crowd_c", "nameKey": "w10.scene.name.inspector", "actionKey": "w10.scene.j7.audition.action", "clip": "idle"}, "beats": [{"voice": "narrator", "lit": null, "byLink": {"link": "B4w", "keys": {"fille": "w10.scene.j7.audition.chair"}, "otherwise": "w10.scene.j7.audition.waiting"}}, {"voice": "narrator", "lit": null, "byLink": {"link": "C3w", "keys": {"marlene": "w10.scene.j7.audition.notebook", "berenice": "w10.scene.j7.audition.list"}, "otherwise": "w10.scene.j7.audition.marleneHere"}}, {"voice": "narrator", "lit": null, "byLink": {"link": "E2", "keys": {"declare": "w10.scene.j7.audition.component", "leaveVisible": "w10.scene.j7.audition.component"}, "otherwise": null}}, {"voice": "regime", "key": "w10.scene.j7.audition.1", "lit": null}], "ask": {"kind": "priced", "choiceId": "audition.j7", "next": {"all": "night", "none": "night", "silence": "night"}, "ifUnavailable": null}, "transit": [], "waitKind": "none"}
+      ],
+      "chains": [
+        {"id": "A", "titleKey": "w10.chain.A.title", "crosses": ["B", "C"], "question": {"key": "Q11", "linkKeys": {"A": "w10.chain.A.link.A", "B": "w10.chain.A.link.B", "C": "w10.chain.A.link.C"}}, "fact": {"key": "w10.fact.A", "source": "research/2026-10-28-questionnaire-2026.md (M19)", "sourceKey": "w10.fact.A.source"}, "links": [
+            {"id": "A1", "day": 1, "at": {"kind": "scene", "id": "j1.roux"}, "absent": {"recapKey": "w10.recap.A1.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"laugh": {"recapKey": "w10.recap.A1.laugh", "personKey": "w10.chain.A.person", "saidKey": "w10.recap.A1.laugh.said"}, "weather": {"recapKey": "w10.recap.A1.weather", "personKey": "w10.chain.A.person", "saidKey": "w10.recap.A1.weather.said"}, "silent": {"recapKey": "w10.recap.A1.silent", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "A2", "day": 2, "at": {"kind": "night", "day": 1, "from": "A1"}, "absent": {"recapKey": "w10.recap.A2.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"laugh": {"recapKey": "w10.recap.A2.laugh", "personKey": "w10.chain.A.person", "saidKey": null}, "weather": {"recapKey": "w10.recap.A2.weather", "personKey": "w10.chain.A.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.A2.silent", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "A3", "day": 3, "at": {"kind": "scene", "id": "j3.pylone"}, "absent": {"recapKey": "w10.recap.A3.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"recite": {"recapKey": "w10.recap.A3.recite", "personKey": "w10.chain.A.person", "saidKey": "w10.recap.A3.recite.said"}, "warn": {"recapKey": "w10.recap.A3.warn", "personKey": "w10.chain.A.person", "saidKey": "w10.recap.A3.warn.said"}, "silent": {"recapKey": "w10.recap.A3.silent", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "A4", "day": 4, "at": {"kind": "night", "day": 3, "from": "A1"}, "absent": {"recapKey": "w10.recap.A4.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"laugh": {"recapKey": "w10.recap.A4.laugh", "personKey": "w10.chain.A.person", "saidKey": null}, "weather": {"recapKey": "w10.recap.A4.weather", "personKey": "w10.chain.A.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.A4.silent", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "A5", "day": 4, "at": {"kind": "scene", "id": "j4.daughter"}, "absent": {"recapKey": "w10.recap.A5.absent", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "variants": {"truth": {"recapKey": "w10.recap.A5.truth", "personKey": "w10.chain.A.person.fille", "saidKey": "w10.recap.A5.truth.said"}, "dontknow": {"recapKey": "w10.recap.A5.dontknow", "personKey": "w10.chain.A.person.fille", "saidKey": "w10.recap.A5.dontknow.said"}, "silent": {"recapKey": "w10.recap.A5.silent", "personKey": "w10.chain.A.person.fille", "saidKey": null}}},
+            {"id": "A6", "day": 5, "at": {"kind": "scene", "id": "j5.daughter"}, "absent": {"recapKey": "w10.recap.A6.absent", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "variants": {"promise": {"recapKey": "w10.recap.A6.promise", "personKey": "w10.chain.A.person.fille", "saidKey": "w10.recap.A6.promise.said"}, "long": {"recapKey": "w10.recap.A6.long", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "silent": {"recapKey": "w10.recap.A6.silent", "personKey": "w10.chain.A.person.fille", "saidKey": null}}},
+            {"id": "A7", "day": 6, "at": {"kind": "scene", "id": "j6.guichet"}, "absent": {"recapKey": "w10.recap.A7.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"roux": {"recapKey": "w10.recap.A7.roux", "personKey": "w10.chain.A.person", "saidKey": "w10.recap.A7.roux.said"}, "permit": {"recapKey": "w10.recap.A7.permit", "personKey": "w10.chain.A.person", "saidKey": null}, "nothing": {"recapKey": "w10.recap.A7.nothing", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "A8", "day": 7, "at": {"kind": "scene", "id": "j7.daughter"}, "absent": {"recapKey": "w10.recap.A8.absent", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "variants": {"all": {"recapKey": "w10.recap.A8.all", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "some": {"recapKey": "w10.recap.A8.some", "personKey": "w10.chain.A.person.fille", "saidKey": null}, "silent": {"recapKey": "w10.recap.A8.silent", "personKey": "w10.chain.A.person.fille", "saidKey": null}}},
+            {"id": "A9", "day": 7, "at": {"kind": "night", "day": 6, "from": "A5"}, "absent": {"recapKey": "w10.recap.A9.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"truth": {"recapKey": "w10.recap.A9.truth", "personKey": "w10.chain.A.person", "saidKey": null}, "dontknow": {"recapKey": "w10.recap.A9.dontknow", "personKey": "w10.chain.A.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.A9.silent", "personKey": "w10.chain.A.person", "saidKey": null}}}
+          ], "lastDay": 7},
+        {"id": "B", "titleKey": "w10.chain.B.title", "crosses": ["A", "C", "E"], "question": {"key": "Q04", "linkKeys": {"A": "w10.chain.B.link.A", "B": "w10.chain.B.link.B", "C": "w10.chain.B.link.C", "D": "w10.chain.B.link.D"}}, "fact": {"key": "w10.fact.B", "source": "bible w10 §1.5 (Bundesarchiv), §4.1", "sourceKey": "w10.fact.B.source"}, "links": [
+            {"id": "B1", "day": 1, "at": {"kind": "scene", "id": "j1.marlene"}, "absent": {"recapKey": "w10.recap.B1.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"answer": {"recapKey": "w10.recap.B1.answer", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B1.answer.said"}, "nod": {"recapKey": "w10.recap.B1.nod", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B1.nod.said"}, "ignore": {"recapKey": "w10.recap.B1.ignore", "personKey": "w10.chain.B.person", "saidKey": null}}},
+            {"id": "B2", "day": 2, "at": {"kind": "scene", "id": "j2.marlene"}, "absent": {"recapKey": "w10.recap.B2.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"talk": {"recapKey": "w10.recap.B2.talk", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B2.talk.said"}, "banal": {"recapKey": "w10.recap.B2.banal", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B2.banal.said"}, "silent": {"recapKey": "w10.recap.B2.silent", "personKey": "w10.chain.B.person", "saidKey": null}}},
+            {"id": "B3", "day": 3, "at": {"kind": "choice", "id": "j3.marlene"}, "absent": {"recapKey": "w10.recap.B3.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"name": {"recapKey": "w10.recap.B3.name", "personKey": "w10.chain.B.person", "saidKey": null}, "banal": {"recapKey": "w10.recap.B3.banal", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B3.banal.said"}}},
+            {"id": "B3w", "day": 3, "at": {"kind": "scene", "id": "j3.who"}, "absent": {"recapKey": "w10.recap.B3w.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"theodore": {"recapKey": "w10.recap.B3w.theodore", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B3w.theodore.said", "nameKey": "w10.recap.noms.theodore"}, "nadia": {"recapKey": "w10.recap.B3w.nadia", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B3w.nadia.said", "nameKey": "w10.recap.noms.nadia"}}},
+            {"id": "B4n", "day": 4, "at": {"kind": "night", "day": 3, "from": "B3w"}, "absent": {"recapKey": "w10.recap.B4n.absent", "personKey": null, "saidKey": null}, "variants": {"theodore": {"recapKey": "w10.recap.B4n.theodore", "personKey": null, "saidKey": null}, "nadia": {"recapKey": "w10.recap.B4n.nadia", "personKey": null, "saidKey": null}}},
+            {"id": "B4", "day": 4, "at": {"kind": "choice", "id": "j4.neighbour"}, "absent": {"recapKey": "w10.recap.B4.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"name": {"recapKey": "w10.recap.B4.name", "personKey": "w10.chain.B.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.B4.silent", "personKey": "w10.chain.B.person", "saidKey": null}}},
+            {"id": "B4w", "day": 4, "at": {"kind": "scene", "id": "j4.who"}, "absent": {"recapKey": "w10.recap.B4w.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"yusuf": {"recapKey": "w10.recap.B4w.yusuf", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B4w.yusuf.said", "nameKey": "w10.recap.noms.yusuf"}, "fille": {"recapKey": "w10.recap.B4w.fille", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B4w.fille.said", "nameKey": "w10.recap.noms.fille"}}},
+            {"id": "B6", "day": 6, "at": {"kind": "scene", "id": "j6.marlene"}, "absent": {"recapKey": "w10.recap.B6.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"talk": {"recapKey": "w10.recap.B6.talk", "personKey": "w10.chain.B.person", "saidKey": null}, "banal": {"recapKey": "w10.recap.B6.banal", "personKey": "w10.chain.B.person", "saidKey": "w10.recap.B6.banal.said"}, "silent": {"recapKey": "w10.recap.B6.silent", "personKey": "w10.chain.B.person", "saidKey": null}}},
+            {"id": "B7", "day": 7, "at": {"kind": "night", "day": 6, "from": "B4"}, "absent": {"recapKey": "w10.recap.B7.absent", "personKey": "w10.chain.B.person", "saidKey": null}, "variants": {"name": {"recapKey": "w10.recap.B7.name", "personKey": "w10.chain.B.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.B7.silent", "personKey": "w10.chain.B.person", "saidKey": null}}}
+          ], "lastDay": 7},
+        {"id": "C", "titleKey": "w10.chain.C.title", "crosses": ["A", "B", "E"], "question": {"key": "Q05", "linkKeys": {"A": "w10.chain.C.link.A", "B": "w10.chain.C.link.B", "C": "w10.chain.C.link.C"}}, "fact": {"key": "w10.fact.C", "source": "research/precedents-10-12-collapses.md:55", "sourceKey": "w10.fact.C.source"}, "links": [
+            {"id": "C1", "day": 3, "at": {"kind": "scene", "id": "j3.cantine"}, "absent": {"recapKey": "w10.recap.C1.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"work": {"recapKey": "w10.recap.C1.work", "personKey": "w10.chain.C.person", "saidKey": "w10.recap.C1.work.said"}, "long": {"recapKey": "w10.recap.C1.long", "personKey": "w10.chain.C.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.C1.silent", "personKey": "w10.chain.C.person", "saidKey": null}}},
+            {"id": "C2", "day": 4, "at": {"kind": "choice", "id": "relecture.j4"}, "absent": {"recapKey": "w10.recap.C2.absent", "personKey": "w10.chain.A.person", "saidKey": null}, "variants": {"flag": {"recapKey": "w10.recap.C2.flag", "personKey": "w10.chain.A.person", "saidKey": null}, "pass": {"recapKey": "w10.recap.C2.pass", "personKey": "w10.chain.A.person", "saidKey": null}}},
+            {"id": "C3t", "day": 5, "at": {"kind": "scene", "id": "j5.bruno.talk"}, "absent": {"recapKey": "w10.recap.C3t.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"why": {"recapKey": "w10.recap.C3t.why", "personKey": "w10.chain.C.person", "saidKey": "w10.recap.C3t.why.said"}, "roux": {"recapKey": "w10.recap.C3t.roux", "personKey": "w10.chain.C.person", "saidKey": null}, "silent": {"recapKey": "w10.recap.C3t.silent", "personKey": "w10.chain.C.person", "saidKey": null}}},
+            {"id": "C3", "day": 5, "at": {"kind": "choice", "id": "j5.bruno"}, "absent": {"recapKey": "w10.recap.C3.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"name": {"recapKey": "w10.recap.C3.name", "personKey": "w10.chain.C.person", "saidKey": null}, "refuse": {"recapKey": "w10.recap.C3.refuse", "personKey": "w10.chain.C.person", "saidKey": null}}},
+            {"id": "C3w", "day": 5, "at": {"kind": "scene", "id": "j5.who"}, "absent": {"recapKey": "w10.recap.C3w.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"marlene": {"recapKey": "w10.recap.C3w.marlene", "personKey": "w10.chain.C.person", "saidKey": "w10.recap.C3w.marlene.said", "nameKey": "w10.recap.noms.marlene"}, "berenice": {"recapKey": "w10.recap.C3w.berenice", "personKey": "w10.chain.C.person", "saidKey": "w10.recap.C3w.berenice.said", "nameKey": "w10.recap.noms.berenice"}}},
+            {"id": "C4", "day": 6, "at": {"kind": "night", "day": 5, "from": "C3"}, "absent": {"recapKey": "w10.recap.C4.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"name": {"recapKey": "w10.recap.C4.name", "personKey": "w10.chain.C.person", "saidKey": null}, "refuse": {"recapKey": "w10.recap.C4.refuse", "personKey": "w10.chain.C.person", "saidKey": null}}},
+            {"id": "C7", "day": 7, "at": {"kind": "choice", "id": "audition.j7"}, "absent": {"recapKey": "w10.recap.C7.absent", "personKey": "w10.chain.C.person", "saidKey": null}, "variants": {"all": {"recapKey": "w10.recap.C7.all", "personKey": "w10.chain.C.person", "saidKey": null}, "none": {"recapKey": "w10.recap.C7.none", "personKey": "w10.chain.C.person", "saidKey": null}, "silence": {"recapKey": "w10.recap.C7.silence", "personKey": "w10.chain.C.person", "saidKey": null}}}
+          ], "lastDay": 7, "opensBy": 5},
+        {"id": "E", "titleKey": "w10.chain.E.title", "crosses": ["B", "C"], "question": {"key": "Q16", "linkKeys": {"A": "w10.chain.E.link.A", "B": "w10.chain.E.link.B", "C": "w10.chain.E.link.C"}}, "fact": {"key": "w10.fact.E", "source": "research/precedents-10-12-collapses.md:96 (décret n° 98 du 28 mars 1983, Bulletin officiel n° 21)", "sourceKey": "w10.fact.E.source"}, "links": [
+            {"id": "E1", "day": 1, "at": {"kind": "choice", "id": "j1.component"}, "absent": {"recapKey": "w10.recap.E1.absent", "personKey": null, "saidKey": null}, "variants": {"take": {"recapKey": "w10.recap.E1.take", "personKey": null, "saidKey": null}, "leave": {"recapKey": "w10.recap.E1.leave", "personKey": null, "saidKey": null}}},
+            {"id": "E2", "day": 2, "at": {"kind": "choice", "id": "j2.component"}, "absent": {"recapKey": "w10.recap.E2.absent", "personKey": null, "saidKey": null}, "variants": {"hide": {"recapKey": "w10.recap.E2.hide", "personKey": null, "saidKey": null}, "keep": {"recapKey": "w10.recap.E2.keep", "personKey": null, "saidKey": null}, "declare": {"recapKey": "w10.recap.E2.declare", "personKey": "w10.chain.E.person.agent", "saidKey": "w10.recap.E2.declare.said", "nameKey": "w10.recap.noms.blank"}, "leaveVisible": {"recapKey": "w10.recap.E2.leaveVisible", "personKey": "w10.chain.E.person.agent", "saidKey": null}}},
+            {"id": "E3", "day": 2, "at": {"kind": "choice", "id": "j2.agentReturn"}, "absent": {"recapKey": "w10.recap.E3.absent", "personKey": "w10.chain.E.person.agent", "saidKey": null}, "variants": {"go": {"recapKey": "w10.recap.E3.go", "personKey": "w10.chain.E.person.agent", "saidKey": null}}},
+            {"id": "E4", "day": 3, "at": {"kind": "choice", "id": "m3.letter"}, "absent": {"recapKey": "w10.recap.E4.absent", "personKey": "w10.chain.E.person.theodore", "saidKey": null}, "variants": {"keep": {"recapKey": "w10.recap.E4.keep", "personKey": "w10.chain.E.person.theodore", "saidKey": null}, "refuse": {"recapKey": "w10.recap.E4.refuse", "personKey": "w10.chain.E.person.theodore", "saidKey": null}}},
+            {"id": "E5", "day": 4, "at": {"kind": "scene", "id": "j4.yusuf"}, "absent": {"recapKey": "w10.recap.E5.absent", "personKey": "w10.chain.E.person.yusuf", "saidKey": null}, "variants": {"what": {"recapKey": "w10.recap.E5.what", "personKey": "w10.chain.E.person.yusuf", "saidKey": "w10.recap.E5.what.said"}, "roux": {"recapKey": "w10.recap.E5.roux", "personKey": "w10.chain.E.person.yusuf", "saidKey": null}, "silent": {"recapKey": "w10.recap.E5.silent", "personKey": "w10.chain.E.person.yusuf", "saidKey": null}}},
+            {"id": "E6", "day": 5, "at": {"kind": "choice", "id": "relecture.j5"}, "absent": {"recapKey": "w10.recap.E6.absent", "personKey": null, "saidKey": null}, "variants": {"flag": {"recapKey": "w10.recap.E6.flag", "personKey": null, "saidKey": null}, "pass": {"recapKey": "w10.recap.E6.pass", "personKey": null, "saidKey": null}}},
+            {"id": "E7", "day": 7, "at": {"kind": "night", "day": 6, "from": "E2"}, "absent": {"recapKey": "w10.recap.E7.absent", "personKey": null, "saidKey": null}, "variants": {"hide": {"recapKey": "w10.recap.E7.hide", "personKey": null, "saidKey": null}, "keep": {"recapKey": "w10.recap.E7.keep", "personKey": null, "saidKey": null}, "declare": {"recapKey": "w10.recap.E7.declare", "personKey": null, "saidKey": null}, "leaveVisible": {"recapKey": "w10.recap.E7.leaveVisible", "personKey": null, "saidKey": null}}}
+          ], "lastDay": 7}
+      ],
+      "endOfDemo": null,
+      "speechModes": {"1": {"muet": 14, "couloir": [40, 60], "bavard": 70}, "2": {"muet": 14, "couloir": [40, 60], "bavard": 70}, "3": {"muet": 14, "couloir": [40, 60], "bavard": 70}, "4": {"muet": 14, "couloir": [40, 60], "bavard": 70}, "5": {"muet": 14, "couloir": [40, 60], "bavard": 70}, "6": {"muet": 14, "couloir": [20, 40], "bavard": 50}, "7": {"muet": 14, "couloir": [40, 60], "bavard": 70}},
+      "ending": {"outcomes": {"arrestedAudition": {"regimeKey": "w10.end.arrestedAudition.regime", "narratorKeys": {"2": "w10.end.arrestedAudition.n2"}}, "released": {"regimeKey": "w10.end.released.regime", "narratorKeys": {"1": "w10.end.released.n1"}}, "recruited": {"regimeKey": "w10.end.recruited.regime", "narratorKeys": {}}}, "arrestedNightKey": "w10.end.arrestedNight", "weekButtonKey": "w10.end.week"}
+    }
+  },
+  "bilan": {
+    "worldBlockId": "w10.dossier",
+    "dossier": {
+      "names": [
+        { "choiceId": "j3.marlene", "nameOption": "name", "refuseOption": "banal", "personKey": "w10.bilan.person.j3" },
+        { "choiceId": "j4.neighbour", "nameOption": "name", "refuseOption": "silent", "personKey": "w10.bilan.person.j4" },
+        { "choiceId": "j5.bruno", "nameOption": "name", "refuseOption": "refuse", "personKey": "w10.bilan.person.j5" }
+      ],
+      "audition": {
+        "choiceId": "audition.j7",
+        "keys": { "all": "w10.bilan.audition.all", "none": "w10.bilan.audition.none", "silence": "w10.bilan.audition.silence" }
+      },
+      "noneFlaggedKey": "w10.bilan.file.noneFlagged",
+      "mentionKeys": {
+        "savedByName": "w10.bilan.mention.savedByName",
+        "twoNamesThenArrested": "w10.bilan.mention.twoNamesThenArrested",
+        "declaredLeaver": "w10.bilan.mention.declaredLeaver",
+        "radioFromInside": "w10.bilan.mention.radioFromInside"
+      }
+    },
+    "rights": {
+      "carriers": {
+        "move": { "var": "freedom", "sign": -1 },
+        "leave": { "var": "freedom", "sign": -1 },
+        "stay": { "var": "order", "sign": 1 },
+        "speak": { "var": "freedom", "sign": -1 },
+        "read": { "var": "freedom", "sign": -1 },
+        "assemble": { "var": "freedom", "sign": -1 },
+        "privacy": { "var": "surveillance", "sign": 1 },
+        "work": { "var": "order", "sign": 1 }
+      }
+    },
+    "emphasis": ["aiPower", "freedom", "abundance"],
+    "fate": {
+      "ends": {
+        "arrested": "w10.bilan.fate.end.arrested",
+        "arrestedAudition": "w10.bilan.fate.end.arrestedAudition",
+        "released": "w10.bilan.fate.end.released",
+        "recruited": "w10.bilan.fate.end.recruited"
+      },
+      "prices": {},
+      "comforts": {}
+    },
+    "sources": [
+      { "label": "sourced", "textKey": "w10.sources.fli" },
+      { "label": "unreopened", "textKey": "w10.sources.uranium" },
+      { "label": "extrapolated", "textKey": "w10.sources.contraband" },
+      { "label": "gameHypothesis", "textKey": "w10.sources.gauge" }
+    ],
+    "share": { "width": null, "height": null }
+  }
+}

@@ -1,0 +1,210 @@
+/* Semaine 1984 en 3D : shell. Téléphone d'abord (375x600, 393x654), puis 430x780 et 1440x900.
+   Hiérarchie : vert = ce que tu dois faire ; ambre = ce que ça coûte ; blanc = dit ; gris = raconté ;
+   machine à écrire = la voix du Registre. Rien ne se chevauche : en-tête, scène, bandeau sont trois rangées d'une grille. */
+.week-episode {
+  --we-bg: #1c1e1b;
+  --we-panel: #2a2e27;
+  --we-edge: #5d6652;
+  --we-act: #c7dca8;
+  --we-act-ink: #1f2a19;
+  --we-cost: #e5c691;
+  --we-said: #f1eee3;
+  --we-told: #c5c4b9;
+  --we-alert: #e58f7a;
+  --we-paper: #e9e2cf;
+  --we-ink: #231f1a;
+  --we-paper-act: #2c5a28;
+  --we-paper-cost: #7a4d0a;
+  --we-font: 'Inter C', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --we-title: 'Montserrat C', 'Inter C', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --we-line: 1px;
+  --we-rule: 1.5px;
+  --we-ring-w: 4px;
+  --we-ring-m: 3px;
+  --we-shadow-object: 0 4px 12px #0008;
+  --we-shadow-held: 0 14px 30px #000c;
+  --we-shadow-paper: 0 14px 40px #000a;
+  --we-mono: ui-monospace, Menlo, 'Courier New', monospace;
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--we-bg);
+  color: var(--we-said);
+  font: 16px/1.45 var(--we-font);
+  color-scheme: dark;
+}
+.week-episode * { box-sizing: border-box; }
+.week-episode [hidden] { display: none !important; }
+.week-episode button, .week-episode a { font: inherit; touch-action: manipulation; }
+.week-episode button { cursor: pointer; }
+.week-episode button:disabled { cursor: default; opacity: .6; }
+.week-episode :focus-visible { outline: 3px solid var(--we-cost); outline-offset: 2px; }
+
+/* ---------- En-tête : jour, mots du bracelet, dossier, commandes ---------- */
+.we-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 18px; background: var(--we-bg); border-bottom: var(--we-line) solid #343a2f; }
+.we-id { min-width: 0; }
+.we-day { display: block; font: 600 11px/1.2 var(--we-title); letter-spacing: .12em; text-transform: uppercase; color: var(--we-told); }
+.we-id h1 { margin: 1px 0 0; font: 600 16px/1.25 var(--we-title); white-space: nowrap; }
+.we-hud { display: flex; align-items: center; gap: 18px; margin: 0 auto; font: 500 12px/1.2 var(--we-font); color: var(--we-told); white-space: nowrap; }
+.we-bracelet, .we-dossier { position: relative; display: inline-flex; align-items: center; gap: 7px; padding-right: 30px; }
+.we-ring { display: inline-grid; place-items: center; width: 42px; height: 42px; border: var(--we-ring-w) solid var(--we-cost); border-radius: 50%; background: #0e120f; transition: border-color .2s, color .2s; }
+.we-ring strong { font: 700 16px/1 var(--we-title); font-variant-numeric: tabular-nums; color: var(--we-said); }
+.we-bracelet[data-over=true] .we-ring { border-color: var(--we-alert); }
+.we-bracelet[data-over=true] .we-ring strong { color: var(--we-alert); }
+.we-dossier strong { font: 700 22px/1 var(--we-title); font-variant-numeric: tabular-nums; color: var(--we-said); transition: color .4s; }
+.we-dossier[data-flash=plus] strong { color: var(--we-act); }
+.we-dossier[data-flash=moins] strong { color: var(--we-alert); }
+.we-delta { position: absolute; right: 0; top: 50%; transform: translateY(-50%); min-width: 26px; font: 700 13px/1 var(--we-title); font-variant-numeric: tabular-nums; pointer-events: none; animation: we-pop 1.6s ease-out both; }
+.we-delta:empty { display: none; }
+.we-delta[data-sign=plus] { color: var(--we-act); }
+.we-delta[data-sign=moins] { color: var(--we-alert); }
+@keyframes we-pop { 0% { opacity: 0; transform: translateY(-20%); } 12% { opacity: 1; transform: translateY(-50%); } 80% { opacity: 1; } 100% { opacity: .4; } }
+.we-controls { display: flex; align-items: center; gap: 2px; }
+.we-controls button, .we-controls a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; padding: 8px 10px; border: 0; border-radius: 4px; background: transparent; color: var(--we-said); font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.we-controls button { text-decoration: none; }
+.we-controls button:hover:not(:disabled) { background: #343a2e; }
+.we-controls button[aria-pressed=true] { background: transparent; }
+.we-controls button[data-action=pause][aria-pressed=true] { background: var(--we-act); color: var(--we-act-ink); }
+.we-controls button[data-action=sound][aria-pressed=false] { color: var(--we-told); }
+
+/* ---------- Scène ---------- */
+.we-stage { position: relative; min-width: 0; min-height: 0; overflow: hidden; background: #363b31; }
+.we-viewport { position: absolute; inset: 0; min-width: 0; min-height: 0; }
+.we-viewport > canvas { display: block; width: 100%; height: 100%; }
+.we-place { position: absolute; z-index: 1; left: 12px; top: 10px; margin: 0; padding: 4px 8px; max-width: calc(100% - 24px); background: #1c1e1be8; color: var(--we-said); font: 500 12px/1.35 var(--we-font); pointer-events: none; }
+.week-episode[data-paused=true] .we-stage::after { content: 'PAUSE'; position: absolute; top: 10px; right: 12px; padding: 4px 8px; background: #1c1e1be8; color: #e4e6d8; font-size: 11px; letter-spacing: .12em; pointer-events: none; }
+.we-overlay { position: absolute; z-index: 3; inset: 0; display: grid; place-items: center; padding: 10px; background: #0b100eb8; }
+.we-overlay:empty { display: none; }
+
+/* ---------- Bandeau du bas : texte, geste, mouvement ---------- */
+.we-dock { display: flex; flex-direction: column; gap: 6px; width: 100%; max-width: 980px; max-height: 66dvh; margin: 0 auto; padding: 8px 18px max(12px, env(safe-area-inset-bottom)); overflow: auto; background: var(--we-bg); }
+.week-episode:is([data-beat=loading], [data-beat=ticket], [data-beat=piece], [data-beat=ending], [data-beat=error]) .we-dock { display: none; }
+.we-text { min-height: 4.6em; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; cursor: pointer; }
+.we-text:empty { min-height: 0; }
+.we-line { margin: 0; max-width: 64ch; font-size: 16px; line-height: 1.42; }
+.we-line.dit { color: var(--we-said); }
+.we-line.narr { color: var(--we-told); font-size: 15px; }
+.we-line.machine { font-family: var(--we-mono); font-size: 14px; color: var(--we-paper); }
+.we-line.fx { font-size: 13px; color: var(--we-cost); }
+.we-line.old { opacity: .6; font-size: 13px; }
+.we-who { margin-right: 8px; font: 600 11px/1 var(--we-title); letter-spacing: .08em; text-transform: uppercase; color: var(--we-said); opacity: .8; }
+
+/* Geste : consigne verte, objet papier, cibles (libellé blanc, prix ambre, détail gris). */
+.we-gesture:empty { display: none; }
+.we-ask { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px; align-items: center; margin-bottom: 6px; }
+.we-prompt { margin: 0; font: 600 12px/1.35 var(--we-title); letter-spacing: .05em; text-transform: uppercase; color: var(--we-act); outline: 0; }
+.we-object { touch-action: none; user-select: none; cursor: grab; max-width: 170px; padding: 8px 12px; border-radius: 5px; background: var(--we-paper); color: var(--we-ink); font-weight: 600; font-size: 14px; line-height: 1.25; text-align: center; box-shadow: var(--we-shadow-object); }
+.we-object small { display: block; font-weight: 400; font-size: 11px; }
+.we-object.held { cursor: grabbing; box-shadow: var(--we-shadow-held); position: relative; z-index: 20; }
+.we-targets { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 8px; }
+.we-target { display: grid; gap: 3px; width: 100%; min-height: 52px; padding: 9px 12px; border: var(--we-line) solid var(--we-edge); border-radius: 6px; background: var(--we-panel); color: var(--we-said); text-align: left; }
+.we-target:hover:not(:disabled), .we-target:focus-visible, .we-target.aimed { border-color: var(--we-act); background: #3a4333; }
+.we-t-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.we-t-label { font-size: 17px; font-weight: 600; line-height: 1.25; }
+.we-t-price { color: var(--we-cost); font: 700 14px/1.2 var(--we-title); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.we-t-price.gain { color: var(--we-said); }
+.we-t-detail { color: var(--we-told); font-size: 12.5px; line-height: 1.3; }
+.we-moves { display: none; }
+.week-episode[data-busy=true]:not([data-beat=loading]) .we-moves { display: block; }
+.we-skip { min-height: 44px; padding: 8px 14px; border: var(--we-line) solid var(--we-edge); border-radius: 5px; background: transparent; color: var(--we-said); font-size: 13px; }
+
+/* ---------- Papiers : avis, relevé, pièce à lire, fin ---------- */
+.we-paper { position: relative; width: min(420px, 100%); max-height: 100%; overflow: auto; padding: 16px 18px 18px; background: var(--we-paper); color: var(--we-ink); font: 14px/1.5 var(--we-mono); text-align: left; box-shadow: var(--we-shadow-paper); }
+.we-paper h2 { margin: 0 0 8px; padding-bottom: 8px; border-bottom: var(--we-line) dashed #231f1a88; font: 700 13px/1.3 var(--we-mono); letter-spacing: .12em; text-transform: uppercase; }
+.we-ticket { cursor: pointer; padding-bottom: 20px; clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 96% 100%, 92% calc(100% - 8px), 88% 100%, 84% calc(100% - 8px), 80% 100%, 76% calc(100% - 8px), 72% 100%, 68% calc(100% - 8px), 64% 100%, 60% calc(100% - 8px), 56% 100%, 52% calc(100% - 8px), 48% 100%, 44% calc(100% - 8px), 40% 100%, 36% calc(100% - 8px), 32% 100%, 28% calc(100% - 8px), 24% 100%, 20% calc(100% - 8px), 16% 100%, 12% calc(100% - 8px), 8% 100%, 4% calc(100% - 8px), 0 100%); }
+.we-ticket:focus-visible { outline-offset: -4px; }
+.we-trow { display: flex; justify-content: space-between; gap: 12px; font-variant-numeric: tabular-nums; }
+.we-trow.total { margin-top: 6px; padding-top: 6px; border-top: var(--we-line) dashed #231f1a88; font-weight: 700; }
+.we-tline { margin: 7px 0 0; }
+.we-tfoot { margin: 8px 0 0; font-weight: 700; }
+.we-hint { margin: 10px 0 0; font: 600 11px/1.3 var(--we-title); letter-spacing: .05em; text-transform: uppercase; color: var(--we-paper-act); }
+.we-ticket .we-wait { visibility: hidden; }
+.we-piece .we-prompt { margin: 0 0 8px; color: var(--we-paper-act); }
+.we-piece h3 { margin: 8px 0 1px; font: 700 11px/1.3 var(--we-mono); letter-spacing: .1em; text-transform: uppercase; opacity: .7; }
+.we-pl { display: block; width: 100%; padding: 8px 4px; border: 0; border-bottom: var(--we-line) dotted #231f1a66; background: none; color: inherit; font: inherit; text-align: left; }
+.we-pl:hover, .we-pl:focus-visible { background: #231f1a22; }
+.we-none { display: flex; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 9px 10px; border: var(--we-rule) solid var(--we-ink); border-radius: 4px; font-weight: 700; }
+.we-none .we-t-price { color: var(--we-paper-cost); }
+.we-ending, .we-error { width: min(460px, 100%); background: #20241e; color: var(--we-said); font-family: var(--we-font); border: var(--we-line) solid var(--we-edge); }
+.we-ending h2, .we-error h2 { margin: 0 0 8px; padding: 0; border: 0; font: 700 22px/1.2 var(--we-title); letter-spacing: 0; text-transform: none; outline: 0; }
+.we-regime { margin: 0 0 8px; font: 14px/1.45 var(--we-mono); color: var(--we-paper); }
+.we-fact { margin: 0 0 8px; font-size: 15px; line-height: 1.4; }
+.we-mother { color: var(--we-told); }
+.we-facts { margin: 10px 0 12px; padding-top: 8px; border-top: var(--we-line) dashed var(--we-edge); }
+.we-facts > div { display: flex; justify-content: space-between; gap: 12px; padding: 3px 0; font-size: 14px; }
+.we-facts dt { color: var(--we-told); }
+.we-facts dd { margin: 0; font-variant-numeric: tabular-nums; text-align: right; }
+.we-replay { width: 100%; min-height: 46px; padding: 10px 14px; border: 0; border-radius: 4px; background: var(--we-act); color: var(--we-act-ink); font-size: 16px; font-weight: 700; }
+.we-replay:hover { background: #dae7bf; }
+
+/* ---------- Téléphone ---------- */
+@media (max-width: 760px) {
+  .we-header { gap: 6px; padding: 4px 8px; }
+  .we-id h1 { display: none; }
+  .we-day { font-size: 10px; }
+  .we-hud { gap: 8px; margin: 0; }
+  .we-bracelet, .we-dossier { gap: 5px; padding-right: 24px; }
+  .we-ring { width: 36px; height: 36px; border-width: var(--we-ring-m); }
+  .we-ring strong { font-size: 14px; }
+  .we-dossier strong { font-size: 19px; }
+  .we-delta { font-size: 12px; min-width: 22px; }
+  .we-controls { gap: 0; }
+  .we-controls button, .we-controls a { padding: 6px 7px; font-size: 11px; }
+  .we-dock { gap: 4px; padding: 6px 12px max(10px, env(safe-area-inset-bottom)); }
+  .we-text { min-height: 4.2em; }
+  .we-line { font-size: 15px; line-height: 1.38; }
+  .we-line.narr { font-size: 14px; }
+  .we-line.machine { font-size: 13px; }
+  .we-line.old { font-size: 12px; }
+  .we-ask { gap: 8px; margin-bottom: 4px; }
+  .we-prompt { font-size: 11.5px; }
+  .we-object { max-width: 128px; padding: 6px 9px; font-size: 12.5px; }
+  .we-targets { grid-template-columns: 1fr; gap: 6px; }
+  .we-target { min-height: 46px; padding: 6px 10px; gap: 1px; }
+  .we-t-label { font-size: 16px; }
+  .we-t-price { font-size: 13px; }
+  .we-t-detail { font-size: 12px; }
+  .we-overlay { padding: 6px; }
+  .we-paper { width: 100%; padding: 12px 14px 14px; font-size: 12.5px; line-height: 1.42; }
+  .we-paper h2 { margin-bottom: 6px; padding-bottom: 6px; font-size: 12px; }
+  .we-tline { margin-top: 5px; }
+  .we-pl { padding: 6px 3px; }
+  .we-none { margin-top: 8px; padding: 7px 9px; }
+  .we-ending h2 { font-size: 19px; }
+  .we-regime { font-size: 12.5px; }
+  .we-fact { font-size: 14px; margin-bottom: 6px; }
+  .we-facts { margin: 6px 0 8px; padding-top: 6px; }
+  .we-facts > div { padding: 2px 0; font-size: 13px; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .we-text { min-height: 3.6em; }
+  .week-episode[data-beat=gesture] .we-text { min-height: 0; }
+  .week-episode[data-beat=gesture] .we-line.old { display: none; }
+  .we-target { min-height: 44px; padding: 5px 10px; }
+  .we-paper { padding: 10px 12px 12px; font-size: 12px; line-height: 1.36; }
+  .we-tline { margin-top: 4px; }
+  .we-hint { margin-top: 6px; }
+  .we-ending h2 { font-size: 18px; margin-bottom: 4px; }
+}
+@media (min-width: 761px) {
+  .we-dock { padding-top: 12px; }
+  .we-header { padding: 8px 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .week-episode * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+  .we-delta { opacity: 1 !important; }
+}
+/* Recette 375x600 : le papier ne dépasse plus la fenêtre (colonne bornée), « Quitter » reste dans le bandeau. */
+@media (max-width: 760px) {
+  .we-overlay { grid-template-columns: minmax(0, 1fr); }
+  .we-paper { min-width: 0; max-width: 100%; overflow-wrap: anywhere; }
+}
+@media (max-width: 380px) {
+  .we-header { gap: 4px; padding: 4px 6px; }
+  .we-hud { gap: 6px; }
+  .we-controls button, .we-controls a { padding: 6px 4px; }
+}

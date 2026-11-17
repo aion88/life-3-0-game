@@ -1,0 +1,148 @@
+/* Reading roles: green objective/action, cyan speaker, blue observed consequence.
+   Labels remain explicit; options share one treatment regardless of moral outcome. */
+.dialogue-mode { --dialogue-border:1px; --dialogue-rule:3px; --dialogue-shadow:0 12px 36px #00000055; --talk-x:65vw; --talk-y:38vh; }
+.journey.dialogue-mode .stage-dialogue,.episode.dialogue-mode .stage-dialogue { display:contents; }
+.journey.dialogue-mode .stage-dialogue .journey-mission,.episode.dialogue-mode .stage-dialogue .episode-goals {
+ position:absolute; top:124px; left:24px; width:290px; max-width:30vw; max-height:160px; overflow:auto; box-sizing:border-box;
+ padding:13px 16px; margin:0; border:0; border-radius:10px; background:#152b25; color:#edf3e9; pointer-events:auto;
+ font:400 12px/1.5 'Inter C',Arial,sans-serif;
+}
+.dialogue-mode .stage-dialogue .journey-mission small,.dialogue-mode .stage-dialogue .episode-goals strong { color:#b9dca5; font-size:10px; }
+.dialogue-mode .stage-dialogue .journey-mission strong { display:block; font:600 13px/1.5 'Montserrat C',Arial,sans-serif; margin-top:4px; }
+.dialogue-mode .stage-dialogue .journey-mission p,.dialogue-mode .stage-dialogue .episode-goals p { color:#b9dca5; font-size:11px; }
+.journey.dialogue-mode .stage-dialogue .journey-status { position:absolute; top:298px; left:24px; right:auto; width:290px; max-width:30vw; margin:0; padding:9px 16px; display:grid; grid-template-columns:1fr auto; gap:4px 10px; box-sizing:border-box; background:#203f43ee; border:0; border-radius:8px; }
+.dialogue-mode .stage-dialogue .journey-status p { display:none; }.dialogue-mode .stage-dialogue .journey-status small { color:#bfd8e5; }.dialogue-mode .stage-dialogue .journey-status strong { font-size:20px; }.journey.dialogue-mode .stage-dialogue .journey-status meter { grid-column:1/-1; height:5px; margin:0; }
+.journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),.episode.dialogue-mode .stage-dialogue .dinner-reaction {
+ position:absolute; left:clamp(360px,calc(var(--talk-x) + 24px),calc(100% - 370px)); top:clamp(120px,calc(var(--talk-y) - 100px),calc(100dvh - 390px)); bottom:auto; right:auto;
+ transform:none; width:340px; max-width:none; max-height:34dvh; overflow:auto; padding:18px 22px; box-sizing:border-box;
+ border:var(--dialogue-border) solid #9bd8df; border-radius:18px 18px 18px 3px; background:#17272d; color:#f3f0e6;
+ box-shadow:var(--dialogue-shadow); pointer-events:auto; text-align:left; text-shadow:none; scrollbar-gutter:auto;
+}
+.dialogue-mode .stage-dialogue .journey-context { margin-bottom:8px; }
+.journey.dialogue-mode .stage-dialogue .journey-panel .journey-speaker,.episode.dialogue-mode .stage-dialogue .episode-speaker,.episode.dialogue-mode .stage-dialogue .dinner-reaction small { color:#9bd8df; font:600 10px/1.5 'Montserrat C',Arial,sans-serif; letter-spacing:.1em; }
+.journey.dialogue-mode .stage-dialogue .journey-panel h2,.episode.dialogue-mode .stage-dialogue .episode-panel h1,.episode.dialogue-mode .stage-dialogue .dinner-reaction h1 { color:#f3f0e6; font:600 17px/1.4 'Montserrat C',Arial,sans-serif; margin:5px 0 10px; text-shadow:none; }
+.journey.dialogue-mode .stage-dialogue .journey-panel .journey-line,.episode.dialogue-mode .stage-dialogue .episode-line,.episode.dialogue-mode .stage-dialogue .dinner-reaction p { color:#e0e9e7; font:400 14px/1.65 'Inter C',Arial,sans-serif; margin:0 0 10px; text-shadow:none; }
+.dialogue-mode .journey-more,.dialogue-mode .episode-more { color:#c3d3d3; font-size:12px; }.dialogue-mode .journey-more[open] { background:#22383e; }
+.dialogue-mode .journey-feedback { display:none; }
+.dialogue-mode .scene-choices,.episode.dialogue-mode .stage-dialogue .dinner-gestures {
+ position:absolute; bottom:20px; left:34%; right:24px; width:auto; max-width:none; max-height:28dvh; overflow:auto; padding:14px 16px; box-sizing:border-box;
+ border-radius:12px; background:#153a36ed; pointer-events:auto; transform:none; display:block;
+}
+.dialogue-mode .scene-choices>small,.dialogue-mode .scene-choices .journey-options-label { display:block; color:#c6e2ba; font:600 10px/1.5 'Montserrat C',Arial,sans-serif; margin:0 0 8px; letter-spacing:.1em; }
+.dialogue-mode .scene-choices .journey-options,.dialogue-mode .scene-choices .episode-options,.episode.dialogue-mode .stage-dialogue .dinner-gestures { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.dialogue-mode .scene-choices button,.episode.dialogue-mode .stage-dialogue .dinner-gestures button {
+ width:100%; min-width:0; max-width:none; min-height:48px; padding:12px 14px; box-sizing:border-box; border:var(--dialogue-border) solid #b9d9b199; border-radius:8px;
+ background:#203c32; color:#edf3e9; font:500 13px/1.45 'Inter C',Arial,sans-serif; text-align:left;
+}
+.dialogue-mode .scene-choices button:hover:not(:disabled),.episode.dialogue-mode .stage-dialogue .dinner-gestures button:hover { background:#305342; }
+.dialogue-mode .scene-choices button:disabled { opacity:.55; }
+.dialogue-mode .scene-choices button small,.episode.dialogue-mode .stage-dialogue .dinner-gestures button small { display:block; font:400 11px/1.4 'Inter C',Arial,sans-serif; color:#c4d9cd; margin-top:5px; letter-spacing:0; }
+.dialogue-mode .choice-impact { position:absolute; z-index:6; top:380px; left:24px; width:290px; max-width:30vw; max-height:calc(100dvh - 400px); overflow:auto; box-sizing:border-box; padding:18px; border-radius:12px; border:var(--dialogue-border) solid #8ac5f0; background:#152c40; color:#e4eff9; pointer-events:auto; box-shadow:var(--dialogue-shadow); animation:impact-reveal .3s ease-out; }
+.dialogue-mode .choice-impact>small { display:block; font:600 10px/1.5 'Montserrat C',Arial,sans-serif; letter-spacing:.08em; color:#a9d5f5; margin-right:15px; }
+.choice-impact>strong { display:block; font:600 13px/1.5 'Inter C',Arial,sans-serif; margin:10px 0; }
+.choice-impact>p { font:400 13px/1.6 'Inter C',Arial,sans-serif; margin:0; }
+.dialogue-mode .choice-impact>button { position:absolute; top:5px; right:5px; min-width:32px; min-height:32px; padding:0; border:0; background:transparent; color:#e4eff9; font-size:24px; cursor:pointer; }
+.impact-changes { padding:0; list-style:none; margin:10px 0 0; display:flex; flex-wrap:wrap; gap:6px; }
+.impact-changes li { padding:5px 8px; border-radius:5px; background:#243f56; color:#e4eff9; font:500 11px/1.5 'Inter C',Arial,sans-serif; }
+@keyframes impact-reveal { from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)} }
+@media(prefers-reduced-motion:reduce){.dialogue-mode .choice-impact{animation:none}}
+@media(max-width:760px) and (min-height:551px){
+ .journey.dialogue-mode .illustrated-view,.episode.dialogue-mode .illustrated-view { padding-top:210px; }
+ .journey.dialogue-mode .stage-dialogue .journey-mission,.episode.dialogue-mode .stage-dialogue .episode-goals { top:120px; left:12px; width:calc(100% - 24px); max-width:none; max-height:86px; padding:8px 12px; }
+ .dialogue-mode .stage-dialogue .journey-mission strong { font-size:11px; margin:0; }.dialogue-mode .stage-dialogue .journey-mission p,.dialogue-mode .stage-dialogue .episode-goals details { display:none; }
+ .journey.dialogue-mode .stage-dialogue .journey-status { top:212px; left:auto; right:12px; width:160px; max-width:50%; padding:5px 8px; gap:2px 5px; }
+ .dialogue-mode .stage-dialogue .journey-status strong { font-size:15px; }.dialogue-mode .stage-dialogue .journey-status small { font-size:8px; }
+ .journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),.episode.dialogue-mode .stage-dialogue .dinner-reaction { left:12px; top:auto; bottom:182px; width:calc(100% - 24px); max-height:max(120px,calc(100dvh - 580px)); padding:12px 16px; border-radius:3px 16px 16px; }
+ .dialogue-mode .scene-choices,.episode.dialogue-mode .stage-dialogue .dinner-gestures { left:12px; right:12px; bottom:10px; max-height:162px; padding:10px; }
+ .dialogue-mode .scene-choices .journey-options,.dialogue-mode .scene-choices .episode-options,.episode.dialogue-mode .stage-dialogue .dinner-gestures { grid-template-columns:1fr; }
+ .dialogue-mode .scene-choices button,.episode.dialogue-mode .stage-dialogue .dinner-gestures button { padding:10px 12px; font-size:13px; }
+ .dialogue-mode .choice-impact { top:118px; left:12px; width:calc(100% - 24px); max-width:none; max-height:260px; padding:16px; }
+}
+@media(max-height:550px){.journey.dialogue-mode .stage-dialogue .journey-mission,.episode.dialogue-mode .stage-dialogue .episode-goals{top:84px;max-height:110px;width:26vw}.journey.dialogue-mode .stage-dialogue .journey-status{top:204px;width:26vw}.dialogue-mode .scene-choices{max-height:30dvh;left:30%;bottom:10px}.journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report){top:88px;left:auto;right:16px;width:40vw;max-height:36dvh}.dialogue-mode .choice-impact{top:90px;max-height:calc(100dvh - 110px)}}
+
+/* Explicit dark-surface text colours prevent legacy styles from leaking in. */
+.dialogue-mode .stage-dialogue .episode-more,
+.dialogue-mode .stage-dialogue .journey-more { color:#e0e9e7; }
+.dialogue-mode .stage-dialogue .episode-more[open],
+.dialogue-mode .stage-dialogue .journey-more[open] { background:#22383e; color:#e0e9e7; }
+.episode.dialogue-mode .stage-dialogue .episode-travel p { color:#e0e9e7; text-shadow:none; }
+.episode.dialogue-mode .stage-dialogue .episode-panel>button,
+.episode.dialogue-mode .stage-dialogue .dinner-reaction button { background:#25473d; color:#edf3e9; }
+.dialogue-mode .stage-dialogue .episode-goals summary { color:#e0e9e7; }
+.dialogue-mode .scene-choices button:focus-visible,
+.episode.dialogue-mode .stage-dialogue button:focus-visible { outline:2px solid #9bd8df; outline-offset:3px; }
+
+@media(max-width:760px) and (min-height:551px) {
+ .episode.dialogue-mode .stage-dialogue .episode-goals { top:144px; max-height:80px; }
+ .episode.dialogue-mode .choice-impact { top:144px; }
+ .episode.dialogue-mode .episode-cameras { top:232px; }
+ .episode.dialogue-mode .dinner-objects { top:270px; }
+ .episode.dialogue-mode .dinner-cinematic-caption { display:none; }
+ .journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),
+ .episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report) { max-height:min(34dvh,280px); }
+ .episode.dialogue-mode .stage-dialogue .dinner-reaction { max-height:150px; }
+}
+
+/* Shape and wording reinforce colour, including for colour-blind readers. */
+.journey.dialogue-mode .stage-dialogue .journey-mission,
+.episode.dialogue-mode .stage-dialogue .episode-goals { border-inline-start:var(--dialogue-rule) solid #b9dca5; }
+.journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),
+.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),
+.episode.dialogue-mode .stage-dialogue .dinner-reaction { border-color:#45656b; border-inline-start:var(--dialogue-rule) solid #9bd8df; }
+.dialogue-mode .choice-impact { border-color:#456881; border-inline-start:var(--dialogue-rule) solid #8ac5f0; }
+.dialogue-mode .scene-choices { border-block-start:var(--dialogue-rule) solid #b9dca5; }
+.dialogue-mode .scene-choices button:focus-visible,
+.episode.dialogue-mode .stage-dialogue button:focus-visible,
+.dialogue-mode .stage-dialogue summary:focus-visible { outline:3px solid #d5f1b5; outline-offset:3px; }
+.dialogue-mode .stage-dialogue .journey-line,
+.dialogue-mode .stage-dialogue .episode-line { text-wrap:pretty; }
+
+/* Portrait reading: keep a dedicated scene band and offer an explicit observation mode. */
+.scene-reading-toggle { display:none; }
+@media(max-width:760px) and (min-height:551px) {
+ .journey.dialogue-mode,.episode.dialogue-mode { --iv-portrait-height:clamp(240px,36dvh,360px); }
+ .journey.dialogue-mode .illustrated-view,.episode.dialogue-mode .illustrated-view { padding-top:200px; }
+ .journey.dialogue-mode .journey-header { padding:12px; display:block; }
+ .journey.dialogue-mode .journey-identity h1 { font-size:20px; }
+ .journey.dialogue-mode .journey-identity .moral-world-rule { display:none; }
+ .journey.dialogue-mode .journey-header nav { position:absolute; top:94px; left:12px; right:12px; margin-top:0; display:flex; flex-wrap:nowrap; overflow-x:auto; gap:6px; padding-bottom:3px; pointer-events:auto; }
+ .journey.dialogue-mode .journey-header nav button { flex:0 0 auto; font-size:11px; padding:8px; }
+ .episode.dialogue-mode .episode-top { padding:12px 16px; }
+ .episode.dialogue-mode .episode-tools { top:94px; left:12px; right:12px; flex-wrap:nowrap; overflow-x:auto; padding-bottom:3px; }
+ .episode.dialogue-mode .episode-tools button { flex:0 0 auto; font-size:11px; padding:8px; min-height:44px; }
+ .journey.dialogue-mode .stage-dialogue .journey-mission,.episode.dialogue-mode .stage-dialogue .episode-goals { top:144px; max-height:52px; padding:6px 10px; }
+ .journey.dialogue-mode .stage-dialogue .journey-status { top:204px; right:12px; width:130px; }
+ .journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),
+ .episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),
+ .episode.dialogue-mode .stage-dialogue .dinner-reaction { top:calc(204px + var(--iv-portrait-height)); bottom:182px; max-height:none; width:calc(100% - 24px); min-height:70px; }
+ .journey.dialogue-mode .choice-impact,.episode.dialogue-mode .choice-impact { top:calc(204px + var(--iv-portrait-height)); bottom:182px; max-height:none; padding:12px; }
+ .episode.dialogue-mode .episode-cameras { top:240px; right:12px; max-width:calc(100% - 24px); }
+ .episode.dialogue-mode .dinner-objects { top:280px; right:12px; }
+ .journey.dialogue-mode>.scene-reading-toggle,.episode.dialogue-mode>.scene-reading-toggle { display:block; position:absolute; z-index:15; top:204px; left:12px; min-height:36px; padding:7px 12px; border:var(--dialogue-border) solid #9bd8df; border-radius:18px; background:#17272d; color:#e0e9e7; font:600 11px/1.4 'Inter C',Arial,sans-serif; cursor:pointer; }
+ .dialogue-mode[data-observing=true] { --iv-portrait-height:calc(100dvh - 160px); }
+ .journey.dialogue-mode[data-observing=true] .illustrated-view,.episode.dialogue-mode[data-observing=true] .illustrated-view { padding-top:140px; }
+ .dialogue-mode[data-observing=true] .stage-dialogue,.dialogue-mode[data-observing=true] .scene-choices,.dialogue-mode[data-observing=true] .choice-impact { display:none; }
+ .journey.dialogue-mode[data-observing=true]>.scene-reading-toggle,.episode.dialogue-mode[data-observing=true]>.scene-reading-toggle { top:146px; }
+ .episode.dialogue-mode[data-observing=true] .episode-cameras { top:190px; }
+ .episode.dialogue-mode[data-observing=true] .dinner-objects { top:230px; }
+ .dialogue-mode[data-ended=true]>.scene-reading-toggle { display:none; }
+ .journey.dialogue-mode:not([data-modal=none])>.scene-reading-toggle { display:none; }
+ .episode.dialogue-mode:has(dialog[open])>.scene-reading-toggle { display:none; }
+}
+@media(max-width:760px) and (min-height:551px) and (max-height:730px) {
+ .journey.dialogue-mode,.episode.dialogue-mode { --iv-portrait-height:260px; }
+ .journey.dialogue-mode .illustrated-view,.episode.dialogue-mode .illustrated-view { padding-top:160px; }
+ .journey.dialogue-mode .journey-identity h1,.episode.dialogue-mode .episode-place { font-size:18px; }
+ .journey.dialogue-mode .journey-header nav,.episode.dialogue-mode .episode-tools { top:68px; }
+ .journey.dialogue-mode .stage-dialogue .journey-mission,.episode.dialogue-mode .stage-dialogue .episode-goals { top:116px; max-height:40px; }
+ .journey.dialogue-mode>.scene-reading-toggle,.episode.dialogue-mode>.scene-reading-toggle,.journey.dialogue-mode .stage-dialogue .journey-status { top:164px; }
+ .journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),.episode.dialogue-mode .stage-dialogue .dinner-reaction { top:424px; }
+ .journey.dialogue-mode .choice-impact,.episode.dialogue-mode .choice-impact { top:424px; bottom:150px; }
+ .episode.dialogue-mode .episode-cameras { top:200px; }
+ .episode.dialogue-mode .dinner-objects { top:240px; }
+ .journey.dialogue-mode[data-observing=true] .illustrated-view,.episode.dialogue-mode[data-observing=true] .illustrated-view { padding-top:140px; }
+ .journey.dialogue-mode[data-observing=true]>.scene-reading-toggle,.episode.dialogue-mode[data-observing=true]>.scene-reading-toggle { top:146px; }
+ .journey.dialogue-mode .stage-dialogue .journey-panel:not(.journey-ending),.episode.dialogue-mode .stage-dialogue .episode-panel:not(.episode-report),.episode.dialogue-mode .stage-dialogue .dinner-reaction { bottom:150px; }
+ .dialogue-mode .scene-choices { max-height:130px; }
+ .dialogue-mode[data-observing=true] { --iv-portrait-height:calc(100dvh - 160px); }
+}

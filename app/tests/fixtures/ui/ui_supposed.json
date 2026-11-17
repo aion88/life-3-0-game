@@ -1,0 +1,332 @@
+[
+  {
+    "path": "theme.type.screenTitle",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §2 titre d'écran (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.bilanTitle",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 titre du bilan (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.worldName",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 nom du monde (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.worldClear",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 ligne en clair (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.redirectLine",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 redirect.bilan (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.line",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 40 px) ; spec C §2 réplique (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.streetOption",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 26 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 32 px) ; spec C §2 option de rue (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.questionOption",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §2 option du questionnaire (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.priceLine",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 26 px) ; spec C §2 ligne de prix (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.braceletNumber",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros (avant : 96 px) ; spec C §2 compteur (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.braceletUnit",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros (avant : 28 px) ; spec C §3.2 unité (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.hint",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.1 consigne (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.narration",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.2 narration (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.nameChip",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.2 puce de nom (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.card",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 22 px) ; spec C §3.2 fiche de passant (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.evening",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.3 relevé du soir (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.dayLabel",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 ligne de jour (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.kitLabel",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 libellé du kit, P-15 (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.kitState",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 état du kit, P-15 (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.fate",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.4 ce qui a tenu (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.message",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.3 message du bracelet (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.controls",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §3.2 rappel des commandes (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.type.cost",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.1 coût (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum"
+  },
+  {
+    "path": "theme.street.arrowKeys",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "spec C §6 « ajout proposé », à valider"
+  },
+  {
+    "path": "theme.street.bustShare",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 : part haute de la boîte de la personne qui forme « tête et buste », zone interdite d'I-3"
+  },
+  {
+    "path": "theme.street.bubbleReducedScale",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 : échelle de la réplique quand aucun côté ne tient (plancher 18 px par applyTheme)"
+  },
+  {
+    "path": "theme.street.headShare",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : part haute du rectangle de la personne visée par la pointe de la queue (la tête)"
+  },
+  {
+    "path": "theme.street.bubbleMaxWidthPx",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : largeur maximale de la bulle à 1920 px"
+  },
+  {
+    "path": "theme.street.bubbleMaxWidthShare",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : part de la largeur de la fenêtre que la bulle ne dépasse pas"
+  },
+  {
+    "path": "theme.street.nameChipPadYPx",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : marge verticale de la puce de nom (valeur de .c-pill)"
+  },
+  {
+    "path": "theme.street.nameChipPadXPx",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : marge horizontale de la puce de nom (valeur de .c-pill)"
+  },
+  {
+    "path": "theme.street.nameChipGapPx",
+    "owner": "ux-designer",
+    "date": "2026-11-02",
+    "reason": "plan UI-C T8 rév. : espace entre la puce de nom et le texte de la bulle"
+  },
+  {
+    "path": "theme.street.hidePricePillFor",
+    "owner": "game-designer",
+    "date": "2026-11-02",
+    "reason": "spec C P-3 / GD 3e : nommer ou déclarer coûte 8 mots avec priceRef §7.3, qui ne donne pas ce coût"
+  },
+  {
+    "path": "theme.street.nameChip",
+    "owner": "game-designer",
+    "date": "2026-11-02",
+    "reason": "spec C P-9 ouvert, §3.2 « n'apparaît que si la carte a été lue »"
+  },
+  {
+    "path": "theme.street.dayDate",
+    "owner": "game-designer",
+    "date": "2026-11-02",
+    "reason": "spec C P-10 ouvert"
+  },
+  {
+    "path": "timing.motion.confetti",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §4 donne 1 200 ms et « gravité » mais aucune courbe ; rentrée (accélération) choisie ; dispersion, chute, taille des pièces non données (spreadPx, fallPx, riseMaxPx, rotMaxDeg, piecePx)"
+  },
+  {
+    "path": "timing.motion.coin",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §4 donne 420 ms, le décalage de 35 ms et « en arc » ; la hauteur de l'arc (arcDy, px, négatif = vers le haut) n'est pas donnée"
+  },
+  {
+    "path": "timing.motion.refusalShake",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "spec C §4 donne 160 ms au total mais aucune courbe"
+  },
+  {
+    "path": "theme.street.glintOffsetXPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 7 px) ; spec C §3.2 pupille, P-1 : reflet fixe et hors centre (décalage non donné)"
+  },
+  {
+    "path": "theme.street.glintOffsetYPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : -8 px) ; spec C §3.2 pupille, P-1 : reflet fixe et hors centre (décalage non donné)"
+  },
+  {
+    "path": "theme.shape.cardPadX",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "retour de Cynthia : texte collé aux bordures ; la spec ne donne pas de marge interne des cartes"
+  },
+  {
+    "path": "theme.shape.cardPadY",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "retour de Cynthia : texte collé aux bordures ; la spec ne donne pas de marge interne des cartes"
+  },
+  {
+    "path": "theme.street.optionPadYPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 18 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 22 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionPadStartPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 32 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 40 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionPadEndPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 21 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 26 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionSmallPadYPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "AR-13 : en mode petit l'option tient sur une ligne avec sa pastille, environ 50 px ; valeur mesurée à 960 x 540, la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionSmallPadStartPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "AR-13 : en mode petit l'option tient sur une ligne avec sa pastille, environ 50 px ; valeur mesurée à 960 x 540, la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionSmallGapPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "AR-13 : en mode petit l'option tient sur une ligne avec sa pastille, environ 50 px ; valeur mesurée à 960 x 540, la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.optionRestWidthPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 512 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 640 px) ; spec C §3.2"
+  },
+  {
+    "path": "theme.street.optionDesignatedWidthPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 576 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 720 px) ; spec C §3.2"
+  },
+  {
+    "path": "theme.street.eyePx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 96 px) ; spec C §3.2 Œil"
+  },
+  {
+    "path": "theme.street.pupilPx",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 40 px) ; spec C §3.2 pupille"
+  },
+  {
+    "path": "theme.street.panelInkOpacity",
+    "owner": "art-director",
+    "date": "2026-11-03",
+    "reason": "retour de Cynthia : panneau de choix sur encre translucide, aucun aplat blanc ; opacité non donnée par la spec"
+  },
+  {
+    "path": "theme.street.recapMaxHeightPx",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "rue guidée T11 : hauteur maximale du relevé du soir précis avant défilement ; la spec ne la donne pas"
+  },
+  {
+    "path": "theme.street.recapMaxHeightShare",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "rue guidée T11 : part du cadre que le relevé du soir précis ne dépasse pas avant défilement ; la spec ne la donne pas"
+  }
+]

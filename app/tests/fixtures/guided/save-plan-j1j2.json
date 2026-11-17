@@ -1,0 +1,27 @@
+{
+  "note": "Sauvegarde d'une partie jouée sous le plan J1-J2 (fin de démo après le J2) : actes des J1 et J2, chemin par défaut (premières options), nuit du J2 comprise. Générée par le metteur en scène sur w10 avec endOfDemo afterDay 2 [T13].",
+  "acts": [
+    {"day": 1, "minute": 430, "kind": "choice", "id": "j1.phone", "option": "take"},
+    {"day": 1, "minute": 431, "kind": "choice", "id": "j1.component", "option": "take"},
+    {"day": 1, "minute": 434, "kind": "scene", "id": "j1.roux", "option": "laugh"},
+    {"day": 1, "minute": 438, "kind": "scene", "id": "j1.marlene", "option": "answer"},
+    {"day": 1, "minute": 440, "kind": "exit", "id": "home", "option": null},
+    {"day": 1, "minute": 441, "kind": "scene", "id": "j1.street", "option": "straight"},
+    {"day": 1, "minute": 445, "kind": "lane", "id": "checkpoint", "option": "comply"},
+    {"day": 1, "minute": 505, "kind": "enter", "id": "registre", "option": null},
+    {"day": 1, "minute": 510, "kind": "choice", "id": "m4.list", "option": "read"},
+    {"day": 1, "minute": 540, "kind": "choice", "id": "relecture.j1", "option": "flag"},
+    {"day": 1, "minute": 780, "kind": "exit", "id": "registre", "option": null},
+    {"day": 1, "minute": 780, "kind": "enter", "id": "home", "option": null},
+    {"day": 1, "minute": 1050, "kind": "sleep", "id": "night", "option": null},
+    {"day": 2, "minute": 420, "kind": "choice", "id": "j2.component", "option": "hide"},
+    {"day": 2, "minute": 430, "kind": "scene", "id": "j2.marlene", "option": "talk"},
+    {"day": 2, "minute": 432, "kind": "exit", "id": "home", "option": null},
+    {"day": 2, "minute": 450, "kind": "lane", "id": "checkpoint", "option": "comply"},
+    {"day": 2, "minute": 510, "kind": "enter", "id": "registre", "option": null},
+    {"day": 2, "minute": 520, "kind": "choice", "id": "relecture.j2", "option": "flag"},
+    {"day": 2, "minute": 760, "kind": "exit", "id": "registre", "option": null},
+    {"day": 2, "minute": 760, "kind": "enter", "id": "home", "option": null},
+    {"day": 2, "minute": 1050, "kind": "sleep", "id": "night", "option": null}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "marginRem": { "v": 1, "src": "design/ui/2026-11-02-zones-ecran-ux.md §1 : marge m = 1rem entre chaque élément et le bord du cadre utile", "status": "sourced" },
+  "largeMinPx": { "v": 1500, "src": "design/ui/2026-11-02-zones-ecran-ux.md §1 : mode large à partir de 1500 px de largeur de U", "status": "sourced" },
+  "mediumMinPx": { "v": 1000, "src": "design/ui/2026-11-02-zones-ecran-ux.md §1 : mode moyen de 1000 à 1499 px, petit sous 1000 px", "status": "sourced" },
+  "leftLargeRem": { "v": 22, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : Z-gauche large 22 rem", "status": "sourced" },
+  "leftMediumShare": { "v": 0.24, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : Z-gauche moyen 24 % de U", "status": "sourced" },
+  "leftSmallRem": { "v": 14, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : Z-gauche petit 14 rem", "status": "sourced" },
+  "rightMediumShare": { "v": 0.46, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : Z-droite moyen 46 % de U au plus", "status": "sourced" },
+  "rightSmallShare": { "v": 0.4, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : Z-droite petit 40 % de U au plus", "status": "sourced" },
+  "centreCapRem": { "v": 36, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : les 36 rem de la ligne de droit deviennent un plafond", "status": "sourced" },
+  "cardCapRem": { "v": 22, "src": "design/ui/2026-11-02-zones-ecran-ux.md §2 : les 22 rem de la fiche deviennent un plafond", "status": "sourced" },
+  "mediumHelpMaxGroups": { "v": 2, "src": "design/ui/2026-11-02-zones-ecran-ux.md §3 : en moyen, le rappel des commandes disparaît au-delà de deux groupes de choix ouverts", "status": "sourced" },
+  "foldMaxMs": { "v": 120, "src": "design/ui/2026-11-02-zones-ecran-ux.md Z-8 : repli et dépli en fondu de 120 ms au plus (I-9)", "status": "sourced" }
+}

@@ -1,0 +1,2351 @@
+{
+ "w10": {
+  "push": [
+   -29.0,
+   43.0,
+   -7.0,
+   -28.0,
+   58.0,
+   -17.0
+  ],
+  "steps": [
+   {
+    "aiPower": 30000,
+    "order": 60000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 30000
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 22750,
+    "order": 70750,
+    "abundance": 48250,
+    "freedom": 58000,
+    "surveillance": 49500,
+    "unrest": 25750
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 15500,
+    "order": 81500,
+    "abundance": 46500,
+    "freedom": 51000,
+    "surveillance": 64000,
+    "unrest": 21500
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 8250,
+    "order": 92250,
+    "abundance": 44750,
+    "freedom": 44000,
+    "surveillance": 78500,
+    "unrest": 17250
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 14000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 15000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 16000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 17000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 18000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 19000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 20000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 21000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 22000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 23000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 24000
+   },
+   {
+    "aiPower": 1000,
+    "order": 100000,
+    "abundance": 43000,
+    "freedom": 37000,
+    "surveillance": 93000,
+    "unrest": 25000
+   }
+  ],
+  "atChoice": {
+   "aiPower": 1000,
+   "order": 100000,
+   "abundance": 43000,
+   "freedom": 37000,
+   "surveillance": 93000,
+   "unrest": 25000
+  },
+  "extinction": null
+ },
+ "w07": {
+  "push": [
+   62.0,
+   -38.0,
+   15.0,
+   21.0,
+   -8.0,
+   35.0
+  ],
+  "steps": [
+   {
+    "aiPower": 30000,
+    "order": 60000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 30000
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 45500,
+    "order": 50500,
+    "abundance": 53750,
+    "freedom": 70250,
+    "surveillance": 33000,
+    "unrest": 38750
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 61000,
+    "order": 41000,
+    "abundance": 57500,
+    "freedom": 75500,
+    "surveillance": 31000,
+    "unrest": 47500
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 76500,
+    "order": 31500,
+    "abundance": 61250,
+    "freedom": 80750,
+    "surveillance": 29000,
+    "unrest": 56250
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 63500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 62000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 60500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 59000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 57500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 56000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 54500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 53000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 51500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 50000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 48500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 47000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 45500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 44000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 42500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 41000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 39500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 38000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 36500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 35000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 33500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 32000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 30500,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 92000,
+    "order": 22000,
+    "abundance": 29000,
+    "freedom": 86000,
+    "surveillance": 27000,
+    "unrest": 65000
+   }
+  ],
+  "atChoice": {
+   "aiPower": 92000,
+   "order": 22000,
+   "abundance": 47000,
+   "freedom": 86000,
+   "surveillance": 27000,
+   "unrest": 65000
+  },
+  "extinction": {
+   "world": "w07",
+   "runStartStep": 37,
+   "ruptureStep": 60
+  }
+ },
+ "w12": {
+  "push": [
+   47.0,
+   -43.0,
+   9.0,
+   22.0,
+   -5.0,
+   41.0
+  ],
+  "steps": [
+   {
+    "aiPower": 30000,
+    "order": 60000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 30000
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 41750,
+    "order": 49250,
+    "abundance": 52250,
+    "freedom": 70500,
+    "surveillance": 33750,
+    "unrest": 40250
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 53500,
+    "order": 38500,
+    "abundance": 54500,
+    "freedom": 76000,
+    "surveillance": 32500,
+    "unrest": 50500
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 55250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 53750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 52250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 50750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 49250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 47750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 46250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 44750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 43250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 41750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 40250,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 65250,
+    "order": 27750,
+    "abundance": 38750,
+    "freedom": 81500,
+    "surveillance": 31250,
+    "unrest": 60750
+   },
+   {
+    "aiPower": 77000,
+    "order": 15500,
+    "abundance": 39500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 14000,
+    "abundance": 38000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 12500,
+    "abundance": 36500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 11000,
+    "abundance": 35000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 9500,
+    "abundance": 33500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 8000,
+    "abundance": 32000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 6500,
+    "abundance": 30500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 5000,
+    "abundance": 29000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 3500,
+    "abundance": 27500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 2000,
+    "abundance": 26000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 500,
+    "abundance": 24500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 23000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 21500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 20000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 18500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 17000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 15500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 14000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 12500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 11000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 9500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 8000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 6500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 5000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 3500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 2000,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 500,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 77000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 87000,
+    "surveillance": 30000,
+    "unrest": 71000
+   }
+  ],
+  "atChoice": {
+   "aiPower": 77000,
+   "order": 0,
+   "abundance": 23000,
+   "freedom": 87000,
+   "surveillance": 30000,
+   "unrest": 71000
+  },
+  "extinction": {
+   "world": "w12",
+   "runStartStep": 47,
+   "ruptureStep": 70
+  }
+ },
+ "forgedBroken": {
+  "push": [
+   65.0,
+   -22.0,
+   45.0,
+   -5.0,
+   5.0,
+   45.0
+  ],
+  "steps": [
+   {
+    "aiPower": 30000,
+    "order": 60000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 30000
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 46250,
+    "order": 54500,
+    "abundance": 61250,
+    "freedom": 63750,
+    "surveillance": 36250,
+    "unrest": 41250
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 62500,
+    "order": 49000,
+    "abundance": 72500,
+    "freedom": 62500,
+    "surveillance": 37500,
+    "unrest": 52500
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 78750,
+    "order": 43500,
+    "abundance": 83750,
+    "freedom": 61250,
+    "surveillance": 38750,
+    "unrest": 63750
+   },
+   {
+    "aiPower": 95000,
+    "order": 36500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 74000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 73000
+   },
+   {
+    "aiPower": 95000,
+    "order": 33500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 72000
+   },
+   {
+    "aiPower": 95000,
+    "order": 32000,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 71000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 69000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 68000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 67000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 66000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 65000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 64000
+   },
+   {
+    "aiPower": 95000,
+    "order": 30500,
+    "abundance": 95000,
+    "freedom": 60000,
+    "surveillance": 40000,
+    "unrest": 63000
+   }
+  ],
+  "atChoice": {
+   "aiPower": 95000,
+   "order": 30500,
+   "abundance": 95000,
+   "freedom": 60000,
+   "surveillance": 40000,
+   "unrest": 63000
+  },
+  "extinction": null
+ },
+ "forgedGate25": {
+  "push": [
+   260.0,
+   -100.0,
+   0.0,
+   0.0,
+   0.0,
+   160.0
+  ],
+  "steps": [
+   {
+    "aiPower": 30000,
+    "order": 60000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 30000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 95000,
+    "order": 35000,
+    "abundance": 50000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 70000
+   },
+   {
+    "aiPower": 100000,
+    "order": 8500,
+    "abundance": 48500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 7000,
+    "abundance": 47000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 5500,
+    "abundance": 45500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 4000,
+    "abundance": 44000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 2500,
+    "abundance": 42500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 1000,
+    "abundance": 41000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 39500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 38000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 36500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 35000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 33500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 32000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 30500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 29000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 27500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 26000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 24500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 23000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 21500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 20000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 18500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 17000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 15500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 14000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 12500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 11000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 9500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 8000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 6500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 5000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 3500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 2000,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 500,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   },
+   {
+    "aiPower": 100000,
+    "order": 0,
+    "abundance": 0,
+    "freedom": 65000,
+    "surveillance": 35000,
+    "unrest": 100000
+   }
+  ],
+  "atChoice": {
+   "aiPower": 100000,
+   "order": 0,
+   "abundance": 0,
+   "freedom": 65000,
+   "surveillance": 35000,
+   "unrest": 100000
+  },
+  "extinction": {
+   "world": "w07",
+   "runStartStep": 25,
+   "ruptureStep": 48
+  }
+ }
+}

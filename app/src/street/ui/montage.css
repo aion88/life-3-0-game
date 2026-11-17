@@ -1,0 +1,4 @@
+/* Rue guidée, semaine condensée T3 : carte de montage, texte seul, en Z-centre. Jetons seulement, aucune couleur ni taille en dur. */
+[data-zone="centre"] > [data-ui="montage"] { position: static; flex: 0 1 auto; min-height: 0; box-sizing: border-box; width: fit-content; max-width: min(var(--z-centre-cap), 100%); max-height: 100%; overflow-y: auto; display: flex; flex-direction: column; gap: var(--s-card-pad-y); }
+[data-ui="montage"] .c-montage-title { margin: 0; font-family: var(--font-display); font-weight: 300; }
+[data-ui="montage"] p { margin: 0; font-family: var(--font-text); font-weight: 400; }

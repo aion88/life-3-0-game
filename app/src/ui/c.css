@@ -1,0 +1,166 @@
+@import './photographicPalette.css';
+/* Feuille de l'interface C [spec C §1, §3.0, I-1, I-2, I-6, I-7, I-9, I-10]. Aucune couleur, police, taille ni durée en dur : variables posées par applyTheme. */
+
+/* Cartes */
+.c-card { box-sizing: border-box; padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-creme); color: var(--c-encre); border: var(--s-border) solid var(--c-encre); border-radius: var(--s-card-main); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); }
+.c-card:empty { display: none; }   /* une carte sans texte (narration vide) ne laisse pas de pastille vide */
+.c-card--secondary { border-radius: var(--s-card-secondary); }
+.c-card--ink { background: var(--c-encre); color: var(--c-creme); border-color: var(--c-creme); }
+.c-card--interactive { cursor: pointer; }
+
+/* Pastilles */
+.c-pill { display: inline-block; padding: 4px 16px; border-radius: var(--s-pill); color: var(--c-encre); font-family: var(--t-name-chip-family); font-weight: 700; line-height: 1.25; }
+.c-street-choice-name { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; border: 0; cursor: pointer; font-size: var(--t-name-chip-size); }   /* cible tactile 44 px : littéral assumé, pas de jeton de taille de cible */
+.c-street-choice-name[aria-expanded]::after { content: ""; flex: none; border-style: solid; border-color: transparent; border-width: .4em 0 .4em .6em; border-left-color: currentColor; }   /* chevron en triangles de bordure : replié = vers la droite, déplié = vers le bas, sans texte ni rotation */
+.c-street-choice-name[aria-expanded="true"]::after { border-width: .6em .4em 0; border-left-color: transparent; border-top-color: currentColor; }
+.c-street-choice-name:focus-visible { outline: var(--s-border) solid var(--c-creme); outline-offset: 3px; }
+/* Panneau de choix de la rue : cartes et en-têtes sur encre translucide, texte crème, aucun aplat blanc [retour de Cynthia, build 35ed56c]. AA : crème sur encre à `panelInkOpacity` au-dessus d'un fond blanc, 8,9:1. */
+[data-ui="root"] { --c-street-ink: color-mix(in srgb, var(--c-encre) calc(var(--s-street-panel-ink-opacity, 1) * 100%), transparent); }
+.c-street-choice-name { background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); }
+.c-street-choice-name[aria-expanded="true"] { border-color: var(--c-creme); }
+.c-refusal.c-street-refusal { background: var(--c-street-ink); color: var(--c-creme); border-color: var(--c-lavande-trait); }
+.c-pill--soleil { background: var(--c-soleil); }
+.c-pill--lavande { background: var(--c-lavande); }
+.c-pill--lavandeClaire { background: var(--c-lavande-claire); }
+.c-pill--creme { background: var(--c-creme); }
+.c-pill--encre { background: var(--c-encre); color: var(--c-creme); }
+
+/* Bouton d'action : pastille menthe, texte encre, ombre pleine menthe foncé */
+.c-action { display: inline-block; padding: 12px 32px; border: 0; border-radius: var(--s-pill); background: var(--c-menthe); color: var(--c-encre); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-menthe); font-family: var(--t-body-family); font-weight: 700; font-size: var(--t-body-size); line-height: var(--t-body-lh); cursor: pointer; }
+
+/* Option cliquable (questionnaire et rue) */
+.c-option { box-sizing: border-box; cursor: pointer; color: var(--c-encre); background: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-card-secondary); font: inherit; text-align: left; }
+.c-option[aria-pressed="true"] { background: var(--c-rose); border-color: var(--c-encre); }
+
+/* Avis système : grisAcier, texte blanc, sobre */
+.c-notice { margin: 0; padding: 12px 20px; background: var(--c-gris-acier); color: var(--c-blanc); border-radius: var(--s-card-secondary); font-family: var(--font-text); font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); }
+
+/* Voix sobre : ni rotation, ni transition */
+/* L'Atlas posé dans l'accueil garde ses transforms : la frise et les jauges en dépendent (marqueurs SVG placés par `transform`). */
+.c-sober, .c-sober *:not(.atlas, .atlas *) { transform: none !important; transition: none !important; animation: none !important; }
+
+/* Page : aucune marge du navigateur autour de la scène (la scène couvre la fenêtre, bord à bord). */
+html, body { margin: 0; padding: 0; height: 100%; }   /* le document garde une boîte à la taille de la fenêtre (la scène est hors flux : sans hauteur, html est vide et invisible pour une attente « visible ») */
+
+/* Anneau de focus double : 3 px encre, puis 3 px crème à l'extérieur (3:1 sur tout fond de la palette). */
+.c-action:focus-visible, .c-option:focus-visible, .c-card--interactive:focus-visible, [data-ui="choices"]:focus-visible, :where([data-ui="root"] button):focus-visible {   /* :where = spécificité 0 : une option garde son ombre et son liseré, la règle propre à son état l'emporte */
+  outline: var(--s-focus-ring) solid var(--c-encre);
+  outline-offset: 0;
+  box-shadow: 0 0 0 calc(var(--s-focus-ring) * 2) var(--c-creme);   /* l'ombre dépasse le contour : bande crème visible à l'extérieur de la bande encre */
+}
+
+.c-action:focus-visible { box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-menthe), 0 0 0 calc(var(--s-focus-ring) * 2) var(--c-creme); }   /* le bouton garde son ombre */
+
+/* Œil : disque ciel, ombre interne ciel foncé ; pupille encre ; reflet crème fixe (objectif, jamais un visage) */
+.c-eye { position: relative; display: inline-block; width: var(--eye-px); height: var(--eye-px); border-radius: var(--s-pill); background: var(--c-ciel); box-shadow: inset 0 calc(-1 * var(--s-border)) 0 var(--sh-ciel); flex: none; }
+/* La pupille se centre par inset et marges auto, pas par une propriété animée : l'obturateur ne la décentre pas. */
+.c-eye__pupil { position: absolute; inset: 0; margin: auto; border-radius: var(--s-pill); background: var(--c-encre); }
+.c-eye__glint { position: absolute; left: 50%; top: 50%; border-radius: var(--s-pill); background: var(--c-creme); }
+
+/* I-9 : mouvement réduit, plus aucune transition ni animation CSS ; les mouvements passent par motionFor. */
+@media (prefers-reduced-motion: reduce) { [data-ui="root"] *, .c-action, .c-option { transition: none; animation: none; } }
+[data-reduced-motion="true"] *, [data-reduced-motion="true"] { transition: none; animation: none; }
+
+/* Refus système : pastille crème à bordure grisAcier, texte encre (ce n'est pas le refus d'une option, I-5) */
+.c-refusal { padding: 4px 16px; font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); background: var(--c-creme); color: var(--c-encre); border: var(--s-border) solid var(--c-gris-acier); border-radius: var(--s-pill); }
+
+/* Questionnaire 2026 [spec C §3.1, P-13] : contours porteurs de sens en lavandeTrait (3:1), lavandes en fond seulement. */
+.c-q { position: absolute; top: calc(var(--band-h, 0px) * (1 - var(--q-bleed, 0))); bottom: calc(var(--band-h, 0px) * (1 - var(--q-bleed, 0))); left: 0; right: 0; z-index: 2; display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: calc(1rem * var(--q-fit, 1)); }
+/* Tenir dans la fenêtre [retour de Cynthia 2026-11-08, `fit.ts`] : `--q-fit` (posé sur `.c-q`) réduit les tailles de texte jusqu'au plancher, ET les marges, écarts et l'œil, qui n'ont pas de plancher ;
+   `--q-bleed` (0 à 1) laisse la carte mordre sur les bandes noires seulement quand la fenêtre est trop basse pour qu'elle tienne entre elles (`z-index` : au-dessus des bandes). */
+.c-q [hidden] { display: none !important; }
+.c-q-card { font-size: max(var(--t-min-text-px), calc(var(--t-body-size) * var(--q-fit, 1))); display: flex; flex-direction: column; gap: calc(0.7em * var(--q-fit, 1)); width: 100%; max-width: var(--s-q-card-max-width-px); padding: calc(1.2em * var(--q-fit, 1)) calc(2.8em * var(--q-fit, 1)); max-height: 100%; overflow-y: auto; box-shadow: 0 var(--s-shadow-offset-card) 0 var(--sh-encre); }
+.c-q-bar { display: flex; align-items: center; justify-content: space-between; padding-block: 2px; }
+.c-q-date { transform: rotate(var(--s-q-date-rotation-deg)); font-size: max(var(--t-min-text-px), calc(var(--t-name-chip-size) * var(--q-fit, 1))); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-soleil); }
+.c-q-title { margin: 0; font-family: var(--t-screen-title-family); font-size: max(var(--t-min-text-px), calc(var(--t-screen-title-size) * var(--q-fit, 1))); font-weight: var(--t-screen-title-weight); line-height: var(--t-screen-title-lh); color: var(--c-encre); }
+.c-q-scene { margin: 0; color: var(--c-encre-douce); }
+/* Carte du pire cas (vrais textes, retour du 2026-11-03) : le haut (pastille, date, titre) et le bas (coût, Continuer, points, consigne) ne défilent
+   jamais ; seules la scène et les options défilent. Les jetons de taille ne bougent pas (décision de Cynthia après son test). Débord latéral : l'option
+   désignée grandit (échelle, rotation, ombre), la zone lui laisse 1em de chaque côté sans décaler le texte. */
+.c-q-scroll { position: relative; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+.c-q-body { flex: 1 1 auto; min-height: 0; overflow-x: hidden; overflow-y: auto; display: flex; flex-direction: column; gap: calc(0.7em * var(--q-fit, 1)); padding: 0.3em 1em 0.5em; margin: 0 -1em; }
+.c-q-body:focus-visible { outline: var(--s-focus-ring) solid var(--c-encre); outline-offset: 0; }
+/* Fondu de 24 px au bord où il reste à lire, au lieu d'une coupe à plat ; même mesure que le bloc de décision de la rue [e5f1f98, constat 41]. */
+.c-q-body[data-more-below] { mask-image: linear-gradient(to bottom, var(--c-encre) calc(100% - 24px), transparent); }
+.c-q-body[data-more-above] { mask-image: linear-gradient(to top, var(--c-encre) calc(100% - 24px), transparent); }
+.c-q-body[data-more-above][data-more-below] { mask-image: linear-gradient(to bottom, transparent, var(--c-encre) 24px, var(--c-encre) calc(100% - 24px), transparent); }
+/* Indicateur « il reste du texte plus bas » : pastille crème à bord et ombre encre (la forme des cartes), chevron encre ; un clic descend d'une page. */
+.c-q-more { position: absolute; left: 50%; bottom: 0.2em; transform: translateX(-50%); box-sizing: border-box; width: 2.2em; height: 2.2em; padding: 0; border-radius: var(--s-pill); background: var(--c-creme); border: var(--s-border) solid var(--c-encre); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre); cursor: pointer; font-size: var(--t-body-size); }
+.c-q-more::before { content: ''; position: absolute; left: 50%; top: 42%; width: 0.5em; height: 0.5em; border-right: var(--s-border) solid var(--c-encre); border-bottom: var(--s-border) solid var(--c-encre); transform: translate(-50%, -50%) rotate(45deg); }
+[data-ui="two-step"], [data-ui="single-choice"] { display: grid; gap: calc(0.7em * var(--q-fit, 1)); }
+.c-option--q { display: flex; align-items: center; gap: 0.8em; width: 100%; padding: calc(0.7em * var(--q-fit, 1)) 0.9em; background: var(--c-blanc); border: var(--s-q-option-border-px) solid var(--c-lavande-trait); border-radius: var(--s-card-secondary); font-family: var(--t-question-option-family); font-size: max(var(--t-min-text-px), calc(var(--t-question-option-size) * var(--q-fit, 1))); font-weight: var(--t-question-option-weight); line-height: var(--t-question-option-lh); }
+.c-option--q:disabled { cursor: default; color: var(--c-encre); }
+.c-option--q[aria-pressed="true"] { background: var(--c-rose); border-color: var(--c-encre); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-rose); transform: scale(var(--s-q-designated-scale)) rotate(var(--s-q-designated-rotation-deg)); }
+.c-option__dot { flex: none; box-sizing: border-box; width: 1.6em; height: 1.6em; border-radius: var(--s-pill); background: var(--c-blanc); border: var(--s-q-option-dot-ring-px) solid var(--c-lavande-trait); }
+.c-option__dot[data-filled="true"] { background: var(--c-encre); border-color: var(--c-encre); }
+.c-q-hint { margin: 0; text-align: right; color: var(--c-rose-fonce); font-family: var(--t-hint-family); font-size: max(var(--t-min-text-px), calc(var(--t-hint-size) * var(--q-fit, 1))); font-weight: var(--t-hint-weight); line-height: var(--t-hint-lh); }
+.c-q-cost { background: var(--c-soleil); color: var(--c-encre); border-left-width: calc(var(--s-border) * 2.5); box-shadow: 0 var(--s-shadow-offset) 0 color-mix(in srgb, var(--c-encre) 13.33%, transparent); margin: 0; padding-block: calc(var(--s-card-pad-y) * var(--q-fit, 1)); border-color: var(--c-soleil); border-left-color: var(--c-encre); font-family: var(--t-cost-family); font-size: max(var(--t-min-text-px), calc(var(--t-cost-size) * var(--q-fit, 1))); font-weight: var(--t-cost-weight); line-height: var(--t-cost-lh); }
+.c-q-act { display: flex; align-items: center; justify-content: space-between; gap: 1em; }
+.c-q-act > .c-q-cost { flex: 1; }
+.c-q-act > .c-action { font-size: max(var(--t-min-text-px), calc(var(--t-body-size) * var(--q-fit, 1))); padding: calc(.5em * max(.6, var(--q-fit, 1))) 1.3em; }
+@media (max-width: 600px) {
+  .c-q-act { flex-direction: column; align-items: stretch; gap: .5em; }
+  .c-q-act > .c-q-cost { width: 100%; flex: none; }
+  .c-q-act > .c-action { align-self: flex-end; }
+  .c-q-foot { gap: .5em; }
+  .c-q-foot .c-dot-row { gap: 4px; }
+  .c-q-foot .c-dot { width: 16px; height: 16px; }
+}
+.c-q-foot { display: flex; align-items: center; justify-content: space-between; gap: 1em; margin-top: calc(0.4em * var(--q-fit, 1)); }
+.c-q-bar .c-eye { width: calc(var(--eye-px) * max(0.4, var(--q-fit, 1))); height: calc(var(--eye-px) * max(0.4, var(--q-fit, 1))); }
+.c-dot-row { display: flex; gap: 0.4em; }
+.c-dot { box-sizing: border-box; width: var(--s-q-dot-px); height: var(--s-q-dot-px); border-radius: var(--s-pill); background: var(--c-lavande-claire); border: var(--s-q-dot-ring-px) solid var(--c-lavande-trait); }
+.c-dot[data-filled="true"] { background: var(--c-encre); border-color: var(--c-encre); }
+
+/* Option de rue [spec C §3.2] : pastille crème, bordure encre, la même pour toutes ; désignée : fond rose, liseré blanc (l'état se lit aussi par la largeur et la rotation, D5). */
+.c-street-option { background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait);   /* Cynthia playtest 2026-11-03 : « trop blancs » ; encre translucide depuis le build 35ed56c (la mesure de marge de e2e-street repose le fond plein le temps de la mesure), texte crème, paire creme/encre de la spec */ border-radius: var(--s-pill); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre); font-family: var(--t-street-option-family); font-size: var(--t-street-option-size); font-weight: var(--t-street-option-weight); line-height: var(--t-street-option-lh); }
+.c-street-option[aria-pressed="true"] { background: var(--c-rose); color: var(--c-encre); border-color: var(--c-encre); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-rose), 0 0 0 var(--s-street-designated-rim-px) var(--c-blanc); }
+[data-ui="price-pill"] { box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-soleil); font-size: var(--t-cost-size); font-weight: var(--t-cost-weight); line-height: var(--t-cost-lh); }
+/* Ligne de prix : voix sobre (carte encre, texte blanc, Inter 400) */
+.c-price-line { background: var(--c-street-ink); border: 0; color: var(--c-blanc); border-radius: var(--s-card-secondary); font-family: var(--t-price-line-family); font-size: var(--t-price-line-size); font-weight: var(--t-price-line-weight); line-height: var(--t-price-line-lh); }
+/* Le focus ne remplace pas l'ombre de l'option (revue T6, 16) : au repos ombre encre + anneau crème, désignée liseré blanc conservé. */
+.c-street-option:focus-visible { box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre), 0 0 0 calc(var(--s-focus-ring) * 2) var(--c-creme); }
+.c-street-option[aria-pressed="true"]:focus-visible { box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-rose), 0 0 0 var(--s-street-designated-rim-px) var(--c-blanc); }
+
+/* Bracelet et Œil [spec C §3.2] : pastille crème, ombre encre ; Œil 96 px, nombre Montserrat 600 tabulaire, unité roseFonce. Aucune jauge, aucune couleur par bande. */
+.c-bracelet { display: inline-flex; align-items: center; gap: calc(var(--s-street-eye-px) / 6); box-sizing: border-box; padding: calc(var(--s-street-eye-px) / 8) calc(var(--s-street-eye-px) / 3) calc(var(--s-street-eye-px) / 8) calc(var(--s-street-eye-px) / 5); background: var(--c-creme); color: var(--c-encre); border-radius: var(--s-pill); box-shadow: 0 var(--s-shadow-offset-card) 0 var(--sh-encre); }
+.c-bracelet__value { font-family: var(--t-bracelet-number-family); font-size: var(--t-bracelet-number-size); font-weight: var(--t-bracelet-number-weight); line-height: var(--t-bracelet-number-lh); font-variant-numeric: tabular-nums; min-width: 2ch; text-align: right; color: var(--c-encre); }
+.c-bracelet__unit { font-family: var(--t-bracelet-unit-family); font-size: var(--t-bracelet-unit-size); font-weight: var(--t-bracelet-unit-weight); line-height: var(--t-bracelet-unit-lh); color: var(--c-rose-fonce); }
+/* Couche des pièces et confettis : par-dessus tout, jamais cliquable */
+.c-fx { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+.c-fx > * { position: absolute; display: block; }
+.c-coin { border-radius: var(--s-pill); background: var(--c-soleil); border: var(--s-border) solid var(--c-encre); box-sizing: border-box; }
+.c-confetti { border-radius: var(--s-border); }
+
+/* Ligne de droit : deux moitiés, voix sobre. Encre/crème puis crème/encre ; le cadre est celui de la carte [spec C §3.2]. */
+.c-right-line { box-sizing: border-box; margin: 0; padding: 0; overflow: hidden; border: var(--s-border) solid var(--c-encre); border-radius: var(--s-card-secondary); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); }
+.c-half { display: block; padding: var(--s-card-pad-y) var(--s-card-pad-x); }
+.c-half--ink { background: var(--c-encre); color: var(--c-creme); }
+.c-half--creme { background: var(--c-creme); color: var(--c-encre); }
+.c-right-source { font-family: var(--font-text); font-size: var(--t-hint-size); font-weight: var(--t-body-weight); }   /* rue guidée : le texte et l'article, Inter 400 [spec §7] */
+.c-right-quote { font-family: var(--font-text); font-weight: 300; }   /* la citation officielle, Inter 300 */
+
+/* Message du bracelet au relevé : autocollant rose, texte encre, le même pour les quatre messages [spec C §3.3] */
+.c-sticker { box-sizing: border-box; margin: 0; padding: calc(var(--s-card-pad-y) * 1.25) calc(var(--s-card-pad-x) * 1.25); background: var(--c-rose); color: var(--c-encre); border-radius: var(--s-pill); font-family: var(--t-message-family); font-size: var(--t-message-size); font-weight: var(--t-message-weight); line-height: var(--t-message-lh); text-align: center; }
+
+/* Fiche de passant : document du monde, carte principale tournée de quelques degrés, Inter 22 px [spec C §3.2] */
+.c-card--document { rotate: var(--s-street-card-rotation-deg); font-family: var(--t-card-family); font-size: var(--t-card-size); font-weight: var(--t-card-weight); line-height: var(--t-card-lh); }
+/* Rappel des commandes : petite pastille encre, texte crème, 20 px [spec C §3.2] */
+.c-controls { border-radius: var(--s-pill); font-size: var(--t-controls-size); font-weight: var(--t-controls-weight); line-height: var(--t-controls-lh); }
+/* Date du jour */
+.c-pill.c-day-date { font-size: var(--t-name-chip-size); padding: calc(var(--s-card-pad-y) * .75) var(--s-card-pad-x); }   /* texte à 24 px du bord au moins, mesuré en pixels (card_padding_test). Limité à la pastille de la rue : la date d'un jour au bilan (sheetC, même classe) garde la typographie de `.c-day`, sans rembourrage qui la faisait déborder de sa colonne (« Wednesday, March 6 », 1920). */
+
+/* Narration vide : pas de pastille sombre sans texte [retour de playtest de Cynthia 2026-11-03]. */
+[data-ui="narration"]:has(> .c-window:empty) { display: none; }
+
+/* Shared with the photographic worlds: warm paper, forest, petrol and brick. */
+.c-q { --c-encre:var(--photo-1); --c-encre-douce:var(--photo-2); --c-creme:var(--photo-3); --c-blanc:var(--photo-4); --c-ciel:var(--photo-5); --c-menthe:var(--photo-6); --c-rose:var(--photo-7); --c-soleil:var(--photo-8); --c-lavande:var(--photo-5); --c-lavande-claire:var(--photo-9); --c-lavande-trait:var(--photo-10); }
+.c-q .c-q-card { background:var(--photo-3)!important; border-color:var(--photo-11); }
+.c-q .c-q-title { font-family:var(--font-photo-heading); font-weight:400; }
+.c-q .c-option--q { background:var(--photo-4)!important; color:var(--photo-1); border-color:var(--photo-12); }
+.c-q .c-option--q[aria-pressed=true] { background:var(--photo-15)!important; color:var(--photo-16); border-color:var(--photo-15); }
+.c-q .c-option--q[aria-pressed=true] .c-option__dot { background:var(--photo-8)!important; border-color:var(--photo-8); }
+.c-q .c-q-cost { background:var(--photo-17)!important; color:var(--photo-16); border-color:var(--photo-17); }
+.c-q [data-testid=q-continue] { background:var(--photo-18)!important; color:var(--photo-16); }
+
+.c-q { --sh-ciel:var(--c-encre-douce); --sh-menthe:var(--c-encre-douce); --sh-rose:var(--c-encre-douce); --sh-soleil:var(--c-encre-douce); --sh-encre:var(--c-encre-douce); }

@@ -1,0 +1,39 @@
+/* Habillage « Chambre noire » des écrans du chemin public qui lisent encore les variables de l'ancienne interface (causes, bilan d'extinction).
+   Plutôt que de réécrire leurs feuilles, on REDÉFINIT ici les variables qu'elles lisent, sur la page seulement : noir chaud, deux polices, rayons droits, pas d'ombre pleine.
+   Aucune valeur en dur : tokens.css. L'ancien parcours (?parcours=ancien) ne porte pas ces classes et garde la crème. */
+.c-sober-page.causes, .c-bilan.chambre {
+  --c-creme: var(--fond); --c-encre: var(--dit); --c-encre-douce: var(--raconte); --c-blanc: var(--plateau); --c-rose: var(--plateau-choisi);
+  --c-ciel: var(--plateau-haut); --c-soleil: var(--raconte); --c-menthe: var(--action); --c-lavande-trait: var(--contour);
+  --c-lavande: var(--plateau-haut); --c-lavande-claire: var(--plateau); --c-gris-acier: var(--contour);
+  --sh-encre: transparent; --sh-ciel: transparent; --sh-menthe: transparent; --sh-rose: transparent; --sh-soleil: transparent;
+  --s-pill: var(--r-2); --s-card-main: var(--r-1); --s-card-secondary: var(--r-1); --s-border: var(--bord-1); --s-shadow-offset: 0px; --s-shadow-offset-card: 0px;
+  --t-body-family: var(--corps); --t-name-chip-family: var(--corps); --t-screen-title-family: var(--titre); --t-fate-family: var(--titre);
+  --t-world-name-family: var(--titre); --t-world-clear-family: var(--corps); --t-redirect-line-family: var(--corps); --t-bilan-title-family: var(--titre);
+  font-family: var(--corps); font-synthesis: none; background: var(--fond); color: var(--dit);
+}
+.c-sober-page.causes .c-sober-title, .c-bilan.chambre .c-bilan-title { font-family: var(--titre); font-weight: 400; }
+/* Un seul bouton plein par écran : l'action (vert), le reste en contour. */
+.c-sober-page.causes .c-action, .c-bilan.chambre .c-action { border: var(--bord-2) solid var(--action); border-radius: var(--r-2); background: var(--action); color: var(--encre); box-shadow: none; font-weight: 700; }
+.c-sober-page.causes .c-action:disabled { background: none; border-color: var(--filet); color: var(--raconte); }
+.c-sober-page.causes .c-action:not([data-testid=causes-next], [data-testid=causes-replay], [data-testid=q-continue]), .c-bilan.chambre .c-action:not([data-testid=bilan-replay]) { background: none; border-color: var(--contour); color: var(--dit); }
+.c-sober-page.causes .c-card { border: var(--bord-1) solid var(--filet); background: var(--plateau); }
+.c-sober-page.causes :is(.c-action, button, a):focus-visible, .c-bilan.chambre :is(.c-action, button, a, summary):focus-visible { outline: var(--focus); outline-offset: 3px; box-shadow: none; }
+
+/* Bilan : tout est centré ; la page d'abord (onglets, courbe), les actions dessous, une seule pleine (Rejouer), les autres en contour. */
+.c-bilan.chambre { text-align: center; }
+.c-bilan.chambre .c-bilan-top { justify-content: center; flex: 1 0 100%; }
+.c-bilan.chambre [data-ui="page-nav"] { justify-content: center; }
+.c-bilan.chambre .c-bilan-bar { order: 4; flex: 1 0 100%; margin: 0; flex-direction: column; justify-content: center; gap: var(--e-3); }
+.c-bilan.chambre .c-bilan-actions { margin: 0; justify-content: center; gap: var(--e-2); }
+.c-bilan.chambre .c-bilan-actions .c-bilan-action { font-size: var(--t-petit); padding: var(--e-2) var(--e-4); }
+.c-bilan.chambre .c-bilan-actions .c-action { font-size: var(--t-corps); padding: var(--e-3) var(--e-6); }
+.c-bilan.chambre .c-bilan-head { flex-direction: column; align-items: center; gap: var(--e-1); }
+.c-bilan.chambre .c-bilan-page > :is(p, ul, ol) { margin-inline: auto; max-width: 62ch; }
+.c-bilan.chambre .c-bilan-page > ul { padding-left: 0; list-style: none; }
+.c-bilan.chambre .c-bilan-chain-links { padding-left: 0; list-style: none; }
+@media (width <= 600px) {
+  .c-bilan.chambre .c-bilan-actions { gap: var(--e-1) var(--e-2); }
+  .c-bilan.chambre .c-bilan-actions .c-bilan-action { font-size: var(--t-etiquette); padding: var(--e-1) var(--e-3); }
+  .c-bilan.chambre [data-ui="soft-toggle"] { font-size: var(--t-etiquette); padding: var(--e-1) var(--e-3); }
+}
+.c-bilan.chambre .c-bilan-title { font-size: var(--t-regle); }

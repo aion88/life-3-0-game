@@ -1,0 +1,23 @@
+# Allowlist gitleaks du dépôt AI Aftermath (posée le 2026-11-02, plan 02b T11).
+# Le détecteur `generic-api-key` prend `"priceLineKey": "w10.price.…"` (clé de CHAÎNE
+# de la ligne de prix d'un choix, R-02b.54) et `"key": "w10.npc.…"` (clés de trace) pour des
+# clés d'API. Ce sont des identifiants de texte, jamais des secrets. L'exception ne couvre
+# qu'une valeur `w10.<chemin>` portée par un champ nommé `…Key` ou `key`.
+title = "ai-aftermath"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Clés de chaînes w10.* des données de jeu (prix, traces, réponses), pas des secrets"
+regexTarget = "match"
+regexes = [
+  '''(Key|key)":\s*"w10\.[A-Za-z0-9.]+"''',
+  # Plan 03 : les tests TS citent des clés de chaînes en littéral (key: 'bilan.trace.Q11.C',
+  # toBe('w10.bilan.…')). Préfixes de chaînes connus seulement, chemin en points, sans espace.
+  # Prose anglaise du jeu : « ... asked again who would hold the key. » (bilan.trace.Q18.D), un mot « key »
+  # dans une phrase, pas une clé d'API. Constaté le 2026-11-14 sur app/src/data/strings/en.json.
+  # Le détecteur capte « key.", » puis la clé de chaîne suivante : la regex vise cette paire exacte.
+  '''key\.",\s+"bilan\.trace\.Q16\.A''',
+  '''(?i)(key|toBe|toEqual|has|t)\s*[:(]\s*['"`](bilan|w10|q|ff|sources|world|redirect|causes|lang|warning|street)\.[A-Za-z0-9._]+['"`]''',
+]

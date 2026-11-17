@@ -1,0 +1,26 @@
+{
+  "palierColor": {
+    "courtesy": { "v": "menthe", "src": "décision Cynthia, playtest 2026-11-03 (GDD 2026-11-03 §2 A : couleur par palier) ; menthe = action validée, palette C", "status": "supposed", "owner": "art-director" },
+    "thanks": { "v": "ciel", "src": "décision Cynthia, playtest 2026-11-03 (GDD 2026-11-03 §2 A) ; ciel = couleur de l'Œil, palette C", "status": "supposed", "owner": "art-director" },
+    "patience": { "v": "soleil", "src": "décision Cynthia, playtest 2026-11-03 (GDD 2026-11-03 §2 A) ; soleil, palette C", "status": "supposed", "owner": "art-director" },
+    "appointment": { "v": "roseFonce", "src": "décision Cynthia, playtest 2026-11-03 (GDD 2026-11-03 §2 A) ; roseFonce, le rose vif reste la seule couleur de désignation", "status": "supposed", "owner": "art-director" }
+  },
+  "ghost": { "v": "grisAcier", "src": "GDD 2026-11-03 §2 A : segment fantôme « en attente », gris", "status": "sourced" },
+  "ghostOpacity": { "v": 0.45, "src": "lisible sur crème comme sur la partie pleine, à confirmer au relevé de contraste", "status": "supposed", "owner": "art-director" },
+  "segmentGap": { "v": "creme", "src": "direction C : trait de fond crème entre deux segments", "status": "supposed", "owner": "art-director" },
+  "track": { "v": "lavandeClaire", "src": "direction C §1 : lavandeClaire, fonds seulement", "status": "sourced" },
+  "border": { "v": "lavandeTrait", "src": "direction C §1 : lavandeTrait, contours porteurs de sens (3:1)", "status": "sourced" },
+  "mark": { "v": "encre", "src": "trait « audition » : encre, porteur de sens", "status": "supposed", "owner": "art-director" },
+  "trackHeightPx": { "v": 14, "src": "barre fine collée au bracelet, à confirmer sur capture", "status": "supposed", "owner": "art-director" },
+  "markWidthPx": { "v": 2, "src": "direction C §1 : bordure 2 px partout", "status": "sourced" },
+  "gapPx": { "v": 8, "src": "collée au bracelet : écart minimal sous la pastille, à confirmer sur capture", "status": "supposed", "owner": "art-director" },
+  "settleMs": { "v": 600, "src": "GDD 2026-11-03 §2 A : consolidation animée au relevé du soir", "status": "supposed", "owner": "art-director" },
+  "settleEasing": { "v": "rentree", "src": "courbe de la palette de mouvement C", "status": "supposed", "owner": "art-director" },
+  "pulse": { "v": "encre", "src": "séquences jouées [décision Cynthia, playtest 2026-11-03] : encre, porteuse de sens comme le trait audition ; PROVISIONAL, à régler sur capture", "status": "supposed", "owner": "art-director" },
+  "pulseWidth": {
+    "low": { "v": 0.06, "src": "GDD sequences-jouees §1.6 : poids faible (entrée de 1 à 3) ; largeur à régler sur capture par ux-designer", "status": "supposed", "owner": "ux-designer" },
+    "medium": { "v": 0.12, "src": "GDD sequences-jouees §1.6 : poids moyen (4 à 6) ; largeur à régler sur capture par ux-designer", "status": "supposed", "owner": "ux-designer" },
+    "strong": { "v": 0.2, "src": "GDD sequences-jouees §1.6 : poids fort (8 et plus) ; largeur à régler sur capture par ux-designer", "status": "supposed", "owner": "ux-designer" }
+  },
+  "pulseMs": { "v": 900, "src": "séquences jouées : un battement par seconde environ, sur une séquence de 3 à 8 s ; PROVISIONAL, à régler sur capture", "status": "supposed", "owner": "art-director" }
+}

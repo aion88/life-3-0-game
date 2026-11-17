@@ -1,0 +1,410 @@
+[
+  {
+    "id": "Q11",
+    "decor": "marche",
+    "moment": "Février · Samedi, 9 h · Le marché",
+    "titre": "Le poteau devant l’étal",
+    "recit": "Un projet de caméra à reconnaissance faciale arrive sur ton bureau. Au marché, Samir te montre le poteau prévu devant son étal. « Elle reconnaîtra aussi tous mes clients ? » Tu dois défendre une position au conseil.",
+    "question": "La caméra du marché ?",
+    "choix": [
+      {
+        "t": "Oui, avec cadre légal, autorisation et audit des biais",
+        "r": "Samir regarde le poteau. <q>Et les résultats de l’audit, on pourra les consulter ?</q>",
+        "e": [
+          "samir",
+          "surveille le poteau"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "Non au direct, sauf menace imminente",
+        "r": "Samir te rend la monnaie. <q>La dame du fromage s’est fait voler son sac samedi dernier. Tu lui diras.</q>",
+        "e": [
+          "samir",
+          "te fait un prix"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "Oui, partout, tout le temps",
+        "r": "Samir range ses cagettes plus tôt que d’habitude. <q>À samedi.</q> Il ne dit pas lequel.",
+        "e": [
+          "samir",
+          "a rangé tôt"
+        ],
+        "key": "C"
+      }
+    ]
+  },
+  {
+    "id": "Q14",
+    "decor": "entrepot",
+    "moment": "6 avril · Lundi, 7 h · L’entrepôt",
+    "titre": "Des badges désactivés",
+    "recit": "Ce week-end, l’entrepôt a remplacé quarante intérimaires par des robots. Ils t’attendent devant la grille. <q>Madame la maire, on fait quoi, nous ?</q>",
+    "question": "Quelle mesure défendre auprès du gouvernement ?",
+    "choix": [
+      {
+        "t": "Taxer l’automatisation pour financer un revenu",
+        "r": "Leur délégué plie la liste des noms. <q>Un revenu payé par la machine qui nous remplace. Elle est bonne.</q>",
+        "key": "A"
+      },
+      {
+        "t": "Une petite part des profits pour tous",
+        "r": "<q>Une part des profits. Comme les actionnaires, alors.</q> Personne ne sourit.",
+        "key": "B"
+      },
+      {
+        "t": "On vous paie une formation",
+        "r": "<q>Une formation à quoi ?</q> Tu n’as pas la réponse.",
+        "key": "C"
+      },
+      {
+        "t": "Rien, d’autres emplois viendront",
+        "r": "Le délégué regarde la grille fermée. <q>D’accord. On va attendre, alors.</q>",
+        "key": "D"
+      }
+    ]
+  },
+  {
+    "id": "Q05",
+    "decor": "cuisine",
+    "forme": "sms",
+    "heure": "21:04",
+    "moment": "19 avril · Dimanche, 21 h · Ta cuisine",
+    "titre": "Un message de ta mère",
+    "recit": "Ton téléphone vibre sur la table. Depuis que tu es maire, elle t’écrit comme à une ministre.",
+    "bulles": [
+      "Tu as vu ? Des savants veulent interdire les IA plus intelligentes que nous.",
+      "Tant qu’on n’est pas sûrs que c’est sans danger.",
+      "Si la maire signe, la commune signe. Tu signes ?"
+    ],
+    "choix": [
+      {
+        "t": "Je signe.",
+        "r": "Elle répond dans la seconde. <q>Bien. Ton beau-frère a vu ton nom sur la liste. Il a mis un pouce. Je crois.</q>",
+        "e": [
+          "mere",
+          "est fière de toi"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "Non. On n’arrêtera pas le progrès.",
+        "r": "Trois petits points, longtemps. <q>Alors tu laisses les géants de l’IA faire la course.</q>",
+        "e": [
+          "mere",
+          "ne répond plus"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "Je signe, avec des contrôles.",
+        "r": "<q>Qu’on contrôle. Très bien.</q> Puis, une minute après : <q>Et les contrôleurs, qui les surveille ?</q>",
+        "e": [
+          "mere",
+          "veut savoir qui contrôle"
+        ],
+        "key": "C"
+      }
+    ]
+  },
+  {
+    "id": "Q10",
+    "decor": "ecole",
+    "moment": "30 avril · Jeudi, 17 h · Le collège",
+    "titre": "Celui à qui elle parle le soir",
+    "recit": "Une élève du collège parle chaque soir à un compagnon IA. Sa mère vient à ta permanence : « Elle lui raconte tout. À moi, presque rien. » Une consultation nationale demande l’avis des communes.",
+    "question": "Les IA qui tiennent compagnie ?",
+    "choix": [
+      {
+        "t": "Interdire aux mineurs, avec vérification d’âge",
+        "r": "Sa mère range les cahiers. <q>Et comment vérifier leur âge sans collecter plus de données ?</q>",
+        "e": [
+          "mere",
+          "pense à l’élève"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "Des règles de sécurité, sans vérification d’âge",
+        "r": "Sa mère garde le cahier ouvert. <q>Des règles pour le service, mais pas de contrôle d’âge. Je comprends.</q>",
+        "e": [
+          "mere",
+          "range les cahiers"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "Ça regarde les parents",
+        "r": "<q>Ça regarde les parents.</q> Sa mère répète ta phrase lentement, comme pour la goûter.",
+        "e": [
+          "mere",
+          "répète ta phrase"
+        ],
+        "key": "C"
+      }
+    ]
+  },
+  {
+    "id": "Q21",
+    "decor": "pere",
+    "moment": "Mai · Mardi, 18 h · Chez ton père",
+    "titre": "La même ordonnance depuis des années",
+    "recit": "Le dernier médecin de la commune part à la retraite. Un projet de service de santé par IA est soumis aux élus. Chez ton père, une ordonnance attend sur la table. « Et moi, je parlerai à qui ? »",
+    "question": "Quel cadre défendre pour ce service ?",
+    "choix": [
+      {
+        "t": "L’IA seule, avec un suivi en continu",
+        "r": "Il relit la proposition. <q>En continu… quelles données seraient suivies ?</q>",
+        "e": [
+          "pere",
+          "relit le suivi proposé"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "L’IA, et un médecin si on le demande",
+        "r": "<q>Si je le demande.</q> Il plie la feuille en quatre. Ton père n’a jamais rien demandé à personne.",
+        "e": [
+          "pere",
+          "ne demande rien"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "La mutuelle ne rembourse que ce que l’IA valide",
+        "r": "Il relit la proposition. « Et si je veux un autre avis, il sera remboursé ? »",
+        "e": [
+          "pere",
+          "relit sa feuille"
+        ],
+        "key": "C"
+      },
+      {
+        "t": "Un médecin relit toujours",
+        "r": "<q>Un vrai médecin. Bien.</q> Il secoue la boîte. Elle est presque vide.",
+        "e": [
+          "pere",
+          "compte ses comprimés"
+        ],
+        "key": "D"
+      }
+    ]
+  },
+  {
+    "id": "Q04",
+    "decor": "labo",
+    "moment": "Juin · Mercredi, 14 h · La zone nord",
+    "titre": "Le laboratoire qui veut s’installer",
+    "recit": "Un laboratoire veut s’installer dans la commune. Une association de maires te demande quelle règle nationale soutenir pour les laboratoires d’IA : publier leurs mesures de sécurité, être contrôlés plus durement, ou plus rien.",
+    "question": "Quelle réglementation soutenir ?",
+    "choix": [
+      {
+        "t": "Un contrôle tous les six mois, grosse amende",
+        "r": "Le directeur referme son classeur. <q>Nous avons d’autres communes sur la liste.</q>",
+        "key": "A"
+      },
+      {
+        "t": "Qu’ils disent ce qu’ils font, c’est tout",
+        "r": "<q>Dire ce qu’on fait. Très bien. On adore dire ce qu’on fait.</q>",
+        "key": "B"
+      },
+      {
+        "t": "Abroger ce cadre de transparence",
+        "r": "Le directeur sourit. <q>Moins de comptes à rendre. Les autres lois restent, rassurez-vous.</q>",
+        "key": "C"
+      },
+      {
+        "t": "Seule une entreprise agréée par l’État peut le faire",
+        "r": "<q>Une seule entreprise. Vous savez laquelle, au moins ?</q>",
+        "key": "D"
+      }
+    ]
+  },
+  {
+    "id": "Q18",
+    "decor": "cuisine",
+    "forme": "sms",
+    "heure": "07:52",
+    "moment": "Août · Mardi, 8 h · Ta cuisine",
+    "titre": "Les négociations de Genève",
+    "recit": "À Genève, les pays négocient sur l’IA. Le café n’a pas fini de couler. Elle a déjà lu trois journaux.",
+    "bulles": [
+      "Je lis encore un article sur les négociations internationales autour de l’IA.",
+      "Tout le monde discute. Mais qui fera respecter les accords ?",
+      "Les maires font circuler une lettre. Tu demandes quoi, toi ?"
+    ],
+    "choix": [
+      {
+        "t": "Des contrôleurs internationaux.",
+        "r": "<q>Des contrôleurs étrangers chez nous, alors. Le député va adorer.</q>",
+        "e": [
+          "mere",
+          "attend les contrôleurs"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "Qu’ils continuent à discuter.",
+        "r": "<q>Donc tu signes pour qu’on continue à discuter.</q>",
+        "e": [
+          "mere",
+          "trouve ça mou"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "Chaque pays décide chez lui.",
+        "r": "<q>Chacun chez soi. Et nous, on est chez qui ?</q>",
+        "e": [
+          "mere",
+          "se demande chez qui on est"
+        ],
+        "key": "C"
+      },
+      {
+        "t": "Que les pays construisent une IA commune.",
+        "r": "<q>Ensemble. Et qui garde la clé ?</q>",
+        "e": [
+          "mere",
+          "cherche qui a la clé"
+        ],
+        "key": "D"
+      }
+    ]
+  },
+  {
+    "id": "Q16",
+    "decor": "pere",
+    "moment": "Septembre · Mardi, 16 h · Chez ton père",
+    "titre": "L’IA gratuite de ton père",
+    "recit": "Ton père a installé un modèle d’IA chinois ouvert sur son vieil ordinateur. Il te montre ce qu’il peut modifier lui-même. Une consultation propose de limiter la diffusion de ces modèles. « Tu ne vas pas m’enlever ça ? »",
+    "question": "Quelle diffusion soutenir pour les modèles ouverts ?",
+    "choix": [
+      {
+        "t": "Tous libres, pour tout le monde",
+        "r": "<q>Tu vois. Gratuit. Je l’ai installé tout seul.</q>",
+        "e": [
+          "pere",
+          "installe tout, tout seul"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "Tester tous les modèles puissants, ouverts ou fermés",
+        "r": "<q>Des tests. Il marche très bien, pourquoi le tester ?</q>",
+        "e": [
+          "pere",
+          "attend sa mise à jour"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "Pas les modèles chinois",
+        "r": "Il éteint l’écran. <q>Alors je paie, maintenant.</q>",
+        "e": [
+          "pere",
+          "a éteint son écran"
+        ],
+        "key": "C"
+      }
+    ]
+  },
+  {
+    "id": "Q15",
+    "decor": "mairie",
+    "moment": "Juillet · Mercredi, 8 h · Devant la mairie",
+    "titre": "Des démissions ce matin",
+    "recit": "Hier soir, tu as présenté le projet au conseil : un centre de données sur 195 hectares. Ce matin, quatre conseillers ont démissionné. Ton père t’attend devant la mairie avec sa facture d’électricité.",
+    "question": "Le centre de données ?",
+    "choix": [
+      {
+        "t": "On met le projet en pause un an",
+        "r": "Ton père hoche la tête. <q>Un an. Et ma facture, elle fait une pause aussi ?</q>",
+        "e": [
+          "pere",
+          "garde sa facture"
+        ],
+        "key": "A"
+      },
+      {
+        "t": "On construit",
+        "r": "<q>Tu construis.</q> Ton père replie sa facture. <q>Et c’est qui, qui paie le courant ?</q>",
+        "e": [
+          "pere",
+          "replie sa facture"
+        ],
+        "key": "B"
+      },
+      {
+        "t": "On construit s’ils paient le réseau électrique",
+        "r": "Au téléphone, l’entreprise demande un délai pour refaire ses calculs.",
+        "e": [
+          "pere",
+          "attend de voir"
+        ],
+        "key": "C"
+      },
+      {
+        "t": "Je rejoins les opposants qui bloquent le chantier",
+        "r": "Ton père te regarde enlever ton écharpe. <q>Tu es maire ou tu es dehors ?</q>",
+        "e": [
+          "pere",
+          "te cherche dans la foule"
+        ],
+        "key": "D"
+      }
+    ]
+  },
+  {
+    "id": "Q20",
+    "decor": "accueil",
+    "moment": "Octobre · Lundi, 9 h · L’accueil de la mairie",
+    "titre": "Un cinquième du travail",
+    "recit": "Depuis l’été, l’IA absorbe un cinquième du travail d’une entreprise locale. Ses représentants viennent à ta permanence avec trois propositions. <q>Madame la maire, laquelle soutiendriez-vous ?</q>",
+    "question": "Quelle proposition soutenir pour le temps gagné ?",
+    "choix": [
+      {
+        "t": "Trente-deux heures par semaine, même salaire",
+        "r": "Une représentante souligne « même salaire » sur le planning. <q>C’est ce que nous voulons défendre.</q>",
+        "key": "A"
+      },
+      {
+        "t": "Une prime",
+        "r": "<q>Des primes pour tout le monde ?</q> Tu réponds oui un peu trop vite.",
+        "key": "B"
+      },
+      {
+        "t": "On supprime un poste sur cinq",
+        "r": "Personne ne parle. Quelqu’un compte les chaises.",
+        "key": "C"
+      }
+    ]
+  },
+  {
+    "id": "Q07",
+    "decor": "usine",
+    "moment": "16 novembre · Lundi, 11 h · L’usine",
+    "titre": "Tous ces emplois et une lettre",
+    "recit": "L’usine de la commune fabrique des pièces de drones militaires. Deux cents emplois. On te demande de signer contre les armes qui tuent toutes seules. Le directeur te regarde lire la lettre.",
+    "question": "La lettre ?",
+    "choix": [
+      {
+        "t": "Je signe, il faut les interdire",
+        "r": "Le directeur regarde ta signature. <q>Vous savez ce qu’on fabrique ici, quand même.</q>",
+        "key": "A"
+      },
+      {
+        "t": "Je signe, sauf pour se défendre",
+        "r": "<q>Pour se défendre.</q> Le directeur sourit. <q>Tout ce qu’on fabrique sert à se défendre.</q>",
+        "key": "B"
+      },
+      {
+        "t": "Je ne signe pas",
+        "r": "Le directeur te serre la main. Sur l’écran derrière lui, un drone tourne à vide.",
+        "key": "C"
+      }
+    ]
+  }
+]

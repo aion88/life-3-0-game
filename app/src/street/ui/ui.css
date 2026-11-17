@@ -1,0 +1,56 @@
+/* Interface de la rue : PLACEMENT seulement. Couleurs, polices et formes viennent des classes de `ui/c.css` [spec C §3, D2]. Aucun texte ici. */
+[data-ui="root"] { position: absolute; inset: 0; pointer-events: none; font-family: var(--font-text); }
+[data-ui="root"] { --s-letterbox-band-px: 0px; }   /* défaut de la bande ; `setLetterboxBand` le pose en ligne */
+[data-ui="root"] > * { pointer-events: auto; }
+[data-ui="root"] > [data-ui="fx"] { pointer-events: none; }   /* la couche du jus couvre l'écran : sans cette règle, plus forte que `.c-fx`, elle avale les clics sur la rue (mesuré en T8 : elementFromPoint rendait fx) */
+[data-ui="narration"] { position: absolute; left: 1rem; top: 5.5rem; max-width: 40rem; margin: 0; }   /* en haut à gauche, sous la date du jour [spec C §3.2] */
+[data-ui="choices"][data-side="left"] { right: auto; left: 1rem; }
+[data-ui="choices"][data-side="left"] li { align-items: flex-start; }
+[data-ui="choices"][data-side="left"] [role="group"] { justify-items: start; }
+[data-ui="bracelet"] { position: absolute; top: calc(var(--s-letterbox-band-px, 0px) + 1rem); right: 1rem; font-variant-numeric: tabular-nums; }   /* dans le cadre utile, jamais sur la bande noire du 2,39:1 [zones d'écran Z-2] */
+[data-ui="dossier"] { position: absolute; top: calc(var(--s-letterbox-band-px, 0px) + 1rem + var(--z-bracelet-h, calc(var(--s-street-eye-px) * 1.25))); right: 1rem; margin-top: var(--dossier-gap); }   /* collée sous le bracelet, dans le cadre utile [GDD 2026-11-03 §2 A] */
+[data-ui="choices"] { position: absolute; right: 1rem; height: 100%; justify-content: flex-end; bottom: calc(var(--s-letterbox-band-px, 0px) + 1rem); display: flex; flex-direction: column; width: calc(var(--s-street-option-designated-width-px) + 4 * var(--s-street-designated-rim-px)); max-width: calc(100% - 2rem); max-height: calc(100% - 2 * var(--s-letterbox-band-px, 0px) - 1rem - var(--s-street-eye-px) * 1.5 - 2rem); overflow: hidden; padding: 0; box-sizing: border-box; }   /* sans plafond, six choix ouverts font 1 233 px et sortent par le haut ; le plafond laisse en haut, sous la bande, la place du bracelet (Œil de `eyePx`, 1,5 fois pour son cadre et sa marge) ; le remplissage laisse passer le liseré et la rotation de l'option désignée */
+/* Hauteur du panneau = son budget de zone (le plafond borne `height: 100%`), jamais son contenu : la place du groupe déplié ne varie ni avec l'option ni avec le prix [revue T6, 34]. Le contenu tient en bas ; la partie vide laisse passer les clics vers la rue. */
+[data-ui="root"] > [data-ui="choices"] { pointer-events: none; }
+[data-ui="choices"] > * { pointer-events: auto; }
+[data-ui="choices"] ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: .25rem; min-height: 0; flex: 0 1 auto; overflow: clip; padding: calc(2 * var(--s-street-designated-rim-px)); scroll-padding: .75rem; }
+[data-ui="choices"] li { display: flex; flex-direction: column; align-items: flex-end; gap: .75rem; min-height: 0; flex: none; }   /* un en-tête ne se comprime jamais : seul le groupe déplié cède de la place */
+[data-ui="choices"] li:has(> [role="group"]:not([hidden])) { flex: 1 1 auto; }
+/* le groupe déplié défile s'il le faut, la liste défile si les en-têtes seuls ne tiennent pas ; rien n'est collant, donc rien ne se recouvre : `reveal` amène l'option désignée, sa ligne de prix et Confirmer à l'écran [spec choix simultanés §3.5] */
+[data-ui="choices"] .c-street-group { overflow-y: auto; min-height: 0; }
+[data-ui="choices"] .c-street-group[hidden] { display: none; }
+[data-ui="choices"] li[hidden], [data-ui="choices"][data-condensed] li[hidden] { display: none; }   /* mode petit : les autres en-têtes sont écartés, le display de li l'emporterait sur [hidden] */
+[data-ui="choices"] [data-ui="foot"] { display: grid; justify-items: end; gap: .5rem; width: 100%; }
+/* Mode petit [choix simultanés §6.1] : une rangée (en-tête déplié et « + N »), la zone qui défile, Confirmer seul au pied ; l'option désignée est collée en haut de son bloc, la ligne de prix défile dessous. */
+[data-ui="choices"][data-condensed] li { display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto minmax(0, 1fr) auto; align-items: center; column-gap: .5rem; row-gap: .5rem; }
+[data-ui="choices"][data-condensed] li > .c-street-group, [data-ui="choices"][data-condensed] li > [data-ui="foot"] { grid-column: 1 / -1; }
+[data-ui="choices"][data-condensed] li > .c-street-group { align-self: stretch; }   /* la rangée 1fr borne le groupe, sans quoi align-items: center le laisse à sa hauteur de contenu */
+[data-ui="choices"][data-list-open] ul { overflow-y: auto; }   /* la liste de tous les en-têtes remplace le corps du groupe et défile en interne si elle ne tient pas [spec §6.1 point 5] */
+[data-ui="choices"][data-condensed] li > [data-ui="choice-name"] { grid-column: 1; justify-self: end; }
+[data-ui="choices"] .c-street-decisionblock { display: grid; justify-items: end; gap: .5rem; width: 100%; }
+[data-ui="choices"] .c-street-decisionblock > [data-option] { position: sticky; top: 0; z-index: 1; }
+[data-ui="choices"] .c-street-group[data-more] { mask-image: linear-gradient(to bottom, var(--c-encre) calc(100% - 24px), transparent); }   /* bloc de décision : il reste à lire dessous, la fenêtre se fond sur 24 px au lieu d'une coupe à plat ; ni bordure, ni ombre, ni coin ajouté [constat 41, art-director] */
+.c-visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); }
+[data-ui="choices"] [data-ui="choice-name"] { justify-self: end; }
+[data-ui="choices"] [role="group"] { display: grid; align-content: start; justify-items: end; gap: 24px; width: 100%; }
+/* Option de rue : placement et grandeurs (l'aspect est dans c.css, `.c-street-option`). Désignée : plus large, tournée [spec C §3.2, D5]. */
+[data-ui="choices"] .c-street-option { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: min(var(--s-street-option-rest-width-px), 100%); margin: 0; padding: var(--s-street-option-pad-y-px) var(--s-street-option-pad-end-px) var(--s-street-option-pad-y-px) var(--s-street-option-pad-start-px); }
+[data-ui="choices"] .c-street-option[aria-pressed="true"] { width: min(var(--s-street-option-designated-width-px), 100%); transform: rotate(var(--s-street-designated-rotation-deg)); }
+[data-ui="price-pill"] { flex: none; }
+[data-ui="choices"] .c-price-line { width: min(var(--s-street-option-designated-width-px), 100%); margin: 0; }
+[data-ui="choices"] [data-ui="confirm"] { justify-self: end; }
+[data-ui="price"], [data-ui="refusal"] { margin: .25rem 0; }
+[data-ui="choices"] [data-ui="refusal"] { display: block; align-self: flex-end; margin: 0 calc(2 * var(--s-street-designated-rim-px)) calc(2 * var(--s-street-designated-rim-px)); width: fit-content; flex: none; }   /* sous la liste qui défile, jamais par-dessus : toujours visible */
+[data-ui="right-line"], [data-ui="evening"], [data-ui="controls"], [data-ui="notSaved"] { position: absolute; margin: 0; }
+/* Carnet, fiche, ligne de droit, narration et rappel des commandes : rangés par zones (`zones.css`, design/ui/2026-11-02-zones-ecran-ux.md). */
+[data-ui="right-line"] [data-half="2"] { display: block; margin-top: .5rem; }
+[data-ui="evening"] { left: 0; right: 0; top: 20%; width: fit-content; margin-inline: auto; list-style: none; }
+[data-ui="controls"] { left: 1rem; top: 50%; max-width: 14rem; }
+[data-ui="day-date"] { position: absolute; left: 1rem; top: 1rem; margin: 0; }
+[data-ui="evening-message"] { position: absolute; top: calc(var(--z-top-y, calc(var(--s-letterbox-band-px, 0px) + 1rem)) + var(--z-top-h, calc(var(--s-street-eye-px) * 1.5)) + 1rem); right: 1rem; max-width: 20rem; }   /* sous le bandeau haut (bracelet et barre « Dossier ») */
+[data-ui="notSaved"] { right: 1rem; top: 3.5rem; }
+[data-ui="nogpu"] { position: absolute; inset: 0; width: fit-content; height: fit-content; margin: auto; max-width: 32rem; text-align: center; }
+
+[data-ui="root"][data-zone-mode="small"] [data-ui="choices"] [data-ui="choice-name"], [data-ui="root"][data-zone-mode="small"] [data-ui="choices"] [data-ui="more-groups"] { min-height: var(--s-street-small-target-px); padding-block: 0; }   /* mode petit : rangée d'en-tête à la cible minimale */
+[data-ui="root"][data-zone-mode="small"] [data-ui="choices"] [data-ui="confirm"] { display: inline-flex; align-items: center; min-height: var(--s-street-small-target-px); padding-block: 0; }   /* mode petit : Confirmer à la cible minimale */
+[data-ui="root"][data-zone-mode="small"] [data-ui="choices"] .c-street-option { gap: var(--s-street-option-small-gap-px); padding: var(--s-street-option-small-pad-y-px) var(--s-street-option-pad-end-px) var(--s-street-option-small-pad-y-px) var(--s-street-option-small-pad-start-px); }   /* mode petit : l'option tient sur une ligne avec sa pastille, environ 50 px [AR-13] ; un libellé trop long passe sur deux lignes, jamais tronqué */

@@ -1,0 +1,4 @@
+{
+  "home": { "distM": 10, "elevDeg": 55, "azimDeg": 70, "focalMm": 40 },
+  "registre": { "distM": 4, "elevDeg": 35, "azimDeg": 0, "focalMm": 24 }
+}

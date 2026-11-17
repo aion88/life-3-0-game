@@ -1,0 +1,365 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "first": "j1.wa",
+      "goalKey": "w10.scene.j1.goal"
+    },
+    {
+      "day": 2,
+      "first": "j2.wa",
+      "goalKey": "w10.scene.j2.goal"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "j1.wa",
+      "day": 1,
+      "stage": "home",
+      "place": "home.spot",
+      "anchorMinute": 420,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.wa.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.wa.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j1.wa.x0",
+            "words": 0,
+            "next": "j1.wb",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j1.wa.x5",
+            "words": 5,
+            "next": "j1.wb",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j1.wa.x9",
+            "words": 9,
+            "next": "j1.wb",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.wb",
+      "day": 1,
+      "stage": "landing",
+      "place": "landing.spot",
+      "anchorMinute": 430,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.wb.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.wb.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j1.wb.x0",
+            "words": 0,
+            "next": "j1.wc",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j1.wb.x5",
+            "words": 5,
+            "next": "j1.wc",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j1.wb.x9",
+            "words": 9,
+            "next": "j1.wc",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.wc",
+      "day": 1,
+      "stage": "street",
+      "place": "street.spot",
+      "anchorMinute": 440,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.wc.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.wc.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j1.wc.x0",
+            "words": 0,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j1.wc.x5",
+            "words": 5,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j1.wc.x9",
+            "words": 9,
+            "next": "night",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.wa",
+      "day": 2,
+      "stage": "home",
+      "place": "home.spot",
+      "anchorMinute": 420,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j2.wa.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j2.wa.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j2.wa.x0",
+            "words": 0,
+            "next": "j2.wb",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j2.wa.x5",
+            "words": 5,
+            "next": "j2.wb",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j2.wa.x9",
+            "words": 9,
+            "next": "j2.wb",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.wb",
+      "day": 2,
+      "stage": "landing",
+      "place": "landing.spot",
+      "anchorMinute": 430,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j2.wb.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j2.wb.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j2.wb.x0",
+            "words": 0,
+            "next": "j2.wc",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j2.wb.x5",
+            "words": 5,
+            "next": "j2.wc",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j2.wb.x9",
+            "words": 9,
+            "next": "j2.wc",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.wc",
+      "day": 2,
+      "stage": "street",
+      "place": "street.spot",
+      "anchorMinute": 440,
+      "costMin": 1,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j2.wc.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j2.wc.ask",
+        "options": [
+          {
+            "id": "x0",
+            "labelKey": "w10.scene.j2.wc.x0",
+            "words": 0,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "x5",
+            "labelKey": "w10.scene.j2.wc.x5",
+            "words": 5,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "x9",
+            "labelKey": "w10.scene.j2.wc.x9",
+            "words": 9,
+            "next": "night",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    }
+  ],
+  "chains": [
+    {
+      "id": "W",
+      "titleKey": "w10.chain.W.title",
+      "crosses": [
+        "A"
+      ],
+      "question": {
+        "key": "Q11",
+        "linkKeys": {
+          "A": "w10.chain.W.q.a",
+          "B": "w10.chain.W.q.b"
+        }
+      },
+      "fact": {
+        "key": "w10.fact.W",
+        "source": "research/2026-10-28-questionnaire-2026.md",
+        "sourceKey": "w10.fact.W.source"
+      },
+      "links": [
+        {
+          "id": "W1",
+          "day": 1,
+          "at": {
+            "kind": "scene",
+            "id": "j1.wa"
+          },
+          "absent": {
+            "recapKey": "w10.recap.W1.absent",
+            "personKey": "w10.recap.W1.absent.person",
+            "saidKey": null
+          },
+          "variants": {
+            "x0": {
+              "recapKey": "w10.recap.W1.x0",
+              "personKey": "w10.recap.W1.x0.person",
+              "saidKey": null
+            },
+            "x5": {
+              "recapKey": "w10.recap.W1.x5",
+              "personKey": "w10.recap.W1.x5.person",
+              "saidKey": null
+            },
+            "x9": {
+              "recapKey": "w10.recap.W1.x9",
+              "personKey": "w10.recap.W1.x9.person",
+              "saidKey": null
+            }
+          }
+        }
+      ],
+      "lastDay": 1
+    }
+  ],
+  "endOfDemo": null,
+  "speechModes": {
+    "1": {
+      "muet": 0,
+      "couloir": [
+        5,
+        10
+      ],
+      "bavard": 15
+    },
+    "2": {
+      "muet": 0,
+      "couloir": [
+        5,
+        10
+      ],
+      "bavard": 15
+    }
+  }
+}

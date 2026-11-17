@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "file": "montserrat-latin-wght-normal.woff2",
+      "bytes": 37956,
+      "sha256": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+      "package": "@fontsource-variable/montserrat",
+      "version": "5.3.0",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/montserrat/OFL.txt",
+      "licenceCommit": "76fca9fd0bb4ea46583f92e978660f3984ab9442"
+    },
+    {
+      "file": "inter-latin-wght-normal.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "package": "@fontsource-variable/inter",
+      "version": "5.3.0",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/inter/OFL.txt",
+      "licenceCommit": "b0928647ba26c8d55548aa19feb2f7aeba622d4a"
+    },
+    {
+      "file": "atkinson-hyperlegible-next-latin-wght-normal.woff2",
+      "bytes": 34024,
+      "sha256": "1e4cea71d75ec427581d6259fc07148a2e60d60d16cabf4b4f5360487b3f9dc3",
+      "package": "fonts.gstatic.com Atkinson Hyperlegible Next v7 (Google Fonts)",
+      "version": "v7",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/atkinsonhyperlegiblenext/OFL.txt",
+      "licenceCommit": "95f4904fc8bcf26d3420fe315560c96417c6dec7"
+    },
+    {
+      "file": "atkinson-hyperlegible-next-latin-ext-wght-normal.woff2",
+      "bytes": 19076,
+      "sha256": "ca1969afa9058a41ced4a08bd54f48835cfe79dc6ccf9050dca7da85c9e0a9d9",
+      "package": "fonts.gstatic.com Atkinson Hyperlegible Next v7 (Google Fonts)",
+      "version": "v7",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/atkinsonhyperlegiblenext/OFL.txt",
+      "licenceCommit": "95f4904fc8bcf26d3420fe315560c96417c6dec7"
+    },
+    {
+      "file": "instrument-serif-latin-400-italic.woff2",
+      "bytes": 15684,
+      "sha256": "6ee678c33f388dd7ba59700ebea635deb98821baafd817b09891f7927177f702",
+      "package": "fonts.gstatic.com Instrument Serif v5 (Google Fonts)",
+      "version": "v5",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/instrumentserif/OFL.txt",
+      "licenceCommit": "0b58fb370093f9a9f4ff785d94405710b79de67c"
+    },
+    {
+      "file": "instrument-serif-latin-400-normal.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d",
+      "package": "fonts.gstatic.com Instrument Serif v5 (Google Fonts)",
+      "version": "v5",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/instrumentserif/OFL.txt",
+      "licenceCommit": "0b58fb370093f9a9f4ff785d94405710b79de67c"
+    },
+    {
+      "file": "instrument-serif-latin-ext-400-italic.woff2",
+      "bytes": 8444,
+      "sha256": "a04fc7ed18a8037149ce0bfda58076709d8e0840e136ed00abbdc196b7992443",
+      "package": "fonts.gstatic.com Instrument Serif v5 (Google Fonts)",
+      "version": "v5",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/instrumentserif/OFL.txt",
+      "licenceCommit": "0b58fb370093f9a9f4ff785d94405710b79de67c"
+    },
+    {
+      "file": "instrument-serif-latin-ext-400-normal.woff2",
+      "bytes": 7828,
+      "sha256": "a8c4bd7cd7073180e740d2d83a616b5cb0845579b73207eeafeae8532e70c901",
+      "package": "fonts.gstatic.com Instrument Serif v5 (Google Fonts)",
+      "version": "v5",
+      "licenceSource": "https://github.com/google/fonts/blob/main/ofl/instrumentserif/OFL.txt",
+      "licenceCommit": "0b58fb370093f9a9f4ff785d94405710b79de67c"
+    }
+  ]
+}

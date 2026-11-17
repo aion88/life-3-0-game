@@ -1,0 +1,227 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "first": "j1.wake",
+      "goalKey": "w10.scene.j1.goal"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "j1.wake",
+      "day": 1,
+      "stage": "home",
+      "place": "home.bed",
+      "anchorMinute": 420,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.scene.j1.wake.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "j1.roux"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.roux",
+      "day": 1,
+      "stage": "stairs",
+      "place": "stairs.landing",
+      "anchorMinute": 450,
+      "costMin": 15,
+      "late": null,
+      "actor": {
+        "id": "roux",
+        "bodyId": "person1",
+        "nameKey": "w10.scene.j1.roux.name",
+        "actionKey": "w10.scene.j1.roux.action",
+        "clip": "talk"
+      },
+      "beats": [
+        {
+          "voice": "person",
+          "key": "w10.scene.j1.roux.1",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.scene.j1.roux.ask",
+        "options": [
+          {
+            "id": "a",
+            "labelKey": "w10.scene.j1.roux.a",
+            "words": 8,
+            "next": "night",
+            "replyKey": "w10.scene.j1.roux.a.me"
+          },
+          {
+            "id": "b",
+            "labelKey": "w10.scene.j1.roux.b",
+            "words": 5,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "c",
+            "labelKey": "w10.scene.j1.roux.c",
+            "words": 0,
+            "next": "night",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    }
+  ],
+  "chains": [
+    {
+      "id": "chain.A",
+      "titleKey": "w10.chain.A.title",
+      "crosses": [
+        "j1.roux"
+      ],
+      "question": {
+        "key": "w10.chain.A.q",
+        "linkKeys": {
+          "A": "w10.chain.A.link.a",
+          "B": "w10.chain.A.link.b"
+        }
+      },
+      "fact": {
+        "key": "w10.fact.A",
+        "source": "bible w10 §3.4",
+        "sourceKey": "w10.fact.A.source"
+      },
+      "links": [
+        {
+          "id": "A1",
+          "day": 1,
+          "at": {
+            "kind": "scene",
+            "id": "j1.roux"
+          },
+          "absent": {
+            "recapKey": "w10.recap.A1.absent",
+            "personKey": "w10.recap.A1.absent.person",
+            "saidKey": null
+          },
+          "variants": {
+            "a": {
+              "recapKey": "w10.recap.A1.a",
+              "personKey": "w10.recap.A1.a.person",
+              "saidKey": "w10.recap.A1.a.said"
+            },
+            "b": {
+              "recapKey": "w10.recap.A1.b",
+              "personKey": "w10.recap.A1.b.person",
+              "saidKey": null
+            },
+            "c": {
+              "recapKey": "w10.recap.A1.c",
+              "personKey": "w10.recap.A1.c.person",
+              "saidKey": null
+            }
+          }
+        },
+        {
+          "id": "A2",
+          "day": 2,
+          "at": {
+            "kind": "night",
+            "day": 1,
+            "from": "A1"
+          },
+          "absent": {
+            "recapKey": "w10.recap.A2.absent",
+            "personKey": "w10.recap.A2.absent.person",
+            "saidKey": null
+          },
+          "variants": {
+            "a": {
+              "recapKey": "w10.recap.A2.a",
+              "personKey": "w10.recap.A2.a.person",
+              "saidKey": null
+            },
+            "b": {
+              "recapKey": "w10.recap.A2.b",
+              "personKey": "w10.recap.A2.b.person",
+              "saidKey": null
+            },
+            "c": {
+              "recapKey": "w10.recap.A2.c",
+              "personKey": "w10.recap.A2.c.person",
+              "saidKey": null
+            }
+          }
+        }
+      ],
+      "lastDay": 2
+    },
+    {
+      "id": "chain.L",
+      "titleKey": "w10.chain.L.title",
+      "crosses": [],
+      "question": {
+        "key": "w10.chain.L.q",
+        "linkKeys": {
+          "comply": "w10.chain.L.link.comply",
+          "bypass": "w10.chain.L.link.bypass"
+        }
+      },
+      "fact": {
+        "key": "w10.fact.L",
+        "source": "bible w10 §7.4",
+        "sourceKey": "w10.fact.L.source"
+      },
+      "links": [
+        {
+          "id": "L1",
+          "day": 1,
+          "at": {
+            "kind": "lane",
+            "id": "checkpoint.j1"
+          },
+          "absent": {
+            "recapKey": "w10.recap.L1.absent",
+            "personKey": "w10.recap.L1.absent.person",
+            "saidKey": null
+          },
+          "variants": {
+            "comply": {
+              "recapKey": "w10.recap.L1.comply",
+              "personKey": "w10.recap.L1.comply.person",
+              "saidKey": null
+            },
+            "bypass": {
+              "recapKey": "w10.recap.L1.bypass",
+              "personKey": "w10.recap.L1.bypass.person",
+              "saidKey": null
+            }
+          }
+        }
+      ],
+      "lastDay": 1
+    }
+  ],
+  "endOfDemo": null,
+  "speechModes": {
+    "1": {
+      "muet": 14,
+      "couloir": [
+        40,
+        60
+      ],
+      "bavard": 70
+    }
+  }
+}

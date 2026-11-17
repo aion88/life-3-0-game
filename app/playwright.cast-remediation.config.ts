@@ -1,0 +1,2 @@
+import {defineConfig,devices} from '@playwright/test';
+export default defineConfig({testDir:'tests/e2e-street',testMatch:['street_character_cast_test.ts','street_cast_remediation_test.ts'],outputDir:'/tmp/life-cast-remediation-results',timeout:120000,workers:1,use:{baseURL:'http://127.0.0.1:4311',trace:'retain-on-failure'},projects:[{name:'desktop',use:{browserName:'chromium',channel:'chrome',viewport:{width:1440,height:900}}},{name:'iphone',use:{...devices['iPhone 13'],browserName:'webkit'}}]});

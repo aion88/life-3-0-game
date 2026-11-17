@@ -1,0 +1,86 @@
+{
+  "budgetBytes": 30000000,
+  "assets": [
+    {
+      "id": "char.player",
+      "path": "/worlds/w10/characters/char.player.glb",
+      "bytes": 651668,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-1/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.npc.nadia",
+      "path": "/worlds/w10/characters/char.npc.nadia.glb",
+      "bytes": 677252,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.npc.berenice",
+      "path": "/worlds/w10/characters/char.npc.berenice.glb",
+      "bytes": 772620,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.npc.bruno",
+      "path": "/worlds/w10/characters/char.npc.bruno.glb",
+      "bytes": 805720,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.npc.yusuf",
+      "path": "/worlds/w10/characters/char.npc.yusuf.glb",
+      "bytes": 609924,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.npc.marlene",
+      "path": "/worlds/w10/characters/char.npc.marlene.glb",
+      "bytes": 675680,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.crowd_a",
+      "path": "/worlds/w10/characters/char.crowd_a.glb",
+      "bytes": 513408,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.crowd_b",
+      "path": "/worlds/w10/characters/char.crowd_b.glb",
+      "bytes": 539184,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    },
+    {
+      "id": "char.crowd_c",
+      "path": "/worlds/w10/characters/char.crowd_c.glb",
+      "bytes": 735064,
+      "tier": "core",
+      "license": "own",
+      "source": "MPFB 2.0.18, assets système CC0 1.0, habillé, rigué et animé par le studio (production/qa/evidence/characters/2026-11-02-perso-2/NOTES.md)",
+      "verifiedOn": "2026-11-02"
+    }
+  ]
+}

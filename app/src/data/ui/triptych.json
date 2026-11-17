@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "bands": {
+    "sky": [
+      "aiPower",
+      "surveillance"
+    ],
+    "city": [
+      "order",
+      "abundance"
+    ],
+    "ground": [
+      "freedom",
+      "unrest"
+    ]
+  },
+  "render": {
+    "stars": 48,
+    "beams": 6,
+    "buildings": 16,
+    "windowsPerBuilding": 6,
+    "paths": 9,
+    "cracks": 14,
+    "starAlphaBase": 0.4,
+    "starAlphaSwing": 0.5,
+    "twinkleMs": 700,
+    "beamSwayMs": 1400,
+    "beamSway": 0.03,
+    "beamAlpha": 0.35,
+    "beamConverge": 0.4,
+    "buildingMinRel": 0.25,
+    "buildingSpanRel": 0.7,
+    "orderFloor": 0.35,
+    "pathAlpha": 0.5,
+    "crackSpan": 40,
+    "crackAlphaBase": 0.5,
+    "crackAlphaSwing": 0.3,
+    "crackMs": 300
+  }
+}

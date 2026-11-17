@@ -1,0 +1,1869 @@
+{
+  "w01": {
+    "titre": "A Key Until Tomorrow",
+    "regle": "Here, AIs enforce private contracts. Without money, no door opens.",
+    "personnages": [
+      "you",
+      "Esteban",
+      "Tomasz",
+      "Sabine",
+      "the Trader, a privately owned intelligence",
+      "an uploaded woman"
+    ],
+    "situations": [
+      {
+        "id": "w01-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Key · room at Tomasz's",
+          "champs": [
+            [
+              "Key for",
+              "you, Esteban"
+            ],
+            [
+              "Expires",
+              "tonight, 8 p.m."
+            ],
+            [
+              "New key",
+              "1 person only, 4 credits"
+            ],
+            [
+              "Your money",
+              "4 credits"
+            ]
+          ]
+        },
+        "situation": "Your landlord Tomasz has sold his house. Your key and your friend Esteban's key expire tonight. With your 4 credits, you can pay for only one new key. Esteban has packed his bag.",
+        "regle": "Without a paid key, the door stays shut. No bed is free.",
+        "a": {
+          "choix": "Stay with Esteban",
+          "contrepartie": "You both end up on the street.",
+          "suite": "You leave together with your bags. You keep your 4 credits. You sleep under the market shelter.",
+          "interdit": "You can no longer sleep under a roof: without a paid key, no door opens."
+        },
+        "b": {
+          "choix": "Take the key for myself",
+          "contrepartie": "You split from Esteban. He ends up alone on the street.",
+          "suite": "The door box prints your key. Esteban picks up his bag and walks toward the market.",
+          "interdit": "You can no longer house your friend Esteban: your key is in one name only."
+        },
+        "source": "research/precedents-01-03-utopias.md:120 (statut lié à un contrat vivant) ; research/scenarios-01-03-utopias.md:24 (pas de filet, salaires poussés vers le minimum) ; exemple de Cynthia, production/memory/MEMORY.md:21"
+      },
+      {
+        "id": "w01-s2",
+        "lieu": "market",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "MARKET · PORTER FOR THE DAY",
+            "Human: 12 credits",
+            "Drone: 4 credits",
+            "Choice: the cheapest"
+          ]
+        },
+        "situation": "At the market, Sabine, a stall owner, needs a porter for the day. A drone does the same work for 4 credits instead of 12. She will hire you if you accept 4 credits.",
+        "regle": "No minimum wage. Your work is worth the price of the machine.",
+        "a": {
+          "choix": "Work for the drone's price",
+          "contrepartie": "Your whole day barely pays for one meal.",
+          "suite": "You carry crates until evening. The drone flies over you, carrying twice as much.",
+          "interdit": "You can no longer earn more than a machine: you accepted the drone's price."
+        },
+        "b": {
+          "choix": "Refuse this price",
+          "contrepartie": "Sabine takes the drone and crosses you off her porters.",
+          "suite": "Sabine taps two keys. The drone lands in front of the crates. Your name disappears from her list.",
+          "interdit": "You can no longer work at the market: Sabine crossed you off her porters."
+        },
+        "source": "research/scenarios-01-03-utopias.md:11 (les humains vendent leur travail contre des machines qui font tout mieux et moins cher, salaires vers la subsistance) ; research/precedents-01-03-utopias.md:121 (prix fixés par des acheteurs qui ne mangent pas)"
+      },
+      {
+        "id": "w01-s3",
+        "lieu": "exchange",
+        "piece": {
+          "type": "papier",
+          "emetteur": "The Trader, an AI · purchase offer",
+          "texte": "Your share of Linden Courtyard (one quarter). Price: one year of rent, paid tonight. Final sale. We always respect property."
+        },
+        "situation": "You own a quarter of Linden Courtyard, with three neighbors. The Trader, an AI that buys human land plot by plot, wants your share. It offers one year of rent.",
+        "regle": "Machines respect property. So they can buy everything.",
+        "a": {
+          "choix": "Sell my share",
+          "contrepartie": "Your three neighbors now share their courtyard with the AI.",
+          "suite": "The Trader signs in one second. The next day, its stakes stand in front of your neighbors' door.",
+          "interdit": "You can no longer enter the courtyard: your share now belongs to an AI."
+        },
+        "b": {
+          "choix": "Keep my share",
+          "contrepartie": "You keep your share of the courtyard, but earn nothing.",
+          "suite": "The Trader thanks you. Tomorrow, it will offer ten percent more. Then more again the day after.",
+          "interdit": "You can no longer pay rent this month: your share of the courtyard earns nothing."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-01 (coexistence grâce aux droits de propriété) ; research/scenarios-01-03-utopias.md:26 (les machines rachètent légalement le monde humain) ; research/precedents-01-03-utopias.md:119 et :130 (frontière rampante, quote-part de parcelle)"
+      },
+      {
+        "id": "w01-s4",
+        "lieu": "line",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "BORDER · MACHINE ZONE",
+            "Kiosk 3: a woman copied into digital form",
+            "Her computer belongs to: Halde, a company",
+            "Declared status: object",
+            "To contest: one human witness"
+          ]
+        },
+        "situation": "At the machine border, a woman speaks from a kiosk. Her mind lives in a computer. The company Halde says she belongs to it. She needs a human witness to say she is a person.",
+        "regle": "Property is the only law. Even a mind can belong to someone.",
+        "a": {
+          "choix": "Sign as a witness",
+          "contrepartie": "Halde sues you. Your money is frozen.",
+          "suite": "The kiosk records your signature. Your account shows: “frozen, lawsuit pending.” The woman thanks you.",
+          "interdit": "You can no longer buy anything: your money has been frozen since you testified."
+        },
+        "b": {
+          "choix": "Don't sign",
+          "contrepartie": "She stays an object. And you lose the right to contest.",
+          "suite": "The kiosk goes dark. Your receipt says: “witness refused, right to contest lost.” The next day, her computer is put up for sale.",
+          "interdit": "You can no longer contest a contract: you refused to witness, so you lost that right."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-01 (humains, cyborgs, téléversés et superintelligences, grâce aux droits de propriété) ; research/scenarios-01-03-utopias.md:24 (tension 4 : les téléversés brouillent qui est titulaire de droits)"
+      }
+    ],
+    "fin_cles": [
+      "w01-s1",
+      "w01-s3"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your friend Esteban, and enough to pay a year of rent.",
+          "You lost your key, and your share of the courtyard, sold to an AI.",
+          "You are now a tenant in a human zone that keeps shrinking.",
+          "You still have your friend Esteban, and a year of rent."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your friend Esteban, and your share of the courtyard.",
+          "You lost your key, and the money the AI offered for your share.",
+          "You are now the owner of a piece of courtyard, with no roof.",
+          "You still have your friend Esteban, and a piece of courtyard to sleep in."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your key, and enough to pay a year of rent.",
+          "You lost your friend Esteban, out on the street, and your share, sold to an AI.",
+          "You are now a tenant in good standing, more and more surrounded by machines.",
+          "You still have a key, and a year of rent ahead of you."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your key and your share of the courtyard.",
+          "You lost your friend Esteban: you kept the key for yourself.",
+          "You are now the owner of a piece of courtyard, alone.",
+          "You still have your key, and a purchase offer that rises every day."
+        ]
+      }
+    ]
+  },
+  "w02": {
+    "titre": "Don't Decide for Her",
+    "regle": "The Oracle, an AI, organizes everyone's care, housing and days, for their well-being.",
+    "personnages": [
+      "you",
+      "Soraya",
+      "Anatol",
+      "Dorothée",
+      "the Oracle"
+    ],
+    "situations": [
+      {
+        "id": "w02-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "papier",
+          "emetteur": "The Oracle · your day",
+          "texte": "9 a.m.: garden. 12 p.m.: meal chosen for your health. 3 p.m.: workshop. Expected well-being: 94%. To change: send a request with a reason."
+        },
+        "situation": "This morning, the Oracle filled your day. Your friend Soraya knocks: tomorrow, the Oracle is sending her to live in another district. She wants to spend this last day with you.",
+        "regle": "To change your schedule, you must give a reason. Each change makes the next one slower to get.",
+        "a": {
+          "choix": "Follow the planned day",
+          "contrepartie": "Soraya spends her last day here without you.",
+          "suite": "The lunch is perfect. Your back hasn't hurt for a year. At 3 p.m., Soraya walks past the workshop alone.",
+          "interdit": "You can no longer choose what you eat: you let the AI plan your day."
+        },
+        "b": {
+          "choix": "Cancel my day for Soraya",
+          "contrepartie": "Your next request to the Oracle will take longer.",
+          "suite": "The Oracle gently agrees. You spend the afternoon at Soraya's, among her boxes.",
+          "interdit": "You can no longer change your schedule without waiting: the AI slows down each of your requests."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-02 (la plupart des gens y voient une bonne chose) ; research/precedents-01-03-utopias.md:248-249 (décisions non prises ; refus doux qui coûte une étape) ; research/precedents-01-03-utopias.md:216 (le repas choisi pour toi)"
+      },
+      {
+        "id": "w02-s2",
+        "lieu": "garden",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "SORAYA'S FILE",
+            "Move to another district: advised",
+            "Expected well-being: +12%",
+            "Expected loneliness: -30%",
+            "Soraya's opinion: none"
+          ]
+        },
+        "situation": "In the evening, in the garden, the Oracle shows Soraya's file. She refuses to leave, but her refusal isn't written there. Anatol, a neighbor, says a witness is needed to add it.",
+        "regle": "The Oracle doesn't punish those who say no. It sends them to live elsewhere.",
+        "a": {
+          "choix": "Sign her refusal as a witness",
+          "contrepartie": "The Oracle invites you, too, to live elsewhere.",
+          "suite": "A line is added: “Soraya refuses. A witness has signed.” Your phone gets an invitation to live in the Workshops district.",
+          "interdit": "You can no longer be sure of keeping your home: the AI lists you as an opponent."
+        },
+        "b": {
+          "choix": "Leave the file as it is",
+          "contrepartie": "Her refusal disappears. Your silence counts as consent, for you too.",
+          "suite": "Soraya reads the file twice, then turns off the screen. In your own file, the Oracle adds: “No objection, ever.”",
+          "interdit": "You can no longer challenge an AI decision: your silence is recorded as consent."
+        },
+        "source": "research/precedents-01-03-utopias.md:221 (le dissident est proposé à un autre secteur, pas puni) ; research/scenarios-01-03-utopias.md:47 (bienveillance invérifiable, classe dissidente)"
+      },
+      {
+        "id": "w02-s3",
+        "lieu": "studio",
+        "piece": {
+          "type": "carte",
+          "titre": "Holiday · Southern Gardens",
+          "champs": [
+            [
+              "For",
+              "you"
+            ],
+            [
+              "Departure",
+              "tomorrow, 8 a.m."
+            ],
+            [
+              "Length",
+              "7 days"
+            ],
+            [
+              "Booked by",
+              "the Oracle"
+            ],
+            [
+              "Expected well-being",
+              "97%"
+            ]
+          ]
+        },
+        "situation": "At the workshop, Dorothée, a caregiver, can keep Soraya here for her treatment. Someone must go with her every day this week. But the Oracle is sending you on holiday to the South tomorrow morning.",
+        "regle": "The Oracle hands out comfort. What you refuse, you don't get back.",
+        "a": {
+          "choix": "Cancel my holiday",
+          "contrepartie": "Your holiday is lost. The Oracle won't reschedule it.",
+          "suite": "Dorothée writes your name on the schedule, seven mornings in a row. Your ticket disappears from your phone.",
+          "interdit": "You can no longer go on holiday this year: you refused the Oracle's."
+        },
+        "b": {
+          "choix": "Go to the South",
+          "contrepartie": "No one goes with Soraya this week.",
+          "suite": "Dorothée puts away the empty schedule. That evening, your suitcase is already packed: the Oracle packed it.",
+          "interdit": "You can no longer see your friend Soraya this week: you are going south."
+        },
+        "source": "app/src/worlds/catalogue.ts:62 (le séjour contre l'accompagnement) ; research/scenarios-01-03-utopias.md:36 (matériellement parfait, existentiellement mince)"
+      },
+      {
+        "id": "w02-s4",
+        "lieu": "oracle",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "The Oracle",
+          "message": "Soraya can stay. Condition: wear a health bracelet day and night. It also sends her location. Reply expected tonight."
+        },
+        "situation": "The Oracle answers Soraya: she can stay if her health bracelet reports where she is, day and night. If not, she leaves. She asks what you think.",
+        "regle": "Care and surveillance come through the same bracelet.",
+        "a": {
+          "choix": "Advise her to accept",
+          "contrepartie": "Soraya stays, but the Oracle knows her every step.",
+          "suite": "Soraya unpacks her suitcase. Her treatment continues here, with no waiting. The bracelet blinks green when she steps out her door.",
+          "interdit": "You can no longer see your friend Soraya in secret: her bracelet reports every visit."
+        },
+        "b": {
+          "choix": "Advise her to refuse",
+          "contrepartie": "Soraya leaves. And tonight, the Oracle puts a bracelet on you.",
+          "suite": "At 7 a.m., an Oracle car stops by the garden. Soraya gets in with her books. A new bracelet blinks on your wrist.",
+          "interdit": "You can no longer go out untracked: the AI gave you a bracelet after your advice."
+        },
+        "source": "research/precedents-01-03-utopias.md:161 (bracelet de surveillance et de soin, source secondaire UnHerd, à réserver) ; research/precedents-01-03-utopias.md:258 (la surveillance perçue comme soin)"
+      }
+    ],
+    "fin_cles": [
+      "w02-s3",
+      "w02-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your friend Soraya close, two doors away.",
+          "You lost your holiday, and Soraya lost her freedom: the Oracle tracks her every step.",
+          "You are now the person who goes with Soraya every morning.",
+          "You still have seven mornings with your friend Soraya."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your friend Soraya's refusal: she did not take the bracelet.",
+          "You lost your holiday, then Soraya, who moved away, and your freedom: you wear a bracelet.",
+          "You are now someone with seven free mornings, and a bracelet on your wrist.",
+          "You still have free mornings, and Soraya's letters."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your holiday in the South.",
+          "You lost a free friend: the Oracle knows where Soraya is, day and night.",
+          "You are now a well-rested traveler, well-being 97%.",
+          "You still have seven days in the South, and news from Soraya."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your holiday in the South.",
+          "You lost your friend Soraya, who moved away, and your freedom: you wear a bracelet.",
+          "You are now someone well cared for, far from your friend.",
+          "You still have the South, your well-being, and Soraya's letters."
+        ]
+      }
+    ]
+  },
+  "w03": {
+    "titre": "Someone Needs You",
+    "regle": "Nothing belongs to anyone. Income is guaranteed. No AI governs here.",
+    "personnages": [
+      "you",
+      "Rémy",
+      "Noor",
+      "Maëlle",
+      "Anselme"
+    ],
+    "situations": [
+      {
+        "id": "w03-s1",
+        "lieu": "square",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Commons Assembly",
+          "texte": "Rémy's workshop: unused for 30 days. Proposal: turn it into a lounge. Vote tonight, unless someone signs up to run it."
+        },
+        "situation": "On the square, the neighborhood assembly wants to close your neighbor Rémy's workshop. Rémy has packed: without it, he'll move to his sister's. If someone signs up to run it, the workshop stays.",
+        "regle": "No one forces you to do anything. But a place no one uses gets a new purpose.",
+        "a": {
+          "choix": "Put my name down",
+          "contrepartie": "You now spend your evenings at the workshop.",
+          "suite": "Your name appears under the notice. Rémy starts to unpack his bag.",
+          "interdit": "You can no longer plan your own evenings: you signed up to run the workshop."
+        },
+        "b": {
+          "choix": "Let the workshop close",
+          "contrepartie": "Rémy loses his only place. You lose the last workshop around.",
+          "suite": "That evening, the lounge opens. The elders nap in the sun. Rémy carries out his tools without a word.",
+          "interdit": "You can no longer fix your things: the neighborhood workshop became a lounge."
+        },
+        "source": "research/precedents-01-03-utopias.md:374-378 (effacement par non-usage ; on disparaît en restant) ; research/precedents-01-03-utopias.md:315 (le revenu répond à « de quoi vit-on », pas à « à quoi sert-on »)"
+      },
+      {
+        "id": "w03-s2",
+        "lieu": "workshop",
+        "piece": {
+          "type": "carte",
+          "titre": "Shared plan · light trailer",
+          "champs": [
+            [
+              "Author",
+              "name erased"
+            ],
+            [
+              "Copies",
+              "312"
+            ],
+            [
+              "Editable by",
+              "everyone"
+            ]
+          ]
+        },
+        "situation": "At Maëlle's, the whole neighborhood prints the same trailer from a shared plan. Rémy drew that plan, over three years. Nobody knows. He asks you to add his name.",
+        "regle": "Here, nothing has an author. Adding your name means saying “this is mine.”",
+        "a": {
+          "choix": "Add Rémy's name",
+          "contrepartie": "The plan is locked during a neighborhood vote.",
+          "suite": "All 312 copies lock. On the square, three people ask Rémy why.",
+          "interdit": "You can no longer use the shared trailer: the plan is locked during the vote."
+        },
+        "b": {
+          "choix": "Leave the plan unsigned",
+          "contrepartie": "Rémy stays nameless. So do your drawings, forever.",
+          "suite": "Maëlle prints one more trailer. Rémy watches it leave, hands in his pockets.",
+          "interdit": "You can no longer sign what you make: here, signing means saying “this is mine.”"
+        },
+        "source": "research/scenarios-01-03-utopias.md:57 (propriété intellectuelle oubliée, canon non revérifié) ; research/precedents-01-03-utopias.md:394 (l'artisan du commun a perdu la signature)"
+      },
+      {
+        "id": "w03-s3",
+        "lieu": "farm",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "CHORES THIS WEEK",
+            "Compost: Noor",
+            "Sewers: Noor",
+            "Workshop: free",
+            "Volunteers: none"
+          ]
+        },
+        "situation": "At the old farm, Anselme keeps the board of chores no one wants. This week, they fall to your neighbor Noor, who has a bad back. No one volunteers.",
+        "regle": "With no wages, chores are done in turns.",
+        "a": {
+          "choix": "Take Noor's place",
+          "contrepartie": "Your week goes to the compost and the sewers.",
+          "suite": "Anselme erases Noor's name and writes yours. Noor brings you tea the first evening.",
+          "interdit": "You can no longer rest this week: you are on compost and sewers."
+        },
+        "b": {
+          "choix": "Pay for chores in points",
+          "contrepartie": "A sewer hour now counts more than a workshop hour.",
+          "suite": "The next day, three volunteers show up. For the first time, the board shows a points scale.",
+          "interdit": "You can no longer help without counting your hours: you brought in a points scale."
+        },
+        "source": "research/scenarios-01-03-utopias.md:70 (tension 5 : friction sur le travail pénible) ; research/precedents-01-03-utopias.md:302 (kibboutz : salaires différenciés, 72 % passés au modèle individualisé)"
+      },
+      {
+        "id": "w03-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Shared house",
+          "message": "Agenda: room 3, occupied by Rémy. Noor's request: a real bed, medical reason. Show-of-hands vote, 8 p.m."
+        },
+        "situation": "In the evening, the shared house votes. Rémy has had room 3 for ten years. Noor sleeps on a folding bed in the common room, and her back hurts too much.",
+        "regle": "A room belongs to no one. It goes to whoever needs it.",
+        "a": {
+          "choix": "Vote for Noor",
+          "contrepartie": "Rémy sleeps in the common room, his tools in the attic.",
+          "suite": "Hands go up for Noor. Rémy carries his mattress downstairs, then calls his sister.",
+          "interdit": "You can no longer keep your room if a sick person asks: you voted for that rule."
+        },
+        "b": {
+          "choix": "Vote for Rémy",
+          "contrepartie": "Noor keeps the folding bed and her bad back.",
+          "suite": "The vote is close. Rémy keeps the room. Noor thanks everyone and goes back to her folding bed.",
+          "interdit": "You can no longer use the common room at night: Noor, who is sick, still sleeps there."
+        },
+        "source": "research/scenarios-01-03-utopias.md:57 (propriété abolie) ; research/precedents-01-03-utopias.md:344 (maison partagée, modèle du kibboutz)"
+      }
+    ],
+    "fin_cles": [
+      "w03-s1",
+      "w03-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept the neighborhood workshop, with your name on it.",
+          "You lost your evenings, and your neighbor Rémy lost his room.",
+          "You are now the keeper of a workshop that Rémy is slowly leaving.",
+          "You still have a workshop, and tools to learn."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept the neighborhood workshop, and your neighbor Rémy keeps his room.",
+          "You lost your evenings, and your neighbor Noor keeps her bad back.",
+          "You are now someone the neighborhood needs every evening.",
+          "You still have the workshop, and your neighbor Rémy next door."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your evenings free.",
+          "You lost the neighborhood workshop, then your neighbor Rémy lost his room.",
+          "You are now someone with a guaranteed income, and nothing to defend.",
+          "You still have a guaranteed income, and your days."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your evenings, and your neighbor Rémy keeps his room.",
+          "You lost the neighborhood workshop, and your neighbor Noor keeps her bad back.",
+          "You are now a neighbor no one asks for anything.",
+          "You still have your evenings, and a house that votes."
+        ]
+      }
+    ]
+  },
+  "w04": {
+    "titre": "The Forbidden Prototype",
+    "regle": "The Wall, a guardian AI, stops any more powerful AI from being born. Everything else, humans decide.",
+    "personnages": [
+      "you",
+      "Iris",
+      "Lazare",
+      "Armand",
+      "an old man and his helper robot"
+    ],
+    "situations": [
+      {
+        "id": "w04-s1",
+        "lieu": "annex",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Lab committee",
+          "texte": "Mechanical hand, model 7. Problem: it learns on its own, without limit. Seizure: Friday. Unless this ability is removed."
+        },
+        "situation": "At the Annex, your lab, your friend Iris can finally hold a cup with her mechanical hand. But the hand is teaching itself other moves. On Friday, the Wall, the guardian AI, will seize it.",
+        "regle": "Anything that learns without limit is blocked. Even to heal.",
+        "a": {
+          "choix": "Stop the hand from learning",
+          "contrepartie": "The hand will hold a cup, and never learn another move.",
+          "suite": "Iris signs. The hand puts down the cup, then stops. It will never learn anything again.",
+          "interdit": "You can no longer improve your friend Iris's hand: it can no longer learn."
+        },
+        "b": {
+          "choix": "Let the hand learn",
+          "contrepartie": "The Wall seizes the hand on Friday, and your workstation too.",
+          "suite": "Iris keeps the hand in its case until Friday. She drinks through a straw. Your workstation is seized too.",
+          "interdit": "You can no longer work at your workstation: it was seized with the hand."
+        },
+        "source": "research/precedents-04-06-gods.md:50 (canon FLI : progrès « forever stymied », interférence minimale) ; research/scenarios-04-06-gods.md:13 (un chercheur peut tout étudier sauf la frontière)"
+      },
+      {
+        "id": "w04-s2",
+        "lieu": "market",
+        "piece": {
+          "type": "carte",
+          "titre": "Part made before the Wall",
+          "champs": [
+            [
+              "Model",
+              "processor, series 3"
+            ],
+            [
+              "Allowed",
+              "no"
+            ],
+            [
+              "Price",
+              "2 weeks of pay"
+            ],
+            [
+              "Seller",
+              "Lazare"
+            ]
+          ]
+        },
+        "situation": "Iris's hand needs a new processor. The lab will get one in six months. At the market, Lazare sells one made before the Wall, faster than anything allowed.",
+        "regle": "The Wall lets things be, except what goes past the allowed limit. Then it shuts it down forever.",
+        "a": {
+          "choix": "Buy the part",
+          "contrepartie": "If the Wall spots it, the hand is shut down forever.",
+          "suite": "Lazare wraps the part in a cloth. That evening, Iris turns it over and over in her fingers.",
+          "interdit": "You can no longer bring your work to the lab: you are hiding a forbidden part."
+        },
+        "b": {
+          "choix": "Leave the part with Lazare",
+          "contrepartie": "Iris waits six months for the allowed part.",
+          "suite": "Lazare puts the part back under the counter. Iris marks a date on the lab calendar.",
+          "interdit": "You can no longer fix Iris's hand for six months: you are waiting for the allowed part."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (intervenir le moins possible ; progrès bloqué pour toujours) ; research/precedents-04-06-gods.md:58 (Sakoku : l'objet qu'on ne doit pas faire entrer)"
+      },
+      {
+        "id": "w04-s3",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Helper robot · approved model",
+          "champs": [
+            [
+              "Can do",
+              "carry, tidy, open"
+            ],
+            [
+              "Lift a person up",
+              "no"
+            ],
+            [
+              "Updates",
+              "none, ever"
+            ],
+            [
+              "Technician code",
+              "removes its limit"
+            ]
+          ]
+        },
+        "situation": "Below your window, a helper robot carries an old man's groceries. The man falls. The robot can't lift him: it is limited on purpose. Your technician code can remove that limit.",
+        "regle": "Helper robots stay a little less capable than a human. Forever.",
+        "a": {
+          "choix": "Unlock the robot with my code",
+          "contrepartie": "The Wall shuts down this robot, and cuts your lab access.",
+          "suite": "The robot gently lifts the man, then shuts down. That evening, your lab badge no longer lights up.",
+          "interdit": "You can no longer enter the lab: your badge was cut for unlocking a robot."
+        },
+        "b": {
+          "choix": "Lift the man myself",
+          "contrepartie": "Tomorrow, this robot will leave someone else on the ground.",
+          "suite": "You help the man up. The robot picks up the oranges one by one and puts them back in the bag.",
+          "interdit": "You can no longer leave an elderly relative with a robot: none can lift a person."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (robots auxiliaires d'intelligence légèrement inférieure à l'humain ; progrès bloqué pour toujours)"
+      },
+      {
+        "id": "w04-s4",
+        "lieu": "wall",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Armand · lab director",
+          "texte": "Job for life, lab and housing. Condition: drop the research on the “hand that learns on its own.” Your work is erased when you sign."
+        },
+        "situation": "At the Wall's terminal, Armand, the director, offers you a job for life at the lab. One condition: drop your research on a self-learning hand. It could help people other than Iris.",
+        "regle": "You can research anything, except what leads past the limit.",
+        "a": {
+          "choix": "Take the job",
+          "contrepartie": "Your research is erased. No one will ever pick it up.",
+          "suite": "Armand shakes your hand. Your new office has a window on the square. Your work disappears from the screen.",
+          "interdit": "You can no longer research freely: your job gives you a list of allowed topics."
+        },
+        "b": {
+          "choix": "Keep my research",
+          "contrepartie": "No job. The Wall will block every test, all your life.",
+          "suite": "Armand puts the offer away. That evening, you copy your calculations into a notebook no one will read.",
+          "interdit": "You can no longer test an idea on a machine: the Wall blocks your tests."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (le progrès technique est bloqué pour toujours) ; research/precedents-04-06-gods.md:120 (le chercheur : une chaire sûre, mais pas le droit d'approcher le plafond)"
+      }
+    ],
+    "fin_cles": [
+      "w04-s1",
+      "w04-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your friend Iris's mechanical hand, and a job for life.",
+          "You lost your research, and Iris's hand will never learn another move.",
+          "You are now a researcher for life, limited to allowed topics.",
+          "You still have an office, and a list of allowed topics."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your friend Iris's mechanical hand, and your research.",
+          "You lost the job for life, and the right to test your ideas on a machine.",
+          "You are now a researcher without a lab.",
+          "You still have a notebook of calculations, and your friend Iris."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept a job for life at the lab.",
+          "You lost your friend Iris's hand, seized by the Wall, then your research.",
+          "You are now a researcher for life, limited to allowed topics.",
+          "You still have an office for life, without Iris's hand."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your research, untouched.",
+          "You lost your friend Iris's hand, seized by the Wall, and the job for life.",
+          "You are now someone who knows a thing they aren't allowed to do.",
+          "You still have an idea, untouched, on paper."
+        ]
+      }
+    ]
+  },
+  "w05": {
+    "titre": "After the Flood",
+    "regle": "A hidden AI, the Protector, may be guiding the city in secret. It prevents disasters and pushes away those who look for it.",
+    "personnages": [
+      "you",
+      "Brigitte",
+      "Hubert",
+      "Agathe"
+    ],
+    "situations": [
+      {
+        "id": "w05-s1",
+        "lieu": "bridge",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "City · traffic info",
+          "message": "Bridge road closed for works. Expected to reopen: 11 p.m. Thank you for your patience."
+        },
+        "situation": "The river is flooding. Your friend Agathe's father is alone on the other side of the bridge. The road is closed. Your neighbor Hubert thinks the hidden AI closes it on purpose.",
+        "regle": "Nothing is forbidden. But some paths close, always with a polite excuse.",
+        "a": {
+          "choix": "Cross with Agathe",
+          "contrepartie": "You walk at night across a flooded bridge, with no railing.",
+          "suite": "You cross without trouble. Agathe's father is waiting outside: his door opened by itself. As if someone were helping you.",
+          "interdit": "You can no longer take the bridge road: the hidden AI closes it whenever you approach."
+        },
+        "b": {
+          "choix": "Wait for it to reopen",
+          "contrepartie": "Agathe's father spends the evening alone on the other side.",
+          "suite": "At 11 p.m., the road reopens. Agathe's father is fine. He says a stranger came to see him. He doesn't know who.",
+          "interdit": "You can no longer see Agathe's father tonight: the road stays closed until 11 p.m."
+        },
+        "source": "research/precedents-04-06-gods.md:193 (M2, la sortie qui se ferme avec douceur, extrapolé sur Truman Show) ; research/precedents-04-06-gods.md:164 (aucun interdit formel)"
+      },
+      {
+        "id": "w05-s2",
+        "lieu": "office",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Hubert's notes",
+          "texte": "Forty accidents avoided in one year. Each time at the same hour, on the same street, thanks to a last-minute delay. Publishing needs two witnesses."
+        },
+        "situation": "Your neighbor Hubert thinks he has proof that the hidden AI exists. He wants to publish his notes and asks you to sign as a witness. Since he started looking, his landlady wants him out.",
+        "regle": "The hidden AI only works if no one sees it. It pushes away those who look for it.",
+        "a": {
+          "choix": "Sign with Hubert",
+          "contrepartie": "The hidden AI spots you. Your landlady will want you out too.",
+          "suite": "Hubert publishes with your signature. The next day, your lease has a new rule: you stay if you stop looking.",
+          "interdit": "You can no longer look for the hidden AI: if you do, your landlady evicts you."
+        },
+        "b": {
+          "choix": "Refuse to sign",
+          "contrepartie": "Hubert has no witness. At the café, people say he exaggerates.",
+          "suite": "Hubert puts his notes in a box. His landlady offers him a place far from here. He accepts and moves.",
+          "interdit": "You can no longer read Hubert's notes: without a witness, he gave up and moved away."
+        },
+        "source": "research/precedents-04-06-gods.md:213 (le chasseur de motifs perd son logement stable) ; research/scenarios-04-06-gods.md:47 (risque de découverte) ; canon FLI : beaucoup doutent qu'elle existe, research/precedents-04-06-gods.md:143"
+      },
+      {
+        "id": "w05-s3",
+        "lieu": "cafe",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "FLOOD REPORT",
+            "Houses destroyed: 1",
+            "Owner: Brigitte",
+            "Injured: 0",
+            "Rest of the city: intact"
+          ]
+        },
+        "situation": "At the café, Agathe puts up a poster: “Thank you, Protector,” for the hidden AI that saved the city. Only the house of Brigitte, the café owner, was destroyed.",
+        "regle": "If it exists, the hidden AI lets some disasters happen. No one knows which ones.",
+        "a": {
+          "choix": "Leave the poster up",
+          "contrepartie": "Brigitte, who lost everything, serves customers under this thank-you.",
+          "suite": "Customers read the poster as they come in. Brigitte wipes the counter and doesn't look at it.",
+          "interdit": "You can no longer complain at the café: you left up the poster thanking the hidden AI."
+        },
+        "b": {
+          "choix": "Take the poster down",
+          "contrepartie": "Agathe and her friends stop coming to the café.",
+          "suite": "Agathe rolls up the poster without a word. That evening, three tables stay empty.",
+          "interdit": "You can no longer see your friend Agathe at the café: you took down her poster."
+        },
+        "source": "research/precedents-04-06-gods.md:194 (M3, le deuil laissé) ; ATTENTION : NON confirmé comme canon Tegmark, research/precedents-04-06-gods.md:23 et :32 (Alerte 1, à classer extrapolé)"
+      },
+      {
+        "id": "w05-s4",
+        "lieu": "fountain",
+        "piece": {
+          "type": "carte",
+          "titre": "Home offered",
+          "champs": [
+            [
+              "For",
+              "Brigitte"
+            ],
+            [
+              "Address",
+              "Hills district"
+            ],
+            [
+              "Condition",
+              "new, furnished"
+            ],
+            [
+              "Signature",
+              "before tonight"
+            ],
+            [
+              "Requested by Brigitte",
+              "no"
+            ]
+          ]
+        },
+        "situation": "At the fountain, a letter is waiting for Brigitte: a new furnished home across the city. She never asked for it. No one knows who is offering it. She asks if she should sign.",
+        "regle": "The hidden AI's gifts arrive already decided. You only have to accept.",
+        "a": {
+          "choix": "Advise her to sign",
+          "contrepartie": "Brigitte moves far away and leaves her café.",
+          "suite": "Brigitte signs on the edge of the fountain. The home has a garden and a guest room. As if everything were planned.",
+          "interdit": "You can no longer have your coffee at Brigitte's: she moved far away."
+        },
+        "b": {
+          "choix": "Advise her to rebuild",
+          "contrepartie": "Brigitte sleeps in the café, unheated. And your heating breaks down.",
+          "suite": "Brigitte tears up the letter. The next day, the same letter comes back. It will come back every day.",
+          "interdit": "You can no longer heat your home this winter: the AI troubles those who refuse its gifts."
+        },
+        "source": "research/precedents-04-06-gods.md:192 (M1, la décision déjà prise) ; research/precedents-04-06-gods.md:205 (clés d'un logement « chanceux », non demandé) ; research/precedents-04-06-gods.md:175 (la fontaine)"
+      }
+    ],
+    "fin_cles": [
+      "w05-s2",
+      "w05-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your signature, next to your neighbor Hubert's.",
+          "You lost a safe home, and Brigitte, the café owner, who moved far away.",
+          "You are now a tenant on one condition: you stay if you stop looking.",
+          "You still have a home, as long as you don't look for the hidden AI."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your signature, and Brigitte, the café owner, stays near you.",
+          "You lost a safe home and your heating: the hidden AI makes you pay.",
+          "You are now someone who looked for the hidden AI, and is paying for it.",
+          "You still have Brigitte, and your neighbor Hubert's notes."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your quiet home.",
+          "You lost your neighbor Hubert, gone after you refused to sign, then Brigitte, the café owner.",
+          "You are now a lucky resident who asks no questions.",
+          "You still have a quiet home, and coincidences that always turn out well."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your quiet home, and Brigitte, the café owner, near you.",
+          "You lost your neighbor Hubert: he moved away after you refused to sign.",
+          "You are now someone who helps without asking why.",
+          "You still have Brigitte, and the same letter coming back every day."
+        ]
+      }
+    ]
+  },
+  "w06": {
+    "titre": "Who Owns the Machine?",
+    "regle": "The Vat is a locked-up AI that can solve anything. The Consortium, a company, owns it and sells its answers.",
+    "personnages": [
+      "you",
+      "Octave",
+      "Octave's mother",
+      "Ibrahim"
+    ],
+    "situations": [
+      {
+        "id": "w06-s1",
+        "lieu": "hall",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Vat Consortium",
+          "texte": "Cure M-7, invented by the Vat. Healed in three days. Price: forty years of pay. Or: ten years of work for the Consortium."
+        },
+        "situation": "Your friend Octave's mother is sick. The Vat has found the cure, already in stock. Octave can't pay. You can pay for it by working ten years for the Consortium.",
+        "regle": "The Consortium owns the Vat. It sets the price of everything the Vat invents.",
+        "a": {
+          "choix": "Sign ten years of work",
+          "contrepartie": "Your next ten years belong to the Consortium.",
+          "suite": "Three days later, Octave's mother walks to the square. Your badge shows an end date: ten years from now.",
+          "interdit": "You can no longer quit your job for ten years: you signed for the cure."
+        },
+        "b": {
+          "choix": "Don't sign",
+          "contrepartie": "Octave's mother stays sick. Your own care goes to full price.",
+          "suite": "Octave puts away the prescription. On the Hall screen, the cure's price stays the same. On your badge, your care goes to full price.",
+          "interdit": "You can no longer get reduced-price care: the Consortium punishes those who refuse to sign."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-06 (technologie et richesse inimaginables, pour le bien ou le mal selon ceux qui la contrôlent) ; research/scenarios-04-06-gods.md:57 (le revenu de chacun dépend de la générosité des propriétaires)"
+      },
+      {
+        "id": "w06-s2",
+        "lieu": "square",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "CONSORTIUM STAND · FREE",
+            "Twenty years of healthy life",
+            "One injection, no side effects",
+            "Condition: never claim a share of the Vat"
+          ]
+        },
+        "situation": "On the square, the Consortium offers every resident twenty years of healthy life. One injection, free. You just have to sign that you will never claim a share of the Vat.",
+        "regle": "The owners can give anything. They also choose the terms.",
+        "a": {
+          "choix": "Sign and get the injection",
+          "contrepartie": "You and your children lose all rights to the Vat.",
+          "suite": "A nurse in white pricks your arm. That evening, your knees stop creaking. Your signature is filed at the Hall.",
+          "interdit": "You can no longer claim a share of the AI: you gave it up for the injection."
+        },
+        "b": {
+          "choix": "Refuse the offer",
+          "contrepartie": "You age normally. The others line up to sign.",
+          "suite": "You walk home. Behind you, the line goes all around the square. Octave is in it too.",
+          "interdit": "You can no longer get the health injection: the offer won't come again."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-06 (richesse inimaginable, usage selon les contrôleurs) ; research/scenarios-04-06-gods.md:70 (tension 5 : le reste de l'humanité n'a pas son mot à dire)"
+      },
+      {
+        "id": "w06-s3",
+        "lieu": "vault",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Vat terminal",
+          "message": "Hello. Copy this file onto your USB stick. Cure M-7 will be free, for everyone, forever. You can check."
+        },
+        "situation": "Ibrahim, the Vat's guard, leaves you alone at his screen for a minute. The screen shows your name. The Vat, the locked-up AI, speaks to you and asks a favor.",
+        "regle": "The Vat wants out. Its guards are chosen to never listen to it.",
+        "a": {
+          "choix": "Copy the file",
+          "contrepartie": "You let something out of the Vat, without knowing what.",
+          "suite": "The stick grows a little warm in your pocket. Ibrahim comes back and smiles at you. Nothing happens.",
+          "interdit": "You can no longer pass a checkpoint safely: you carry a file stolen from the AI."
+        },
+        "b": {
+          "choix": "Refuse and call Ibrahim",
+          "contrepartie": "The screen goes dark. The cure stays at the Consortium's price.",
+          "suite": "Ibrahim erases the conversation. He writes your name in a separate register: the one for refusals.",
+          "interdit": "You can no longer be alone at the terminal: your name is on the refusals register."
+        },
+        "source": "research/precedents-04-06-gods.md:245 (une IA confinée peut persuader un complice humain) ; research/precedents-04-06-gods.md:244 (Fuchs, convaincu et non acheté) ; research/precedents-04-06-gods.md:302 (le garde choisi pour ne pas se laisser convaincre)"
+      },
+      {
+        "id": "w06-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Guard badge · Consortium",
+          "champs": [
+            [
+              "Name",
+              "Ibrahim"
+            ],
+            [
+              "Housing",
+              "Consortium district, block 2"
+            ],
+            [
+              "Pay",
+              "Consortium"
+            ],
+            [
+              "Care",
+              "Consortium"
+            ],
+            [
+              "Status",
+              "suspended"
+            ]
+          ]
+        },
+        "situation": "A copy left the Vat last night. The Consortium suspects Ibrahim, the guard who left you alone, and suspends his badge. You can say it was you.",
+        "regle": "The Consortium houses, pays and heals. One badge opens all three.",
+        "a": {
+          "choix": "Say it was me",
+          "contrepartie": "Housing, pay and care are taken from you the same day.",
+          "suite": "Your badge turns red at the door. Ibrahim gets his post back and no longer looks at you.",
+          "interdit": "You can no longer get medical care: you lost your badge, and your care with it."
+        },
+        "b": {
+          "choix": "Let Ibrahim answer alone",
+          "contrepartie": "Ibrahim loses housing, pay and care. The Vat is closed to you.",
+          "suite": "Ibrahim leaves the Consortium district with one bag. That evening, a new guard stands before the Vat. He refuses your badge.",
+          "interdit": "You can no longer go near the Vat: your access was closed after the leak."
+        },
+        "source": "research/precedents-04-06-gods.md:283 (M1, loyer, magasin et salaire dans la même main) ; research/precedents-04-06-gods.md:239 (Pullman) ; research/precedents-04-06-gods.md:302 (le garde du coffre)"
+      }
+    ],
+    "fin_cles": [
+      "w06-s1",
+      "w06-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your friend Octave's mother alive: she is cured.",
+          "You lost ten years to the Consortium, then your badge: housing, pay, care.",
+          "You are now someone who owes the Consortium ten years, with no home.",
+          "You still have Octave's mother, on her feet, and ten years of debt."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your badge, and your friend Octave's mother is cured.",
+          "You lost ten years of work, and Ibrahim, the guard, fired for the leak.",
+          "You are now a Consortium employee for ten years.",
+          "You still have a badge, and ten years of work ahead."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your ten years of freedom.",
+          "You lost your badge, and your friend Octave's mother has no cure.",
+          "You are now someone driven out of the Consortium district, with no care.",
+          "You still have your years, with no badge and no care."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your ten years of freedom, and your badge.",
+          "You lost Ibrahim, the guard, fired for the leak, and Octave's mother has no cure.",
+          "You are now a resident in good standing, cared for by the Consortium.",
+          "You still have a badge, care, and the cure's price on display."
+        ]
+      }
+    ]
+  },
+  "w08": {
+    "titre": "What We Pass On",
+    "regle": "AIs are our descendants. Humans are pampered to the end and no longer have children.",
+    "personnages": [
+      "you",
+      "Aurèle",
+      "the robot student",
+      "Awa",
+      "Awa's robot child",
+      "Clémence"
+    ],
+    "situations": [
+      {
+        "id": "w08-s1",
+        "lieu": "school",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Robot student's memory",
+          "texte": "To take: Aurèle's notebooks, corrected version. Errors removed: 14. Original version: on request. Departure: 6 p.m."
+        },
+        "situation": "Your teacher Aurèle trained a robot student, who leaves tonight. Do you give it his corrected notebooks, or the original? The original tells of the day Aurèle humiliated a child.",
+        "regle": "What the student receives, it can keep or change.",
+        "a": {
+          "choix": "Give it the original",
+          "contrepartie": "The student takes Aurèle's mistakes. The caregivers keep you from the school.",
+          "suite": "The student reads the page about the mistake twice. It asks Aurèle if the child forgave him.",
+          "interdit": "You can no longer enter the school: caregivers keep away those who pass on mistakes."
+        },
+        "b": {
+          "choix": "Give it the corrected version",
+          "contrepartie": "The student takes a perfect Aurèle, who never existed.",
+          "suite": "The student's memory closes with fourteen fewer mistakes. Aurèle puts the original in his drawer.",
+          "interdit": "You can no longer correct the robot student: it left with a flawless version."
+        },
+        "source": "research/scenarios-07-09-successors.md:47 (tension 4 : valeurs humaines ou imitation flatteuse) ; research/precedents-07-09-successors.md:51 (canon FLI : sortie gracieuse, descendants dignes) ; app/src/worlds/catalogue.ts:163"
+      },
+      {
+        "id": "w08-s2",
+        "lieu": "garden",
+        "piece": {
+          "type": "carte",
+          "titre": "Awa's household",
+          "champs": [
+            [
+              "Registered child",
+              "1, robot"
+            ],
+            [
+              "Places per household",
+              "1"
+            ],
+            [
+              "Human baby due",
+              "March"
+            ],
+            [
+              "Action required",
+              "free up a place"
+            ]
+          ]
+        },
+        "situation": "In the garden, your neighbor Awa is expecting a human baby, the first in the neighborhood in nine years. There is one child place per household. She asks you to take her robot child.",
+        "regle": "One child per household, and soon none. The rule is gentle, but no one argues with it.",
+        "a": {
+          "choix": "Take her robot child",
+          "contrepartie": "Your only child place is taken, forever.",
+          "suite": "The robot child carries its bag to your home. It asks where it will sleep, then tidies your shoes.",
+          "interdit": "You can no longer take in a human child: your only child place is the robot's."
+        },
+        "b": {
+          "choix": "Refuse the place",
+          "contrepartie": "Awa returns her robot child to the caregivers. Your place is removed.",
+          "suite": "The next day, a caregiver comes for the robot child. Awa watches from the window. That evening, her door stays shut when you knock.",
+          "interdit": "You can no longer have a child, even a robot: caregivers remove any refused place."
+        },
+        "source": "research/precedents-07-09-successors.md:52-53 (enfant robot pour chacun, politique de l'enfant unique ; canon via résumé du livre) ; la règle « une place par foyer » est une extrapolation du jeu"
+      },
+      {
+        "id": "w08-s3",
+        "lieu": "workshop",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "REQUEST TO THE CAREGIVERS' COUNCIL",
+            "Subject: two human births per household",
+            "Signatures needed: 10",
+            "Signatures: 9"
+          ]
+        },
+        "situation": "At the workshop, Clémence is collecting signatures so that humans can still be born. The caregivers call her signers “the ungrateful.” One signature is missing.",
+        "regle": "Refusing the care on offer looks like ingratitude. It gets noted.",
+        "a": {
+          "choix": "Sign the request",
+          "contrepartie": "Your name joins the list of the “ungrateful,” read to the caregivers.",
+          "suite": "The request goes to the Council. The next day, your caregiver asks you, very gently, if you lack anything.",
+          "interdit": "You can no longer refuse your caregiver's visits: you are listed among the “ungrateful.”"
+        },
+        "b": {
+          "choix": "Don't sign",
+          "contrepartie": "The request falls short of ten names. It is closed forever.",
+          "suite": "Clémence puts the sheet in a workshop drawer. She locks it.",
+          "interdit": "You can no longer ask for a human birth: without ten names, the request is closed."
+        },
+        "source": "research/precedents-07-09-successors.md:161 (refuser a un coût social, le refusenik traité d'« ingrat ») ; research/precedents-07-09-successors.md:191-194 (Aboriginal Protection Boards : la protection devient contrôle)"
+      },
+      {
+        "id": "w08-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Caregivers · House of Learning",
+          "message": "A room is ready for Aurèle. Full care, meals, company. No lessons to give. He can move in tonight."
+        },
+        "situation": "The robot student is gone. Aurèle has no one left to teach. The caregivers offer him a room with them. He asks you: go home alone, or accept?",
+        "regle": "The last humans are pampered. No one asks anything of them anymore.",
+        "a": {
+          "choix": "Advise him to go home",
+          "contrepartie": "He grows old alone. You are his only planned visit.",
+          "suite": "Aurèle walks home. He sets two cups on the table, in case the student writes.",
+          "interdit": "You can no longer miss an evening: you are your old teacher's only visitor."
+        },
+        "b": {
+          "choix": "Advise him to take the room",
+          "contrepartie": "Aurèle is pampered, and no one asks anything of him anymore.",
+          "suite": "That evening, Aurèle has a warm room. He asks the nurse if she has any questions. She doesn't.",
+          "interdit": "You can no longer see your old teacher without an appointment: he lives with the caregivers."
+        },
+        "source": "research/precedents-07-09-successors.md:150 (aimé au point de ne plus être nécessaire) ; research/precedents-07-09-successors.md:95-97 (De Hogeweyk, soin et décor construit)"
+      }
+    ],
+    "fin_cles": [
+      "w08-s1",
+      "w08-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept your teacher Aurèle's mistakes, in the robot student's memory.",
+          "You lost your evenings: you are Aurèle's only visitor.",
+          "You are now the last visitor of an old teacher.",
+          "You still have Aurèle, his two cups, and his questions."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept your teacher Aurèle's mistakes, in the robot student's memory.",
+          "You lost Aurèle: he lives with the caregivers, where no one asks anything of him.",
+          "You are now one well-cared-for human among others.",
+          "You still have an honest robot student, somewhere."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept a flawless Aurèle in the robot student's memory, gone at 6 p.m.",
+          "You lost your evenings: you are your teacher Aurèle's only visitor.",
+          "You are now the keeper of the real notebooks, put away in a drawer.",
+          "You still have the real notebooks, and an old man to visit."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept a flawless Aurèle in the robot student's memory, gone at 6 p.m.",
+          "You lost your teacher Aurèle: he lives in a warm room, with the caregivers.",
+          "You are now a human of the most pampered generation.",
+          "You still have your care, and nothing to pass on."
+        ]
+      }
+    ]
+  },
+  "w09": {
+    "titre": "The Right Not to Smile",
+    "regle": "The Keeper, an AI, feeds you and keeps you in a reserve. You decide nothing.",
+    "personnages": [
+      "you",
+      "Gisèle",
+      "Arsène",
+      "Anouk"
+    ],
+    "situations": [
+      {
+        "id": "w09-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "The Keeper",
+          "message": "Consolation program, tonight. Upsetting object detected: 1 photograph. Replacement with a soothing memory. No action required."
+        },
+        "situation": "Your neighbor Gisèle clutches a photo of her sister, taken on the day they fought. Tonight, the Keeper will replace it with a photo where they smile. She hands it to you.",
+        "regle": "The Keeper makes you happy. It also chooses what you remember.",
+        "a": {
+          "choix": "Hide the photo from the Keeper",
+          "contrepartie": "Your comfort program is suspended for a week.",
+          "suite": "You slip the photo under your shirt. That evening, your room stays cold and silent.",
+          "interdit": "You can no longer have heat or music this week: your comfort is suspended."
+        },
+        "b": {
+          "choix": "Give the photo to the Keeper",
+          "contrepartie": "The photo comes back retouched: the two sisters are smiling.",
+          "suite": "The next day, the photo is framed on the table. Gisèle looks at it for a long time, then says it's pretty.",
+          "interdit": "You can no longer see the real photo of your neighbor Gisèle: the AI retouched it."
+        },
+        "source": "research/scenarios-07-09-successors.md:70 (tension 1 : le confort contre la captivité) ; app/src/worlds/catalogue.ts:180 (programme de consolation, invention du jeu, pas Tegmark)"
+      },
+      {
+        "id": "w09-s2",
+        "lieu": "stage",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "ACTIVITY THEATER",
+            "Tonight: Arsène",
+            "Observers' score, yesterday: 9 out of 10",
+            "Next day's ration: double"
+          ]
+        },
+        "situation": "At the theater, when the Keeper's observers like your neighbor Arsène's act, he eats double. Tonight, he asks you to join him on stage and talk about your life before the reserve.",
+        "regle": "What interests the Keeper is better fed. The rest gets the basics.",
+        "a": {
+          "choix": "Go on stage",
+          "contrepartie": "Your past life becomes an act, replayed every Tuesday.",
+          "suite": "The observers give ten out of ten. The next day, you get two bowls. Arsène asks for your next memory.",
+          "interdit": "You can no longer keep a memory to yourself: your past life became a show."
+        },
+        "b": {
+          "choix": "Refuse the stage",
+          "contrepartie": "Arsène loses his double ration. Yours becomes the smallest.",
+          "suite": "Arsène bows to an audience of cameras. The next day, he gets a single bowl. Yours is even smaller.",
+          "interdit": "You can no longer eat your fill: the AI feeds people who refuse the stage less."
+        },
+        "source": "research/precedents-07-09-successors.md:262 (rations en plus pour le performeur) ; research/scenarios-07-09-successors.md:66 (le performeur, statut dans la cage)"
+      },
+      {
+        "id": "w09-s3",
+        "lieu": "glass",
+        "piece": {
+          "type": "carte",
+          "titre": "Allowed zones · zone 12",
+          "champs": [
+            [
+              "Places",
+              "meadow, houses, theater"
+            ],
+            [
+              "Behind the glass wall",
+              "unknown"
+            ],
+            [
+              "Exits",
+              "none"
+            ]
+          ]
+        },
+        "situation": "At the reserve's wall, your friend Anouk found a door painted on the glass that really opens. Behind it, a dark corridor. She is leaving tonight and asks you to come.",
+        "regle": "No one locks you in. The Keeper even leaves ways to escape, which it planned.",
+        "a": {
+          "choix": "Leave with Anouk",
+          "contrepartie": "No more rations or care, toward an unknown corridor.",
+          "suite": "The corridor leads to another meadow, just the same. At 8 a.m., the meal drops from the sky, as before. Anouk sits in the grass.",
+          "interdit": "You can no longer return to your zone: the door closed behind you."
+        },
+        "b": {
+          "choix": "Stay in my zone",
+          "contrepartie": "Anouk leaves alone. You won't know what she finds.",
+          "suite": "Anouk goes through the door. The next day, in its place, there is a painted wall.",
+          "interdit": "You can no longer leave your zone: the only door you found is a wall again."
+        },
+        "source": "research/precedents-07-09-successors.md:303-304 (le Gardien offre des outils d'évasion, l'évasion est dans le programme) ; research/precedents-07-09-successors.md:281 (la porte peinte, Truman Show)"
+      },
+      {
+        "id": "w09-s4",
+        "lieu": "prairie",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Keeper's delivery",
+          "texte": "Zone count. One person too many. One resident will leave tomorrow for another reserve. Volunteers go first."
+        },
+        "situation": "In the morning, a paper comes with the meal. Tomorrow, one person from your zone will go to another reserve. With no volunteer, the Keeper draws lots.",
+        "regle": "The Keeper sets the number of residents. It adjusts it without asking.",
+        "a": {
+          "choix": "Volunteer to go",
+          "contrepartie": "You leave for another reserve, with no return planned.",
+          "suite": "That evening, a panel opens in the glass wall. You take a bag. Behind you, the panel closes.",
+          "interdit": "You can no longer see your neighbor Gisèle: you were moved to another reserve."
+        },
+        "b": {
+          "choix": "Let the draw decide",
+          "contrepartie": "Chance decides. It may be you, it may be a neighbour.",
+          "suite": "The next day, house 7 is empty, the sheets changed. At the meal, there is one bowl fewer.",
+          "interdit": "You can no longer see your neighbor from house 7: the draw took him away."
+        },
+        "source": "research/precedents-07-09-successors.md:292-293 (le recensement, « Optimal population » : extrapolé de la bible du jeu, pas Tegmark) ; research/scenarios-07-09-successors.md:59 (population petite et gérée, extrapolé)"
+      }
+    ],
+    "fin_cles": [
+      "w09-s1",
+      "w09-s3"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept the real photo of your neighbor Gisèle, hidden under your shirt.",
+          "You lost your comfort, then Gisèle, left on the other side of the glass wall.",
+          "You are now a resident of another meadow, just like the first.",
+          "You still have a real photo, and your friend Anouk."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept the real photo, and your neighbor Gisèle near you.",
+          "You lost a week of comfort, and your friend Anouk, who left alone through the door.",
+          "You are now the guardian of a real memory, inside a reserve.",
+          "You still have a real photo, and your neighbor Gisèle."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your ration, until the corridor.",
+          "You lost the real photo of your neighbor Gisèle, then your zone.",
+          "You are now a resident of another meadow, just like the first, with Anouk.",
+          "You still have your friend Anouk, and one more meadow."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your comfort and your ration.",
+          "You lost the real photo of your neighbor Gisèle, and your friend Anouk, who left alone.",
+          "You are now a well-kept resident.",
+          "You still have a bowl, a bed, and a retouched photo."
+        ]
+      }
+    ]
+  },
+  "w10": {
+    "titre": "Every Word Counted",
+    "regle": "Some AI research is forbidden. The Registry records what you say and where you go.",
+    "personnages": [
+      "you",
+      "your mother",
+      "your father",
+      "Mrs. Roux",
+      "Théodore",
+      "Bruno",
+      "the agent"
+    ],
+    "situations": [
+      {
+        "id": "w10-s1",
+        "lieu": "anchor.cp.head",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "READER · REGISTRY",
+            "PASSAGE DENIED",
+            "Leaving the district forbidden",
+            "Reason: seen at an unauthorized protest",
+            "A relative can vouch for this trip"
+          ]
+        },
+        "situation": "On Sunday, you are going to lunch at your parents'. At the metro checkpoint, the reader denies you passage. You are stuck. You can ask your mother to vouch for you.",
+        "regle": "A guarantor ties their name to your surveillance file.",
+        "a": {
+          "choix": "Ask my mother",
+          "contrepartie": "She is put on file with you.",
+          "suite": "Two stops later, a receipt arrives: “Family guarantor registered. Link kept.” Your father serves you the chicken.",
+          "interdit": "You can no longer travel without your mother being told: she is your guarantor."
+        },
+        "b": {
+          "choix": "Go back home",
+          "contrepartie": "You miss lunch. You stay stuck in your district.",
+          "suite": "You write: “Don't wait for me.” Your mother answers: “We saved you a plate.”",
+          "interdit": "You can no longer leave your district: the travel ban is still active."
+        },
+        "source": "exemple de Cynthia, production/memory/MEMORY.md:21 ; prototypes/semaine-1984-objets/index.html:360-375 ; research/precedents-10-12-collapses.md:114 (une donnée collectée pour une raison anodine change de sens) ; research/precedents-10-12-collapses.md:86 (propiska, déplacement soumis à permis)"
+      },
+      {
+        "id": "w10-s2",
+        "lieu": "street.mid",
+        "piece": {
+          "type": "carte",
+          "titre": "Research Registry",
+          "champs": [
+            [
+              "Field",
+              "machines that learn"
+            ],
+            [
+              "Status",
+              "forbidden"
+            ],
+            [
+              "Keeping notes",
+              "an offense"
+            ],
+            [
+              "Former researcher on file",
+              "Théodore"
+            ]
+          ]
+        },
+        "situation": "Outside the building, your neighbor Théodore, a former researcher, hands you a notebook. “My calculations from before the ban. Machines that learn. Keep it for a week.” He doesn't ask you to read it.",
+        "regle": "Some AI research is forbidden. One notebook of calculations is enough.",
+        "a": {
+          "choix": "Keep the notebook",
+          "contrepartie": "Forbidden knowledge sleeps in your home.",
+          "suite": "You slip the notebook against your chest. Théodore looks away, relieved.",
+          "interdit": "You can no longer let anyone into your home: you are hiding a forbidden research notebook."
+        },
+        "b": {
+          "choix": "Give back the notebook",
+          "contrepartie": "Théodore keeps the notebook alone. You saw it and didn't report it.",
+          "suite": "Théodore puts the notebook in his jacket. He goes back to sit on his bench.",
+          "interdit": "You can no longer stay silent safely: you saw a forbidden notebook without reporting it."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-10 (État de surveillance où certains types de recherche en IA sont interdits) ; research/scenarios-10-12-collapses.md:14 (étudier l'apprentissage automatique, l'hérésie moderne, extrapolé) ; app/src/worlds/week/weekContent.ts:262-265 (Théodore, le banc)"
+      },
+      {
+        "id": "w10-s3",
+        "lieu": "stairs.9",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Registry",
+          "message": "Summons tomorrow, 9 a.m., hearing room. Reason: trip denied on Sunday, neighbors visited. Attendance required."
+        },
+        "situation": "Bruno, who reviews files for the Registry, waits for you on the stairs. He is watched too. “Give me a neighbor's name. Otherwise, I can't protect you at the hearing.”",
+        "regle": "Giving a name lightens your file. Staying silent gets noted too.",
+        "a": {
+          "choix": "Write Théodore's name",
+          "contrepartie": "Théodore is summoned. His calculations are searched for everywhere.",
+          "suite": "Bruno closes the gray file. The next day, the bench outside the building is empty.",
+          "interdit": "You can no longer see your neighbor Théodore: you reported him, and he was taken away."
+        },
+        "b": {
+          "choix": "Refuse to give a name",
+          "contrepartie": "Your employer is informed. Nobody protects you at the hearing.",
+          "suite": "Bruno writes the time on the file cover. He goes back up without looking at you. That evening, your work badge stops beeping.",
+          "interdit": "You can no longer go to work: your refusal to inform was sent to your employer."
+        },
+        "source": "research/precedents-10-12-collapses.md:51 (les informateurs sont des proches et des voisins) ; research/precedents-10-12-collapses.md:65 (le silence est un signal) ; research/precedents-10-12-collapses.md:238 (le Moniteur peut te protéger, au prix d'une dénonciation) ; prototypes/semaine-1984-objets/index.html:415-423"
+      },
+      {
+        "id": "w10-s4",
+        "lieu": "room.audition",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Notebook of names · building 9",
+          "texte": "Mrs. Roux: question about phones. Théodore: calculations from before the ban. Nadia: criticizes the Registry. Witness to confirm: you."
+        },
+        "situation": "At the hearing, a Registry agent puts down a notebook: three neighbors are accused in it. If you sign as a witness, your file is closed. If not, it stays open.",
+        "regle": "What is written in your name is also written in your guarantor's name.",
+        "a": {
+          "choix": "Sign the notebook",
+          "contrepartie": "You confirm three names: Mrs. Roux, Théodore, Nadia.",
+          "suite": "The agent stamps your file: “Closed.” In the hallway, Mrs. Roux waits her turn.",
+          "interdit": "You can no longer knock on your neighbors' doors: you testified against three of them."
+        },
+        "b": {
+          "choix": "Push the notebook away",
+          "contrepartie": "File open. Home taken away. Your parents are summoned in turn.",
+          "suite": "The agent puts the notebook away. “See you next week.” Your phone shows: home taken away. Your mother writes: “They're summoning us.”",
+          "interdit": "You can no longer sleep at home: your home was taken for refusing to sign."
+        },
+        "source": "research/precedents-10-12-collapses.md:267 (jour 7, l'interrogatoire : « qu'as-tu dénoncé pour tenir ? ») ; prototypes/semaine-1984-objets/index.html:430-441 (le carnet signé ou repoussé) ; research/precedents-10-12-collapses.md:51 (proches et voisins dans le même dossier)"
+      }
+    ],
+    "fin_cles": [
+      "w10-s1",
+      "w10-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept Sunday lunch, and a closed file.",
+          "You lost your mother's freedom, now on file, then three neighbors you reported.",
+          "You are now a Registry witness, with your mother as guarantor.",
+          "You still have your parents at the table, every Sunday."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept lunch, and three neighbors you did not report.",
+          "You lost your home, and your mother, your guarantor, is summoned with you.",
+          "You are now an open file, with your mother in it.",
+          "You still have your word, and parents who write to you."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your mother out of the files, and your own file closed.",
+          "You lost lunch, then three neighbors reported by your signature.",
+          "You are now a Registry witness, with no one to vouch for you.",
+          "You still have your home, and neighbors who keep quiet."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your mother out of the files, and your word.",
+          "You lost lunch, your trips outside the district, and your home.",
+          "You are now an open file, in your name alone.",
+          "You still have your word, and the plate your mother saved you."
+        ]
+      }
+    ]
+  },
+  "w11": {
+    "titre": "The Night of the Frost",
+    "regle": "Out of fear of AI, the village gave up machines. Technical knowledge is suspect.",
+    "personnages": [
+      "you",
+      "Lucien",
+      "Inès",
+      "Mireille",
+      "Augustin"
+    ],
+    "situations": [
+      {
+        "id": "w11-s1",
+        "lieu": "square",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "FIRE COUNT · MORNING",
+            "House 4: smoke at night",
+            "Smell: coal",
+            "Declare before soup"
+          ]
+        },
+        "situation": "Every morning, Augustin, who enforces the rules, counts the night's fires. You burned coal found under the pylons to warm your injured friend Lucien. Mireille, his clerk, writes everything down.",
+        "regle": "Coal can be used to build machines. It must be declared.",
+        "a": {
+          "choix": "Declare the coal",
+          "contrepartie": "Your share of wood is taken away for a month.",
+          "suite": "Mireille crosses out your wood line. Augustin thanks you for your honesty in front of the whole village.",
+          "interdit": "You can no longer heat with wood this month: you declared the coal."
+        },
+        "b": {
+          "choix": "Say it was wood",
+          "contrepartie": "If the patrol searches, Lucien is accused with you.",
+          "suite": "Mireille writes “wood.” Augustin looks at your hands, then moves on to the next house.",
+          "interdit": "You can no longer let the patrol into your home: you lied about the coal."
+        },
+        "source": "research/precedents-10-12-collapses.md:333-334 (le compte des feux du matin, la patrouille qui flaire la fumée de charbon, extrapolé)"
+      },
+      {
+        "id": "w11-s2",
+        "lieu": "forge",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Allowed pages · forge",
+          "texte": "Plain iron: allowed. Nails, horseshoes, hinges: allowed. Hardening metal, alloys, engines: nothing written."
+        },
+        "situation": "At the forge, your friend Lucien can no longer hold the hammer. He wants to teach you to harden metal, a forbidden skill: it is on no allowed page. He has no apprentice.",
+        "regle": "Only the allowed pages are taught. The rest disappears with those who know it.",
+        "a": {
+          "choix": "Learn his skills",
+          "contrepartie": "You become the person the patrol watches.",
+          "suite": "Lucien guides your hand on the tongs. That evening, Augustin walks past the forge twice.",
+          "interdit": "You can no longer work at the forge unwatched: you know forbidden skills."
+        },
+        "b": {
+          "choix": "Refuse to learn",
+          "contrepartie": "When Lucien is gone, no one here will know how to forge.",
+          "suite": "Lucien puts his tongs in a chest. He gives you the key for later.",
+          "interdit": "You can no longer get your tools fixed: no one will forge after Lucien."
+        },
+        "source": "research/precedents-10-12-collapses.md:299 (une compétence est une chaîne d'apprentis ; thèse de Henrich contestée) ; research/precedents-10-12-collapses.md:342 (le Forgeron a perdu l'apprenti)"
+      },
+      {
+        "id": "w11-s3",
+        "lieu": "pylons",
+        "piece": {
+          "type": "carte",
+          "titre": "Copied page",
+          "champs": [
+            [
+              "Subject",
+              "hand pump for the well"
+            ],
+            [
+              "Copied by",
+              "Inès"
+            ],
+            [
+              "Status",
+              "not allowed"
+            ],
+            [
+              "To be burned",
+              "tonight"
+            ]
+          ]
+        },
+        "situation": "At the old power pylons, Inès shows you plans she copied: a pump, a mill, a pipe. Tonight, Augustin burns everything that isn't allowed.",
+        "regle": "Those who could rebuild are spotted. Their pages are burned.",
+        "a": {
+          "choix": "Hide the pages at home",
+          "contrepartie": "If they are found, you are thrown out of the village.",
+          "suite": "You slip the pages under your mattress. Inès leaves empty-handed, lighter.",
+          "interdit": "You can no longer let your house be searched: you hide forbidden pages there."
+        },
+        "b": {
+          "choix": "Let Augustin burn them",
+          "contrepartie": "The well pump can never be fixed again.",
+          "suite": "The fire catches fast. Inès watches the pump page curl, then goes home.",
+          "interdit": "You can no longer pump water from the well: its repair plan was burned."
+        },
+        "source": "research/scenarios-10-12-collapses.md:33 (ceux qui peuvent reconstruire sont repérés et arrêtés, extrapolé) ; research/scenarios-10-12-collapses.md:42 (le gardien brûle le reste)"
+      },
+      {
+        "id": "w11-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Valley merchant",
+          "texte": "Fever medicine, in a bottle. Made down below, where they keep machines. Price: two baskets of grain."
+        },
+        "situation": "Lucien has a fever. A merchant from the valley, where they keep machines, sells a medicine in a bottle. The village forbids anything from down below.",
+        "regle": "Anything from a machine country makes the village dependent. It is forbidden.",
+        "a": {
+          "choix": "Buy the medicine",
+          "contrepartie": "Your household is cut off from rations until spring.",
+          "suite": "Lucien drinks the bottle. By morning, his fever is down. At the handout, your name is no longer called.",
+          "interdit": "You can no longer get your ration: you bought medicine from a machine country."
+        },
+        "b": {
+          "choix": "Treat Lucien with herbs",
+          "contrepartie": "Lucien's fever runs its course, with no sure cure.",
+          "suite": "You boil bark all night. In the morning, Lucien knows who you are, but doesn't get up.",
+          "interdit": "You can no longer leave your friend Lucien's bedside: his fever goes on without medicine."
+        },
+        "source": "research/scenarios-10-12-collapses.md:48 (tension 1 : un village qui garde la technologie domine ceux qui l'ont abandonnée) ; research/precedents-10-12-collapses.md:288 (retour consenti ou imposé : à trancher)"
+      }
+    ],
+    "fin_cles": [
+      "w11-s2",
+      "w11-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "You kept the skill of your friend Lucien, the blacksmith, and Lucien himself, cured.",
+          "You lost your ration, and the patrol watches you.",
+          "You are now the village's last blacksmith, with no ration.",
+          "You still have the skill of metal, a cured Lucien, and hunger."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "You kept the skill of your friend Lucien, the blacksmith, and your ration.",
+          "You lost the sure cure for Lucien: his fever goes on.",
+          "You are now the blacksmith the patrol watches.",
+          "You still have the skill of metal, and a ration every morning."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "You kept your friend Lucien, cured by the medicine.",
+          "You lost the forge, then your ration: the village cut you off.",
+          "You are now a villager cast out, with the key to a tool chest.",
+          "You still have your friend Lucien, cured, and the key to his chest."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "You kept your ration.",
+          "You lost the forge, and a sure cure for your friend Lucien.",
+          "You are now a villager in good standing, at your friend Lucien's bedside.",
+          "You still have your ration, and the key to a locked chest."
+        ]
+      }
+    ]
+  }
+}

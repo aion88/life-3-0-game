@@ -1,0 +1,28 @@
+{
+  "source": "design/gdd/2026-11-03-playtest-enjeu-onboarding.md §1 A et §3 A (retenues par team-lead le 2026-11-03) ; bible w10 §6 (ordre du kit), §8.1 (jalons), §8.2 (M1 à M5)",
+  "welcome": {
+    "day": 1,
+    "kit": ["bracelet", "sectorCard", "phone", "permitBook", "component"],
+    "lines": [
+      { "key": "w10.welcome.hello", "voice": "regime", "lit": "phone" },
+      { "key": "w10.welcome.bracelet", "voice": "regime", "lit": "bracelet" },
+      { "key": "w10.welcome.sectorCard", "voice": "regime", "lit": "sectorCard" },
+      { "key": "w10.welcome.phone", "voice": "regime", "lit": "phone" },
+      { "key": "w10.welcome.permitBook", "voice": "regime", "lit": "permitBook" },
+      { "key": "w10.welcome.component", "voice": "narrator", "lit": "component" },
+      { "key": "w10.welcome.goal", "voice": "regime", "lit": null }
+    ]
+  },
+  "firstSight": [
+    { "choiceId": "m3.letter", "key": "w10.welcome.letter", "voice": "regime", "lit": "letter" }
+  ],
+  "objectives": [
+    { "day": 1, "rendezVous": "m1.scan", "source": "bible w10 §8.1 J1 (Registre, premier checkpoint) ; §8.2 M1 (cabine de scan, matin)" },
+    { "day": 2, "rendezVous": "m2.nadia", "source": "bible w10 §8.1 J2 (recensement, 10 h) ; §8.2 M2 (file du checkpoint, J1 à J5)" },
+    { "day": 3, "rendezVous": "m3.letter", "source": "bible w10 §8.1 J3 (chômé, Bulletin à 11 h) ; §8.2 M3 (banc, après-midi)" },
+    { "day": 4, "rendezVous": "m2.nadia", "source": "bible w10 §8.1 J4 (le 9-C vide) ; §8.2 M2" },
+    { "day": 5, "rendezVous": "m2.nadia", "source": "bible w10 §8.1 J5 (Bruno, 18 h 30) ; §8.2 M2 (dernier jour du marché)" },
+    { "day": 6, "rendezVous": "m4.list", "source": "bible w10 §8.1 J6 (coupure, 14 h) ; §8.2 M4 (sous-sol du Registre, 8 h 30)" },
+    { "day": 7, "rendezVous": null, "source": "bible w10 §8.1 J7 (audition, 17 h 30) ; aucune micro-situation n'est ouverte le J7 dans w10.json, le rendez-vous est l'audition" }
+  ]
+}

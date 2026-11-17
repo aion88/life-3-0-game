@@ -1,0 +1,59 @@
+/* Zones d'écran de la rue : PLACEMENT seulement [design/ui/2026-11-02-zones-ecran-ux.md]. Les variables `--z-*` sont posées par `zones.ts`
+   à partir de `data/ui/zones.json` et du cadre utile mesuré ; aucune largeur ni seuil ici. Sélecteurs préfixés par `[data-zone-mode]` :
+   sans mise en page mesurée, l'ancien placement de `ui.css` reste. */
+[data-ui="root"] > [data-zone] { position: absolute; pointer-events: none; box-sizing: border-box; display: none; }
+[data-ui="root"][data-zone-mode] > [data-zone] { display: flex; flex-direction: column; top: var(--z-body-y); height: var(--z-body-h); }
+[data-ui="root"] > [data-zone] > * { pointer-events: auto; }
+[data-ui="root"] > [data-zone="left"] { left: var(--z-left-x); width: var(--z-left-w); gap: var(--z-m); }
+[data-ui="root"] > [data-zone="centre"] { left: var(--z-centre-x); width: var(--z-centre-w); align-items: center; }
+/* Bandeau haut : date à gauche, bracelet à droite, sous la bande haute [§1]. */
+[data-ui="root"][data-zone-mode] > [data-ui="day-date"] { top: var(--z-top-y); left: var(--z-m); }
+[data-ui="root"][data-zone-mode] > [data-ui="bracelet"] { top: var(--z-top-y); right: var(--z-m); }
+/* Z-droite : le panneau d'options tient dans sa colonne, sous le bandeau, au-dessus de la bande basse. */
+[data-ui="root"][data-zone-mode] > [data-ui="choices"] { left: var(--z-right-x); right: auto; width: var(--z-right-w); max-width: none; bottom: var(--z-body-bottom); max-height: var(--z-body-h); }
+/* Petit : le panneau descend jusqu'au bas du cadre utile (la marge m du bas lui revient), jamais dans la bande [§7.3, tranché team-lead 2026-11-03]. */
+[data-ui="root"][data-zone-mode="small"] > [data-ui="choices"] { bottom: calc(var(--z-body-bottom) - var(--z-m)); max-height: calc(var(--z-body-h) + var(--z-m)); }
+/* Moyen et petit : l'option désignée garde la largeur de repos ; liseré, rotation et pop restent, toutes options pareilles [art-director]. */
+[data-ui="root"]:is([data-zone-mode="medium"], [data-zone-mode="small"]) [data-ui="choices"] .c-street-option[aria-pressed="true"] { width: min(var(--s-street-option-rest-width-px), 100%); }
+[data-ui="root"]:is([data-zone-mode="medium"], [data-zone-mode="small"]) [data-ui="choices"] .c-price-line { width: min(var(--s-street-option-rest-width-px), 100%); }
+/* Z-gauche : narration, puis fiche, puis carnet, puis le rappel des commandes au pied. */
+[data-zone="left"] > [data-ui] { position: static; flex: none; max-width: none; margin: 0; box-sizing: border-box; }
+[data-zone="left"] > [data-ui="narration"] { order: 1; flex: 0 1 auto; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }   /* entière ; seule, elle défile en lignes entières dans son remplissage [§7.2] */
+[data-zone="left"] > [data-ui="card"] { order: 2; flex: 0 1 auto; min-height: 0; margin: var(--z-card-inset, 0px); max-width: min(var(--z-card-cap), calc(100% - 2 * var(--z-card-inset, 0px))); display: flex; flex-direction: column; overflow: hidden; }
+[data-zone="left"] > [data-zone-yield] { visibility: hidden; }   /* couvert par la réplique, qui passe avant [zones UX §3] */
+[data-zone="left"] > [data-ui="card"] > p { min-height: 0; overflow-y: auto; margin: 0; }   /* le texte défile DANS le remplissage : il ne touche jamais le bord */
+[data-zone="left"] > [data-ui="carnet"] { order: 3; flex: 0 1000 auto; min-height: 0; }   /* priorité 8 : il rétrécit avant la fiche (4) */
+[data-zone="left"] > [data-ui="controls"] { order: 4; margin-top: auto; }
+[data-ui="root"][data-zone-narration="wait"] [data-zone="left"] > [data-ui="narration"] { display: none; }
+[data-ui="root"][data-zone-help="off"] [data-zone="left"] > [data-ui="controls"] { display: none; }
+/* Z-centre : une seule lecture, la ligne de droit, plafonnée à la zone ; elle s'allonge en hauteur et défile ensuite. */
+[data-zone="centre"] > [data-ui="right-line"] { position: static; flex: 0 1 auto; min-height: 0; width: fit-content; max-width: min(var(--z-centre-cap), 100%); max-height: 100%; display: flex; flex-direction: column; }
+/* Le cadre de la ligne de droit porte le remplissage haut et bas, hors défilement [§7.1.3] : encre en haut, crème en bas, comme ses moitiés. */
+[data-zone="centre"] > [data-ui="right-line"] { padding-block: var(--s-card-pad-y); background: linear-gradient(var(--c-encre) 50%, var(--c-creme) 50%); }
+[data-zone="centre"] > [data-ui="right-line"]:not(:has([data-half="2"])) { background: var(--c-encre); }
+[data-zone="centre"] > [data-ui="right-line"] [data-half="1"] { padding-top: 0; }
+[data-zone="centre"] > [data-ui="right-line"] [data-half]:last-child { padding-bottom: 0; }
+/* Fenêtres de texte [§7.1] : elles défilent dans leur cadre, en lignes entières (hauteur posée par `zones.ts`), au clavier une fois focalisées. */
+[data-zone] > [data-ui] > .c-window { display: block; min-height: 0; overflow-y: auto; }
+[data-zone] > [data-ui] > .c-window:focus-visible, [data-zone] > [data-ui="card"] > p:focus-visible { outline: var(--s-border) solid currentColor; outline-offset: -2px; }
+/* Indicateur de suite [§7.1.4, Z-13] : un chevron dessiné (pas un glyphe, pas la couleur seule) au pied du cadre, retiré au bas du défilement. */
+[data-zone] > :is([data-ui="card"], [data-ui="narration"], [data-ui="right-line"], [data-ui="objective"])[data-more] { position: relative; inset: auto; }   /* ancre du chevron, sans les décalages de `ui.css` ; l'objectif rogné en dernier recours aussi (sans lui, son chevron tombait au pied de Z-gauche) [T15 fix 2] */
+[data-zone] > [data-more]::after { content: ''; position: absolute; left: 50%; bottom: .375rem; width: .5rem; height: .5rem; transform: translateX(-50%) rotate(45deg); border-right: var(--s-border) solid currentColor; border-bottom: var(--s-border) solid currentColor; pointer-events: none; }   /* couleur du texte du cadre : lisible sur encre comme sur crème */
+[data-zone="centre"] > [data-ui="right-line"]:not(:has([data-half="2"]))[data-more]::after { color: var(--c-creme); }
+/* Carnet [§4] : lignes entières, « + N », repli « Droits (N) », dépli en défilement interne. */
+[data-ui="carnet"] [data-ui="carnet-fold"], [data-ui="carnet"] [data-ui="carnet-more"] { all: unset; display: block; cursor: pointer; font: inherit; }
+[data-ui="carnet"] [data-ui="carnet-fold"]:focus-visible, [data-ui="carnet"] [data-ui="carnet-more"]:focus-visible { outline: var(--s-border) solid currentColor; outline-offset: 2px; }
+[data-ui="carnet"] { display: flex; flex-direction: column; }
+[data-ui="carnet"] > ul { flex: 1 1 auto; min-height: 0; overflow: hidden; margin: 0; padding: 0; list-style: none; }   /* seule la liste défile, et seulement dépliée : le remplissage de la carte ne défile pas */
+[data-ui="carnet"] [hidden] { display: none !important; }
+[data-ui="carnet"][data-room="none"] { visibility: hidden; }
+[data-ui="carnet"][data-state="open"] > ul { overflow-y: auto; }
+[data-zone="left"] > [data-ui="carnet"][data-state="open"] { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; }
+[data-zone="left"]:has(> [data-ui="carnet"][data-state="open"]) > :not([data-ui="carnet"]) { visibility: hidden; }
+/* Barre « Dossier » : collée sous le bracelet, même bord droit, même largeur [GDD 2026-11-03 §2 A, décision Cynthia, playtest 2026-11-03]. */
+[data-ui="root"][data-zone-mode] > [data-ui="dossier"] { top: calc(var(--z-top-y) + var(--z-bracelet-h, 0px)); right: var(--z-m); width: var(--z-bracelet-w, auto); }
+/* Moyen et petit : la barre est collée à GAUCHE du bracelet, même haut, pour que le bandeau haut ne grandisse pas (AR-13, Z-1, Z-4) [team-lead 2026-11-03].
+   Pas plus haute que lui : remplissage vertical réduit, et la ligne d'aide n'y garde que l'infobulle (team-lead : « une infobulle ou une ligne »). */
+[data-ui="root"]:is([data-zone-mode="medium"], [data-zone-mode="small"]) > [data-ui="dossier"] { top: var(--z-top-y); right: calc(var(--z-m) + var(--z-bracelet-w, 0px) + var(--dossier-gap)); width: auto; max-width: calc(100% - 2 * var(--z-m) - var(--z-bracelet-w, 0px) - 14rem); margin-top: 0; }
+[data-ui="root"]:is([data-zone-mode="medium"], [data-zone-mode="small"]) > [data-ui="dossier"] { padding-block: calc(var(--s-card-pad-y) * .2); row-gap: 0; }
+[data-ui="root"]:is([data-zone-mode="medium"], [data-zone-mode="small"]) > [data-ui="dossier"] .c-dossier__hint { display: none; }

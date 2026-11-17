@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "causesEditionsMs": [
+    14000,
+    14000,
+    12000
+  ],
+  "costDelayMs": 400,
+  "minReadMs": 2500,
+  "speeds": [
+    1,
+    2,
+    4
+  ],
+  "wallExitMs": 600,
+  "maxFrameMs": 50,
+  "easings": {
+    "pop": {
+      "v": "cubic-bezier(.34, 1.56, .64, 1)",
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "sortie": {
+      "v": "cubic-bezier(.22, 1, .36, 1)",
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "rentree": {
+      "v": "cubic-bezier(.55, 0, 1, .45)",
+      "src": "spec C §4",
+      "status": "sourced"
+    }
+  },
+  "motion": {
+    "designate": {
+      "v": {
+        "ms": 180,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {}
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "undesignate": {
+      "v": {
+        "ms": 120,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {}
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "confirmPress": {
+      "v": {
+        "ms": 80,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "dy": 2,
+          "shadowFromPx": 3,
+          "shadowToPx": 1
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "confirmRelease": {
+      "v": {
+        "ms": 120,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "dy": 2,
+          "shadowFromPx": 1,
+          "shadowToPx": 3
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "fadeOthers": {
+      "v": {
+        "ms": 300,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "opacity": 0.25
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "costReveal": {
+      "v": {
+        "ms": 200,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "dy": 8
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "bubbleIn": {
+      "v": {
+        "ms": 220,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "scale": 0.9,
+          "dy": 8
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "bubbleOut": {
+      "v": {
+        "ms": 140,
+        "easing": "rentree",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {}
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "optionsIn": {
+      "v": {
+        "ms": 240,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 60,
+        "params": {
+          "dx": 40
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "priceReveal": {
+      "v": {
+        "ms": 200,
+        "easing": "sortie",
+        "delayMs": 150,
+        "staggerMs": 0,
+        "params": {
+          "dy": 8
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "coin": {
+      "v": {
+        "ms": 420,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 35,
+        "params": {
+          "arcDy": -80
+        }
+      },
+      "src": "spec C §4 donne 420 ms, le décalage de 35 ms et « en arc » ; la hauteur de l'arc (arcDy, px, négatif = vers le haut) n'est pas donnée",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "shutter": {
+      "v": {
+        "ms": 90,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {}
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "braceletSettle": {
+      "v": {
+        "ms": 200,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "from": 1.15
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "confetti": {
+      "v": {
+        "ms": 1200,
+        "easing": "rentree",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "spreadPx": 520,
+          "fallPx": 640,
+          "riseMaxPx": 160,
+          "rotMaxDeg": 540,
+          "piecePx": 14
+        }
+      },
+      "src": "spec C §4 donne 1 200 ms et « gravité » mais aucune courbe ; rentrée (accélération) choisie ; dispersion, chute, taille des pièces non données (spreadPx, fallPx, riseMaxPx, rotMaxDeg, piecePx)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "message": {
+      "v": {
+        "ms": 260,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "scale": 1.6,
+          "fromDeg": 20,
+          "rotateDeg": 6
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "refusalShake": {
+      "v": {
+        "ms": 160,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "shakePx": 4,
+          "shakes": 2
+        }
+      },
+      "src": "spec C §4 donne 160 ms au total mais aucune courbe",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "pageChange": {
+      "v": {
+        "ms": 240,
+        "easing": "sortie",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "dx": 24
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "cardIn": {
+      "v": {
+        "ms": 180,
+        "easing": "pop",
+        "delayMs": 0,
+        "staggerMs": 0,
+        "params": {
+          "scale": 0.95
+        }
+      },
+      "src": "spec C §4",
+      "status": "sourced"
+    }
+  },
+  "juice": {
+    "maxCoins": {
+      "v": 12,
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "confettiPieces": {
+      "v": 40,
+      "src": "spec C §4",
+      "status": "sourced"
+    },
+    "reducedMaxMs": {
+      "v": 120,
+      "src": "spec C §4, I-9",
+      "status": "sourced"
+    }
+  },
+  "fastForward": {
+    "toChoiceSec": {
+      "v": 8,
+      "src": "team-lead 2026-11-03, révisable par Cynthia : 2 s par une (4 unes, 2027 à 2030), le gros titre se lit en 2 s, les sous-titres sont de la texture ; part de la demande de Cynthia 2026-11-03, playtest : « le fast forward jusqu'en 2030, il faudrait qu'il soit en cinq, six secondes, avec des unes de news fictives qui résument tout ce qui s'est passé » ; remplace les 56 s du GDD 02 §3.8 pour l'écran",
+      "status": "sourced"
+    }
+  }
+}

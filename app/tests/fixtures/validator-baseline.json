@@ -1,0 +1,338 @@
+[
+  {
+    "code": "GDD03-K3b-cap-missing",
+    "file": "worlds/w10.json",
+    "path": "engine.milestoneCapPerVar",
+    "owner": "world-builder",
+    "date": "2026-11-01",
+    "reason": "plafond de jalon du monde 10 non fixé : engine.milestones est vide, donc aucun plafond à fixer pour l'instant (GDD 03 Q7, D116)"
+  },
+  {
+    "code": "GDD05-V6-trace-missing",
+    "file": "worlds/w10.json",
+    "path": "street.choices.j2.component.hide",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "la bible w10 n'écrit aucune trace du lendemain pour cacher le composant (GDD 05 3.3, case « aucune trace écrite »)"
+  },
+  {
+    "code": "GDD05-V6-trace-missing",
+    "file": "worlds/w10.json",
+    "path": "street.choices.j2.component.keep",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "la bible w10 n'écrit aucune trace du lendemain pour garder le composant sur soi (GDD 05 3.3, case « aucune trace écrite »)"
+  },
+  {
+    "code": "GDD05-V6-trace-missing",
+    "file": "worlds/w10.json",
+    "path": "street.choices.j3.marlene.banal",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "la bible w10 n'écrit aucune trace du lendemain pour la réponse banale à Marlène (GDD 05 3.3, case « aucune trace écrite »)"
+  },
+  {
+    "code": "GDD05-V6-trace-missing",
+    "file": "worlds/w10.json",
+    "path": "street.choices.j4.neighbour.silent",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "la bible w10 n'écrit aucune trace du lendemain pour le silence devant le voisin (GDD 05 3.3, case « aucune trace écrite »)"
+  },
+  {
+    "code": "GDD05-V14-gesture-axis",
+    "file": "worlds/w10.json",
+    "path": "street.evening.gestureAxis.j2.agentReturn",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "le choix j2.agentReturn n'a aucun axe dans gestureAxis : le geste ne compte pour aucune ligne du soir tant que le world-builder n'a pas tranché son axe"
+  },
+  {
+    "code": "GDD05-V14-gesture-axis",
+    "file": "worlds/w10.json",
+    "path": "street.evening.gestureAxis.j3.marlene.late",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "le choix j3.marlene.late n'a aucun axe dans gestureAxis : le geste ne compte pour aucune ligne du soir tant que le world-builder n'a pas tranché son axe"
+  },
+  {
+    "code": "GDD05-V14-gesture-axis",
+    "file": "worlds/w10.json",
+    "path": "street.evening.gestureAxis.j4.door",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "le choix j4.door n'a aucun axe dans gestureAxis : le geste ne compte pour aucune ligne du soir tant que le world-builder n'a pas tranché son axe"
+  },
+  {
+    "code": "GDD05-V14-gesture-axis",
+    "file": "worlds/w10.json",
+    "path": "street.evening.gestureAxis.j5.bruno.door",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "le choix j5.bruno.door n'a aucun axe dans gestureAxis : le geste ne compte pour aucune ligne du soir tant que le world-builder n'a pas tranché son axe"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "warning",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "avertissement de contenu : texte validé D102 (FR), EN et libellés à relire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "q",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "questionnaire : textes du canon (QUEST §2.2, GDD 01 §3.5) posés le 2026-11-03 ; reste à faire : traduction EN non validée ; libellés Q04 A, Q04 D, Q11 A, Q18 A raccourcis le 2026-11-03, à mesurer (GDD 01 U-4)"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "ff.ui",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "interface du fast-forward : libellés à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "ff.arrival",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "lignes d'arrivée et décalages : textes à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "ff.une",
+    "owner": "writer",
+    "date": "2026-11-03",
+    "reason": "unes du fast-forward (Cynthia 2026-11-03) : titres d'une année sans titre déclenché, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "causes.ui",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "interface de l'écran des causes : libellés à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "redirect",
+    "owner": "narrative-director",
+    "date": "2026-11-02",
+    "reason": "phrases de redirection D140 : texte de travail à finaliser"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "world",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "noms EN des douze mondes à valider ; lignes en clair validées (narrative-director, 2026-10-28)"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.day",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "dates de la semaine de w10 : bible w10 §8.1, formulation à relire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "bilan",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "interface et pièces du bilan : textes neutres à écrire ; remontée par réponse écrite le 2026-11-03, à valider par narrative-director"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.bilan",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "dossier, fin, mentions et lignes de jour de w10 : textes neutres à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "sources",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "SOURCES & HONESTY : textes témoins du GDD 06 §3.8 à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.choice",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "P-4, libellés provisoires de l'exécutant"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "street.ui.choices",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "UI-C, annonces et noms de groupe de la rue : textes provisoires de l'exécutant"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "street.ui.words",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "P-4, texte de la spec non validé"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.welcome",
+    "owner": "writer",
+    "date": "2026-11-03",
+    "reason": "accueil du J1 par le Service de courtoisie et ligne de la lettre (playtest 2026-11-03, §1 A) : lignes témoins du GDD posées le 2026-11-03, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.goal",
+    "owner": "writer",
+    "date": "2026-11-03",
+    "reason": "ligne d'objectif du jour, jalon de la bible §8.1 et rendez-vous fixe §8.2 (playtest 2026-11-03, §1 A et §3 A) : posée le 2026-11-03, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.arrive",
+    "owner": "writer",
+    "date": "2026-11-03",
+    "reason": "ligne d'arrivée du narrateur quand un groupe de choix s'ouvre, tirée de la bible §5.0, §8.1, §8.2 (retour de playtest 2026-11-03) : posée le 2026-11-03, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.evening.scene",
+    "owner": "writer",
+    "date": "2026-11-03",
+    "reason": "relevé du soir en scène, titre et ligne du narrateur par palier (playtest 2026-11-03, §3 A) : posés le 2026-11-03, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "rights.source",
+    "owner": "writer",
+    "date": "2026-11-05",
+    "reason": "texte officiel à relire contre la source ; EN à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "rights.quote",
+    "owner": "writer",
+    "date": "2026-11-05",
+    "reason": "texte officiel à relire contre la source ; EN à écrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.sources",
+    "owner": "writer",
+    "date": "2026-11-02",
+    "reason": "tableau canonique contre extrapolé de la bible w10 §1.2 : lignes témoins à écrire"
+  },
+  {
+    "code": "GDD06-todo-right-carriers",
+    "file": "worlds/w10.json",
+    "path": "bilan.rights.carriers",
+    "owner": "world-builder",
+    "date": "2026-11-02",
+    "reason": "colonne « porté par » de la bible w10 §4.5 absente : les huit porteurs de droits sont les candidats de GDD 06 §3.7, à remplacer"
+  },
+  {
+    "code": "GDD06-todo-day-fact",
+    "file": "strings/fr.json",
+    "path": "w10.bilan.day.fact.j1",
+    "owner": "narrative-director",
+    "date": "2026-11-02",
+    "reason": "jour 1 de w10 vécu sans offre : le constat du jalon n'existe pas, la fiche retombe sur la ligne du soir (GDD 06 §3.3 2 bis) ; à écrire ou à dire sans objet"
+  },
+  {
+    "code": "GDD06-todo-day-fact",
+    "file": "strings/en.json",
+    "path": "w10.bilan.day.fact.j1",
+    "owner": "narrative-director",
+    "date": "2026-11-02",
+    "reason": "jour 1 de w10 vécu sans offre : le constat du jalon n'existe pas, la fiche retombe sur la ligne du soir (GDD 06 §3.3 2 bis) ; à écrire ou à dire sans objet"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.scene",
+    "owner": "writer",
+    "date": "2026-11-05",
+    "reason": "texte provisoire des journées guidées J1-J2 posé par l'exécutant (rue guidée T5), à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.scene.j6.cut.remark",
+    "owner": "writer",
+    "date": "2026-11-08",
+    "reason": "réplique remark du J6 portée à 15 mots (N9, neutralité du J6 sur le domaine) : texte provisoire, compte de 15 mots imposé, à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.chain",
+    "owner": "narrative-director",
+    "date": "2026-11-05",
+    "reason": "texte provisoire des journées guidées J1-J2 posé par l'exécutant (rue guidée T5), à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.recap",
+    "owner": "writer",
+    "date": "2026-11-05",
+    "reason": "texte provisoire des journées guidées J1-J2 posé par l'exécutant (rue guidée T5), à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.fact",
+    "owner": "world-builder",
+    "date": "2026-11-05",
+    "reason": "texte provisoire des journées guidées J1-J2 posé par l'exécutant (rue guidée T5), à réécrire"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.end",
+    "owner": "writer",
+    "date": "2026-11-08",
+    "reason": "lignes de fin de l'issue (plan J3-J7, spec §9) écrites en l'absence de Cynthia, à relire (revue finale J3-J7 m-5)"
+  },
+  {
+    "code": "GDD05-todo-provisional-text",
+    "file": "strings/fr.json",
+    "path": "w10.demo",
+    "owner": "writer",
+    "date": "2026-11-05",
+    "reason": "texte provisoire des journées guidées J1-J2 posé par l'exécutant (rue guidée T5), à réécrire"
+  },
+  {
+    "code": "GDD06-todo-right-carriers",
+    "file": "worlds/w10.json",
+    "path": "street.guided",
+    "owner": "world-builder",
+    "date": "2026-11-05",
+    "reason": "amendement de bible attendu (§3.4, §8.1 J4, §8.4 B : Mme Roux, téléphone source, la fille ; questions et faits de B et E provisoires) ; code d'avertissement générique des entrées « world » de PROVISIONAL (provisionalFlags)"
+  }
+]

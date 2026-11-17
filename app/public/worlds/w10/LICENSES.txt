@@ -1,0 +1,17 @@
+w10 — provenance des assets servis à l'écran street (plan 02a T5).
+
+Règle : tout asset non `own` du manifeste (manifest.json) est nommé ici par son id,
+avec sa licence et la date `verifiedOn`. Licences admises : CC0, MIT, own.
+Aucun asset Quaternius n'est livré (licence du site en conflit avec celle du pack, non tranché).
+
+État à ce jour : manifest.json ne liste aucun fichier. Aucun asset tiers n'est donc livré.
+
+Prévu, à inscrire ici AVANT d'être ajouté au manifeste :
+- Poly Haven, CC0 : textures de béton, d'asphalte mouillé et de dallage (page de licence ouverte le 2026-10-28, fichiers précis non encore choisis).
+- Personnages, MPFB (assets de base), CC0 1.0, vérifié le 2026-10-28 (entrées `char.` ajoutées en T7).
+- Kenney City Kit Commercial et Suburban, CC0, vérifiés le 2026-10-28 : aucun asset retenu.
+- Kenney Roads et Industrial : page non ouverte, à ouvrir et dater avant tout import.
+
+Sans fichier (procédural) : façades, lampadaires, sol, Coffre, guérite, barrière, ciel.
+Fabriqué par le studio dans Blender (own) : mur de 16 téléviseurs, nacelle, cabine de scan, pylône,
+voiture grise, guichet et poste de radio, banc, étal de Nadia, vitrine et ses props, portique, mobilier des intérieurs.

@@ -1,0 +1,1736 @@
+[
+  {
+    "path": "nacelles[0].side",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté"
+  },
+  {
+    "path": "nacelles[0].restAim",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe"
+  },
+  {
+    "path": "nacelles[1].side",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté"
+  },
+  {
+    "path": "nacelles[1].restAim",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe"
+  },
+  {
+    "path": "nacelles[2].side",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté"
+  },
+  {
+    "path": "nacelles[2].restAim",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe"
+  },
+  {
+    "path": "nacelles[3].side",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté"
+  },
+  {
+    "path": "nacelles[3].restAim",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe"
+  },
+  {
+    "path": "nacelles[4].side",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté"
+  },
+  {
+    "path": "nacelles[4].restAim",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe"
+  },
+  {
+    "path": "crowd.moving",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "effectif choisi dans la plage 12 à 16"
+  },
+  {
+    "path": "crowd.paceMin",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "allure minimale d'un passant, part de la vitesse de marche de la joueuse ; aucune source, valeur choisie (plan 02a T7)"
+  },
+  {
+    "path": "crowd.paceMax",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "allure maximale d'un passant, part de la vitesse de marche de la joueuse ; aucune source, valeur choisie (plan 02a T7)"
+  },
+  {
+    "path": "crowd.queue",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "effectif choisi dans la plage 10 à 15"
+  },
+  {
+    "path": "crowd.queueMinGapM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "distance minimale entre corps de la file et du joueur : un voisin traversait le joueur (TV-02a-T13-fix)"
+  },
+  {
+    "path": "crowd.queueXM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "axe de la file décalé à l'est de l'axe de la rue : le trajet droit du joueur ne traverse plus les voisins (TV-02a-T13-fix)"
+  },
+  {
+    "path": "walk.bodyRadiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "rayon du corps du joueur contre les décors pleins (TV-02a-T13-fix)"
+  },
+  {
+    "path": "light.blendMs",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "durée du fondu entre deux états de lumière, valeur de départ du plan 02a"
+  },
+  {
+    "path": "grade.states.heureBleue.exposure",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "exposition de l'heure bleue, réglée sur capture (T4)"
+  },
+  {
+    "path": "grade.exposure.adapt.upRatePerS",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "taux d'adaptation d'exposition, sombre vers clair ; seul l'ordre est sourcé (art bible §E.5 : plus vite que l'inverse), la valeur est réglée sur capture"
+  },
+  {
+    "path": "grade.exposure.adapt.downRatePerS",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "taux d'adaptation d'exposition, clair vers sombre ; seul l'ordre est sourcé (art bible §E.5 : plus lent que l'inverse), la valeur est réglée sur capture"
+  },
+  {
+    "path": "dof.walk.focalLengthM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : longueur de la rampe de flou au-delà de la zone nette (flou plein à cette distance du bord) ; 2,4 m rendait un passant à 8 m flou à 96 % alors que l'art bible §C.2 demande une silhouette identifiable à 8 m ; 6 m le laisse sous la moitié du flou (grief : on ne voit pas les personnages)"
+  },
+  {
+    "path": "dof.walk.bokehScale",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (T4)"
+  },
+  {
+    "path": "dof.observation.focalLengthM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : longueur de la rampe de flou au-delà de la zone nette ; 0,75 m floutait à plus de 90 % les voisins de file à 2 m du joueur ; 3,5 m les laisse sous la moitié du flou (art bible §C.2, grief : on ne voit pas les personnages) ; le fond reste flou, la zone nette de f/2,8 reste étroite"
+  },
+  {
+    "path": "dof.observation.bokehScale",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (T4)"
+  },
+  {
+    "path": "lut.jour.contrast",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.jour.saturation",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.jour.tint",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.heureBleue.contrast",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.heureBleue.saturation",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.heureBleue.tint",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.nuit.contrast",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.nuit.saturation",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "lut.nuit.tint",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "neutre en attendant la capture (T4)"
+  },
+  {
+    "path": "npcPlaces.nadia.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (étal de Nadia, ouest, z -2)"
+  },
+  {
+    "path": "npcPlaces.berenice.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (Registre, ouest, z -22 à -34)"
+  },
+  {
+    "path": "npcPlaces.bruno.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (voiture grise, est, z -6)"
+  },
+  {
+    "path": "npcPlaces.yusuf.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (Biens agréés, est, z +30 à +22)"
+  },
+  {
+    "path": "npcPlaces.marlene.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (devant le 9, ouest, z +38 à +28)"
+  },
+  {
+    "path": "npcPlaces.greyCar.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (voiture grise, est, z -6)"
+  },
+  {
+    "path": "characters.crowdBodies",
+    "owner": "character-artist",
+    "date": "2026-11-02",
+    "reason": "identifiants des corps de foule, quelques variantes réutilisées (plan 02a T7)"
+  },
+  {
+    "path": "characters.maxBytesPerBody",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "1 000 000 octets au départ pour une mesure de 0,86 Mo sur un seul homme [art bible, limite de la mesure]"
+  },
+  {
+    "path": "view.easeRatePerS",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "taux d'interpolation de l'avance de la file, 4 par seconde au départ"
+  },
+  {
+    "path": "queue.halfWidthM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "demi-largeur du couloir de file devant le checkpoint ; aucune source"
+  },
+  {
+    "path": "queue.lengthM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "longueur du couloir : 15 silhouettes x 0,8 m [calculé à la main], valeur choisie"
+  },
+  {
+    "path": "camera.walk.movingFocalMm",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §D.2, ouverture en marche non chiffrée (35 mm choisi, plan d'établissement)"
+  },
+  {
+    "path": "camera.walk.heightM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "hauteur de caméra, la bible ne la chiffre pas"
+  },
+  {
+    "path": "camera.walk.distanceM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "distance de caméra, la bible ne la chiffre pas"
+  },
+  {
+    "path": "camera.observation.focalMm",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §D.2, plage 85 à 135 (borne basse choisie)"
+  },
+  {
+    "path": "camera.observation.heightM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "hauteur de caméra, la bible ne la chiffre pas"
+  },
+  {
+    "path": "camera.observation.distanceM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "distance de caméra, la bible ne la chiffre pas"
+  },
+  {
+    "path": "camera.observation.lateralM",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "décalage en x de la caméra d'observation hors de l'axe de la file : un voisin de file bouchait le cadre (TV-02a-T13-fix)"
+  },
+  {
+    "path": "camera.transitionMs",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "durée de transition entre poses, la bible ne la chiffre pas"
+  },
+  {
+    "path": "walk.maxDtMs",
+    "owner": "lead-programmer",
+    "date": "2026-11-02",
+    "reason": "plan 02a T8 : borne le pas pour qu'un onglet en arrière-plan ne téléporte pas le joueur"
+  },
+  {
+    "path": "interact.interactRangeM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "portée d'interaction en mètres, valeur de départ"
+  },
+  {
+    "path": "interact.viewMinCos",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "cosinus minimal entre le regard et la direction d'un lieu pour y ouvrir un choix : 0 = demi-angle de 90°, le lieu n'est pas dans le dos ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "interactions.npc.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "entrée de classe : la position réelle vient du PNJ touché (npcPlaces), 0,0 est un repli"
+  },
+  {
+    "path": "interactions.passerby.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "entrée de classe : la position réelle vient du passant touché, 0,0 est un repli"
+  },
+  {
+    "path": "interactions.stall.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (étal, z -2, ouest)"
+  },
+  {
+    "path": "interactions.wall.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (mur de téléviseurs sur la guérite, z -12)"
+  },
+  {
+    "path": "interactions.counter.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (guichet du Registre, z -22 à -34, ouest)"
+  },
+  {
+    "path": "interactions.radio.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (poste de radio du Registre, z -22 à -34, ouest)"
+  },
+  {
+    "path": "interactions.window9c.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (fenêtre du 9-C, logement z +38 à +28, ouest)"
+  },
+  {
+    "path": "interactions.scanBooth.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (cabine de scan, z +8, est)"
+  },
+  {
+    "path": "interactions.pylon.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (pylône, z +20, axe côté est)"
+  },
+  {
+    "path": "interactions.bulletin.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (affiches du Bulletin, z +20, ouest ; aucune bible ne donne le z)"
+  },
+  {
+    "path": "interactions.greyCar.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (voiture grise, z -6, est)"
+  },
+  {
+    "path": "interactions.bench.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (banc de Théodore, z +34, ouest)"
+  },
+  {
+    "path": "interactions.vaultGate.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (portail du Coffre, z -44)"
+  },
+  {
+    "path": "triggers.door.noon.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix door.noon : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.door.noon.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix door.noon : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.j1.component.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j1.component : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j1.component.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j1.component : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.j1.phone.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j1.phone : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j1.phone.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j1.phone : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.j2.component.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j2.component : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j2.component.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j2.component : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.j2.receipt.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j2.receipt : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j2.receipt.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j2.receipt : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.j4.neighbour.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j4.neighbour : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j4.neighbour.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j4.neighbour : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]"
+  },
+  {
+    "path": "triggers.checkpoint.j1.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j1 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j1.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j2.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j2 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j2.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j3.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j3 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j3.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j4.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j4 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j4.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j5.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j5 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j5.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j6.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j6 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j6.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.checkpoint.j7.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix checkpoint.j7 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.checkpoint.j7.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.m1.scan.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m1.scan : centrée sur la cabine de scan (est; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.m1.scan.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m1.scan : rayon 5 m choisi autour de la cabine de scan (est, z +8) [interactions.scanBooth]"
+  },
+  {
+    "path": "triggers.m2.nadia.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m2.nadia : centrée sur l'étal de Nadia (ouest; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.m2.nadia.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m2.nadia : rayon 5 m choisi autour de l'étal de Nadia (ouest, z -2) [interactions.stall]"
+  },
+  {
+    "path": "triggers.m5.yusuf.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m5.yusuf : centrée sur le lieu d'attente de Yusuf (est; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.m5.yusuf.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix m5.yusuf : rayon 5 m choisi autour de le lieu d'attente de Yusuf (est, z +26) [npcPlaces.yusuf]"
+  },
+  {
+    "path": "triggers.j3.marlene.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j3.marlene : centrée sur le lieu d'attente de Marlène (ouest; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j3.marlene.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j3.marlene : rayon 5 m choisi autour de le lieu d'attente de Marlène (ouest, z +33) [npcPlaces.marlene]"
+  },
+  {
+    "path": "triggers.j5.bruno.at",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j5.bruno : centrée sur le lieu d'attente de Bruno; point choisi, aucune source ne donne le point exact"
+  },
+  {
+    "path": "triggers.j5.bruno.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "zone d'apparition du choix j5.bruno : rayon 5 m choisi autour de le lieu d'attente de Bruno, voiture grise (est, z -6) [npcPlaces.bruno]"
+  },
+  {
+    "path": "triggers.m3.letter.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix m3.letter : centrée sur le banc de Théodore (ouest, z +34, bible w10 §5.0, §8.2 M3) [interactions.bench]"
+  },
+  {
+    "path": "triggers.m3.letter.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 5 m (comme M1, M2, M5) choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.m4.list.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix m4.list : centrée sur le sous-sol du Registre (bible w10 §5.0, §8.2 M4), point pris au milieu de la salle du guichet faute de plan du sous-sol, entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.m4.list.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.relecture.j1.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix relecture.j1 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.relecture.j1.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.relecture.j2.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix relecture.j2 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.relecture.j2.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.relecture.j4.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix relecture.j4 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.relecture.j4.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.relecture.j5.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix relecture.j5 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.relecture.j5.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.relecture.j6.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix relecture.j6 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.relecture.j6.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j1.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j1 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j1.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j2.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j2 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j2.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j4.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j4 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j4.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j5.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j5 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j5.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j6.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j6 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j6.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "triggers.permit.j7.at",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "zone d'apparition du choix permit.j7 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]"
+  },
+  {
+    "path": "triggers.permit.j7.radiusM",
+    "owner": "level-designer",
+    "date": "2026-11-03",
+    "reason": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »"
+  },
+  {
+    "path": "postfx.bloom.strength",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (T13) ; aucune source dans l'art bible"
+  },
+  {
+    "path": "postfx.bloom.radius",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (T13) ; aucune source dans l'art bible"
+  },
+  {
+    "path": "postfx.bloom.threshold",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (T13) ; aucune source dans l'art bible"
+  },
+  {
+    "path": "postfx.chromatic",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : aberration chromatique : à 0,04 et à 0,015 un liseré rouge net restait sur le bord des fenêtres (valeurs HDR avant tone map, donc un décalage de 0,1 px suffit) ; 0,006 donne 0,3 px d'écart rouge-bleu au bord d'une image de 1920 px"
+  },
+  {
+    "path": "postfx.grainLumaWeight.dark",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : poids du grain dans les ombres : 1,4 d'origine donnait 4,5 % x 1,4 = 6,3 % d'écart-type de nuit, trop fort ; 1,0 ramène les ombres exactement à la table art bible §D.1 (4,5 % de nuit, 3,5 % d'heure bleue, 2,5 % de jour)"
+  },
+  {
+    "path": "postfx.grainLumaWeight.bright",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : poids du grain dans les hautes lumières, 0,6 avant ; garde le rapport ombre/lumière de §E.9 (plus fort dans les ombres)"
+  },
+  {
+    "path": "checkpoint.wall.grid",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "c cyan, p bleu pâle, m magenta, de la rangée 1 à 4 ; la bible impose un seul orange (rangée 3, colonne 2, repris de `orange`) et le magenta sous 3 % de l'image : trois magentas sur seize"
+  },
+  {
+    "path": "checkpoint.wall.look.glow",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "gain d'émission des écrans ; réglé sur capture (T13) contre le plafond de 6 % de l'image (T2)"
+  },
+  {
+    "path": "checkpoint.wall.look.scanlinePitchPx",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "pas des lignes de balayage en pixels d'écran (nœud TSL, jamais une texture)"
+  },
+  {
+    "path": "checkpoint.wall.look.scanlineDepth",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "profondeur d'assombrissement d'une ligne de balayage, de 0 à 1"
+  },
+  {
+    "path": "checkpoint.boothX",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "x du centre de la guérite : la bible place le mur contre sa face gauche mais ne donne pas x ; 3,3 centre le mur (4,2 m) sur x = 0, le cliquable du mur"
+  },
+  {
+    "path": "checkpoint.barrierPostX",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "x du poteau de la barrière, côté trottoir est ; le bras de 6,4 m couvre la guérite et le mur"
+  },
+  {
+    "path": "coffre.chimneyRadiusM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "rayon de la cheminée ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "coffre.benchHeightM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hauteur d'un banc de ventilation ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "coffre.benchDepthM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "profondeur d'un banc de ventilation ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "budget.drawCalls",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hypothèse de départ du brief T6 (l.25) : au plus 600 appels de rendu dans la vue large ; ajustable après la première mesure de T13"
+  },
+  {
+    "path": "budget.triangles",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hypothèse de départ du brief T6 (l.25) : 1,2 million de triangles ; ajustable après la première mesure de T13"
+  },
+  {
+    "path": "build.sidewalkM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "trottoir de 2 m : les PNJ et la file attendent à |x| = 6, entre 5 et 7 ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.storeyHeightM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hauteur d'étage ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.windowPitchM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "pas horizontal des fenêtres ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.windowWidthM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "largeur de fenêtre ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.windowHeightM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hauteur de fenêtre ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.windowCenterM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hauteur du centre des fenêtres au-dessus du plancher de l'étage ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.facadeDepthM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "épaisseur de la boîte de façade derrière le plan |x| = 7 ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.mastRadiusM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "rayon du mât de lampadaire ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.lampArmM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "porte-à-faux du bras de lampadaire vers la chaussée ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.nacelleHeightM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "hauteur d'accroche des nacelles de contrôle ; la bible donne z, pas la hauteur"
+  },
+  {
+    "path": "build.asphaltRoughness",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "asphalte mouillé : rugosité basse ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.litWindowGain",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "gain d'émission des fenêtres allumées (#E9A860, bible w10 §10.1) ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.lampGain",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "gain d'émission des têtes sodium (#E8A33D, bible w10 §10.1) ; compté dans les 2 % de la rue (T2)"
+  },
+  {
+    "path": "build.ledGain",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "gain d'émission des LED froides du Coffre et de la cabine de scan ; compté dans les 2 % de la rue (T2)"
+  },
+  {
+    "path": "build.beaconGain",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "gain d'émission du feu rouge de la cheminée et de la barrière ; compté dans les 2 % de la rue (T2)"
+  },
+  {
+    "path": "build.counterPanelHeightM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "hauteur de la plaque du compteur, posée au-dessus du mur ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.hitWidthM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "largeur du volume de clic d'un objet ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.hitHeightM",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "hauteur du volume de clic d'un objet ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)"
+  },
+  {
+    "path": "build.palette.led",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "bible w10 §10.1 : blanc-cyan légèrement désaturé, aucune valeur écrite"
+  },
+  {
+    "path": "build.palette.barrierBlack",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "bande noire du bras de barrière : la bible w10 §10.1 n'écrit aucune valeur ; était un littéral dans checkpoint.ts"
+  },
+  {
+    "path": "lightRigs.jour.sky",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : teinte du ciel de l'état"
+  },
+  {
+    "path": "lightRigs.jour.ground",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette"
+  },
+  {
+    "path": "lightRigs.jour.hemiIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186)"
+  },
+  {
+    "path": "lightRigs.jour.sunColor",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1"
+  },
+  {
+    "path": "lightRigs.jour.sunIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)"
+  },
+  {
+    "path": "lightRigs.jour.sunElevationDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7"
+  },
+  {
+    "path": "lightRigs.jour.sunAzimuthDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4"
+  },
+  {
+    "path": "lightRigs.heureBleue.sky",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : ciel d'aube gris acier #586573, art bible §B.2bis"
+  },
+  {
+    "path": "lightRigs.heureBleue.ground",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette"
+  },
+  {
+    "path": "lightRigs.heureBleue.hemiIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186) ; 7 → 11 le 2026-11-03 (TV-02a-render) : « il fait trop noir » (playtest de Cynthia), murs et personnages se lisent ; bleu/orange gardé"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunColor",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunElevationDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunAzimuthDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4"
+  },
+  {
+    "path": "lightRigs.nuit.sky",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : teinte du ciel de l'état"
+  },
+  {
+    "path": "lightRigs.nuit.ground",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette"
+  },
+  {
+    "path": "lightRigs.nuit.hemiIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186)"
+  },
+  {
+    "path": "lightRigs.nuit.sunColor",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1"
+  },
+  {
+    "path": "lightRigs.nuit.sunIntensity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)"
+  },
+  {
+    "path": "lightRigs.nuit.sunElevationDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7"
+  },
+  {
+    "path": "lightRigs.nuit.sunAzimuthDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4"
+  },
+  {
+    "path": "dof.walk.fNumber",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §D.2 : plan d'établissement f/8 ; ouverture supposée pour la zone nette N c s² / f²"
+  },
+  {
+    "path": "dof.walk.circleMm",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §C.2 et §D.2 : cercle de confusion 0,03 mm du modèle de zone nette"
+  },
+  {
+    "path": "dof.observation.fNumber",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §D.2 : observation f/2,8 ; ouverture supposée pour la zone nette N c s² / f²"
+  },
+  {
+    "path": "dof.observation.circleMm",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "art bible §C.2 et §D.2 : cercle de confusion 0,03 mm du modèle de zone nette"
+  },
+  {
+    "path": "lightRigs.jour.horizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)"
+  },
+  {
+    "path": "lightRigs.heureBleue.horizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)"
+  },
+  {
+    "path": "lightRigs.nuit.horizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)"
+  },
+  {
+    "path": "lamps.light.intensityCd",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité d'une source réelle de lampadaire, en candelas (Three.js r186, sans facteur pi) ; à 7 m de haut donne 24 d'éclairement au sol, de quoi lire la chaussée mouillée sous la tête"
+  },
+  {
+    "path": "lamps.light.distanceM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : portée finie de la source réelle, sous l'écartement des lampadaires (18 m) : une source qui entre dans le lot des plus proches de la vue n'apparaît pas d'un coup"
+  },
+  {
+    "path": "lamps.light.decay",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : décroissance physique en 1 / d² (art bible §D.1 : la lumière d'un pratique tombe avec la distance)"
+  },
+  {
+    "path": "lamps.light.poolRadiusM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : rayon de la flaque simulée au sol, sodium 2000 K (art bible §D.1) ; supérieur à la demi-hauteur du mât (3,5 m) pour que le cône déborde sur la chaussée"
+  },
+  {
+    "path": "lamps.light.poolOpacity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : opacité de pleine nuit de la flaque additive, réglée sur capture contre la lumière réelle des lampadaires proches"
+  },
+  {
+    "path": "lamps.light.realCount",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : nombre de sources réelles (une paire de lampadaires de chaque côté près de la vue) : budget de lumières du fragment, les autres lampadaires n'ont que la flaque"
+  },
+  {
+    "path": "lightRigs.jour.lampLevel",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; lampadaires éteints en plein jour, art bible §D.1 : jour = soleil de 25 à 35 degrés"
+  },
+  {
+    "path": "lightRigs.heureBleue.lampLevel",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; à l'heure bleue les pratiques sont allumés sur un ciel 4:1 (art bible §D.1), moins fort qu'en pleine nuit"
+  },
+  {
+    "path": "lightRigs.nuit.lampLevel",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; pleine nuit : sodium 2000 K éclaire la rue (art bible §D.1)"
+  },
+  {
+    "path": "lightRigs.jour.skyZenith",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #6F93C4 ; mesuré #6E94C4 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.jour.skyMid",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #A9C0DA ; mesuré #A9C0DA (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.jour.skyHorizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #D9DEE2 ; mesuré #D9DEE2 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.jour.sunHalo",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : halo sans disque, Y' 0,91, sous le blanc maximal 0,92 (§B.1)"
+  },
+  {
+    "path": "lightRigs.jour.sunHaloRadiusDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : rayon angulaire du halo"
+  },
+  {
+    "path": "lightRigs.heureBleue.skyZenith",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #404B58 ; mesuré #404A58 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.heureBleue.skyMid",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #586573 ; mesuré #576471 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.heureBleue.skyHorizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #6E7781 ; mesuré #6D7680 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunHalo",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : lueur d'aube neutre-chaude, aucun orange"
+  },
+  {
+    "path": "lightRigs.heureBleue.sunHaloRadiusDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : lueur large et basse"
+  },
+  {
+    "path": "lightRigs.nuit.skyZenith",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #0B0F17 ; mesuré #0B0F17 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.nuit.skyMid",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #0F1520 ; mesuré #0F1420 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.nuit.skyHorizon",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #131926 ; mesuré #131926 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut"
+  },
+  {
+    "path": "lightRigs.nuit.sunHalo",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : pas de halo de nuit"
+  },
+  {
+    "path": "lightRigs.nuit.sunHaloRadiusDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : pas de lune ni d'étoiles"
+  },
+  {
+    "path": "sky.fogNearM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : début du brouillard (m) : au-delà du mur du checkpoint vu de la marche (50 m), la géométrie lointaine se fond dans l'horizon ; choisi"
+  },
+  {
+    "path": "sky.fogFarM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "réglé sur capture (TV-02a-render, 2026-11-02) : fin du brouillard (m) : bout de la rue vu du départ ; choisi"
+  },
+  {
+    "path": "lamps.light.angleDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : demi-angle du cône. Valeur de l'art-director : 40 ; recalculée sur la géométrie réelle (tête à 6,75 m, façade à 1,6 m de la tête et non 2,7 m) : avec 10 deg d'inclinaison vers l'axe, le bord extérieur du cône est à 26 deg et le mur n'est éclairé que sous 3,3 m (rez-de-chaussée), au lieu de 4,0 m avec 40 deg"
+  },
+  {
+    "path": "lamps.light.penumbra",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : bord doux de flaque, pas de disque net"
+  },
+  {
+    "path": "lamps.light.tiltDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : inclinaison du cône vers l'axe de la chaussée : la flaque déborde sur la chaussée plutôt que sur le mur"
+  },
+  {
+    "path": "lamps.light.glowRadiusM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : rayon du halo additif face caméra de chaque tête : rend la source lisible même petite ou au bord du cadre (le bloom reste réservé aux écrans, test T13)"
+  },
+  {
+    "path": "lamps.light.glowOpacity",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : opacité du halo en pleine nuit, multipliée par lampLevel (0,36 à l'heure bleue)"
+  },
+  {
+    "path": "build.lampHeadLengthM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : tête plate de type cobra, longueur le long du bras ; silhouette horizontale distincte des fenêtres verticales"
+  },
+  {
+    "path": "build.lampHeadHeightM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : hauteur de la tête plate"
+  },
+  {
+    "path": "build.lampHeadWidthM",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : largeur de la tête plate"
+  },
+  {
+    "path": "build.lampLensGain",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "art-director 2026-11-02 (lampadaires, cibles de rendu) : le coeur de la lentille doit sortir à Y' 0,95 ou plus, la source la plus claire de la rue, au-dessus des fenêtres (0,90, §D.1) ; champ distinct de lampGain, que la fente du checkpoint partage"
+  },
+  {
+    "path": "solids.banc",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.etal",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.voitureGrise",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.cabineScan",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.pylone",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.registreEtagere",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.registreFacade",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.poteauBarriere",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "solids.portailCoffre",
+    "owner": "level-designer",
+    "date": "2026-11-02",
+    "reason": "décor plein de la rue : empreinte de la maquette, le joueur ne le traverse plus (TV-02a-T13-fix)"
+  },
+  {
+    "path": "checkpoint.barrier.bulbRatio",
+    "owner": "technical-artist",
+    "date": "2026-11-02",
+    "reason": "rapport du diamètre de la source rouge à celui du boîtier sombre de la lampe de barrière (0,2 m et 0,14 m, bible §5.2 b) : une sphère rouge entière de 0,2 m, non éclairée, devenait un disque pêche plat devant le mur d'écrans (bloom) ; un boîtier noir mat et une petite source rouge sur sa face tournée vers la rue ; choisi, réglé sur capture (TV-02a-render, 2026-11-02)"
+  },
+  {
+    "path": "camera.observation.checkpointFrame",
+    "owner": "art-director",
+    "date": "2026-11-02",
+    "reason": "cadrage de la scène du checkpoint (TV-02a-T13-fix) : (x, z) = milieu du mur de télés et de la guérite sur leur face avant (x de -2,1 à 4,5, z -10,9) ; au front de la file la caméra vise ce point à `distanceM` derrière le joueur (85 mm = 0,5 m de large par mètre : 12 m montrent ~6 m, mur et guérite) ; la visée glisse du joueur vers ce point sur `rampM` à partir de `fromZ` (= front - 4 m) ; à confirmer sur capture"
+  },
+  {
+    "path": "checkpoint.booth.slitLitGain",
+    "owner": "technical-artist",
+    "date": "2026-11-03",
+    "reason": "multiple du gain de la fente au repos quand la séquence jouée l'allume plein (GDD sequences-jouees §0.1) ; à régler sur capture"
+  },
+  {
+    "path": "checkpoint.barrier.liftDeg",
+    "owner": "technical-artist",
+    "date": "2026-11-03",
+    "reason": "angle de levée du bras (GDD §0.1), presque vertical pour dégager le couloir de 0,8 m ; à régler sur capture"
+  },
+  {
+    "path": "checkpoint.barrier.liftMs",
+    "owner": "technical-artist",
+    "date": "2026-11-03",
+    "reason": "durée de levée ou de descente du bras (séquences jouées) ; à régler sur capture"
+  },
+  {
+    "path": "camera.high.focusHeightM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "hauteur du point visé, environ la taille d'un torse ; la spec ne la chiffre pas"
+  },
+  {
+    "path": "camera.high.dampMs",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "constante de temps de l'amorti exponentiel ; valeur de l'essai"
+  },
+  {
+    "path": "camera.high.home.distM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.home.elevDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.home.azimDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.home.focalMm",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette"
+  },
+  {
+    "path": "camera.high.desk.distM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.desk.elevDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.desk.azimDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.desk.focalMm",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette"
+  },
+  {
+    "path": "camera.high.street.distM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.street.elevDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.street.azimDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.talk.distM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.talk.elevDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.talk.azimDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.queue.distM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.queue.elevDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.queue.azimDeg",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture"
+  },
+  {
+    "path": "camera.high.queue.focalMm",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette"
+  },
+  {
+    "path": "guided.places.unit.9-D",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : DANS le logement 9-D (coupe, interiors.ts : pièce de x -12 à -7, 9-D de z +28 à +30,5 d'après cutaway.units), entre la table (x -9,2) et le bureau (x -7,7), au milieu du logement en z ; choisie, à confirmer sur capture"
+  },
+  {
+    "path": "guided.places.door.9-B",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : porte du 9-B, devant le logement (z +38 à +28), choisie"
+  },
+  {
+    "path": "guided.places.door.9-C",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : palier, côté 9-D de la cloison 9-D / 9-C (z +30,5, cutaway.units) ; Mme Roux se tient de l'autre côté, dans le 9-C (actors.ts, actorSpot) ; choisie, à confirmer sur capture"
+  },
+  {
+    "path": "guided.places.street.mid",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : milieu de la rue, axe, entre le logement et le Coffre, choisi"
+  },
+  {
+    "path": "guided.places.anchor.stall.front",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : même point que l'ancre de séquence anchor.stall.front (w10.sequences.json)"
+  },
+  {
+    "path": "guided.places.place.cabine",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : cabine de scan, bible w10 §5.0 (z +8, est), côté rue de interactions.scanBooth (x 6)"
+  },
+  {
+    "path": "guided.places.anchor.cp.head",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : même point que l'ancre de séquence anchor.cp.head (w10.sequences.json)"
+  },
+  {
+    "path": "guided.places.place.registre",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : Registre, bible w10 §5.0 (z -22 à -34, ouest), côté rue de interactions.counter (x -6)"
+  },
+  {
+    "path": "guided.places.place.pylone",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : pylône haut-parleur, conception J3-J7 §2.5 (axe côté est, z +20), côté rue ; x choisi"
+  },
+  {
+    "path": "guided.places.bench.theodore",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : banc devant le 9, conception J3-J7 §2.5 et bible w10 §5.0 (layout.places.banc z +34, ouest) ; x choisi, côté rue"
+  },
+  {
+    "path": "guided.places.place.cantine",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : cantine du Registre, conception J3-J7 §2.5 (au-delà du contrôle, z -22 à -34, ouest) ; x et z choisis, à l'écart du guichet (place.registre, z -28)"
+  },
+  {
+    "path": "guided.places.shop.yusuf",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : arrière-boutique de Biens agréés, conception J3-J7 §2.5 (est, z +26, npcPlaces.yusuf) ; x choisi, côté rue"
+  },
+  {
+    "path": "guided.places.stairs.9",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : escalier du 9, conception J3-J7 §2.5 (entre le 9-D et le 9-A), DANS l'immeuble (|x| > halfWidthM), x du palier comme unit.9-D, z au milieu de la coupe (z +28 à +38) ; choisie, à confirmer sur capture"
+  },
+  {
+    "path": "guided.places.anchor.greycar",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : voiture grise amenée devant le 9, conception J3-J7 §2.5 (celle d'npcPlaces.greyCar, est z -6, vient chercher le joueur) ; voie est en face du 9 (z +36), x et z choisis"
+  },
+  {
+    "path": "guided.places.room.audition",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "ancre de scène guidée : salle d'audition du Registre, conception J3-J7 §2.5 et bible §8.1 J7 (une table, intérieur en coupe), DANS le bâtiment ouest à la hauteur du Registre (z -28) ; choisie, à confirmer sur capture"
+  },
+  {
+    "path": "cutaway.units[0].zEnd",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28) ; fin du logement choisie, la bible ne donne que l'étendue (9-A)"
+  },
+  {
+    "path": "cutaway.units[1].zEnd",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28) ; fin du logement choisie, la bible ne donne que l'étendue (9-B)"
+  },
+  {
+    "path": "cutaway.units[2].zEnd",
+    "owner": "level-designer",
+    "date": "2026-11-05",
+    "reason": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28) ; fin du logement choisie, la bible ne donne que l'étendue (9-C)"
+  },
+  {
+    "path": "cutaway.lamp.intensityCd",
+    "owner": "technical-artist",
+    "date": "2026-11-05",
+    "reason": "intensité de la lampe de bureau (candelas), choisie, à régler sur capture"
+  },
+  {
+    "path": "cutaway.lamp.distanceM",
+    "owner": "technical-artist",
+    "date": "2026-11-05",
+    "reason": "portée finie de la lampe de bureau, choisie : borne la lumière, qui traverse les cloisons (une PointLight n'a pas d'occulteur)"
+  },
+  {
+    "path": "cutaway.lamp.decay",
+    "owner": "technical-artist",
+    "date": "2026-11-05",
+    "reason": "décroissance physique en 1 / d², comme les lampadaires réglés"
+  },
+  {
+    "path": "cutaway.lamp.heightM",
+    "owner": "technical-artist",
+    "date": "2026-11-05",
+    "reason": "hauteur de l'ampoule : plateau du bureau (1,0 m) plus 0,15 m, choisie"
+  },
+  {
+    "path": "cutaway.partitionM",
+    "owner": "art-director",
+    "date": "2026-11-05",
+    "reason": "cloisons entre logements à 0,9 m, sous le plateau du bureau (1,0 m) : vue de maison de poupée depuis la caméra haute"
+  },
+  {
+    "path": "guided.places.unit.9-B",
+    "owner": "level-designer",
+    "date": "2026-11-09",
+    "reason": "Épisode court : dîner dans le logement 9-B, derrière la façade ouest, entre z 33 et 35,5 ; ancre choisie pour conserver la conversation dans le même intérieur."
+  }
+]

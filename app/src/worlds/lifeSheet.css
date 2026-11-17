@@ -1,0 +1,69 @@
+/* Dark reading surfaces: green actions, blue consequences, warm traces. */
+.life-sheet { --life-border-accent:3px; --life-paper:#102126; --life-ink:#edf3e9; --life-red:#8e3e35; --life-blue:#254b60; color:var(--life-ink); }
+.life-sheet h2 { font:400 clamp(26px,4vw,48px)/1.12 'Montserrat C',Arial,sans-serif!important; letter-spacing:-.03em; }
+.life-sheet h3 { font:600 18px/1.35 Inter,Helvetica,sans-serif!important; }
+.life-sheet p { font-size:15px!important; line-height:1.65!important; }
+.life-sheet small { color:inherit; font-size:11px; letter-spacing:.09em; }
+.life-hero { padding:clamp(24px,4vw,56px); background:linear-gradient(125deg,#244f48,#122f36); color:#fff0d4; border-radius:10px; }
+.life-hero h2 { font-size:clamp(38px,6vw,80px)!important; max-width:850px; margin:20px 0!important; }
+.life-sheet .life-outcome { display:inline-block; padding:8px 16px; background:#8e3e35; color:#fff0d4; border-radius:4px; }
+.life-index { display:flex; flex-wrap:wrap; gap:8px; margin-top:24px; }
+.life-index button { background:#102126!important; color:#edf3e9!important; }
+.life-moments,.life-curves { margin-top:36px; scroll-margin-top:20px; }
+.life-moment-grid,.life-chart-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; padding:0; list-style:none; }
+.life-moment-grid li { padding:24px; background:#1b3930; border-radius:8px; }
+.life-moment-grid li:nth-child(3n+2) { background:#254b60; color:#fff0d4; }
+.life-moment-grid li:nth-child(3n) { background:#8e3e35; color:#fff0d4; }
+.life-number { font:400 38px 'Montserrat C',Arial,sans-serif; opacity:.7; }
+.life-resource { display:flex; gap:20px; align-items:center; padding:20px; background:#253d41; border-radius:8px; }
+.life-resource strong { font:400 38px 'Montserrat C',Arial,sans-serif; }
+.life-chart-grid figure { margin:0; padding:20px; border-radius:8px; background:#19323b; color:#a9d5f5; }
+.life-chart-grid figure:nth-child(3n) { color:#edb19d; }
+.life-chart-grid figure:nth-child(3n+1) { color:#b9dca5; }
+.life-chart-grid figcaption { text-transform:capitalize; font-size:15px; }
+.life-chart-grid strong { display:block; font:400 28px 'Montserrat C',Arial,sans-serif; margin:8px 0; }
+.life-chart-grid svg { width:100%; height:88px; overflow:visible; }
+.life-chart-grid polyline { fill:none; stroke:currentColor; stroke-width:2.5; }
+.life-chart-grid .life-grid { fill:none; stroke:currentColor; opacity:.13; }
+.life-chart-grid small { display:block; font-size:10px; letter-spacing:0; }
+.life-chart-grid summary { cursor:pointer; padding:12px 0; font-size:12px; }
+.life-model-note { padding:16px; background:#253d41; border-radius:8px; }
+.journey[data-ended=true] .journey-mission,.journey[data-ended=true] .journey-status,.journey[data-ended=true] .journey-header,.journey[data-ended=true] .journey-head-anchor,
+.episode[data-ended=true] .episode-top,.episode[data-ended=true] .episode-goals,.episode[data-ended=true] .episode-tools,.episode[data-ended=true] .episode-head-mood { display:none; }
+.journey .journey-ending,.episode .episode-panel.episode-report { position:absolute; inset:0; transform:none; width:100%; max-width:none; max-height:none; height:100%; box-sizing:border-box; padding:clamp(20px,4vw,56px); overflow:auto; border:0; border-radius:0; background:#102126; color:#edf3e9; text-align:left; }
+.journey-ending > .journey-context,.journey-ending > .journey-feedback,.episode-report > .episode-speaker { display:none; }
+.journey .journey-ending > button,.episode .episode-report button { color:#fff0d4; background:#254b60; }
+.journey-ending > h3,.journey-ending > h2 { margin-top:30px; }
+.journey-ending .journey-cause { background:#20363d; padding:16px; border-color:#edb19d; border-radius:6px; margin-block:12px; }
+.journey-ending small { color:inherit; }
+.journey-ending .present-comparisons,.episode-report .present-comparisons { margin-top:40px; }
+@media (max-width:760px) { .life-moment-grid,.life-chart-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .life-hero { padding:24px; } }
+@media (max-width:480px) { .life-moment-grid { grid-template-columns:1fr; } .life-chart-grid { gap:8px; } .life-chart-grid figure { padding:12px; } .life-resource { align-items:flex-start; flex-direction:column; gap:6px; } }
+
+.journey .life-sheet small,.episode .life-sheet small { color:inherit; }
+
+.life-summary-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin:24px 0 12px; }
+.life-summary-stats>div { padding:18px; border-radius:10px; background:#ffffff12; }
+.life-summary-stats strong { display:block; font:600 clamp(25px,4vw,46px)/1.2 'Montserrat C',Arial,sans-serif; color:#c5e2b9; }
+.life-summary-stats span { display:block; margin-top:8px; font-size:13px; }
+.life-impact-map { margin:36px 0; }
+.life-impact-flow { list-style:none; padding:0; display:grid; gap:16px; }
+.life-impact-flow li { display:grid; grid-template-columns:minmax(0,1fr) 40px minmax(0,1.4fr); align-items:stretch; }
+.life-impact-action,.life-impact-effect { padding:20px; border-radius:12px; background:#25473d; color:#edf3e9; }
+.life-impact-effect { background:#254b60; color:#fff2dc; }
+.life-impact-action small,.life-impact-effect small { display:block; margin-bottom:10px; opacity:.8; }
+.life-impact-action strong { font:600 16px/1.5 'Montserrat C',Arial,sans-serif; }
+.life-impact-effect p { margin:0!important; font-size:14px!important; }
+.life-impact-arrow { display:grid; place-items:center; font-size:28px; color:#a9d5f5; }
+.life-decision-archive { margin-top:18px; }
+.life-decision-archive summary { cursor:pointer; padding:14px 0; font:600 15px/1.5 'Inter C',Arial,sans-serif; }
+.life-resource meter { flex:1; min-width:80px; height:12px; accent-color:#35674e; }
+.life-next { display:flex; flex-wrap:wrap; gap:8px; padding:16px 0 24px; }
+.journey-ending .life-next button,.episode-report .life-next button { background:#25473d; color:#edf3e9; border:0; border-radius:8px; min-height:48px; }
+.journey-ending .life-next button:first-child,.episode-report .life-next button:first-child { background:#254f46; color:#f7efdd; }
+@media(max-width:700px){.life-summary-stats{grid-template-columns:1fr 1fr;gap:8px}.life-summary-stats>div{padding:12px}.life-summary-stats>div:last-child{grid-column:1/-1}.life-impact-flow li{grid-template-columns:1fr}.life-impact-arrow{height:28px;transform:rotate(90deg)}.life-impact-action,.life-impact-effect{padding:16px}.life-next button{width:100%}.life-resource{flex-wrap:wrap}}
+
+.life-sheet .life-outcome { background:#25473d; color:#edf3e9; }
+@media(max-width:700px){.life-next{display:grid;grid-template-columns:1fr 1fr}.life-next button{font-size:11px;min-height:40px}.life-next button:first-child{grid-column:1/-1}}
+
+.life-sheet :focus-visible{outline:var(--life-border-accent) solid #d5f1b5;outline-offset:3px}.life-sheet h2,.life-sheet h3{color:inherit}.life-lived-results>small{color:#a9d5f5!important}.life-sheet .life-impact-action{border-inline-start:var(--life-border-accent) solid #b9dca5}.life-sheet .life-impact-effect{border-inline-start:var(--life-border-accent) solid #a9d5f5}

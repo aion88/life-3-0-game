@@ -1,0 +1,17 @@
+/* Couleurs des douze mondes : dominante et opposition, pour l'HABILLAGE seulement (nom du monde, filet, en-têtes de pièce, vignettes).
+   Jamais sur un choix, un prix ni un tampon. `--world-text` est la couleur qui peut porter du texte sur le fond (>= 4,5:1 sur #12100D, calculé),
+   sinon le crème « dit » ; `--world-on-dom` est la couleur de texte posée SUR la dominante (en-tête de pièce). */
+:root { --world-dom: var(--raconte); --world-opp: var(--filet); --world-text: var(--dit); --world-on-dom: var(--encre); }
+
+[data-world="w01"] { --world-dom: #E9A81C; --world-opp: #2E2140; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* safran / violet-noir */
+[data-world="w02"] { --world-dom: #E4ADA6; --world-opp: #86A83C; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* rose plâtre / vert feuille */
+[data-world="w03"] { --world-dom: #C98A34; --world-opp: #EBCDBE; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* ocre / rose chaux */
+[data-world="w04"] { --world-dom: #A7A1B6; --world-opp: #E39B3E; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* béton lavande / ambre de lampe */
+[data-world="w05"] { --world-dom: #E8907A; --world-opp: #2546A6; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* saumon / cobalt */
+[data-world="w06"] { --world-dom: #6B1726; --world-opp: #C9A14B; --world-text: var(--world-opp); --world-on-dom: var(--dit); }   /* bordeaux / laiton */
+[data-world="w07"] { --world-dom: #CFC9BC; --world-opp: #D3261C; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* cendre / rouge écran */
+[data-world="w08"] { --world-dom: #EFE7B8; --world-opp: #BF6238; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* craie citron / terracotta */
+[data-world="w09"] { --world-dom: #4E9A3B; --world-opp: #C9337B; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* vert pelouse / fuchsia */
+[data-world="w10"] { --world-dom: #E0D1A9; --world-opp: #5D6470; --world-text: var(--world-dom); --world-on-dom: var(--encre); }   /* ivoire de bureau / ardoise */
+[data-world="w11"] { --world-dom: #7B5B3B; --world-opp: #6F5B88; --world-text: var(--dit); --world-on-dom: var(--dit); }   /* terre d'ombre / violet fumée */
+[data-world="w12"] { --world-dom: #0F0D0C; --world-opp: #F5F2EA; --world-text: var(--world-opp); --world-on-dom: var(--dit); }   /* suie / blanc éclair */

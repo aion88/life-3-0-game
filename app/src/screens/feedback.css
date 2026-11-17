@@ -1,0 +1,5 @@
+/* Lien « Contact / Donner mon avis » des écrans de fin de la rue et des mondes (le bilan utilise ses pastilles). */
+.episode-contact, .life-contact { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 8px 16px; border: thin solid #77968a; border-radius: 8px; color: #c9e6c2; font-size: 13px; line-height: 1.4; text-decoration: none; box-sizing: border-box; }
+.episode-contact:hover, .life-contact:hover { background: #234139; border-color: #b9d9b1; }
+.episode-contact:focus-visible, .life-contact:focus-visible { outline: 3px solid #fff6dd; outline-offset: 4px; }
+.episode-contact { margin-top: 10px; }

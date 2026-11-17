@@ -1,0 +1,670 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "first": "j1.a",
+      "goalKey": "w10.dw.goal.j1",
+      "right": null
+    },
+    {
+      "day": 2,
+      "first": "j2.wake",
+      "goalKey": "w10.dw.goal.j2",
+      "right": null
+    },
+    {
+      "day": 3,
+      "first": "j3.a",
+      "goalKey": "w10.dw.goal.j3",
+      "right": null
+    },
+    {
+      "day": 4,
+      "first": "j4.a",
+      "goalKey": "w10.dw.goal.j4",
+      "right": null
+    },
+    {
+      "day": 5,
+      "first": "j5.a",
+      "goalKey": "w10.dw.goal.j5",
+      "right": "privacy"
+    },
+    {
+      "day": 6,
+      "first": "j6.a",
+      "goalKey": "w10.dw.goal.j6",
+      "right": null
+    },
+    {
+      "day": 7,
+      "first": "j7.a",
+      "goalKey": "w10.dw.goal.j7",
+      "right": null
+    }
+  ],
+  "scenes": [
+    {
+      "id": "j1.a",
+      "day": 1,
+      "stage": "j1.a",
+      "place": "street.j1.a",
+      "anchorMinute": 480,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j1.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.dw.j1.a.ask",
+        "options": [
+          {
+            "id": "theodore",
+            "labelKey": "w10.dw.j1.a.theodore",
+            "words": 5,
+            "next": "j1.b",
+            "replyKey": null
+          },
+          {
+            "id": "nadia",
+            "labelKey": "w10.dw.j1.a.nadia",
+            "words": 3,
+            "next": "j1.b",
+            "replyKey": null
+          },
+          {
+            "id": "silent",
+            "labelKey": "w10.dw.j1.a.silent",
+            "words": 0,
+            "next": "j1.b",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j1.b",
+      "day": 1,
+      "stage": "j1.b",
+      "place": "street.j1.b",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j1.b",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.wake",
+      "day": 2,
+      "stage": "j2.wake",
+      "place": "street.j2.wake",
+      "anchorMinute": 480,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j2.wake",
+          "lit": null
+        },
+        {
+          "voice": "person",
+          "lit": null,
+          "byLink": {
+            "link": "A1",
+            "keys": {
+              "theodore": "w10.dw.bench"
+            },
+            "otherwise": null
+          }
+        }
+      ],
+      "ask": {
+        "kind": "route",
+        "link": "A1",
+        "next": {
+          "theodore": "j2.bench"
+        },
+        "otherwise": "j2.street"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.bench",
+      "day": 2,
+      "stage": "j2.bench",
+      "place": "street.j2.bench",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j2.bench",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j2.street",
+      "day": 2,
+      "stage": "j2.street",
+      "place": "street.j2.street",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j2.street",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j3.a",
+      "day": 3,
+      "stage": "j3.a",
+      "place": "street.j3.a",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j3.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "priced",
+        "choiceId": "m2.nadia",
+        "next": {
+          "buy": "j3.r",
+          "pass": "j3.r"
+        },
+        "ifUnavailable": null
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j3.r",
+      "day": 3,
+      "stage": "j3.r",
+      "place": "street.j3.r",
+      "anchorMinute": 840,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j3.r",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "route",
+        "link": "N3",
+        "next": {
+          "buy": "j3.paid"
+        },
+        "otherwise": "j3.free"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j3.paid",
+      "day": 3,
+      "stage": "j3.paid",
+      "place": "street.j3.paid",
+      "anchorMinute": 900,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j3.paid",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j3.free",
+      "day": 3,
+      "stage": "j3.free",
+      "place": "street.j3.free",
+      "anchorMinute": 900,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j3.free",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j4.a",
+      "day": 4,
+      "stage": "j4.a",
+      "place": "street.j4.a",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j4.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "narrative",
+        "promptKey": "w10.dw.j4.a.ask",
+        "options": [
+          {
+            "id": "marlene",
+            "labelKey": "w10.dw.j4.a.marlene",
+            "words": 4,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "declare",
+            "labelKey": "w10.dw.j4.a.declare",
+            "words": 4,
+            "next": "night",
+            "replyKey": null
+          },
+          {
+            "id": "silent",
+            "labelKey": "w10.dw.j4.a.silent",
+            "words": 0,
+            "next": "night",
+            "replyKey": null
+          }
+        ]
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j5.a",
+      "day": 5,
+      "stage": "j5.a",
+      "place": "street.j5.a",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j5.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j6.a",
+      "day": 6,
+      "stage": "j6.a",
+      "place": "street.j6.a",
+      "anchorMinute": 600,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j6.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "none",
+        "next": "night"
+      },
+      "transit": [],
+      "waitKind": "none"
+    },
+    {
+      "id": "j7.a",
+      "day": 7,
+      "stage": "j7.a",
+      "place": "street.j7.a",
+      "anchorMinute": 1060,
+      "costMin": 10,
+      "late": null,
+      "actor": null,
+      "beats": [
+        {
+          "voice": "narrator",
+          "key": "w10.dw.j7.a",
+          "lit": null
+        }
+      ],
+      "ask": {
+        "kind": "priced",
+        "choiceId": "audition.j7",
+        "next": {
+          "all": "night",
+          "none": "night",
+          "silence": "night"
+        },
+        "ifUnavailable": null
+      },
+      "transit": [],
+      "waitKind": "none"
+    }
+  ],
+  "chains": [
+    {
+      "id": "chain.A",
+      "titleKey": "w10.dw.chain.A",
+      "crosses": [],
+      "question": {
+        "key": "w10.dw.chain.A.q",
+        "linkKeys": {
+          "A1": "w10.dw.chain.A.A1"
+        }
+      },
+      "fact": {
+        "key": "w10.dw.fact.A",
+        "source": "fixture",
+        "sourceKey": "w10.dw.fact.A.source"
+      },
+      "lastDay": 1,
+      "opensBy": null,
+      "links": [
+        {
+          "id": "A1",
+          "day": 1,
+          "at": {
+            "kind": "scene",
+            "id": "j1.a"
+          },
+          "absent": {
+            "recapKey": "w10.dw.recap.A1.absent",
+            "personKey": null,
+            "saidKey": null,
+            "nameKey": null
+          },
+          "variants": {
+            "theodore": {
+              "recapKey": "w10.dw.recap.A1.theodore",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": "w10.dw.name.theodore"
+            },
+            "nadia": {
+              "recapKey": "w10.dw.recap.A1.nadia",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": null
+            },
+            "silent": {
+              "recapKey": "w10.dw.recap.A1.silent",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "chain.N",
+      "titleKey": "w10.dw.chain.N",
+      "crosses": [],
+      "question": {
+        "key": "w10.dw.chain.N.q",
+        "linkKeys": {
+          "N3": "w10.dw.chain.N.N3"
+        }
+      },
+      "fact": {
+        "key": "w10.dw.fact.N",
+        "source": "fixture",
+        "sourceKey": "w10.dw.fact.N.source"
+      },
+      "lastDay": 3,
+      "opensBy": null,
+      "links": [
+        {
+          "id": "N3",
+          "day": 3,
+          "at": {
+            "kind": "choice",
+            "id": "m2.nadia"
+          },
+          "absent": {
+            "recapKey": "w10.dw.recap.N3.absent",
+            "personKey": null,
+            "saidKey": null,
+            "nameKey": null
+          },
+          "variants": {
+            "buy": {
+              "recapKey": "w10.dw.recap.N3.buy",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": "w10.dw.name.fille"
+            },
+            "pass": {
+              "recapKey": "w10.dw.recap.N3.pass",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "chain.M",
+      "titleKey": "w10.dw.chain.M",
+      "crosses": [],
+      "question": {
+        "key": "w10.dw.chain.M.q",
+        "linkKeys": {
+          "M4": "w10.dw.chain.M.M4"
+        }
+      },
+      "fact": {
+        "key": "w10.dw.fact.M",
+        "source": "fixture",
+        "sourceKey": "w10.dw.fact.M.source"
+      },
+      "lastDay": 4,
+      "opensBy": null,
+      "links": [
+        {
+          "id": "M4",
+          "day": 4,
+          "at": {
+            "kind": "scene",
+            "id": "j4.a"
+          },
+          "absent": {
+            "recapKey": "w10.dw.recap.M4.absent",
+            "personKey": null,
+            "saidKey": null,
+            "nameKey": null
+          },
+          "variants": {
+            "marlene": {
+              "recapKey": "w10.dw.recap.M4.marlene",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": "w10.dw.name.marlene"
+            },
+            "declare": {
+              "recapKey": "w10.dw.recap.M4.declare",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": "w10.dw.name.blank"
+            },
+            "silent": {
+              "recapKey": "w10.dw.recap.M4.silent",
+              "personKey": null,
+              "saidKey": null,
+              "nameKey": null
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "endOfDemo": null,
+  "speechModes": {
+    "1": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "2": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "3": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "4": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "5": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "6": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    },
+    "7": {
+      "muet": 0,
+      "couloir": [
+        1,
+        10
+      ],
+      "bavard": 11
+    }
+  },
+  "ending": {
+    "outcomes": {
+      "arrestedAudition": {
+        "regimeKey": "w10.dw.end.arrestedAudition.regime",
+        "narratorKeys": {
+          "0": "w10.dw.end.arrestedAudition.n0",
+          "1": "w10.dw.end.arrestedAudition.n1",
+          "2": "w10.dw.end.arrestedAudition.n2"
+        }
+      },
+      "released": {
+        "regimeKey": "w10.dw.end.released.regime",
+        "narratorKeys": {
+          "0": "w10.dw.end.released.n0",
+          "1": "w10.dw.end.released.n1",
+          "2": "w10.dw.end.released.n2"
+        }
+      },
+      "recruited": {
+        "regimeKey": "w10.dw.end.recruited.regime",
+        "narratorKeys": {
+          "0": "w10.dw.end.recruited.n0",
+          "1": "w10.dw.end.recruited.n1",
+          "2": "w10.dw.end.recruited.n2"
+        }
+      }
+    },
+    "arrestedNightKey": "w10.dw.end.arrestedNight",
+    "weekButtonKey": "w10.dw.end.week"
+  }
+}

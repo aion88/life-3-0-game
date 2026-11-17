@@ -1,0 +1,44 @@
+{
+  "status": "content",
+  "sigma100": 100,
+  "sheetMaxLines": 7,
+  "others": {
+    "min": 0,
+    "max": 4
+  },
+  "traceback": {
+    "min": 2,
+    "max": 3
+  },
+  "rightsCount": 8,
+  "contentPoints": [
+    "worldReached",
+    "tegmarkCanon",
+    "rights",
+    "hypotheses",
+    "projection",
+    "extinction",
+    "hiddenGauge",
+    "rareWorlds"
+  ],
+  "noteKeys": [
+    "sources.note.tegmark",
+    "sources.note.dudh",
+    "sources.note.dissent"
+  ],
+  "counts": {
+    "w01": 90945,
+    "w02": 4088,
+    "w03": 108578,
+    "w04": 235696,
+    "w05": 11129,
+    "w06": 79969,
+    "w07": 60,
+    "w08": 5486,
+    "w09": 814,
+    "w10": 158635,
+    "w11": 51095,
+    "w12": 1
+  },
+  "total": 746496
+}

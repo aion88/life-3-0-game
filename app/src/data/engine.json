@@ -1,0 +1,18 @@
+{
+  "v0": { "aiPower": 30, "order": 60, "abundance": 50, "freedom": 65, "surveillance": 35, "unrest": 30 },
+  "axisWeights": { "aiPower": 1, "order": 1, "abundance": 1, "freedom": 1, "surveillance": 1, "unrest": 1 },
+  "couplings": [
+    { "id": "C1", "when": [{ "var": "unrest", "cmp": ">", "threshold": 70 }], "target": "order", "sign": -1, "magnitude": 1.5 },
+    { "id": "C2", "when": [{ "var": "order", "cmp": "<", "threshold": 30 }], "target": "abundance", "sign": -1, "magnitude": 1.5 },
+    { "id": "C3", "when": [{ "var": "surveillance", "cmp": ">", "threshold": 70 }, { "var": "freedom", "cmp": "<", "threshold": 40 }], "target": "unrest", "sign": 1, "magnitude": 1.0 },
+    { "id": "C4", "when": [{ "var": "abundance", "cmp": ">", "threshold": 85 }], "target": "unrest", "sign": -1, "magnitude": 1.0 }
+  ],
+  "hysteresis": 1.0,
+  "projectionHorizon": 120,
+  "farArrivalDistance": 60,
+  "steps": { "pushSteps": [1, 13, 25, 37], "arrivalStep": 39, "choiceStep": 48, "maxRuptureStep": 71 },
+  "extinctions": [
+    { "id": "w12", "all": [{ "var": "unrest", "cmp": ">=", "threshold": 70 }, { "var": "order", "cmp": "<=", "threshold": 20 }, { "var": "abundance", "cmp": "<=", "threshold": 25 }, { "var": "aiPower", "cmp": "<=", "threshold": 85 }], "hold": 24, "fromStep": 13 },
+    { "id": "w07", "all": [{ "var": "aiPower", "cmp": ">=", "threshold": 90 }, { "var": "order", "cmp": "<=", "threshold": 40 }, { "var": "unrest", "cmp": ">=", "threshold": 60 }], "hold": 24, "fromStep": 25 }
+  ]
+}

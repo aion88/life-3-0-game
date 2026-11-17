@@ -1,0 +1,442 @@
+{
+ "days": [
+  {
+   "day": 1,
+   "first": "j1.a",
+   "goalKey": "w10.scene.j1.goal",
+   "right": null
+  },
+  {
+   "day": 2,
+   "first": "j2.a",
+   "goalKey": "w10.scene.j2.goal",
+   "right": null
+  }
+ ],
+ "scenes": [
+  {
+   "id": "j1.a",
+   "day": 1,
+   "stage": "home",
+   "place": "home.spot",
+   "anchorMinute": 420,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j1.a.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "narrative",
+    "promptKey": "w10.scene.j1.a.ask",
+    "options": [
+     {
+      "id": "side",
+      "labelKey": "w10.scene.j1.a.side",
+      "words": 0,
+      "next": "j1.side",
+      "replyKey": null
+     },
+     {
+      "id": "main",
+      "labelKey": "w10.scene.j1.a.main",
+      "words": 5,
+      "next": "j1.b",
+      "replyKey": null
+     }
+    ]
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j1.side",
+   "day": 1,
+   "stage": "landing",
+   "place": "landing.spot",
+   "anchorMinute": 425,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j1.side.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "narrative",
+    "promptKey": "w10.scene.j1.side.ask",
+    "options": [
+     {
+      "id": "x",
+      "labelKey": "w10.scene.j1.side.x",
+      "words": 0,
+      "next": "j1.b",
+      "replyKey": null
+     },
+     {
+      "id": "y",
+      "labelKey": "w10.scene.j1.side.y",
+      "words": 9,
+      "next": "j1.b",
+      "replyKey": null
+     }
+    ]
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j1.b",
+   "day": 1,
+   "stage": "landing",
+   "place": "landing.spot",
+   "anchorMinute": 430,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j1.b.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "narrative",
+    "promptKey": "w10.scene.j1.b.ask",
+    "options": [
+     {
+      "id": "o0",
+      "labelKey": "w10.scene.j1.b.o0",
+      "words": 0,
+      "next": "j1.c",
+      "replyKey": null
+     },
+     {
+      "id": "o5",
+      "labelKey": "w10.scene.j1.b.o5",
+      "words": 5,
+      "next": "j1.c",
+      "replyKey": null
+     },
+     {
+      "id": "o9",
+      "labelKey": "w10.scene.j1.b.o9",
+      "words": 9,
+      "next": "j1.c",
+      "replyKey": null
+     }
+    ]
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j1.c",
+   "day": 1,
+   "stage": "street",
+   "place": "street.spot",
+   "anchorMinute": 440,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j1.c.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "none",
+    "next": "night"
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j2.a",
+   "day": 2,
+   "stage": "home",
+   "place": "home.spot",
+   "anchorMinute": 420,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j2.a.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "narrative",
+    "promptKey": "w10.scene.j2.a.ask",
+    "options": [
+     {
+      "id": "o0",
+      "labelKey": "w10.scene.j2.a.o0",
+      "words": 0,
+      "next": "j2.b",
+      "replyKey": null
+     },
+     {
+      "id": "o5",
+      "labelKey": "w10.scene.j2.a.o5",
+      "words": 5,
+      "next": "j2.b",
+      "replyKey": null
+     },
+     {
+      "id": "o9",
+      "labelKey": "w10.scene.j2.a.o9",
+      "words": 9,
+      "next": "j2.b",
+      "replyKey": null
+     }
+    ]
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j2.b",
+   "day": 2,
+   "stage": "landing",
+   "place": "landing.spot",
+   "anchorMinute": 430,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j2.b.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "narrative",
+    "promptKey": "w10.scene.j2.b.ask",
+    "options": [
+     {
+      "id": "o0",
+      "labelKey": "w10.scene.j2.b.o0",
+      "words": 0,
+      "next": "j2.c",
+      "replyKey": null
+     },
+     {
+      "id": "o5",
+      "labelKey": "w10.scene.j2.b.o5",
+      "words": 5,
+      "next": "j2.c",
+      "replyKey": null
+     },
+     {
+      "id": "o9",
+      "labelKey": "w10.scene.j2.b.o9",
+      "words": 9,
+      "next": "j2.c",
+      "replyKey": null
+     }
+    ]
+   },
+   "transit": [],
+   "waitKind": "none"
+  },
+  {
+   "id": "j2.c",
+   "day": 2,
+   "stage": "street",
+   "place": "street.spot",
+   "anchorMinute": 440,
+   "costMin": 1,
+   "late": null,
+   "actor": null,
+   "beats": [
+    {
+     "voice": "narrator",
+     "key": "w10.scene.j2.c.1",
+     "lit": null
+    }
+   ],
+   "ask": {
+    "kind": "none",
+    "next": "night"
+   },
+   "transit": [],
+   "waitKind": "none"
+  }
+ ],
+ "chains": [
+  {
+   "id": "A",
+   "titleKey": "w10.chain.A.title",
+   "crosses": [
+    "C"
+   ],
+   "question": {
+    "key": "Q11",
+    "linkKeys": {
+     "A": "w10.chain.A.q"
+    }
+   },
+   "fact": {
+    "key": "w10.fact.A",
+    "source": "research/2026-10-28-questionnaire-2026.md",
+    "sourceKey": "w10.fact.A.source"
+   },
+   "links": [
+    {
+     "id": "A1",
+     "day": 1,
+     "at": {
+      "kind": "scene",
+      "id": "j1.b"
+     },
+     "absent": {
+      "recapKey": "w10.recap.A1.absent",
+      "personKey": null,
+      "saidKey": null,
+      "nameKey": null
+     },
+     "variants": {
+      "o0": {
+       "recapKey": "w10.recap.A1.o0",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      },
+      "o5": {
+       "recapKey": "w10.recap.A1.o5",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      },
+      "o9": {
+       "recapKey": "w10.recap.A1.o9",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      }
+     }
+    },
+    {
+     "id": "A2",
+     "day": 2,
+     "at": {
+      "kind": "scene",
+      "id": "j2.a"
+     },
+     "absent": {
+      "recapKey": "w10.recap.A2.absent",
+      "personKey": null,
+      "saidKey": null,
+      "nameKey": null
+     },
+     "variants": {
+      "o0": {
+       "recapKey": "w10.recap.A2.o0",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      },
+      "o5": {
+       "recapKey": "w10.recap.A2.o5",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      },
+      "o9": {
+       "recapKey": "w10.recap.A2.o9",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      }
+     }
+    }
+   ],
+   "lastDay": 2,
+   "opensBy": null
+  },
+  {
+   "id": "C",
+   "titleKey": "w10.chain.C.title",
+   "crosses": [
+    "A"
+   ],
+   "question": {
+    "key": "Q04",
+    "linkKeys": {
+     "C": "w10.chain.C.q"
+    }
+   },
+   "fact": {
+    "key": "w10.fact.C",
+    "source": "research/2026-10-28-questionnaire-2026.md",
+    "sourceKey": "w10.fact.C.source"
+   },
+   "links": [
+    {
+     "id": "C1",
+     "day": 1,
+     "at": {
+      "kind": "scene",
+      "id": "j1.side"
+     },
+     "absent": {
+      "recapKey": "w10.recap.C1.absent",
+      "personKey": null,
+      "saidKey": null,
+      "nameKey": null
+     },
+     "variants": {
+      "x": {
+       "recapKey": "w10.recap.C1.x",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      },
+      "y": {
+       "recapKey": "w10.recap.C1.y",
+       "personKey": null,
+       "saidKey": null,
+       "nameKey": null
+      }
+     }
+    }
+   ],
+   "lastDay": 3,
+   "opensBy": 3
+  }
+ ],
+ "endOfDemo": null,
+ "speechModes": {
+  "1": {
+   "muet": 0,
+   "couloir": [
+    5,
+    10
+   ],
+   "bavard": 15
+  },
+  "2": {
+   "muet": 0,
+   "couloir": [
+    5,
+    10
+   ],
+   "bavard": 15
+  }
+ },
+ "ending": null
+}

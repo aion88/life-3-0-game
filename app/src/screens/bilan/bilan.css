@@ -1,0 +1,127 @@
+/* Bilan, habillage C [plan UI-C T10 ; spec C §3.4]. Voix sobre : rien n'est incliné ni animé, aucun jus. Couleurs, tailles et formes viennent des variables d'`applyTheme`. */
+
+.c-bilan { position: absolute; inset: 0; display: flex; flex-flow: row wrap; align-content: flex-start; gap: var(--bilan-gap) 16px; box-sizing: border-box; padding: var(--bilan-pad-y) var(--bilan-pad-x) calc(var(--bilan-pad-y) + 8px);
+  /* Une fiche qui tient dans un écran de 1280x650 à 1920x1080 [retours Cynthia 2026-11-08] : marges et écarts suivent la fenêtre, le texte garde ses planchers. */
+  --bilan-pad-x: clamp(24px, calc((100vw - 1280px) * 0.0875 + 24px), 80px); --bilan-pad-y: clamp(10px, 2.2vh, 24px); --bilan-gap: clamp(8px, 1.5vh, 16px); overflow: auto; background: var(--c-creme); color: var(--c-encre); font-family: var(--t-body-family); }
+.c-bilan-top { order: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.c-bilan-bar { order: 2; margin-left: auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.c-bilan-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-left: auto; }
+[data-ui="soft-toggle"] { padding: 6px 18px; border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-pill); background: var(--c-creme); color: var(--c-encre); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: 700; line-height: var(--t-body-lh); cursor: pointer; }
+[data-ui="soft-toggle"][aria-pressed="true"] { background: var(--c-encre); border-color: var(--c-encre); color: var(--c-blanc); }
+
+/* Onglets : active encre sur texte blanc, inactifs lavandeClaire sur texte encre */
+[data-ui="page-nav"] { display: flex; flex-wrap: wrap; gap: 6px; }
+[data-ui="page-nav"] button { padding: 10px clamp(10px, 0.75vw, 14px); border: 0; border-radius: var(--s-pill); background: var(--c-lavande-claire); color: var(--c-encre); font-family: var(--t-name-chip-family); font-size: var(--t-name-chip-size); font-weight: var(--t-name-chip-weight); line-height: var(--t-name-chip-lh); cursor: pointer; }
+[data-ui="page-nav"] button[aria-current="page"] { background: var(--c-encre); color: var(--c-blanc); }
+
+/* Actions : Sources et Image en pastilles crème, Rejoue en menthe (`c-action`) */
+.c-bilan-action { border: var(--s-border) solid var(--c-encre); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: 700; line-height: var(--t-body-lh); cursor: pointer; }
+.c-bilan-share-names { display: inline-flex; align-items: center; gap: 8px; font-size: var(--t-body-size); }
+
+/* Pages */
+.c-bilan-page { order: 3; flex: 1 0 100%; min-width: 0; display: flex; flex-direction: column; gap: var(--bilan-gap); }   /* nav et actions sur une rangée quand elles tiennent, la page dessous */
+.c-bilan-head { margin: 0; display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap; }
+.c-bilan-title { margin: 0; font-family: var(--t-screen-title-family); font-size: var(--t-screen-title-size); font-weight: var(--t-screen-title-weight); line-height: var(--t-screen-title-lh); color: var(--c-encre); }
+.c-bilan-page[data-page="sheet"] .c-bilan-title { font-family: var(--t-bilan-title-family); font-size: min(var(--t-bilan-title-size), 8vh); font-weight: var(--t-bilan-title-weight); line-height: var(--t-bilan-title-lh); }
+.c-bilan-label { margin: 0; color: var(--c-encre-douce); font-size: var(--t-body-size); line-height: var(--t-body-lh); }
+.c-bilan-page > ul { margin: 0; padding-left: 1.2em; font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); }
+.c-bilan-page > p { margin: 0; font-size: var(--t-body-size); line-height: var(--t-body-lh); }
+
+/* Fiche : colonne de gauche (monde, fin, message), colonne de droite (jours, kit) */
+/* Fiche : une seule grille pour l'en-tête, les cartes de gauche, les jours et le kit (`display: contents` sur les colonnes de `sheetC.ts`).
+   Large (maquette c/bilan.png) : titre, puis monde et fin à gauche, jours et kit à droite. Sous 1750 px, sept cartes de kit d'au moins 163 px
+   (le mot « d'enregistrement » à 18 px, 147 px mesurés, plus les marges) ne tiennent plus à côté de la gauche : le kit passe sous les deux
+   colonnes, toujours sur une rangée, et le message du relevé se range à droite de la fin [retours Cynthia 2026-11-08 : tout dans un écran]. */
+.c-bilan-page[data-page="sheet"] { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 21fr); column-gap: clamp(16px, 1.7vw, 32px); row-gap: var(--bilan-gap); align-items: start;
+  grid-template-areas: "head head" "world dh" "world days" "fate kh" "w10 kit"; grid-template-rows: auto auto 1fr auto 1fr; }
+.c-bilan-page[data-page="sheet"] > .c-bilan-head { grid-area: head; }
+.c-bilan-page[data-page="sheet"] .c-bilan-title { white-space: nowrap; }
+/* Sur la fiche, le libellé redit l'onglet actif (« Fiche de vie ») : la maquette n'en montre pas, il reste lu par les lecteurs d'écran. */
+.c-bilan-page[data-page="sheet"] .c-bilan-label { position: absolute; width: 1px; height: 1px; clip-path: inset(50%); white-space: nowrap; }
+.c-bilan-sheet, .c-bilan-left, .c-bilan-right { display: contents; }
+.c-world { grid-area: world; }
+.c-fate { grid-area: fate; }
+.c-w10-block { grid-area: w10; }
+.c-sec--days { grid-area: dh; align-self: end; }
+.c-days { grid-area: days; }
+.c-sec--kit { grid-area: kh; align-self: end; }
+.c-kit { grid-area: kit; }
+@media (width <= 1750px) {
+  .c-bilan-page[data-page="sheet"] { grid-template-columns: minmax(300px, 8fr) minmax(0, 20fr); grid-template-areas: "head dh" "world days" "fate w10" "kh kh" "kit kit"; grid-template-rows: auto auto auto auto auto; }
+  .c-w10-block { align-self: center; }
+}
+.c-world { container-type: inline-size; --card-pad: clamp(14px, 2.2vh, 24px) clamp(20px, 1.7vw, 32px); --world-glyph-em: 0.70; /* chasse moyenne max par lettre d'un mot des 12 noms de monde (fr et en), Montserrat 600 : 0,675 em [mesuré 2026-11-02 sur le paquet installé, sans crénage], marge 4 % */ background: var(--c-ciel); color: var(--c-encre); border: 0; border-radius: var(--s-card-main); box-shadow: 0 var(--s-shadow-offset-card) 0 var(--sh-ciel); padding: var(--card-pad); display: flex; flex-direction: column; gap: clamp(2px, 0.7vh, 8px); }
+.c-world p { margin: 0; }
+.c-world-eyebrow { font-family: var(--t-name-chip-family); font-size: var(--t-name-chip-size); font-weight: var(--t-name-chip-weight); line-height: var(--t-name-chip-lh); }
+.c-world-name { font-family: var(--t-world-name-family); font-size: clamp(var(--s-world-name-min), calc(100cqw / (var(--word-chars, 1) * var(--world-glyph-em))), var(--t-world-name-size)); font-weight: var(--t-world-name-weight); line-height: var(--t-world-name-lh); overflow-wrap: normal; hyphens: none; }   /* deux lignes au plus, coupées entre les mots, jamais dans un mot [spec §3.4] */
+.c-world-clear { font-family: var(--t-world-clear-family); font-size: var(--t-world-clear-size); font-weight: var(--t-world-clear-weight); line-height: var(--t-world-clear-lh); }
+.c-world-redirect { font-family: var(--t-redirect-line-family); font-size: var(--t-redirect-line-size); font-weight: var(--t-redirect-line-weight); line-height: var(--t-redirect-line-lh); }
+
+.c-fate { border: 0; border-radius: var(--s-card-main); box-shadow: 0 var(--s-shadow-offset-card) 0 var(--sh-encre); padding: clamp(14px, 2.2vh, 24px) clamp(20px, 1.7vw, 32px); font-family: var(--t-fate-family); font-size: var(--t-fate-size); font-weight: var(--t-fate-weight); line-height: var(--t-fate-lh); }
+.c-fate-eyebrow { margin: 0 0 10px; color: var(--c-soleil); font-family: var(--t-name-chip-family); font-size: var(--t-name-chip-size); font-weight: var(--t-name-chip-weight); line-height: var(--t-name-chip-lh); }
+.c-fate-lines { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+/* Message du dernier relevé : une ligne de texte du bloc w10, encre sur crème, l'Œil de 24 px devant. Ni sceau, ni autocollant. */
+.c-w10-block { background: var(--c-creme); color: var(--c-encre); }
+.c-message { margin: 0; display: flex; align-items: center; gap: 12px; font-family: var(--t-message-family); font-size: var(--t-message-size); font-weight: var(--t-message-weight); line-height: var(--t-message-lh); }
+
+.c-sec { margin: 0; font-family: var(--t-hint-family); font-size: var(--t-hint-size); font-weight: var(--t-hint-weight); line-height: var(--t-hint-lh); }
+
+/* Jours : pastille ronde à cœur crème, teinte de calendrier du jour */
+.c-days { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; }   /* sept jours sur une rangée, toujours (maquette) ; une fin anticipée laisse les cases suivantes vides */
+.c-day { display: flex; flex-direction: column; align-items: center; gap: clamp(4px, 1.1vh, 12px); text-align: center; min-width: 0; font-family: var(--t-day-label-family); font-size: var(--t-day-label-size); font-weight: var(--t-day-label-weight); line-height: var(--t-day-label-lh); }
+.c-day-pill { display: grid; place-items: center; box-sizing: border-box; width: min(130px, 11vh); max-width: 100%; aspect-ratio: 1; border-radius: var(--s-pill); background: var(--c-ciel); border: calc(var(--s-border) * 2) solid var(--c-blanc); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-ciel); }
+/* Teintes de calendrier (ruling GD 1) : fixées par la place du jour ou de la carte, jamais par ce qui s'y est passé */
+.c-day-pill[data-tone="menthe"] { background: var(--c-menthe); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-menthe); }
+.c-day-pill[data-tone="soleil"] { background: var(--c-soleil); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-soleil); }
+.c-day-pill[data-tone="rose"] { background: var(--c-rose); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-rose); }
+.c-day-pill[data-tone="ciel"] { background: var(--c-ciel); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-ciel); }
+.c-day-pill__core { display: block; width: 36%; aspect-ratio: 1; border-radius: var(--s-pill); background: var(--c-creme); }
+.c-day-date, .c-day-line { overflow-wrap: normal; hyphens: manual; }
+
+/* Kit : cartes blanches identiques, la hauteur suit le texte */
+.c-kit { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px; align-items: stretch; }   /* sept cartes sur une rangée ; la grille de la fiche leur garde au moins 163 px, le plus long mot d'un libellé (18 px) y tient entier */
+.c-kit-card { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: clamp(6px, 1.1vh, 12px); box-sizing: border-box; height: auto; min-width: 0; padding: clamp(8px, 1.7vh, 18px) 6px; background: var(--c-blanc); color: var(--c-encre); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-card-secondary); }
+.c-kit-icon { display: block; flex: none; width: min(64px, 5vh); height: min(64px, 5vh); border-radius: var(--s-card-secondary); background: var(--c-ciel); }
+.c-kit-icon[data-tone="menthe"] { background: var(--c-menthe); }
+.c-kit-icon[data-tone="soleil"] { background: var(--c-soleil); }
+.c-kit-icon[data-tone="rose"] { background: var(--c-rose); }
+.c-kit-icon[data-tone="ciel"] { background: var(--c-ciel); }
+.c-kit-label { text-align: center; overflow-wrap: normal; hyphens: manual; max-width: 100%; font-family: var(--t-kit-label-family); font-size: var(--t-kit-label-size); font-weight: var(--t-kit-label-weight); line-height: var(--t-kit-label-lh); }
+.c-kit-state { font-family: var(--t-kit-state-family); font-size: var(--t-kit-state-size); font-weight: var(--t-kit-state-weight); line-height: var(--t-kit-state-lh); }
+
+/* Chaînes de la semaine [rue guidée J3-J7, T7] : une carte blanche par chaîne, ses maillons datés, la question, le fait et sa source ; la ligne d'arrestation en tête */
+.c-bilan-chains { display: flex; flex-direction: column; gap: 16px; font-size: var(--t-body-size); line-height: var(--t-body-lh); }
+.c-bilan-chains p { margin: 0; }
+.c-bilan-chains-arrested { font-family: var(--t-fate-family); font-size: var(--t-fate-size); font-weight: var(--t-fate-weight); line-height: var(--t-fate-lh); }
+.c-bilan-chain { display: flex; flex-direction: column; gap: 8px; padding: 18px 24px; background: var(--c-blanc); color: var(--c-encre); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-card-secondary); }
+.c-bilan-chain-title { margin: 0; font-family: var(--t-name-chip-family); font-size: var(--t-name-chip-size); font-weight: var(--t-name-chip-weight); line-height: var(--t-name-chip-lh); }
+.c-bilan-chain-links { margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 8px; }
+.c-bilan-chain-day, .c-bilan-chain-source { color: var(--c-encre-douce); }
+
+/* Fenêtres basses (portable, barre du navigateur comprise) : la fiche rétrécit ses formes, jamais son texte (planchers de la spec). */
+@media (height <= 720px) {
+  .c-bilan-page[data-page="sheet"] .c-bilan-title { font-size: min(var(--t-bilan-title-size), 7vh); }
+  .c-day-pill { width: min(130px, 9vh); }
+  .c-kit-icon { width: 4vh; height: 4vh; }
+  .c-kit-card { padding-block: 8px; gap: 4px; }
+  .c-world, .c-fate { padding-block: 12px; }
+  .c-bilan { padding-bottom: 6px; }
+}
+/* Fenêtres étroites : onglets, bascule et actions restent sur une rangée jusqu'à 1280 px. */
+@media (width <= 1400px) {
+  [data-ui="page-nav"] { gap: 4px; }
+  [data-ui="page-nav"] button { padding: 8px 9px; }
+  [data-ui="soft-toggle"] { padding: 4px 12px; }
+  .c-bilan-actions { gap: 8px; }
+  .c-bilan-bar { gap: 8px; }
+}
+/* Sous 1240 px, sept colonnes ne laissent plus au plus long mot d'un jour ou d'un libellé son jeu de 4 px : jours et kit repassent en rangées de 11 rem, la page défile. */
+@media (width < 1240px) {
+  .c-days, .c-kit { grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); }
+}
+
+/* The original long-form sheet follows the same palette as the short journeys. */
+.c-bilan { --c-creme:var(--photo-3); --c-encre:var(--photo-1); --c-encre-douce:var(--photo-2); --c-blanc:var(--photo-4); --c-ciel:var(--photo-5); --c-menthe:var(--photo-6); --c-rose:var(--photo-7); --c-soleil:var(--photo-8); --c-lavande:var(--photo-5); --c-lavande-claire:var(--photo-9); --c-lavande-trait:var(--photo-10); }
+.c-bilan .c-world { background:var(--photo-15); color:var(--photo-16); }
+.c-bilan .c-fate { background:var(--photo-18); color:var(--photo-16); }

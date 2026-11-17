@@ -1,0 +1,2844 @@
+{
+  "layout": {
+    "src": "bible w10 §5.0 ; calculé à la main : 44 + 48 = 92",
+    "halfWidthM": {
+      "v": 7,
+      "src": "bible w10 §5.0",
+      "status": "sourced"
+    },
+    "zMax": {
+      "v": 44,
+      "src": "bible w10 §5.0",
+      "status": "sourced"
+    },
+    "zMin": {
+      "v": -48,
+      "src": "bible w10 §5.0",
+      "status": "sourced"
+    },
+    "places": {
+      "logement": {
+        "z": {
+          "v": 38,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        },
+        "zEnd": {
+          "v": 28,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "banc": {
+        "z": {
+          "v": 34,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "biensAgrees": {
+        "z": {
+          "v": 30,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        },
+        "zEnd": {
+          "v": 22,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "pylone": {
+        "z": {
+          "v": 20,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "cabine": {
+        "z": {
+          "v": 8,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "etal": {
+        "z": {
+          "v": -2,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "voitureGrise": {
+        "z": {
+          "v": -6,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "registre": {
+        "z": {
+          "v": -22,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        },
+        "zEnd": {
+          "v": -34,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "portail": {
+        "z": {
+          "v": -44,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      },
+      "facadeCoffre": {
+        "z": {
+          "v": -48,
+          "src": "bible w10 §5.0",
+          "status": "sourced"
+        }
+      }
+    }
+  },
+  "nacelles": [
+    {
+      "id": "n36",
+      "side": {
+        "v": "east",
+        "src": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "x": {
+        "v": 6.7,
+        "src": "calculé à la main : façade à 7 m - boîtier de 0,3 m = 6,7 ; signe suit `side`",
+        "status": "sourced"
+      },
+      "restAim": {
+        "v": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "src": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    {
+      "id": "n16",
+      "side": {
+        "v": "west",
+        "src": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "x": {
+        "v": -6.7,
+        "src": "calculé à la main : façade à 7 m - boîtier de 0,3 m = 6,7 ; signe suit `side`",
+        "status": "sourced"
+      },
+      "restAim": {
+        "v": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "src": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    {
+      "id": "n4",
+      "side": {
+        "v": "east",
+        "src": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "x": {
+        "v": 6.7,
+        "src": "calculé à la main : façade à 7 m - boîtier de 0,3 m = 6,7 ; signe suit `side`",
+        "status": "sourced"
+      },
+      "restAim": {
+        "v": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "src": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    {
+      "id": "n-2",
+      "side": {
+        "v": "west",
+        "src": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "x": {
+        "v": -6.7,
+        "src": "calculé à la main : façade à 7 m - boîtier de 0,3 m = 6,7 ; signe suit `side`",
+        "status": "sourced"
+      },
+      "restAim": {
+        "v": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "src": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    {
+      "id": "n-20",
+      "side": {
+        "v": "east",
+        "src": "alternance est/ouest ; la bible w10 §5.0 donne z et « façades », pas le côté",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "x": {
+        "v": 6.7,
+        "src": "calculé à la main : façade à 7 m - boîtier de 0,3 m = 6,7 ; signe suit `side`",
+        "status": "sourced"
+      },
+      "restAim": {
+        "v": {
+          "x": -1,
+          "y": 0,
+          "z": 0
+        },
+        "src": "axe de repos : horizontal, vers la façade d'en face ; aucune source ne donne l'axe",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    }
+  ],
+  "lamps": {
+    "mastM": {
+      "v": 7,
+      "src": "bible w10 §5.0 §5.1 n°1",
+      "status": "sourced"
+    },
+    "spacingM": {
+      "v": 18,
+      "src": "bible w10 §5.0 §5.1 n°1",
+      "status": "sourced"
+    },
+    "perSide": {
+      "v": 6,
+      "src": "bible w10 §5.0 §5.1 n°1 ; calculé à la main : 92 / 18 = 5,1 donc 6 positions de 44 à -46",
+      "status": "sourced"
+    },
+    "light": {
+      "intensityCd": {
+        "v": 12.0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité d'une source réelle en cône, en candelas (Three.js r186, sans facteur pi) ; l'art-director proposait 220 cd et d'abaisser par pas de 20 % si le sol sous la tête dépasse Y' 0,45 : mesuré sur la vue verticale de la flaque (webgpu-mac), 220 cd donnait 0,90, 60 cd 0,65 (cône seul), 12 cd avec la flaque à 0,10 donne 0,40 à 0,43 sous la tête, dans la cible 0,35 à 0,45 de la bible §D.1 ; l'exposition de nuit est forte, d'où l'écart avec le calcul en lux",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "distanceM": {
+        "v": 16,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : portée finie de la source réelle, sous l'écartement des lampadaires (18 m) : une source qui entre dans le lot des plus proches de la vue n'apparaît pas d'un coup",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "decay": {
+        "v": 2,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : décroissance physique en 1 / d² (art bible §D.1 : la lumière d'un pratique tombe avec la distance)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "poolRadiusM": {
+        "v": 5.5,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : accordée au cône (5,7 m à 40 deg), un peu en dessous pour que la vraie lumière déborde",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "poolOpacity": {
+        "v": 0.1,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : opacité de pleine nuit de la flaque additive ; 0,10 (0,35 donnait, avec le cône, un sol sous la tête à Y' 0,90) ; mesuré seule à 0,15 : Y' 0,32 sous la tête",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "realCount": {
+        "v": 4,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : nombre de sources réelles (une paire de lampadaires de chaque côté près de la vue) : budget de lumières du fragment, les autres lampadaires n'ont que la flaque",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "angleDeg": {
+        "v": 36,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : demi-angle du cône. Valeur de l'art-director : 40 ; recalculée sur la géométrie réelle (tête à 6,75 m, façade à 1,6 m de la tête et non 2,7 m) : avec 10 deg d'inclinaison vers l'axe, le bord extérieur du cône est à 26 deg et le mur n'est éclairé que sous 3,3 m (rez-de-chaussée), au lieu de 4,0 m avec 40 deg",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "penumbra": {
+        "v": 0.5,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : bord doux de flaque, pas de disque net",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "tiltDeg": {
+        "v": 10,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : inclinaison du cône vers l'axe de la chaussée : la flaque déborde sur la chaussée plutôt que sur le mur",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "glowRadiusM": {
+        "v": 0.9,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : rayon du halo additif face caméra de chaque tête : rend la source lisible même petite ou au bord du cadre (le bloom reste réservé aux écrans, test T13)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "glowOpacity": {
+        "v": 0.6,
+        "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : opacité du halo en pleine nuit, multipliée par lampLevel (0,36 à l'heure bleue)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "facades": {
+    "floorsMin": {
+      "v": 4,
+      "src": "bible w10 §5.0 §5.1 n°2",
+      "status": "sourced"
+    },
+    "floorsMax": {
+      "v": 6,
+      "src": "bible w10 §5.0 §5.1 n°2",
+      "status": "sourced"
+    },
+    "widthMinM": {
+      "v": 7,
+      "src": "bible w10 §5.0 §5.1 n°2",
+      "status": "sourced"
+    },
+    "widthMaxM": {
+      "v": 19,
+      "src": "bible w10 §5.0 §5.1 n°2",
+      "status": "sourced"
+    },
+    "litOneIn": {
+      "v": 3,
+      "src": "bible w10 §5.0 §5.1 n°2 : une fenêtre sur trois allumée",
+      "status": "sourced"
+    }
+  },
+  "checkpoint": {
+    "booth": {
+      "widthM": {
+        "v": 2.4,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "depthM": {
+        "v": 2.2,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "heightM": {
+        "v": 2.7,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "slitWidthM": {
+        "v": 1.5,
+        "src": "bible w10 §5.2 a : fente de guichet 1,5 par 0,3 m",
+        "status": "sourced"
+      },
+      "slitHeightM": {
+        "v": 0.3,
+        "src": "bible w10 §5.2 a",
+        "status": "sourced"
+      },
+      "slitCenterM": {
+        "v": 1.8,
+        "src": "bible w10 §5.2 a : centre à 1,8 m de haut",
+        "status": "sourced"
+      },
+      "slitLitGain": {
+        "v": 2.5,
+        "src": "GDD sequences-jouees §0.1 : « la fente s'allume plein » ; multiple du gain de la fente au repos, à régler sur capture",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "barrierM": {
+      "v": 6.4,
+      "src": "bible w10 §5.0 §5.2 a à c",
+      "status": "sourced"
+    },
+    "wall": {
+      "src": "bible w10 §5.0 §5.2 a à c",
+      "cols": {
+        "v": 4,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "rows": {
+        "v": 4,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "tvWidthM": {
+        "v": 1.05,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "tvHeightM": {
+        "v": 0.8,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "plinthM": {
+        "v": 0.3,
+        "src": "bible w10 §5.0 §5.2 a à c",
+        "status": "sourced"
+      },
+      "orange": {
+        "row": 3,
+        "col": 2
+      },
+      "tvDepthM": {
+        "v": 0.75,
+        "src": "bible w10 §5.2 c : 0,75 m de profondeur",
+        "status": "sourced"
+      },
+      "frameM": {
+        "v": 0.085,
+        "src": "bible w10 §5.2 c : cadre de 0,085 m",
+        "status": "sourced"
+      },
+      "recessM": {
+        "v": 0.12,
+        "src": "bible w10 §5.2 c : écran en retrait de 0,12 m",
+        "status": "sourced"
+      },
+      "tints": {
+        "cyan": {
+          "v": {
+            "h": 202.8,
+            "s": 1,
+            "l": 0.5
+          },
+          "src": "spike src/main.ts, recalculé depuis (0 / 0,62 / 1) de la bible w10 §10.1",
+          "status": "sourced"
+        },
+        "magenta": {
+          "v": {
+            "h": 328.4,
+            "s": 1,
+            "l": 0.525
+          },
+          "src": "spike src/main.ts, recalculé depuis (1 / 0,05 / 0,55) de la bible w10 §10.1",
+          "status": "sourced"
+        },
+        "paleBlue": {
+          "v": {
+            "h": 223.6,
+            "s": 1,
+            "l": 0.69
+          },
+          "src": "spike src/main.ts, recalculé depuis (0,38 / 0,55 / 1) de la bible w10 §10.1",
+          "status": "sourced"
+        },
+        "orange": {
+          "v": {
+            "h": 27.7,
+            "s": 0.684,
+            "l": 0.525
+          },
+          "src": "spike src/main.ts, recalculé depuis (0,85 / 0,5 / 0,2) de la bible w10 §5.2 a",
+          "status": "sourced"
+        }
+      },
+      "grid": {
+        "v": [
+          "cpcm",
+          "pcmc",
+          "cpcp",
+          "mcpc"
+        ],
+        "src": "c cyan, p bleu pâle, m magenta, de la rangée 1 à 4 ; la bible impose un seul orange (rangée 3, colonne 2, repris de `orange`) et le magenta sous 3 % de l'image : trois magentas sur seize",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "look": {
+        "glow": {
+          "v": 1.6,
+          "src": "gain d'émission des écrans ; réglé sur capture (T13) contre le plafond de 6 % de l'image (T2)",
+          "status": "supposed",
+          "owner": "technical-artist"
+        },
+        "scanlinePitchPx": {
+          "v": 3,
+          "src": "pas des lignes de balayage en pixels d'écran (nœud TSL, jamais une texture)",
+          "status": "supposed",
+          "owner": "technical-artist"
+        },
+        "scanlineDepth": {
+          "v": 0.35,
+          "src": "profondeur d'assombrissement d'une ligne de balayage, de 0 à 1",
+          "status": "supposed",
+          "owner": "technical-artist"
+        }
+      },
+      "face": {
+        "row": 2,
+        "col": 3
+      }
+    },
+    "boothX": {
+      "v": 3.3,
+      "src": "x du centre de la guérite : la bible place le mur contre sa face gauche mais ne donne pas x ; 3,3 centre le mur (4,2 m) sur x = 0, le cliquable du mur",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "barrierPostX": {
+      "v": 6,
+      "src": "x du poteau de la barrière, côté trottoir est ; le bras de 6,4 m couvre la guérite et le mur",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "barrier": {
+      "postM": {
+        "v": 0.22,
+        "src": "bible w10 §5.2 b : poteau de 0,22 par 0,22 m",
+        "status": "sourced"
+      },
+      "postHeightM": {
+        "v": 1.2,
+        "src": "bible w10 §5.2 b",
+        "status": "sourced"
+      },
+      "armThicknessM": {
+        "v": 0.12,
+        "src": "bible w10 §5.2 b : bras de 6,4 m par 0,12 m",
+        "status": "sourced"
+      },
+      "lampM": {
+        "v": 0.2,
+        "src": "bible w10 §5.2 b : lampe sphérique de 0,2 m",
+        "status": "sourced"
+      },
+      "postLampM": {
+        "v": 0.14,
+        "src": "bible w10 §5.2 b : une lampe de 0,14 m sur le poteau",
+        "status": "sourced"
+      },
+      "bulbRatio": {
+        "v": 0.35,
+        "src": "rapport du diamètre de la source rouge à celui du boîtier sombre de la lampe de barrière (0,2 m et 0,14 m, bible §5.2 b) : une sphère rouge entière de 0,2 m, non éclairée, devenait un disque pêche plat devant le mur d'écrans (bloom) ; un boîtier noir mat et une petite source rouge sur sa face tournée vers la rue ; choisi, réglé sur capture (TV-02a-render, 2026-11-02)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "liftDeg": {
+        "v": 80,
+        "src": "GDD §0.1 : le bras se lève ; 80 degrés, presque à la verticale, pour dégager le passage de 0,8 m à l'est de la guérite ; à régler sur capture",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "liftMs": {
+        "v": 700,
+        "src": "durée de levée ou de descente du bras, à régler sur capture",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "coffre": {
+    "widthM": {
+      "v": 64,
+      "src": "bible w10 §5.0 §5.3",
+      "status": "sourced"
+    },
+    "depthM": {
+      "v": 18,
+      "src": "bible w10 §5.0 §5.3",
+      "status": "sourced"
+    },
+    "benchCount": {
+      "v": 3,
+      "src": "bible w10 §5.0 §5.3",
+      "status": "sourced"
+    },
+    "benchLengthM": {
+      "v": 12,
+      "src": "bible w10 §5.0 §5.3",
+      "status": "sourced"
+    },
+    "chimneyM": {
+      "v": 30,
+      "src": "bible w10 §5.0 §5.3",
+      "status": "sourced"
+    },
+    "heightM": {
+      "v": 18,
+      "src": "bible w10 §5.3 : haut de 18 m",
+      "status": "sourced"
+    },
+    "enceinteM": {
+      "v": 3.5,
+      "src": "bible w10 §5.3 : mur d'enceinte de 3,5 m",
+      "status": "sourced"
+    },
+    "rampWidthM": {
+      "v": 6,
+      "src": "bible w10 §5.3 : rampe de 6 m de large",
+      "status": "sourced"
+    },
+    "portalWidthM": {
+      "v": 5,
+      "src": "bible w10 §5.3 : portail de 5 par 4,5 m",
+      "status": "sourced"
+    },
+    "portalHeightM": {
+      "v": 4.5,
+      "src": "bible w10 §5.3",
+      "status": "sourced"
+    },
+    "projectorEveryM": {
+      "v": 10,
+      "src": "bible w10 §5.3 : projecteurs LED tous les 10 m",
+      "status": "sourced"
+    },
+    "chimneyRadiusM": {
+      "v": 0.8,
+      "src": "rayon de la cheminée ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "benchHeightM": {
+      "v": 2,
+      "src": "hauteur d'un banc de ventilation ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "benchDepthM": {
+      "v": 6,
+      "src": "profondeur d'un banc de ventilation ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    }
+  },
+  "crowd": {
+    "movingMin": {
+      "v": 12,
+      "src": "art bible §C.3 w10",
+      "status": "sourced"
+    },
+    "movingMax": {
+      "v": 16,
+      "src": "art bible §C.3 w10",
+      "status": "sourced"
+    },
+    "moving": {
+      "v": 14,
+      "src": "effectif choisi dans la plage 12 à 16",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "paceMin": {
+      "v": 0.4,
+      "src": "allure minimale d'un passant, part de la vitesse de marche de la joueuse (walk.speedMps) ; aucune source, valeur choisie (plan 02a T7)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "paceMax": {
+      "v": 0.8,
+      "src": "allure maximale d'un passant, part de la vitesse de marche de la joueuse (walk.speedMps) ; aucune source, valeur choisie (plan 02a T7)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "queueMin": {
+      "v": 10,
+      "src": "bible w10 §5.0 §5.1 n°5",
+      "status": "sourced"
+    },
+    "queueMax": {
+      "v": 15,
+      "src": "bible w10 §5.0 §5.1 n°5",
+      "status": "sourced"
+    },
+    "queue": {
+      "v": 12,
+      "src": "effectif choisi dans la plage 10 à 15",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "queueSpacingM": {
+      "v": 0.8,
+      "src": "bible w10 §5.0 §5.1 n°5",
+      "status": "sourced"
+    },
+    "queueMinGapM": {
+      "v": 0.6,
+      "src": "distance minimale entre deux corps de la file et du joueur (TV-02a-T13-fix : le joueur entrait sur un emplacement occupé et un voisin le traversait) ; 0,6 m = deux demi-épaules de 0,25 m plus 0,1 m d'air, sous le pas de 0,8 m de la bible pour ne jamais déplacer la file seule",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "queueXM": {
+      "v": 0.75,
+      "src": "axe de la file, décalé à l'est de l'axe de la rue (x = 0) : le trajet droit du joueur vers le mur du checkpoint passe à 0,75 m des voisins, au-dessus de queueMinGapM (0,6 m), et ne les traverse plus ; la file reste dans le couloir (demi-largeur 1,0 m, corps de 0,25 m) ; choisi, aucune source",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "queueHeadZ": {
+      "v": -10.1,
+      "src": "validé par ld-walkspeed le 2026-11-02 : face avant du mur de télés (checkpoint.z -12 + guérite 2,2 / 2 = -10,9) plus un pas de 0,8 m (queueSpacingM) ; avant, la tête était à -11,2, DANS le mur (TV-02a-T13-fix)",
+      "status": "sourced"
+    }
+  },
+  "light": {
+    "src": "art bible §H.4 et §B.2bis (heure fixe par monde, soleil immobile) ; tranché art-director ; team-lead 2026-11-01",
+    "steps": [
+      {
+        "fromMinute": 420,
+        "state": "heureBleue"
+      }
+    ],
+    "blendMs": {
+      "v": 2000,
+      "src": "durée du fondu entre deux états de lumière, valeur de départ du plan 02a",
+      "status": "supposed",
+      "owner": "art-director"
+    }
+  },
+  "lightRigs": {
+    "jour": {
+      "sky": {
+        "v": "#D5E0EA",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : teinte du ciel de l'état",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "horizon": {
+        "v": "#ABAFB2",
+        "src": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "ground": {
+        "v": "#7C8590",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "hemiIntensity": {
+        "v": 2.4,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunColor": {
+        "v": "#FFF0D8",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunIntensity": {
+        "v": 2.6,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunElevationDeg": {
+        "v": 32,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunAzimuthDeg": {
+        "v": 60,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "lampLevel": {
+        "v": 0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; lampadaires éteints en plein jour, art bible §D.1 : jour = soleil de 25 à 35 degrés",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyZenith": {
+        "v": "#5A759A",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #6F93C4 ; mesuré #6E94C4 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyMid": {
+        "v": "#8597AB",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #A9C0DA ; mesuré #A9C0DA (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyHorizon": {
+        "v": "#ABAFB2",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #D9DEE2 ; mesuré #D9DEE2 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHalo": {
+        "v": "#F1E8DA",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : halo sans disque, Y' 0,91, sous le blanc maximal 0,92 (§B.1)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHaloRadiusDeg": {
+        "v": 30,
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : rayon angulaire du halo",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "heureBleue": {
+      "sky": {
+        "v": "#586573",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : ciel d'aube gris acier #586573, art bible §B.2bis",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "horizon": {
+        "v": "#545A61",
+        "src": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "ground": {
+        "v": "#2B3138",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "hemiIntensity": {
+        "v": 9.0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186) ; 7 → 9 le 2026-11-03 (plafond : le jour reste plus lumineux, test du rig) (TV-02a-render) : « il fait trop noir » (playtest de Cynthia), murs et personnages se lisent ; bleu/orange gardé",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunColor": {
+        "v": "#9DB2D6",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunIntensity": {
+        "v": 0.8,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunElevationDeg": {
+        "v": 8,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunAzimuthDeg": {
+        "v": 60,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "lampLevel": {
+        "v": 0.6,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; à l'heure bleue les pratiques sont allumés sur un ciel 4:1 (art bible §D.1), moins fort qu'en pleine nuit",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyZenith": {
+        "v": "#394049",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #404B58 ; mesuré #404A58 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyMid": {
+        "v": "#474F58",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #586573 ; mesuré #576471 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyHorizon": {
+        "v": "#545A61",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #6E7781 ; mesuré #6D7680 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHalo": {
+        "v": "#858079",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : lueur d'aube neutre-chaude, aucun orange",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHaloRadiusDeg": {
+        "v": 40,
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : lueur large et basse",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "nuit": {
+      "sky": {
+        "v": "#4A5D80",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : teinte du ciel de l'état",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "horizon": {
+        "v": "#1A1F2A",
+        "src": "ciel-jour-spec §7 : brouillard et repli = skyHorizon (valeur d'entrée identique)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "ground": {
+        "v": "#2B3138",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : rebond du sol : ton de l'asphalte mouillé de la palette",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "hemiIntensity": {
+        "v": 5,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité hémisphérique ; irradiance = couleur x intensité, l'albédo la divise par pi (BRDF Lambert de Three.js r186)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunColor": {
+        "v": "#6F86B0",
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : couleur de la clé de l'état, art bible §D.1",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunIntensity": {
+        "v": 0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : intensité de la clé directionnelle ; 0 = pas de soleil (art bible §D.1 : pas d'ombre nette à l'heure bleue)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunElevationDeg": {
+        "v": -10,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : hauteur du soleil, art bible §D.1 : jour 25 à 35 degrés, heure bleue -4 à -7 (lumière de ciel rasante), nuit sous -7",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunAzimuthDeg": {
+        "v": 60,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : azimut depuis +z vers +x ; la rue court le long de z, la clé éclaire de côté une façade et les visages en 3/4",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "lampLevel": {
+        "v": 1,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : allumage des lampadaires de 0 à 1 ; pleine nuit : sodium 2000 K éclaire la rue (art bible §D.1)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyZenith": {
+        "v": "#0F161E",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #0B0F17 ; mesuré #0B0F17 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-zenith à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyMid": {
+        "v": "#151B25",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #0F1520 ; mesuré #0F1420 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-milieu à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "skyHorizon": {
+        "v": "#1A1F2A",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu. Valeur d'ENTRÉE (avant exposition, tone map et LUT) réglée sur capture pour atteindre la cible de sortie #131926 ; mesuré #131926 (écart au plus 2 niveaux), webgpu-mac, 48 px au centre de la visée ciel-horizon à 60 m de haut",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHalo": {
+        "v": "#131926",
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : pas de halo de nuit",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "sunHaloRadiusDeg": {
+        "v": 0,
+        "src": "ciel-jour-spec §7 (art-director, 2026-11-02), V2 Retenu : pas de lune ni d'étoiles",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "grade": {
+    "states": {
+      "jour": {
+        "grain": {
+          "v": 2.5,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "vignetteIL": {
+          "v": -0.3,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "blackPoint": {
+          "v": 0.03,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "exposure": {
+          "v": 1.8,
+          "src": "spike v3, validé par Cynthia le 2026-10-28",
+          "status": "sourced"
+        },
+        "toneMap": {
+          "v": "neutral",
+          "src": "spike v3, validé par Cynthia le 2026-10-28",
+          "status": "sourced"
+        }
+      },
+      "heureBleue": {
+        "grain": {
+          "v": 3.5,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "vignetteIL": {
+          "v": -0.5,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "blackPoint": {
+          "v": 0.02,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "exposure": {
+          "v": 2.8,
+          "src": "exposition de l'heure bleue, réglée sur capture (T4) ; 1,5 → 2,8 le 2026-11-03 (TV-02a-render) : « il fait trop noir » (playtest de Cynthia), luminance moyenne en marche 0,17 → 0,29",
+          "status": "supposed",
+          "owner": "technical-artist"
+        },
+        "toneMap": {
+          "v": "aces",
+          "src": "spike v3, validé par Cynthia le 2026-10-28",
+          "status": "sourced"
+        }
+      },
+      "nuit": {
+        "grain": {
+          "v": 4.5,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "vignetteIL": {
+          "v": -0.7,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "blackPoint": {
+          "v": 0.02,
+          "src": "art bible §D.1",
+          "status": "sourced"
+        },
+        "exposure": {
+          "v": 1.5,
+          "src": "spike v3, validé par Cynthia le 2026-10-28",
+          "status": "sourced"
+        },
+        "toneMap": {
+          "v": "aces",
+          "src": "spike v3, validé par Cynthia le 2026-10-28",
+          "status": "sourced"
+        }
+      }
+    },
+    "gains": {
+      "accent": null,
+      "veil": null,
+      "grain": null,
+      "curvature": null
+    },
+    "exposure": {
+      "adapt": {
+        "upRatePerS": {
+          "v": 1.5,
+          "src": "taux d'adaptation d'exposition, sombre vers clair ; seul l'ordre est sourcé (art bible §E.5 : plus vite que l'inverse), la valeur est réglée sur capture",
+          "status": "supposed",
+          "owner": "technical-artist"
+        },
+        "downRatePerS": {
+          "v": 0.5,
+          "src": "taux d'adaptation d'exposition, clair vers sombre ; seul l'ordre est sourcé (art bible §E.5 : plus lent que l'inverse), la valeur est réglée sur capture",
+          "status": "supposed",
+          "owner": "technical-artist"
+        }
+      }
+    }
+  },
+  "dof": {
+    "walk": {
+      "focalLengthM": {
+        "v": 6.0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : longueur de la rampe de flou au-delà de la zone nette (flou plein à cette distance du bord) ; 2,4 m rendait un passant à 8 m flou à 96 % alors que l'art bible §C.2 demande une silhouette identifiable à 8 m ; 6 m le laisse sous la moitié du flou (grief : on ne voit pas les personnages)",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "bokehScale": {
+        "v": 1.0,
+        "src": "réglé sur capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "fNumber": {
+        "v": 8,
+        "src": "art bible §D.2 : plan d'établissement f/8 ; ouverture supposée pour la zone nette N c s² / f²",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "circleMm": {
+        "v": 0.03,
+        "src": "art bible §C.2 et §D.2 : cercle de confusion 0,03 mm du modèle de zone nette",
+        "status": "supposed",
+        "owner": "art-director"
+      }
+    },
+    "observation": {
+      "focalLengthM": {
+        "v": 3.5,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : longueur de la rampe de flou au-delà de la zone nette ; 0,75 m floutait à plus de 90 % les voisins de file à 2 m du joueur ; 3,5 m les laisse sous la moitié du flou (art bible §C.2, grief : on ne voit pas les personnages) ; le fond reste flou, la zone nette de f/2,8 reste étroite",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "bokehScale": {
+        "v": 2.0,
+        "src": "réglé sur capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "fNumber": {
+        "v": 2.8,
+        "src": "art bible §D.2 : observation f/2,8 ; ouverture supposée pour la zone nette N c s² / f²",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "circleMm": {
+        "v": 0.03,
+        "src": "art bible §C.2 et §D.2 : cercle de confusion 0,03 mm du modèle de zone nette",
+        "status": "supposed",
+        "owner": "art-director"
+      }
+    }
+  },
+  "postfx": {
+    "bloom": {
+      "strength": {
+        "v": 0.3,
+        "src": "réglé sur capture (T13) ; 0,6 → 0,3 le 2026-11-02 (TV-02a-render) : le voile additif des écrans noyait le joueur au checkpoint, rapport de luminance joueur/écran pâle 1,59 → 2,05, glow des écrans conservé",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "radius": {
+        "v": 0.4,
+        "src": "réglé sur capture (T13)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "threshold": {
+        "v": 0.0,
+        "src": "réglé sur capture (T13)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "chromatic": {
+      "v": 0.006,
+      "src": "réglé sur capture (TV-02a-render, 2026-11-02) : aberration chromatique : à 0,04 et à 0,015 un liseré rouge net restait sur le bord des fenêtres (valeurs HDR avant tone map, donc un décalage de 0,1 px suffit) ; 0,006 donne 0,3 px d'écart rouge-bleu au bord d'une image de 1920 px",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "grainLumaWeight": {
+      "dark": {
+        "v": 1.0,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : poids du grain dans les ombres : 1,4 d'origine donnait 4,5 % x 1,4 = 6,3 % d'écart-type de nuit, trop fort ; 1,0 ramène les ombres exactement à la table art bible §D.1 (4,5 % de nuit, 3,5 % d'heure bleue, 2,5 % de jour)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "bright": {
+        "v": 0.4,
+        "src": "réglé sur capture (TV-02a-render, 2026-11-02) : poids du grain dans les hautes lumières, 0,6 avant ; garde le rapport ombre/lumière de §E.9 (plus fort dans les ombres)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "lut": {
+    "jour": {
+      "contrast": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "saturation": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "tint": {
+        "v": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "heureBleue": {
+      "contrast": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "saturation": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "tint": {
+        "v": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "nuit": {
+      "contrast": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "saturation": {
+        "v": 1.0,
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "tint": {
+        "v": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "src": "neutre en attendant la capture (T4)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "npcPlaces": {
+    "nadia": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": -2
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (étal de Nadia, ouest, z -2)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "person",
+      "bodyId": "npc.nadia"
+    },
+    "berenice": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": -28
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (Registre, ouest, z -22 à -34)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "person",
+      "bodyId": "npc.berenice"
+    },
+    "bruno": {
+      "at": {
+        "v": {
+          "x": 6.0,
+          "z": -6
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (voiture grise, est, z -6)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "person",
+      "bodyId": "npc.bruno"
+    },
+    "yusuf": {
+      "at": {
+        "v": {
+          "x": 6.0,
+          "z": 26
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (Biens agréés, est, z +30 à +22)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "person",
+      "bodyId": "npc.yusuf"
+    },
+    "marlene": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": 33
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (devant le 9, ouest, z +38 à +28)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "person",
+      "bodyId": "npc.marlene"
+    },
+    "greyCar": {
+      "at": {
+        "v": {
+          "x": 6.0,
+          "z": -6
+        },
+        "src": "lieu d'attente tiré des lieux de la bible w10 §5.0 ; x et z choisis, NpcData ne porte aucune position (voiture grise, est, z -6)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "kind": "vehicle",
+      "bodyId": "npc.greyCar"
+    }
+  },
+  "characters": {
+    "crowdBodies": {
+      "v": [
+        "crowd_a",
+        "crowd_b",
+        "crowd_c"
+      ],
+      "src": "identifiants des corps de foule, quelques variantes réutilisées (plan 02a T7)",
+      "status": "supposed",
+      "owner": "character-artist"
+    },
+    "maxBytesPerBody": {
+      "v": 1000000,
+      "src": "1 000 000 octets au départ pour une mesure de 0,86 Mo sur un seul homme [art bible, limite de la mesure]",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "floorGain": {
+      "v": 0.3,
+      "src": "art bible §E.1 : « le spike l'émet à 30 % de l'albédo » ; plancher de lumière des personnages, hors masque de bloom",
+      "status": "sourced"
+    }
+  },
+  "view": {
+    "easeRatePerS": {
+      "v": 4,
+      "src": "taux d'interpolation de l'avance de la file, 4 par seconde au départ",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "queue": {
+    "halfWidthM": {
+      "v": 1.0,
+      "src": "demi-largeur du couloir de file devant le checkpoint ; aucune source",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "lengthM": {
+      "v": 12.0,
+      "src": "longueur du couloir : 15 silhouettes x 0,8 m [calculé à la main], valeur choisie",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "camera": {
+    "sensorHeightMm": {
+      "v": 24,
+      "src": "art bible §D.2",
+      "status": "sourced"
+    },
+    "walk": {
+      "restFocalMm": {
+        "v": 40,
+        "src": "art bible §D.2 : troisième personne basse, 40 mm",
+        "status": "sourced"
+      },
+      "movingFocalMm": {
+        "v": 35,
+        "src": "art bible §D.2, ouverture en marche non chiffrée (35 mm choisi, plan d'établissement)",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "heightM": {
+        "v": 1.6,
+        "src": "hauteur de caméra, la bible ne la chiffre pas",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "distanceM": {
+        "v": 3.5,
+        "src": "distance de caméra, la bible ne la chiffre pas",
+        "status": "supposed",
+        "owner": "art-director"
+      }
+    },
+    "observation": {
+      "focalMmMin": {
+        "v": 85,
+        "src": "art bible §D.2 : 85 à 135 mm",
+        "status": "sourced"
+      },
+      "focalMmMax": {
+        "v": 135,
+        "src": "art bible §D.2 : 85 à 135 mm",
+        "status": "sourced"
+      },
+      "focalMm": {
+        "v": 85,
+        "src": "art bible §D.2, plage 85 à 135 (borne basse choisie)",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "heightM": {
+        "v": 1.6,
+        "src": "hauteur de caméra, la bible ne la chiffre pas",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "distanceM": {
+        "v": 6.0,
+        "src": "distance de caméra, la bible ne la chiffre pas",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "lateralM": {
+        "v": -5.0,
+        "src": "décalage en x de la caméra (négatif = ouest), du côté opposé à la file (x = crowd.queueXM, à l'est) : sur l'axe, un voisin de file se plaçait devant l'objectif à 85 mm et bouchait le cadre (TV-02a-T13-fix) ; 5 m garde le joueur et au moins deux voisins dans les ±14° de champ horizontal sans qu'un autre ne les occulte (test street_observation_framing_test, qui échoue à 2 m, 2,5 m, 3 m et 4 m) ; la caméra reste dans la rue (demi-largeur 7 m) ; à confirmer sur capture",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "checkpointFrame": {
+        "v": {
+          "x": 1.2,
+          "z": -10.9,
+          "distanceM": 12,
+          "fromZ": -6.6,
+          "rampM": 4
+        },
+        "src": "cadrage de la scène du checkpoint (TV-02a-T13-fix) : (x, z) = milieu du mur de télés et de la guérite sur leur face avant (x de -2,1 à 4,5, z -10,9) ; au front de la file la caméra vise ce point à `distanceM` derrière le joueur (85 mm = 0,5 m de large par mètre : 12 m montrent ~6 m, mur et guérite) ; la visée glisse du joueur vers ce point sur `rampM` à partir de `fromZ` (= front - 4 m) ; à confirmer sur capture",
+        "status": "supposed",
+        "owner": "art-director"
+      }
+    },
+    "transitionMs": {
+      "v": 400,
+      "src": "durée de transition entre poses, la bible ne la chiffre pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "high": {
+      "focusHeightM": {
+        "v": 1.0,
+        "src": "hauteur du point visé, environ la taille d'un torse ; la spec ne la chiffre pas",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "dampMs": {
+        "v": 700,
+        "src": "constante de temps de l'amorti exponentiel ; valeur de l'essai",
+        "status": "supposed",
+        "owner": "art-director"
+      },
+      "home": {
+        "distM": {
+          "v": 26,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "elevDeg": {
+          "v": 40,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "azimDeg": {
+          "v": 64,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "focalMm": {
+          "v": 60,
+          "src": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette",
+          "status": "supposed",
+          "owner": "art-director"
+        }
+      },
+      "desk": {
+        "distM": {
+          "v": 7.5,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "elevDeg": {
+          "v": 52,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "azimDeg": {
+          "v": 72,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "focalMm": {
+          "v": 60,
+          "src": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette",
+          "status": "supposed",
+          "owner": "art-director"
+        }
+      },
+      "street": {
+        "distM": {
+          "v": 36,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "elevDeg": {
+          "v": 38,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "azimDeg": {
+          "v": 0,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "focalMm": {
+          "v": 60,
+          "src": "spec rue guidée §4.4 : « 60 à 70 mm »",
+          "status": "sourced"
+        }
+      },
+      "talk": {
+        "distM": {
+          "v": 20,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "elevDeg": {
+          "v": 36,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "azimDeg": {
+          "v": 10,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "focalMm": {
+          "v": 70,
+          "src": "spec rue guidée §4.4 : « 60 à 70 mm »",
+          "status": "sourced"
+        }
+      },
+      "queue": {
+        "distM": {
+          "v": 20,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "elevDeg": {
+          "v": 30,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "azimDeg": {
+          "v": 12,
+          "src": "valeur de l'essai de la caméra haute (rue guidée, 2026-11-04), à confirmer sur capture",
+          "status": "supposed",
+          "owner": "art-director"
+        },
+        "focalMm": {
+          "v": 60,
+          "src": "spec rue guidée §4.4 : 60 à 70 mm, bas de la fourchette",
+          "status": "supposed",
+          "owner": "art-director"
+        }
+      }
+    }
+  },
+  "walk": {
+    "speedMps": {
+      "v": 1.6,
+      "src": "clip walk mesuré 1,63 m/s (production/qa/evidence/characters/2026-11-02-perso-1/NOTES.md), arrondi 1,6 ; remplace le calibrage builder 2,4 (bible w10 §5.0)",
+      "status": "sourced"
+    },
+    "maxDtMs": {
+      "v": 50,
+      "src": "plan 02a T8 : borne le pas pour qu'un onglet en arrière-plan ne téléporte pas le joueur",
+      "status": "supposed",
+      "owner": "lead-programmer"
+    },
+    "bodyRadiusM": {
+      "v": 0.3,
+      "src": "rayon du corps du joueur contre les décors pleins (mur de télés, guérite) : demi-épaule 0,25 m (BODY_RADIUS_M des tests de cadrage) plus 0,05 m d'air ; supposé",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "interact": {
+    "interactRangeM": {
+      "v": 2.5,
+      "src": "portée d'interaction en mètres, valeur de départ",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "viewMinCos": {
+      "v": 0,
+      "src": "cosinus minimal entre le regard et la direction d'un lieu pour y ouvrir un choix : 0 = demi-angle de 90°, le lieu n'est pas dans le dos ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "solids": {
+    "banc": {
+      "v": {
+        "at": "bench",
+        "w": 0.6,
+        "d": 1.8
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; banc.seat 0,6 x 1,8 m, centré sur le cliquable bench",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "etal": {
+      "v": {
+        "at": "stall",
+        "w": 1.2,
+        "d": 2.2
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; etal.counter 1,2 x 2,2 m, centré sur le cliquable stall",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "voitureGrise": {
+      "v": {
+        "at": "greyCar",
+        "w": 1.8,
+        "d": 4.2
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; voiture.body 1,8 x 4,2 m, centrée sur le cliquable greyCar",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "cabineScan": {
+      "v": {
+        "at": "scanBooth",
+        "w": 1.6,
+        "d": 1.6
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; cabine.body 1,6 x 1,6 m, centrée sur le cliquable scanBooth",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "pylone": {
+      "v": {
+        "at": "pylon",
+        "w": 0.6,
+        "d": 0.6
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; pylone.mast 0,6 x 0,6 m, centré sur le cliquable pylon",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "registreEtagere": {
+      "v": {
+        "at": "radio",
+        "w": 0.5,
+        "d": 0.5
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; registre.shelf 0,5 x 0,5 m, sous la radio (cliquable radio)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "registreFacade": {
+      "v": {
+        "x": -6.85,
+        "z": -28,
+        "w": 0.3,
+        "d": 12
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/places.ts ; registre.front 0,3 x 12 m, contre la façade ouest (x = -(7 - 0,15)), centrée entre registre.z -22 et registre.zEnd -34",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "poteauBarriere": {
+      "v": {
+        "x": 6,
+        "z": -10.79,
+        "w": 0.22,
+        "d": 0.22
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/checkpoint.ts : barrier.post 0,22 m à x = barrierPostX 6, contre la face avant de la guérite (z = -12 + 1,1 + 0,11)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "portailCoffre": {
+      "v": {
+        "x": 0,
+        "z": -44,
+        "w": 14,
+        "d": 0.5
+      },
+      "src": "empreinte au sol de la maquette src/street/render/scene/coffre.ts : enceinte (épaisseur 0,5 m) et portail fermé, d'un mur à l'autre de la rue (2 x 7 m) à layout.places.portail.z -44",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "interactions": {
+    "npc": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 0
+        },
+        "src": "entrée de classe : la position réelle vient du PNJ touché (npcPlaces), 0,0 est un repli",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "passerby": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 0
+        },
+        "src": "entrée de classe : la position réelle vient du passant touché, 0,0 est un repli",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "stall": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": -2
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (étal, z -2, ouest)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "wall": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (mur de téléviseurs sur la guérite, z -12)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "counter": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": -28
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (guichet du Registre, z -22 à -34, ouest)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "radio": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": -31
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (poste de radio du Registre, z -22 à -34, ouest)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "window9c": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": 33
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (fenêtre du 9-C, logement z +38 à +28, ouest)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "scanBooth": {
+      "at": {
+        "v": {
+          "x": 6.0,
+          "z": 8
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (cabine de scan, z +8, est)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "pylon": {
+      "at": {
+        "v": {
+          "x": 3.0,
+          "z": 20
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (pylône, z +20, axe côté est)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "bulletin": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": 20
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (affiches du Bulletin, z +20, ouest ; aucune bible ne donne le z)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "greyCar": {
+      "at": {
+        "v": {
+          "x": 6.0,
+          "z": -6
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (voiture grise, z -6, est)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "bench": {
+      "at": {
+        "v": {
+          "x": -6.0,
+          "z": 34
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (banc de Théodore, z +34, ouest)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "vaultGate": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -44
+        },
+        "src": "position du cliquable tirée des lieux de la bible w10 §5.0 ; x choisi (portail du Coffre, z -44)",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    }
+  },
+  "triggers": {
+    "door.noon": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix door.noon : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix door.noon : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j1.component": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j1.component : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix j1.component : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j1.phone": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j1.phone : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix j1.phone : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j2.component": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j2.component : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix j2.component : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j2.receipt": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j2.receipt : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix j2.receipt : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j4.neighbour": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j4.neighbour : centrée sur le logement (z +38 à +28); point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 8,
+        "src": "zone d'apparition du choix j4.neighbour : rayon 8 m choisi autour de le logement (z +38 à +28), centre z +33, rayon 8 m : couvre toute la profondeur du logement [bible w10 §5.0]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j1": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j1 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j2": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j2 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j3": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j3 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j4": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j4 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j5": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j5 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j6": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j6 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "checkpoint.j7": {
+      "at": {
+        "v": {
+          "x": 0,
+          "z": -12
+        },
+        "src": "zone d'apparition du choix checkpoint.j7 : centrée sur le checkpoint (z -12) et sa file de 12 m derrière lui; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 7.5,
+        "src": "rayon 7,5 m autour de la barrière (z -12) : la barrière fait toute la largeur (demi-largeur 7 m), un coin est à 7 m du centre, la zone s'ouvre à 4,5 m devant la ligne sur l'axe ; 11,5 m l'ouvrait à mi-rue ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "m1.scan": {
+      "at": {
+        "v": {
+          "x": 6,
+          "z": 8
+        },
+        "src": "zone d'apparition du choix m1.scan : centrée sur la cabine de scan (est; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "zone d'apparition du choix m1.scan : rayon 5 m choisi autour de la cabine de scan (est, z +8) [interactions.scanBooth]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "m2.nadia": {
+      "at": {
+        "v": {
+          "x": -6,
+          "z": -2
+        },
+        "src": "zone d'apparition du choix m2.nadia : centrée sur l'étal de Nadia (ouest; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "zone d'apparition du choix m2.nadia : rayon 5 m choisi autour de l'étal de Nadia (ouest, z -2) [interactions.stall]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "m5.yusuf": {
+      "at": {
+        "v": {
+          "x": 6,
+          "z": 26
+        },
+        "src": "zone d'apparition du choix m5.yusuf : centrée sur le lieu d'attente de Yusuf (est; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "zone d'apparition du choix m5.yusuf : rayon 5 m choisi autour de le lieu d'attente de Yusuf (est, z +26) [npcPlaces.yusuf]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j3.marlene": {
+      "at": {
+        "v": {
+          "x": -6,
+          "z": 33
+        },
+        "src": "zone d'apparition du choix j3.marlene : centrée sur le lieu d'attente de Marlène (ouest; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "zone d'apparition du choix j3.marlene : rayon 5 m choisi autour de le lieu d'attente de Marlène (ouest, z +33) [npcPlaces.marlene]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "j5.bruno": {
+      "at": {
+        "v": {
+          "x": 6,
+          "z": -6
+        },
+        "src": "zone d'apparition du choix j5.bruno : centrée sur le lieu d'attente de Bruno; point choisi, aucune source ne donne le point exact",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "zone d'apparition du choix j5.bruno : rayon 5 m choisi autour de le lieu d'attente de Bruno, voiture grise (est, z -6) [npcPlaces.bruno]",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "m3.letter": {
+      "at": {
+        "v": {
+          "x": -6,
+          "z": 34
+        },
+        "src": "zone d'apparition du choix m3.letter : centrée sur le banc de Théodore (ouest, z +34, bible w10 §5.0, §8.2 M3) [interactions.bench]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 5,
+        "src": "rayon 5 m (comme M1, M2, M5) choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "m4.list": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix m4.list : centrée sur le sous-sol du Registre (bible w10 §5.0, §8.2 M4), point pris au milieu de la salle du guichet faute de plan du sous-sol, entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "relecture.j1": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix relecture.j1 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "relecture.j2": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix relecture.j2 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "relecture.j4": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix relecture.j4 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "relecture.j5": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix relecture.j5 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "relecture.j6": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix relecture.j6 : centrée sur les guichets du Registre (bible w10 §8.2 bis), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j1": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j1 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j2": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j2 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j4": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j4 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j5": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j5 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j6": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j6 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    },
+    "permit.j7": {
+      "at": {
+        "v": {
+          "x": -3,
+          "z": -28
+        },
+        "src": "zone d'apparition du choix permit.j7 : centrée sur le guichet des permis du Registre (bible w10 §5.0), entre l'axe et le guichet (x -6, z -28) : couvre z -22 à -34 sur l'axe [interactions.counter]",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "radiusM": {
+        "v": 6,
+        "src": "rayon 6 m choisi : le choix s'ouvre une fois arrivé au lieu, jamais ailleurs ; retour de playtest de Cynthia, 2026-11-03 : « je marche au milieu d'un mur et on m'écrit d'un seul coup le contrôle »",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    }
+  },
+  "budget": {
+    "drawCalls": {
+      "v": 600,
+      "src": "hypothèse de départ du brief T6 (l.25) : au plus 600 appels de rendu dans la vue large ; ajustable après la première mesure de T13",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "triangles": {
+      "v": 1200000,
+      "src": "hypothèse de départ du brief T6 (l.25) : 1,2 million de triangles ; ajustable après la première mesure de T13",
+      "status": "supposed",
+      "owner": "technical-artist"
+    }
+  },
+  "build": {
+    "sidewalkM": {
+      "v": 2,
+      "src": "trottoir de 2 m : les PNJ et la file attendent à |x| = 6, entre 5 et 7 ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "storeyHeightM": {
+      "v": 3.2,
+      "src": "hauteur d'étage ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "windowPitchM": {
+      "v": 2.5,
+      "src": "pas horizontal des fenêtres ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "windowWidthM": {
+      "v": 1.2,
+      "src": "largeur de fenêtre ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "windowHeightM": {
+      "v": 1.6,
+      "src": "hauteur de fenêtre ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "windowCenterM": {
+      "v": 1.7,
+      "src": "hauteur du centre des fenêtres au-dessus du plancher de l'étage ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "facadeDepthM": {
+      "v": 6,
+      "src": "épaisseur de la boîte de façade derrière le plan |x| = 7 ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "mastRadiusM": {
+      "v": 0.1,
+      "src": "rayon du mât de lampadaire ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lampArmM": {
+      "v": 1.2,
+      "src": "porte-à-faux du bras de lampadaire vers la chaussée ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "nacelleHeightM": {
+      "v": 4.5,
+      "src": "hauteur d'accroche des nacelles de contrôle ; la bible donne z, pas la hauteur",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "asphaltRoughness": {
+      "v": 0.25,
+      "src": "asphalte mouillé : rugosité basse ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "litWindowGain": {
+      "v": 1.2,
+      "src": "gain d'émission des fenêtres allumées (#E9A860, bible w10 §10.1) ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lampGain": {
+      "v": 3,
+      "src": "gain d'émission des têtes sodium (#E8A33D, bible w10 §10.1) ; compté dans les 2 % de la rue (T2)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "ledGain": {
+      "v": 2.5,
+      "src": "gain d'émission des LED froides du Coffre et de la cabine de scan ; compté dans les 2 % de la rue (T2)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "beaconGain": {
+      "v": 4,
+      "src": "gain d'émission du feu rouge de la cheminée et de la barrière ; compté dans les 2 % de la rue (T2)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "counterPanelHeightM": {
+      "v": 0.35,
+      "src": "hauteur de la plaque du compteur, posée au-dessus du mur ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "hitWidthM": {
+      "v": 1.6,
+      "src": "largeur du volume de clic d'un objet ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "hitHeightM": {
+      "v": 2.2,
+      "src": "hauteur du volume de clic d'un objet ; valeur choisie pour la construction procédurale, aucune source ; à régler sur capture (T13)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "palette": {
+      "shadow": {
+        "v": "#2B3138",
+        "src": "bible w10 §10.1, ombres",
+        "status": "sourced"
+      },
+      "mid": {
+        "v": "#4A5560",
+        "src": "bible w10 §10.1, tons moyens",
+        "status": "sourced"
+      },
+      "haze": {
+        "v": "#8C97A0",
+        "src": "bible w10 §10.1, brume",
+        "status": "sourced"
+      },
+      "sodium": {
+        "v": "#E8A33D",
+        "src": "bible w10 §10.1, ambre sodium",
+        "status": "sourced"
+      },
+      "interior": {
+        "v": "#E9A860",
+        "src": "bible w10 §10.1, intérieurs chauds",
+        "status": "sourced"
+      },
+      "slit": {
+        "v": "#D98033",
+        "src": "bible w10 §10.1, fentes de guérite",
+        "status": "sourced"
+      },
+      "red": {
+        "v": "#FF120D",
+        "src": "bible w10 §10.1, rouge de barrière",
+        "status": "sourced"
+      },
+      "led": {
+        "v": "#CFEFFF",
+        "src": "bible w10 §10.1 : blanc-cyan légèrement désaturé, aucune valeur écrite",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "barrierBlack": {
+        "v": "#0B0D0F",
+        "src": "bande noire du bras de barrière : la bible w10 §10.1 n'écrit aucune valeur, noir proche du noir de nuit",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    },
+    "lampHeadLengthM": {
+      "v": 0.7,
+      "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : tête plate de type cobra, longueur le long du bras ; silhouette horizontale distincte des fenêtres verticales",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lampHeadHeightM": {
+      "v": 0.22,
+      "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : hauteur de la tête plate",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lampHeadWidthM": {
+      "v": 0.35,
+      "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : largeur de la tête plate",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lampLensGain": {
+      "v": 8,
+      "src": "art-director 2026-11-02 (lampadaires, cibles de rendu) : le coeur de la lentille doit sortir à Y' 0,95 ou plus, la source la plus claire de la rue, au-dessus des fenêtres (0,90, §D.1) ; champ distinct de lampGain, que la fente du checkpoint partage",
+      "status": "supposed",
+      "owner": "technical-artist"
+    }
+  },
+  "sky": {
+    "fogNearM": {
+      "v": 60,
+      "src": "réglé sur capture (TV-02a-render, 2026-11-02) : début du brouillard (m) : au-delà du mur du checkpoint vu de la marche (50 m), la géométrie lointaine se fond dans l'horizon ; choisi",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "fogFarM": {
+      "v": 140,
+      "src": "réglé sur capture (TV-02a-render, 2026-11-02) : fin du brouillard (m) : bout de la rue vu du départ ; choisi",
+      "status": "supposed",
+      "owner": "technical-artist"
+    }
+  },
+  "cutaway": {
+    "units": [
+      {
+        "id": "9-A",
+        "zEnd": {
+          "v": 35.5,
+          "src": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28, ouest) ; le découpage est choisi, la bible ne donne que l'étendue",
+          "status": "supposed",
+          "owner": "level-designer"
+        },
+        "occupied": true,
+        "furniture": ["bed", "desk", "table", "shelf"]
+      },
+      {
+        "id": "9-B",
+        "zEnd": {
+          "v": 33,
+          "src": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28, ouest) ; le découpage est choisi, la bible ne donne que l'étendue",
+          "status": "supposed",
+          "owner": "level-designer"
+        },
+        "occupied": true,
+        "furniture": ["bed", "desk", "table", "shelf"]
+      },
+      {
+        "id": "9-C",
+        "zEnd": {
+          "v": 30.5,
+          "src": "découpe en quatre logements de 2,5 m du logement de la bible w10 §5.0 (z +38 à +28, ouest) ; le découpage est choisi, la bible ne donne que l'étendue",
+          "status": "supposed",
+          "owner": "level-designer"
+        },
+        "occupied": true,
+        "furniture": ["bed", "desk", "table", "shelf"]
+      },
+      {
+        "id": "9-D",
+        "zEnd": {
+          "v": 28,
+          "src": "bible w10 §5.0 : fin du logement (layout.places.logement.zEnd), le 9-D ferme la coupe",
+          "status": "sourced"
+        },
+        "occupied": true,
+        "furniture": ["bed", "desk", "table", "shelf"]
+      }
+    ],
+    "partitionM": {
+      "v": 0.9,
+      "src": "vue de maison de poupée (décision du contrôleur, 2026-11-05) : cloisons entre logements sous le plateau du bureau (1,0 m, furniture.ts), pour voir bureaux et lampes depuis la caméra haute ; le mur du fond garde 2,8 m",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "lamp": {
+      "intensityCd": {
+        "v": 2.0,
+        "src": "intensité d'une lampe de bureau, source réelle (PointLight, candelas, Three.js r186) ; 2 cd choisis, aucun calcul ne la donne, à régler sur capture (T15). Repère : à 1,2 m du plateau, 2 / 1,2² = 1,4 (éclairement relatif, sans unité), soit environ cinq fois la chaussée sous un lampadaire réglé (12 / 6,6² = 0,28), voulu : un intérieur chaud et lisible dans la coupe",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "distanceM": {
+        "v": 4,
+        "src": "portée finie de la lampe de bureau, 4 m choisis : un logement fait 2,5 m de large et 5 m de profondeur. Une PointLight n'a ni ombre portée ni occulteur : la lumière traverse les cloisons, la portée ne fait que la borner, et le logement voisin reçoit un peu de la lampe d'à côté ; à régler sur capture (T15)",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "decay": {
+        "v": 2,
+        "src": "décroissance physique en 1 / d², comme les lampadaires réglés (lamps.light.decay) ; choisie",
+        "status": "supposed",
+        "owner": "technical-artist"
+      },
+      "heightM": {
+        "v": 1.15,
+        "src": "hauteur de l'ampoule au-dessus du sol : plateau du bureau (1,0 m, furniture.ts) plus 0,15 m ; choisie",
+        "status": "supposed",
+        "owner": "technical-artist"
+      }
+    }
+  },
+  "guided": {
+    "places": {
+      "unit.9-D": {
+        "v": {
+          "x": -8.6,
+          "z": 29.25
+        },
+        "src": "ancre de scène guidée : DANS le logement 9-D (coupe, interiors.ts : pièce de x -12 à -7, 9-D de z +28 à +30,5 d'après cutaway.units), entre la table (x -9,2) et le bureau (x -7,7), au milieu du logement en z ; choisie, à confirmer sur capture",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "unit.9-B": {"v": {"x": -8.6, "z": 34.25}, "src": "Episode court : intérieur 9-B, entre z 33 et 35.5, derrière la façade ouest.", "status": "supposed", "owner": "level-designer"},
+      "door.9-B": {
+        "v": {
+          "x": -5.0,
+          "z": 35.0
+        },
+        "src": "ancre de scène guidée : porte du 9-B, devant le logement (z +38 à +28), choisie",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "door.9-C": {
+        "v": {
+          "x": -8.6,
+          "z": 30.1
+        },
+        "src": "ancre de scène guidée : palier, côté 9-D de la cloison 9-D / 9-C (z +30,5, cutaway.units) ; Mme Roux se tient de l'autre côté, dans le 9-C (actors.ts, actorSpot) ; choisie, à confirmer sur capture",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "street.mid": {
+        "v": {
+          "x": 0.0,
+          "z": 0.0
+        },
+        "src": "ancre de scène guidée : milieu de la rue, axe, entre le logement et le Coffre, choisi",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "anchor.stall.front": {
+        "v": {
+          "x": -4.5,
+          "z": -3.0
+        },
+        "src": "ancre de scène guidée : même point que l'ancre de séquence anchor.stall.front (w10.sequences.json)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "place.cabine": {
+        "v": {
+          "x": 5.0,
+          "z": 8.0
+        },
+        "src": "ancre de scène guidée : cabine de scan, bible w10 §5.0 (z +8, est), côté rue de interactions.scanBooth (x 6)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "anchor.cp.head": {
+        "v": {
+          "x": 0.75,
+          "z": -10.1
+        },
+        "src": "ancre de scène guidée : même point que l'ancre de séquence anchor.cp.head (w10.sequences.json)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "place.registre": {
+        "v": {
+          "x": -5.0,
+          "z": -28.0
+        },
+        "src": "ancre de scène guidée : Registre, bible w10 §5.0 (z -22 à -34, ouest), côté rue de interactions.counter (x -6)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "place.pylone": {
+        "v": {
+          "x": 5.0,
+          "z": 20.0
+        },
+        "src": "ancre de scène guidée : pylône haut-parleur, conception J3-J7 §2.5 (axe côté est, z +20), côté rue ; x choisi",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "bench.theodore": {
+        "v": {
+          "x": -5.0,
+          "z": 34.0
+        },
+        "src": "ancre de scène guidée : banc devant le 9, conception J3-J7 §2.5 et bible w10 §5.0 (layout.places.banc z +34, ouest) ; x choisi, côté rue",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "place.cantine": {
+        "v": {
+          "x": -5.0,
+          "z": -32.0
+        },
+        "src": "ancre de scène guidée : cantine du Registre, conception J3-J7 §2.5 (au-delà du contrôle, z -22 à -34, ouest) ; x et z choisis, à l'écart du guichet (place.registre, z -28)",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "shop.yusuf": {
+        "v": {
+          "x": 5.0,
+          "z": 26.0
+        },
+        "src": "ancre de scène guidée : arrière-boutique de Biens agréés, conception J3-J7 §2.5 (est, z +26, npcPlaces.yusuf) ; x choisi, côté rue",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "stairs.9": {
+        "v": {
+          "x": -8.6,
+          "z": 33.0
+        },
+        "src": "ancre de scène guidée : escalier du 9, conception J3-J7 §2.5 (entre le 9-D et le 9-A), DANS l'immeuble (|x| > halfWidthM), x du palier comme unit.9-D, z au milieu de la coupe (z +28 à +38) ; choisie, à confirmer sur capture",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "anchor.greycar": {
+        "v": {
+          "x": 3.0,
+          "z": 36.0
+        },
+        "src": "ancre de scène guidée : voiture grise amenée devant le 9, conception J3-J7 §2.5 (celle d'npcPlaces.greyCar, est z -6, vient chercher le joueur) ; voie est en face du 9 (z +36), x et z choisis",
+        "status": "supposed",
+        "owner": "level-designer"
+      },
+      "room.audition": {
+        "v": {
+          "x": -9.5,
+          "z": -28.0
+        },
+        "src": "ancre de scène guidée : salle d'audition du Registre, conception J3-J7 §2.5 et bible §8.1 J7 (une table, intérieur en coupe), DANS le bâtiment ouest à la hauteur du Registre (z -28) ; choisie, à confirmer sur capture",
+        "status": "supposed",
+        "owner": "level-designer"
+      }
+    }
+  }
+}

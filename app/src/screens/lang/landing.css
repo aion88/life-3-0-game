@@ -1,0 +1,54 @@
+/* Accueil « Chambre noire » : l'affiche posée sur la table, « Jouer » au-dessus du pli, tout centré. Aucune valeur en dur : ui/tokens.css et ui/worlds.css.
+   Un seul bouton plein (vert action) ; la seconde langue, le contact et le retour sont en contour. Le .c-sober du cadre coupe les transitions : l'état se lit par le contour et le fond. */
+.c-sober-page.life-entry { --entry-border: var(--bord-1); gap: var(--e-5); padding: var(--e-5) max(var(--e-5), env(safe-area-inset-right)) max(var(--e-5), env(safe-area-inset-bottom)); background: var(--fond); color: var(--dit); font-family: var(--corps); font-synthesis: none; text-align: center; }
+.c-sober-page.life-entry > .life-entry-poster { display: block; max-width: 1040px; width: 100%; margin-top: 0; }
+.life-entry-poster img { display: block; width: 100%; height: auto; max-height: 54dvh; margin-inline: auto; object-fit: contain; box-shadow: var(--ombre-sejour); }
+
+.c-sober-page.life-entry > .life-entry-content { max-width: 720px; display: flex; flex-direction: column; align-items: center; gap: var(--e-6); text-align: center; }
+.life-entry-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--e-3); width: 100%; }
+.life-entry-actions > .c-sober-title { width: 100%; font: 400 var(--t-titre-monde)/1.05 var(--titre); color: var(--dit); }
+.life-entry-actions > .c-sober-row { gap: var(--e-3); }
+.life-entry-actions p { margin: 0; line-height: 1.5; }
+.life-entry-edition { flex: 1 1 100%; color: var(--raconte); font-size: var(--t-etiquette); font-weight: 700; letter-spacing: var(--suivi-etiquette); text-transform: uppercase; }
+.life-entry .life-entry-title { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* Boutons : plein (action) ou contour. Rayon droit, aucune ombre pleine ; le focus est un anneau clair décalé. */
+.life-entry .c-action, .life-entry-contact { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; min-width: 220px; max-width: 100%; padding: var(--e-3) var(--e-6); border: var(--bord-2) solid var(--action); border-radius: var(--r-2); background: var(--action); color: var(--encre); box-shadow: none; font: 700 1.05rem/1.2 var(--corps); text-decoration: none; cursor: pointer; }
+.life-entry .c-action.life-btn--outline, .life-entry-contact { background: none; border-color: var(--contour); color: var(--dit); }
+.life-entry .c-action.life-btn--outline:hover, .life-entry-contact:hover { border-color: var(--dit); background: var(--plateau); }
+.life-entry .c-action:not(.life-btn--outline):hover { background: var(--dit); border-color: var(--dit); }
+.life-entry :is(.c-action, .life-entry-contact, .life-entry-resources-link):focus-visible { outline: var(--focus); outline-offset: 4px; box-shadow: none; }
+.life-entry-contact { min-width: 0; min-height: 44px; padding: var(--e-2) var(--e-5); font-size: var(--t-petit); font-weight: 400; }
+
+.life-entry-intro { display: grid; gap: var(--e-3); justify-items: center; }
+.life-entry-intro h2 { margin: 0; font: 400 clamp(1.9rem, 4.2vw, 2.7rem)/1.1 var(--titre); color: var(--dit); }
+.life-entry-intro p { margin: 0; max-width: 62ch; font-size: var(--t-corps); line-height: 1.65; color: var(--dit); }
+.life-entry-intro p:last-child { color: var(--raconte); }
+.life-entry-links { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--e-3) var(--e-5); }
+.life-entry-resources-link { display: inline-flex; align-items: center; min-height: 44px; color: var(--raconte); font-size: var(--t-petit); text-underline-offset: 4px; }
+.life-entry-resources-link:hover { color: var(--dit); }
+.c-sober-page.life-entry > .life-entry-credit { max-width: 1040px; margin: 0 auto; padding-top: var(--e-4); border-top: var(--entry-border) solid var(--filet); font-size: var(--t-etiquette); line-height: 1.5; color: var(--raconte); }
+@media (max-width: 760px) { .c-sober-page.life-entry { gap: var(--e-4); padding-top: var(--e-4); } .c-sober-page.life-entry > .life-entry-content { gap: var(--e-5); } .life-entry-poster img { max-height: none; } }
+@media (max-width: 560px) { .life-entry .c-action { flex: 1 1 100%; max-width: 340px; } }
+@media (max-height: 500px) and (min-width: 761px) { .life-entry-poster img { max-height: 52dvh; } .c-sober-page.life-entry { padding-top: var(--e-3); } }
+
+/* Ressources : la dernière section de la page, mêmes jetons. */
+.c-sober-page.life-entry > .life-resources { max-width: 1040px; padding-top: var(--e-6); border-top: var(--entry-border) solid var(--filet); margin-top: var(--e-3); scroll-margin-top: var(--e-5); }
+.life-resources h2 { margin: 0 0 var(--e-3); font: 400 2rem/1.1 var(--titre); color: var(--dit); }
+.life-resources > p { margin-inline: auto; max-width: 70ch; font-size: var(--t-petit); line-height: 1.65; color: var(--raconte); }
+.life-resources input { width: 100%; box-sizing: border-box; min-height: 48px; padding: var(--e-3) var(--e-4); border: var(--entry-border) solid var(--contour); border-radius: var(--r-2); color: var(--dit); background: var(--plateau); font: inherit; font-size: var(--t-corps); text-align: center; }
+.life-resources input::placeholder { color: var(--raconte); }
+.life-resources .life-resource-count { font-size: var(--t-etiquette); color: var(--raconte); margin: var(--e-3) 0 var(--e-5); }
+.life-resource-groups details { border-top: var(--entry-border) solid var(--filet); padding: var(--e-2) 0; }
+.life-resource-groups summary { padding: var(--e-4) 0; cursor: pointer; font-size: var(--t-corps); font-weight: 700; color: var(--dit); }
+.life-resource-groups ul { list-style: none; padding: 0 0 var(--e-3); margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-3); }
+.life-resource-groups li { padding: var(--e-3) var(--e-4); background: var(--plateau); border-top: var(--bord-2) solid var(--filet); border-radius: 0; min-width: 0; }
+.life-resource-groups a { color: var(--dit); font-size: var(--t-petit); line-height: 1.5; overflow-wrap: anywhere; text-underline-offset: 3px; }
+.life-resource-domain { display: block; font-size: var(--t-etiquette); color: var(--raconte); margin-top: var(--e-2); overflow-wrap: anywhere; }
+.life-resources :is(a, input, summary):focus-visible { outline: var(--focus); outline-offset: 4px; }
+@media (max-width: 650px) { .life-resource-groups ul { grid-template-columns: 1fr; } }
+
+/* L'Atlas est posé sous les boutons, dans la page ; ses feuilles propres (atlas.css) viennent au lot L5. */
+.c-sober-page.life-entry > .life-entry-atlas { max-width: 1200px; width: 100%; text-align: center; border-top: var(--entry-border) solid var(--filet); padding-top: var(--e-3); }
+.life-entry-atlas:empty { display: none; }
+.life-entry-atlas .atlas { position: static; inset: auto; overflow: visible; border-radius: 0; padding-top: var(--e-5); }

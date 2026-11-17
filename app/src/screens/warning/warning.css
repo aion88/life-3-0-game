@@ -1,0 +1,24 @@
+/* Écran d'avertissement « Chambre noire » : fond noir chaud, tout centré, deux polices, un seul bouton plein (Continuer). Valeurs : ui/tokens.css seulement.
+   Les trois étapes sont des puces (forme), pas des numéros. Tout tient dans la fenêtre à 375x600. */
+.c-sober-page.warning { gap: var(--e-4); padding: var(--e-5) var(--e-5); background: var(--fond); color: var(--dit); font-family: var(--corps); font-synthesis: none; text-align: center; }
+.c-sober-page.warning > * { max-width: 34em; }
+.warning .c-sober-title { font: 400 clamp(2rem, 5vw, 2.8rem)/1.05 var(--titre); color: var(--dit); }
+
+.warning .play-flow { display: grid; gap: var(--e-2); margin: 0; padding: 0; list-style: none; }
+.warning .play-flow li { display: block; color: var(--raconte); font-size: var(--t-petit); line-height: 1.4; }
+.warning .play-flow li::before { content: ''; width: .45em; height: .45em; display: inline-block; margin: 0 var(--e-2) .08em 0; background: var(--raconte); transform: rotate(45deg); }
+.warning .play-flow strong { margin-right: var(--e-1); color: var(--dit); font-weight: 700; }
+
+.warning .c-card { margin: 0; padding: 0; border: 0; border-radius: 0; background: none; color: var(--dit); font-family: var(--corps); font-weight: 400; font-size: var(--t-corps); line-height: 1.55; text-align: center; }
+.warning .c-sober-hint { max-width: 40ch; margin-inline: auto; color: var(--raconte); font-size: var(--t-petit); line-height: 1.45; }
+
+/* Bascule : contour ; pressée = fond de plateau, filet vert et coche (l'état se lit par la forme et le mot, pas par la couleur seule). */
+.warning .c-sober-toggle { display: inline-flex; align-items: center; justify-content: center; gap: var(--e-2); min-height: 44px; padding: var(--e-2) var(--e-5); border: var(--bord-2) solid var(--contour); border-radius: var(--r-2); background: none; color: var(--dit); font: 700 var(--t-petit)/1.2 var(--corps); cursor: pointer; }
+.warning .c-sober-toggle:hover { border-color: var(--dit); background: var(--plateau); }
+.warning .c-sober-toggle[aria-pressed="true"] { background: var(--plateau-choisi); border-color: var(--action); color: var(--dit); }
+.warning .c-sober-toggle[aria-pressed="true"]::before { content: '✓'; color: var(--action); }
+
+.warning .c-action { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; min-height: 52px; min-width: 220px; max-width: 100%; padding: var(--e-3) var(--e-6); border: var(--bord-2) solid var(--action); border-radius: var(--r-2); background: var(--action); color: var(--encre); box-shadow: none; font: 700 1.05rem/1.2 var(--corps); cursor: pointer; }
+.warning .c-action:hover { background: var(--dit); border-color: var(--dit); }
+.warning :is(.c-action, .c-sober-toggle):focus-visible { outline: var(--focus); outline-offset: 4px; box-shadow: none; }
+@media (max-height: 700px) { .c-sober-page.warning { gap: var(--e-3); padding-block: var(--e-4); } .warning .c-card { font-size: var(--t-petit); line-height: 1.45; } }

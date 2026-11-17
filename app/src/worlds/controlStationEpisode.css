@@ -1,0 +1,398 @@
+/* One scene, one tangible object surface. The runtime owns objects and decisions. */
+.control-station-episode {
+  --cs-line: 1px;
+  --cs-rule: 2px;
+  --cs-shell: #1c1e1b;
+  --cs-screen: #272a25;
+  --cs-ink: #f1eee3;
+  --cs-muted: #c5c4b9;
+  --cs-green: #c7dca8;
+  --cs-warm: #e5c691;
+  --cs-edge: #686c5d;
+  --cs-object-shadow: 0 10px 34px #0005;
+  --cs-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  position: fixed;
+  inset: 0;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  height: 100dvh;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--cs-shell);
+  color: var(--cs-ink);
+  font: 16px/1.45 var(--cs-font);
+}
+.control-station-episode * { box-sizing: border-box; }
+.control-station-episode [hidden] { display: none !important; }
+.control-station-episode button,
+.control-station-episode a { font: inherit; touch-action: manipulation; }
+.control-station-episode button { cursor: pointer; }
+.control-station-episode button:disabled { cursor: default; opacity: .58; }
+.control-station-episode :focus-visible { outline: 3px solid var(--cs-warm); outline-offset: 3px; }
+.cs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 24px 4px;
+  background: var(--cs-shell);
+}
+.cs-world { display: block; font-size: 10px; letter-spacing: .12em; color: var(--cs-muted); }
+.cs-identity h1 { margin: 2px 0 0; font: 600 18px/1.25 var(--cs-font); letter-spacing: 0; }
+.cs-controls { display: flex; align-items: center; gap: 8px; }
+.cs-controls button,
+.cs-controls a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--cs-ink);
+  font-size: 12px;
+  text-underline-offset: 4px;
+}
+.cs-controls button:hover { background: #35392f; }
+.cs-controls button[aria-pressed=true] { background: var(--cs-green); color: #20291b; }
+.cs-goal { margin: 0; padding: 0 24px 10px; font-size: 13px; color: var(--cs-muted); }
+.cs-workspace { position: relative; min-width: 0; min-height: 0; overflow: hidden; }
+.cs-scene { position: absolute; inset: 0; min-width: 0; min-height: 0; overflow: hidden; background: #363b31; }
+.cs-viewport { position: absolute; inset: 0; min-width: 0; min-height: 0; }
+.cs-viewport > canvas { display: block; width: 100%; height: 100%; }
+.cs-place,
+.cs-scene-status {
+  position: absolute;
+  left: 20px;
+  z-index: 1;
+  margin: 0;
+  padding: 6px 9px;
+  max-width: min(46%, 420px);
+  background: #1c1e1be8;
+  color: var(--cs-ink);
+  font: 500 12px/1.4 var(--cs-font);
+  pointer-events: none;
+}
+.cs-place { top: 16px; }
+.cs-scene-status { bottom: 20px; color: #e0e4cf; }
+.cs-interaction {
+  position: absolute;
+  z-index: 2;
+  right: 24px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  width: min(430px, calc(100% - 48px));
+  max-height: calc(100% - 48px);
+  overflow: hidden;
+  border: var(--cs-line) solid #747969;
+  border-radius: 12px;
+  background: var(--cs-shell);
+  box-shadow: var(--cs-object-shadow);
+}
+.cs-instrument {
+  position: relative;
+  min-height: 0;
+  flex: 1 1 auto;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 18px 20px 14px;
+  background: var(--cs-screen);
+  scrollbar-color: #8e9680 #262a23;
+}
+.cs-instrument[data-kind=phone] { border-radius: 10px 10px 0 0; }
+.cs-instrument[data-kind=phone]::before {
+  content: '';
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin: 0 auto 14px;
+  border-radius: 3px;
+  background: #8e9480;
+}
+.cs-instrument[data-kind=reader] { background: #222820; }
+.cs-instrument[data-kind=reader] .cs-source { color: var(--cs-warm); }
+.cs-source { margin: 0 0 9px; color: var(--cs-muted); font-size: 11px; line-height: 1.35; letter-spacing: .025em; }
+.cs-instrument-title { margin: 0 0 10px; font: 600 21px/1.2 var(--cs-font); letter-spacing: 0; }
+.cs-line { margin: 0 0 10px; font-size: 16px; line-height: 1.5; }
+.cs-detail { margin: 0; font-size: 13px; line-height: 1.4; color: var(--cs-muted); }
+.cs-instrument-extra { margin-top: 10px; }
+.cs-instrument-extra:empty { display: none; }
+.cs-instrument-extra button {
+  min-height: 36px;
+  padding: 7px 0;
+  border: 0;
+  border-bottom: var(--cs-line) solid #8c9779;
+  border-radius: 0;
+  background: none;
+  color: #d0dfb8;
+  font-size: 12px;
+  text-align: left;
+}
+.cs-dock { flex: 0 0 auto; padding: 12px 20px 16px; background: var(--cs-shell); border-top: var(--cs-line) solid #505647; }
+.cs-instruction { margin: 0 0 10px; color: var(--cs-muted); font-size: 13px; line-height: 1.4; }
+.cs-actions { display: grid; grid-template-columns: 1fr; gap: 8px; align-items: stretch; }
+.cs-actions:empty { display: none; }
+.cs-action {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 13px;
+  border: var(--cs-line) solid #929d7f;
+  border-radius: 4px;
+  background: var(--cs-green);
+  color: #242d1e;
+  text-align: left;
+}
+.cs-action:hover:not(:disabled) { background: #dae7bf; }
+.cs-action-label { display: block; font-size: 15px; font-weight: 600; line-height: 1.3; }
+.cs-action-cost { display: block; margin-top: 4px; color: #c9cfbd; font-size: 13px; line-height: 1.35; }
+.cs-actions > .cs-action:has(.cs-action-cost) { background: #30362b; color: var(--cs-ink); border-color: #69765b; }
+.cs-actions > .cs-action:has(.cs-action-cost):hover:not(:disabled) { background: #404a35; border-color: #bac99d; }
+.cs-actions > .cs-action[aria-pressed=true] { background: #d2dfb9; color: #202a1a; border-color: #d2dfb9; }
+.cs-actions > .cs-action[aria-pressed=true] .cs-action-cost { color: #33452a; }
+.cs-artifacts { display: flex; gap: 8px; align-items: stretch; margin: 0 0 12px; padding: 0; }
+.cs-artifact {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: var(--cs-line) solid #77806a;
+  border-radius: 4px;
+  background: #32372c;
+  color: var(--cs-ink);
+  font-size: 12px;
+  text-align: left;
+}
+.cs-artifact[aria-pressed=true],
+.cs-artifact[data-active=true] { background: #d2dfb9; color: #202a1a; border-color: #d2dfb9; }
+.cs-artifact small { display: block; margin-top: 3px; font-size: 10px; opacity: .85; }
+.cs-receipt { border-top: var(--cs-line) dashed #9ba58d; margin-top: 12px; padding-top: 10px; color: #e2e2d1; }
+.control-station-episode[data-phase=loading] .cs-dock:has(.cs-actions:empty) { display: none; }
+.control-station-episode[data-busy=true] .cs-interaction { width: min(350px, calc(100% - 48px)); }
+.control-station-episode[data-busy=true] .cs-instrument-title { font-size: 19px; }
+.control-station-episode[data-busy=true] .cs-line { font-size: 14px; }
+.control-station-episode[data-paused=true] .cs-scene::after { content: 'PAUSE'; position: absolute; top: 16px; right: 20px; padding: 6px 9px; background: #1c1e1be8; color: #e4e6d8; font-size: 11px; letter-spacing: .12em; pointer-events: none; }
+.cs-scope { color: var(--cs-muted); }
+.cs-traces { display: grid; gap: 0; margin: 0 0 18px; }
+.cs-traces > div { padding: 13px 0; border-bottom: var(--cs-line) solid #6a735d; }
+.cs-traces dt { margin: 0 0 5px; color: var(--cs-green); font-size: 12px; }
+.cs-traces dd { margin: 0; font: 500 17px/1.4 var(--cs-font); }
+@media(max-width:760px) {
+  .cs-header { gap: 8px; padding: 7px 14px 3px; }
+  .cs-world { font-size: 9px; }
+  .cs-identity h1 { font-size: 16px; }
+  .cs-controls { gap: 0; }
+  .cs-controls button, .cs-controls a { min-height: 40px; padding: 8px; font-size: 11px; }
+  .cs-controls a { max-width: 72px; text-align: center; line-height: 1.2; }
+  .cs-goal { padding: 0 14px 8px; font-size: 12px; }
+  .cs-workspace { display: grid; grid-template-rows: minmax(160px, 1fr) auto; overflow: hidden; }
+  .cs-scene { position: relative; inset: auto; }
+  .cs-place { left: 12px; top: 10px; max-width: calc(100% - 100px); padding: 4px 7px; font-size: 10px; }
+  .cs-scene-status { left: 12px; bottom: 10px; max-width: calc(100% - 24px); font-size: 10px; padding: 4px 7px; }
+  .cs-interaction, .control-station-episode[data-busy=true] .cs-interaction { position: relative; right: auto; bottom: auto; width: 100%; max-height: none; border: 0; border-top: var(--cs-line) solid #767b6b; border-radius: 0; box-shadow: none; }
+  .cs-instrument { flex: 0 1 auto; padding: 11px 16px 9px; max-height: 32dvh; border-radius: 0 !important; }
+  .cs-instrument[data-kind=phone]::before { display: none; }
+  .cs-source { margin-bottom: 5px; font-size: 10px; }
+  .cs-instrument-title, .control-station-episode[data-busy=true] .cs-instrument-title { font-size: 18px; margin-bottom: 7px; }
+  .cs-line, .control-station-episode[data-busy=true] .cs-line { font-size: 15px; line-height: 1.4; margin-bottom: 7px; }
+  .cs-detail { font-size: 12px; line-height: 1.35; }
+  .cs-instrument-extra { margin-top: 3px; }
+  .cs-instrument-extra button { min-height: 34px; padding: 5px 0; font-size: 11px; }
+  .cs-dock { padding: 9px 16px max(12px, env(safe-area-inset-bottom)); }
+  .cs-instruction { margin-bottom: 7px; font-size: 12px; }
+  .cs-actions { gap: 7px; }
+  .cs-action { min-height: 44px; padding: 9px 12px; }
+  .cs-action-label { font-size: 14px; }
+  .cs-action-cost { margin-top: 3px; font-size: 12px; line-height: 1.3; }
+  .cs-artifacts { margin-bottom: 8px; gap: 6px; }
+  .cs-artifact { font-size: 11px; padding: 7px 9px; }
+}
+@media(max-width:760px) and (max-height:700px) {
+  .cs-header { padding-top: 4px; }
+  .cs-goal { padding-bottom: 6px; font-size: 11px; }
+  .cs-workspace { grid-template-rows: minmax(145px, 1fr) auto; }
+  .cs-instrument { padding: 9px 14px 7px; max-height: 30dvh; }
+  .cs-instrument-title, .control-station-episode[data-busy=true] .cs-instrument-title { font-size: 17px; margin-bottom: 5px; }
+  .cs-line, .control-station-episode[data-busy=true] .cs-line { font-size: 14px; margin-bottom: 5px; }
+  .cs-detail { font-size: 11px; }
+  .cs-dock { padding: 8px 14px max(10px, env(safe-area-inset-bottom)); }
+  .cs-action { padding: 8px 10px; }
+  .cs-action-label { font-size: 13px; }
+  .cs-action-cost { font-size: 11px; }
+  .cs-actions { gap: 6px; }
+  .cs-instruction { font-size: 11px; }
+}
+@media(max-width:340px), (max-width:760px) and (max-height:520px) {
+  .control-station-episode { overflow: auto; grid-template-rows: auto auto auto; }
+  .cs-workspace { overflow: visible; grid-template-rows: 220px auto; min-height: auto; }
+  .cs-instrument { overflow: visible; max-height: none; }
+}
+@media(min-width:761px) and (max-height:550px) {
+  .cs-interaction { right: 16px; bottom: 16px; max-height: calc(100% - 32px); width: min(500px, 48%); }
+  .cs-instrument { padding: 12px 16px; }
+  .cs-instrument-title { font-size: 18px; margin-bottom: 6px; }
+  .cs-line { font-size: 14px; margin-bottom: 6px; }
+  .cs-source { margin-bottom: 5px; }
+  .cs-dock { padding: 9px 16px 12px; }
+  .cs-action { padding: 9px 12px; }
+}
+@media(prefers-reduced-motion:reduce) { .control-station-episode * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* The transport title and its explanation share one row of the reader surface. */
+.cs-interaction[data-kind=reader] { border-radius: 5px; border-color: #8d927b; }
+.cs-artifacts { margin-top: 12px; margin-bottom: 0; }
+.cs-artifact { min-height: 44px; border-style: dashed; background: #33372d; padding: 7px 10px; }
+.cs-artifact-label { display: block; font-size: 10px; color: #c3c8b8; }
+.cs-artifact-status { display: block; font-size: 13px; font-weight: 600; margin-top: 2px; }
+.cs-artifact[data-status=refused] .cs-artifact-status { color: #e5c691; }
+.cs-artifact[data-status=authorized] .cs-artifact-status { color: #c7dca8; }
+.cs-instrument:has(.cs-instrument-extra:not(:empty)) .cs-artifact { padding-right: 118px; }
+.cs-instrument-extra:not(:empty) { position: absolute; right: 20px; bottom: 14px; width: 106px; margin: 0; }
+.cs-instrument-extra:not(:empty) button { width: 100%; height: 44px; min-height: 44px; border: 0; padding: 4px 8px; font-size: 11px; line-height: 1.3; text-decoration: underline; text-underline-offset: 3px; }
+@media(max-width:760px){
+ .cs-artifacts { margin-top: 8px; }
+ .cs-instrument-extra:not(:empty) { right: 16px; bottom: 9px; }
+}
+@media(max-width:760px) and (max-height:700px){
+ .cs-instrument-extra:not(:empty) { right: 14px; bottom: 7px; }
+}
+/* Physical reader: hardware bezel, status lamp, transport title in the read slot. */
+.control-station-episode { --cs-bezel: 4px; --cs-ticket-strip: 7px; }
+.cs-interaction[data-kind=reader] {
+  border: var(--cs-bezel) solid #565b4b;
+  border-radius: 3px;
+  background: #373c30;
+}
+.cs-instrument[data-kind=reader] { background: #16201a; padding: 15px 17px 12px; }
+.cs-instrument[data-kind=reader] .cs-source {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 9px;
+  border-bottom: var(--cs-line) solid #52614a;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+.cs-instrument[data-kind=reader] .cs-source::before {
+  content: '';
+  display: block;
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #dbb877;
+}
+.control-station-episode[data-phase=crossing] .cs-instrument[data-kind=reader] .cs-source::before { background: #b5d88c; }
+.cs-instrument[data-kind=reader] .cs-instrument-title { font-size: 19px; text-transform: uppercase; letter-spacing: .045em; color: #eee6cd; }
+.cs-interaction[data-kind=reader] .cs-dock { background: #292f24; border-color: #7c8467; padding-inline: 17px; }
+.cs-artifact {
+  position: relative;
+  min-height: 51px;
+  padding: 7px 10px 7px 39px;
+  border: var(--cs-line) solid #a4a58c;
+  border-left: var(--cs-ticket-strip) solid #b8ba92;
+  border-radius: 5px;
+  background: #3c4232;
+}
+.cs-artifact::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  width: 17px;
+  height: 24px;
+  border-block: var(--cs-line) solid #b8ba92;
+  background: repeating-linear-gradient(90deg, #c9cba5 0 1px, transparent 1px 3px, #c9cba5 3px 5px, transparent 5px 7px);
+}
+.cs-artifact-label { font-size: 10px; color: #e0e0cb; }
+.cs-artifact-status { margin-top: 3px; font-size: 12px; letter-spacing: .015em; }
+.cs-instrument:has(.cs-instrument-extra:not(:empty)) .cs-artifact { padding-right: 111px; }
+.cs-instrument-extra:not(:empty) { right: 17px; bottom: 12px; height: 51px; width: 102px; display: flex; align-items: center; }
+.cs-instrument-extra:not(:empty) button { border-left: var(--cs-line) dotted #929d7a; }
+/* Phone: earpiece, contact and message thread, with the actions on the same device. */
+.cs-interaction[data-kind=phone] { border: var(--cs-bezel) solid #454a3e; border-radius: 22px; background: #1a1d18; }
+.cs-instrument[data-kind=phone] { background: #22271f; padding: 14px 17px 12px; }
+.cs-instrument[data-kind=phone]::before { height: 4px; width: 33px; background: #858e78; margin-bottom: 13px; }
+.cs-instrument[data-kind=phone] .cs-source { font-size: 12px; font-weight: 600; color: #d4dbc8; }
+.cs-instrument[data-kind=phone] .cs-instrument-title { font-size: 20px; }
+.cs-instrument[data-kind=phone] .cs-line { padding: 10px 12px; background: #39422e; border-radius: 10px 10px 10px 2px; font-size: 15px; line-height: 1.45; }
+.cs-interaction[data-kind=phone] .cs-dock { padding-inline: 17px; background: #1a1d18; }
+.cs-interaction[data-kind=phone] .cs-dock::after { content: ''; display: block; width: 44px; height: 3px; margin: 12px auto 0; border-radius: 3px; background: #7d8870; }
+@media(max-width:760px) {
+  .cs-interaction[data-kind=reader], .cs-interaction[data-kind=phone] { border-width: 0; border-top: var(--cs-rule) solid #747d64; border-radius: 0; }
+  .cs-instrument[data-kind=reader], .cs-instrument[data-kind=phone] { padding: 10px 16px 9px; }
+  .cs-instrument[data-kind=reader] .cs-source { padding-bottom: 6px; margin-bottom: 7px; font-size: 9px; }
+  .cs-instrument[data-kind=reader] .cs-instrument-title, .cs-instrument[data-kind=phone] .cs-instrument-title { font-size: 18px; }
+  .cs-instrument[data-kind=phone] .cs-line { padding: 8px 10px; font-size: 14px; }
+  .cs-interaction[data-kind=reader] .cs-dock, .cs-interaction[data-kind=phone] .cs-dock { padding-inline: 16px; }
+  .cs-interaction[data-kind=phone] .cs-dock::after { display: none; }
+  .cs-instrument-extra:not(:empty) { right: 16px; bottom: 9px; }
+}
+@media(max-width:760px) and (max-height:700px) {
+  .cs-instrument[data-kind=reader], .cs-instrument[data-kind=phone] { padding: 8px 14px 7px; }
+  .cs-instrument[data-kind=reader] .cs-source { padding-bottom: 4px; margin-bottom: 5px; }
+  .cs-instrument[data-kind=reader] .cs-instrument-title, .cs-instrument[data-kind=phone] .cs-instrument-title { font-size: 16px; }
+  .cs-instrument[data-kind=phone] .cs-source { font-size: 10px; }
+  .cs-instrument[data-kind=phone] .cs-line { font-size: 13px; }
+  .cs-interaction[data-kind=reader] .cs-dock, .cs-interaction[data-kind=phone] .cs-dock { padding-inline: 14px; }
+  .cs-instrument-extra:not(:empty) { right: 14px; bottom: 7px; }
+}
+
+/* --- Mots, dossier et pièce à lire (13 nov. 2026) ---
+   Hiérarchie : vert = ce que tu dois faire ; ambre = ce que ça coûte ; encre claire = ce qui est dit ; gris = contexte. */
+.cs-hud { display: flex; align-items: baseline; gap: 14px; margin: 0 auto 0 18px; font: 500 12px/1.2 var(--cs-font); color: var(--cs-muted); white-space: nowrap; }
+.cs-hud strong { font: 700 20px/1 var(--cs-font); color: var(--cs-ink); font-variant-numeric: tabular-nums; }
+.cs-hud-words strong { color: var(--cs-warm); }
+.cs-count { margin: 10px 0 0; padding-top: 8px; border-top: var(--cs-line) dashed var(--cs-edge); font-size: 13px; color: var(--cs-warm); }
+.cs-instrument-extra:has(.cs-record), .cs-instrument-extra:has(.cs-count) { position: static; display: block; width: auto; height: auto; border: 0; padding: 0; }
+.control-station-episode .cs-instrument:has(.cs-instrument-extra .cs-record) .cs-artifact, .control-station-episode .cs-instrument:has(.cs-instrument-extra .cs-count) .cs-artifact { padding-right: 10px; }
+.cs-record { display: grid; gap: 0; margin-top: 4px; }
+.cs-record-prompt { margin: 0 0 8px; font: 600 12px/1.35 var(--cs-font); letter-spacing: .05em; text-transform: uppercase; color: var(--cs-green); }
+.cs-record-label { margin: 8px 0 2px; font: 600 10px/1.2 var(--cs-font); letter-spacing: .1em; text-transform: uppercase; color: var(--cs-muted); }
+.cs-record-line, .cs-instrument-extra:not(:empty) button.cs-record-line { display: block; width: 100%; margin: 0; padding: 8px 6px; border: 0; border-bottom: var(--cs-line) dotted var(--cs-edge); border-radius: 0; background: none; color: var(--cs-ink); font: 500 14px/1.3 ui-monospace, Menlo, monospace; text-align: left; height: auto; text-decoration: none; }
+button.cs-record-line { cursor: pointer; min-height: 40px; }
+button.cs-record-line:hover, button.cs-record-line:focus-visible { background: #c7dca822; }
+.cs-record-own { color: var(--cs-green); }
+.cs-record-result { margin: 10px 0 0; padding: 8px 10px; border-left: var(--cs-rule) solid var(--cs-warm); background: #0003; font-size: 14px; outline: 0; }
+.cs-record-result[data-result=unfounded] { border-left-color: #e58f7a; }
+.cs-record-note { display: block; margin-top: 8px; font-size: 11px; line-height: 1.35; color: var(--cs-muted); }
+.control-station-episode[data-phase=decision] .cs-instruction { font: 600 12px/1.35 var(--cs-font); letter-spacing: .05em; text-transform: uppercase; color: var(--cs-green); }
+.control-station-episode[data-phase=decision] .cs-action-label { font-size: 17px; }
+.control-station-episode[data-phase=decision] .cs-action-cost { color: var(--cs-warm); }
+@media(max-width:760px) {
+  .cs-hud { gap: 8px; margin: 0 auto 0 8px; font-size: 10px; }
+  .cs-hud strong { font-size: 15px; }
+  .control-station-episode[data-phase=decision] .cs-instrument { max-height: none; overflow: auto; }
+  .control-station-episode[data-phase=decision] .cs-workspace { grid-template-rows: minmax(90px, 1fr) auto; overflow: auto; }
+  .cs-record-line, .cs-instrument-extra:not(:empty) button.cs-record-line { padding: 5px 4px; font-size: 12px; min-height: 0; }
+  button.cs-record-line { min-height: 32px; }
+  .cs-record-prompt { font-size: 11px; margin-bottom: 4px; }
+  .cs-record-label { margin-top: 5px; }
+  .cs-record-note { font-size: 10px; margin-top: 5px; }
+  .control-station-episode[data-phase=decision] .cs-action-label { font-size: 15px; }
+}
+@media(max-width:760px) and (max-height:700px) {
+  .control-station-episode[data-phase=decision] .cs-artifacts, .control-station-episode[data-phase=decision] .cs-source, .control-station-episode[data-phase=decision] .cs-goal { display: none; }
+  .control-station-episode[data-phase=decision] .cs-instrument-title { font-size: 16px; margin-bottom: 4px; }
+  .control-station-episode[data-phase=decision] .cs-line { font-size: 12px; margin: 0 0 4px; }
+  .cs-record-label { display: none; }
+  .cs-record-own::before { content: 'Ton bracelet · '; }
+}
+
+
+/* Téléphone, fin de scène : on ne joue plus, le bilan se pose sur l'image et tient sans défilement. */
+@media(max-width:760px) {
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-workspace { display: block; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-scene { position: absolute; inset: 0; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-scene-status { display: none; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-interaction { position: absolute; left: 0; right: 0; bottom: 0; width: auto; max-height: 100%; overflow: auto; background: #1a1d18f2; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-instrument { max-height: none; overflow: visible; background: none; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-traces { margin: 6px 0 0; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-traces > div { display: grid; grid-template-columns: 9.5em 1fr; gap: 8px; align-items: baseline; padding: 5px 0; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-traces > div:last-child { border-bottom: 0; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-traces dt { margin: 0; font-size: 11px; }
+  .control-station-episode:is([data-phase=passed],[data-phase=returned]) .cs-traces dd { font-size: 13px; line-height: 1.3; }
+}

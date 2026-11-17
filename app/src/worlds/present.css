@@ -1,0 +1,8 @@
+.present-comparisons { margin-block: 1.4rem; text-align: left; }
+.present-comparisons article { padding: 1rem; margin-block: 1rem; background: #203c41; border-radius: .65rem; color: #fff5df; }
+.present-comparisons article small { display: block; color: #aee3d7; line-height: 1.5; }
+.present-comparisons article h3 { font-size: 1.15rem; margin-block: .5rem; }
+.present-comparisons article p { font-size: .95rem; line-height: 1.6; color: #fff5df; }
+.present-comparisons .present-connection { padding: .75rem; background: #304d51; border-radius: .35rem; }
+.present-comparisons article a { color: #ffe3a0; text-decoration: underline; overflow-wrap: anywhere; }
+.present-comparisons summary { cursor: pointer; padding-block: .75rem; }

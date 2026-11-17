@@ -1,0 +1,67 @@
+/* Colour tokens, defined once. Green = what you must do, amber = what it costs, white = what is said, grey = what is told.
+   Red only means "blocked". Contrast against the dark scene surfaces (#1b201c and darker) is above 4.5. */
+.journey,.episode { --ink-act:#c9dda9; --ink-cost:#f2b544; --ink-said:#f2eee5; --ink-told:#bdbcb1; --ink-blocked:#ff8f80; }
+/* The resource bar (credits or the world's own resource, objects carried) is common to every world; the clock and the companion exist in the short form only.
+   The rest of this sheet stays scoped to [data-short]. */
+.journey { --short-red:#ff6b5e; --short-green:#b9f2c4; --short-border:1px; --short-rule:2px; --short-accent:3px; }
+.journey.dialogue-mode[data-short] .journey-identity>span,
+.journey.dialogue-mode[data-short] .journey-identity>p { display:none; }
+.journey.dialogue-mode[data-short] .journey-identity .journey-location { font:600 18px/1.2 'Montserrat C',Arial,sans-serif; letter-spacing:0; margin:0; }
+.journey.dialogue-mode[data-short]>.scene-reading-toggle,
+.journey.dialogue-mode[data-short] .scene-consequence { display:none; }
+.journey[data-short][data-ended=true] .scene-consequence { display:flex; }
+
+.journey .short-bar { position:absolute; top:74px; left:28px; display:flex; flex-wrap:wrap; align-items:center; gap:6px 16px; max-width:min(560px,calc(100% - 56px)); padding:8px 12px; border-radius:8px; background:#07121bb8; font-family:'Inter C',Arial,sans-serif; pointer-events:none; }
+.journey .short-clock { display:flex; align-items:center; gap:8px; border-radius:4px; padding:1px 4px; }
+.journey .short-clock strong { font:700 22px/1 'Montserrat C',Arial,sans-serif; font-variant-numeric:tabular-nums; color:#fff; }
+.journey .short-clock meter { width:86px; height:8px; }
+.journey .short-clock small,.journey .short-purse small { font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#c8deda; }
+.journey .short-purse { display:flex; align-items:center; gap:4px; border-radius:4px; padding:1px 4px; }
+.journey .short-purse small { margin-right:4px; }
+.journey .short-purse i { width:11px; height:11px; border-radius:50%; background:var(--short-green); }
+.journey .short-companion { flex-basis:100%; margin:0; padding:1px 4px 1px 8px; border-left:var(--short-rule) solid var(--ink-told); border-radius:0 4px 4px 0; font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:#f3f0e6; width:fit-content; }
+.journey .short-objects { display:flex; flex-wrap:wrap; gap:5px; border-radius:4px; }
+.journey .short-objects span { font-size:10px; letter-spacing:.05em; text-transform:uppercase; padding:2px 7px; border:var(--short-border) solid #9bd8df88; border-radius:3px; background:#17272dcc; color:#e0e9e7; }
+.journey .short-flash { animation:short-flash 1.1s ease-out; }
+@keyframes short-flash { 0%{background:var(--short-green);color:#0f2a1c} 100%{background:transparent} }
+
+
+/* The reaction to the last gesture stays readable above the next line. */
+.journey.dialogue-mode[data-short] .journey-panel:not(.journey-ending) .journey-feedback { display:block; margin:0 0 10px; padding:6px 10px; border-left:var(--short-accent) solid var(--ink-act); border-radius:0 5px 5px 0; background:#2c372a; color:#e0ebcf; font:400 13px/1.45 'Inter C',Arial,sans-serif!important; }
+.journey.dialogue-mode[data-short] .stage-dialogue .journey-panel .journey-speaker { font-weight:700; letter-spacing:.1em; }
+.journey.dialogue-mode[data-short] .stage-dialogue .journey-panel h2 { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
+.journey.dialogue-mode[data-short] .stage-dialogue .journey-panel .journey-line { font-size:15px; line-height:1.5; }
+.journey.dialogue-mode[data-short] .scene-choices button { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:2px 12px; font-size:14px; font-weight:600; }
+.journey.dialogue-mode[data-short] .scene-choices button small { margin-top:0; }
+.journey.dialogue-mode[data-short] .scene-choices button .short-price { color:var(--ink-cost); font-variant-numeric:tabular-nums; white-space:nowrap; }
+.journey.dialogue-mode[data-short] .scene-choices button .short-blocked { flex-basis:100%; text-transform:uppercase; letter-spacing:.06em; font-size:10px; }
+.journey.dialogue-mode[data-short] .scene-choices button:disabled { border-style:dashed; }
+
+.journey[data-short] .journey-ending h3 { margin:22px 0 4px; font:700 13px/1.3 'Montserrat C',Arial,sans-serif; letter-spacing:.1em; text-transform:uppercase; border-top:var(--short-rule) solid var(--ink-told); padding-top:8px; width:fit-content; }
+.journey .short-costs { list-style:none; margin:0; padding:0; counter-reset:cost; }
+.journey .short-costs li { counter-increment:cost; display:grid; grid-template-columns:40px minmax(0,1fr); column-gap:10px; padding:12px 0; border-top:var(--short-border) solid #45656b; }
+.journey .short-costs li::before { content:counter(cost); grid-row:span 2; font:800 32px/0.9 'Montserrat C',Arial,sans-serif; color:var(--ink-told); }
+.journey .short-costs small { font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#c8deda; }
+.journey .short-costs p { margin:2px 0 0!important; font:600 16px/1.35 'Inter C',Arial,sans-serif!important; color:#f3f0e6!important; }
+.journey .short-sheet { margin:20px 0; }
+.journey .short-sheet>summary { cursor:pointer; font:600 13px/1.4 'Inter C',Arial,sans-serif; padding:10px 0; }
+.journey[data-short] .journey-ending .journey-context { display:block; }
+.journey[data-short] .journey-ending .journey-context .journey-speaker { display:none; }
+
+@media(max-width:760px) and (min-height:551px) {
+ .journey.dialogue-mode[data-short] { --iv-portrait-height:clamp(250px,40dvh,400px); }
+ .journey.dialogue-mode[data-short] .illustrated-view { padding-top:104px; }
+ .journey.dialogue-mode[data-short] .journey-header { display:flex; align-items:center; justify-content:space-between; padding:8px 12px; }
+ .journey.dialogue-mode[data-short] .journey-identity .journey-location { font-size:15px; }
+ .journey.dialogue-mode[data-short] .journey-header nav { position:static; overflow:visible; padding:0; }
+ .journey.dialogue-mode[data-short] .journey-header nav button { min-height:36px; padding:6px 12px; }
+ .journey .short-bar { top:50px; left:8px; right:8px; max-width:none; gap:3px 12px; padding:4px 6px; background:none; }
+ .journey .short-clock strong { font-size:19px; }
+ .journey .short-clock meter { width:60px; }
+ .journey .short-clock small { display:none; }
+ .journey .short-companion { flex-basis:auto; }
+ .journey.dialogue-mode[data-short] .stage-dialogue .journey-panel:not(.journey-ending) { top:calc(104px + var(--iv-portrait-height)); bottom:206px; max-height:none; min-height:70px; }
+ .journey.dialogue-mode[data-short] .scene-choices { max-height:190px; padding:8px; }
+ .journey.dialogue-mode[data-short] .scene-choices button { min-height:42px; padding:9px 12px; }
+}
+@media(prefers-reduced-motion:reduce) { .journey .short-flash { animation:none; } }

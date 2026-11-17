@@ -1,0 +1,239 @@
+{
+  "status": "content",
+  "byExtinction": {
+    "w07": [
+      {
+        "id": "1",
+        "edition": 1,
+        "linkedHeadline": "traj.m02",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q05",
+          "answer": "B"
+        },
+        "also": [
+          {
+            "question": "Q18",
+            "answer": "C"
+          }
+        ],
+        "hypothesis": true
+      },
+      {
+        "id": "2",
+        "edition": 1,
+        "linkedHeadline": "w07.centres_calcul",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q15",
+          "answer": "B"
+        },
+        "also": [
+          {
+            "question": "Q04",
+            "answer": "C"
+          }
+        ],
+        "hypothesis": true
+      },
+      {
+        "id": "3",
+        "edition": 1,
+        "linkedHeadline": "w07.modele_ouvert",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q16",
+          "answer": "A"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "4",
+        "edition": 2,
+        "linkedHeadline": "w07.decisions",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q07",
+          "answer": "C"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "5",
+        "edition": 2,
+        "linkedHeadline": "w07.decisions",
+        "var": "unrest",
+        "sense": 1,
+        "main": {
+          "question": "Q14",
+          "answer": "D"
+        },
+        "also": [
+          {
+            "question": "Q20",
+            "answer": "C"
+          }
+        ],
+        "hypothesis": true
+      },
+      {
+        "id": "6",
+        "edition": 2,
+        "linkedHeadline": "w07.ministeres",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q18",
+          "answer": "C"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "7",
+        "edition": 3,
+        "linkedHeadline": "w07.ordres",
+        "var": "aiPower",
+        "sense": 1,
+        "main": {
+          "question": "Q04",
+          "answer": "C"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "8",
+        "edition": 3,
+        "linkedHeadline": "rupture",
+        "var": "aiPower",
+        "sense": 1,
+        "main": "sumOfOthers",
+        "also": [],
+        "hypothesis": true
+      }
+    ],
+    "w12": [
+      {
+        "id": "1",
+        "edition": 1,
+        "linkedHeadline": "traj.m08",
+        "var": "order",
+        "sense": -1,
+        "main": {
+          "question": "Q05",
+          "answer": "B"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "2",
+        "edition": 1,
+        "linkedHeadline": "traj.m08",
+        "var": "order",
+        "sense": -1,
+        "main": {
+          "question": "Q18",
+          "answer": "C"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "3",
+        "edition": 1,
+        "linkedHeadline": "w12.incident",
+        "var": "unrest",
+        "sense": 1,
+        "main": {
+          "question": "Q07",
+          "answer": "C"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "4",
+        "edition": 2,
+        "linkedHeadline": "w12.incident",
+        "var": "order",
+        "sense": -1,
+        "main": {
+          "question": "Q16",
+          "answer": "A"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "5",
+        "edition": 2,
+        "linkedHeadline": "w12.reseau",
+        "var": "unrest",
+        "sense": 1,
+        "main": {
+          "question": "Q15",
+          "answer": "D"
+        },
+        "also": [],
+        "hypothesis": true
+      },
+      {
+        "id": "6",
+        "edition": 2,
+        "linkedHeadline": "traj.m08",
+        "var": "surveillance",
+        "sense": 1,
+        "main": {
+          "question": "Q04",
+          "answer": "C"
+        },
+        "also": [
+          {
+            "question": "Q10",
+            "answer": "A"
+          },
+          {
+            "question": "Q11",
+            "answer": "C"
+          }
+        ]
+      },
+      {
+        "id": "7",
+        "edition": 3,
+        "linkedHeadline": "traj.m09",
+        "var": "unrest",
+        "sense": 1,
+        "main": {
+          "question": "Q14",
+          "answer": "D"
+        },
+        "also": [
+          {
+            "question": "Q20",
+            "answer": "C"
+          }
+        ],
+        "hypothesis": true
+      },
+      {
+        "id": "8",
+        "edition": 3,
+        "linkedHeadline": "rupture",
+        "var": "unrest",
+        "sense": 1,
+        "main": "sumOfOthers",
+        "also": [],
+        "hypothesis": true
+      }
+    ]
+  }
+}

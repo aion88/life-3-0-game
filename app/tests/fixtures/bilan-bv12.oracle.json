@@ -1,0 +1,149 @@
+{
+ "cases": [
+  {
+   "id": "fourth-place-split",
+   "line": "AAACADDADBC",
+   "remontee": [
+    "Q21",
+    "Q05",
+    "Q14"
+   ],
+   "others": [
+    [
+     "Q21",
+     5,
+     "A",
+     "w03"
+    ],
+    [
+     "Q21",
+     5,
+     "B",
+     "w01"
+    ],
+    [
+     "Q21",
+     5,
+     "D",
+     "w11"
+    ],
+    [
+     "Q14",
+     2,
+     "A",
+     "w10"
+    ]
+   ]
+  },
+  {
+   "id": "rank-q07-is-11",
+   "line": "AAAAAADABCB",
+   "remontee": [
+    "Q21",
+    "Q05",
+    "Q14"
+   ],
+   "others": [
+    [
+     "Q21",
+     5,
+     "A",
+     "w03"
+    ],
+    [
+     "Q21",
+     5,
+     "C",
+     "w10"
+    ],
+    [
+     "Q04",
+     6,
+     "D",
+     "w04"
+    ],
+    [
+     "Q07",
+     11,
+     "C",
+     "w06"
+    ]
+   ]
+  },
+  {
+   "id": "rank-q21-is-5",
+   "line": "AAAAAAAAAAA",
+   "remontee": [
+    "Q21",
+    "Q05",
+    "Q04"
+   ],
+   "others": [
+    [
+     "Q21",
+     5,
+     "C",
+     "w10"
+    ],
+    [
+     "Q21",
+     5,
+     "D",
+     "w11"
+    ]
+   ]
+  },
+  {
+   "id": "same-world-first-kept",
+   "line": "AAAAAAAAAAA",
+   "remontee": [
+    "Q21",
+    "Q05",
+    "Q04"
+   ],
+   "others": [
+    [
+     "Q21",
+     5,
+     "C",
+     "w10"
+    ],
+    [
+     "Q21",
+     5,
+     "D",
+     "w11"
+    ]
+   ]
+  },
+  {
+   "id": "skipped-traceback-question",
+   "line": "AAAAAAAAACB",
+   "remontee": [
+    "Q21",
+    "Q05",
+    "Q14"
+   ],
+   "others": [
+    [
+     "Q21",
+     5,
+     "D",
+     "w11"
+    ],
+    [
+     "Q05",
+     3,
+     "B",
+     "w04"
+    ],
+    [
+     "Q04",
+     6,
+     "C",
+     "w03"
+    ]
+   ]
+  }
+ ]
+}

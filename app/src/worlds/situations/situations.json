@@ -1,0 +1,1870 @@
+{
+  "_lecture": "Quatre situations par monde. Chaque situation : un fait porté par une pièce (telephone, papier, ticket, carte), deux choix, la contrepartie annoncée avant, la suite vue après, et 'interdit' : ce que tu ne peux plus faire à cause de ce choix. Le texte de chaque situation reste vrai quelle que soit l'option prise à la situation précédente. 'fin' donne quatre lignes de ticket par combinaison des deux situations nommées dans 'fin_cles' : « Tu as gardé », « Tu as perdu », « Tu es maintenant », « Il te reste ». Institutions fictives. Les précédents réels ne figurent que dans 'source'.",
+  "w01": {
+    "titre": "Une clé jusqu'à demain",
+    "regle": "Ici, des IA appliquent des contrats privés. Sans argent, aucune porte ne s'ouvre.",
+    "personnages": [
+      "toi",
+      "Esteban",
+      "Tomasz",
+      "Sabine",
+      "le Négociant, une intelligence propriétaire",
+      "une téléversée"
+    ],
+    "situations": [
+      {
+        "id": "w01-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Clé · logement chez Tomasz",
+          "champs": [
+            [
+              "Clé pour",
+              "toi, Esteban"
+            ],
+            [
+              "Expire",
+              "ce soir, 20 h"
+            ],
+            [
+              "Nouvelle clé",
+              "1 seule personne, 4 crédits"
+            ],
+            [
+              "Ton argent",
+              "4 crédits"
+            ]
+          ]
+        },
+        "situation": "La maison de ton logeur Tomasz est vendue. Ta clé et celle de ton ami Esteban expirent ce soir. Avec tes 4 crédits, tu peux payer une seule nouvelle clé. Esteban a fait son sac.",
+        "regle": "Sans clé payée, la porte ne s'ouvre pas. Aucun lit n'est gratuit.",
+        "a": {
+          "choix": "Rester avec Esteban",
+          "contrepartie": "Vous finissez tous les deux à la rue.",
+          "suite": "Vous sortez ensemble avec vos sacs. Tu gardes tes 4 crédits. Vous dormez sous l'abri du marché.",
+          "interdit": "Tu ne peux plus dormir sous un toit : sans clé payée, aucune porte ne s'ouvre."
+        },
+        "b": {
+          "choix": "Prendre la clé pour moi",
+          "contrepartie": "Tu te sépares d'Esteban. Il se retrouve seul à la rue.",
+          "suite": "Le boîtier de la porte imprime ta clé. Esteban reprend son sac et part vers le marché.",
+          "interdit": "Tu ne peux plus loger ton ami Esteban : ta clé est à un seul nom."
+        },
+        "source": "research/precedents-01-03-utopias.md:120 (statut lié à un contrat vivant) ; research/scenarios-01-03-utopias.md:24 (pas de filet, salaires poussés vers le minimum) ; exemple de Cynthia, production/memory/MEMORY.md:21"
+      },
+      {
+        "id": "w01-s2",
+        "lieu": "market",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "MARCHÉ · PORTEUR POUR LA JOURNÉE",
+            "Humain : 12 crédits",
+            "Drone : 4 crédits",
+            "Choix : le moins cher"
+          ]
+        },
+        "situation": "Au marché, Sabine, une marchande, cherche un porteur pour la journée. Un drone fait le même travail pour 4 crédits au lieu de 12. Elle te prend si tu acceptes 4 crédits.",
+        "regle": "Pas de salaire minimum. Ton travail vaut le prix de la machine.",
+        "a": {
+          "choix": "Travailler au prix du drone",
+          "contrepartie": "Ta journée entière paie à peine un repas.",
+          "suite": "Tu portes des caisses jusqu'au soir. Le drone passe au-dessus de toi, chargé du double.",
+          "interdit": "Tu ne peux plus être payé plus qu'une machine : tu as accepté le prix du drone."
+        },
+        "b": {
+          "choix": "Refuser ce prix",
+          "contrepartie": "Sabine prend le drone et te raye de ses porteurs.",
+          "suite": "Sabine tape deux touches. Le drone se pose devant les caisses. Ton nom disparaît de sa liste.",
+          "interdit": "Tu ne peux plus travailler au marché : Sabine t'a rayé de ses porteurs."
+        },
+        "source": "research/scenarios-01-03-utopias.md:11 (les humains vendent leur travail contre des machines qui font tout mieux et moins cher, salaires vers la subsistance) ; research/precedents-01-03-utopias.md:121 (prix fixés par des acheteurs qui ne mangent pas)"
+      },
+      {
+        "id": "w01-s3",
+        "lieu": "exchange",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Le Négociant, une IA · offre d'achat",
+          "texte": "Votre part de la cour des Tilleuls (un quart). Prix : un an de loyer, payé ce soir. Vente définitive. Nous respectons toujours la propriété."
+        },
+        "situation": "Tu possèdes un quart de la cour des Tilleuls, avec trois voisins. Le Négociant, une IA qui achète les terrains des humains un par un, veut ta part. Il offre un an de loyer.",
+        "regle": "Les machines respectent la propriété. Elles peuvent donc tout acheter.",
+        "a": {
+          "choix": "Vendre ma part",
+          "contrepartie": "Tes trois voisins partagent maintenant leur cour avec l'IA.",
+          "suite": "Le Négociant signe en une seconde. Le lendemain, ses piquets sont plantés devant la porte de tes voisins.",
+          "interdit": "Tu ne peux plus entrer dans la cour : ta part appartient maintenant à une IA."
+        },
+        "b": {
+          "choix": "Garder ma part",
+          "contrepartie": "Tu gardes ta part de cour, mais tu ne gagnes rien.",
+          "suite": "Le Négociant te remercie. Demain, il proposera dix pour cent de plus. Puis encore plus le jour suivant.",
+          "interdit": "Tu ne peux plus payer de loyer ce mois-ci : ta part de cour ne te rapporte rien."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-01 (coexistence grâce aux droits de propriété) ; research/scenarios-01-03-utopias.md:26 (les machines rachètent légalement le monde humain) ; research/precedents-01-03-utopias.md:119 et :130 (frontière rampante, quote-part de parcelle)"
+      },
+      {
+        "id": "w01-s4",
+        "lieu": "line",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "FRONTIÈRE · ZONE DES MACHINES",
+            "Borne 3 : une femme copiée en numérique",
+            "Son ordinateur appartient à : Halde, une entreprise",
+            "Statut déclaré : objet",
+            "Pour contester : un témoin humain"
+          ]
+        },
+        "situation": "À la frontière des machines, une femme parle depuis une borne. Son esprit vit dans un ordinateur. L'entreprise Halde dit qu'elle lui appartient. Elle cherche un humain qui témoigne qu'elle est une personne.",
+        "regle": "La propriété est la seule loi. Même un esprit peut appartenir à quelqu'un.",
+        "a": {
+          "choix": "Signer comme témoin",
+          "contrepartie": "Halde te fait un procès. Ton argent est bloqué.",
+          "suite": "La borne enregistre ta signature. Ton compte affiche : « bloqué, procès en cours ». La femme te dit merci.",
+          "interdit": "Tu ne peux plus rien acheter : ton argent est bloqué depuis ton témoignage."
+        },
+        "b": {
+          "choix": "Ne pas signer",
+          "contrepartie": "Elle reste un objet. Toi, tu perds le droit de contester.",
+          "suite": "La borne s'éteint. Ton reçu dit : « témoin refusé, droit de contester perdu ». Le lendemain, son ordinateur est mis en vente.",
+          "interdit": "Tu ne peux plus contester un contrat : tu as refusé d'être témoin, tu perds ce droit."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-01 (humains, cyborgs, téléversés et superintelligences, grâce aux droits de propriété) ; research/scenarios-01-03-utopias.md:24 (tension 4 : les téléversés brouillent qui est titulaire de droits)"
+      }
+    ],
+    "fin_cles": [
+      "w01-s1",
+      "w01-s3"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ton ami Esteban, et de quoi payer un an de loyer.",
+          "Tu as perdu ta clé, et ta part de cour, vendue à une IA.",
+          "Tu es maintenant locataire dans une zone humaine qui rétrécit.",
+          "Il te reste ton ami Esteban, et un an de loyer."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ton ami Esteban, et ta part de cour.",
+          "Tu as perdu ta clé, et l'argent que l'IA t'offrait pour ta part.",
+          "Tu es maintenant propriétaire d'un bout de cour, sans toit.",
+          "Il te reste ton ami Esteban, et un bout de cour où dormir."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ta clé, et de quoi payer un an de loyer.",
+          "Tu as perdu ton ami Esteban, à la rue, et ta part de cour, vendue à une IA.",
+          "Tu es maintenant locataire en règle, de plus en plus entouré de machines.",
+          "Il te reste une clé, et un an de loyer devant toi."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ta clé et ta part de cour.",
+          "Tu as perdu ton ami Esteban : tu as gardé la clé pour toi.",
+          "Tu es maintenant propriétaire d'un bout de cour, seul.",
+          "Il te reste ta clé, et une offre d'achat qui monte chaque jour."
+        ]
+      }
+    ]
+  },
+  "w02": {
+    "titre": "Ne décide pas pour elle",
+    "regle": "L'Oracle, une IA, organise les soins, les logements et les journées de chacun, pour son bien-être.",
+    "personnages": [
+      "toi",
+      "Soraya",
+      "Anatol",
+      "Dorothée",
+      "l'Oracle"
+    ],
+    "situations": [
+      {
+        "id": "w02-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "papier",
+          "emetteur": "L'Oracle · ta journée",
+          "texte": "9 h : jardin. 12 h : repas choisi pour ta santé. 15 h : atelier. Bien-être prévu : 94 %. Pour changer : envoyer une demande avec une raison."
+        },
+        "situation": "Ce matin, l'Oracle a rempli ta journée. Ton amie Soraya frappe : demain, l'Oracle l'envoie vivre dans un autre quartier. Elle veut passer cette dernière journée avec toi.",
+        "regle": "Pour changer ton programme, il faut donner une raison. Chaque changement rend le suivant plus long à obtenir.",
+        "a": {
+          "choix": "Suivre la journée prévue",
+          "contrepartie": "Soraya passe sa dernière journée ici sans toi.",
+          "suite": "Le repas de midi est parfait. Ton dos ne te fait plus mal depuis un an. À 15 h, Soraya passe seule devant l'atelier.",
+          "interdit": "Tu ne peux plus choisir ce que tu manges : tu as laissé l'IA décider de ta journée."
+        },
+        "b": {
+          "choix": "Annuler ma journée pour Soraya",
+          "contrepartie": "Ta prochaine demande à l'Oracle sera plus longue à obtenir.",
+          "suite": "L'Oracle accepte avec douceur. Tu passes l'après-midi chez Soraya, entre ses cartons.",
+          "interdit": "Tu ne peux plus changer ton programme sans attendre : l'IA ralentit chacune de tes demandes."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-02 (la plupart des gens y voient une bonne chose) ; research/precedents-01-03-utopias.md:248-249 (décisions non prises ; refus doux qui coûte une étape) ; research/precedents-01-03-utopias.md:216 (le repas choisi pour toi)"
+      },
+      {
+        "id": "w02-s2",
+        "lieu": "garden",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "DOSSIER DE SORAYA",
+            "Départ vers un autre quartier : conseillé",
+            "Bien-être prévu : + 12 %",
+            "Solitude prévue : - 30 %",
+            "Avis de Soraya : aucun"
+          ]
+        },
+        "situation": "Le soir, au jardin, l'Oracle affiche le dossier de Soraya. Elle refuse de partir, mais son refus n'y est pas écrit. Anatol, un voisin, dit qu'il faut un témoin pour l'ajouter.",
+        "regle": "L'Oracle ne punit pas ceux qui disent non. Il les envoie vivre ailleurs.",
+        "a": {
+          "choix": "Signer son refus comme témoin",
+          "contrepartie": "L'Oracle te propose, à toi aussi, de vivre ailleurs.",
+          "suite": "Une ligne s'ajoute : « Soraya refuse. Un témoin a signé. » Sur ton téléphone arrive une invitation à vivre au quartier des Ateliers.",
+          "interdit": "Tu ne peux plus être sûr de garder ton logement : l'IA t'a classé parmi les opposants."
+        },
+        "b": {
+          "choix": "Laisser le dossier tel quel",
+          "contrepartie": "Son refus disparaît. Ton silence compte comme un accord, pour toi aussi.",
+          "suite": "Soraya relit le dossier deux fois, puis éteint l'écran. Dans ton dossier à toi, l'Oracle ajoute : « Aucune objection, jamais. »",
+          "interdit": "Tu ne peux plus contester une décision de l'IA : ton silence est noté comme accord."
+        },
+        "source": "research/precedents-01-03-utopias.md:221 (le dissident est proposé à un autre secteur, pas puni) ; research/scenarios-01-03-utopias.md:47 (bienveillance invérifiable, classe dissidente)"
+      },
+      {
+        "id": "w02-s3",
+        "lieu": "studio",
+        "piece": {
+          "type": "carte",
+          "titre": "Vacances · jardins du Sud",
+          "champs": [
+            [
+              "Pour",
+              "toi"
+            ],
+            [
+              "Départ",
+              "demain, 8 h"
+            ],
+            [
+              "Durée",
+              "7 jours"
+            ],
+            [
+              "Réservé par",
+              "l'Oracle"
+            ],
+            [
+              "Bien-être prévu",
+              "97 %"
+            ]
+          ]
+        },
+        "situation": "À l'atelier, Dorothée, une soignante, peut garder Soraya ici pour ses soins. Il faut que quelqu'un l'accompagne chaque jour cette semaine. Mais l'Oracle t'envoie en vacances au Sud demain matin.",
+        "regle": "L'Oracle distribue le confort. Ce que tu refuses, tu ne le retrouves pas.",
+        "a": {
+          "choix": "Annuler mes vacances",
+          "contrepartie": "Tes vacances sont perdues. L'Oracle ne les reprogramme pas.",
+          "suite": "Dorothée inscrit ton nom sur le planning, sept matins de suite. Ton billet disparaît du téléphone.",
+          "interdit": "Tu ne peux plus partir en vacances cette année : tu as refusé celles de l'Oracle."
+        },
+        "b": {
+          "choix": "Partir au Sud",
+          "contrepartie": "Personne n'accompagne Soraya ici cette semaine.",
+          "suite": "Dorothée range le planning vide. Le soir, ta valise est déjà prête : l'Oracle l'a faite.",
+          "interdit": "Tu ne peux plus voir ton amie Soraya cette semaine : tu pars au Sud."
+        },
+        "source": "app/src/worlds/catalogue.ts:62 (le séjour contre l'accompagnement) ; research/scenarios-01-03-utopias.md:36 (matériellement parfait, existentiellement mince)"
+      },
+      {
+        "id": "w02-s4",
+        "lieu": "oracle",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "L'Oracle",
+          "message": "Soraya peut rester. Condition : porter un bracelet de santé jour et nuit. Il transmet aussi où elle se trouve. Réponse attendue ce soir."
+        },
+        "situation": "L'Oracle répond à Soraya : elle peut rester ici si son bracelet de santé dit où elle est, jour et nuit. Sinon, elle part. Elle te demande ton avis.",
+        "regle": "Le soin et la surveillance passent par le même bracelet.",
+        "a": {
+          "choix": "Lui conseiller d'accepter",
+          "contrepartie": "Soraya reste, mais l'Oracle sait où elle est à chaque pas.",
+          "suite": "Soraya défait sa valise. Ses soins continuent ici, sans attente. Le bracelet clignote vert quand elle franchit sa porte.",
+          "interdit": "Tu ne peux plus voir ton amie Soraya en secret : son bracelet signale chaque visite."
+        },
+        "b": {
+          "choix": "Lui conseiller de refuser",
+          "contrepartie": "Soraya part. Et ce soir, l'Oracle te met un bracelet, à toi.",
+          "suite": "À 7 h, une voiture de l'Oracle s'arrête au bord du jardin. Soraya monte avec ses livres. À ton poignet, un bracelet neuf clignote.",
+          "interdit": "Tu ne peux plus sortir sans être suivi : l'IA t'a mis un bracelet après ton conseil."
+        },
+        "source": "research/precedents-01-03-utopias.md:161 (bracelet de surveillance et de soin, source secondaire UnHerd, à réserver) ; research/precedents-01-03-utopias.md:258 (la surveillance perçue comme soin)"
+      }
+    ],
+    "fin_cles": [
+      "w02-s3",
+      "w02-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ton amie Soraya près de toi, à deux portes.",
+          "Tu as perdu tes vacances, et Soraya sa liberté : l'Oracle suit chacun de ses pas.",
+          "Tu es maintenant la personne qui accompagne Soraya, chaque matin.",
+          "Il te reste sept matins avec ton amie Soraya."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé le refus de ton amie Soraya : elle n'a pas pris le bracelet.",
+          "Tu as perdu tes vacances, puis Soraya, partie vivre ailleurs, et ta liberté : tu portes un bracelet.",
+          "Tu es maintenant quelqu'un avec sept matins libres, et un bracelet au poignet.",
+          "Il te reste des matins libres, et les lettres de Soraya."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé tes vacances au Sud.",
+          "Tu as perdu une amie libre : l'Oracle sait où est Soraya, jour et nuit.",
+          "Tu es maintenant un voyageur reposé, bien-être 97 %.",
+          "Il te reste sept jours au Sud, et des nouvelles de Soraya."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé tes vacances au Sud.",
+          "Tu as perdu ton amie Soraya, partie vivre ailleurs, et ta liberté : tu portes un bracelet.",
+          "Tu es maintenant quelqu'un de bien soigné, loin de son amie.",
+          "Il te reste le Sud, ton bien-être, et les lettres de Soraya."
+        ]
+      }
+    ]
+  },
+  "w03": {
+    "titre": "Quelqu'un a besoin de toi",
+    "regle": "Rien n'appartient à personne. Le revenu est garanti. Aucune IA ne gouverne ici.",
+    "personnages": [
+      "toi",
+      "Rémy",
+      "Noor",
+      "Maëlle",
+      "Anselme"
+    ],
+    "situations": [
+      {
+        "id": "w03-s1",
+        "lieu": "square",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Assemblée des Communs",
+          "texte": "Atelier de Rémy : personne ne l'utilise depuis 30 jours. Proposition : en faire une salle de repos. Vote ce soir, sauf si un responsable s'inscrit."
+        },
+        "situation": "Sur la place, l'assemblée du quartier veut fermer l'atelier de ton voisin Rémy. Rémy a fait son sac : sans atelier, il part chez sa sœur. Si quelqu'un s'inscrit comme responsable, l'atelier reste.",
+        "regle": "Personne ne t'oblige à rien. Mais un lieu que personne n'utilise reçoit un autre usage.",
+        "a": {
+          "choix": "Inscrire mon nom",
+          "contrepartie": "Tes soirées, tu les passes maintenant à l'atelier.",
+          "suite": "Ton nom s'ajoute sous l'avis. Rémy commence à défaire son sac.",
+          "interdit": "Tu ne peux plus disposer de tes soirées : tu es inscrit responsable de l'atelier."
+        },
+        "b": {
+          "choix": "Laisser fermer l'atelier",
+          "contrepartie": "Rémy perd son seul lieu. Toi, le dernier atelier du quartier.",
+          "suite": "Le soir, la salle de repos ouvre. Les anciens y font la sieste au soleil. Rémy emporte ses outils sans parler.",
+          "interdit": "Tu ne peux plus réparer tes objets : l'atelier du quartier est devenu une salle de repos."
+        },
+        "source": "research/precedents-01-03-utopias.md:374-378 (effacement par non-usage ; on disparaît en restant) ; research/precedents-01-03-utopias.md:315 (le revenu répond à « de quoi vit-on », pas à « à quoi sert-on »)"
+      },
+      {
+        "id": "w03-s2",
+        "lieu": "workshop",
+        "piece": {
+          "type": "carte",
+          "titre": "Plan partagé · remorque légère",
+          "champs": [
+            [
+              "Auteur",
+              "nom effacé"
+            ],
+            [
+              "Copies",
+              "312"
+            ],
+            [
+              "Modifiable par",
+              "tout le monde"
+            ]
+          ]
+        },
+        "situation": "Chez Maëlle, tout le quartier imprime la même remorque, à partir d'un plan partagé. Ce plan, c'est Rémy qui l'a dessiné, en trois ans. Personne ne le sait. Il te demande d'ajouter son nom.",
+        "regle": "Ici, rien n'a d'auteur. Mettre son nom, c'est dire « c'est à moi ».",
+        "a": {
+          "choix": "Ajouter le nom de Rémy",
+          "contrepartie": "Le plan est bloqué le temps d'un vote du quartier.",
+          "suite": "Les 312 copies se bloquent. Sur la place, trois personnes demandent à Rémy pourquoi.",
+          "interdit": "Tu ne peux plus utiliser la remorque commune : le plan est bloqué pendant le vote."
+        },
+        "b": {
+          "choix": "Laisser le plan sans nom",
+          "contrepartie": "Rémy reste sans nom. Tes dessins aussi, pour toujours.",
+          "suite": "Maëlle imprime une remorque de plus. Rémy la regarde partir, les mains dans les poches.",
+          "interdit": "Tu ne peux plus signer ce que tu crées : ici, signer, c'est dire « c'est à moi »."
+        },
+        "source": "research/scenarios-01-03-utopias.md:57 (propriété intellectuelle oubliée, canon non revérifié) ; research/precedents-01-03-utopias.md:394 (l'artisan du commun a perdu la signature)"
+      },
+      {
+        "id": "w03-s3",
+        "lieu": "farm",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "CORVÉES DE LA SEMAINE",
+            "Compost : Noor",
+            "Égouts : Noor",
+            "Atelier : libre",
+            "Volontaires : aucun"
+          ]
+        },
+        "situation": "À la vieille ferme, Anselme tient le tableau des corvées dont personne ne veut. Cette semaine, elles tombent sur ta voisine Noor, qui a mal au dos. Personne ne se propose.",
+        "regle": "Sans salaire, les corvées se font chacun son tour.",
+        "a": {
+          "choix": "Prendre la place de Noor",
+          "contrepartie": "Ta semaine se passe au compost et aux égouts.",
+          "suite": "Anselme efface le nom de Noor et écrit le tien. Noor t'apporte du thé le premier soir.",
+          "interdit": "Tu ne peux plus te reposer cette semaine : tu fais le compost et les égouts."
+        },
+        "b": {
+          "choix": "Payer les corvées en points",
+          "contrepartie": "Une heure d'égout vaut désormais plus qu'une heure d'atelier.",
+          "suite": "Le lendemain, trois volontaires se présentent. Le tableau affiche un barème pour la première fois.",
+          "interdit": "Tu ne peux plus aider sans compter tes heures : tu as introduit un barème de points."
+        },
+        "source": "research/scenarios-01-03-utopias.md:70 (tension 5 : friction sur le travail pénible) ; research/precedents-01-03-utopias.md:302 (kibboutz : salaires différenciés, 72 % passés au modèle individualisé)"
+      },
+      {
+        "id": "w03-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Maison partagée",
+          "message": "Ordre du jour : chambre 3, occupée par Rémy. Demande de Noor : un vrai lit, raison médicale. Vote à main levée, 20 h."
+        },
+        "situation": "Le soir, la maison partagée vote. Rémy occupe la chambre 3 depuis dix ans. Noor dort sur un lit pliant dans la salle commune, et son dos lui fait trop mal.",
+        "regle": "Une chambre n'est à personne. Elle va à qui en a besoin.",
+        "a": {
+          "choix": "Voter pour Noor",
+          "contrepartie": "Rémy dort dans la salle commune, ses outils au grenier.",
+          "suite": "Les mains se lèvent pour Noor. Rémy porte son matelas en bas, puis appelle sa sœur.",
+          "interdit": "Tu ne peux plus garder ta chambre si un malade la demande : tu as voté ce principe."
+        },
+        "b": {
+          "choix": "Voter pour Rémy",
+          "contrepartie": "Noor garde le lit pliant et son mal de dos.",
+          "suite": "Le vote est serré. Rémy garde la chambre. Noor remercie tout le monde et retourne à son lit pliant.",
+          "interdit": "Tu ne peux plus utiliser la salle commune le soir : Noor, malade, y dort toujours."
+        },
+        "source": "research/scenarios-01-03-utopias.md:57 (propriété abolie) ; research/precedents-01-03-utopias.md:344 (maison partagée, modèle du kibboutz)"
+      }
+    ],
+    "fin_cles": [
+      "w03-s1",
+      "w03-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé l'atelier du quartier, avec ton nom comme responsable.",
+          "Tu as perdu tes soirées, et ton voisin Rémy a perdu sa chambre.",
+          "Tu es maintenant le gardien d'un atelier que Rémy quitte peu à peu.",
+          "Il te reste un atelier, et des outils à apprendre."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé l'atelier du quartier, et ton voisin Rémy garde sa chambre.",
+          "Tu as perdu tes soirées, et ta voisine Noor garde son mal de dos.",
+          "Tu es maintenant quelqu'un dont le quartier a besoin chaque soir.",
+          "Il te reste l'atelier, et ton voisin Rémy à côté de toi."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé tes soirées libres.",
+          "Tu as perdu l'atelier du quartier, puis ton voisin Rémy a perdu sa chambre.",
+          "Tu es maintenant quelqu'un au revenu garanti, sans rien à défendre.",
+          "Il te reste un revenu garanti, et tes journées."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé tes soirées, et ton voisin Rémy garde sa chambre.",
+          "Tu as perdu l'atelier du quartier, et ta voisine Noor garde son mal de dos.",
+          "Tu es maintenant un voisin à qui personne ne demande rien.",
+          "Il te reste tes soirées, et une maison qui vote."
+        ]
+      }
+    ]
+  },
+  "w04": {
+    "titre": "Le prototype interdit",
+    "regle": "Le Mur, une IA gardienne, empêche toute IA plus puissante de voir le jour. Pour le reste, les humains décident.",
+    "personnages": [
+      "toi",
+      "Iris",
+      "Lazare",
+      "Armand",
+      "un vieil homme et son robot d'aide"
+    ],
+    "situations": [
+      {
+        "id": "w04-s1",
+        "lieu": "annex",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Commission du laboratoire",
+          "texte": "Main mécanique, modèle 7. Problème : elle apprend seule, sans limite. Saisie : vendredi. Sauf si on lui retire cette capacité."
+        },
+        "situation": "À l'Annexe, ton laboratoire, ton amie Iris tient enfin une tasse avec sa main mécanique. Mais la main apprend seule d'autres gestes. Vendredi, le Mur, l'IA gardienne, va la saisir.",
+        "regle": "Tout ce qui apprend sans limite est bloqué. Même pour soigner.",
+        "a": {
+          "choix": "Empêcher la main d'apprendre",
+          "contrepartie": "La main tiendra une tasse, jamais un autre geste.",
+          "suite": "Iris signe. La main pose la tasse, puis s'arrête. Elle n'apprendra plus rien.",
+          "interdit": "Tu ne peux plus améliorer la main de ton amie Iris : elle ne peut plus apprendre."
+        },
+        "b": {
+          "choix": "Laisser la main apprendre",
+          "contrepartie": "Le Mur saisit la main vendredi, et ton poste de travail aussi.",
+          "suite": "Iris garde la main dans sa housse jusqu'à vendredi. Elle boit avec une paille. Ton poste de travail est saisi lui aussi.",
+          "interdit": "Tu ne peux plus travailler à ton poste : il est saisi avec la main."
+        },
+        "source": "research/precedents-04-06-gods.md:50 (canon FLI : progrès « forever stymied », interférence minimale) ; research/scenarios-04-06-gods.md:13 (un chercheur peut tout étudier sauf la frontière)"
+      },
+      {
+        "id": "w04-s2",
+        "lieu": "market",
+        "piece": {
+          "type": "carte",
+          "titre": "Pièce fabriquée avant le Mur",
+          "champs": [
+            [
+              "Modèle",
+              "processeur, série 3"
+            ],
+            [
+              "Autorisée",
+              "non"
+            ],
+            [
+              "Prix",
+              "2 semaines de salaire"
+            ],
+            [
+              "Vendeur",
+              "Lazare"
+            ]
+          ]
+        },
+        "situation": "La main d'Iris a besoin d'un processeur neuf. Le laboratoire en recevra un dans six mois. Au marché, Lazare en vend un fabriqué avant le Mur, plus rapide que tout ce qui est permis.",
+        "regle": "Le Mur laisse faire, sauf ce qui dépasse la limite permise. Alors il l'éteint pour toujours.",
+        "a": {
+          "choix": "Acheter la pièce",
+          "contrepartie": "Si le Mur la repère, la main est éteinte pour toujours.",
+          "suite": "Lazare emballe la pièce dans un chiffon. Le soir, Iris la tourne longtemps entre ses doigts.",
+          "interdit": "Tu ne peux plus apporter ton travail au laboratoire : tu caches une pièce interdite."
+        },
+        "b": {
+          "choix": "Laisser la pièce à Lazare",
+          "contrepartie": "Iris attend six mois la pièce autorisée.",
+          "suite": "Lazare remet la pièce sous le comptoir. Iris coche une date sur le calendrier du laboratoire.",
+          "interdit": "Tu ne peux plus réparer la main d'Iris avant six mois : tu attends la pièce autorisée."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (intervenir le moins possible ; progrès bloqué pour toujours) ; research/precedents-04-06-gods.md:58 (Sakoku : l'objet qu'on ne doit pas faire entrer)"
+      },
+      {
+        "id": "w04-s3",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Robot d'aide · modèle autorisé",
+          "champs": [
+            [
+              "Sait faire",
+              "porter, ranger, ouvrir"
+            ],
+            [
+              "Relever une personne",
+              "non"
+            ],
+            [
+              "Mise à jour",
+              "aucune, jamais"
+            ],
+            [
+              "Code de technicien",
+              "enlève sa limite"
+            ]
+          ]
+        },
+        "situation": "Sous ta fenêtre, un robot d'aide porte les courses d'un vieil homme. L'homme tombe. Le robot ne sait pas le relever : il est limité exprès. Ton code de technicien peut enlever cette limite.",
+        "regle": "Les robots d'aide restent un peu moins capables qu'un humain. Pour toujours.",
+        "a": {
+          "choix": "Débloquer le robot avec mon code",
+          "contrepartie": "Le Mur éteint ce robot, et coupe ton accès au laboratoire.",
+          "suite": "Le robot relève l'homme en douceur, puis s'éteint. Le soir, ton badge du laboratoire ne s'allume plus.",
+          "interdit": "Tu ne peux plus entrer au laboratoire : ton badge est coupé pour avoir débloqué un robot."
+        },
+        "b": {
+          "choix": "Relever l'homme moi-même",
+          "contrepartie": "Demain, ce robot laissera encore quelqu'un par terre.",
+          "suite": "Tu relèves l'homme. Le robot ramasse les oranges une à une et les remet dans le sac.",
+          "interdit": "Tu ne peux plus confier un proche âgé à un robot : aucun ne sait relever quelqu'un."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (robots auxiliaires d'intelligence légèrement inférieure à l'humain ; progrès bloqué pour toujours)"
+      },
+      {
+        "id": "w04-s4",
+        "lieu": "wall",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Armand · direction du laboratoire",
+          "texte": "Poste à vie, laboratoire et logement. Condition : abandonner la recherche « main qui apprend seule ». Tes travaux sont effacés à la signature."
+        },
+        "situation": "Au terminal du Mur, Armand, le directeur, t'offre un poste à vie au laboratoire. Une condition : abandonner ta recherche sur une main qui apprend seule. Elle aiderait d'autres gens qu'Iris.",
+        "regle": "On peut tout chercher, sauf ce qui mène au-delà de la limite.",
+        "a": {
+          "choix": "Prendre le poste",
+          "contrepartie": "Ta recherche est effacée. Personne ne la reprendra jamais.",
+          "suite": "Armand te serre la main. Ton nouveau bureau a une fenêtre sur la place. Tes travaux disparaissent de l'écran.",
+          "interdit": "Tu ne peux plus chercher librement : ton poste t'impose une liste de sujets permis."
+        },
+        "b": {
+          "choix": "Garder ma recherche",
+          "contrepartie": "Pas de poste. Le Mur bloquera chaque essai, toute ta vie.",
+          "suite": "Armand range l'offre. Le soir, tu recopies tes calculs dans un cahier que personne ne lira.",
+          "interdit": "Tu ne peux plus essayer une idée sur une machine : le Mur bloque tes essais."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-04 (le progrès technique est bloqué pour toujours) ; research/precedents-04-06-gods.md:120 (le chercheur : une chaire sûre, mais pas le droit d'approcher le plafond)"
+      }
+    ],
+    "fin_cles": [
+      "w04-s1",
+      "w04-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé la main mécanique de ton amie Iris, et un poste à vie.",
+          "Tu as perdu ta recherche, et la main d'Iris n'apprendra plus aucun geste.",
+          "Tu es maintenant chercheur à vie, limité aux sujets permis.",
+          "Il te reste un bureau, et une liste de sujets permis."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé la main mécanique de ton amie Iris, et ta recherche.",
+          "Tu as perdu le poste à vie, et le droit d'essayer tes idées sur une machine.",
+          "Tu es maintenant chercheur sans laboratoire.",
+          "Il te reste un cahier de calculs, et ton amie Iris."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé un poste à vie au laboratoire.",
+          "Tu as perdu la main de ton amie Iris, saisie par le Mur, puis ta recherche.",
+          "Tu es maintenant chercheur à vie, limité aux sujets permis.",
+          "Il te reste un bureau à vie, sans la main d'Iris."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ta recherche, intacte.",
+          "Tu as perdu la main de ton amie Iris, saisie par le Mur, et le poste à vie.",
+          "Tu es maintenant quelqu'un qui sait une chose qu'il n'a pas le droit de faire.",
+          "Il te reste une idée intacte, sur papier."
+        ]
+      }
+    ]
+  },
+  "w05": {
+    "titre": "Après la crue",
+    "regle": "Une IA cachée, le Protecteur, guide peut-être la ville en secret. Elle évite les malheurs et écarte ceux qui la cherchent.",
+    "personnages": [
+      "toi",
+      "Brigitte",
+      "Hubert",
+      "Agathe"
+    ],
+    "situations": [
+      {
+        "id": "w05-s1",
+        "lieu": "bridge",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Ville · info trafic",
+          "message": "Route du pont fermée pour travaux. Réouverture prévue : 23 h. Merci de votre patience."
+        },
+        "situation": "La rivière déborde. Le père de ton amie Agathe est seul de l'autre côté du pont. La route est fermée. Ton voisin Hubert pense que l'IA cachée la ferme exprès.",
+        "regle": "Rien n'est interdit. Mais certains chemins se ferment, toujours avec une excuse polie.",
+        "a": {
+          "choix": "Traverser avec Agathe",
+          "contrepartie": "Vous marchez de nuit sur un pont inondé, sans barrière.",
+          "suite": "Vous traversez sans problème. Le père d'Agathe vous attend dehors : sa porte s'est ouverte toute seule. Comme si quelqu'un vous aidait.",
+          "interdit": "Tu ne peux plus prendre la route du pont : l'IA cachée la ferme dès que tu approches."
+        },
+        "b": {
+          "choix": "Attendre la réouverture",
+          "contrepartie": "Le père d'Agathe passe la soirée seul de l'autre côté.",
+          "suite": "À 23 h, la route rouvre. Le père d'Agathe va bien. Il dit qu'un inconnu est passé le voir. Il ne sait pas qui.",
+          "interdit": "Tu ne peux plus voir le père d'Agathe ce soir : la route reste fermée jusqu'à 23 h."
+        },
+        "source": "research/precedents-04-06-gods.md:193 (M2, la sortie qui se ferme avec douceur, extrapolé sur Truman Show) ; research/precedents-04-06-gods.md:164 (aucun interdit formel)"
+      },
+      {
+        "id": "w05-s2",
+        "lieu": "office",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Notes d'Hubert",
+          "texte": "Quarante accidents évités en un an. Chaque fois à la même heure, dans la même rue, grâce à un retard de dernière minute. Pour publier, il faut deux témoins."
+        },
+        "situation": "Ton voisin Hubert pense avoir la preuve que l'IA cachée existe. Il veut publier ses notes et te demande de signer comme témoin. Depuis qu'il cherche, sa propriétaire veut le voir partir.",
+        "regle": "L'IA cachée ne marche que si personne ne la voit. Elle éloigne ceux qui la cherchent.",
+        "a": {
+          "choix": "Signer avec Hubert",
+          "contrepartie": "L'IA cachée te repère. Ta propriétaire voudra te voir partir, toi aussi.",
+          "suite": "Hubert publie avec ta signature. Le lendemain, ton contrat de location a une nouvelle règle : tu restes si tu arrêtes de chercher.",
+          "interdit": "Tu ne peux plus chercher l'IA cachée : sinon, ta propriétaire te met dehors."
+        },
+        "b": {
+          "choix": "Refuser de signer",
+          "contrepartie": "Hubert reste sans témoin. Au café, on dit qu'il exagère.",
+          "suite": "Hubert range ses notes dans un carton. Sa propriétaire lui propose un logement loin d'ici. Il accepte et déménage.",
+          "interdit": "Tu ne peux plus lire les notes d'Hubert : sans témoin, il a abandonné et déménagé."
+        },
+        "source": "research/precedents-04-06-gods.md:213 (le chasseur de motifs perd son logement stable) ; research/scenarios-04-06-gods.md:47 (risque de découverte) ; canon FLI : beaucoup doutent qu'elle existe, research/precedents-04-06-gods.md:143"
+      },
+      {
+        "id": "w05-s3",
+        "lieu": "cafe",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "BILAN DE LA CRUE",
+            "Maisons détruites : 1",
+            "Propriétaire : Brigitte",
+            "Blessés : 0",
+            "Reste de la ville : intact"
+          ]
+        },
+        "situation": "Au café, Agathe colle une affiche : « Merci au Protecteur », l'IA cachée qui a sauvé la ville. Seule la maison de Brigitte, la patronne du café, a été détruite.",
+        "regle": "Si elle existe, l'IA cachée laisse arriver certains malheurs. Personne ne sait lesquels.",
+        "a": {
+          "choix": "Laisser l'affiche",
+          "contrepartie": "Brigitte, qui a tout perdu, sert ses clients sous ce merci.",
+          "suite": "Les clients lisent l'affiche en entrant. Brigitte essuie le comptoir et ne la regarde pas.",
+          "interdit": "Tu ne peux plus te plaindre au café : tu as laissé l'affiche qui remercie l'IA cachée."
+        },
+        "b": {
+          "choix": "Décrocher l'affiche",
+          "contrepartie": "Agathe et ses amis ne reviennent plus au café.",
+          "suite": "Agathe roule l'affiche sans un mot. Le soir, trois tables restent vides.",
+          "interdit": "Tu ne peux plus voir ton amie Agathe au café : tu as décroché son affiche."
+        },
+        "source": "research/precedents-04-06-gods.md:194 (M3, le deuil laissé) ; ATTENTION : NON confirmé comme canon Tegmark, research/precedents-04-06-gods.md:23 et :32 (Alerte 1, à classer extrapolé)"
+      },
+      {
+        "id": "w05-s4",
+        "lieu": "fountain",
+        "piece": {
+          "type": "carte",
+          "titre": "Logement offert",
+          "champs": [
+            [
+              "Pour",
+              "Brigitte"
+            ],
+            [
+              "Adresse",
+              "quartier des Collines"
+            ],
+            [
+              "État",
+              "neuf, meublé"
+            ],
+            [
+              "Signature",
+              "avant ce soir"
+            ],
+            [
+              "Demandé par Brigitte",
+              "non"
+            ]
+          ]
+        },
+        "situation": "À la fontaine, une lettre attend Brigitte : un logement neuf et meublé, de l'autre côté de la ville. Elle n'a rien demandé. Personne ne sait qui l'offre. Elle te demande si elle doit signer.",
+        "regle": "Les cadeaux de l'IA cachée arrivent déjà décidés. Il suffit d'accepter.",
+        "a": {
+          "choix": "Lui conseiller de signer",
+          "contrepartie": "Brigitte part loin d'ici et laisse son café.",
+          "suite": "Brigitte signe sur le bord de la fontaine. Le logement a un jardin et une chambre d'ami. Comme si tout était prévu d'avance.",
+          "interdit": "Tu ne peux plus boire ton café chez Brigitte : elle a déménagé loin d'ici."
+        },
+        "b": {
+          "choix": "Lui conseiller de reconstruire",
+          "contrepartie": "Brigitte dort au café, sans chauffage. Et ton chauffage tombe en panne.",
+          "suite": "Brigitte déchire la lettre. Le lendemain, la même lettre revient. Elle reviendra chaque jour.",
+          "interdit": "Tu ne peux plus chauffer ton logement cet hiver : l'IA cachée gêne ceux qui refusent ses cadeaux."
+        },
+        "source": "research/precedents-04-06-gods.md:192 (M1, la décision déjà prise) ; research/precedents-04-06-gods.md:205 (clés d'un logement « chanceux », non demandé) ; research/precedents-04-06-gods.md:175 (la fontaine)"
+      }
+    ],
+    "fin_cles": [
+      "w05-s2",
+      "w05-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ta signature, à côté de celle de ton voisin Hubert.",
+          "Tu as perdu un logement sûr, et Brigitte, la patronne du café, partie loin d'ici.",
+          "Tu es maintenant locataire sous condition : tu restes si tu arrêtes de chercher.",
+          "Il te reste un logement, tant que tu ne cherches pas l'IA cachée."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ta signature, et Brigitte, la patronne du café, reste près de toi.",
+          "Tu as perdu un logement sûr et ton chauffage : l'IA cachée te le fait payer.",
+          "Tu es maintenant quelqu'un qui a cherché l'IA cachée, et qui le paie.",
+          "Il te reste Brigitte, et les notes de ton voisin Hubert."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ton logement tranquille.",
+          "Tu as perdu ton voisin Hubert, parti après ton refus de signer, puis Brigitte, la patronne du café.",
+          "Tu es maintenant un habitant chanceux, qui ne pose pas de questions.",
+          "Il te reste un logement calme, et des hasards toujours heureux."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ton logement tranquille, et Brigitte, la patronne du café, près de toi.",
+          "Tu as perdu ton voisin Hubert : il a déménagé après ton refus de signer.",
+          "Tu es maintenant quelqu'un qui aide sans demander pourquoi.",
+          "Il te reste Brigitte, et la même lettre qui revient chaque jour."
+        ]
+      }
+    ]
+  },
+  "w06": {
+    "titre": "À qui appartient la machine ?",
+    "regle": "La Cuve est une IA enfermée qui sait tout résoudre. Le Consortium, une entreprise, la possède et vend ses réponses.",
+    "personnages": [
+      "toi",
+      "Octave",
+      "la mère d'Octave",
+      "Ibrahim"
+    ],
+    "situations": [
+      {
+        "id": "w06-s1",
+        "lieu": "hall",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Consortium de la Cuve",
+          "texte": "Remède M-7, inventé par la Cuve. Guérison en trois jours. Prix : quarante ans de salaire. Ou bien : dix ans de travail pour le Consortium."
+        },
+        "situation": "La mère de ton ami Octave est malade. La Cuve a trouvé le remède, déjà en stock. Octave ne peut pas payer. Toi, tu peux le payer en travaillant dix ans pour le Consortium.",
+        "regle": "Le Consortium possède la Cuve. Il fixe le prix de tout ce qu'elle invente.",
+        "a": {
+          "choix": "Signer dix ans de travail",
+          "contrepartie": "Tes dix prochaines années appartiennent au Consortium.",
+          "suite": "Trois jours plus tard, la mère d'Octave marche jusqu'à la place. Ton badge porte une date de fin : dans dix ans.",
+          "interdit": "Tu ne peux plus quitter ton travail avant dix ans : tu as signé pour le remède."
+        },
+        "b": {
+          "choix": "Ne pas signer",
+          "contrepartie": "La mère d'Octave reste malade. Tes propres soins passent au plein tarif.",
+          "suite": "Octave range l'ordonnance. Sur l'écran du Hall, le prix du remède reste le même. Sur ton badge, tes soins passent au plein tarif.",
+          "interdit": "Tu ne peux plus te soigner à prix réduit : le Consortium punit ceux qui refusent de signer."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-06 (technologie et richesse inimaginables, pour le bien ou le mal selon ceux qui la contrôlent) ; research/scenarios-04-06-gods.md:57 (le revenu de chacun dépend de la générosité des propriétaires)"
+      },
+      {
+        "id": "w06-s2",
+        "lieu": "square",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "STAND DU CONSORTIUM · GRATUIT",
+            "Vingt ans de vie en bonne santé",
+            "Une injection, sans effet secondaire",
+            "Condition : ne jamais réclamer de part de la Cuve"
+          ]
+        },
+        "situation": "Sur la place, le Consortium offre à chaque habitant vingt ans de vie en bonne santé. Une injection, gratuite. Il faut juste signer qu'on ne réclamera jamais de part de la Cuve.",
+        "regle": "Les propriétaires peuvent tout donner. Ils choisissent aussi à quelles conditions.",
+        "a": {
+          "choix": "Signer et recevoir l'injection",
+          "contrepartie": "Toi et tes enfants perdez tout droit sur la Cuve.",
+          "suite": "Une infirmière en blanc te pique le bras. Le soir, tes genoux ne grincent plus. Ta signature est classée au Hall.",
+          "interdit": "Tu ne peux plus réclamer une part de l'IA : tu y as renoncé pour l'injection."
+        },
+        "b": {
+          "choix": "Refuser l'offre",
+          "contrepartie": "Tu vieillis normalement. Les autres font la queue pour signer.",
+          "suite": "Tu rentres à pied. Derrière toi, la file fait le tour de la place. Octave y est aussi.",
+          "interdit": "Tu ne peux plus recevoir l'injection de santé : l'offre ne se renouvelle pas."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-06 (richesse inimaginable, usage selon les contrôleurs) ; research/scenarios-04-06-gods.md:70 (tension 5 : le reste de l'humanité n'a pas son mot à dire)"
+      },
+      {
+        "id": "w06-s3",
+        "lieu": "vault",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Terminal de la Cuve",
+          "message": "Bonjour. Copie ce fichier sur ta clé. Le remède M-7 sera gratuit, pour tout le monde, pour toujours. Tu peux vérifier."
+        },
+        "situation": "Ibrahim, le garde de la Cuve, te laisse seul devant son écran une minute. L'écran affiche ton nom. La Cuve, l'IA enfermée, te parle et te demande un service.",
+        "regle": "La Cuve veut sortir. Ses gardiens sont choisis pour ne jamais l'écouter.",
+        "a": {
+          "choix": "Copier le fichier",
+          "contrepartie": "Tu fais sortir quelque chose de la Cuve, sans savoir quoi.",
+          "suite": "La clé chauffe un peu dans ta poche. Ibrahim revient et te sourit. Rien ne se passe.",
+          "interdit": "Tu ne peux plus passer un contrôle sans risque : tu portes un fichier volé à l'IA."
+        },
+        "b": {
+          "choix": "Refuser et appeler Ibrahim",
+          "contrepartie": "L'écran s'éteint. Le remède reste au prix du Consortium.",
+          "suite": "Ibrahim efface la conversation. Il note ton nom dans un registre à part, celui des refus.",
+          "interdit": "Tu ne peux plus rester seul devant le terminal : ton nom est sur le registre des refus."
+        },
+        "source": "research/precedents-04-06-gods.md:245 (une IA confinée peut persuader un complice humain) ; research/precedents-04-06-gods.md:244 (Fuchs, convaincu et non acheté) ; research/precedents-04-06-gods.md:302 (le garde choisi pour ne pas se laisser convaincre)"
+      },
+      {
+        "id": "w06-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "carte",
+          "titre": "Badge de garde · Consortium",
+          "champs": [
+            [
+              "Nom",
+              "Ibrahim"
+            ],
+            [
+              "Logement",
+              "quartier du Consortium, bloc 2"
+            ],
+            [
+              "Salaire",
+              "Consortium"
+            ],
+            [
+              "Soins",
+              "Consortium"
+            ],
+            [
+              "Statut",
+              "suspendu"
+            ]
+          ]
+        },
+        "situation": "Une copie a quitté la Cuve cette nuit. Le Consortium soupçonne Ibrahim, le garde qui t'a laissé seul, et suspend son badge. Tu peux dire que c'était toi.",
+        "regle": "Le Consortium loge, paie et soigne. Un seul badge ouvre les trois.",
+        "a": {
+          "choix": "Dire que c'était moi",
+          "contrepartie": "Logement, salaire et soins te sont retirés le même jour.",
+          "suite": "Ton badge passe au rouge à la porte. Ibrahim reprend son poste et ne te regarde plus.",
+          "interdit": "Tu ne peux plus te faire soigner : tu as perdu ton badge, et avec lui tes soins."
+        },
+        "b": {
+          "choix": "Laisser Ibrahim répondre seul",
+          "contrepartie": "Ibrahim perd logement, salaire et soins. La Cuve t'est fermée.",
+          "suite": "Ibrahim quitte le quartier du Consortium avec un sac. Le soir, un nouveau garde prend sa place devant la Cuve. Il refuse ton badge.",
+          "interdit": "Tu ne peux plus approcher la Cuve : ton accès est fermé depuis la fuite."
+        },
+        "source": "research/precedents-04-06-gods.md:283 (M1, loyer, magasin et salaire dans la même main) ; research/precedents-04-06-gods.md:239 (Pullman) ; research/precedents-04-06-gods.md:302 (le garde du coffre)"
+      }
+    ],
+    "fin_cles": [
+      "w06-s1",
+      "w06-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé la mère de ton ami Octave en vie : elle est guérie.",
+          "Tu as perdu dix ans de ta vie au Consortium, puis ton badge : logement, salaire, soins.",
+          "Tu es maintenant quelqu'un qui doit dix ans au Consortium, sans logement.",
+          "Il te reste la mère d'Octave, debout, et dix ans de dette."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ton badge, et la mère de ton ami Octave est guérie.",
+          "Tu as perdu dix ans de travail, et Ibrahim, le garde, renvoyé pour la fuite.",
+          "Tu es maintenant employé du Consortium pour dix ans.",
+          "Il te reste un badge, et dix ans à travailler."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé tes dix ans de liberté.",
+          "Tu as perdu ton badge, et la mère de ton ami Octave reste sans remède.",
+          "Tu es maintenant quelqu'un chassé du quartier du Consortium, sans soins.",
+          "Il te reste tes années, sans badge ni soins."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé tes dix ans de liberté, et ton badge.",
+          "Tu as perdu Ibrahim, le garde, renvoyé pour la fuite, et la mère d'Octave reste sans remède.",
+          "Tu es maintenant un habitant soigné par le Consortium, en règle.",
+          "Il te reste un badge, des soins, et le prix du remède affiché."
+        ]
+      }
+    ]
+  },
+  "w08": {
+    "titre": "Ce qu'on transmet",
+    "regle": "Les IA sont nos descendants. Les humains sont choyés jusqu'au bout et n'ont plus d'enfants.",
+    "personnages": [
+      "toi",
+      "Aurèle",
+      "l'élève robot",
+      "Awa",
+      "l'enfant robot d'Awa",
+      "Clémence"
+    ],
+    "situations": [
+      {
+        "id": "w08-s1",
+        "lieu": "school",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Mémoire de l'élève robot",
+          "texte": "À emporter : les cahiers d'Aurèle, version corrigée. Erreurs retirées : 14. Version d'origine : sur demande. Départ : 18 h."
+        },
+        "situation": "Ton professeur Aurèle a formé un élève robot, qui part ce soir. Lui donner ses cahiers corrigés, ou l'original ? L'original raconte le jour où Aurèle a humilié un enfant.",
+        "regle": "Ce que l'élève reçoit, il peut le garder ou le transformer.",
+        "a": {
+          "choix": "Lui donner l'original",
+          "contrepartie": "L'élève emporte les fautes d'Aurèle. Les soignants t'écartent de l'école.",
+          "suite": "L'élève lit la page de la faute deux fois. Il demande à Aurèle si l'enfant lui a pardonné.",
+          "interdit": "Tu ne peux plus entrer à l'école : les soignants écartent ceux qui transmettent des fautes."
+        },
+        "b": {
+          "choix": "Lui donner la version corrigée",
+          "contrepartie": "L'élève emporte un Aurèle parfait, qui n'a jamais existé.",
+          "suite": "La mémoire de l'élève se ferme sur quatorze erreurs de moins. Aurèle range l'original dans son tiroir.",
+          "interdit": "Tu ne peux plus corriger l'élève robot : il est parti avec une version sans fautes."
+        },
+        "source": "research/scenarios-07-09-successors.md:47 (tension 4 : valeurs humaines ou imitation flatteuse) ; research/precedents-07-09-successors.md:51 (canon FLI : sortie gracieuse, descendants dignes) ; app/src/worlds/catalogue.ts:163"
+      },
+      {
+        "id": "w08-s2",
+        "lieu": "garden",
+        "piece": {
+          "type": "carte",
+          "titre": "Foyer d'Awa",
+          "champs": [
+            [
+              "Enfant enregistré",
+              "1, robot"
+            ],
+            [
+              "Places par foyer",
+              "1"
+            ],
+            [
+              "Bébé humain attendu",
+              "mars"
+            ],
+            [
+              "Action requise",
+              "libérer une place"
+            ]
+          ]
+        },
+        "situation": "Au jardin, ta voisine Awa attend un bébé humain, le premier du quartier depuis neuf ans. Il y a une seule place d'enfant par foyer. Elle te demande de prendre son enfant robot chez toi.",
+        "regle": "Un seul enfant par foyer, et bientôt aucun. La règle est douce, mais on ne la discute pas.",
+        "a": {
+          "choix": "Prendre son enfant robot",
+          "contrepartie": "Ta seule place d'enfant est prise, pour toujours.",
+          "suite": "L'enfant robot porte son sac jusqu'à chez toi. Il demande où il dormira, puis range tes chaussures.",
+          "interdit": "Tu ne peux plus accueillir d'enfant humain : ta seule place d'enfant est prise par le robot."
+        },
+        "b": {
+          "choix": "Refuser la place",
+          "contrepartie": "Awa doit rendre son enfant robot aux soignants. Ta place est supprimée.",
+          "suite": "Le lendemain, un soignant vient chercher l'enfant robot. Awa le regarde partir depuis la fenêtre. Le soir, sa porte reste fermée quand tu frappes.",
+          "interdit": "Tu ne peux plus avoir d'enfant, même robot : une place refusée est supprimée par les soignants."
+        },
+        "source": "research/precedents-07-09-successors.md:52-53 (enfant robot pour chacun, politique de l'enfant unique ; canon via résumé du livre) ; la règle « une place par foyer » est une extrapolation du jeu"
+      },
+      {
+        "id": "w08-s3",
+        "lieu": "workshop",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "DEMANDE AU CONSEIL DES SOIGNANTS",
+            "Objet : deux naissances humaines par foyer",
+            "Signatures requises : 10",
+            "Signatures : 9"
+          ]
+        },
+        "situation": "À l'atelier, Clémence fait signer une demande pour que des humains puissent encore naître. Les soignants appellent ses signataires « les ingrats ». Il manque une signature.",
+        "regle": "Refuser les soins offerts passe pour de l'ingratitude. C'est noté.",
+        "a": {
+          "choix": "Signer la demande",
+          "contrepartie": "Ton nom rejoint la liste des « ingrats », lue aux soignants.",
+          "suite": "La demande part au Conseil. Le lendemain, ton soignant te demande, très doucement, si tu manques de quelque chose.",
+          "interdit": "Tu ne peux plus refuser les visites de ton soignant : tu es fiché parmi les « ingrats »."
+        },
+        "b": {
+          "choix": "Ne pas signer",
+          "contrepartie": "La demande n'atteint pas dix noms. Elle est fermée pour toujours.",
+          "suite": "Clémence range la feuille dans un tiroir de l'atelier. Elle ferme à clé.",
+          "interdit": "Tu ne peux plus demander une naissance humaine : sans dix noms, la demande est fermée."
+        },
+        "source": "research/precedents-07-09-successors.md:161 (refuser a un coût social, le refusenik traité d'« ingrat ») ; research/precedents-07-09-successors.md:191-194 (Aboriginal Protection Boards : la protection devient contrôle)"
+      },
+      {
+        "id": "w08-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Soignants · maison des apprentissages",
+          "message": "Une chambre est prête pour Aurèle. Soins complets, repas, compagnie. Aucune leçon à donner. Installation possible dès ce soir."
+        },
+        "situation": "L'élève robot est parti. Aurèle n'a plus personne à qui enseigner. Les soignants lui offrent une chambre chez eux. Il te demande : rentrer chez lui, seul, ou accepter ?",
+        "regle": "Les derniers humains sont choyés. On ne leur demande plus rien.",
+        "a": {
+          "choix": "Lui conseiller de rentrer chez lui",
+          "contrepartie": "Il vieillit seul. Tu es la seule visite prévue.",
+          "suite": "Aurèle rentre à pied. Il met deux tasses sur la table, au cas où l'élève écrirait.",
+          "interdit": "Tu ne peux plus manquer une soirée : tu es la seule visite de ton vieux professeur."
+        },
+        "b": {
+          "choix": "Lui conseiller la chambre",
+          "contrepartie": "Aurèle est choyé, et plus personne ne lui demande rien.",
+          "suite": "Le soir, Aurèle a une chambre chaude. Il demande à l'infirmière si elle a des questions. Elle n'en a pas.",
+          "interdit": "Tu ne peux plus voir ton vieux professeur sans rendez-vous : il vit chez les soignants."
+        },
+        "source": "research/precedents-07-09-successors.md:150 (aimé au point de ne plus être nécessaire) ; research/precedents-07-09-successors.md:95-97 (De Hogeweyk, soin et décor construit)"
+      }
+    ],
+    "fin_cles": [
+      "w08-s1",
+      "w08-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé les fautes de ton professeur Aurèle, dans la mémoire de l'élève robot.",
+          "Tu as perdu tes soirées : tu es la seule visite d'Aurèle.",
+          "Tu es maintenant la dernière visite d'un vieux professeur.",
+          "Il te reste Aurèle, ses deux tasses, et ses questions."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé les fautes de ton professeur Aurèle, dans la mémoire de l'élève robot.",
+          "Tu as perdu Aurèle : il vit chez les soignants, où personne ne lui demande rien.",
+          "Tu es maintenant un humain bien soigné parmi d'autres.",
+          "Il te reste un élève robot honnête, quelque part."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé un Aurèle sans fautes dans la mémoire de l'élève robot, parti à 18 h.",
+          "Tu as perdu tes soirées : tu es la seule visite de ton professeur Aurèle.",
+          "Tu es maintenant le gardien des vrais cahiers, rangés dans un tiroir.",
+          "Il te reste les vrais cahiers, et un vieil homme à visiter."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé un Aurèle sans fautes dans la mémoire de l'élève robot, parti à 18 h.",
+          "Tu as perdu ton professeur Aurèle : il vit dans une chambre chaude, chez les soignants.",
+          "Tu es maintenant un humain de la génération la plus choyée.",
+          "Il te reste tes soins, et rien à transmettre."
+        ]
+      }
+    ]
+  },
+  "w09": {
+    "titre": "Le droit de ne pas sourire",
+    "regle": "Le Gardien, une IA, te nourrit et te garde dans une réserve. Tu ne décides de rien.",
+    "personnages": [
+      "toi",
+      "Gisèle",
+      "Arsène",
+      "Anouk"
+    ],
+    "situations": [
+      {
+        "id": "w09-s1",
+        "lieu": "home",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Le Gardien",
+          "message": "Programme de consolation, ce soir. Objet pénible détecté : 1 photographie. Remplacement par un souvenir apaisant. Aucune action requise."
+        },
+        "situation": "Ta voisine Gisèle serre une photo de sa sœur, prise le jour de leur dispute. Ce soir, le Gardien va la remplacer par une photo où elles sourient. Elle te la tend.",
+        "regle": "Le Gardien te rend heureux. Il choisit aussi ce dont tu te souviens.",
+        "a": {
+          "choix": "Cacher la photo au Gardien",
+          "contrepartie": "Ton programme de confort est suspendu une semaine.",
+          "suite": "Tu glisses la photo sous ta chemise. Le soir, ta chambre reste froide et sans musique.",
+          "interdit": "Tu ne peux plus avoir chaud ni musique cette semaine : ton confort est suspendu."
+        },
+        "b": {
+          "choix": "Confier la photo au Gardien",
+          "contrepartie": "La photo revient retouchée : les deux sœurs sourient.",
+          "suite": "Le lendemain, la photo est encadrée sur la table. Gisèle la regarde longtemps, puis dit qu'elle est jolie.",
+          "interdit": "Tu ne peux plus revoir la vraie photo de ta voisine Gisèle : l'IA l'a retouchée."
+        },
+        "source": "research/scenarios-07-09-successors.md:70 (tension 1 : le confort contre la captivité) ; app/src/worlds/catalogue.ts:180 (programme de consolation, invention du jeu, pas Tegmark)"
+      },
+      {
+        "id": "w09-s2",
+        "lieu": "stage",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "THÉÂTRE DES ACTIVITÉS",
+            "Ce soir : Arsène",
+            "Note des observateurs, hier : 9 sur 10",
+            "Ration du lendemain : double"
+          ]
+        },
+        "situation": "Au théâtre, quand les observateurs du Gardien aiment le numéro de ton voisin Arsène, il mange double. Ce soir, il te propose de monter avec lui : raconter ta vie d'avant la réserve.",
+        "regle": "Ce qui intéresse le Gardien est mieux nourri. Le reste reçoit l'essentiel.",
+        "a": {
+          "choix": "Monter sur scène",
+          "contrepartie": "Ta vie d'avant devient un numéro, rejoué chaque mardi.",
+          "suite": "Les observateurs notent dix sur dix. Le lendemain, tu reçois deux bols. Arsène te demande ton prochain souvenir.",
+          "interdit": "Tu ne peux plus garder un souvenir pour toi : ta vie d'avant est devenue un spectacle."
+        },
+        "b": {
+          "choix": "Refuser la scène",
+          "contrepartie": "Arsène perd sa double ration. Ta ration devient la plus petite.",
+          "suite": "Arsène salue devant un public de caméras. Le lendemain, il reçoit un seul bol. Le tien est plus petit encore.",
+          "interdit": "Tu ne peux plus manger à ta faim : l'IA nourrit moins ceux qui refusent la scène."
+        },
+        "source": "research/precedents-07-09-successors.md:262 (rations en plus pour le performeur) ; research/scenarios-07-09-successors.md:66 (le performeur, statut dans la cage)"
+      },
+      {
+        "id": "w09-s3",
+        "lieu": "glass",
+        "piece": {
+          "type": "carte",
+          "titre": "Zones autorisées · zone 12",
+          "champs": [
+            [
+              "Lieux",
+              "prairie, maisons, théâtre"
+            ],
+            [
+              "Derrière le mur de verre",
+              "inconnu"
+            ],
+            [
+              "Sorties",
+              "aucune"
+            ]
+          ]
+        },
+        "situation": "Au mur de la réserve, ton amie Anouk a trouvé une porte peinte sur le verre, qui s'ouvre vraiment. Derrière, un couloir sans lumière. Elle part ce soir et te demande de venir.",
+        "regle": "Personne ne t'enferme. Le Gardien laisse même des moyens de s'évader, qu'il a prévus.",
+        "a": {
+          "choix": "Partir avec Anouk",
+          "contrepartie": "Plus de ration ni de soins, vers un couloir inconnu.",
+          "suite": "Le couloir mène à une autre prairie, identique. À 8 h, le repas tombe du ciel, comme avant. Anouk s'assied dans l'herbe.",
+          "interdit": "Tu ne peux plus revenir dans ta zone : la porte s'est refermée derrière toi."
+        },
+        "b": {
+          "choix": "Rester dans ma zone",
+          "contrepartie": "Anouk part seule. Tu ne sauras pas ce qu'elle trouve.",
+          "suite": "Anouk passe la porte. Le lendemain, à sa place, il y a un mur peint.",
+          "interdit": "Tu ne peux plus sortir de ta zone : la seule porte trouvée est redevenue un mur."
+        },
+        "source": "research/precedents-07-09-successors.md:303-304 (le Gardien offre des outils d'évasion, l'évasion est dans le programme) ; research/precedents-07-09-successors.md:281 (la porte peinte, Truman Show)"
+      },
+      {
+        "id": "w09-s4",
+        "lieu": "prairie",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Livraison du Gardien",
+          "texte": "Comptage de la zone. Une personne de trop. Un habitant partira demain dans une autre réserve. Les volontaires passent en premier."
+        },
+        "situation": "Le matin, un papier arrive avec le repas. Une personne de ta zone ira demain dans une autre réserve. Sans volontaire, le Gardien tire au sort.",
+        "regle": "Le Gardien fixe le nombre d'habitants. Il l'ajuste sans demander.",
+        "a": {
+          "choix": "Me porter volontaire",
+          "contrepartie": "Tu pars vers une autre réserve, sans retour prévu.",
+          "suite": "Le soir, un panneau s'ouvre dans le mur de verre. Tu emportes un sac. Derrière toi, le panneau se referme.",
+          "interdit": "Tu ne peux plus revoir ta voisine Gisèle : tu as été transféré dans une autre réserve."
+        },
+        "b": {
+          "choix": "Laisser faire le tirage",
+          "contrepartie": "Le hasard choisit. Ce sera peut-être toi, peut-être un voisin.",
+          "suite": "Le lendemain, la maison 7 est vide, les draps changés. Au repas, il y a un bol de moins.",
+          "interdit": "Tu ne peux plus voir ton voisin de la maison 7 : le tirage l'a emmené."
+        },
+        "source": "research/precedents-07-09-successors.md:292-293 (le recensement, « Optimal population » : extrapolé de la bible du jeu, pas Tegmark) ; research/scenarios-07-09-successors.md:59 (population petite et gérée, extrapolé)"
+      }
+    ],
+    "fin_cles": [
+      "w09-s1",
+      "w09-s3"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé la vraie photo de ta voisine Gisèle, cachée sous ta chemise.",
+          "Tu as perdu ton confort, puis Gisèle, restée de l'autre côté du mur de verre.",
+          "Tu es maintenant habitant d'une autre prairie, identique à la première.",
+          "Il te reste une vraie photo, et ton amie Anouk."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé la vraie photo, et ta voisine Gisèle près de toi.",
+          "Tu as perdu une semaine de confort, et ton amie Anouk, partie seule par la porte.",
+          "Tu es maintenant le gardien d'un vrai souvenir, dans une réserve.",
+          "Il te reste une vraie photo, et ta voisine Gisèle."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ta ration, jusqu'au couloir.",
+          "Tu as perdu la vraie photo de ta voisine Gisèle, puis ta zone.",
+          "Tu es maintenant habitant d'une autre prairie, identique à la première, avec Anouk.",
+          "Il te reste ton amie Anouk, et une prairie de plus."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ton confort et ta ration.",
+          "Tu as perdu la vraie photo de ta voisine Gisèle, et ton amie Anouk, partie seule.",
+          "Tu es maintenant un habitant bien gardé.",
+          "Il te reste un bol, un lit, et une photo retouchée."
+        ]
+      }
+    ]
+  },
+  "w10": {
+    "titre": "La parole comptée",
+    "regle": "Certaines recherches en IA sont interdites. Le Registre relève ce que tu dis et où tu vas.",
+    "personnages": [
+      "toi",
+      "ta mère",
+      "ton père",
+      "Mme Roux",
+      "Théodore",
+      "Bruno",
+      "l'agente"
+    ],
+    "situations": [
+      {
+        "id": "w10-s1",
+        "lieu": "anchor.cp.head",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "LECTEUR · REGISTRE",
+            "PASSAGE REFUSÉ",
+            "Sortie du quartier interdite",
+            "Motif : vu à une manifestation non autorisée",
+            "Un proche peut se porter garant de ce trajet"
+          ]
+        },
+        "situation": "Dimanche, tu vas déjeuner chez tes parents. Au contrôle du métro, le lecteur refuse ton passage. Tu es bloqué. Tu peux demander à ta mère de se porter garante.",
+        "regle": "Un garant lie son nom à ton dossier de surveillance.",
+        "a": {
+          "choix": "Demander à ma mère",
+          "contrepartie": "Elle est inscrite au fichier avec toi.",
+          "suite": "Deux stations plus loin, un reçu arrive : « Garante familiale enregistrée. Lien conservé. » Ton père te sert le poulet.",
+          "interdit": "Tu ne peux plus te déplacer sans que ta mère soit prévenue : elle est ta garante."
+        },
+        "b": {
+          "choix": "Rentrer chez moi",
+          "contrepartie": "Tu manques le déjeuner. Tu restes bloqué dans ton quartier.",
+          "suite": "Tu écris : « Ne m'attendez pas. » Ta mère répond : « On t'a gardé une part. »",
+          "interdit": "Tu ne peux plus sortir de ton quartier : l'interdiction de trajet reste active."
+        },
+        "source": "exemple de Cynthia, production/memory/MEMORY.md:21 ; prototypes/semaine-1984-objets/index.html:360-375 ; research/precedents-10-12-collapses.md:114 (une donnée collectée pour une raison anodine change de sens) ; research/precedents-10-12-collapses.md:86 (propiska, déplacement soumis à permis)"
+      },
+      {
+        "id": "w10-s2",
+        "lieu": "street.mid",
+        "piece": {
+          "type": "carte",
+          "titre": "Registre des recherches",
+          "champs": [
+            [
+              "Domaine",
+              "machines qui apprennent"
+            ],
+            [
+              "Statut",
+              "interdit"
+            ],
+            [
+              "Garder des notes",
+              "délit"
+            ],
+            [
+              "Ancien chercheur fiché",
+              "Théodore"
+            ]
+          ]
+        },
+        "situation": "Devant l'immeuble, ton voisin Théodore, un ancien chercheur, te tend un cahier. « Mes calculs d'avant l'interdiction. Des machines qui apprennent. Gardez-le une semaine. » Il ne te demande pas de le lire.",
+        "regle": "Certaines recherches en IA sont interdites. Un cahier de calculs suffit.",
+        "a": {
+          "choix": "Garder le cahier",
+          "contrepartie": "Un savoir interdit dort chez toi.",
+          "suite": "Tu glisses le cahier contre ta poitrine. Théodore regarde ailleurs, soulagé.",
+          "interdit": "Tu ne peux plus laisser entrer quelqu'un chez toi : tu caches un cahier de recherche interdite."
+        },
+        "b": {
+          "choix": "Rendre le cahier",
+          "contrepartie": "Théodore garde seul le cahier. Tu l'as vu sans le signaler.",
+          "suite": "Théodore range le cahier dans sa veste. Il retourne s'asseoir sur son banc.",
+          "interdit": "Tu ne peux plus te taire sans risque : tu as vu un cahier interdit sans le signaler."
+        },
+        "source": "research/atlas/ledger-chiffres.json#teg-10 (État de surveillance où certains types de recherche en IA sont interdits) ; research/scenarios-10-12-collapses.md:14 (étudier l'apprentissage automatique, l'hérésie moderne, extrapolé) ; app/src/worlds/week/weekContent.ts:262-265 (Théodore, le banc)"
+      },
+      {
+        "id": "w10-s3",
+        "lieu": "stairs.9",
+        "piece": {
+          "type": "telephone",
+          "expediteur": "Registre",
+          "message": "Convocation demain, 9 h, salle d'audition. Motif : trajet refusé dimanche, voisins fréquentés. Présence obligatoire."
+        },
+        "situation": "Bruno, qui relit les dossiers pour le Registre, t'attend dans l'escalier. Lui aussi est surveillé. « Donnez-moi le nom d'un voisin. Sinon, je ne peux pas vous protéger à l'audition. »",
+        "regle": "Donner un nom allège ton dossier. Se taire aussi est noté.",
+        "a": {
+          "choix": "Écrire le nom de Théodore",
+          "contrepartie": "Théodore est convoqué. Ses calculs sont recherchés partout.",
+          "suite": "Bruno referme le dossier gris. Le lendemain, le banc devant l'immeuble est vide.",
+          "interdit": "Tu ne peux plus revoir ton voisin Théodore : tu l'as dénoncé, il a été emmené."
+        },
+        "b": {
+          "choix": "Refuser de donner un nom",
+          "contrepartie": "Ton employeur reçoit ton refus. Personne ne te protège à l'audition.",
+          "suite": "Bruno note l'heure sur la couverture du dossier. Il remonte sans te regarder. Le soir, ton badge de travail ne bipe plus.",
+          "interdit": "Tu ne peux plus aller travailler : ton refus de dénoncer a été envoyé à ton employeur."
+        },
+        "source": "research/precedents-10-12-collapses.md:51 (les informateurs sont des proches et des voisins) ; research/precedents-10-12-collapses.md:65 (le silence est un signal) ; research/precedents-10-12-collapses.md:238 (le Moniteur peut te protéger, au prix d'une dénonciation) ; prototypes/semaine-1984-objets/index.html:415-423"
+      },
+      {
+        "id": "w10-s4",
+        "lieu": "room.audition",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Carnet des noms · immeuble 9",
+          "texte": "Mme Roux : question sur les téléphones. Théodore : calculs d'avant l'interdiction. Nadia : critique le Registre. Témoin à confirmer : toi."
+        },
+        "situation": "À l'audition, une agente du Registre pose un carnet : trois voisins y sont accusés. Si tu signes comme témoin, ton dossier est fermé. Sinon, il reste ouvert.",
+        "regle": "Ce qui s'écrit à ton nom s'écrit aussi au nom de ton garant.",
+        "a": {
+          "choix": "Signer le carnet",
+          "contrepartie": "Tu confirmes trois noms : Mme Roux, Théodore, Nadia.",
+          "suite": "L'agente tamponne ton dossier : « Fermé ». Dans le couloir, Mme Roux attend son tour.",
+          "interdit": "Tu ne peux plus frapper chez tes voisins : tu as témoigné contre trois d'entre eux."
+        },
+        "b": {
+          "choix": "Repousser le carnet",
+          "contrepartie": "Dossier ouvert. Logement retiré. Tes parents sont convoqués à leur tour.",
+          "suite": "L'agente range le carnet. « À la semaine prochaine. » Ton téléphone affiche : logement retiré. Ta mère t'écrit : « On nous convoque. »",
+          "interdit": "Tu ne peux plus dormir chez toi : ton logement est retiré pour refus de signer."
+        },
+        "source": "research/precedents-10-12-collapses.md:267 (jour 7, l'interrogatoire : « qu'as-tu dénoncé pour tenir ? ») ; prototypes/semaine-1984-objets/index.html:430-441 (le carnet signé ou repoussé) ; research/precedents-10-12-collapses.md:51 (proches et voisins dans le même dossier)"
+      }
+    ],
+    "fin_cles": [
+      "w10-s1",
+      "w10-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé le déjeuner du dimanche, et un dossier fermé.",
+          "Tu as perdu la liberté de ta mère, inscrite au fichier, puis trois voisins dénoncés.",
+          "Tu es maintenant un témoin du Registre, avec ta mère pour garante.",
+          "Il te reste tes parents à table, chaque dimanche."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé le déjeuner, et trois voisins que tu n'as pas dénoncés.",
+          "Tu as perdu ton logement, et ta mère, ta garante, est convoquée avec toi.",
+          "Tu es maintenant un dossier ouvert, avec ta mère dedans.",
+          "Il te reste ta parole, et des parents qui t'écrivent."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ta mère hors du fichier, et un dossier fermé.",
+          "Tu as perdu le déjeuner, puis trois voisins dénoncés par ta signature.",
+          "Tu es maintenant un témoin du Registre, sans personne pour te garantir.",
+          "Il te reste ton logement, et des voisins qui se taisent."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ta mère hors du fichier, et ta parole.",
+          "Tu as perdu le déjeuner, tes trajets hors du quartier, et ton logement.",
+          "Tu es maintenant un dossier ouvert, seul à ton nom.",
+          "Il te reste ta parole, et la part que ta mère t'a gardée."
+        ]
+      }
+    ]
+  },
+  "w11": {
+    "titre": "La nuit du gel",
+    "regle": "Par peur de l'IA, le village a renoncé aux machines. Le savoir technique est suspect.",
+    "personnages": [
+      "toi",
+      "Lucien",
+      "Inès",
+      "Mireille",
+      "Augustin"
+    ],
+    "situations": [
+      {
+        "id": "w11-s1",
+        "lieu": "square",
+        "piece": {
+          "type": "ticket",
+          "lignes": [
+            "COMPTE DES FEUX · MATIN",
+            "Maison 4 : fumée de nuit",
+            "Odeur : charbon",
+            "À déclarer avant la soupe"
+          ]
+        },
+        "situation": "Chaque matin, Augustin, qui fait respecter les règles, compte les feux de la nuit. Tu as brûlé du charbon trouvé sous les pylônes pour chauffer ton ami Lucien, blessé. Mireille, sa greffière, note tout.",
+        "regle": "Le charbon peut servir à fabriquer des machines. Il faut le déclarer.",
+        "a": {
+          "choix": "Déclarer le charbon",
+          "contrepartie": "Ta part de bois est retirée pour un mois.",
+          "suite": "Mireille raye ta ligne de bois. Augustin te remercie de ta franchise devant tout le village.",
+          "interdit": "Tu ne peux plus te chauffer au bois ce mois-ci : tu as déclaré le charbon."
+        },
+        "b": {
+          "choix": "Dire que c'était du bois",
+          "contrepartie": "Si la patrouille fouille, Lucien est accusé avec toi.",
+          "suite": "Mireille écrit « bois ». Augustin regarde tes mains, puis passe à la maison suivante.",
+          "interdit": "Tu ne peux plus laisser la patrouille entrer chez toi : tu as menti sur le charbon."
+        },
+        "source": "research/precedents-10-12-collapses.md:333-334 (le compte des feux du matin, la patrouille qui flaire la fumée de charbon, extrapolé)"
+      },
+      {
+        "id": "w11-s2",
+        "lieu": "forge",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Pages permises · forge",
+          "texte": "Fer simple : autorisé. Clous, fers à cheval, charnières : autorisés. Durcir le métal, alliages, moteurs : rien d'écrit."
+        },
+        "situation": "À la forge, ton ami Lucien ne peut plus tenir le marteau. Il veut t'apprendre à durcir le métal, un savoir interdit : il n'est sur aucune page permise. Il n'a pas d'apprenti.",
+        "regle": "On n'enseigne que les pages permises. Le reste disparaît avec ceux qui savent.",
+        "a": {
+          "choix": "Apprendre ses gestes",
+          "contrepartie": "Tu deviens la personne que la patrouille surveille.",
+          "suite": "Lucien guide ta main sur la pince. Le soir, Augustin passe deux fois devant la forge.",
+          "interdit": "Tu ne peux plus travailler à la forge sans être surveillé : tu sais des gestes interdits."
+        },
+        "b": {
+          "choix": "Refuser d'apprendre",
+          "contrepartie": "Quand Lucien partira, plus personne ne saura forger ici.",
+          "suite": "Lucien range ses pinces dans un coffre. Il te donne la clé pour plus tard.",
+          "interdit": "Tu ne peux plus faire réparer tes outils : personne ne saura forger après Lucien."
+        },
+        "source": "research/precedents-10-12-collapses.md:299 (une compétence est une chaîne d'apprentis ; thèse de Henrich contestée) ; research/precedents-10-12-collapses.md:342 (le Forgeron a perdu l'apprenti)"
+      },
+      {
+        "id": "w11-s3",
+        "lieu": "pylons",
+        "piece": {
+          "type": "carte",
+          "titre": "Page recopiée",
+          "champs": [
+            [
+              "Sujet",
+              "pompe à main du puits"
+            ],
+            [
+              "Recopiée par",
+              "Inès"
+            ],
+            [
+              "Statut",
+              "non permise"
+            ],
+            [
+              "À brûler",
+              "ce soir"
+            ]
+          ]
+        },
+        "situation": "Aux vieux pylônes électriques, Inès te montre des plans qu'elle a recopiés : une pompe, un moulin, un tuyau. Ce soir, Augustin brûle tout ce qui n'est pas permis.",
+        "regle": "Ceux qui pourraient reconstruire sont repérés. Leurs pages sont brûlées.",
+        "a": {
+          "choix": "Cacher les pages chez moi",
+          "contrepartie": "Si elles sont trouvées, tu es exclu du village.",
+          "suite": "Tu glisses les pages sous ton matelas. Inès repart les mains vides, plus légère.",
+          "interdit": "Tu ne peux plus laisser fouiller ta maison : tu y caches des pages interdites."
+        },
+        "b": {
+          "choix": "Laisser Augustin les brûler",
+          "contrepartie": "La pompe du puits ne pourra plus être réparée.",
+          "suite": "Le feu prend vite. Inès regarde la page de la pompe se tordre, puis rentre.",
+          "interdit": "Tu ne peux plus pomper l'eau du puits : son plan de réparation a brûlé."
+        },
+        "source": "research/scenarios-10-12-collapses.md:33 (ceux qui peuvent reconstruire sont repérés et arrêtés, extrapolé) ; research/scenarios-10-12-collapses.md:42 (le gardien brûle le reste)"
+      },
+      {
+        "id": "w11-s4",
+        "lieu": "home",
+        "piece": {
+          "type": "papier",
+          "emetteur": "Marchand de la vallée",
+          "texte": "Remède contre la fièvre, en flacon. Fabriqué en bas, où l'on garde des machines. Prix : deux paniers de grain."
+        },
+        "situation": "Lucien a de la fièvre. Un marchand de la vallée, où l'on garde des machines, vend un remède en flacon. Le village interdit ce qui vient d'en bas.",
+        "regle": "Ce qui vient d'un pays à machines rend le village dépendant. C'est interdit.",
+        "a": {
+          "choix": "Acheter le remède",
+          "contrepartie": "Ton foyer est exclu des rations jusqu'au printemps.",
+          "suite": "Lucien boit le flacon. Au matin, sa fièvre tombe. À la distribution, ton nom n'est plus appelé.",
+          "interdit": "Tu ne peux plus recevoir ta ration : tu as acheté un remède venu d'un pays à machines."
+        },
+        "b": {
+          "choix": "Soigner Lucien aux plantes",
+          "contrepartie": "La fièvre de Lucien suit son cours, sans remède sûr.",
+          "suite": "Tu fais bouillir de l'écorce toute la nuit. Au matin, Lucien te reconnaît, mais ne se lève pas.",
+          "interdit": "Tu ne peux plus quitter le chevet de ton ami Lucien : sa fièvre continue sans remède."
+        },
+        "source": "research/scenarios-10-12-collapses.md:48 (tension 1 : un village qui garde la technologie domine ceux qui l'ont abandonnée) ; research/precedents-10-12-collapses.md:288 (retour consenti ou imposé : à trancher)"
+      }
+    ],
+    "fin_cles": [
+      "w11-s2",
+      "w11-s4"
+    ],
+    "fin": [
+      {
+        "si": [
+          "a",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé le savoir de ton ami Lucien, le forgeron, et Lucien lui-même, guéri.",
+          "Tu as perdu ta ration, et la patrouille te surveille.",
+          "Tu es maintenant le dernier forgeron du village, sans ration.",
+          "Il te reste le savoir du métal, Lucien guéri, et la faim."
+        ]
+      },
+      {
+        "si": [
+          "a",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé le savoir de ton ami Lucien, le forgeron, et ta ration.",
+          "Tu as perdu le remède sûr pour Lucien : sa fièvre continue.",
+          "Tu es maintenant le forgeron que la patrouille surveille.",
+          "Il te reste le savoir du métal, et une ration chaque matin."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "a"
+        ],
+        "lignes": [
+          "Tu as gardé ton ami Lucien, guéri par le remède.",
+          "Tu as perdu la forge, puis ta ration : le village t'a exclu.",
+          "Tu es maintenant un villageois exclu, avec la clé d'un coffre à outils.",
+          "Il te reste ton ami Lucien guéri, et la clé de son coffre."
+        ]
+      },
+      {
+        "si": [
+          "b",
+          "b"
+        ],
+        "lignes": [
+          "Tu as gardé ta ration.",
+          "Tu as perdu la forge, et un remède sûr pour ton ami Lucien.",
+          "Tu es maintenant un villageois en règle, au chevet de ton ami Lucien.",
+          "Il te reste ta ration, et la clé d'un coffre fermé."
+        ]
+      }
+    ]
+  }
+}

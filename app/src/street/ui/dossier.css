@@ -1,0 +1,39 @@
+/* Barre « Dossier » [GDD 2026-11-03 §2 option A, décision Cynthia, playtest 2026-11-03 ; direction C]. Couleurs par jetons (`--c-*`, posées
+   par `dossier.ts` depuis `data/ui/dossier.json`), bordure fine de 2 px, texte jamais collé à un bord : la pastille porte son remplissage. */
+.c-dossier {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: .75rem; row-gap: .25rem;
+  box-sizing: border-box; margin: 0;
+  padding: calc(var(--s-card-pad-y) * .5) calc(var(--s-street-eye-px) / 3) calc(var(--s-card-pad-y) * .5) calc(var(--s-street-eye-px) / 5);
+  background: var(--c-creme); color: var(--c-encre); border-radius: var(--s-card-secondary);
+  box-shadow: 0 var(--s-shadow-offset-card) 0 var(--sh-encre);
+}
+.c-dossier__name { grid-column: 1; grid-row: 1; font-family: var(--t-bracelet-unit-family); font-size: var(--t-bracelet-unit-size); font-weight: var(--t-bracelet-unit-weight); line-height: var(--t-bracelet-unit-lh); color: var(--c-rose-fonce); }
+.c-dossier__track {
+  grid-column: 2; grid-row: 1; position: relative; display: block; height: var(--dossier-track-h);
+  background: var(--dossier-track); border: var(--s-border) solid var(--dossier-border); border-radius: var(--s-pill); overflow: hidden;
+}
+.c-dossier__fill { position: absolute; left: 0; top: 0; bottom: 0; display: block; }
+.c-dossier__ghost { position: absolute; inset: 0; display: block; }
+.c-dossier__ghost > * { position: absolute; top: 0; bottom: 0; display: block; background: var(--dossier-ghost); opacity: var(--dossier-ghost-opacity); box-shadow: inset calc(-1 * var(--s-border)) 0 0 var(--dossier-gap-color); }
+.c-dossier__mark { position: absolute; top: 0; bottom: 0; left: var(--dossier-audition-at, 0%); width: var(--dossier-mark-w); margin-left: calc(var(--dossier-mark-w) / -2); background: var(--dossier-mark); display: block; }
+/* « audition » sous le trait, qui FINIT au trait : il déborde à gauche, dans la rangée vide sous « Dossier », jamais vers le bord droit.
+   Le remplissage en pourcentage d'un élément de grille se lit sur la largeur de sa zone (la piste). */
+.c-dossier__audition-row { grid-column: 2; grid-row: 2; display: block; box-sizing: border-box; padding-inline-start: var(--dossier-audition-at, 0%); white-space: nowrap; }
+.c-dossier__audition { display: inline-block; transform: translateX(calc(-100% + var(--dossier-mark-w) / 2)); font-family: var(--t-controls-family); font-size: var(--t-controls-size); font-weight: var(--t-controls-weight); line-height: var(--t-controls-lh); color: var(--c-encre); }
+.c-dossier__hint { grid-column: 1 / -1; grid-row: 3; font-family: var(--t-controls-family); font-size: var(--t-controls-size); font-weight: var(--t-controls-weight); line-height: var(--t-controls-lh); color: var(--c-encre-douce); max-width: 100%; contain: inline-size; }   /* ligne d'aide du premier affichage, sous la barre ; elle ne pèse pas sur la largeur des colonnes */
+/* Séquence jouée [décision Cynthia, playtest 2026-11-03] : un battement au bord du segment en attente, tourné dans le sens de l'effet (hausse : il part
+   vers la droite, baisse : vers la gauche ; un effet nul ne pulse pas). Posé par `dossier.ts` ; arrêté en mouvement réduit (I-9), il reste alors visible, fixe. */
+.c-dossier__pulse { position: absolute; top: 0; bottom: 0; display: none; background: var(--dossier-pulse); opacity: .55; pointer-events: none; }
+.c-dossier[data-pulse] .c-dossier__pulse { display: block; animation: c-dossier-beat var(--dossier-pulse-ms) ease-in-out infinite; }
+.c-dossier[data-pulse="up"] .c-dossier__pulse { transform-origin: left center; }
+.c-dossier[data-pulse="down"] .c-dossier__pulse { transform-origin: right center; }
+.c-dossier[data-pulse][data-reduced] .c-dossier__pulse { animation: none; }
+@keyframes c-dossier-beat { 0%, 100% { opacity: .2; transform: scaleX(.35); } 50% { opacity: .9; transform: scaleX(1); } }
+.c-dossier[data-pulse][data-pulse-weight="strong"] .c-dossier__pulse { opacity: .8; }
+.c-dossier[data-pulse][data-pulse-weight="low"] .c-dossier__pulse { opacity: .4; }
+/* Voile noir d'un saut de séquence jouée (fondu court, GDD sequences-jouees §0.3) : plein cadre, jamais au clic. */
+.c-fade { position: fixed; inset: 0; background: var(--c-encre); pointer-events: none; z-index: 50; }
+.c-fade[hidden] { display: none; }
+
+/* Séquence jouée : la joueuse a perdu la main, le curseur est masqué [GDD sequences-jouees §1.3]. */
+[data-sequencing="true"], [data-sequencing="true"] * { cursor: none !important; }

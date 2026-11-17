@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`test_golden_values_recorded 1`] = `
+[
+  0.040939911268651485,
+  0.1851000429596752,
+  0.163965021725744,
+]
+`;

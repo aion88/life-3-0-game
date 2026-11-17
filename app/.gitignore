@@ -1,0 +1,17 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+coverage/
+dist-capture/
+test-results-predeploy/
+
+# Local review builds; never the production package.
+dist-local/
+test-results-local-feedback/
+
+dist-narrative/
+test-results-narrative/
+
+dist-characters/
+test-results-characters/

@@ -1,0 +1,532 @@
+{
+  "status": "skeleton",
+  "retired": [
+    "Q01",
+    "Q13",
+    "Q19"
+  ],
+  "questions": [
+    {
+      "key": "Q11",
+      "order": 1,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q14",
+      "order": 2,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "D",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q05",
+      "order": 3,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q10",
+      "order": 4,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q21",
+      "order": 5,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        },
+        {
+          "key": "D",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q04",
+      "order": 6,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "D",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        }
+      ]
+    },
+    {
+      "key": "Q15",
+      "order": 7,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "D",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        }
+      ]
+    },
+    {
+      "key": "Q18",
+      "order": 8,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "D",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": true
+        }
+      ]
+    },
+    {
+      "key": "Q16",
+      "order": 9,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q20",
+      "order": 10,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    },
+    {
+      "key": "Q07",
+      "order": 11,
+      "answers": [
+        {
+          "key": "A",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "B",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        },
+        {
+          "key": "C",
+          "push": {
+            "aiPower": 0,
+            "order": 0,
+            "abundance": 0,
+            "freedom": 0,
+            "surveillance": 0,
+            "unrest": 0
+          },
+          "hypothesis": false
+        }
+      ]
+    }
+  ]
+}

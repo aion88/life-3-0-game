@@ -1,0 +1,3375 @@
+[
+  {
+    "title": "Life 3.0 — Max Tegmark, présentation de l’essai",
+    "url": "https://www.penguinrandomhouse.com/books/530584/life-30-by-max-tegmark/9781101970317/",
+    "domain": "penguinrandomhouse.com",
+    "group": "Pour commencer",
+    "origins": [
+      "Essai à l’origine du jeu"
+    ]
+  },
+  {
+    "title": "Reconnu après une manifestation pacifique — Cour européenne des droits de l’homme · Glukhin c. Russie",
+    "url": "https://www.echr.coe.int/w/judgment-concerning-the-russian-federation-6",
+    "domain": "echr.coe.int",
+    "group": "Faits présentés dans le jeu",
+    "origins": [
+      "Cartes « Dans le monde réel »",
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "Des visages reconnus dans la rue — Metropolitan Police · bilan du pilote de Croydon",
+    "url": "https://news.met.police.uk/news/100-arrests-following-new-live-facial-recognition-pilot-in-croydon-505225",
+    "domain": "news.met.police.uk",
+    "group": "Faits présentés dans le jeu",
+    "origins": [
+      "Cartes « Dans le monde réel »",
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "Une IA pour renouveler une ordonnance — Utah Department of Commerce · protocole Doctronic",
+    "url": "https://commerce.utah.gov/ai/regulatory-relief-4/authorized-pilots/doctronic/",
+    "domain": "commerce.utah.gov",
+    "group": "Faits présentés dans le jeu",
+    "origins": [
+      "Cartes « Dans le monde réel »",
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "Le travail change, sans issue écrite — Organisation internationale du Travail · étude 2025",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+    "domain": "ilo.org",
+    "group": "Faits présentés dans le jeu",
+    "origins": [
+      "Cartes « Dans le monde réel »",
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "Des limites ont aussi été votées — Commission européenne · AI Act",
+    "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "domain": "digital-strategy.ec.europa.eu",
+    "group": "Faits présentés dans le jeu",
+    "origins": [
+      "Cartes « Dans le monde réel »",
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.medicaleconomics.com/view/utah-lets-ai-refill-chronic-prescriptions-in-state-backed-pilot-program",
+    "domain": "medicaleconomics.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.axios.com/local/salt-lake-city/2026/01/07/utah-ai-drug-prescriptions-doctronic",
+    "domain": "axios.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://hlth.com/insights/news/utah-tests-ai-for-routine-medication-refills-through-regulatory-relief-program-2026-01-12",
+    "domain": "hlth.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.ksl.com/article/news/utah/health/should-ai-be-allowed-to-renew-prescriptions-utah-medical-licensing-board-urges-caution/51489592",
+    "domain": "ksl.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)",
+      "Q11 (clé proposée Q21) : recontrôle des sources du brouillon"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://utahnewsdispatch.com/2026/04/28/medical-licensing-board-calls-to-suspend-program-using-ai-to-refill-prescriptions/",
+    "domain": "utahnewsdispatch.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.acponline.org/sites/default/files/acp-policy-library/letters/joint_letter_to_chair_of_utah_mlb_regarding_use_of_ai_in_auto_prescrip_renewal_pilot_program.pdf",
+    "domain": "acponline.org",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.fiercehealthcare.com/ai-and-machine-learning/deep-dive-doctronics-ai-prescription-refill-pilot-program-utah",
+    "domain": "fiercehealthcare.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.jdsupra.com/legalnews/is-ai-wiser-cms-models-ai-based-prior-9008430/",
+    "domain": "jdsupra.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.dwt.com/insights/2025/07/cms-launches-wiser-model-to-curb-medicare-overuse",
+    "domain": "dwt.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://sd13.senate.ca.gov/node/934",
+    "domain": "sd13.senate.ca.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 1 : « L'ordonnance de ton père » (soin, renouvellement par IA)",
+    "url": "https://www.legal500.com/intelligence/united-states/food-drugs-healthcare-life-sciences/california-limits-health-plan-use-of-ai-in-utilization-management",
+    "domain": "legal500.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 2 : « Le lycée de ton neveu » (éducation, tuteur IA pour tous), écarté",
+    "url": "https://hm.ee/en/news/estonia-announces-groundbreaking-national-initiative-ai-leap-programme-bring-ai-tools-all",
+    "domain": "hm.ee",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 2 : « Le lycée de ton neveu » (éducation, tuteur IA pour tous), écarté",
+    "url": "https://news.err.ee/1609723869/estonia-to-introduce-ai-model-in-high-schools-come-fall",
+    "domain": "news.err.ee",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 2 : « Le lycée de ton neveu » (éducation, tuteur IA pour tous), écarté",
+    "url": "https://e-estonia.com/wp-content/uploads/factsheet_ai_leap_1_04_26.pdf",
+    "domain": "e-estonia.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Candidat 2 : « Le lycée de ton neveu » (éducation, tuteur IA pour tous), écarté",
+    "url": "https://www.globalgovernmentforum.com/albania-introduces-ai-powered-minister-to-end-corruption-in-public-procurement/",
+    "domain": "globalgovernmentforum.com",
+    "group": "Questions de société",
+    "origins": [
+      "Onzième question : ce qu'on accepte de confier à l'IA (brouillon pour D126 option a)"
+    ]
+  },
+  {
+    "title": "Réserve Diella",
+    "url": "https://www.akingump.com/en/insights/ai-law-and-regulation-tracker/albania-appoints-first-ai-created-government-minister",
+    "domain": "akingump.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q11 (clé proposée Q21) : recontrôle des sources du brouillon"
+    ]
+  },
+  {
+    "title": "Réserve Diella",
+    "url": "https://english.gazetatema.net/politics/ai-minister-case-reaches-court-i345550",
+    "domain": "english.gazetatema.net",
+    "group": "Questions de société",
+    "origins": [
+      "Q11 (clé proposée Q21) : recontrôle des sources du brouillon"
+    ]
+  },
+  {
+    "title": "Annonce officielle datée",
+    "url": "https://commerce.utah.gov/2026/01/06/news-release-utah-and-doctronic-announce-groundbreaking-partnership-for-ai-prescription-medication-renewals/",
+    "domain": "commerce.utah.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Faits du présent — vérification du 9 novembre 2026"
+    ]
+  },
+  {
+    "title": "A. Comparables : ce qui rend la conséquence ressentie, et ce qu'on reprend",
+    "url": "https://en.wikipedia.org/wiki/Papers,_Please",
+    "domain": "en.wikipedia.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : comparables, questionnaire → monde, structure de session, 2026-10-28"
+    ]
+  },
+  {
+    "title": "A. Comparables : ce qui rend la conséquence ressentie, et ce qu'on reprend",
+    "url": "https://en.wikipedia.org/wiki/Gareth_Damian_Martin",
+    "domain": "en.wikipedia.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : comparables, questionnaire → monde, structure de session, 2026-10-28"
+    ]
+  },
+  {
+    "title": "B. Questionnaire → monde",
+    "url": "https://itstillworks.com/12551460/the-best-answers-for-the-goat-test-in-fallout-3",
+    "domain": "itstillworks.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : comparables, questionnaire → monde, structure de session, 2026-10-28"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://www.adriancourreges.com/blog/2015/11/02/gta-v-graphics-study/",
+    "domain": "adriancourreges.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://www.adriancourreges.com/blog/2015/11/02/gta-v-graphics-study-part-3/",
+    "domain": "adriancourreges.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://www.gta5-mods.com/tr/misc/skyambient-tr-timecycles",
+    "domain": "gta5-mods.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://cs.gta5-mods.com/misc/maxedv",
+    "domain": "cs.gta5-mods.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://www.igrandtheftauto.com/gta5/news/buzzfeed-interviews-art-director-aaron-garbut",
+    "domain": "igrandtheftauto.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.1 GTA V, ce qui est établi",
+    "url": "https://www.allnightmenu.la/stories/idling-in-los-santos",
+    "domain": "allnightmenu.la",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.2 GTA VI, ce qui est établi",
+    "url": "https://www.pushsquare.com/news/2026/08/tech-experts-call-gta-6-the-most-impressive-example-of-real-time-rendering-weve-ever-seen",
+    "domain": "pushsquare.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.2 GTA VI, ce qui est établi",
+    "url": "https://rockstar-files.pages.dev/reports/10_misc/1010_T1_vs_T2_Visuals.html",
+    "domain": "rockstar-files.pages.dev",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.2 GTA VI, ce qui est établi",
+    "url": "https://www.noobfeed.com/news/gta-6-graphics-launch-trailer-colors",
+    "domain": "noobfeed.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.2 GTA VI, ce qui est établi",
+    "url": "https://xiaomitoday.com/grand-theft-auto-vi-trailer-2-confirmed-as-real-time-ps5-footage-digital-foundry-breaks-down-visuals/",
+    "domain": "xiaomitoday.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.3 Le jour, le high key, l'heure bleue (ajout du 2026-10-28)",
+    "url": "https://gtaintel.com/news/gta-6-ray-tracing-and-lighting",
+    "domain": "gtaintel.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1.3 Le jour, le high key, l'heure bleue (ajout du 2026-10-28)",
+    "url": "https://libertycity.net/news/gta-6/8997-digital-foundry-analyzes-gta-6s-second.html",
+    "domain": "libertycity.net",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1bis. Un système de palette pour dix mondes",
+    "url": "https://www.advances.realtimerendering.com/other/2016/naughty_dog/NaughtyDog_TechArt_Final.pdf",
+    "domain": "advances.realtimerendering.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1bis. Un système de palette pour dix mondes",
+    "url": "https://api.unrealengine.com/udk/Three/ColorGrading.html",
+    "domain": "api.unrealengine.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "1bis. Un système de palette pour dix mondes",
+    "url": "https://bottosson.github.io/posts/oklab/",
+    "domain": "bottosson.github.io",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://helpx.adobe.com/ph_en/creative-cloud/faq/mixamo-faq.html",
+    "domain": "helpx.adobe.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://community.adobe.com/questions-696/mixamo-characters-for-commercial-games-589934",
+    "domain": "community.adobe.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://community.adobe.com/questions-696/mixamo-faq-licensing-royalties-ownership-eula-and-tos-589400",
+    "domain": "community.adobe.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://en.wikipedia.org/wiki/Ready_Player_Me",
+    "domain": "en.wikipedia.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://learn.framevr.io/blog/rpm-closure",
+    "domain": "learn.framevr.io",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://quaternius.com/packs/universalbasecharacters.html",
+    "domain": "quaternius.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)",
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://static.makehumancommunity.org/oldsite/faq/can_i_sell_models_created_with_makehuman.html",
+    "domain": "static.makehumancommunity.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://renderu.com/en/news/post/26524",
+    "domain": "renderu.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://static.makehumancommunity.org/about/license.html",
+    "domain": "static.makehumancommunity.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://gitserver.onethingai.com/ai-models/Hunyuan3D-2.1/raw/branch/main/LICENSE",
+    "domain": "gitserver.onethingai.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://hyper3d.ai/pricing",
+    "domain": "hyper3d.ai",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.1 Routes",
+    "url": "https://costbench.com/software/ai-3d-generation/rodin-hyper3d/",
+    "domain": "costbench.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.2 Poids, par calcul visible (tout est inféré, à mesurer avec gltf-transform inspect)",
+    "url": "https://app.cinevva.com/guides/optimize-glb-for-web",
+    "domain": "app.cinevva.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "3.2 Poids, par calcul visible (tout est inféré, à mesurer avec gltf-transform inspect)",
+    "url": "https://discourse.threejs.org/t/gltf-and-or-glb-online-optimization-and-compression/62753.md",
+    "domain": "discourse.threejs.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://www.digitaltrends.com/computing/unrecord-took-internet-by-storm/",
+    "domain": "digitaltrends.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://80.lv/articles/the-drama-team-answers-players-questions-about-unrecord-a-ue5-powered-fps-with-photorealistic-graphics",
+    "domain": "80.lv",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://videohighlight.com/v/zvrRCBlTmDE",
+    "domain": "videohighlight.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://en.wikipedia.org/wiki/Bodycam_(video_game)",
+    "domain": "en.wikipedia.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://gamesradar.com/games/fps/bodycam-brings-fps-action-to-an-ultra-realistic-world-that-has-to-be-seen-to-be-believed",
+    "domain": "gamesradar.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://gamesradar.com/games/horror/this-is-incredibly-rare-how-mouthwashing-quietly-became-2024s-breakout-horror-hit",
+    "domain": "gamesradar.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://www.inkl.com/news/mouthwashing-review-this-low-poly-horror-masterpiece-will-haunt-me-for-a-long-time",
+    "domain": "inkl.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "4. Trois jeux d'équipes réduites, « pas cheap », et ce qu'ils ont fait",
+    "url": "https://discourse.threejs.org/t/3d-action-browser-game-made-with-three-js-savanna-sam/81902",
+    "domain": "discourse.threejs.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Grammaire visuelle GTA et personnages 3D navigateur (AI Aftermath v2)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://kenney.nl/assets/city-kit-commercial",
+    "domain": "kenney.nl",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)",
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://kenney.nl/support",
+    "domain": "kenney.nl",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://kenney.nl/assets/city-kit-suburban",
+    "domain": "kenney.nl",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://quaternius.com/license.html",
+    "domain": "quaternius.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://polyhaven.com/license",
+    "domain": "polyhaven.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://help.sketchfab.com/en/articles/16152217-downloading-3d-models",
+    "domain": "help.sketchfab.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://sketchfab.com/licenses",
+    "domain": "sketchfab.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://community.adobe.com/t5/mixamo-discussions/mixamo-faq-licensing-royalties-ownership-eula-and-tos/td-p/13234775",
+    "domain": "community.adobe.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://github.com/mrdoob/three.js/blob/dev/LICENSE",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Licences des sources d'assets 3D (état au 2026-10-28)",
+    "url": "https://github.com/vitejs/vite/blob/main/LICENSE",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Complément personnages (2026-10-28)",
+    "url": "https://github.com/makehumancommunity/mpfb2/blob/master/LICENSE.md",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Complément personnages (2026-10-28)",
+    "url": "https://sketchfab.com/3d-models/human-malefemale-basemesh-rigged-96fa14a5a3f0413e98b605e3f65e447c",
+    "domain": "sketchfab.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Complément personnages (2026-10-28)",
+    "url": "https://sketchfab.com/3d-models/base-character-caae916b75b242e78aaeb59eb0d3c8a1",
+    "domain": "sketchfab.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Complément personnages (2026-10-28)",
+    "url": "https://opengameart.org/content/base-rigged-stylized-humanoid-character-yw",
+    "domain": "opengameart.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "Complément personnages (2026-10-28)",
+    "url": "https://plewr.itch.io/3d-rigged-character",
+    "domain": "plewr.itch.io",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Licences des sources d'assets 3D (état au 2026-10-28)"
+    ]
+  },
+  {
+    "title": "1. Ce que c'est",
+    "url": "https://1in8b.life/",
+    "domain": "1in8b.life",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Recherche : « 1 in 8 Billion » (80億分の1), 2026-10-28"
+    ]
+  },
+  {
+    "title": "1. Ce que c'est",
+    "url": "https://realsound.jp/tech/2026/10/post-2558126.html",
+    "domain": "realsound.jp",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Recherche : « 1 in 8 Billion » (80億分の1), 2026-10-28"
+    ]
+  },
+  {
+    "title": "1. Ce que c'est",
+    "url": "https://www.nownews.com/news/6883668",
+    "domain": "nownews.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Recherche : « 1 in 8 Billion » (80億分の1), 2026-10-28"
+    ]
+  },
+  {
+    "title": "1. Ce que c'est",
+    "url": "https://global.hk01.com/%E5%BC%80%E7%BD%90/60400323/",
+    "domain": "global.hk01.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Recherche : « 1 in 8 Billion » (80億分の1), 2026-10-28"
+    ]
+  },
+  {
+    "title": "2. Boucle et mécaniques",
+    "url": "https://www.woshipm.com/ai/6482537.html",
+    "domain": "woshipm.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Recherche : « 1 in 8 Billion » (80億分の1), 2026-10-28"
+    ]
+  },
+  {
+    "title": "Résultat",
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032035255",
+    "domain": "legifrance.gouv.fr",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédent juridique : imputation des paiements (D105, w11)"
+    ]
+  },
+  {
+    "title": "Résultat",
+    "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070721/LEGISCTA000032035235/",
+    "domain": "legifrance.gouv.fr",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédent juridique : imputation des paiements (D105, w11)"
+    ]
+  },
+  {
+    "title": "Résultat",
+    "url": "https://french-business-law.com/french-legislation-art/article-1342-10-of-the-french-civil-code",
+    "domain": "french-business-law.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédent juridique : imputation des paiements (D105, w11)"
+    ]
+  },
+  {
+    "title": "Résultat",
+    "url": "https://gdroit.fr/droit-des-obligations/les-regles-dimputation-du-paiement/",
+    "domain": "gdroit.fr",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédent juridique : imputation des paiements (D105, w11)"
+    ]
+  },
+  {
+    "title": "Limites, à ne pas écrire comme faits",
+    "url": "https://www.anil.org/jurisprudences-imputation-paiements-prescription/",
+    "domain": "anil.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédent juridique : imputation des paiements (D105, w11)"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.addleshawgoddard.com/en/insights/insights-briefings/2026/technology/eu-ai-act-ai-omnibus-formally-adopted/",
+    "domain": "addleshawgoddard.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.euronews.com/2025/08/01/some-26-tech-companies-sign-up-to-eu-commissions-ai-code",
+    "domain": "euronews.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://techcrunch.com/2025/07/18/meta-refuses-to-sign-eus-ai-code-of-practice",
+    "domain": "techcrunch.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.natlawreview.com/article/president-trump-signs-eo-stop-state-and-local-regulation-ai",
+    "domain": "natlawreview.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.pbs.org/newshour/politics/senate-pulls-ai-regulatory-ban-from-gop-bill-after-complaints-from-states",
+    "domain": "pbs.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.broadbandbreakfast.com/ai-preemption-battle-lands-in-congress-with-substantive-discussion-draft/",
+    "domain": "broadbandbreakfast.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://fpf.org/blog/californias-sb-53-the-first-frontier-ai-law-explained/",
+    "domain": "fpf.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://fpf.org/resource/the-raise-act-vs-sb-53-a-tale-of-two-frontier-ai-laws/",
+    "domain": "fpf.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.proskauer.com/blog/major-developments-put-colorados-ai-law-on-ice-ahead-of-implementation",
+    "domain": "proskauer.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.caixinglobal.com/2025-09-03/china-enforces-ai-content-labeling-rules-to-curb-misuse-102358308.html",
+    "domain": "caixinglobal.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.mfa.gov.cn/mfa_eng/xw/zyxw/202507/t20250729_11679232.html",
+    "domain": "mfa.gov.cn",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways",
+    "domain": "cooley.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates",
+      "Q19 : recontrôle des sources (GDD 01 rév. 4, §3.8 « L'étiquette sur la photo »)"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.un.org/digital-emerging-technologies/node/1162",
+    "domain": "un.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://futureoflife.org/press-release/prominent-scientists-faith-leaders-policymakers-and-artists-call-for-a-prohibition-on-superintelligence/",
+    "domain": "futureoflife.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://cyberscoop.com/ai-superintelligence-ban-open-letter-future-of-life-harry-meghan-tech-leaders/",
+    "domain": "cyberscoop.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.lewissilkin.com/insights/2026/09/14/ai-judgment-day-on-the-horizon-while-uk-lawmakers-play-catch-up",
+    "domain": "lewissilkin.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.gigazine.net/gsc_news/en/20260515-nvidia-h200-chip-sales-to-china-firms",
+    "domain": "gigazine.net",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.nextgov.com/artificial-intelligence/2025/10/ai-export-control-bill-passes-senate-ndaa-amendment/408762/",
+    "domain": "nextgov.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.hrw.org/news/2026/09/07/un-talks-on-killer-robots-end-with-calls-for-negotiations-growing",
+    "domain": "hrw.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.gov.uk/government/publications/report-and-impact-assessment-on-copyright-and-artificial-intelligence/report-on-copyright-and-artificial-intelligence",
+    "domain": "gov.uk",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.thestar.com.my/tech/tech-news/2026/07/21/us-judge-approves-anthropic039s-15-billion-settlement-of-copyright-lawsuit",
+    "domain": "thestar.com.my",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.globalpolicywatch.com/2026/05/senate-judiciary-committee-advances-guard-act-regulating-minor-use-of-ai/",
+    "domain": "globalpolicywatch.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.mondaq.com/unitedstates/new-technology/1692804/ai-regulatory-update-californias-sb-243-mandates-companion-ai-safety-and-accountability",
+    "domain": "mondaq.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.biometricupdate.com/202603/australia-expands-age-checks-to-ai-chatbots-app-stores-porn-sites-and-more",
+    "domain": "biometricupdate.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.techuk.org/resource/home-office-launches-consultation-on-legal-framework-for-police-use-of-facial-recognition.html",
+    "domain": "techuk.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://fpf.org/blog/red-lines-under-the-eu-ai-act-restricting-real-time-remote-biometric-identification-systems-for-law-enforcement-purposes/",
+    "domain": "fpf.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://news.bgov.com/litigation/musk-challenged-california-anti-deepfake-law-struck-by-judge",
+    "domain": "news.bgov.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://techradar.com/pro/california-governor-gavin-newsom-signs-no-robo-bosses-act-so-an-ai-can-no-longer-fire-you-on-its-own",
+    "domain": "techradar.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.investmentnews.com/retirement-planning/openai-calls-for-taxing-ai-use-to-shore-up-fraying-safety-nets/266031",
+    "domain": "investmentnews.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://council.seattle.gov/2026/06/09/city-council-passes-emergency-data-center-moratorium-and-policy-framework/",
+    "domain": "council.seattle.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.kait8.com/2026/03/25/sanders-ocasio-cortez-push-bill-impose-ai-data-center-moratorium/",
+    "domain": "kait8.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://letsdatascience.com/news/seattle-enacts-one-year-moratorium-on-ai-data-centers-9283e236",
+    "domain": "letsdatascience.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://siliconangle.com/?p=798148",
+    "domain": "siliconangle.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "1. Inventaire : 25 mesures réelles (2025-2026)",
+    "url": "https://www.hawley.senate.gov/hawley-durbin-introduce-legislation-empowering-americans-to-bring-liability-claims-against-ai-companies",
+    "domain": "hawley.senate.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "2.3 Contradictions rencontrées et comment je les ai tranchées",
+    "url": "https://superintelligence-statement.org/",
+    "domain": "superintelligence-statement.org",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "2.3 Contradictions rencontrées et comment je les ai tranchées",
+    "url": "https://komonews.com/newsletter-daily/seattle-city-council-unanimously-backs-temporary-moratorium-on-new-data-centers-two-measures-preventing-new-facilities-study-impact-environmental-infrastructure-economic-effects",
+    "domain": "komonews.com",
+    "group": "Questions de société",
+    "origins": [
+      "Questionnaire 2026 : mesures IA réelles et 20 questions candidates"
+    ]
+  },
+  {
+    "title": "Godot 4.6, export web",
+    "url": "https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html",
+    "domain": "docs.godotengine.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Godot 4.6, export web",
+    "url": "https://godotengine.org/releases/4.6/",
+    "domain": "godotengine.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Three.js, web natif",
+    "url": "https://github.com/jstrait/city-tour",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Three.js, web natif",
+    "url": "https://quaternius.com/",
+    "domain": "quaternius.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Unreal 5, Pixel Streaming",
+    "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/overview-of-pixel-streaming-in-unreal-engine",
+    "domain": "dev.epicgames.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "Unreal 5, Pixel Streaming",
+    "url": "https://forums.unrealengine.com/t/pixel-streaming-cost/660659",
+    "domain": "forums.unrealengine.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Recherche : routes techniques pour « sensation GTA, jouable en navigateur, solo + agents », 2026-10-28"
+    ]
+  },
+  {
+    "title": "1.1 Max Tegmark, 12 scénarios « AI Aftermath » (FLI, 2017) et Life 3.0",
+    "url": "https://futureoflife.org/ai/ai-aftermath-scenarios/",
+    "domain": "futureoflife.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction",
+      "Research packet — Scenarios 1-3 (Libertarian Utopia, Benevolent Dictator, Egalitarian Utopia)",
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)",
+      "Research packet — Scenarios 7-9 (Conquerors, Descendants, Zookeeper)",
+      "Research packet — Scenarios 10-12 (1984, Reversion, Self-Destruction)"
+    ]
+  },
+  {
+    "title": "1.2 « AI 2027 » (Kokotajlo, Alexander, Larsen, Lifland, Dean ; AI Futures Project, 2025)",
+    "url": "https://ai-2027.com/",
+    "domain": "ai-2027.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction",
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "1.2 « AI 2027 » (Kokotajlo, Alexander, Larsen, Lifland, Dean ; AI Futures Project, 2025)",
+    "url": "https://ai-2027.com/race",
+    "domain": "ai-2027.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction",
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "1.2 « AI 2027 » (Kokotajlo, Alexander, Larsen, Lifland, Dean ; AI Futures Project, 2025)",
+    "url": "https://ai-2027.com/slowdown",
+    "domain": "ai-2027.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.2 « AI 2027 » (Kokotajlo, Alexander, Larsen, Lifland, Dean ; AI Futures Project, 2025)",
+    "url": "https://blog.aifutures.org/p/q1-2026-timelines-update",
+    "domain": "blog.aifutures.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.3 Leopold Aschenbrenner, Situational Awareness (2024)",
+    "url": "https://situational-awareness.ai/",
+    "domain": "situational-awareness.ai",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.4 Epoch AI : tendances de calcul et de mise à l'échelle",
+    "url": "https://epoch.ai/blog/can-ai-scaling-continue-through-2030",
+    "domain": "epoch.ai",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.5 METR : horizon temporel des agents",
+    "url": "https://arxiv.org/pdf/2503.14499v1",
+    "domain": "arxiv.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.6 Rapport international sur la sécurité de l'IA 2026 (Bengio et al., 3 février 2026)",
+    "url": "https://internationalaisafetyreport.org/publication/2026-report-extended-summary-policymakers",
+    "domain": "internationalaisafetyreport.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.7 Cadres de sécurité des laboratoires",
+    "url": "https://www.anthropic.com/responsible-scaling-policy",
+    "domain": "anthropic.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.9 Étude RAND et scénarios de gouvernement (RAND, UK)",
+    "url": "https://www.rand.org/pubs/testimonies/CTA3914-1.html",
+    "domain": "rand.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.9 Étude RAND et scénarios de gouvernement (RAND, UK)",
+    "url": "https://www.gov.uk/government/publications/ai-scenarios-2030-helping-policymakers-plan-for-the-future-of-ai",
+    "domain": "gov.uk",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.10 Contre-vues sérieuses",
+    "url": "https://www.normaltech.ai/p/ai-as-normal-technology",
+    "domain": "normaltech.ai",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.10 Contre-vues sérieuses",
+    "url": "https://www.nber.org/papers/w35046",
+    "domain": "nber.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.10 Contre-vues sérieuses",
+    "url": "https://gradual-disempowerment.ai/",
+    "domain": "gradual-disempowerment.ai",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.10 Contre-vues sérieuses",
+    "url": "https://wiki.aiimpacts.org/ai_timelines/predictions_of_human-level_ai_timelines/ai_timeline_surveys/2023_expert_survey_on_progress_in_ai",
+    "domain": "wiki.aiimpacts.org",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "1.11 Cadre réglementaire réel au 2026-10-28 (utile pour la colonne « régulée »)",
+    "url": "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "domain": "gibsondunn.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Trajectoires 2026-2030 : calibrage du fast-forward et des seuils d'extinction"
+    ]
+  },
+  {
+    "title": "Candidate K1 : un modèle public, ouvert de bout en bout (Apertus)",
+    "url": "https://ai.epfl.ch/apertus-a-fully-open-transparent-multilingual-language-model/",
+    "domain": "ai.epfl.ch",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K1 : un modèle public, ouvert de bout en bout (Apertus)",
+    "url": "https://itsfoss.com/news/apertus/",
+    "domain": "itsfoss.com",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K1 : un modèle public, ouvert de bout en bout (Apertus)",
+    "url": "https://ai.epfl.ch/?p=18627",
+    "domain": "ai.epfl.ch",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K1 : un modèle public, ouvert de bout en bout (Apertus)",
+    "url": "https://www.bertelsmann-stiftung.de/fileadmin/files/BSt/Bibliothek/Doi_Publikationen/Public_AI_2025_01.pdf",
+    "domain": "bertelsmann-stiftung.de",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K1 : un modèle public, ouvert de bout en bout (Apertus)",
+    "url": "https://proceedings.mlr.press/v306/tan26i.html",
+    "domain": "proceedings.mlr.press",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K2 : le vote des habitants sur les aides à un centre de données (Port Washington)",
+    "url": "https://www.wpr.org/news/port-washington-referendum-concerns-data-center-project",
+    "domain": "wpr.org",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K2 : le vote des habitants sur les aides à un centre de données (Port Washington)",
+    "url": "https://civicmedia.us/news/2026/04/16/did-port-washington-voters-stop-a-458-million-data-center-project",
+    "domain": "civicmedia.us",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K2 : le vote des habitants sur les aides à un centre de données (Port Washington)",
+    "url": "https://www.planetizen.com/news/2026/04/137315-voters-wisconsin-city-pass-nations-first-data-center-referendum",
+    "domain": "planetizen.com",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K2 : le vote des habitants sur les aides à un centre de données (Port Washington)",
+    "url": "https://komonews.com/question/vote-would-you-support-a-data-center-in-your-community-if-you-received-a-dividend-payment-question-of-the-day-ai-companies-superintelligence-financial-payments-free-electricity-bipartisan-midterm-issue",
+    "domain": "komonews.com",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K3 : la ville qui reprend la main sur sa pile logicielle (Amsterdam, Barcelone)",
+    "url": "https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/amsterdams-multiyear-digital-autonomy-strategy-kicks-2026",
+    "domain": "interoperable-europe.ec.europa.eu",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K3 : la ville qui reprend la main sur sa pile logicielle (Amsterdam, Barcelone)",
+    "url": "https://www.cio-platform.nl/en/weblog/nieuws-extern-detailpagina/2026/01/30/the-municipality-of-amsterdam-opts-for-digital-autonomy",
+    "domain": "cio-platform.nl",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K3 : la ville qui reprend la main sur sa pile logicielle (Amsterdam, Barcelone)",
+    "url": "https://openresearch.amsterdam/image/2026/2/16/meerjarenstrategie_digitale_autonomie_2026_2035-406471946.pdf",
+    "domain": "openresearch.amsterdam",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Candidate K3 : la ville qui reprend la main sur sa pile logicielle (Amsterdam, Barcelone)",
+    "url": "https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/barcelona-first-city-globally-adopt-un-open-source-principles",
+    "domain": "interoperable-europe.ec.europa.eu",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Ce que je n'ai pas trouvé (à ne pas écrire comme fait)",
+    "url": "https://arxiv.org/pdf/2303.09001",
+    "domain": "arxiv.org",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "Ce que je n'ai pas trouvé (à ne pas écrire comme fait)",
+    "url": "https://www.aspeninstitute.org/events/future-of-community-compute/",
+    "domain": "aspeninstitute.org",
+    "group": "Questions de société",
+    "origins": [
+      "Direction « commun » : trois candidates pour une question de 2026 (D135 révisée)"
+    ]
+  },
+  {
+    "title": "AI Act, Q01",
+    "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025%2F0359%28COD%29",
+    "domain": "oeil.europarl.europa.eu",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "AI Act, Q01",
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps",
+    "domain": "europarl.europa.eu",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "AI Act, Q01",
+    "url": "https://agenceurope.eu/en/bulletin/article/13889/23/european-parliament-gives-final-green-light-to-simplification-of-eu-rules-on-artificial-intelligence",
+    "domain": "agenceurope.eu",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "AI Act, Q01",
+    "url": "https://www.cuatrecasas.com/resources/ai-omnibus-regulation-eng-txt-6a6c91679b13e331880996.pdf",
+    "domain": "cuatrecasas.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "AI Act, Q01",
+    "url": "https://www.cuatrecasas.com/en/global/intellectual-property/art/council-eu-approves-digital-omnibus-ai",
+    "domain": "cuatrecasas.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Californie, Q13",
+    "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/",
+    "domain": "gov.ca.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Californie, Q13",
+    "url": "https://sd05.senate.ca.gov/news/newsom-signs-mcnerneys-no-robo-bosses-act-2026-requiring-human-oversight-ai-workplace",
+    "domain": "sd05.senate.ca.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Californie, Q13",
+    "url": "https://www.crowell.com/en/insights/client-alerts/californias-no-robo-bosses-act-is-now-law-human-oversight-required-for-ai-driven-discipline-and-termination",
+    "domain": "crowell.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Californie, Q13",
+    "url": "https://www.reedsmith.com/our-insights/blogs/employment-law-watch/102o52b/whats-new-in-california-a-closer-look-at-recently-enacted-senate-bill-947no-r/",
+    "domain": "reedsmith.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Californie, Q13",
+    "url": "https://www.gov.ca.gov/wp-content/uploads/2025/10/SB-7-Veto.pdf",
+    "domain": "gov.ca.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Q01 et Q13 : recontrôle des sources (GDD 01 rév. 3, §3.6, §3.7, 5 quater)"
+    ]
+  },
+  {
+    "title": "Verdicts",
+    "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+    "domain": "cac.gov.cn",
+    "group": "Questions de société",
+    "origins": [
+      "Q19 : recontrôle des sources (GDD 01 rév. 4, §3.8 « L'étiquette sur la photo »)"
+    ]
+  },
+  {
+    "title": "Verdicts",
+    "url": "https://www.trade.gov/market-intelligence/south-korea-ai-basic-act",
+    "domain": "trade.gov",
+    "group": "Questions de société",
+    "origins": [
+      "Q19 : recontrôle des sources (GDD 01 rév. 4, §3.8 « L'étiquette sur la photo »)"
+    ]
+  },
+  {
+    "title": "Verdicts",
+    "url": "https://www.cooley.com/news/insight/2026/2026-08-03-eu-ai-act-transparency-obligations-take-effect-2-august-2026",
+    "domain": "cooley.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q19 : recontrôle des sources (GDD 01 rév. 4, §3.8 « L'étiquette sur la photo »)"
+    ]
+  },
+  {
+    "title": "Verdicts",
+    "url": "https://www.houthoff.com/insights/news/ai-act-transparency-obligations-and-the-ai-omnibus-regulation/",
+    "domain": "houthoff.com",
+    "group": "Questions de société",
+    "origins": [
+      "Q19 : recontrôle des sources (GDD 01 rév. 4, §3.8 « L'étiquette sur la photo »)"
+    ]
+  },
+  {
+    "title": "Déclaration universelle des droits de l'homme, texte officiel français (articles 12, 13, 19, 20, 23)",
+    "url": "https://www.un.org/fr/about-us/universal-declaration-of-human-rights",
+    "domain": "un.org",
+    "group": "Droits et libertés",
+    "origins": [
+      "Déclaration universelle des droits de l'homme, texte officiel français (articles 12, 13, 19, 20, 23)",
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)",
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)",
+      "Vérification des faits « Fait réel » du monde Gatekeeper (w04)",
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)"
+    ]
+  },
+  {
+    "title": "1.2 Ce que les sources disent",
+    "url": "https://en.wikipedia.org/wiki/Company_town",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "1.2 Ce que les sources disent",
+    "url": "https://en.wikipedia.org/wiki/Pullman_Strike",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "1.2 Ce que les sources disent",
+    "url": "https://nps.gov/articles/000/fact-or-fiction-did-pullman-use-scrip.htm",
+    "domain": "nps.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "2.2 Ce que les sources disent",
+    "url": "https://en.wikipedia.org/wiki/Klaus_Fuchs",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "2.2 Ce que les sources disent",
+    "url": "https://history.state.gov/historicaldocuments/frus1950v01/d163",
+    "domain": "history.state.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "2.2 Ce que les sources disent",
+    "url": "https://content.time.com/time/subscriber/article/0,33009,825734-1,00.html",
+    "domain": "content.time.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "2.2 Ce que les sources disent",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/C11134994",
+    "domain": "discovery.nationalarchives.gov.uk",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "3.2 Ce que les sources disent, élément par élément",
+    "url": "https://en.wikipedia.org/wiki/Oak_Ridge,_Tennessee",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "3.2 Ce que les sources disent, élément par élément",
+    "url": "https://ahf.nuclearmuseum.org/voices/oral-histories/ray-smiths-interview/",
+    "domain": "ahf.nuclearmuseum.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "3.2 Ce que les sources disent, élément par élément",
+    "url": "https://home.nps.gov/places/edgemoor-gatehouse.htm",
+    "domain": "home.nps.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "3.2 Ce que les sources disent, élément par élément",
+    "url": "https://www.osti.gov/opennet/manhattan-project-history/Places/OakRidge/oak-ridge-life.html",
+    "domain": "osti.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "3.2 Ce que les sources disent, élément par élément",
+    "url": "https://ahf.nuclearmuseum.org/ahf/history/civilian-displacement-oak-ridge-tn/",
+    "domain": "ahf.nuclearmuseum.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de Dieu esclave (w06)"
+    ]
+  },
+  {
+    "title": "1.1 La source existe, et elle est ouverte",
+    "url": "https://www.ucl.ac.uk/news/2022/aug/analysis-furlough-had-protective-effect-mental-health-it-wasnt-good-working",
+    "domain": "ucl.ac.uk",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "1.1 La source existe, et elle est ouverte",
+    "url": "https://uk.news.yahoo.com/furlough-had-protective-effect-mental-171728454.html",
+    "domain": "uk.news.yahoo.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)"
+    ]
+  },
+  {
+    "title": "1.1 La source existe, et elle est ouverte",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9296227/",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)"
+    ]
+  },
+  {
+    "title": "2. Repli Kenya (bible §7.6)",
+    "url": "https://en.wikipedia.org/wiki/GiveDirectly",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "3.1 Alaska (chaîne A, §6.1) : vérifié",
+    "url": "https://en.wikipedia.org/wiki/Alaska_Permanent_Fund",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "3.2 Kibboutz (chaîne C, §6.3) : corrigé",
+    "url": "https://en.wikipedia.org/wiki/Kibbutz",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie égalitaire (w03)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Chaîne B : TNP, 1er janvier 1967",
+    "url": "https://www.un.org/en/conf/npt/2005/npttreaty.html",
+    "domain": "un.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits « Fait réel » du monde Gatekeeper (w04)"
+    ]
+  },
+  {
+    "title": "Chaîne C : Amish, Ordnung et mise à l'écart",
+    "url": "https://groups.etown.edu/amishstudies/cultural-practices/regulations/",
+    "domain": "groups.etown.edu",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits « Fait réel » du monde Gatekeeper (w04)"
+    ]
+  },
+  {
+    "title": "Chaîne C : Amish, Ordnung et mise à l'écart",
+    "url": "https://groups.etown.edu/amishstudies/religion/church-discipline/",
+    "domain": "groups.etown.edu",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits « Fait réel » du monde Gatekeeper (w04)"
+    ]
+  },
+  {
+    "title": "F1. Próspera et Crawfish Rock : Corrigé",
+    "url": "https://en.wikipedia.org/wiki/Pr%C3%B3spera",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "F2. Kafala : Corrigé",
+    "url": "https://en.wikipedia.org/wiki/Kafala_system",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "F2. Kafala : Corrigé",
+    "url": "https://www.hrw.org/news/2025/06/15/kuwaits-exit-permit-requirement-puts-migrant-workers-at-risk",
+    "domain": "hrw.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)"
+    ]
+  },
+  {
+    "title": "F3. Shenzhen, la deuxième ligne : Vérifié",
+    "url": "https://en.wikipedia.org/wiki/Shenzhen",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)",
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "F4. Shenzhen, population : Corrigé",
+    "url": "https://en.wikipedia.org/wiki/Shenzhen_Special_Economic_Zone",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)"
+    ]
+  },
+  {
+    "title": "F4. Shenzhen, population : Corrigé",
+    "url": "https://www.sz.gov.cn/en_szgov/news/latest/content/post_8771774.html",
+    "domain": "sz.gov.cn",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://www.theguardian.com/world/2022/jul/05/honduras-land-rights-fight-crypto-colonialists",
+    "domain": "theguardian.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Vérification des faits : semaine guidée de l'Utopie libertarienne (w01)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://github.com/rsms/inter/blob/master/LICENSE.txt",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://github.com/IBM/plex/blob/master/LICENSE.txt",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://github.com/googlefonts/atkinson-hyperlegible/blob/main/OFL.txt",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://github.com/adobe-fonts/source-sans/blob/release/LICENSE.md",
+    "domain": "github.com",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://fontsource.org/fonts/inter",
+    "domain": "fontsource.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://fontsource.org/fonts/atkinson-hyperlegible",
+    "domain": "fontsource.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://fontsource.org/fonts/ibm-plex-sans",
+    "domain": "fontsource.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Tableau des candidates",
+    "url": "https://fontsource.org/fonts/source-sans-3",
+    "domain": "fontsource.org",
+    "group": "Création et inspirations visuelles",
+    "origins": [
+      "Polices libres pour l'UI de la tranche 1984 (état au 2026-10-29)"
+    ]
+  },
+  {
+    "title": "Wikipédia, Life 3.0",
+    "url": "https://en.wikipedia.org/wiki/Life_3.0",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction",
+      "Research packet — Scenarios 1-3 (Libertarian Utopia, Benevolent Dictator, Egalitarian Utopia)",
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)",
+      "Research packet — Scenarios 7-9 (Conquerors, Descendants, Zookeeper)",
+      "Research packet — Scenarios 10-12 (1984, Reversion, Self-Destruction)"
+    ]
+  },
+  {
+    "title": "résumé 9oelm, chap. 5",
+    "url": "https://9oelm.github.io/2023-01-01-Life-3-0-being-human-in-the-age-of-artificial-intelligence",
+    "domain": "9oelm.github.io",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "VICE",
+    "url": "https://www.vice.com/en/article/foreign-investors-are-building-a-hong-kong-of-the-caribbean-on-a-remote-honduran-island",
+    "domain": "vice.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Hukou system",
+    "url": "https://en.wikipedia.org/wiki/Hukou_system",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Songdo International Business District",
+    "url": "https://en.wikipedia.org/wiki/Songdo_International_Business_District",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Masdar City",
+    "url": "https://en.wikipedia.org/wiki/Masdar_City",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Wikipédia, Gated community",
+    "url": "https://en.wikipedia.org/wiki/Gated_community",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Michael Wolf, Architecture of Density",
+    "url": "https://www.lensculture.com/articles/michael-wolf-architecture-of-density",
+    "domain": "lensculture.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Playtime, Jacques Tati",
+    "url": "https://en.wikipedia.org/wiki/Playtime_(film)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Gattaca",
+    "url": "https://en.wikipedia.org/wiki/Gattaca",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "UnHerd, 2018",
+    "url": "https://unherd.com/2018/07/hail-ai-dictatorship/",
+    "domain": "unherd.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Wikipédia, Singapore",
+    "url": "https://en.wikipedia.org/wiki/Singapore",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Public housing in Singapore",
+    "url": "https://en.wikipedia.org/wiki/Public_housing_in_Singapore",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire",
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Censorship in Singapore",
+    "url": "https://en.wikipedia.org/wiki/Censorship_in_Singapore",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "page Wikipédia",
+    "url": "https://en.wikipedia.org/wiki/Chewing_gum_sales_ban_in_Singapore",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Wikipédia, GNH",
+    "url": "https://en.wikipedia.org/wiki/Gross_National_Happiness",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Bhutan",
+    "url": "https://en.wikipedia.org/wiki/Bhutan",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Wikipédia, Social Credit System",
+    "url": "https://en.wikipedia.org/wiki/Social_Credit_System",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "traduction des règles",
+    "url": "https://www.chinalawtranslate.com/en/rongcheng-personal-credit-reward-and-punishment-measures/",
+    "domain": "chinalawtranslate.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Wikipédia, Nudge theory",
+    "url": "https://en.wikipedia.org/wiki/Nudge_theory",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Jonathan Tan, void decks",
+    "url": "https://mothership.sg/2021/01/void-decks-photo-series",
+    "domain": "mothership.sg",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "page",
+    "url": "https://www.worldphoto.org/sony-world-photography-awards/legacy-galleries/2016/professional/shortlist/architecture/jonathan",
+    "domain": "worldphoto.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Her, Spike Jonze",
+    "url": "https://en.wikipedia.org/wiki/Her_(2013_film)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "CEGA, résumé",
+    "url": "https://medium.com/center-for-effective-global-action/cash-transfers-can-improve-lives-even-for-those-who-dont-receive-them-71d92b7d4246",
+    "domain": "medium.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "document de travail",
+    "url": "https://escholarship.org/content/qt7b84w7hh/qt7b84w7hh.pdf?t=qdgsyt",
+    "domain": "escholarship.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Yle",
+    "url": "https://yle.fi/a/3-11337944",
+    "domain": "yle.fi",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Kela via basicincome.org",
+    "url": "https://basicincome.org/topic/kela",
+    "domain": "basicincome.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "CBS",
+    "url": "https://cbsnews.com/news/basic-guaranteed-income-stockton-experiment/",
+    "domain": "cbsnews.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "NBER w7001",
+    "url": "https://www.nber.org/papers/w7001.pdf",
+    "domain": "nber.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "VoxEU",
+    "url": "https://cepr.org/voxeu/columns/labour-supply-effects-winning-lottery",
+    "domain": "cepr.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Robert Capa, réfectoire du Kfar Darom, 1949-51",
+    "url": "https://www.icp.org/node/123552",
+    "domain": "icp.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "Micha Bar-Am, Magnum : réfectoire d'Ayelet Hashahar, 1957",
+    "url": "https://www.magnumphotos.com/?p=104266",
+    "domain": "magnumphotos.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 1 à 3 : Utopie libertarienne, Dictateur bienveillant, Utopie égalitaire"
+    ]
+  },
+  {
+    "title": "AI aftermath scenarios",
+    "url": "https://en.wikipedia.org/wiki/AI_aftermath_scenarios",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)"
+    ]
+  },
+  {
+    "title": "Baruch Plan",
+    "url": "https://en.wikipedia.org/wiki/Baruch_Plan",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "NPT",
+    "url": "https://en.wikipedia.org/wiki/Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Sakoku",
+    "url": "https://en.wikipedia.org/wiki/Sakoku",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Amish",
+    "url": "https://en.wikipedia.org/wiki/Amish",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Closed city",
+    "url": "https://en.wikipedia.org/wiki/Closed_city",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Television in Bhutan",
+    "url": "https://en.wikipedia.org/wiki/Television_in_Bhutan",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Bloomberg Government",
+    "url": "https://news.bgov.com/capital-markets/nvidia-has-sold-zero-h200s-to-china-top-us-export-enforcer-says",
+    "domain": "news.bgov.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Washington Times, 9 déc. 2025",
+    "url": "https://m.washingtontimes.com/news/2025/dec/9/doj-operation-busts-160-million-network-smuggling-nvidia-chips-china/",
+    "domain": "m.washingtontimes.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "tech.co",
+    "url": "https://tech.co/news/new-bipartisan-bill-takes-aim-at-nvidia-chip-smuggling",
+    "domain": "tech.co",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "arXiv 2507.06379",
+    "url": "https://arxiv.org/abs/2507.06379",
+    "domain": "arxiv.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "logos-pres.md",
+    "url": "https://logos-pres.md/en/news/sam-altman-called-for-the-creation-of-an-iaea-for-artificial-intelligence/",
+    "domain": "logos-pres.md",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "galerie Ewing",
+    "url": "https://ewinggallery.omeka.net/collections/show/6",
+    "domain": "ewinggallery.omeka.net",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "PNAS via PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4066473/",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Cornell",
+    "url": "https://news.cornell.edu/node/283081",
+    "domain": "news.cornell.edu",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "The Register",
+    "url": "https://www.theregister.com/2014/06/29/researchers_mess_with_facebook_users_emotions/",
+    "domain": "theregister.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "BIT",
+    "url": "https://en.wikipedia.org/wiki/Behavioural_Insights_Team",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Libertarian paternalism",
+    "url": "https://en.wikipedia.org/wiki/Libertarian_paternalism",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Divine providence",
+    "url": "https://en.wikipedia.org/wiki/Divine_providence",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Dutch childcare benefits scandal",
+    "url": "https://en.wikipedia.org/wiki/Dutch_childcare_benefits_scandal",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "arXiv 2501.16946",
+    "url": "https://arxiv.org/abs/2501.16946",
+    "domain": "arxiv.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "The Truman Show",
+    "url": "https://en.wikipedia.org/wiki/The_Truman_Show",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "Crewdson",
+    "url": "https://en.wikipedia.org/wiki/Gregory_Crewdson",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Todd Hido",
+    "url": "https://en.wikipedia.org/wiki/Todd_Hido",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Saul Leiter",
+    "url": "https://en.wikipedia.org/wiki/Saul_Leiter",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "cornettfiction.com",
+    "url": "https://www.cornettfiction.com/ai-takes-over-the-world/",
+    "domain": "cornettfiction.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God",
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)",
+      "Research packet — Scenarios 7-9 (Conquerors, Descendants, Zookeeper)"
+    ]
+  },
+  {
+    "title": "Standard Oil",
+    "url": "https://en.wikipedia.org/wiki/Standard_Oil",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Enerdata",
+    "url": "https://www.enerdata.net/publications/daily-energy-news/russia-will-halt-gas-europe-nord-stream-1-3-days-repairs.html",
+    "domain": "enerdata.net",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Moscow Times",
+    "url": "https://www.themoscowtimes.com/2022/06/15/berlin-blasts-political-decision-in-gazproms-gas-squeeze-a78013/pdf",
+    "domain": "themoscowtimes.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Rentier state",
+    "url": "https://en.wikipedia.org/wiki/Rentier_state",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Substack Drago",
+    "url": "https://lukedrago.substack.com/p/the-intelligence-curse",
+    "domain": "lukedrago.substack.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "AI capability control",
+    "url": "https://en.wikipedia.org/wiki/AI_capability_control",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Epoch, hub",
+    "url": "https://epoch.ai/blog/introducing-the-frontier-data-centers-hub/",
+    "domain": "epoch.ai",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Explore Oak Ridge",
+    "url": "https://exploreoakridge.com/inside-the-secret-city-the-photography-of-ed-westcott",
+    "domain": "exploreoakridge.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Severance",
+    "url": "https://en.wikipedia.org/wiki/Severance_(TV_series)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Devs",
+    "url": "https://en.wikipedia.org/wiki/Devs_(TV_series)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "Michael Wolf",
+    "url": "https://en.wikipedia.org/wiki/Michael_Wolf_(photographer)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents réels, mondes 4 à 6 : Gatekeeper, Protector God, Enslaved God"
+    ]
+  },
+  {
+    "title": "0. Corrections de canon à signaler (priorité)",
+    "url": "https://supitalp.github.io/tldr/post/life-3.0/",
+    "domain": "supitalp.github.io",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo",
+      "Research packet — Scenarios 7-9 (Conquerors, Descendants, Zookeeper)"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Nagoro",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Akiya_house",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://www.aljazeera.com/gallery/2023/4/2/last-students-graduate-school-closures-spread-in-ageing-japan",
+    "domain": "aljazeera.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://www.koreatimes.co.kr/southkorea/society/20240130/one-third-of-daycare-centers-kindergartens-to-close-by-2028-due-to-low-birthrate",
+    "domain": "koreatimes.co.kr",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://www.asiae.co.kr/en/article/2023020914573098057",
+    "domain": "asiae.co.kr",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://www.idealista.it/en/news/property-sale-italy/2019/01/22/2358-sambuca-sicily-abandoned-village-italy-homes-sale-1-euro",
+    "domain": "idealista.it",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Voluntary_Human_Extinction_Movement",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://livingwithdying.leeds.ac.uk/2021/10/04/total-pain-theory-cicely-saunders-and-the-rise-of-the-hospice-movement/",
+    "domain": "livingwithdying.leeds.ac.uk",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/De_Hogeweyk",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Children_of_Men",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A4. La rue : dix marqueurs visuels et références",
+    "url": "https://www.35mmc.com/24/12/2025/portraits-from-nagoro-the-scarecrows-village/",
+    "domain": "35mmc.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "A8. Où ça glisse",
+    "url": "https://en.wikipedia.org/wiki/Aboriginal_Protection_Board",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "B2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Biosphere_2",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "B2. Précédents réels",
+    "url": "https://en.wikipedia.org/wiki/Behavioral_sink",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "B2. Précédents réels",
+    "url": "https://czaw.org/?p=6373",
+    "domain": "czaw.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "Paul Christiano, « What failure looks like » [V]",
+    "url": "https://www.lesswrong.com/posts/HBxe6wdjxK239zajf/what-failure-looks-like",
+    "domain": "lesswrong.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "Joseph Carlsmith, « Is Power-Seeking AI an Existential Risk? » [V]",
+    "url": "https://arxiv.org/abs/2206.13353",
+    "domain": "arxiv.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "Bostrom, « Superintelligence » (2014) [E]",
+    "url": "https://alignmentforum.org/posts/EpdXLNXyL4EYLFwF8",
+    "domain": "alignmentforum.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "Bostrom, « Superintelligence » (2014) [E]",
+    "url": "https://www.greaterwrong.com/s/GyvZkBRf8m6NAccgw",
+    "domain": "greaterwrong.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://en.wikipedia.org/wiki/Rogers_Commission_Report",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://en.wikipedia.org/wiki/Chernobyl_disaster",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://en.wikipedia.org/wiki/9/11_Commission",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://www.9-11commission.gov/report/911Report_Ch11.pdf",
+    "domain": "9-11commission.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://en.wikipedia.org/wiki/Financial_Crisis_Inquiry_Commission",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://filmstories.co.uk/?p=83249",
+    "domain": "filmstories.co.uk",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C3. Précédents de « l'écran de causes »",
+    "url": "https://en.wikipedia.org/wiki/Return_of_the_Obra_Dinn",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo",
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "C5. Références visuelles pour le décompte qui s'éteint",
+    "url": "https://earthobservatory.nasa.gov/images/150002/tracking-night-lights-in-ukraine",
+    "domain": "earthobservatory.nasa.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C5. Références visuelles pour le décompte qui s'éteint",
+    "url": "https://en.wikipedia.org/wiki/Koyaanisqatsi",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "C5. Références visuelles pour le décompte qui s'éteint",
+    "url": "https://en.wikipedia.org/wiki/The_World_Without_Us",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents, mondes 7 à 9 : Conquérants, Descendants, Gardien de zoo"
+    ]
+  },
+  {
+    "title": "1.1 Canon Tegmark contre extrapolé",
+    "url": "https://chinaselectcommittee.house.gov/media/press-releases/house-committee-passes-chip-security-act",
+    "domain": "chinaselectcommittee.house.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "1.1 Canon Tegmark contre extrapolé",
+    "url": "https://startupfortune.com/?p=14052",
+    "domain": "startupfortune.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "1.1 Canon Tegmark contre extrapolé",
+    "url": "https://aiinnovationslab.substack.com/p/can-location-verification-stop-ai",
+    "domain": "aiinnovationslab.substack.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P1. Stasi, RDA (1950-1989)",
+    "url": "https://en.wikipedia.org/wiki/Stasi",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P1. Stasi, RDA (1950-1989)",
+    "url": "https://www.bundesarchiv.de/en/stasi-records-archive/education/what-was-the-state-security/the-unofficial-collaborators-of-the-mfs/",
+    "domain": "bundesarchiv.de",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P1. Stasi, RDA (1950-1989)",
+    "url": "https://co-berlin.org/en/program/exhibitions/harald-hauswald",
+    "domain": "co-berlin.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P1. Stasi, RDA (1950-1989)",
+    "url": "https://huckmag.com/article/harald-hauswald-east-german-photographer-untold-story",
+    "domain": "huckmag.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P2. Xinjiang (2016-)",
+    "url": "https://en.wikipedia.org/wiki/Mass_surveillance_in_China",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P2. Xinjiang (2016-)",
+    "url": "https://www.hrw.org/news/2019/05/01/china-how-mass-surveillance-works-xinjiang",
+    "domain": "hrw.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P4. Corée du Nord, songbun",
+    "url": "https://en.wikipedia.org/wiki/Songbun",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P4. Corée du Nord, songbun",
+    "url": "https://earthobservatory.nasa.gov/images/83182/the-koreas-at-night",
+    "domain": "earthobservatory.nasa.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P4. Corée du Nord, songbun",
+    "url": "https://www.itsnicethat.com/articles/photographer-philippe-chancel-captures-north-koreas-intensely-choreographed-ceremonies-281016",
+    "domain": "itsnicethat.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P5. URSS : samizdat, machines à écrire, propiska",
+    "url": "https://en.wikipedia.org/wiki/Propiska_in_the_Soviet_Union",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P5. URSS : samizdat, machines à écrire, propiska",
+    "url": "https://en.wikipedia.org/wiki/Samizdat",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P6. Roumanie : les machines à écrire enregistrées",
+    "url": "https://legislatie.just.ro/Public/DetaliiDocument/565",
+    "domain": "legislatie.just.ro",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P6. Roumanie : les machines à écrire enregistrées",
+    "url": "https://e-zeppelin.ro/en/?p=11616",
+    "domain": "e-zeppelin.ro",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P6. Roumanie : les machines à écrire enregistrées",
+    "url": "https://en.wikipedia.org/wiki/1980s_austerity_policy_in_Romania",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P6. Roumanie : les machines à écrire enregistrées",
+    "url": "https://en.wikipedia.org/wiki/The_Lives_of_Others",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P7. Iran : coupures et Internet à paliers",
+    "url": "https://en.wikipedia.org/wiki/2019_Internet_blackout_in_Iran",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P7. Iran : coupures et Internet à paliers",
+    "url": "https://factnameh.substack.com/p/from-blackout-to-whitelist-the-anatomy",
+    "domain": "factnameh.substack.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P8. Spyware commercial (Pegasus)",
+    "url": "https://en.wikipedia.org/wiki/Pegasus_(spyware)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "P9 (cas limite). Pays-Bas, registre de 1940",
+    "url": "https://en.wikipedia.org/wiki/Netherlands_in_World_War_II",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Ce qui existe vraiment (pas de rationnement de la parole en tant que tel)",
+    "url": "https://chinadigitaltimes.net/2013/06/two-years-of-sensitive-words-grass-mud-horse-list/",
+    "domain": "chinadigitaltimes.net",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Ce qui existe vraiment (pas de rationnement de la parole en tant que tel)",
+    "url": "https://languagelog.ldc.upenn.edu/nll/?p=55310",
+    "domain": "languagelog.ldc.upenn.edu",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Ce qui existe vraiment (pas de rationnement de la parole en tant que tel)",
+    "url": "https://en.wikipedia.org/wiki/Threads_(1984_film)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Procédures réelles",
+    "url": "https://berlin.de/mauer/en/sites/former-checkpoints/friedrichstrasse-station",
+    "domain": "berlin.de",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Procédures réelles",
+    "url": "https://www.das-parlament.de/2020/41/kehrseite/eintrittsgeld-fuer-die-ddr",
+    "domain": "das-parlament.de",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Procédures réelles",
+    "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Procédures réelles",
+    "url": "https://www.esa.int/ESA_Multimedia/Images/2022/10/Berlin_at_night_A_decade_of_changes_in_street_lighting",
+    "domain": "esa.int",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "1.6 La rue, 15 marqueurs visuels et références",
+    "url": "https://en.wikipedia.org/wiki/Brazil_(1985_film)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Références photo et film",
+    "url": "https://en.wikipedia.org/wiki/Stalker_(1979_film)",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Références photo et film",
+    "url": "https://www.esa.int/ESA_Multimedia/Images/2012/05/Berlin_at_night",
+    "domain": "esa.int",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "C. L'Archiviste-Censeur (remplace le Technicien sous licence)",
+    "url": "https://chinadigitaltimes.net/2009/04/baidus-internal-monitoring-and-censorship-document-leaked/",
+    "domain": "chinadigitaltimes.net",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R1. Bretagne post-romaine (c. 410-600)",
+    "url": "https://en.wikipedia.org/wiki/Post-Roman_Britain",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R2. Tasmanie : la perte d'outils",
+    "url": "https://henrich.fas.harvard.edu/resource/pdf-69",
+    "domain": "henrich.fas.harvard.edu",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R2. Tasmanie : la perte d'outils",
+    "url": "https://www2.psych.ubc.ca/~henrich/Website/Papers/HenrichTasmania.pdf",
+    "domain": "www2.psych.ubc.ca",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R2. Tasmanie : la perte d'outils",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4843435",
+    "domain": "pmc.ncbi.nlm.nih.gov",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R3. Cambodge, Khmer rouges, « année zéro » (1975-1979)",
+    "url": "https://en.wikipedia.org/wiki/Khmer_Rouge",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R3. Cambodge, Khmer rouges, « année zéro » (1975-1979)",
+    "url": "https://factsanddetails.com/southeast-asia/Cambodia/sub5_2b/entry-2856.html",
+    "domain": "factsanddetails.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R4. Russie post-soviétique, années 1990",
+    "url": "https://www.imf.org/external/pubs/ft/seminar/2000/invest/pdf/mumssen.pdf",
+    "domain": "imf.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R4. Russie post-soviétique, années 1990",
+    "url": "https://cz.cerge-ei.cz/pdf/gdn/rrc/RRCIII_132_paper_02.pdf",
+    "domain": "cz.cerge-ei.cz",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R4. Russie post-soviétique, années 1990",
+    "url": "https://jamestown.org/the-dacha-russias-retreat-soul-saver-and-key-food-supplier/",
+    "domain": "jamestown.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R5. Cuba, période spéciale (1991-2000)",
+    "url": "https://en.wikipedia.org/wiki/Special_Period",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R5. Cuba, période spéciale (1991-2000)",
+    "url": "https://news.cgtn.com/news/35636a4d356b7a6333566d54/index.html",
+    "domain": "news.cgtn.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "R6. Venezuela, pannes de courant (2019)",
+    "url": "https://en.wikipedia.org/wiki/2019_Venezuelan_blackouts",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "3.2 Comment la littérature décrit l'effondrement d'origine humaine à l'ère de l'IA",
+    "url": "https://en.wikipedia.org/wiki/The_Precipice:_Existential_Risk_and_the_Future_of_Humanity",
+    "domain": "en.wikipedia.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "3.2 Comment la littérature décrit l'effondrement d'origine humaine à l'ère de l'IA",
+    "url": "https://forum.effectivealtruism.org/posts/Z5KZ2cui8WDjyF6gJ/some-thoughts-on-toby-ord-s-existential-risk-estimates",
+    "domain": "forum.effectivealtruism.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "3.2 Comment la littérature décrit l'effondrement d'origine humaine à l'ère de l'IA",
+    "url": "https://forum.effectivealtruism.org/posts/2sMR7n32FSvLCoJLQ/critical-review-of-the-precipice-a-reassessment-of-the-risks",
+    "domain": "forum.effectivealtruism.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "3.2 Comment la littérature décrit l'effondrement d'origine humaine à l'ère de l'IA",
+    "url": "https://www.pv-tech.org/combination-of-voltage-and-oscillation-caused-iberian-blackout-says-entso-e-report/",
+    "domain": "pv-tech.org",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "3.2 Comment la littérature décrit l'effondrement d'origine humaine à l'ère de l'IA",
+    "url": "https://digitalsubstation.com/article/n25-iberian-blackout-entso-e",
+    "domain": "digitalsubstation.com",
+    "group": "Précédents et études de cas",
+    "origins": [
+      "Précédents des mondes 10 à 12 : 1984, Reversion, Self-Destruction"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://www.supersummary.com/life-3-0/chapter-5-summary/",
+    "domain": "supersummary.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 1-3 (Libertarian Utopia, Benevolent Dictator, Egalitarian Utopia)",
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://littlerbooks.com/summary/life-3-0",
+    "domain": "littlerbooks.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 1-3 (Libertarian Utopia, Benevolent Dictator, Egalitarian Utopia)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://jsilva.blog/2019/04/11/life-3-0-book-summary/",
+    "domain": "jsilva.blog",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 1-3 (Libertarian Utopia, Benevolent Dictator, Egalitarian Utopia)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://artificialintelligencemonaco.substack.com/p/series-ai-under-the-lens-max-tegmarks",
+    "domain": "artificialintelligencemonaco.substack.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://steelbarempire.com/politics-economics/enslaved-gods-the-future-of-artificial-intelligence/",
+    "domain": "steelbarempire.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 4-6 (Gatekeeper, Protector God, Enslaved God)"
+    ]
+  },
+  {
+    "title": "Sources",
+    "url": "https://masculinesynergy.com/ai-doomsday-scenarios/",
+    "domain": "masculinesynergy.com",
+    "group": "Futurs de l’intelligence artificielle",
+    "origins": [
+      "Research packet — Scenarios 7-9 (Conquerors, Descendants, Zookeeper)",
+      "Research packet — Scenarios 10-12 (1984, Reversion, Self-Destruction)"
+    ]
+  }
+]

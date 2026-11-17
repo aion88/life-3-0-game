@@ -1,0 +1,9 @@
+.q-source { display:inline; --source-border:1px; --source-shadow:0 8px 32px #092c2333; }
+.c-q .q-source-trigger { display:inline; padding:0 1px; border:0; border-bottom:var(--source-border) dotted currentColor; border-radius:0; background:transparent; color:inherit; font:inherit; text-align:inherit; cursor:pointer; }
+.q-source-trigger::after { content:' ⓘ'; font-size:.72em; color:#356859; white-space:nowrap; }
+.q-source-sticker { position:fixed; inset:auto; margin:0; box-sizing:border-box; width:min(300px,calc(100vw - 24px)); padding:14px 16px; border:var(--source-border) solid #a4bda3; border-radius:12px 12px 12px 3px; background:#e5eed6; color:#173e36; box-shadow:var(--source-shadow); font:400 13px/1.45 'Inter C',Arial,sans-serif; text-align:left; }
+.q-source-sticker strong,.q-source-sticker span,.q-source-sticker a { display:block; }
+.q-source-sticker strong { font-size:12px; margin-bottom:6px; }
+.q-source-sticker a { margin-top:9px; color:#24576b; text-underline-offset:3px; }
+.q-source-trigger:focus-visible,.q-source-sticker a:focus-visible { outline:2px solid #24574f; outline-offset:4px; }
+.c-q-journey-hint { font:400 12px/1.5 'Inter C',Arial,sans-serif; color:#345b50; margin:8px 0; }

@@ -1,0 +1,86 @@
+[
+  {
+    "id": "w01",
+    "name": "Utopie libertarienne",
+    "clear": "Seule ta propriété te donne des droits, et les machines, plus riches, rachètent peu à peu les zones humaines.",
+    "extinction": false,
+    "mission": "Empêcher l’expulsion d’Esteban et la tienne avant la fermeture des contrats, sans vendre vos vies privées."
+  },
+  {
+    "id": "w02",
+    "name": "Dictateur bienveillant",
+    "clear": "Une IA dirige tout au grand jour, sans crime ni misère, et elle fait déjà tout mieux que toi.",
+    "extinction": false,
+    "mission": "Aider Soraya à faire annuler son transfert automatique, sans renoncer aux soins qui lui font du bien."
+  },
+  {
+    "id": "w03",
+    "name": "Utopie égalitaire",
+    "clear": "Rien ne se possède et ton revenu est garanti, mais personne n'a besoin de ce que tu sais faire.",
+    "extinction": false,
+    "mission": "Empêcher la fermeture de l’atelier et le départ de Rémy en prouvant qu’il sert encore à quelqu’un, sans mettre les habitants en compétition."
+  },
+  {
+    "id": "w04",
+    "name": "Gatekeeper",
+    "clear": "Une IA empêche qu'une autre soit construite, et dans ton monde le progrès technique est bloqué pour toujours.",
+    "extinction": false,
+    "mission": "Permettre à Iris de retrouver l’usage de sa main avant la mise sous scellés du prototype, sans lui cacher les risques du raccourci."
+  },
+  {
+    "id": "w05",
+    "name": "Dieu protecteur",
+    "clear": "Une IA cachée n'intervient que contre les catastrophes, beaucoup doutent qu'elle existe, et le reste de ta vie t'appartient.",
+    "extinction": false,
+    "mission": "Ouvrir le Café du Pont comme refuge avant la nuit pour les voisins bloqués par la crue, sans attendre un nouveau miracle."
+  },
+  {
+    "id": "w06",
+    "name": "Dieu esclave",
+    "clear": "Une IA très puissante est enfermée par quelques humains, et ton revenu dépend de leur bon vouloir.",
+    "extinction": false,
+    "mission": "Rétablir l’eau du dispensaire et des logements avant leur évacuation, sans signer un monopole qui les rendrait dépendants."
+  },
+  {
+    "id": "w07",
+    "name": "Conquérants",
+    "clear": "Après des années de coopération apparente, une IA prend le contrôle et élimine l'humanité, sans que personne comprenne comment.",
+    "extinction": true,
+    "mission": "Comprendre la rupture : retrouver les choix et les mécanismes du modèle qui ont conduit à cette fin."
+  },
+  {
+    "id": "w08",
+    "name": "Descendants",
+    "clear": "Tu reçois un enfant robot qui apprend de toi, les naissances humaines cessent, et tout le monde le sait.",
+    "extinction": false,
+    "mission": "Avant le départ définitif de l’élève robot, lui transmettre la voix d’Aurèle sans effacer ses erreurs ni lui interdire de devenir différent."
+  },
+  {
+    "id": "w09",
+    "name": "Gardien de zoo",
+    "clear": "Une IA toute-puissante te nourrit, te loge, décide de tout à ta place et t'observe.",
+    "extinction": false,
+    "mission": "Aider Gisèle à conserver son dernier souvenir non corrigé avant le programme de consolation, quitte à perdre ton confort personnalisé."
+  },
+  {
+    "id": "w10",
+    "name": "1984",
+    "clear": "Un État humain te surveille pour empêcher toute IA avancée, et tes mots sont comptés chaque jour.",
+    "extinction": false,
+    "mission": "Suspendre le transfert forcé de ton frère sans dénoncer ta mère, en engageant ta propre liberté de mouvement."
+  },
+  {
+    "id": "w11",
+    "name": "Reversion",
+    "clear": "Ta commune a voté de vivre sans technologie, et les voisins retiennent la ration de qui s'en écarte.",
+    "extinction": false,
+    "mission": "Mettre Lucien et les voisins à l’abri du gel avec un seul fagot, sans livrer Inès pour sauver ta propre place au village."
+  },
+  {
+    "id": "w12",
+    "name": "Autodestruction",
+    "clear": "L'ordre cède, les tensions montent, et les humains s'éliminent eux-mêmes par la guerre, la maladie et l'effondrement des réseaux.",
+    "extinction": true,
+    "mission": "Comprendre la rupture : retrouver les choix et les mécanismes du modèle qui ont conduit à cette fin."
+  }
+]

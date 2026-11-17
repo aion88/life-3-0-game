@@ -1,0 +1,817 @@
+{
+  "schema": 1,
+  "colors": {
+    "base": "#2B3138",
+    "mid": "#4A5560",
+    "light": "#8C97A0",
+    "sodium": "#E8A33D",
+    "crtCyan": "#009EFF",
+    "crtMagenta": "#FF0D8C",
+    "crtPale": "#618CFF",
+    "panelBg": "#14181D",
+    "panelText": "#E3E8EC",
+    "band": "#000000"
+  },
+  "fontUi": "\"Inter C\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+  "fontDisplay": "\"Montserrat C\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+  "fontText": "\"Inter C\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+  "letterboxRatio": 2.39,
+  "wall": {
+    "columns": 6,
+    "rows": 4,
+    "gapRatio": 0.09,
+    "snowGrid": [
+      14,
+      10
+    ],
+    "noiseMs": 83,
+    "gainMin": 0.35,
+    "screenInset": 0.16,
+    "darkGlintAlpha": 0.06,
+    "glintHeight": 0.33,
+    "snowAlpha": 0.55,
+    "screenOff": "#0B0E12"
+  },
+  "fadedOpacity": 0.25,
+  "palette": {
+    "encre": {
+      "v": "#231942",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "encreDouce": {
+      "v": "#3D3460",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "creme": {
+      "v": "#FFF7EC",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "blanc": {
+      "v": "#FFFFFF",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "lavande": {
+      "v": "#E6DCF5",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "lavandeClaire": {
+      "v": "#EFE4F7",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "lavandeTrait": {
+      "v": "#8A7FB0",
+      "src": "spec C §1, P-13",
+      "status": "sourced"
+    },
+    "rose": {
+      "v": "#FF5FA2",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "roseFonce": {
+      "v": "#B5175A",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "ciel": {
+      "v": "#45C4F5",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "soleil": {
+      "v": "#FFD23F",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "menthe": {
+      "v": "#2EDC9B",
+      "src": "spec C §1",
+      "status": "sourced"
+    },
+    "grisAcier": {
+      "v": "#46515E",
+      "src": "spec C §1",
+      "status": "sourced"
+    }
+  },
+  "shadows": {
+    "rose": {
+      "v": "#C23A78",
+      "src": "spec C §1 (ombres pleines)",
+      "status": "sourced"
+    },
+    "ciel": {
+      "v": "#1E8FBF",
+      "src": "spec C §1 (ombres pleines)",
+      "status": "sourced"
+    },
+    "soleil": {
+      "v": "#D9A800",
+      "src": "spec C §1 (ombres pleines)",
+      "status": "sourced"
+    },
+    "menthe": {
+      "v": "#1FA875",
+      "src": "spec C §1 (ombres pleines)",
+      "status": "sourced"
+    },
+    "encre": {
+      "v": "rgba(35,25,66,.55)",
+      "src": "spec C §1 (ombres pleines)",
+      "status": "sourced"
+    }
+  },
+  "type": {
+    "screenTitle": {
+      "v": {
+        "family": "display",
+        "weight": 600,
+        "px": 76,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §2 titre d'écran (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "bilanTitle": {
+      "v": {
+        "family": "display",
+        "weight": 600,
+        "px": 100,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 titre du bilan (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "worldName": {
+      "v": {
+        "family": "display",
+        "weight": 600,
+        "px": 72,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 nom du monde (taille : 72 px au plus, amendement 2026-11-02) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "worldClear": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 23,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 ligne en clair (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "redirectLine": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 23,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 redirect.bilan (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "line": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 32,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 40 px) ; spec C §2 réplique (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "streetOption": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 22,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 26 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 32 px) ; spec C §2 option de rue (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "questionOption": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 28,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §2 option du questionnaire (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "body": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 25,
+        "lineHeight": 1.5
+      },
+      "src": "spec C §2 texte courant, §3.1 interligne 1,5",
+      "status": "sourced"
+    },
+    "priceLine": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 21,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 26 px) ; spec C §2 ligne de prix (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "braceletNumber": {
+      "v": {
+        "family": "display",
+        "weight": 600,
+        "px": 64,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros (avant : 96 px) ; spec C §2 compteur (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "braceletUnit": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 22,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros (avant : 28 px) ; spec C §3.2 unité (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "hint": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 26,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.1 consigne (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "narration": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 19,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.2 narration (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "nameChip": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 19,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.2 puce de nom (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "card": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 18,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 22 px) ; spec C §3.2 fiche de passant (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "evening": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 24,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.3 relevé du soir (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "dayLabel": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 19,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 ligne de jour (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "kitLabel": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 18,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 libellé du kit, P-15 (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "kitState": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 18,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 état du kit, P-15 (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "fate": {
+      "v": {
+        "family": "text",
+        "weight": 500,
+        "px": 30,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.4 ce qui a tenu (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "message": {
+      "v": {
+        "family": "display",
+        "weight": 500,
+        "px": 30,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.3 message du bracelet (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "controls": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 20,
+        "lineHeight": 1.25
+      },
+      "src": "spec C §3.2 rappel des commandes (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "cost": {
+      "v": {
+        "family": "text",
+        "weight": 400,
+        "px": 19,
+        "lineHeight": 1.25
+      },
+      "src": "Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 24 px) ; spec C §3.1 coût (taille) ; interligne 1,25 = plancher §6, la spec ne donne que le minimum",
+      "status": "supposed",
+      "owner": "art-director"
+    }
+  },
+  "minTextPx": {
+    "v": 18,
+    "src": "spec C §2, §6",
+    "status": "sourced"
+  },
+  "minLineHeight": {
+    "v": 1.25,
+    "src": "spec C §6",
+    "status": "sourced"
+  },
+  "textPairs": {
+    "v": [
+      {
+        "fg": "encre",
+        "bg": "creme"
+      },
+      {
+        "fg": "encre",
+        "bg": "blanc"
+      },
+      {
+        "fg": "encreDouce",
+        "bg": "creme"
+      },
+      {
+        "fg": "encre",
+        "bg": "lavande"
+      },
+      {
+        "fg": "encre",
+        "bg": "rose"
+      },
+      {
+        "fg": "encre",
+        "bg": "ciel"
+      },
+      {
+        "fg": "encre",
+        "bg": "soleil"
+      },
+      {
+        "fg": "encre",
+        "bg": "menthe"
+      },
+      {
+        "fg": "roseFonce",
+        "bg": "creme"
+      },
+      {
+        "fg": "blanc",
+        "bg": "encre"
+      },
+      {
+        "fg": "creme",
+        "bg": "encre"
+      },
+      {
+        "fg": "soleil",
+        "bg": "encre"
+      },
+      {
+        "fg": "blanc",
+        "bg": "grisAcier"
+      },
+      {
+        "fg": "encre",
+        "bg": "lavandeClaire"
+      },
+      {
+        "fg": "encreDouce",
+        "bg": "blanc"
+      }
+    ],
+    "src": "spec C §1 tableau des contrastes, §3.4 onglets",
+    "status": "sourced"
+  },
+  "forbiddenPairs": {
+    "v": [
+      {
+        "fg": "blanc",
+        "bg": "rose"
+      },
+      {
+        "fg": "blanc",
+        "bg": "ciel"
+      },
+      {
+        "fg": "rose",
+        "bg": "creme"
+      },
+      {
+        "fg": "lavandeTrait",
+        "bg": "creme"
+      },
+      {
+        "fg": "lavandeTrait",
+        "bg": "blanc"
+      }
+    ],
+    "src": "spec C §1 (interdits, jamais de texte en lavandeTrait)",
+    "status": "sourced"
+  },
+  "shape": {
+    "cardMain": {
+      "v": 48,
+      "src": "spec C §1 formes",
+      "status": "sourced"
+    },
+    "cardSecondary": {
+      "v": 30,
+      "src": "spec C §1 formes",
+      "status": "sourced"
+    },
+    "pill": {
+      "v": 999,
+      "src": "spec C §1 formes",
+      "status": "sourced"
+    },
+    "bubble": {
+      "v": 46,
+      "src": "spec C §1 formes",
+      "status": "sourced"
+    },
+    "border": {
+      "v": 2,
+      "src": "spec C §1 formes : bordure 2 px partout (amendement 2026-11-02, Cynthia)",
+      "status": "sourced"
+    },
+    "cardPadX": {
+      "v": 36,
+      "src": "retour de Cynthia 2026-11-02 : texte collé aux bordures des cartouches ; valeur choisie, la spec ne donne pas de marge interne",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "cardPadY": {
+      "v": 24,
+      "src": "retour de Cynthia 2026-11-02 : texte collé aux bordures des cartouches ; valeur choisie, la spec ne donne pas de marge interne",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "shadowOffset": {
+      "v": 3,
+      "src": "spec C §1 ombres pleines : 3 px (pastilles, boutons, options)",
+      "status": "sourced"
+    },
+    "shadowOffsetCard": {
+      "v": 4,
+      "src": "spec C §1 ombres pleines : 4 px (cartes)",
+      "status": "sourced"
+    },
+    "worldNameMin": {
+      "v": 44,
+      "src": "spec C §3.4 nom du monde : la taille descend jusqu'à 44 px au plus bas",
+      "status": "sourced"
+    },
+    "focusRing": {
+      "v": 2,
+      "src": "spec C §3.0 anneau de focus : 2 px encre puis 2 px crème",
+      "status": "sourced"
+    },
+    "maxStaticRotationDeg": {
+      "v": 3,
+      "src": "spec C §1 formes",
+      "status": "sourced"
+    }
+  },
+  "questionnaire": {
+    "cardMaxWidthPx": {
+      "v": 1180,
+      "src": "spec C §3.1 carte",
+      "status": "sourced"
+    },
+    "eyeDiscPx": {
+      "v": 64,
+      "src": "spec C §3.1 pastille ronde",
+      "status": "sourced"
+    },
+    "dateRotationDeg": {
+      "v": 3,
+      "src": "spec C §3.1 date inclinée de 3°",
+      "status": "sourced"
+    },
+    "designatedScale": {
+      "v": 1.025,
+      "src": "spec C §3.1, §4",
+      "status": "sourced"
+    },
+    "designatedRotationDeg": {
+      "v": -0.6,
+      "src": "spec C §3.1, §4",
+      "status": "sourced"
+    },
+    "optionBorderPx": {
+      "v": 2,
+      "src": "spec C §3.1, P-13",
+      "status": "sourced"
+    },
+    "optionDotRingPx": {
+      "v": 2,
+      "src": "spec C §3.1, P-13",
+      "status": "sourced"
+    },
+    "dotPx": {
+      "v": 30,
+      "src": "spec C §3.1 progression",
+      "status": "sourced"
+    },
+    "dotRingPx": {
+      "v": 2,
+      "src": "spec C §3.1 progression",
+      "status": "sourced"
+    }
+  },
+  "street": {
+    "optionRestWidthPx": {
+      "v": 432,
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 512 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 640 px) ; spec C §3.2",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionDesignatedWidthPx": {
+      "v": 480,
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 576 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 720 px) ; spec C §3.2",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "designatedRotationDeg": {
+      "v": -1.5,
+      "src": "spec C §3.2",
+      "status": "sourced"
+    },
+    "cardRotationDeg": {
+      "v": 1.5,
+      "src": "spec C §3.2 fiche de passant",
+      "status": "sourced"
+    },
+    "designatedRimPx": {
+      "v": 3,
+      "src": "spec C §3.2 liseré blanc de 3 px (était 8 px, amendement 2026-11-02)",
+      "status": "sourced"
+    },
+    "smallTargetPx": {
+      "v": 44,
+      "src": "WCAG 2.5.5 cible tactile minimale ; arbitrage ux 2026-11-03 : rangée d'en-tête et Confirmer du mode petit (960 x 540) à 44 px, les autres modes inchangés",
+      "status": "sourced"
+    },
+    "eyePx": {
+      "v": 64,
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 96 px) ; spec C §3.2 Œil",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "pupilPx": {
+      "v": 27,
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 40 px) ; spec C §3.2 pupille",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "glintPx": {
+      "v": 8.1,
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 12 px) ; spec C §3.2 reflet : 30 % du diamètre de la pupille (40 px)",
+      "status": "sourced"
+    },
+    "glintOffsetXPx": {
+      "v": 5,
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : 7 px) ; spec C §3.2 pupille, P-1 : reflet fixe et hors centre (décalage non donné)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "glintOffsetYPx": {
+      "v": -5,
+      "src": "Cynthia playtest 2026-11-03 : compteur de mots trop gros, l'Œil réduit d'un tiers, pupille et reflet à l'échelle (avant : -8 px) ; spec C §3.2 pupille, P-1 : reflet fixe et hors centre (décalage non donné)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "coinPx": {
+      "v": 22,
+      "src": "spec C §4 pièce",
+      "status": "sourced"
+    },
+    "optionPadYPx": {
+      "v": 15,
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 18 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 22 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "recapMaxHeightPx": {
+      "v": 560,
+      "src": "rue guidée T11 : hauteur maximale du relevé du soir précis avant défilement (le CSS la borne aussi à 60 % du cadre) ; la spec ne la donne pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "recapMaxHeightShare": {
+      "v": 0.6,
+      "src": "rue guidée T11 : part du cadre que le relevé du soir précis ne dépasse pas avant défilement ; la spec ne la donne pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionPadStartPx": {
+      "v": 26,
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 32 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 40 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionPadEndPx": {
+      "v": 18,
+      "src": "Cynthia playtest 2026-11-03 : panneau d'options compact, options d'une ligne, environ 40 % plus petites (avant : 21 px) ; Cynthia playtest 2026-11-03 : emprise de l'interface de rue réduite d'environ 20 % (avant : 26 px) ; retour de Cynthia 2026-11-02 : marge interne des options de rue (était 22 26 22 40 px en dur dans ui.css) ; la spec ne la donne pas",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionSmallPadYPx": {
+      "v": 8,
+      "src": "spec choix simultanés §6.3 AR-13 : en mode petit l'option tient sur une ligne avec sa pastille, environ 50 px (mesuré 2026-11-03 à 960 x 540 : 51 px, pastille de 31 px + 2 x 8 + liseré)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionSmallPadStartPx": {
+      "v": 20,
+      "src": "spec choix simultanés §6.3 AR-13 : la marge de tête du mode petit laisse « Acheter une permission » sur une ligne à côté de sa pastille (40 px le replie, mesuré à 960 x 540)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "optionSmallGapPx": {
+      "v": 12,
+      "src": "spec choix simultanés §6.3 AR-13 : écart libellé-pastille du mode petit (20 px ailleurs, en dur dans ui.css)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "panelInkOpacity": {
+      "v": 0.85,
+      "src": "retour de Cynthia, build 35ed56c : cartes et en-têtes du panneau de choix sur encre translucide, texte crème, aucun aplat blanc ; 0,85 garde crème sur encre au-dessus de AA même sur un fond blanc (re-dérivé : 8,9:1)",
+      "status": "supposed",
+      "owner": "art-director"
+    },
+    "personMarginPx": {
+      "v": 24,
+      "src": "spec C §3.2 placement, I-3",
+      "status": "sourced"
+    },
+    "bustShare": {
+      "v": 0.45,
+      "src": "plan UI-C T8 : part haute de la boîte de la personne qui forme « tête et buste », zone interdite d'I-3",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "bubbleReducedScale": {
+      "v": 0.75,
+      "src": "plan UI-C T8 : échelle de la réplique quand aucun côté ne tient (plancher 18 px par applyTheme)",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "headShare": {
+      "v": 0.2,
+      "src": "plan UI-C T8 rév. : part haute du rectangle de la personne visée par la pointe de la queue (la tête)",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "referenceWidthPx": {
+      "v": 1920,
+      "src": "spec C §2 : tailles du thème données à 1920 px de large, mises à l'échelle de la fenêtre",
+      "status": "sourced"
+    },
+    "bubbleMaxWidthPx": {
+      "v": 640,
+      "src": "plan UI-C T8 rév. : largeur maximale de la bulle à 1920 px",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "bubbleMaxWidthShare": {
+      "v": 0.45,
+      "src": "plan UI-C T8 rév. : part de la largeur de la fenêtre que la bulle ne dépasse pas",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "nameChipPadYPx": {
+      "v": 4,
+      "src": "plan UI-C T8 rév. : marge verticale de la puce de nom (valeur de .c-pill)",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "nameChipPadXPx": {
+      "v": 16,
+      "src": "plan UI-C T8 rév. : marge horizontale de la puce de nom (valeur de .c-pill)",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "nameChipGapPx": {
+      "v": 8,
+      "src": "plan UI-C T8 rév. : espace entre la puce de nom et le texte de la bulle",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "arrowKeys": {
+      "v": true,
+      "src": "spec C §6 « ajout proposé », à valider",
+      "status": "supposed",
+      "owner": "ux-designer"
+    },
+    "hidePricePillFor": {
+      "v": [
+        "j2.component",
+        "j3.marlene",
+        "j4.neighbour",
+        "j5.bruno"
+      ],
+      "src": "spec C P-3 / GD 3e : nommer ou déclarer coûte 8 mots avec priceRef §7.3, qui ne donne pas ce coût",
+      "status": "supposed",
+      "owner": "game-designer"
+    },
+    "nameChip": {
+      "v": "whenCardRead",
+      "src": "spec C P-9 ouvert, §3.2 « n'apparaît que si la carte a été lue »",
+      "status": "supposed",
+      "owner": "game-designer"
+    },
+    "dayDate": {
+      "v": "always",
+      "src": "spec C P-10 ouvert",
+      "status": "supposed",
+      "owner": "game-designer"
+    }
+  }
+}

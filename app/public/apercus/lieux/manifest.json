@@ -1,0 +1,212 @@
+[
+  {
+    "world": "w01",
+    "name": "La parcelle de Tomasz",
+    "file": "w01-home.png"
+  },
+  {
+    "world": "w01",
+    "name": "Le bazar des contrats",
+    "file": "w01-market.png"
+  },
+  {
+    "world": "w01",
+    "name": "Le comptoir de Sabine",
+    "file": "w01-exchange.png"
+  },
+  {
+    "world": "w01",
+    "name": "La Ligne des propriétaires",
+    "file": "w01-line.png"
+  },
+  {
+    "world": "w02",
+    "name": "Le logement sans serrure",
+    "file": "w02-home.png"
+  },
+  {
+    "world": "w02",
+    "name": "Le jardin des itinéraires",
+    "file": "w02-garden.png"
+  },
+  {
+    "world": "w02",
+    "name": "L’atelier de Dorothée",
+    "file": "w02-studio.png"
+  },
+  {
+    "world": "w02",
+    "name": "Les Marches de l’Oracle",
+    "file": "w02-oracle.png"
+  },
+  {
+    "world": "w03",
+    "name": "La maison partagée",
+    "file": "w03-home.png"
+  },
+  {
+    "world": "w03",
+    "name": "La place des Communs",
+    "file": "w03-square.png"
+  },
+  {
+    "world": "w03",
+    "name": "L’atelier de Maëlle",
+    "file": "w03-workshop.png"
+  },
+  {
+    "world": "w03",
+    "name": "La Vieille Ferme de serveurs",
+    "file": "w03-farm.png"
+  },
+  {
+    "world": "w04",
+    "name": "La chambre de l’Annexe",
+    "file": "w04-home.png"
+  },
+  {
+    "world": "w04",
+    "name": "L’Annexe de recherche",
+    "file": "w04-annex.png"
+  },
+  {
+    "world": "w04",
+    "name": "Le marché des pièces anciennes",
+    "file": "w04-market.png"
+  },
+  {
+    "world": "w04",
+    "name": "Le terminal du Mur",
+    "file": "w04-wall.png"
+  },
+  {
+    "world": "w05",
+    "name": "Le Café du Pont",
+    "file": "w05-cafe.png"
+  },
+  {
+    "world": "w05",
+    "name": "Le pont après la crue",
+    "file": "w05-bridge.png"
+  },
+  {
+    "world": "w05",
+    "name": "Le bureau d’Hubert",
+    "file": "w05-office.png"
+  },
+  {
+    "world": "w05",
+    "name": "La Fontaine heureuse",
+    "file": "w05-fountain.png"
+  },
+  {
+    "world": "w06",
+    "name": "Le logement des porteurs",
+    "file": "w06-home.png"
+  },
+  {
+    "world": "w06",
+    "name": "Le Hall des Postes",
+    "file": "w06-hall.png"
+  },
+  {
+    "world": "w06",
+    "name": "La place des pompes",
+    "file": "w06-square.png"
+  },
+  {
+    "world": "w06",
+    "name": "La Cuve",
+    "file": "w06-vault.png"
+  },
+  {
+    "world": "w08",
+    "name": "La maison des apprentissages",
+    "file": "w08-home.png"
+  },
+  {
+    "world": "w08",
+    "name": "La Dernière École",
+    "file": "w08-school.png"
+  },
+  {
+    "world": "w08",
+    "name": "L’atelier de Clémence",
+    "file": "w08-workshop.png"
+  },
+  {
+    "world": "w08",
+    "name": "Le jardin des générations",
+    "file": "w08-garden.png"
+  },
+  {
+    "world": "w09",
+    "name": "Le pavillon de Gisèle",
+    "file": "w09-home.png"
+  },
+  {
+    "world": "w09",
+    "name": "La Prairie nourricière",
+    "file": "w09-prairie.png"
+  },
+  {
+    "world": "w09",
+    "name": "Le théâtre des activités",
+    "file": "w09-stage.png"
+  },
+  {
+    "world": "w09",
+    "name": "L’Horizon de verre",
+    "file": "w09-glass.png"
+  },
+  {
+    "world": "w11",
+    "name": "La maison au foyer froid",
+    "file": "w11-home.png"
+  },
+  {
+    "world": "w11",
+    "name": "La Table des rations",
+    "file": "w11-square.png"
+  },
+  {
+    "world": "w11",
+    "name": "La forge de Lucien",
+    "file": "w11-forge.png"
+  },
+  {
+    "world": "w11",
+    "name": "Les Pylônes morts",
+    "file": "w11-pylons.png"
+  },
+  {
+    "world": "w10",
+    "name": "La rue au pied de l’immeuble",
+    "file": "w10-street.mid.png"
+  },
+  {
+    "world": "w10",
+    "name": "Chez Marlène · Appartement 9-B",
+    "file": "w10-unit.9-B.png"
+  },
+  {
+    "world": "w10",
+    "name": "Le contrôle du Registre",
+    "file": "w10-anchor.cp.head.png"
+  },
+  {
+    "world": "w10",
+    "name": "La salle du Registre",
+    "file": "w10-room.audition.png"
+  },
+  {
+    "world": "w10",
+    "name": "Devant la porte de Marlène",
+    "file": "w10-door.9-B.png"
+  },
+  {
+    "world": "w10",
+    "name": "Ton appartement",
+    "file": "w10-unit.9-D.png"
+  }
+]

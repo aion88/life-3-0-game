@@ -1,0 +1,41 @@
+/* Accueil du Service de courtoisie, ligne d'objectif, relevé du soir en scène [playtest 2026-11-03 §1 A, §3 A ; direction C « Merci ! »].
+   PLACEMENT et états seulement : couleurs et polices viennent des jetons de `ui/c.css`. Le texte reste dans le remplissage des cartes, jamais au bord.
+   Sélecteurs de zone préfixés par `[data-ui="root"]` : ils passent devant `zones.css` (`flex: none`), chargée après dans le paquet. */
+[data-ui="root"] > [data-zone="centre"] > [data-ui="welcome"] { order: -1; flex: 0 1 auto; min-height: 0; max-height: 100%; }   /* tient dans Z-centre : seule la ligne défile, le kit et les boutons restent */
+[data-ui="welcome"] { display: flex; flex-direction: column; align-items: center; gap: .75rem; width: fit-content; max-width: min(40rem, 100%); margin: 0; box-sizing: border-box; }
+[data-ui="root"]:not([data-zone-mode]) [data-ui="welcome"] { position: absolute; left: 0; right: 0; top: 20%; margin-inline: auto; }   /* sans mise en page mesurée */
+[data-ui="welcome-kit"] { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; margin: 0; padding: 0; }
+[data-ui="welcome-kit"] > [data-kit] { border: var(--s-border) solid var(--c-encre); }
+[data-ui="welcome-kit"]:has([data-lit="true"]) > [data-kit]:not([data-lit="true"]) { opacity: .6; }
+[data-ui="welcome-kit"] > [data-lit="true"] { background: var(--c-soleil); }
+[data-ui="welcome-line"] { margin: 0; min-height: calc(2lh + 2 * var(--s-card-pad-y) + 2 * var(--s-border)); overflow-y: auto; }   /* au moins deux lignes lisibles avant de défiler */
+[data-ui="root"][data-zone-mode="small"] [data-ui="welcome-kit"] > [data-kit]:not([data-lit="true"]) { display: none; }   /* petit : seul l'objet de la ligne reste dans la rangée */
+[data-ui="welcome-kit"], .c-welcome-actions { flex: none; }
+.c-welcome-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .75rem; }
+.c-welcome-skip { border: var(--s-border) solid var(--c-encre); cursor: pointer; font: inherit; }
+@keyframes c-welcome-vibrate { 0%, 100% { translate: 0 0; } 25% { translate: -3px 0; } 75% { translate: 3px 0; } }
+[data-ui="welcome-kit"] > [data-vibrate="true"] { animation: c-welcome-vibrate 90ms linear 8; }   /* le téléphone vibre à l'appel ; coupé en mouvement réduit (c.css) */
+/* L'objet présenté s'allume aussi là où il vit à l'écran. */
+[data-ui="root"][data-welcome-lit="bracelet"] > [data-ui="bracelet"],
+[data-ui="root"][data-welcome-lit="permitBook"] [data-ui="carnet"] { outline: calc(var(--s-border) * 2) solid var(--c-soleil); outline-offset: 4px; }
+/* Ligne d'objectif : en tête de Z-gauche, au-dessus de la narration. */
+[data-ui="root"] > [data-zone="left"] > [data-ui="objective"] { order: 0; flex: 0 0 auto; min-height: calc(2lh + 2 * var(--s-card-pad-y) + 2 * var(--s-border)); display: flex; flex-direction: column; overflow: hidden; }   /* elle tient en entier, sans défiler, de 960 px à 1920 px : c'est la narration (fenêtre qui défile) et le carnet qui cèdent [retour T14, capture j1.roux à 960 px] */
+[data-ui="root"] > [data-zone="left"] > [data-ui="objective"][data-zone-shrink] { flex: 0 100 auto; }   /* dernier recours (`zones.ts`) : sans cela la narration attendrait, et la ligne d'arrivée ne dirait plus où l'on est à 960 px [T15 fix 1] */
+[data-ui="root"][data-zone-mode="small"] .c-objective-label { display: none; }   /* petit : le libellé cède sa ligne au texte */
+[data-ui="root"]:not([data-zone-mode="small"]) > [data-zone="left"] > [data-ui="objective"] { min-height: calc(3lh + 2 * var(--s-card-pad-y) + 2 * var(--s-border)); }   /* moyen, large : le libellé tient sa ligne, le texte garde ses deux lignes dessous */
+[data-ui="objective"] { margin: 0; }
+.c-objective-label { display: block; font-family: var(--t-name-chip-family); font-weight: 700; }
+/* Relevé du soir en scène : titre, lignes, ligne du narrateur, centrés sous le bandeau. */
+[data-ui="evening-scene"] { position: absolute; left: 0; right: 0; top: 20%; width: fit-content; max-width: calc(100% - 4rem); margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: .75rem; }
+/* Relevé précis (rue guidée) : la scène occupe la ZONE UTILE, hauteur DÉFINIE, centrée dedans. Sans hauteur définie, le `max-block-size` en pourcentage du relevé
+   (`guided.css`) ne se résolvait pas : le relevé montait à 1 300 px dans une fenêtre de 540 et sortait du cadre, bouton compris [retour de Cynthia 2026-11-08 :
+   « la case de ce que tes choix ont fait est cropée en bas »]. Le relevé défile dans son cadre, la ligne du narrateur reste entière dessous. */
+[data-ui="evening-scene"]:has(> [data-ui="recap"]) { top: var(--z-body-y, 1rem); height: var(--z-body-h, calc(100% - 2rem)); max-width: calc(100% - 2 * var(--z-m, 2rem)); justify-content: center; box-sizing: border-box; }
+[data-ui="evening-scene"] > [data-ui="recap"] { flex: 0 1 auto; min-height: 0; }
+[data-ui="evening-scene"] > [data-ui="evening-narration"] { flex: none; }
+[data-ui="evening-scene"] > [data-ui="evening"] { position: static; margin: 0; }
+[data-ui="evening-scene"] > [data-ui="evening-title"], [data-ui="evening-scene"] > [data-ui="evening-narration"] { margin: 0; }
+/* Le carnet replié cède sa place quand la narration n'a pas deux lignes entières (`zones.ts`, priorité 8 avant 6) : la ligne d'arrivée se lit [playtest 2026-11-03]. */
+[data-ui="root"] > [data-zone="left"] > [data-ui="carnet"][data-zone-cede] { display: none; }
+/* Narration sans texte : pas de case d'encre vide (constat des captures du 2026-11-03). */
+[data-ui="root"] > [data-zone="left"] > [data-ui="narration"][data-empty] { display: none; }

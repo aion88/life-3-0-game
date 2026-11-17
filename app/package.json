@@ -1,0 +1,48 @@
+{
+  "name": "life-3-0",
+  "private": true,
+  "license": "MIT",
+  "author": "Cynthia Ortu",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "generate:resources": "node tools/generate-resources.mjs",
+    "dev": "vite",
+    "build": "node tools/generate-art-gallery.mjs && vite build && node tools/stamp-release.mjs",
+    "build:capture": "VITE_CAPTURE=1 vite build --outDir dist-capture",
+    "preview": "vite preview --port ${PREVIEW_PORT:-4173} --strictPort",
+    "preview:capture": "vite preview --outDir dist-capture --port ${CAPTURE_PORT:-4174} --strictPort",
+    "typecheck": "tsc --noEmit -p tsconfig.json && tsc --noEmit -p tsconfig.engine.json",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "e2e:street": "playwright test --config playwright.street.config.ts",
+    "fiche:crt": "playwright test --config playwright.fiche.config.ts",
+    "golden": "node tools/golden/gen-rng-golden.mjs && vitest run tests/unit/shared/shared_rng_test.ts",
+    "check:deploy": "node tools/predeploy-check.mjs",
+    "release:check": "npm run typecheck && npm run lint && npm test && npm run build && npm run check:deploy"
+  },
+  "dependencies": {
+    "three": "0.186.1",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@fontsource-variable/inter": "5.3.0",
+    "@fontsource-variable/montserrat": "5.3.0",
+    "@playwright/test": "1.64.1",
+    "@types/node": "22.20.5",
+    "@types/three": "0.186.0",
+    "eslint": "9.39.5",
+    "happy-dom": "21.0.4",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vite": "6.4.5",
+    "vitest": "4.1.12"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.1"
+    }
+  }
+}

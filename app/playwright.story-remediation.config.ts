@@ -1,0 +1,2 @@
+import {defineConfig,devices} from '@playwright/test';
+export default defineConfig({testDir:'tests/e2e-street',testMatch:['street_lived_consequences_test.ts'],outputDir:'/tmp/life-story-browser-results',timeout:120_000,workers:1,use:{baseURL:process.env['STORY_URL']??'http://127.0.0.1:4207',trace:'retain-on-failure'},projects:[{name:'desktop',use:{browserName:'chromium',channel:'chrome',viewport:{width:1440,height:900}}},{name:'iphone',use:{...devices['iPhone 13'],browserName:'webkit'}}]});

@@ -1,0 +1,901 @@
+{
+  "w01": {
+    "home": {
+      "atlas": "full-frame/w01-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.48,
+          0.88
+        ],
+        [
+          0.65,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.38,
+        0.336
+      ],
+      "full": true
+    },
+    "market": {
+      "atlas": "full-frame/w01-market",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.84
+        ],
+        [
+          0.6,
+          0.78
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.285
+      ],
+      "full": true
+    },
+    "exchange": {
+      "atlas": "full-frame/w01-exchange",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.6,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.353
+      ],
+      "full": true
+    },
+    "line": {
+      "atlas": "full-frame/w01-line",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.87
+        ],
+        [
+          0.62,
+          0.8
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.282
+      ],
+      "full": true
+    }
+  },
+  "w02": {
+    "home": {
+      "atlas": "hd/w02-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.44,
+          0.88
+        ],
+        [
+          0.63,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.43,
+        0.385
+      ],
+      "full": true,
+      "extension": "png",
+      "previous": {
+        "atlas": "colorist/w02",
+        "tile": 0
+      }
+    },
+    "garden": {
+      "atlas": "full-frame/w02-garden",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.85
+        ],
+        [
+          0.6,
+          0.79
+        ]
+      ],
+      "actorHeights": [
+        0.33,
+        0.294
+      ],
+      "full": true
+    },
+    "studio": {
+      "atlas": "full-frame/w02-studio",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.57,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.36,
+        0.322
+      ],
+      "full": true
+    },
+    "oracle": {
+      "atlas": "colorist/oracle",
+      "tile": 0,
+      "full": true,
+      "actorSpots": [
+        [
+          0.44,
+          0.91
+        ],
+        [
+          0.59,
+          0.88
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.297
+      ]
+    }
+  },
+  "w03": {
+    "home": {
+      "atlas": "full-frame/w03-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.61,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.4,
+        0.358
+      ],
+      "full": true
+    },
+    "square": {
+      "atlas": "full-frame/w03-square",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.42,
+          0.87
+        ],
+        [
+          0.6,
+          0.8
+        ]
+      ],
+      "actorHeights": [
+        0.37,
+        0.327
+      ],
+      "full": true
+    },
+    "workshop": {
+      "atlas": "full-frame/w03-workshop",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.4,
+          0.89
+        ],
+        [
+          0.54,
+          0.84
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.353
+      ],
+      "full": true
+    },
+    "farm": {
+      "atlas": "full-frame/w03-farm",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.4,
+          0.88
+        ],
+        [
+          0.58,
+          0.88
+        ]
+      ],
+      "actorHeights": [
+        0.42,
+        0.403
+      ],
+      "full": true
+    }
+  },
+  "w04": {
+    "home": {
+      "atlas": "full-frame/w04-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.44,
+          0.88
+        ],
+        [
+          0.6,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.4,
+        0.358
+      ],
+      "full": true
+    },
+    "annex": {
+      "atlas": "full-frame/w04-annex",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.88
+        ],
+        [
+          0.62,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.353
+      ],
+      "full": true
+    },
+    "market": {
+      "atlas": "full-frame/w04-market",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.42,
+          0.85
+        ],
+        [
+          0.57,
+          0.8
+        ]
+      ],
+      "actorHeights": [
+        0.31,
+        0.28
+      ],
+      "full": true
+    },
+    "wall": {
+      "atlas": "full-frame/w04-wall",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.87
+        ],
+        [
+          0.6,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.293
+      ],
+      "full": true
+    }
+  },
+  "w05": {
+    "cafe": {
+      "atlas": "colorist/cafe",
+      "tile": 0,
+      "full": true,
+      "actorSpots": [
+        [
+          0.43,
+          0.81
+        ],
+        [
+          0.51,
+          0.72
+        ]
+      ],
+      "actorHeights": [
+        0.36,
+        0.307
+      ]
+    },
+    "bridge": {
+      "atlas": "full-frame/w05-bridge",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.36,
+          0.87
+        ],
+        [
+          0.51,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.34,
+        0.304
+      ],
+      "full": true
+    },
+    "office": {
+      "atlas": "full-frame/w05-office",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.6,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.349
+      ],
+      "full": true
+    },
+    "fountain": {
+      "atlas": "full-frame/w05-fountain",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.89
+        ],
+        [
+          0.6,
+          0.87
+        ]
+      ],
+      "actorHeights": [
+        0.35,
+        0.328
+      ],
+      "full": true
+    }
+  },
+  "w06": {
+    "home": {
+      "atlas": "full-frame/w06-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.89
+        ],
+        [
+          0.62,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.42,
+        0.371
+      ],
+      "full": true
+    },
+    "hall": {
+      "atlas": "full-frame/w06-hall",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.87
+        ],
+        [
+          0.61,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.37,
+        0.331
+      ],
+      "full": true
+    },
+    "square": {
+      "atlas": "full-frame/w06-square",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.87
+        ],
+        [
+          0.61,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.293
+      ],
+      "full": true
+    },
+    "vault": {
+      "atlas": "full-frame/w06-vault",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.48,
+          0.9
+        ],
+        [
+          0.62,
+          0.86
+        ]
+      ],
+      "actorHeights": [
+        0.34,
+        0.312
+      ],
+      "full": true
+    }
+  },
+  "w08": {
+    "home": {
+      "atlas": "full-frame/w08-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.61,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.41,
+        0.371
+      ],
+      "full": true
+    },
+    "school": {
+      "atlas": "full-frame/w08-school",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.85
+        ],
+        [
+          0.59,
+          0.78
+        ]
+      ],
+      "actorHeights": [
+        0.33,
+        0.291
+      ],
+      "full": true
+    },
+    "workshop": {
+      "atlas": "full-frame/w08-workshop",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.6,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.4,
+        0.362
+      ],
+      "full": true
+    },
+    "garden": {
+      "atlas": "full-frame/w08-garden",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.87
+        ],
+        [
+          0.61,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.32,
+        0.293
+      ],
+      "full": true
+    }
+  },
+  "w09": {
+    "home": {
+      "atlas": "full-frame/w09-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.88
+        ],
+        [
+          0.6,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.349
+      ],
+      "full": true
+    },
+    "prairie": {
+      "atlas": "full-frame/w09-prairie",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.87
+        ],
+        [
+          0.58,
+          0.75
+        ]
+      ],
+      "actorHeights": [
+        0.34,
+        0.281
+      ],
+      "full": true
+    },
+    "stage": {
+      "atlas": "full-frame/w09-stage",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.9
+        ],
+        [
+          0.58,
+          0.85
+        ]
+      ],
+      "actorHeights": [
+        0.4,
+        0.363
+      ],
+      "full": true
+    },
+    "glass": {
+      "atlas": "full-frame/w09-glass",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.44,
+          0.88
+        ],
+        [
+          0.59,
+          0.77
+        ]
+      ],
+      "actorHeights": [
+        0.34,
+        0.286
+      ],
+      "full": true
+    }
+  },
+  "w10": {
+    "street.mid": {
+      "atlas": "full-frame/w10-street.mid",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.87
+        ],
+        [
+          0.61,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.34,
+        0.304
+      ],
+      "full": true
+    },
+    "unit.9-B": {
+      "atlas": "full-frame/w10-unit.9-B",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.37,
+          0.89
+        ],
+        [
+          0.55,
+          0.87
+        ]
+      ],
+      "actorHeights": [
+        0.46,
+        0.432
+      ],
+      "full": true
+    },
+    "anchor.cp.head": {
+      "atlas": "full-frame/w10-anchor.cp.head",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.44,
+          0.89
+        ],
+        [
+          0.62,
+          0.84
+        ]
+      ],
+      "actorHeights": [
+        0.39,
+        0.353
+      ],
+      "full": true
+    },
+    "room.audition": {
+      "atlas": "full-frame/w10-room.audition",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.4,
+          0.93
+        ],
+        [
+          0.6,
+          0.93
+        ]
+      ],
+      "actorHeights": [
+        0.5,
+        0.55
+      ],
+      "full": true
+    },
+    "door.9-B": {
+      "atlas": "full-frame/w10-door.9-B",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.89
+        ],
+        [
+          0.59,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.48,
+        0.419
+      ],
+      "full": true
+    },
+    "stairs.9": {
+      "atlas": "full-frame/w10-stairs.9",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.38,
+          0.91
+        ],
+        [
+          0.6,
+          0.85
+        ]
+      ],
+      "actorHeights": [
+        0.43,
+        0.386
+      ],
+      "full": true
+    },
+    "unit.9-D": {
+      "atlas": "full-frame/w10-unit.9-D",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.45,
+          0.9
+        ],
+        [
+          0.62,
+          0.85
+        ]
+      ],
+      "actorHeights": [
+        0.46,
+        0.417
+      ],
+      "full": true
+    },
+    "place.cabine": {
+      "atlas": "full-frame/w10-place.cabine",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.4,
+          0.9
+        ],
+        [
+          0.59,
+          0.84
+        ]
+      ],
+      "actorHeights": [
+        0.43,
+        0.385
+      ],
+      "full": true
+    },
+    "anchor.stall.front": {
+      "atlas": "full-frame/w10-anchor.stall.front",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.4,
+          0.88
+        ],
+        [
+          0.57,
+          0.82
+        ]
+      ],
+      "actorHeights": [
+        0.35,
+        0.313
+      ],
+      "full": true
+    },
+    "dinner.insert": {
+      "atlas": "full-frame/w10-dinner.insert",
+      "tile": 0,
+      "full": true
+    }
+  },
+  "w11": {
+    "home": {
+      "atlas": "full-frame/w11-home",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.89
+        ],
+        [
+          0.61,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.42,
+        0.376
+      ],
+      "full": true
+    },
+    "square": {
+      "atlas": "full-frame/w11-square",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.42,
+          0.88
+        ],
+        [
+          0.58,
+          0.83
+        ]
+      ],
+      "actorHeights": [
+        0.36,
+        0.326
+      ],
+      "full": true
+    },
+    "forge": {
+      "atlas": "full-frame/w11-forge",
+      "tile": 0,
+      "actorSpots": [
+        [
+          0.43,
+          0.89
+        ],
+        [
+          0.6,
+          0.84
+        ]
+      ],
+      "actorHeights": [
+        0.43,
+        0.39
+      ],
+      "full": true
+    },
+    "pylons": {
+      "atlas": "colorist/pylons",
+      "tile": 0,
+      "full": true,
+      "actorSpots": [
+        [
+          0.34,
+          0.87
+        ],
+        [
+          0.48,
+          0.81
+        ]
+      ],
+      "actorHeights": [
+        0.36,
+        0.322
+      ]
+    }
+  },
+  "w07": {
+    "end": {
+      "atlas": "full-frame/w07-end",
+      "tile": 0,
+      "full": true
+    }
+  },
+  "w12": {
+    "end": {
+      "atlas": "full-frame/w12-end",
+      "tile": 0,
+      "full": true
+    }
+  }
+}

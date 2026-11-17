@@ -1,0 +1,78 @@
+/* Jetons « Chambre noire » : l'unique endroit des valeurs de couleur, de police, d'échelle, de rayon et de mouvement du chemin public.
+   Les feuilles du parcours (lecteur de situations, pièces) ne portent AUCUN littéral : elles lisent ces variables [garde : ui_no_literal_color_test].
+   Dark seulement. Le sens passe toujours par une forme ET un mot, jamais par la couleur seule. */
+:root {
+  color-scheme: dark;
+
+  /* Neutres : noir chaud, sans bleu */
+  --fond: #12100D;
+  --plateau: #1C1915;
+  --plateau-haut: #222019;
+  --plateau-choisi: #232A1E;
+  --filet: #3D352C;
+  --contour: #6B5F51;
+  --papier: #EFE6D2;
+  --encre: #1B1712;
+  --encre-douce: #5B5145;
+  --dit: #F4EEE3;
+  --raconte: #A69D8F;
+  --noir-image: #0A0908;
+
+  /* Sens */
+  --action: #BFE0A8;
+  --gain: #A8D59A;
+  --prix: #F2B544;
+  --interdit-sombre: #B7A3E6;
+  --interdit-papier: #6A4BA8;
+
+  /* Matière : voiles et ombres (jamais sur le texte ni sur les boutons) */
+  --voile: #12100DCC;
+  --ombre-piece: #000000AA;
+  --ombre-grande: #000000BB;
+  --ombre-pop: 0 8px 24px var(--ombre-piece);
+  --ombre-sejour: 0 16px 40px var(--ombre-grande);
+  --reflet-papier: #FFFFFF66;
+  --trait-papier: #1B171222;
+  --trait-papier-fort: #1B171288;
+  --trait-papier-tirets: #1B171244;
+  --encre-bavure: #1B171255;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .16 0 0 0 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+
+  /* Pièces sombres (téléphone) */
+  --tel-coque: #1C1915;
+  --tel-bord: #3D352C;
+  --tel-bulle: #2B2620;
+
+  /* Polices : deux familles seulement */
+  --titre: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --corps: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Échelle de texte */
+  --t-etiquette: .78rem;
+  --t-petit: .9rem;
+  --t-corps: 1rem;
+  --t-lead: 1.2rem;
+  --t-choix: 1.32rem;
+  --t-regle: 1.6rem;
+  --t-titre-monde: clamp(2.6rem, 5vw, 3.6rem);
+  --suivi-etiquette: .12em;
+
+  /* Espacement */
+  --e-1: 4px; --e-2: 8px; --e-3: 12px; --e-4: 16px; --e-5: 22px; --e-6: 34px;
+
+  /* Rayons : droits, papier et tirage */
+  --bord-1: 1px; --bord-2: 2px; --bord-3: 3px; --bord-4: 4px;
+  --filet-tampon: 3px;
+  --r-1: 2px; --r-2: 3px;
+
+  /* Mouvement : transform et opacity seulement */
+  --d-vite: 120ms;
+  --d-normal: 200ms;
+  --d-tampon: 220ms;
+  --d-entree: 280ms;
+  --d-lent: 420ms;
+  --ease-sortie: cubic-bezier(.2, .7, .2, 1);
+  --ease-tampon: cubic-bezier(.2, .9, .25, 1.1);
+
+  --focus: 2px solid var(--dit);
+}

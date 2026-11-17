@@ -1,0 +1,126 @@
+/* Prologue de la maire « Chambre noire » : un bulletin papier posé sur la table noire, le tirage du lieu à côté, les réponses en cartes.
+   Aucune valeur en dur (ui/tokens.css) ; pas de dégradé, pas de bleu. Les cartes n'ont aucune couleur qui oriente : seul l'état (anneau vide, anneau plein et coche) les distingue.
+   Tout tient dans la fenêtre : seul le contexte (récit, repère) défile, jamais les réponses. Mouvement : transform et opacité, 280 ms, coupé si mouvement réduit. */
+.mayor { position: fixed; inset: 0; display: grid; grid-template-rows: auto minmax(0, 1fr); gap: var(--e-3); height: 100dvh; overflow: hidden; padding: var(--e-5) clamp(18px, 3vw, 48px); background: var(--fond); color: var(--dit); font: 400 var(--t-corps)/1.5 var(--corps); font-synthesis: none; isolation: isolate; }
+.mayor *, .mayor *::before, .mayor *::after { box-sizing: border-box; }
+.mayor [hidden] { display: none !important; }
+
+/* Le tirage du lieu : posé à droite sur la table, cadré et ombré, jamais plein écran. */
+.mayor::before { content: ''; position: fixed; z-index: -1; top: var(--e-5); bottom: 64px; right: clamp(18px, 3vw, 48px); left: calc(clamp(18px, 3vw, 48px) + 2vw + 592px); background: var(--noir-image) var(--mayor-image) center / cover; border: var(--bord-1) solid var(--filet); box-shadow: var(--ombre-sejour); }
+.mayor::after { content: ''; position: fixed; z-index: -1; inset: 0; background: var(--grain); opacity: .3; mix-blend-mode: multiply; pointer-events: none; }
+.mayor-location { position: fixed; right: clamp(18px, 3vw, 48px); bottom: var(--e-5); max-width: 40vw; margin: 0; color: var(--raconte); font: italic 400 1.4rem/1.2 var(--titre); text-align: right; pointer-events: none; }
+
+/* Entête : sur la table, pas sur le papier. */
+.mayor-header { width: min(560px, 100%); max-height: 30dvh; overflow: auto; text-align: center; }
+.mayor-kicker { margin: 0 0 var(--e-1); color: var(--raconte); font-size: var(--t-etiquette); font-weight: 700; letter-spacing: var(--suivi-etiquette); text-transform: uppercase; }
+.mayor-role { margin: 0 0 var(--e-2); font: 400 2rem/1.05 var(--titre); color: var(--dit); }
+.mayor-promise { display: none; max-width: 58ch; margin: 0 auto var(--e-2); color: var(--raconte); font-size: var(--t-petit); line-height: 1.45; }
+.mayor[data-question=Q11] .mayor-promise { display: block; }
+.mayor progress { display: block; width: 150px; margin-inline: auto; height: 3px; border: 0; background: var(--filet); accent-color: var(--raconte); }
+.mayor progress::-webkit-progress-bar { background: var(--filet); }
+.mayor progress::-webkit-progress-value { background: var(--raconte); }
+.mayor progress::-moz-progress-bar { background: var(--raconte); }
+.mayor-last-choice { margin: var(--e-2) 0 0; color: var(--raconte); font-size: var(--t-etiquette); line-height: 1.4; }
+.mayor-history { margin-top: 0; font-size: var(--t-petit); }
+.mayor-history > summary { cursor: pointer; min-height: 36px; padding: var(--e-2) 0; color: var(--raconte); }
+.mayor-history-item { padding: var(--e-3) 0; border-top: var(--bord-1) solid var(--filet); }
+.mayor-history-item h2 { margin: 0 0 var(--e-1); font: 700 var(--t-petit)/1.3 var(--corps); }
+.mayor-history-item p { margin: var(--e-1) 0; line-height: 1.5; }
+.mayor-history-reaction { color: var(--raconte); }
+.mayor-history button, .mayor-edit-cancel { min-height: 44px; padding: var(--e-2) var(--e-4); background: none; color: var(--dit); border: var(--bord-1) solid var(--contour); border-radius: var(--r-2); font: inherit; cursor: pointer; }
+.mayor-history button:hover, .mayor-edit-cancel:hover { border-color: var(--dit); background: var(--plateau); }
+.mayor-edit-cancel { flex: none; width: 100%; margin: 0; }
+
+/* Le bulletin : vrai papier, encre, grain. Le contexte défile, la question et les réponses restent en bas. */
+.mayor-paper { width: min(560px, 100%); min-height: 0; max-height: 100%; align-self: center; display: flex; flex-direction: column; gap: var(--e-3); padding: var(--e-5); background: var(--papier) var(--grain); background-blend-mode: multiply; color: var(--encre); box-shadow: var(--ombre-sejour); border-radius: var(--r-2); overflow: hidden; text-align: center; }
+.mayor-paper[data-format=message] { background-color: var(--papier); }
+.mayor-context { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.mayor-folio { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--e-1) var(--e-4); text-align: center; padding: var(--e-2) 0; border-block: var(--bord-1) dashed var(--trait-papier-fort); color: var(--encre-douce); font-size: var(--t-etiquette); font-weight: 700; letter-spacing: var(--suivi-etiquette); text-transform: uppercase; }
+.mayor-date { margin: var(--e-4) 0 var(--e-2); color: var(--encre-douce); font-size: var(--t-petit); }
+.mayor h1 { margin: 0 0 var(--e-3); font: 400 clamp(1.9rem, 3vw, 2.5rem)/1.05 var(--titre); color: var(--encre); }
+.mayor-story { max-width: 52ch; margin: 0 auto var(--e-3); font-size: var(--t-corps); line-height: 1.55; }
+.mayor-source { margin-bottom: var(--e-2); color: var(--encre-douce); font-size: var(--t-petit); }
+.mayor-source summary { cursor: pointer; min-height: 32px; padding: var(--e-2) 0; }
+.mayor-source p { margin: var(--e-1) 0 var(--e-2); line-height: 1.5; }
+.mayor-source a { color: var(--encre); text-underline-offset: 3px; }
+.mayor-paper > .mayor-question { flex: none; margin: 0; font: 700 var(--t-lead)/1.25 var(--corps); color: var(--encre); }
+.mayor-fiction { flex: none; margin: 0; color: var(--encre-douce); font-size: var(--t-etiquette); line-height: 1.4; }
+.mayor-messages { display: grid; gap: var(--e-2); margin: var(--e-4) 0; }
+.mayor-messages p { margin: 0 auto; max-width: 90%; padding: var(--e-3) var(--e-4); background: var(--trait-papier); border-radius: var(--r-2) var(--r-2) var(--r-2) var(--bord-1); font-size: var(--t-petit); line-height: 1.5; }
+
+/* Réponses : des cartes, deux par rangée. Anneau vide = à choisir, anneau plein et coche = position enregistrée. */
+.mayor-choices { flex: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-2); }
+.mayor-choice { position: relative; display: grid; align-content: center; justify-items: center; gap: var(--e-2); min-height: 56px; padding: var(--e-3) calc(var(--e-3) + 24px); border: var(--bord-2) solid var(--encre); border-radius: var(--r-1); background: none; color: var(--encre); text-align: center; font: 500 var(--t-petit)/1.35 var(--corps); cursor: pointer; }
+.mayor-choice::before { content: ''; position: absolute; left: var(--e-3); top: 50%; margin-top: -7px; width: 14px; height: 14px; border: var(--bord-2) solid var(--encre); border-radius: 50%; }
+.mayor-choice:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.mayor-choice:hover:enabled { background: var(--trait-papier); }
+.mayor-choice:active:enabled { transform: translateY(1px); }
+.mayor-choice:disabled { cursor: default; opacity: .65; }
+.mayor-choice[aria-pressed=true] { background: var(--encre); color: var(--papier); }
+.mayor-choice[aria-pressed=true]::before { background: var(--papier); border-color: var(--papier); }
+.mayor-choice[aria-pressed=true]::after { content: '✓'; position: absolute; left: calc(var(--e-3) + 2px); top: 50%; margin-top: -7px; width: 10px; color: var(--encre); font-size: .72rem; font-weight: 800; line-height: 14px; text-align: center; }
+.mayor-paper :focus-visible { outline: var(--bord-2) solid var(--encre); outline-offset: 3px; }
+.mayor :focus-visible { outline: var(--focus); outline-offset: 3px; }
+
+@media (max-width: 999px) { .mayor::before, .mayor::after, .mayor-location { display: none; } }
+@media (min-width: 1000px) { .mayor-paper, .mayor-header { margin-left: 2vw; } }
+/* Assez haut : le bulletin se centre sur toute la hauteur, donc face au tirage ; l'entête reste en haut. */
+@media (min-width: 1000px) and (min-height: 820px) { .mayor-paper { grid-row: 1 / -1; grid-column: 1; } .mayor-header { grid-row: 1; grid-column: 1; z-index: 1; } }
+/* Fenêtre pas très haute (portable 1440x900) : l'entête tient sur une ligne, le bulletin garde toute la hauteur. */
+@media (max-height: 940px) {
+  .mayor-header { max-height: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 0 var(--e-3); }
+  .mayor-header > p { margin: 0; }
+  .mayor .mayor-header .mayor-promise, .mayor-header progress { display: none; }
+  .mayor-role { font-size: 1.4rem; }
+  .mayor-last-choice, .mayor-header .mayor-history { flex-basis: 100%; }
+  .mayor-messages { gap: var(--e-1); margin: var(--e-2) 0; }
+  .mayor-messages p { max-width: 100%; padding: var(--e-1) var(--e-3); }
+  .mayor-paper { padding: var(--e-4) var(--e-5); }
+}
+@media (max-width: 650px) {
+  .mayor { padding: var(--e-3); gap: var(--e-2); }
+  .mayor-header { max-height: 28dvh; padding: 0 var(--e-1); }
+  .mayor-role { font-size: 1.5rem; }
+  .mayor-paper { padding: var(--e-4); gap: var(--e-2); }
+  .mayor h1 { font-size: 1.7rem; margin-bottom: var(--e-2); }
+  .mayor-date { margin: var(--e-3) 0 var(--e-2); }
+  .mayor-story { font-size: var(--t-petit); line-height: 1.45; }
+  .mayor-choices { grid-template-columns: 1fr; gap: var(--e-2); }
+  .mayor-choice { min-height: 44px; padding-block: var(--e-2); }
+  .mayor-messages p { font-size: var(--t-petit); padding: var(--e-2) var(--e-3); }
+}
+/* Petit téléphone : l'entête se réduit à une ligne, le bulletin gagne la hauteur (le récit entier doit se lire, les réponses restent dans la fenêtre). */
+@media (max-width: 650px) and (max-height: 760px) {
+  .mayor { padding: var(--e-2) var(--e-3); gap: var(--e-2); }
+  .mayor-header { max-height: none; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 0 var(--e-3); }
+  .mayor-header > p { margin: 0; }
+  .mayor .mayor-header .mayor-promise, .mayor-header progress { display: none; }
+  .mayor-role { font-size: 1.25rem; }
+  .mayor-last-choice { flex-basis: 100%; }
+  .mayor-header .mayor-history { flex-basis: 100%; }
+  .mayor-paper { padding: var(--e-3) var(--e-3) 10px; gap: 4px; }
+  .mayor-folio { padding: var(--e-1) 0; }
+  .mayor-date { margin: var(--e-2) 0 var(--e-1); }
+  .mayor h1 { font-size: 1.45rem; margin-bottom: var(--e-1); }
+  .mayor-story { font-size: .92rem; line-height: 1.4; margin-bottom: var(--e-2); }
+  .mayor-source { margin-bottom: 0; }
+  .mayor-source summary { min-height: 24px; padding: 2px 0; }
+  .mayor-paper > .mayor-question { font-size: 1.05rem; }
+  .mayor-choices { gap: var(--e-1); }
+  .mayor-choice { min-height: 36px; padding-block: var(--e-1); line-height: 1.25; }
+  .mayor-fiction { display: none; }
+  .mayor-messages { gap: 3px; margin: 2px 0; }
+  .mayor-messages p { max-width: 100%; padding: 3px var(--e-3); font-size: .82rem; line-height: 1.3; }
+  .mayor-last-choice { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .mayor-history > summary { min-height: 28px; padding: var(--e-1) 0; }
+  .mayor-header { margin-bottom: var(--e-1); }
+  /* Rien n'est jamais coupé : si le bulletin dépasse la fenêtre, c'est la page qui défile, pas un cadre interne. */
+  .mayor { display: block; overflow-y: auto; overscroll-behavior: contain; }
+  .mayor-paper { max-height: none; overflow: visible; margin: 0 auto; }
+  .mayor-context { overflow: visible; flex: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mayor-paper { animation: mayor-entree var(--d-entree) var(--ease-sortie) both; }
+  .mayor-choice { transition: transform var(--d-vite) var(--ease-sortie); }
+  @keyframes mayor-entree { from { transform: translateY(8px); opacity: 0; } to { transform: none; opacity: 1; } }
+}

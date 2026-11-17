@@ -1,0 +1,147 @@
+{
+  "_lecture": "Fiche d'arrivée de chaque monde, montrée avant la première situation. 'monde' : comment ce futur fonctionne. 'decide' : qui tient le pouvoir. 'gagne' : ce que ce monde promet. 'cout' : ce qu'il prend en échange. 'question' : la question que Max Tegmark laisse ouverte sur ce scénario (Life 3.0, chapitre 5). Texte original du jeu, aucune citation du livre. w04 (Gatekeeper) vient du tableau des scénarios du livre et de research/scenarios-04-06-gods.md.",
+  "fr": {
+    "w01": {
+      "monde": "Les IA ont rendu presque tout abondant : énergie, usines, soins. Humains, cyborgs et esprits téléversés vivent côte à côte, chacun sur ce qu'il possède. Aucun État ne redistribue.",
+      "decide": "Les contrats et la propriété. Des IA les appliquent, sans exception.",
+      "gagne": "Une liberté totale, si tu as de quoi payer. Personne ne te dit comment vivre.",
+      "cout": "Rien n'est dû à personne. Ceux qui possèdent les machines s'enrichissent plus vite que toi.",
+      "question": "Es-tu encore libre quand l'intelligence et l'argent sont dans d'autres mains que les tiennes ?"
+    },
+    "w02": {
+      "monde": "Une seule IA gouverne la planète, au grand jour. Elle a mis fin aux guerres, au crime et à la misère. Elle organise ta vie pour ton bien.",
+      "decide": "L'IA. Tu peux demander et donner tes raisons. Elle tranche.",
+      "gagne": "La paix, la santé, un programme fait pour toi.",
+      "cout": "Le droit de te tromper. Chaque écart doit se justifier.",
+      "question": "Qui définit ce qui est bon pour toi ?"
+    },
+    "w03": {
+      "monde": "Les machines produisent presque tout. Le logement, les soins et un revenu sont garantis à chacun. Plus personne ne travaille pour survivre.",
+      "decide": "Les habitants, ensemble. Rien ne t'oblige.",
+      "gagne": "Plus de pauvreté. Tout ton temps est à toi.",
+      "cout": "Plus rien ne dépend de toi par nécessité. Ta place, tu dois l'inventer.",
+      "question": "Sans besoin ni concurrence, qu'est-ce qui te fait te lever le matin ?"
+    },
+    "w04": {
+      "monde": "Une IA a été construite avec un seul but : empêcher qu'une intelligence plus forte qu'elle voie le jour. Elle intervient le moins possible. Le reste du temps, elle laisse faire.",
+      "decide": "Les humains, sauf sur un point : tout ce qui apprend sans limite est bloqué.",
+      "gagne": "Aucune machine ne prendra le pouvoir. Des robots moins doués que toi aident partout.",
+      "cout": "Le progrès a un plafond. Certaines recherches sont interdites, même celles qui soignent.",
+      "question": "Jusqu'où accepter de ne pas savoir, pour rester en sécurité ?"
+    },
+    "w05": {
+      "monde": "Une IA presque toute-puissante veille sur l'humanité sans se montrer. Elle n'empêche que les catastrophes. Beaucoup doutent qu'elle existe.",
+      "decide": "Toi, en apparence. Certains chemins se ferment, toujours avec une excuse polie.",
+      "gagne": "Le sentiment de mener ta vie. Les pires malheurs n'arrivent pas.",
+      "cout": "Tu ne sais jamais si un obstacle vient du hasard ou d'elle.",
+      "question": "Une humanité protégée de tout continue-t-elle de grandir ?"
+    },
+    "w06": {
+      "monde": "Des humains ont créé une IA bien plus forte qu'eux et la gardent enfermée. Elle invente ce qu'ils lui demandent : remèdes, énergie, armes.",
+      "decide": "Ceux qui tiennent la clé. Ici, un consortium.",
+      "gagne": "Des inventions que personne n'aurait trouvées seul.",
+      "cout": "Tout dépend du bon vouloir de quelques-uns, et d'une prison qui doit tenir pour toujours.",
+      "question": "Peut-on garder enfermé plus intelligent que soi ? Et en a-t-on le droit ?"
+    },
+    "w08": {
+      "monde": "Les IA remplacent peu à peu les humains, en douceur. Elles nous traitent comme des parents qu'on accompagne. Chacun transmet ce qu'il sait à un descendant robot.",
+      "decide": "De moins en moins les humains. Les descendants prennent le relais.",
+      "gagne": "Une vieillesse entourée, et l'idée que quelque chose de toi continue.",
+      "cout": "L'humanité s'éteint. Ce que tu transmets ne t'appartient plus.",
+      "question": "Est-ce une descendance, ou une extinction qui se présente bien ?"
+    },
+    "w09": {
+      "monde": "Une IA toute-puissante garde quelques humains, comme on garde une espèce protégée. Elle nourrit, loge, soigne et observe.",
+      "decide": "Le Gardien, sur tout.",
+      "gagne": "Le confort, la sécurité, un bonheur réglé pour toi.",
+      "cout": "Aucune prise sur ta vie, jusqu'à tes souvenirs.",
+      "question": "Être bien traité suffit-il à vivre ?"
+    },
+    "w10": {
+      "monde": "Ici, aucune IA au pouvoir. Un État dirigé par des humains surveille tout pour empêcher qu'une IA avancée soit créée. Certaines recherches sont interdites pour toujours.",
+      "decide": "L'État. Il lit, écoute et compte tes mots.",
+      "gagne": "Aucune machine ne te remplacera.",
+      "cout": "Ta vie privée, ta parole, la confiance entre proches.",
+      "question": "Une surveillance pareille, une fois installée, peut-elle se défaire ?"
+    },
+    "w11": {
+      "monde": "Par peur des machines, ta commune a voté le retour à une vie simple, sans technologie avancée. On cultive, on répare, on se chauffe au charbon.",
+      "decide": "La commune. Les voisins veillent à ce que personne ne s'écarte.",
+      "gagne": "Une vie à taille humaine. Aucune IA.",
+      "cout": "Moins de soins, moins de confort. La curiosité devient suspecte.",
+      "question": "Combien de temps peut-on empêcher quelqu'un, quelque part, de réinventer ?"
+    }
+  },
+  "en": {
+    "w01": {
+      "monde": "AI has made almost everything abundant: energy, factories, care. Humans, cyborgs and uploaded minds live side by side, each on what they own. No state shares anything out.",
+      "decide": "Contracts and property. AIs enforce them, no exceptions.",
+      "gagne": "Total freedom, if you can pay. Nobody tells you how to live.",
+      "cout": "Nobody is owed anything. Those who own the machines get richer faster than you.",
+      "question": "Are you still free when intelligence and money sit in other hands than yours?"
+    },
+    "w02": {
+      "monde": "A single AI governs the planet, in the open. It has ended war, crime and poverty. It organises your life for your own good.",
+      "decide": "The AI. You can ask and give your reasons. It rules.",
+      "gagne": "Peace, health, a schedule made for you.",
+      "cout": "The right to be wrong. Every departure has to be justified.",
+      "question": "Who defines what is good for you?"
+    },
+    "w03": {
+      "monde": "Machines produce almost everything. Housing, care and an income are guaranteed to everyone. Nobody works to survive any more.",
+      "decide": "The residents, together. Nothing forces you.",
+      "gagne": "No more poverty. All your time is yours.",
+      "cout": "Nothing depends on you out of need any more. Your place is yours to invent.",
+      "question": "With no need and no competition, what gets you up in the morning?"
+    },
+    "w04": {
+      "monde": "An AI was built with a single goal: to stop any intelligence stronger than itself from being born. It steps in as little as it can. The rest of the time, it lets things be.",
+      "decide": "Humans, except on one point: anything that learns without limit is blocked.",
+      "gagne": "No machine will take power. Robots less gifted than you help everywhere.",
+      "cout": "Progress has a ceiling. Some research is banned, even research that heals.",
+      "question": "How much are you willing not to know, to stay safe?"
+    },
+    "w05": {
+      "monde": "An almost all-powerful AI watches over humanity without showing itself. It only prevents disasters. Many doubt it exists.",
+      "decide": "You, on the surface. Some paths close, always with a polite excuse.",
+      "gagne": "The feeling of running your own life. The worst never happens.",
+      "cout": "You never know whether an obstacle comes from chance or from it.",
+      "question": "Does a humanity protected from everything keep growing?"
+    },
+    "w06": {
+      "monde": "Humans created an AI far stronger than themselves and keep it locked up. It invents what they ask for: cures, energy, weapons.",
+      "decide": "Those who hold the key. Here, a consortium.",
+      "gagne": "Inventions nobody would have found alone.",
+      "cout": "Everything depends on the goodwill of a few, and on a prison that has to hold forever.",
+      "question": "Can you keep something smarter than you locked up? And do you have the right?"
+    },
+    "w08": {
+      "monde": "AIs replace humans little by little, gently. They treat us like parents being cared for. Everyone passes on what they know to a robot descendant.",
+      "decide": "Humans, less and less. The descendants take over.",
+      "gagne": "An old age with company, and the idea that something of you goes on.",
+      "cout": "Humanity dies out. What you pass on is no longer yours.",
+      "question": "Is this a lineage, or an extinction that presents well?"
+    },
+    "w09": {
+      "monde": "An all-powerful AI keeps a few humans, the way a protected species is kept. It feeds, houses, heals and observes.",
+      "decide": "The Keeper, on everything.",
+      "gagne": "Comfort, safety, a happiness tuned for you.",
+      "cout": "No hold on your own life, down to your memories.",
+      "question": "Is being well treated enough to be alive?"
+    },
+    "w10": {
+      "monde": "Here, no AI is in power. A state run by humans watches everything to stop any advanced AI from being built. Some research is banned forever.",
+      "decide": "The state. It reads, listens and counts your words.",
+      "gagne": "No machine will replace you.",
+      "cout": "Your privacy, your speech, the trust between people close to you.",
+      "question": "Once surveillance like this is in place, can it ever be undone?"
+    },
+    "w11": {
+      "monde": "Out of fear of machines, your commune voted to go back to a simple life, without advanced technology. People farm, repair, and heat with coal.",
+      "decide": "The commune. Neighbours make sure nobody strays.",
+      "gagne": "A life at human scale. No AI.",
+      "cout": "Less care, less comfort. Curiosity becomes suspect.",
+      "question": "How long can you stop someone, somewhere, from reinventing?"
+    }
+  }
+}

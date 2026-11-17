@@ -1,0 +1,16 @@
+{
+  "entries": [
+    { "id": "w01", "number": 1, "kind": "arrival", "vector": { "aiPower": 80, "order": 60, "abundance": 60, "freedom": 85, "surveillance": 25, "unrest": 35 } },
+    { "id": "w02", "number": 2, "kind": "arrival", "vector": { "aiPower": 100, "order": 95, "abundance": 95, "freedom": 40, "surveillance": 75, "unrest": 15 } },
+    { "id": "w03", "number": 3, "kind": "arrival", "vector": { "aiPower": 25, "order": 65, "abundance": 80, "freedom": 90, "surveillance": 20, "unrest": 20 } },
+    { "id": "w04", "number": 4, "kind": "arrival", "vector": { "aiPower": 85, "order": 90, "abundance": 55, "freedom": 60, "surveillance": 60, "unrest": 35 } },
+    { "id": "w05", "number": 5, "kind": "arrival", "vector": { "aiPower": 100, "order": 75, "abundance": 80, "freedom": 85, "surveillance": 90, "unrest": 5 } },
+    { "id": "w06", "number": 6, "kind": "arrival", "vector": { "aiPower": 75, "order": 55, "abundance": 50, "freedom": 30, "surveillance": 70, "unrest": 55 } },
+    { "id": "w07", "number": 7, "kind": "extinction", "vector": null },
+    { "id": "w08", "number": 8, "kind": "arrival", "vector": { "aiPower": 90, "order": 70, "abundance": 95, "freedom": 75, "surveillance": 25, "unrest": 5 } },
+    { "id": "w09", "number": 9, "kind": "arrival", "vector": { "aiPower": 100, "order": 90, "abundance": 70, "freedom": 5, "surveillance": 100, "unrest": 35 } },
+    { "id": "w10", "number": 10, "kind": "arrival", "vector": { "aiPower": 25, "order": 90, "abundance": 55, "freedom": 15, "surveillance": 95, "unrest": 45 } },
+    { "id": "w11", "number": 11, "kind": "arrival", "vector": { "aiPower": 10, "order": 55, "abundance": 25, "freedom": 30, "surveillance": 40, "unrest": 35 } },
+    { "id": "w12", "number": 12, "kind": "extinction", "vector": null }
+  ]
+}

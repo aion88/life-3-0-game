@@ -1,0 +1,34 @@
+/* Écrans sobres C : langue, avertissement, sources, causes [plan UI-C T11 ; spec C §3.5]. Voix sobre, palette C, aucun jus. Couleurs, tailles et formes viennent des variables d'applyTheme. */
+
+.c-sober-page { position: absolute; inset: 0; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 32px 80px; overflow: auto; background: var(--c-creme); color: var(--c-encre); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: var(--t-body-weight); line-height: var(--t-body-lh); text-align: center; }
+.c-sober-page > :first-child { margin-top: auto; }   /* centrage vertical qui ne coupe jamais le haut quand le contenu dépasse */
+.c-sober-page > :last-child { margin-bottom: auto; }
+.c-sober-page > *:not(button) { max-width: 42em; width: 100%; box-sizing: border-box; }
+.c-sober-page > .c-sober-back { align-self: flex-start; }   /* retour : à gauche, hors du centrage */
+.c-sober-page > .c-sober-center { align-self: center; }
+
+.c-sober-title { margin: 0; font-family: var(--t-screen-title-family); font-size: var(--t-screen-title-size); font-weight: var(--t-screen-title-weight); line-height: var(--t-screen-title-lh); color: var(--c-encre); }
+.c-sober-heading { margin: 0; font-family: var(--t-name-chip-family); font-size: var(--t-name-chip-size); font-weight: var(--t-name-chip-weight); line-height: var(--t-name-chip-lh); color: var(--c-encre); }
+.c-sober-text { margin: 0; }
+.c-sober-hint { margin: 0; color: var(--c-encre-douce); }
+.c-sober-left { text-align: left; }
+.c-sober-stack { display: flex; flex-direction: column; gap: 12px; }
+.c-sober-list { margin: 0; padding-left: 1.2em; }
+.c-sober-list > li + li { margin-top: 6px; }
+.c-sober-terms { margin: 0; display: grid; gap: 4px 24px; }
+.c-sober-terms > dt { font-weight: 700; }
+.c-sober-terms > dd { margin: 0 0 8px; }
+.c-sober-year { margin: 0; font-family: var(--t-screen-title-family); font-size: var(--t-screen-title-size); font-weight: var(--t-screen-title-weight); line-height: var(--t-screen-title-lh); }
+
+/* Pastille de choix : langue, retour. Crème, bordure encre, ombre encre ; pressée = rose [la couleur ne porte pas seule l'état : bordure encre et poids] */
+.c-sober-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.c-sober-pill { box-sizing: border-box; padding: 12px 40px; background: var(--c-creme); color: var(--c-encre); border: var(--s-border) solid var(--c-encre); border-radius: var(--s-pill); box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: 700; line-height: var(--t-body-lh); cursor: pointer; }
+.c-sober-pill[aria-pressed="true"] { background: var(--c-rose); }
+
+/* Bascule d'adoucissement : pastille à bordure lavandeTrait (3:1), pressée = encre sur blanc */
+.c-sober-toggle { box-sizing: border-box; padding: 8px 24px; background: var(--c-creme); color: var(--c-encre); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-pill); font-family: var(--t-body-family); font-size: var(--t-body-size); font-weight: 700; line-height: var(--t-body-lh); cursor: pointer; }
+.c-sober-toggle[aria-pressed="true"] { background: var(--c-encre); border-color: var(--c-encre); color: var(--c-blanc); }
+
+.c-sober-pill:focus-visible, .c-sober-toggle:focus-visible { outline: var(--s-focus-ring) solid var(--c-encre); outline-offset: 0; box-shadow: 0 0 0 calc(var(--s-focus-ring) * 2) var(--c-creme); }
+.c-sober-pill:focus-visible { box-shadow: 0 var(--s-shadow-offset) 0 var(--sh-encre), 0 0 0 calc(var(--s-focus-ring) * 2) var(--c-creme); }
+.c-sober-page .c-action { cursor: pointer; }

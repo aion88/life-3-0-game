@@ -1,0 +1,491 @@
+{
+  "status": "content",
+  "variantSizes": {
+    "region": 6,
+    "n": 6,
+    "capital": 6
+  },
+  "headlines": [
+    {
+      "id": "w07.modele_ouvert",
+      "priority": 1,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "answer",
+          "question": "Q16",
+          "answer": "A"
+        },
+        {
+          "kind": "atStep",
+          "step": 1
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w07.ministeres",
+      "priority": 2,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 60
+            },
+            {
+              "var": "order",
+              "cmp": "<=",
+              "threshold": 41
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w07.centres_calcul",
+      "priority": 3,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "answer",
+          "question": "Q15",
+          "answer": "B"
+        },
+        {
+          "kind": "atStep",
+          "step": 13
+        }
+      ],
+      "alwaysShown": false,
+      "variant": "region"
+    },
+    {
+      "id": "w07.comite",
+      "priority": 4,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "atStep",
+          "step": 36
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w07.decisions",
+      "priority": 5,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 75
+            },
+            {
+              "var": "order",
+              "cmp": "<",
+              "threshold": 35
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w07.ordres",
+      "priority": 6,
+      "scope": "w07",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 90
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w12.incident",
+      "priority": 1,
+      "scope": "w12",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": "<=",
+              "threshold": 85
+            },
+            {
+              "var": "unrest",
+              "cmp": ">=",
+              "threshold": 70
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "w12.reseau",
+      "priority": 2,
+      "scope": "w12",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "order",
+              "cmp": "<=",
+              "threshold": 0
+            },
+            {
+              "var": "abundance",
+              "cmp": "<",
+              "threshold": 10
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": "region"
+    },
+    {
+      "id": "w12.voix",
+      "priority": 3,
+      "scope": "w12",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "abundance",
+              "cmp": "<=",
+              "threshold": 0
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m01",
+      "priority": 11,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "yearDelta",
+          "var": "aiPower",
+          "cmp": ">=",
+          "delta": 8
+        },
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "order",
+              "cmp": ">=",
+              "threshold": 60
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m02",
+      "priority": 12,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "yearDelta",
+          "var": "aiPower",
+          "cmp": ">=",
+          "delta": 15
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m03",
+      "priority": 13,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "abundance",
+              "cmp": ">=",
+              "threshold": 70
+            },
+            {
+              "var": "unrest",
+              "cmp": ">=",
+              "threshold": 50
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m04",
+      "priority": 14,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "yearDelta",
+          "var": "unrest",
+          "cmp": ">=",
+          "delta": 8
+        }
+      ],
+      "alwaysShown": false,
+      "variant": "n"
+    },
+    {
+      "id": "traj.m05",
+      "priority": 15,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "surveillance",
+              "cmp": ">=",
+              "threshold": 70
+            },
+            {
+              "var": "freedom",
+              "cmp": "<",
+              "threshold": 40
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m06",
+      "priority": 16,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "twoYears",
+          "all": [
+            {
+              "var": "surveillance",
+              "cmp": ">=",
+              "threshold": 70
+            },
+            {
+              "var": "freedom",
+              "cmp": "<",
+              "threshold": 40
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m07",
+      "priority": 17,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "yearDelta",
+          "var": "order",
+          "cmp": "<=",
+          "delta": -10
+        }
+      ],
+      "alwaysShown": false,
+      "variant": "region"
+    },
+    {
+      "id": "traj.m08",
+      "priority": 18,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "order",
+              "cmp": "<",
+              "threshold": 30
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": "region"
+    },
+    {
+      "id": "traj.m09",
+      "priority": 19,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "abundance",
+              "cmp": "<",
+              "threshold": 35
+            },
+            {
+              "var": "order",
+              "cmp": "<",
+              "threshold": 40
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m10",
+      "priority": 20,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 85
+            },
+            {
+              "var": "freedom",
+              "cmp": "<=",
+              "threshold": 50
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m11",
+      "priority": 21,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 90
+            },
+            {
+              "var": "abundance",
+              "cmp": ">=",
+              "threshold": 85
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m13",
+      "priority": 0,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "rupture"
+        }
+      ],
+      "alwaysShown": true,
+      "variant": "capital"
+    },
+    {
+      "id": "traj.m14",
+      "priority": 24,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "aiPower",
+              "cmp": "<=",
+              "threshold": 30
+            },
+            {
+              "var": "surveillance",
+              "cmp": ">=",
+              "threshold": 80
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    },
+    {
+      "id": "traj.m15",
+      "priority": 25,
+      "scope": "all",
+      "when": [
+        {
+          "kind": "state",
+          "all": [
+            {
+              "var": "order",
+              "cmp": ">=",
+              "threshold": 85
+            },
+            {
+              "var": "abundance",
+              "cmp": "<=",
+              "threshold": 60
+            },
+            {
+              "var": "aiPower",
+              "cmp": ">=",
+              "threshold": 80
+            }
+          ]
+        }
+      ],
+      "alwaysShown": false,
+      "variant": null
+    }
+  ]
+}

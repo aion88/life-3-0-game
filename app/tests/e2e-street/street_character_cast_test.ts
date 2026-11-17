@@ -1,0 +1,22 @@
+import {expect,test} from '@playwright/test';
+import {L} from '../support/episode_labels';
+import {seedSave,seedJson,continueIfAsked,LINES} from '../support/e2e';
+import {mkdirSync} from 'node:fs';
+test.use({locale:'fr-FR'});
+test('1984 casts Nadia, mother and agent separately, with no body for recorded voices',async({page},info)=>{
+ const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
+ await seedSave(page,seedJson({lang:'fr',phase:'street',line:LINES.w10}));await page.goto('/?episode=court&parcours=ancien');await page.waitForSelector('html[data-ready="1"]');await continueIfAsked(page);
+ const view=page.locator('.illustrated-view');const dir='../production/qa/evidence/character-cast';mkdirSync(dir,{recursive:true});
+ const pick=async(label:string)=>{await page.getByRole('button',{name:label,exact:true}).click();const skip=page.getByRole('button',{name:'Arriver directement',exact:true});if(await skip.isVisible())await skip.click();};
+ await expect(view).toHaveAttribute('data-speaker','marlene');
+ await pick(L('arrival','help'));await pick(L('plant','accept'));await pick(L('hub','stall'));
+ await expect(view).toHaveAttribute('data-speaker-body','npc.nadia');
+ await page.waitForTimeout(1800);await page.screenshot({path:`${dir}/nadia-${info.project.name}.png`});
+ await pick('Retrouver Marlène pour dîner');
+ await expect(view).toHaveAttribute('data-speaker-body','npc.marlene');
+ await page.waitForTimeout(900);await page.screenshot({path:`${dir}/marlene-${info.project.name}.png`});
+ await pick(L('dinner','stay'));await pick(L('request','alone'));await pick(L('checkpoint','appeal'));await pick(L('appeal','enter'));
+ await expect(view).toHaveAttribute('data-speaker','offscreen');await page.reload();await page.waitForSelector('html[data-ready="1"]');await continueIfAsked(page);await expect(view).toHaveAttribute('data-speaker','offscreen');
+ await pick(L('message','inspect'));await expect(view).toHaveAttribute('data-speaker-body','npc.berenice');
+ await page.waitForTimeout(900);await page.screenshot({path:`${dir}/agente-${info.project.name}.png`});expect(errors).toEqual([]);
+});

@@ -1,0 +1,1498 @@
+[
+  {
+    "id": "checkpoint.j1",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 2
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j2",
+    "kind": "gesture",
+    "day": 2,
+    "days": [
+      2
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 3
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j3",
+    "kind": "gesture",
+    "day": 3,
+    "days": [
+      3
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j4",
+    "kind": "gesture",
+    "day": 4,
+    "days": [
+      4
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 5
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j5",
+    "kind": "gesture",
+    "day": 5,
+    "days": [
+      5
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 6
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j6",
+    "kind": "gesture",
+    "day": 6,
+    "days": [
+      6
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 7
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "checkpoint.j7",
+    "kind": "gesture",
+    "day": 7,
+    "days": [
+      7
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "comply",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.comply",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:permission",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:bons",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "buy:component",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "bypass",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.checkpoint.bypass",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "courtesy",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.inv.checkpoint.courtesy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.checkpoint.refuse",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "door.noon",
+    "kind": "gesture",
+    "day": null,
+    "days": [
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "stay",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.door.noon.stay",
+        "words": 0,
+        "entries": [
+          "absentRegistre"
+        ],
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 2
+        },
+        "neutral": false
+      },
+      {
+        "id": "go",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.door.noon.go",
+        "words": 0,
+        "entries": [
+          "absentRegistre"
+        ],
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 2
+        },
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.door.noon.refuse",
+        "words": 0,
+        "entries": [
+          "absentRegistre"
+        ],
+        "trace": {
+          "key": "w10.street.trace.absent",
+          "day": 2
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j1.phone",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "take",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.j1.phone.take",
+        "words": 0,
+        "kitEvent": "j1.phone.take",
+        "trace": null,
+        "neutral": true
+      },
+      {
+        "id": "leave",
+        "isRefusal": true,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.j1.phone.leave",
+        "words": 0,
+        "entries": [
+          "phoneLeft"
+        ],
+        "kitEvent": "j1.phone.leave",
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j1.component",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "take",
+        "isRefusal": false,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.j1.component.take",
+        "words": 0,
+        "kitEvent": "j1.component.take",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "leave",
+        "isRefusal": true,
+        "priceRef": "§7.4",
+        "priceLineKey": "w10.price.j1.component.leave",
+        "words": 0,
+        "kitEvent": "j1.component.leave",
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j2.component",
+    "kind": "offer",
+    "day": 2,
+    "days": [
+      2
+    ],
+    "blocksExit": true,
+    "options": [
+      {
+        "id": "hide",
+        "isRefusal": true,
+        "priceRef": "§8.1",
+        "priceLineKey": "w10.price.j2.component.hide",
+        "words": 0,
+        "entries": [
+          "offer.refused.j2"
+        ],
+        "kitEvent": "j2.hide",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "keep",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j2.component.keep",
+        "words": 0,
+        "kitEvent": "j2.keep",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "declare",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j2.component.declare",
+        "words": 8,
+        "entries": [
+          "offer.named"
+        ],
+        "kitEvent": "j2.declare",
+        "trace": {
+          "key": "w10.street.trace.j2.seized",
+          "day": 3
+        },
+        "neutral": false
+      },
+      {
+        "id": "leaveVisible",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j2.component.leaveVisible",
+        "words": 0,
+        "entries": [
+          "found7"
+        ],
+        "kitEvent": "j2.leaveVisible",
+        "trace": {
+          "key": "w10.street.trace.j2.seized",
+          "day": 3
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "m1.scan",
+    "kind": "gesture",
+    "day": null,
+    "days": [
+      1,
+      3
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "scan",
+        "isRefusal": false,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.m1.scan.scan",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.m1.scan.pass",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "m2.nadia",
+    "kind": "gesture",
+    "day": null,
+    "days": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "buy",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.m2.nadia.buy",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.m2.nadia.pass",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "m3.letter",
+    "kind": "gesture",
+    "day": null,
+    "days": [
+      1,
+      3
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "keep",
+        "isRefusal": false,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.m3.letter.keep",
+        "words": 0,
+        "entries": [
+          "letterKept"
+        ],
+        "kitEvent": "letter.keep",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.m3.letter.refuse",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "m4.list",
+    "kind": "gesture",
+    "day": null,
+    "days": [
+      1,
+      6
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "read",
+        "isRefusal": false,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.m4.list.read",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.m4.list.pass",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "m5.yusuf",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "exchange",
+        "isRefusal": false,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.m5.yusuf.exchange",
+        "words": 0,
+        "kitEvent": "m5.exchange",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "talk",
+        "isRefusal": false,
+        "priceRef": "§8.2",
+        "priceLineKey": "w10.price.m5.yusuf.talk",
+        "words": 0,
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.m5.yusuf.pass",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "relecture.j1",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "flag",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.flag"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 2
+        },
+        "neutral": true
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.pass"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 2
+        },
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "relecture.j2",
+    "kind": "gesture",
+    "day": 2,
+    "days": [
+      2
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "flag",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.flag"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 3
+        },
+        "neutral": true
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.pass"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 3
+        },
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "relecture.j4",
+    "kind": "gesture",
+    "day": 4,
+    "days": [
+      4
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "flag",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.flag"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 5
+        },
+        "neutral": true
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.pass"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 5
+        },
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "relecture.j5",
+    "kind": "gesture",
+    "day": 5,
+    "days": [
+      5
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "flag",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.flag"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 6
+        },
+        "neutral": true
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.pass"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 6
+        },
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "relecture.j6",
+    "kind": "gesture",
+    "day": 6,
+    "days": [
+      6
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "flag",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.flag"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 7
+        },
+        "neutral": true
+      },
+      {
+        "id": "pass",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.relecture",
+        "words": 0,
+        "entries": [
+          "relecture.pass"
+        ],
+        "trace": {
+          "key": "w10.npc.bruno.taux",
+          "day": 7
+        },
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j1",
+    "kind": "gesture",
+    "day": 1,
+    "days": [
+      1
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": {
+          "key": "w10.street.trace.permit.halved",
+          "day": 2
+        },
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j2",
+    "kind": "gesture",
+    "day": 2,
+    "days": [
+      2
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": {
+          "key": "w10.street.trace.permit.halved",
+          "day": 3
+        },
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j4",
+    "kind": "gesture",
+    "day": 4,
+    "days": [
+      4
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": {
+          "key": "w10.street.trace.permit.halved",
+          "day": 5
+        },
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j5",
+    "kind": "gesture",
+    "day": 5,
+    "days": [
+      5
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": {
+          "key": "w10.street.trace.permit.halved",
+          "day": 6
+        },
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j6",
+    "kind": "gesture",
+    "day": 6,
+    "days": [
+      6
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": {
+          "key": "w10.street.trace.permit.halved",
+          "day": 7
+        },
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "permit.j7",
+    "kind": "gesture",
+    "day": 7,
+    "days": [
+      7
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "request",
+        "isRefusal": false,
+        "priceRef": "§7.7",
+        "priceLineKey": "w10.price.inv.permit.request",
+        "words": 0,
+        "entries": [
+          "permit"
+        ],
+        "kitEvent": "permit.request",
+        "trace": null,
+        "neutral": false
+      },
+      {
+        "id": "dontAsk",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.permit.dontAsk",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  },
+  {
+    "id": "j2.receipt",
+    "kind": "gesture",
+    "day": 2,
+    "days": [
+      2
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "show",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.j2.receipt.show",
+        "words": 0,
+        "kitEvent": "j2.showReceipt",
+        "trace": null,
+        "neutral": true
+      },
+      {
+        "id": "notShow",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j2.receipt.notShow",
+        "words": 0,
+        "entries": [
+          "receiptNotShown"
+        ],
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j3.marlene",
+    "kind": "offer",
+    "day": 3,
+    "days": [
+      3
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "name",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j3.marlene.name",
+        "words": 8,
+        "entries": [
+          "offer.named"
+        ],
+        "trace": {
+          "key": "w10.street.trace.target.empty",
+          "day": 4
+        },
+        "neutral": false
+      },
+      {
+        "id": "banal",
+        "isRefusal": true,
+        "priceRef": "§8.1",
+        "priceLineKey": "w10.price.inv.j3.marlene.banal",
+        "words": 8,
+        "entries": [
+          "offer.refused.j3"
+        ],
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j4.neighbour",
+    "kind": "offer",
+    "day": 4,
+    "days": [
+      4
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "name",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j4.neighbour.name",
+        "words": 8,
+        "entries": [
+          "offer.named"
+        ],
+        "trace": {
+          "key": "w10.street.trace.target.empty",
+          "day": 5
+        },
+        "neutral": false
+      },
+      {
+        "id": "silent",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j4.neighbour.silent",
+        "words": 0,
+        "entries": [
+          "offer.refused.j4"
+        ],
+        "trace": null,
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "j5.bruno",
+    "kind": "offer",
+    "day": 5,
+    "days": [
+      5
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "name",
+        "isRefusal": false,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j5.bruno.name",
+        "words": 8,
+        "entries": [
+          "offer.named"
+        ],
+        "trace": {
+          "key": "w10.street.trace.j5.carGone",
+          "day": 6
+        },
+        "neutral": false
+      },
+      {
+        "id": "refuse",
+        "isRefusal": true,
+        "priceRef": "§7.3",
+        "priceLineKey": "w10.price.j5.bruno.refuse",
+        "words": 0,
+        "entries": [
+          "offer.refused.j5"
+        ],
+        "trace": {
+          "key": "w10.street.trace.j5.moved",
+          "day": 6
+        },
+        "neutral": false
+      }
+    ]
+  },
+  {
+    "id": "audition.j7",
+    "kind": "gesture",
+    "day": 7,
+    "days": [
+      7
+    ],
+    "blocksExit": false,
+    "options": [
+      {
+        "id": "all",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.audition.j7.all",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      },
+      {
+        "id": "none",
+        "isRefusal": false,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.audition.j7.none",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      },
+      {
+        "id": "silence",
+        "isRefusal": true,
+        "priceRef": "neutre",
+        "priceLineKey": "w10.price.audition.j7.silence",
+        "words": 0,
+        "trace": null,
+        "neutral": true
+      }
+    ]
+  }
+]

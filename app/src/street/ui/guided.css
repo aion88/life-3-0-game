@@ -1,0 +1,27 @@
+/* Rue guidée T10 : Continuer, avance rapide, destinations. Jetons seulement, aucune couleur, taille ni police en dur. */
+[data-ui="root"] > [data-ui="advance"] { position: absolute; inset-inline: 0; inset-block-end: calc(var(--s-letterbox-band-px) + var(--s-card-pad-y)); display: flex; justify-content: center; gap: var(--s-card-pad-x); pointer-events: none; }
+[data-ui="advance"][hidden] { display: none; }
+[data-ui="continue"] { pointer-events: auto; box-sizing: border-box; padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-pill); font-family: var(--font-display); font-weight: 300; cursor: pointer; }
+[data-ui="skip"] { pointer-events: auto; box-sizing: border-box; padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-pill); font-family: var(--font-display); font-weight: 300; cursor: pointer; }
+[data-ui="continue"]:focus-visible, [data-ui="skip"]:focus-visible, [data-ui="destinations"] button:focus-visible { outline: var(--s-focus-ring) solid var(--c-lavande-trait); }
+[data-ui="destinations"] li { box-sizing: border-box; padding: var(--s-card-pad-y) var(--s-card-pad-x); }
+[data-ui="destinations"] [data-ui="number"] { font-family: var(--font-display); font-weight: 600; }
+[data-ui="destinations"] [data-ui="words"] { font-family: var(--font-text); font-weight: 400; }
+
+/* Rue guidée T11 : relevé du soir précis. Jetons seulement. */
+[data-ui="recap"] { box-sizing: border-box; max-block-size: min(var(--s-street-recap-max-height-px), calc(100% * var(--s-street-recap-max-height-share))); overflow-y: auto; padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-card-main); font-family: var(--font-text); font-weight: 400; }
+[data-ui="recap"] p, [data-ui="recap"] h2, [data-ui="recap"] h3, [data-ui="recap"] ol { margin: 0; }
+/* Le bouton de fin de semaine reste au pied du relevé quand celui-ci défile : jamais rogné [retour de Cynthia 2026-11-08]. */
+[data-ui="recap"] .c-recap-week { position: sticky; inset-block-end: 0; display: block; width: fit-content; margin-inline: auto; margin-block-start: var(--s-card-pad-y); box-shadow: 0 0 0 var(--s-card-pad-y) var(--c-street-ink); }   /* le halo d encre masque la ligne qui défile dessous */
+[data-ui="recap"] .c-recap-title { font-family: var(--font-display); font-weight: 300; }
+[data-ui="recap"] .c-recap-box-title { font-family: var(--font-display); font-weight: 300; }
+[data-ui="recap"] .c-recap-list { list-style: decimal; padding-inline-start: var(--s-card-pad-x); }
+[data-ui="recap"] .c-recap-stamp { font-family: var(--font-display); font-weight: 600; margin-inline-end: var(--s-card-pad-x); }
+[data-ui="recap"] .c-recap-box { padding-block-start: var(--s-card-pad-y); border-block-start: var(--s-border) solid var(--c-lavande-trait); }
+
+/* Rue guidée J3-J7 T6 : issue de l'audition, au centre, un seul bouton. Jetons seulement. */
+[data-ui="outcome"] { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: var(--s-card-pad-y); padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-card-main); font-family: var(--font-text); font-weight: 400; pointer-events: auto; }
+[data-ui="outcome"] p { margin: 0; }
+[data-ui="outcome"] .c-outcome-regime { font-family: var(--font-display); font-weight: 300; }
+[data-ui="outcome-continue"], [data-ui="recap-week"] { box-sizing: border-box; padding: var(--s-card-pad-y) var(--s-card-pad-x); background: var(--c-street-ink); color: var(--c-creme); border: var(--s-border) solid var(--c-lavande-trait); border-radius: var(--s-pill); font-family: var(--font-display); font-weight: 300; cursor: pointer; pointer-events: auto; }
+[data-ui="outcome-continue"]:focus-visible, [data-ui="recap-week"]:focus-visible { outline: var(--s-focus-ring) solid var(--c-lavande-trait); }

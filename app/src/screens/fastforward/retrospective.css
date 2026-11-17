@@ -1,0 +1,90 @@
+/* A newspaper spread on a dark reading table, not a grid of UI cards. */
+.retro{--rule:1px;--double:3px;--ink:#eee7d8;--muted:#bdc9c0;--accent:#bdd8ad;--paper:#223133;position:fixed;inset:0;overflow:auto;box-sizing:border-box;padding:24px clamp(16px,4vw,64px) 48px;color:var(--ink);background:radial-gradient(ellipse at 15% 0%,#33433f,transparent 65%),#111d23;font:400 14px/1.5 Inter,Arial,sans-serif}
+.retro *,.retro *::before,.retro *::after{box-sizing:border-box}.retro [hidden]{display:none!important}.retro-header,.retro-origin,.retro-timeline,.retro-arrival,.retro-fiction,.retro-editions,.retro-present{width:min(1220px,100%);margin-inline:auto}
+.retro-header{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 24px;margin-bottom:18px}.retro-eyebrow{font-size:10px;letter-spacing:.15em;font-weight:600;margin:0}.retro-header h1{font:400 clamp(26px,3vw,40px)/1.1 "Montserrat C",Arial,sans-serif;margin:0}.retro-header .retro-eyebrow{display:none}.retro-control{color:var(--muted);font-size:12px;margin:0}.retro-origin{display:flex;gap:20px;align-items:baseline;margin-bottom:4px;padding-block:8px;border-bottom:var(--rule) solid #91a79745}.retro-origin h2{white-space:nowrap;font-size:12px;font-weight:600;margin:0}.retro-origin p{font-size:11px;color:var(--muted);margin:0}
+.retro-arrival{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:18px;align-items:center;padding-bottom:18px;margin-bottom:10px;border-bottom:var(--rule) solid #91a79770}.retro-world-preview{width:96px;height:96px;background-size:cover!important}.retro-destination h2{font:500 clamp(20px,2.2vw,28px)/1.2 'Montserrat C',Arial,sans-serif;margin:3px 0}.retro-destination>p{font-size:12px;margin:4px 0}.retro-play-promise{color:#bdd8ad;max-width:80ch}.retro-arrival:not(:has(.retro-world-preview)){grid-template-columns:1fr auto}
+.retro button{appearance:none;border:0;border-radius:2px;min-height:44px;padding:12px 20px;background:var(--accent);color:#17352c;font:600 13px/1.3 Inter,Arial,sans-serif;cursor:pointer}.retro button:hover:not(:disabled){background:#d1e7bf}.retro button:disabled{opacity:.5;cursor:default}.retro :focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.retro-editions{display:flex;gap:0;margin-bottom:22px;overflow-x:auto;border-bottom:var(--rule) solid #91a79770}.retro .retro-year-tab{flex:1;display:grid;justify-items:start;gap:4px;min-width:116px;padding:18px 22px 14px 0;color:#8fa59c;background:transparent;border-radius:0;position:relative;text-align:left}.retro .retro-year-tab:hover{color:#eee7d8;background:transparent}.retro .retro-year-tab[aria-selected=true]{color:var(--accent)}.retro-year-tab[aria-selected=true]::after{content:'';position:absolute;bottom:0;left:0;right:22px;height:4px;background:var(--accent)}.retro-tab-year{font:400 clamp(32px,4.4vw,62px)/1 "Montserrat C",Arial,sans-serif;letter-spacing:-.02em}.retro-tab-caption{font-size:10px;font-weight:400;letter-spacing:.1em;text-transform:uppercase}
+.retro-timeline{display:block}.retro-paper{padding:clamp(18px,3vw,42px);background:repeating-linear-gradient(0deg,#ffffff02 0,#ffffff02 1px,transparent 1px,transparent 4px),var(--paper);border-block:var(--rule) solid #9ba99580;min-width:0}.retro-paper[data-edition='1']{--paper:#273731}.retro-paper[data-edition='2']{--paper:#26313b}.retro-paper[data-edition='3']{--paper:#353732}
+.retro-paper-header{display:flex;align-items:center;justify-content:space-between;gap:24px;border-block:var(--double) double #c0c9b9;padding:12px 0}.retro-masthead{font:700 clamp(30px,5.4vw,74px)/1 "Montserrat C",Arial,sans-serif;letter-spacing:-.02em;margin:0;white-space:nowrap}.retro-year{font:400 clamp(32px,5.5vw,76px)/1 "Montserrat C",Arial,sans-serif;letter-spacing:-.02em;margin:0;color:#d6c69c}.retro-edition{margin:0 0 22px;padding:7px 0;border-bottom:var(--rule) solid #c0c9b960;font-size:9px;letter-spacing:.16em;color:var(--muted)}.retro-paper>.retro-eyebrow{font-size:10px;color:#d6c69c;letter-spacing:.15em;text-transform:uppercase}
+.retro-lead{font:400 clamp(30px,4.7vw,62px)/1.04 "Montserrat C",Arial,sans-serif;letter-spacing:-.02em;max-width:25ch;margin:9px 0 24px;overflow-wrap:anywhere}.retro-lead+.retro-lead{font-size:22px;line-height:1.2;max-width:none;border-top:var(--rule) solid #c0c9b950;padding-top:14px;margin-top:-6px}
+.retro-spread{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(220px,1fr);gap:28px;align-items:start}.retro-archive-photo{margin:0;min-width:0}.retro-archive-photo img{display:block;width:100%;aspect-ratio:16/11;object-fit:cover}.retro-archive-photo figcaption{font-size:10px;color:var(--muted);padding:8px 0;border-bottom:var(--rule) solid #c0c9b950}.retro-editorial{padding-left:24px;border-left:var(--rule) solid #c0c9b960;min-width:0}.retro h4{font:600 10px/1.4 Inter,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#d6c69c;margin:0 0 8px}.retro-standfirst{font:400 21px/1.25 "Montserrat C",Arial,sans-serif;margin:0 0 20px}.retro-question{font:600 12px/1.4 Inter,Arial,sans-serif;margin:8px 0}.retro-answer{font:400 17px/1.4 "Montserrat C",Arial,sans-serif;margin:8px 0}.retro-contribution{font-size:12px;margin-top:20px}.retro-deltas{font-size:11px;color:#d6c69c;margin:12px 0}.retro-trend{padding:12px 0}.retro-trend p{font-size:12px;margin:7px 0}.retro-trend [data-axis=freedom]{color:#c9e3ae}.retro-trend [data-axis=abundance]{color:#e9c48f}.retro-indicators,.retro-rules{font-size:12px;color:#c5d1c7;margin-top:14px}.retro summary{cursor:pointer;min-height:44px;padding:12px 0;border-block:var(--rule) solid #c0c9b940}.retro-rules p{font-size:11px;line-height:1.6}.retro-colophon{margin:24px 0 0;border-top:var(--double) double #c0c9b960;padding-top:8px;font-size:8px;letter-spacing:.18em;color:var(--muted)}
+.retro-fiction{font-size:11px;color:var(--muted);line-height:1.6;margin-top:18px}.retro-present{margin-top:24px;font-size:13px;color:var(--muted)}.retro-present>summary{font-size:15px;color:var(--ink)}.retro-present-cards{display:grid;grid-template-columns:1fr 1fr;gap:30px}.retro-present article{padding-block:18px;border-bottom:var(--rule) solid #c0c9b940}.retro-present h3{color:var(--ink)}.retro a{color:#c9e3ae}
+@media(min-width:900px){.retro-paper[data-edition='2'] .retro-archive-photo{order:2}.retro-paper[data-edition='2'] .retro-spread{grid-template-columns:minmax(220px,1fr) minmax(0,1.8fr)}.retro-paper[data-edition='2'] .retro-editorial{padding-left:0;padding-right:24px;border-left:0;border-right:var(--rule) solid #c0c9b960}}
+@media(max-width:700px){.retro{padding:18px 14px 36px}.retro-header{margin-bottom:16px;gap:8px}.retro-header h1{font-size:30px}.retro-control{width:100%}.retro-arrival{grid-template-columns:64px minmax(0,1fr);gap:10px}.retro-world-preview{width:64px;height:90px}.retro-arrival button{grid-column:1/-1;width:100%}.retro-destination h2{font-size:20px}.retro-destination>p{font-size:11px}.retro-play-promise{display:none}.retro-origin{display:block}.retro-origin p{margin-top:4px}.retro .retro-year-tab{min-width:82px;padding:16px 12px 12px 0}.retro-tab-year{font-size:36px}.retro-tab-caption{font-size:8px;letter-spacing:.04em}.retro-paper{padding:16px}.retro-paper-header{gap:12px}.retro-masthead{font-size:clamp(22px,7.3vw,40px)}.retro-year{font-size:32px}.retro-edition{font-size:7px;letter-spacing:.07em;margin-bottom:16px}.retro-lead{font-size:34px;margin-bottom:18px}.retro-spread{grid-template-columns:1fr;gap:20px}.retro-archive-photo img{aspect-ratio:4/3}.retro-editorial{padding:18px 0 0;border-left:0;border-top:var(--rule) solid #c0c9b960}.retro-present-cards{grid-template-columns:1fr}}
+
+/* The complete chronology remains readable without opening each newspaper. */
+.retro .retro-editions { gap:12px; overflow:visible; align-items:stretch; border-bottom:0; }
+.retro .retro-year-tab { min-width:0; padding:14px; border-inline-start:var(--double) solid #718777; background:#1d2b28; color:#dce3d6; gap:10px; }
+.retro .retro-tab-year { font:600 30px/1.1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+.retro .retro-tab-headline { font:500 14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; color:inherit; }
+.retro .retro-tab-caption { color:inherit; opacity:1; align-self:end; }
+.retro .retro-year-tab[aria-selected=true] { background:#bdd8ad; color:#17352c; border-color:#bdd8ad; }
+.retro .retro-year-tab:hover:not(:disabled) { background:#344c3c; color:#f2eee5; }
+.retro .retro-year-tab[aria-selected=true]:hover:not(:disabled),
+.retro .retro-year-tab[aria-selected=true]:focus-visible { background:#d1e7bf; color:#17352c; }
+.retro .retro-year-tab[aria-selected=true]::after { display:none; }
+@media(max-width:700px) {
+ .retro .retro-editions { display:grid; grid-template-columns:1fr; gap:0; margin-bottom:20px; }
+ .retro .retro-year-tab { grid-template-columns:68px minmax(0,1fr); gap:4px 10px; padding:10px 12px; border-inline-start:var(--double) solid #718777; }
+ .retro .retro-tab-year { grid-row:span 2; font-size:24px; align-self:center; }
+ .retro .retro-tab-headline { font-size:13px; }
+ .retro .retro-tab-caption { grid-column:2; font-size:9px; }
+}
+
+/* One-screen chronology. Reading any year's headline never requires an interaction. */
+.retro[data-layout=chronology] { display:flex; flex-direction:column; gap:10px; padding:20px clamp(16px,4vw,64px); min-height:0; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+.retro[data-layout=chronology] .retro-header { margin-bottom:0; flex:none; }
+.retro[data-layout=chronology] .retro-header h1 { font:600 28px/1.1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+.retro[data-layout=chronology] .retro-arrival { padding-bottom:10px; margin-bottom:0; flex:none; grid-template-columns:64px minmax(0,1fr) auto; gap:12px; }
+.retro[data-layout=chronology] .retro-world-preview { width:64px; height:64px; }
+.retro[data-layout=chronology] .retro-destination h2 { font-size:23px; margin:0; }
+.retro[data-layout=chronology] .retro-destination>p:not(.retro-eyebrow) { display:none; }
+.retro[data-layout=chronology] .retro-origin { padding:0; margin:0; flex:none; border:0; }
+.retro[data-layout=chronology] .retro-origin h2 { font-size:12px; }
+.retro[data-layout=chronology] .retro-origin p { display:none; }
+.retro[data-layout=chronology] .retro-timeline { flex:1; min-height:0; display:grid; grid-template-columns:repeat(var(--retro-years),minmax(0,1fr)); gap:14px; }
+.retro[data-layout=chronology] .retro-paper { min-height:0; padding:14px; display:flex; flex-direction:column; gap:10px; border-top:var(--double) solid #b9c5b2; }
+.retro[data-layout=chronology] .retro-paper-header { padding:0; border:0; flex:none; }
+.retro[data-layout=chronology] .retro-masthead { font:600 10px/1.2 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; letter-spacing:.06em; }
+.retro[data-layout=chronology] .retro-year { font:600 34px/1 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; color:#d7e6c7; }
+.retro[data-layout=chronology] .retro-paper>.retro-edition,
+.retro[data-layout=chronology] .retro-paper>.retro-eyebrow,
+.retro[data-layout=chronology] .retro-paper>.retro-control { display:none; }
+.retro[data-layout=chronology] .retro-paper>.retro-lead { font:600 clamp(15px,1.4vw,23px)/1.25 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; margin:0; max-width:none; padding:0; border:0; overflow-wrap:normal; }
+.retro[data-layout=chronology] .retro-spread { display:block; min-height:0; flex:1; margin-top:auto; }
+.retro[data-layout=chronology] .retro-archive-photo { height:100%; }
+.retro[data-layout=chronology] .retro-archive-photo img { height:100%; max-height:38dvh; min-height:60px; aspect-ratio:auto; object-fit:cover; }
+.retro[data-layout=chronology] .retro-archive-photo figcaption { display:none; }
+.retro[data-layout=chronology] .retro-detail-button { align-self:flex-start; flex:none; background:transparent; color:#d7e6c7; text-decoration:underline; padding:8px 0; min-height:36px; }
+.retro[data-layout=chronology] .retro-source-open { flex:none; align-self:center; min-height:36px; padding:8px 12px; background:transparent; color:#d7e6c7; text-decoration:underline; }
+.retro .retro-detail-dialog { width:min(700px,calc(100% - 24px)); max-height:85dvh; overflow:auto; padding:24px; color:#eee7d8; background:#1d2b28; border:var(--rule) solid #b9c5b2; }
+.retro .retro-detail-dialog::backdrop { background:#101814b8; }
+.retro .retro-detail-dialog>.retro-editorial { border:0; padding:0; }
+.retro .retro-detail-dialog>.retro-lead { font-size:25px; }
+.retro .retro-detail-dialog .retro-present { margin-top:12px; }
+@media(max-width:700px) {
+ .retro[data-layout=chronology] { padding:12px; gap:8px; }
+ .retro[data-layout=chronology] .retro-header h1 { font-size:22px; }
+ .retro[data-layout=chronology] .retro-control { display:none; }
+ .retro[data-layout=chronology] .retro-arrival { grid-template-columns:40px minmax(0,1fr); gap:5px 9px; padding-bottom:8px; }
+ .retro[data-layout=chronology] .retro-world-preview { width:40px; height:40px; }
+ .retro[data-layout=chronology] .retro-destination h2 { font-size:18px; }
+ .retro[data-layout=chronology] .retro-destination .retro-eyebrow { font-size:9px; letter-spacing:.04em; }
+ .retro[data-layout=chronology] .retro-arrival button { min-height:44px; padding:9px; }
+ .retro[data-layout=chronology] .retro-timeline { display:flex; flex-direction:column; gap:7px; }
+ .retro[data-layout=chronology] .retro-paper { flex:1; display:grid; grid-template-columns:48px minmax(0,1fr) 62px; grid-template-rows:minmax(0,1fr) 24px; gap:3px 8px; padding:8px; min-height:76px; }
+ .retro[data-layout=chronology] .retro-paper-header { grid-column:1; grid-row:1/-1; display:block; align-self:start; padding-top:3px; }
+ .retro[data-layout=chronology] .retro-masthead { display:none; }
+ .retro[data-layout=chronology] .retro-year { font-size:22px; }
+ .retro[data-layout=chronology] .retro-paper>.retro-lead { grid-column:2; font-size:13px; line-height:1.25; align-self:center; }
+ .retro[data-layout=chronology] .retro-spread { grid-column:3; grid-row:1/-1; height:100%; margin:0; }
+ .retro[data-layout=chronology] .retro-archive-photo img { min-height:0; max-height:none; }
+ .retro[data-layout=chronology] .retro-detail-button { grid-column:2; padding:2px 0; min-height:24px; font-size:10px; }
+ .retro[data-layout=chronology] .retro-source-open { min-height:28px; padding:4px; font-size:11px; }
+}
+@media(max-height:580px) { .retro[data-layout=chronology] { overflow:auto; }.retro[data-layout=chronology] .retro-timeline { flex:none; min-height:330px; } }
+.retro[data-layout=chronology] .retro-detail-button:hover:not(:disabled),
+.retro[data-layout=chronology] .retro-source-open:hover:not(:disabled) { background:#344c3c; color:#f2eee5; }
+.retro[data-layout=chronology] .retro-detail-button:focus-visible,
+.retro[data-layout=chronology] .retro-source-open:focus-visible { background:#bdd8ad; color:#17352c; }

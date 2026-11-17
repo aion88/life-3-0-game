@@ -1,0 +1,140 @@
+/* Pièces graphiques réutilisables : téléphone, papier avec tampon, carte d'objet, ticket imprimé. « Chambre noire » : vrai papier (grain, encre, tampon),
+   toutes les valeurs viennent de src/ui/tokens.css et worlds.css, aucun littéral ici. La mise en place (grille, rangée de lecture) appartient à l'écran qui les pose. */
+.piece,.piece-reading,.ticket-print { --pc-papier:var(--papier); --pc-encre:var(--encre); --pc-ambre:var(--dit); --pc-texte:var(--dit); --pc-sourd:var(--raconte); --pc-vert:var(--action); --pc-fine:1px; --pc-moyen:2px; --pc-cadre:3px; --pc-ombre:0 4px 12px var(--ombre-piece); --pc-ombre-papier:0 14px 40px var(--ombre-grande); --pc-titre:var(--corps); --pc-corps:var(--corps); font-synthesis:none; }
+/* Tampon : double filet incliné, en capitales espacées. Encre violette sur fond sombre (--interdit-sombre), sur papier (--interdit-papier, multiplié). Réservé au sens « interdit » et au tampon d'arrivée. */
+.tampon { --ink:var(--interdit-sombre); display:inline-block; padding:6px 12px 5px; border:var(--filet-tampon) double var(--ink); color:var(--ink); font-family:var(--corps); font-weight:800; text-transform:uppercase; letter-spacing:.1em; line-height:1.15; transform:rotate(-4deg); text-align:center; font-synthesis:none; }
+.tampon small { display:block; font-weight:600; font-size:.72em; letter-spacing:.06em; }
+.tampon.sur-papier { --ink:var(--interdit-papier); mix-blend-mode:multiply; }
+button.piece[data-prop] { align-self:start; appearance:none; border:0; background:none; padding:0; margin:0; font:inherit; color:inherit; text-align:left; cursor:grab; touch-action:none; user-select:none; position:relative; z-index:2; display:grid; min-width:0; }
+button.piece[data-prop].pris { cursor:grabbing; z-index:20; filter:drop-shadow(0 12px 14px var(--ombre-grande)); }
+button.piece[data-prop]:focus-visible { outline:var(--focus); outline-offset:3px; }
+button.piece[data-prop][aria-expanded=true] { outline:var(--focus); outline-offset:3px; }
+button.piece[data-prop]>div { min-width:0; }
+/* Carte d'objet : papier (objet) ou métal (outil), un dessin au trait, un nom, une ligne. */
+.piece-card { display:grid; justify-items:center; align-content:center; gap:4px; padding:10px 12px; text-align:center; background:var(--pc-papier); color:var(--pc-encre); border-radius:var(--r-1); box-shadow:var(--pc-ombre); }
+:is(.piece,.piece-reading).metal .piece-card { background:var(--plateau-haut); color:var(--dit); box-shadow:inset 0 0 0 var(--pc-fine) var(--filet); }
+.pc-glyph { width:44px; height:44px; fill:none; stroke:currentColor; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+.pc-name { font:700 .86rem/1.25 var(--pc-titre); }
+.pc-line { font:400 .72rem/1.3 var(--pc-corps); color:inherit; opacity:.85; }
+/* Papier : grain, émetteur, texte en machine à écrire, zone de tampon. */
+.piece-doc { display:grid; align-content:start; gap:6px; padding:10px 12px 12px; background:var(--pc-papier) var(--grain); background-blend-mode:multiply; color:var(--pc-encre); border-radius:var(--r-2); box-shadow:var(--pc-ombre); font-family:var(--corps); }
+.pd-head { font:700 .66rem/1.3 var(--corps); letter-spacing:.12em; text-transform:uppercase; border-bottom:var(--pc-fine) dashed var(--trait-papier-fort); padding-bottom:4px; }
+.pd-text { margin:0; font:400 .76rem/1.4 var(--corps); }
+.pd-stamp { min-height:26px; display:grid; place-items:center; border:var(--pc-fine) dashed var(--encre-bavure); border-radius:var(--r-2); }
+.pd-mark { padding:2px 8px; border:var(--pc-cadre) double var(--encre); border-radius:var(--r-2); color:var(--encre); font:700 .64rem/1.2 var(--corps); letter-spacing:.08em; text-transform:uppercase; transform:rotate(-6deg); text-align:center; max-width:100%; box-sizing:border-box; overflow-wrap:break-word; }
+/* Téléphone : coque sombre, expéditeur, bulle reçue ; la réponse envoyée apparaît en vert. */
+.piece-phone { display:grid; align-content:start; gap:6px; padding:14px 9px 10px; background:var(--tel-coque); border:var(--pc-moyen) solid var(--tel-bord); border-radius:16px; box-shadow:var(--pc-ombre); position:relative; }
+.piece-phone::before { content:''; position:absolute; top:5px; left:50%; width:28px; height:4px; margin-left:-14px; border-radius:2px; background:var(--tel-bord); }
+.pp-who { font:700 .62rem/1.2 var(--pc-corps); letter-spacing:.08em; text-transform:uppercase; color:var(--pc-sourd); }
+.pp-bubble { padding:6px 9px; background:var(--tel-bulle); color:var(--pc-texte); border-radius:12px 12px 12px 3px; font:400 .74rem/1.35 var(--pc-corps); }
+.pp-reply { justify-self:end; max-width:90%; padding:5px 9px; background:var(--pc-vert); color:var(--pc-encre); border-radius:12px 12px 3px 12px; font:600 .72rem/1.3 var(--pc-corps); }
+.pp-reply:empty { display:none; }
+/* Sur grand écran le téléphone est debout, comme un vrai : étroit et haut. */
+.piece[data-prop=phone] { width:132px; }
+.piece[data-prop=phone] .piece-phone { min-height:150px; }
+/* Lecture agrandie : sur l'image et le bas de l'écran, se ferme au toucher. */
+.piece-reading { position:relative; justify-self:center; align-self:center; z-index:8; width:min(380px,calc(100% - 24px)); max-height:100%; display:grid; gap:8px; cursor:pointer; }
+.piece-reading .piece-card,.piece-reading .piece-doc,.piece-reading .piece-phone { padding:18px 20px 22px; gap:10px; box-shadow:var(--pc-ombre-papier); }
+.piece-reading .piece-doc { clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),96% 100%,92% calc(100% - 8px),88% 100%,84% calc(100% - 8px),80% 100%,76% calc(100% - 8px),72% 100%,68% calc(100% - 8px),64% 100%,60% calc(100% - 8px),56% 100%,52% calc(100% - 8px),48% 100%,44% calc(100% - 8px),40% 100%,36% calc(100% - 8px),32% 100%,28% calc(100% - 8px),24% 100%,20% calc(100% - 8px),16% 100%,12% calc(100% - 8px),8% 100%,4% calc(100% - 8px),0 100%); padding-bottom:30px; }
+.piece-reading .pc-glyph { width:84px; height:84px; }
+.piece-reading .pc-name { font-size:1.1rem; }
+.piece-reading .pc-line { font-size:.9rem; }
+.piece-reading .pd-head { font-size:.76rem; }
+.piece-reading .pd-text { font-size:.92rem; }
+.piece-reading .pd-stamp { min-height:44px; }
+.piece-reading .pp-who { font-size:.74rem; }
+.piece-reading .pp-bubble { font-size:.92rem; padding:9px 12px; }
+.piece-reading[data-prop=phone] { width:min(250px,calc(100% - 24px)); }
+.piece-reading[data-prop=phone] .piece-phone { min-height:260px; padding-top:22px; }
+.pr-hint { justify-self:center; padding:3px 10px; border-radius:999px; background:var(--voile); color:var(--pc-sourd); font:400 .72rem/1.3 var(--pc-corps); }
+/* Ticket imprimé : un relevé papier dont les lignes se posent une à une. */
+.ticket-print { background:var(--pc-papier) var(--grain); background-blend-mode:multiply; color:var(--pc-encre); font:400 .84rem/1.55 var(--corps); padding:16px 20px 28px; box-shadow:var(--pc-ombre-papier); display:grid; gap:2px; align-content:start; width:min(380px,100%); box-sizing:border-box;
+  clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),96% 100%,92% calc(100% - 8px),88% 100%,84% calc(100% - 8px),80% 100%,76% calc(100% - 8px),72% 100%,68% calc(100% - 8px),64% 100%,60% calc(100% - 8px),56% 100%,52% calc(100% - 8px),48% 100%,44% calc(100% - 8px),40% 100%,36% calc(100% - 8px),32% 100%,28% calc(100% - 8px),24% 100%,20% calc(100% - 8px),16% 100%,12% calc(100% - 8px),8% 100%,4% calc(100% - 8px),0 100%); }
+.ticket-print h3 { margin:0 0 6px; padding-bottom:6px; border-bottom:var(--pc-fine) dashed var(--trait-papier-fort); font:700 .8rem/1.3 var(--corps); letter-spacing:.12em; text-transform:uppercase; }
+.ticket-print p { margin:6px 0 0; }
+.ticket-print .tp-line { display:flex; justify-content:space-between; gap:12px; font-variant-numeric:tabular-nums; }
+.ticket-print .tp-total { border-top:var(--pc-fine) dashed var(--trait-papier-fort); margin-top:6px; padding-top:6px; font-weight:700; }
+.ticket-print .tp-line[hidden],.ticket-print p[hidden] { display:none; }
+.ticket-print .tp-new { animation:tp-pose var(--d-normal) var(--ease-sortie) both; }
+.ticket-print .tp-new .tampon { animation:tp-tampon var(--d-tampon) var(--ease-tampon) both; }
+@keyframes tp-pose { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:none; } }
+@keyframes tp-tampon { from { opacity:0; transform:scale(1.6) rotate(-9deg); } to { opacity:1; transform:scale(1) rotate(-4deg); } }
+@media(prefers-reduced-motion:reduce) { .ticket-print .tp-new, .ticket-print .tp-new .tampon { animation:none; } }
+@media(max-width:760px) {
+  button.piece[data-prop] { align-self:center; }
+  .piece[data-prop=phone] { width:auto; }
+  .piece[data-prop=phone] .piece-phone { min-height:0; }
+  .piece-reading[data-prop=phone] .piece-phone { min-height:200px; }
+  .piece-card { grid-template-columns:auto 1fr; justify-items:start; text-align:left; align-items:center; column-gap:10px; padding:6px 10px; }
+  .piece-card .pc-glyph { grid-row:1/3; width:34px; height:34px; }
+  .piece-card .pc-name,.piece-card .pc-line { grid-column:2; }
+  .piece-doc { grid-template-columns:minmax(0,1fr) 74px; column-gap:8px; row-gap:2px; padding:6px 8px 6px 10px; }
+  .piece-doc .pd-head { grid-column:1; }
+  .piece-doc .pd-text { grid-column:1; grid-row:2; }
+  .piece-doc .pd-stamp { grid-column:2; grid-row:1/3; min-height:0; }
+  .piece-doc .pd-mark { font-size:.54rem; padding:1px 3px; }
+  .piece-phone { padding:12px 8px 6px; gap:3px; border-radius:12px; }
+  .pp-bubble { padding:4px 8px; }
+  .piece-reading { width:min(340px,calc(100% - 16px)); }
+}
+
+/* Carte à champs : un passe, un bandeau de titre et des lignes étiquette / valeur. */
+.piece-id { display:grid; align-content:start; background:var(--pc-papier) var(--grain); background-blend-mode:multiply; color:var(--pc-encre); border-radius:var(--r-1); transform:rotate(-.5deg); box-shadow:var(--pc-ombre); overflow:hidden; font:400 .76rem/1.35 var(--pc-corps); }
+.pi-head { padding:6px 10px; background:var(--world-dom); color:var(--world-on-dom); font:700 .7rem/1.3 var(--pc-titre); letter-spacing:.06em; text-transform:uppercase; }
+.pi-row { display:flex; justify-content:space-between; gap:10px; padding:4px 10px; border-top:var(--pc-fine) solid var(--trait-papier); }
+.pi-label { color:var(--encre-douce); font-size:.68rem; letter-spacing:.04em; text-transform:uppercase; padding-top:1px; }
+.pi-value { font:600 .76rem/1.35 var(--corps); text-align:right; }
+.piece-id[data-back] { padding:14px 10px; justify-items:center; text-align:center; }
+/* Ticket-pièce : une bande imprimée, bord dentelé ; la marque du joueur s'imprime en dernière ligne. */
+.piece-ticket { display:grid; align-content:start; gap:2px; padding:10px 12px 18px; background:var(--pc-papier) var(--grain); background-blend-mode:multiply; color:var(--pc-encre); font:400 .72rem/1.4 var(--corps); clip-path:polygon(0 0,100% 0,100% calc(100% - 8px),96% 100%,92% calc(100% - 8px),88% 100%,84% calc(100% - 8px),80% 100%,76% calc(100% - 8px),72% 100%,68% calc(100% - 8px),64% 100%,60% calc(100% - 8px),56% 100%,52% calc(100% - 8px),48% 100%,44% calc(100% - 8px),40% 100%,36% calc(100% - 8px),32% 100%,28% calc(100% - 8px),24% 100%,20% calc(100% - 8px),16% 100%,12% calc(100% - 8px),8% 100%,4% calc(100% - 8px),0 100%); box-shadow:var(--pc-ombre); }
+.pt-line { margin:0; }
+.pt-head { font-weight:700; letter-spacing:.08em; text-transform:uppercase; border-bottom:var(--pc-fine) dashed var(--trait-papier-fort); padding-bottom:4px; margin-bottom:2px; }
+.pt-mark { margin-top:4px; padding-top:4px; border-top:var(--pc-fine) dashed var(--trait-papier-fort); font-weight:700; }
+.piece-reading .piece-id,.piece-reading .piece-ticket { box-shadow:var(--pc-ombre-papier); }
+.piece-reading .pi-head { font-size:.82rem; padding:9px 14px; }
+.piece-reading .pi-row { padding:7px 14px; }
+.piece-reading .pi-label { font-size:.76rem; }
+.piece-reading .pi-value { font-size:.92rem; }
+.piece-reading .piece-ticket { padding:18px 20px 30px; font-size:.86rem; }
+@media(max-width:760px) {
+  .piece-id .pi-row:nth-child(n+4) { display:none; }
+  .piece-reading .piece-id .pi-row:nth-child(n+4) { display:flex; }
+  .piece-ticket .pt-line:nth-child(n+4):not(.pt-mark) { display:none; }
+  .piece-reading .piece-ticket .pt-line:nth-child(n+4) { display:block; }
+}
+
+/* Pièce en grand (data-full) : la vedette de l'écran, lisible sans l'ouvrir, tout son contenu. */
+button.piece[data-prop][data-full] { align-self:start; width:100%; cursor:default; touch-action:auto; }
+.piece[data-full] .piece-doc { gap:8px; padding:14px 18px 16px; }
+.piece[data-full] .pd-head { font-size:.8rem; }
+.piece[data-full] .pd-text { font-size:.92rem; line-height:1.5; }
+.piece[data-full] .pd-stamp { min-height:52px; }
+.piece[data-full] .pd-mark { font-size:.8rem; }
+.piece[data-full] .piece-phone { gap:8px; padding:20px 14px 14px; border-radius:20px; min-height:0; }
+.piece[data-full] .pp-who { font-size:.78rem; }
+.piece[data-full] .pp-bubble { padding:9px 13px; font-size:.95rem; line-height:1.4; }
+.piece[data-full] .pp-reply { font-size:.9rem; padding:7px 12px; }
+.piece[data-full] .piece-ticket { padding:14px 18px 24px; gap:3px; font-size:.86rem; line-height:1.5; }
+.piece[data-full] .piece-id { grid-template-columns:1fr 1fr; border-radius:var(--r-1); font-size:.9rem; }
+.piece[data-full] .pi-head { grid-column:1/-1; padding:10px 14px; font-size:.85rem; }
+.piece[data-full] .pi-row { flex-direction:column; justify-content:flex-start; gap:2px; padding:8px 14px; }
+.piece[data-full] .pi-label { font-size:.72rem; }
+.piece[data-full] .pi-value { font-size:.9rem; text-align:left; }
+.piece[data-full] .piece-id[data-back] { grid-template-columns:1fr; }
+@media(max-width:760px) {
+  button.piece[data-prop][data-full] { align-self:start; }
+  .piece[data-full][data-prop=phone] { width:100%; }
+  .piece[data-full] .piece-doc { grid-template-columns:1fr; padding:7px 12px 8px; gap:4px; }
+  .piece[data-full] .piece-doc .pd-head,.piece[data-full] .piece-doc .pd-text { grid-column:1; grid-row:auto; }
+  .piece[data-full] .piece-doc .pd-stamp { grid-column:1; grid-row:auto; min-height:26px; }
+  .piece[data-full] .pd-text,.piece[data-full] .pp-bubble,.piece[data-full] .piece-ticket,.piece[data-full] .pi-value { font-size:13px; line-height:1.3; }
+  .piece[data-full] .pd-head,.piece[data-full] .pp-who,.piece[data-full] .pi-head { font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .piece[data-full] .pi-label { font-size:11px; }
+  .piece[data-full] .pp-bubble { padding:6px 10px; }
+  .piece[data-full] .piece-phone { padding:12px 10px 6px; gap:3px; border-radius:14px; }
+  .piece[data-full] .piece-ticket { padding:8px 12px 14px; gap:0; }
+  .piece[data-full] .piece-id .pi-row:nth-child(n+4) { display:flex; }
+  .piece[data-full] .piece-ticket .pt-line:nth-child(n+4) { display:block; }
+  .piece[data-full] .pi-row { padding:3px 12px; gap:0; }
+  .piece[data-full] .pi-head { padding:5px 40px 5px 12px; }
+}

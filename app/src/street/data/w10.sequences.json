@@ -1,0 +1,639 @@
+{
+  "src": "Séquences jouées [décision Cynthia, playtest 2026-11-03 ; GDD design/gdd/2026-11-03-sequences-jouees.md §0]. Cibles, durées et réactions : PROVISIONAL (ancres NOUVELLES à poser par level-designer). `variants` : choisies par l'entrée de relevé que l'acte écrit (found7, informant, bypassNacelle, patrol).",
+  "limits": {
+    "minS": {
+      "v": 3,
+      "src": "décision de Cynthia, 2026-11-03 : une séquence dure de 3 à 8 s",
+      "status": "sourced"
+    },
+    "maxS": {
+      "v": 8,
+      "src": "décision de Cynthia, 2026-11-03 : une séquence dure de 3 à 8 s",
+      "status": "sourced"
+    },
+    "crossSampleM": {
+      "v": 0.1,
+      "src": "pas d'échantillonnage de la droite de marche contre les décors pleins ; plus fin que le rayon du corps (0,3 m) et que le plus mince des décors du poste (le bras, 0,06 m plus le corps)",
+      "status": "supposed",
+      "owner": "gameplay-programmer"
+    },
+    "reducedHopShare": {
+      "v": 0.4,
+      "src": "GDD sequences-jouees §1.8 (mouvement réduit : fondu vers la position finale) ; le fondu tombe à 40 % de la durée, la narration est déjà dite",
+      "status": "supposed",
+      "owner": "game-designer"
+    },
+    "reducedFadeS": {
+      "v": 0.8,
+      "src": "GDD §1.8 ; même durée de fondu que le saut du contournement (bypass.hop.fadeS)",
+      "status": "supposed",
+      "owner": "game-designer"
+    },
+    "reducedFadeShare": {
+      "v": 0.2,
+      "src": "GDD §1.8 ; le fondu ne dépasse pas 20 % de la durée, pour tenir dans les séquences les plus courtes (3 s)",
+      "status": "supposed",
+      "owner": "game-designer"
+    },
+    "widenEpsilon": {
+      "v": 0.0001,
+      "src": "seuil de bruit : en dessous, l'élargissement de caméra est nul et la caméra de marche n'est pas touchée",
+      "status": "supposed",
+      "owner": "gameplay-programmer"
+    },
+    "widenHeightShare": {
+      "v": 0.5,
+      "src": "GDD §1.4 : l'élargissement recule la caméra de la joueuse ; la moitié de l'écart s'applique aussi à la hauteur, pour garder l'angle de vue",
+      "status": "supposed",
+      "owner": "technical-artist"
+    },
+    "lingerZone": {
+      "v": {
+        "x": 0,
+        "z": -12,
+        "radiusM": 7.5
+      },
+      "src": "décision team-lead 2026-11-03 : le visage et la fente de la variante informant s'effacent quand la joueuse quitte la zone du poste (rayon 7,5 m autour de la barrière, interactions.wall) et au plus tard à la fin du jour",
+      "status": "supposed",
+      "owner": "game-designer"
+    }
+  },
+  "anchors": {
+    "anchor.cp.slit": {
+      "v": {
+        "x": 3.3,
+        "z": -10.0
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §2.1 : devant la fente, 0,1 m sous l'arête du bras baissé (z -10,10)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.bypass.in": {
+      "v": {
+        "x": -6.5,
+        "z": -8.0
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §2.3 : devant la porte de cour W1 (façade ouest, z -8)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.stall.front": {
+      "v": {
+        "x": -4.5,
+        "z": -3.0
+      },
+      "src": "PROVISIONAL, design/gdd/2026-11-03-sequences-jouees.md §0 ; devant l'étal (interactions.stall x -6, z -2) : 1,5 m à l'est du bord du décor plein, hors de la zone du choix (rayon 7,5 m autour de z -12) ; GDD « remonte la rue jusqu'à l'étal »",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.cp.gate": {
+      "v": {
+        "x": 5.2,
+        "z": -10.0
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §2.2 : relais dans le couloir de 0,79 m entre la guérite (x 4,8) et le poteau (x 5,59)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.cp.through": {
+      "v": {
+        "x": 5.2,
+        "z": -12.4
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §2.2 : sortie du poste, au nord du segment z -12, dans le couloir est (le point derrière le mur de télés est caché par lui)",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.bypass.out": {
+      "v": {
+        "x": -6.5,
+        "z": -16.0
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §2.4 : devant la porte de cour W2 (façade ouest, z -16), de l'autre côté du poste",
+      "status": "supposed",
+      "owner": "level-designer"
+    },
+    "anchor.cp.head": {
+      "v": {
+        "x": 0.75,
+        "z": -10.1
+      },
+      "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md §2 : tête de file, le départ pour lequel les durées du §3 sont comptées ; la coupe d'entrée y pose la joueuse venue de loin",
+      "status": "supposed",
+      "owner": "level-designer"
+    }
+  },
+  "sequences": {
+    "checkpoint.j1": {
+      "comply": {
+        "target": "anchor.cp.through",
+        "narrationKey": "w10.seq.checkpoint.comply",
+        "dossierPulse": 0,
+        "durationS": {
+          "v": 6.5,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,6 s de marche + 2,0 s devant la fente + 2,7 s sous le bras",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "path": [
+          {
+            "to": "anchor.cp.slit",
+            "holdUntilS": 3.4
+          },
+          "anchor.cp.gate"
+        ],
+        "cues": [
+          {
+            "atS": 1.8,
+            "cue": "slit.lit"
+          },
+          {
+            "atS": 1.8,
+            "cue": "wall.face"
+          },
+          {
+            "atS": 3.3,
+            "cue": "wall.clear"
+          },
+          {
+            "atS": 3.4,
+            "cue": "barrier.up"
+          },
+          {
+            "atS": 6.3,
+            "cue": "barrier.down"
+          },
+          {
+            "atS": 6.4,
+            "cue": "slit.idle"
+          }
+        ],
+        "variants": {
+          "found7": {
+            "narrationKey": "w10.seq.checkpoint.comply.found7",
+            "dossierPulse": -1,
+            "pulseWeight": "strong",
+            "cues": [
+              {
+                "atS": 1.8,
+                "cue": "slit.red"
+              },
+              {
+                "atS": 1.8,
+                "cue": "wall.face"
+              },
+              {
+                "atS": 3.3,
+                "cue": "wall.clear"
+              },
+              {
+                "atS": 3.4,
+                "cue": "barrier.up"
+              },
+              {
+                "atS": 6.3,
+                "cue": "barrier.down"
+              },
+              {
+                "atS": 6.4,
+                "cue": "slit.idle"
+              }
+            ]
+          }
+        },
+        "npcReaction": {
+          "id": "queue.0",
+          "face": "player",
+          "delayS": 1.0
+        },
+        "cameraWiden": 1.35,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 4.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; seuil resserré à 4 m : la fente doit être atteinte (2,5 s) avant la fin de l'attente devant elle",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "courtesy": {
+        "target": "anchor.cp.through",
+        "narrationKey": "w10.seq.checkpoint.courtesy",
+        "dossierPulse": 0,
+        "durationS": {
+          "v": 6.5,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,6 s de marche + 2,0 s devant la fente + 2,7 s sous le bras",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "path": [
+          {
+            "to": "anchor.cp.slit",
+            "holdUntilS": 3.4
+          },
+          "anchor.cp.gate"
+        ],
+        "cues": [
+          {
+            "atS": 1.8,
+            "cue": "slit.lit"
+          },
+          {
+            "atS": 3.4,
+            "cue": "barrier.up"
+          },
+          {
+            "atS": 6.3,
+            "cue": "barrier.down"
+          },
+          {
+            "atS": 6.4,
+            "cue": "slit.idle"
+          }
+        ],
+        "variants": {
+          "found7": {
+            "narrationKey": "w10.seq.checkpoint.comply.found7",
+            "dossierPulse": -1,
+            "pulseWeight": "strong",
+            "cues": [
+              {
+                "atS": 1.8,
+                "cue": "slit.red"
+              },
+              {
+                "atS": 1.8,
+                "cue": "wall.face"
+              },
+              {
+                "atS": 3.3,
+                "cue": "wall.clear"
+              },
+              {
+                "atS": 3.4,
+                "cue": "barrier.up"
+              },
+              {
+                "atS": 6.3,
+                "cue": "barrier.down"
+              },
+              {
+                "atS": 6.4,
+                "cue": "slit.idle"
+              }
+            ]
+          }
+        },
+        "cameraWiden": 1.35,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 4.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; seuil resserré à 4 m : la fente doit être atteinte (2,5 s) avant la fin de l'attente devant elle",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "buy:permission": {
+        "target": "anchor.cp.through",
+        "narrationKey": "w10.seq.checkpoint.buy",
+        "dossierPulse": -1,
+        "durationS": {
+          "v": 6.0,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,6 s de marche + 1,5 s devant la fente + 2,7 s sous le bras",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "path": [
+          {
+            "to": "anchor.cp.slit",
+            "holdUntilS": 2.9
+          },
+          "anchor.cp.gate"
+        ],
+        "pulseWeight": "medium",
+        "cues": [
+          {
+            "atS": 1.8,
+            "cue": "slit.lit"
+          },
+          {
+            "atS": 2.9,
+            "cue": "barrier.up"
+          },
+          {
+            "atS": 5.8,
+            "cue": "barrier.down"
+          },
+          {
+            "atS": 5.9,
+            "cue": "slit.idle"
+          }
+        ],
+        "variants": {
+          "informant": {
+            "narrationKey": "w10.seq.checkpoint.buy.informant",
+            "dossierPulse": -1,
+            "pulseWeight": "medium",
+            "cues": [
+              {
+                "atS": 1.8,
+                "cue": "slit.lit"
+              },
+              {
+                "atS": 2.9,
+                "cue": "barrier.up"
+              },
+              {
+                "atS": 5.8,
+                "cue": "barrier.down"
+              },
+              {
+                "atS": 1.8,
+                "cue": "wall.face"
+              }
+            ],
+            "secondPulse": {
+              "atS": 0.5,
+              "dossierPulse": -1,
+              "pulseWeight": "medium"
+            }
+          }
+        },
+        "npcReaction": {
+          "id": "queue.0",
+          "face": "away",
+          "delayS": 1.0
+        },
+        "cameraWiden": 1.35,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 4.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; seuil resserré à 4 m : la fente doit être atteinte (2,5 s) avant la fin de l'attente devant elle",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "buy:bons": {
+        "target": "anchor.cp.through",
+        "narrationKey": "w10.seq.checkpoint.buy",
+        "dossierPulse": -1,
+        "durationS": {
+          "v": 6.0,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,6 s de marche + 1,5 s devant la fente + 2,7 s sous le bras",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "path": [
+          {
+            "to": "anchor.cp.slit",
+            "holdUntilS": 2.9
+          },
+          "anchor.cp.gate"
+        ],
+        "pulseWeight": "medium",
+        "cues": [
+          {
+            "atS": 1.8,
+            "cue": "slit.lit"
+          },
+          {
+            "atS": 2.9,
+            "cue": "barrier.up"
+          },
+          {
+            "atS": 5.8,
+            "cue": "barrier.down"
+          },
+          {
+            "atS": 5.9,
+            "cue": "slit.idle"
+          }
+        ],
+        "variants": {
+          "informant": {
+            "narrationKey": "w10.seq.checkpoint.buy.informant",
+            "dossierPulse": -1,
+            "pulseWeight": "medium",
+            "cues": [
+              {
+                "atS": 1.8,
+                "cue": "slit.lit"
+              },
+              {
+                "atS": 2.9,
+                "cue": "barrier.up"
+              },
+              {
+                "atS": 5.8,
+                "cue": "barrier.down"
+              },
+              {
+                "atS": 1.8,
+                "cue": "wall.face"
+              }
+            ],
+            "secondPulse": {
+              "atS": 0.5,
+              "dossierPulse": -1,
+              "pulseWeight": "medium"
+            }
+          }
+        },
+        "npcReaction": {
+          "id": "queue.0",
+          "face": "away",
+          "delayS": 1.0
+        },
+        "cameraWiden": 1.35,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 4.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; seuil resserré à 4 m : la fente doit être atteinte (2,5 s) avant la fin de l'attente devant elle",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "buy:component": {
+        "target": "anchor.cp.through",
+        "narrationKey": "w10.seq.checkpoint.buy",
+        "dossierPulse": -1,
+        "durationS": {
+          "v": 6.0,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,6 s de marche + 1,5 s devant la fente + 2,7 s sous le bras",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "path": [
+          {
+            "to": "anchor.cp.slit",
+            "holdUntilS": 2.9
+          },
+          "anchor.cp.gate"
+        ],
+        "pulseWeight": "medium",
+        "cues": [
+          {
+            "atS": 1.8,
+            "cue": "slit.lit"
+          },
+          {
+            "atS": 2.9,
+            "cue": "barrier.up"
+          },
+          {
+            "atS": 5.8,
+            "cue": "barrier.down"
+          },
+          {
+            "atS": 5.9,
+            "cue": "slit.idle"
+          }
+        ],
+        "variants": {
+          "informant": {
+            "narrationKey": "w10.seq.checkpoint.buy.informant",
+            "dossierPulse": -1,
+            "pulseWeight": "medium",
+            "cues": [
+              {
+                "atS": 1.8,
+                "cue": "slit.lit"
+              },
+              {
+                "atS": 2.9,
+                "cue": "barrier.up"
+              },
+              {
+                "atS": 5.8,
+                "cue": "barrier.down"
+              },
+              {
+                "atS": 1.8,
+                "cue": "wall.face"
+              }
+            ],
+            "secondPulse": {
+              "atS": 0.5,
+              "dossierPulse": -1,
+              "pulseWeight": "medium"
+            }
+          }
+        },
+        "npcReaction": {
+          "id": "queue.0",
+          "face": "away",
+          "delayS": 1.0
+        },
+        "cameraWiden": 1.35,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 4.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; seuil resserré à 4 m : la fente doit être atteinte (2,5 s) avant la fin de l'attente devant elle",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "bypass": {
+        "target": "anchor.bypass.out",
+        "narrationKey": "w10.seq.checkpoint.bypass.free",
+        "dossierPulse": 0,
+        "durationS": {
+          "v": 7.0,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 4,7 s de marche vers W1 + coupe 0,8 s + 1,5 s de l'autre côté",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "variants": {
+          "bypassNacelle": {
+            "narrationKey": "w10.seq.checkpoint.bypass.nacelle",
+            "dossierPulse": -1,
+            "pulseWeight": "low",
+            "durationS": {
+              "v": 7.5,
+              "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : bypass nacelle",
+              "status": "supposed",
+              "owner": "level-designer"
+            }
+          },
+          "patrol": {
+            "narrationKey": "w10.seq.checkpoint.bypass.patrol",
+            "dossierPulse": -1,
+            "pulseWeight": "strong",
+            "durationS": {
+              "v": 7.8,
+              "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : bypass patrol, partie 1",
+              "status": "supposed",
+              "owner": "level-designer"
+            }
+          }
+        },
+        "path": [
+          "anchor.bypass.in"
+        ],
+        "hop": {
+          "atS": 5.3,
+          "fadeS": 0.8
+        },
+        "cameraWiden": 1.3,
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 7.6,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; 7,55 m = la marche de la tête de file à W1 ; au-delà la coupe lui ménage la porte avant le saut",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      },
+      "refuse": {
+        "target": "anchor.stall.front",
+        "narrationKey": "w10.seq.checkpoint.refuse",
+        "dossierPulse": -1,
+        "durationS": {
+          "v": 6.5,
+          "src": "PROVISIONAL, design/levels/2026-11-03-ancres-sequences.md ; §3 : 1,0 s de demi-tour + 5,5 s de marche vers l'étal",
+          "status": "supposed",
+          "owner": "game-designer"
+        },
+        "status": "provisional",
+        "npcReaction": {
+          "id": "queue.0",
+          "face": "player",
+          "delayS": 0.5
+        },
+        "pulseWeight": "medium",
+        "entry": {
+          "anchor": "anchor.cp.head",
+          "maxWalkM": {
+            "v": 9.0,
+            "src": "GDD sequences-jouees §1.2 (au-delà d'environ 8 m, un fondu de 0,4 s) ; 8,8 m = la marche de la tête de file à l'étal",
+            "status": "supposed",
+            "owner": "game-designer"
+          },
+          "fadeS": 0.4
+        }
+      }
+    }
+  }
+}
